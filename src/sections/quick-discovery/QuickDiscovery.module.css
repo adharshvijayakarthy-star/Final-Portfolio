@@ -1543,6 +1543,13 @@
   }
 }
 .auraSignal { font-size: 12px; color: #b99b91; letter-spacing: .12em; margin-bottom: 14px; }
+.root .munClubLead { display: flex; align-items: flex-start; gap: 28px; max-width: min(1000px, calc(100% - 100px)); }
+.munClubLead h2 { font: inherit; white-space: nowrap; margin: 0; }
+.munClubLead p { font: 400 14px/1.5 var(--font-meta); max-width: 48em; margin: 0; }
+@media (max-width: 760px) {
+  .root .munClubLead { display: block; max-width: calc(100% - 40px); }
+  .munClubLead p { margin-top: 8px; font-size: 13px; }
+}
 @media (max-width: 1099px) { .stepLabel { font-size: calc(13px / var(--frame-scale, .6)); letter-spacing: .18em; } }
 
 /* Refinement: keep the authored scene coordinates and give words a readable

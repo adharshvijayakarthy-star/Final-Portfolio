@@ -28,7 +28,7 @@ const records = [
   {
     id: "strat-mun", title: "STRAT MUN", order: 3,
     shortDescription: "I also build systems around people.",
-    narration: ["I also build systems around people.", "STRAT MUN meant conference organisation, committee design, country allocation and coordination.", "In the MUN club, I also design lessons, debates and simulations for younger students."],
+    narration: ["STRAT MUN was a Model United Nations conference I helped organise.", "I worked on committee design, topics and country allocation.", "That meant coordinating the conference and thinking through the delegate experience."],
     displayTitle: "STRAT MUN", deeperLabel: "Behind the conference",
     longDescription: "I worked on conference planning, committee topics, country assignments, advertising and branding for STRAT MUN. Committee difficulty had to make sense, countries had to remain unique, and each assignment had to fit the wider conference. In the MUN club, I also designed lessons and simulations for younger students.",
     role: "Conference planning and committee design", signal: "LEADERSHIP + COMMUNICATION",

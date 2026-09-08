@@ -356,11 +356,19 @@ export function QuickDiscovery() {
             <ScreenLabel index="04" className={styles.beyondLabel}>
               BEYOND CODE
             </ScreenLabel>
-            <h2 data-beyond-lead>{quickCopy.beyondTitle}</h2>
+            <div data-beyond-lead className={styles.munClubLead}>
+              <h2>{quickCopy.munClubTitle}</h2>
+              <p>{quickCopy.munClubDetail}</p>
+            </div>
 
             <div data-bg-layer="3"><ArchiveContent id="theory" /></div>
             <div data-bg-layer="2"><ArchiveContent id="communication" /></div>
-            <div data-bg-layer="1"><ArchiveContent id="mun-teaching" /></div>
+            <div data-bg-layer="1">
+              <div className={styles.bgSlot}><div className={styles.archiveRecord}>
+                <span>{mun.role}</span><h3>{mun.title}</h3><p>{quickCopy.munConferenceDetail}</p>
+              </div></div>
+              <div className={styles.bgCaption}>{mun.signal}</div>
+            </div>
             <div data-bg-layer="1b"><ArchiveContent id="guitar" /></div>
 
             <div data-beyond-strip>{quickCopy.beyondCategories.map(label => <span key={label}>{label}</span>)}</div>
