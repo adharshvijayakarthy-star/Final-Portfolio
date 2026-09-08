@@ -1604,10 +1604,12 @@
 .root .markLeft {
   display: inline-flex; align-items: center; min-height: 44px;
   top: 16px; font: 400 28px/1 var(--font-display);
-  letter-spacing: .16em; color: #e2dbd0;
+  letter-spacing: .04em; color: #9b72cf;
 }
-.markLeft i { color: #e0555f; font-style: italic; }
-.root .markLeft:hover { color: #fff5e9; }
+.markLeft i { color: #e0555f; font-style: italic; text-shadow: 0 0 16px rgba(224, 85, 95, .18); }
+.markLeft span { color: #9b72cf; text-shadow: 0 0 18px rgba(155, 114, 207, .24); }
+.root .markLeft:hover i { color: #ff7079; }
+.root .markLeft:hover span { color: #b99bea; }
 .root [data-chip] { min-height: 44px; color: #a29a90; }
 .root [data-chip][aria-current] { color: #efe8dc; }
 .chipNumber { color: #aaa095; }

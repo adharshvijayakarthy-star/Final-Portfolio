@@ -82,7 +82,9 @@ export function QuickDiscovery() {
 
       <div data-progress aria-hidden="true" />
 
-      <Link className={styles.markLeft} data-home href={routes.home} aria-label={quickCopy.homeLabel}><i>{quickCopy.mark[0]}</i>{quickCopy.mark.slice(1)}</Link>
+      <Link className={styles.markLeft} data-home href={routes.home} aria-label={quickCopy.quickHomeLabel}>
+        <i>{quickCopy.quickMark[0]}</i><span>{quickCopy.quickMark.slice(1)}</span>
+      </Link>
       <div className={styles.markRight} aria-hidden="true">
         <span className={styles.markRule} />
         01 {quickCopy.entryTitle}

@@ -54,6 +54,7 @@ export const future = {
 
 export const quickCopy = {
   mark: "AURA", homeLabel: "AURA — return to the landing page",
+  quickMark: "AV", quickHomeLabel: "AV — return to the landing page",
   entryTitle: "QUICK DISCOVERY", entryHint: "NINETY SECONDS · SCROLL TO BEGIN", scrollHint: "SCROLL",
   workTitle: "Selected work", workSubtitle: "FOUR PROJECTS · FOUR DIFFERENT QUESTIONS",
   beyondTitle: "Software is only one part of what I do.",
