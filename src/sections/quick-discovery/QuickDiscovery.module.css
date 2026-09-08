@@ -953,7 +953,7 @@
 .root [data-pap-evidence] .evidenceSlot { aspect-ratio: 16 / 10; }
 
 /* ------------------------------------------------------------------ */
-/* 03C STRAT MUN                                                       */
+/* 03C MUN CLUB                                                        */
 /* ------------------------------------------------------------------ */
 
 .root [data-mun-spot] {
@@ -1543,12 +1543,59 @@
   }
 }
 .auraSignal { font-size: 12px; color: #b99b91; letter-spacing: .12em; margin-bottom: 14px; }
-.root .munClubLead { display: flex; align-items: flex-start; gap: 28px; max-width: min(1000px, calc(100% - 100px)); }
-.munClubLead h2 { font: inherit; white-space: nowrap; margin: 0; }
-.munClubLead p { font: 400 14px/1.5 var(--font-meta); max-width: 48em; margin: 0; }
+.certificateTrigger {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  color: inherit;
+  background: #0c0b10;
+  cursor: zoom-in;
+}
+.certificateImage { filter: blur(6px); opacity: .44; transform: scale(1.04); transition: opacity 180ms ease, transform 180ms ease; }
+.certificateOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 18px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(9, 9, 14, .12), rgba(9, 9, 14, .48));
+}
+.certificateOverlay strong { font: 400 clamp(20px, 2vw, 28px)/1.1 var(--font-display); color: #e8d9c5; }
+.certificateOverlay small { font: 400 .75rem/1.4 var(--font-meta); letter-spacing: .14em; color: #b89a91; }
+.certificateTrigger:hover .certificateImage,
+.certificateTrigger:focus-visible .certificateImage { opacity: .62; transform: scale(1.07); }
+.certificateTrigger:focus-visible { outline: 1px solid #e0555f; outline-offset: 4px; }
+.certificateDialog {
+  width: min(620px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  padding: 0;
+  border: 1px solid #443236;
+  color: #efe8dc;
+  background: #09090e;
+}
+.certificateDialog::backdrop { background: rgba(3, 3, 6, .88); backdrop-filter: blur(8px); }
+.certificateDialogInner { position: relative; padding: 24px; }
+.certificateExpandedImage { display: block; width: auto; max-width: 100%; height: min(68vh, 720px); margin: 0 auto; filter: blur(2px); object-fit: contain; }
+.certificateDialogCopy { display: flex; justify-content: space-between; gap: 18px; margin-top: 16px; font-family: var(--font-meta); }
+.certificateDialogCopy strong { font-weight: 500; }
+.certificateDialogCopy span { color: #8f8177; text-align: right; }
+.certificateClose { margin-top: 18px; padding: 10px 16px; border: 1px solid #55353b; color: #efe8dc; background: transparent; font: 400 .75rem/1 var(--font-meta); letter-spacing: .16em; cursor: pointer; }
+.certificateClose:hover, .certificateClose:focus-visible { border-color: #e0555f; }
 @media (max-width: 760px) {
-  .root .munClubLead { display: block; max-width: calc(100% - 40px); }
-  .munClubLead p { margin-top: 8px; font-size: 13px; }
+  .certificateOverlay { gap: 8px; padding: 10px; }
+  .certificateOverlay strong { font-size: 18px; }
+  .certificateOverlay small { font-size: 12px; letter-spacing: .08em; }
+  .certificateDialogInner { padding: 16px; }
+  .certificateDialogCopy { display: block; font-size: .8125rem; }
+  .certificateDialogCopy span { display: block; margin-top: 6px; text-align: left; }
 }
 @media (max-width: 1099px) { .stepLabel { font-size: calc(13px / var(--frame-scale, .6)); letter-spacing: .18em; } }
 
@@ -1719,4 +1766,8 @@
   .archiveRecord > span, .bgCaption { display: none; }
   .archiveRecord h3 { font-size: 22px; margin: 0; }
   .archiveRecord p { font-size: 14px; line-height: 1.5; }
+}
+@media (min-width: 1100px) {
+  .root [data-bg-layer="1"] { bottom: -8%; }
+  .root [data-bg-layer="1b"] { bottom: -9%; }
 }

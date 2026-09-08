@@ -39,10 +39,10 @@ export const auraStory = [
 ];
 export const auraSteps = ["Discovery", "Evidence", "Understanding", "Model", "Expression"];
 export const achievements: readonly { id: string; title: string; detail: string; quickTitle: string; quickDetail: string; category: string; asset: ProjectMedia | null; source: string }[] = [
-  { id: "mun-teaching", title: "A room learns by doing.", quickTitle: "MUN & teaching", quickDetail: "Lessons, debates and simulations for younger students. Leadership through the work.", category: "MUN · teaching · leadership", detail: "I design lessons, debates and simulations for younger students. The club meets for an hour each week; the aim is to let people practise the activity, not just hear about it.", asset: null, source: "Codex §48" },
-  { id: "communication", title: "An idea has to reach someone.", quickTitle: "Debate & public speaking", quickDetail: "Putting my thinking in front of other people. Learning to make it clear.", category: "Debate · public speaking", detail: "Debate, MUN and public speaking keep putting my thinking in front of other people—and asking me to make it clear.", asset: null, source: "Codex §§23, 37, 48" },
-  { id: "guitar", title: "Grade 5 Guitar Practical", quickTitle: "Grade 5 Guitar Practical", quickDetail: "Completed, with certificate.", category: "Music · completed", detail: "Completed, with certificate.", asset: null, source: "Reconstruction brief, Beyond Code. Certificate scan not supplied." },
-  { id: "theory", title: "Grade 5 Music Theory", quickTitle: "Grade 5 Music Theory", quickDetail: "Completed, with certificate.", category: "Music · completed", detail: "Completed, with certificate.", asset: null, source: "Reconstruction brief, Beyond Code. Certificate scan not supplied." },
+  { id: "strat-mun", title: "STRAT MUN", quickTitle: "STRAT MUN", quickDetail: "I helped run an actual MUN conference: committee design, topics, country allocation and delegate experience.", category: "Conference organisation · MUN", detail: "I helped organise and run STRAT MUN as an actual Model United Nations conference. My work included committee design, topics, country allocation and the delegate experience.", asset: null, source: "Master Codex §§48–49, corrected by user." },
+  { id: "isso", title: "ISSO Nationals — Shot Put Bronze Medalist", quickTitle: "ISSO · Shot Put", quickDetail: "Bronze Medalist · ISSO Nationals", category: "ISSO · athletics", detail: "Shot Put Bronze Medalist at ISSO Nationals.", asset: null, source: "User-provided achievement; no year, distance or age category supplied." },
+  { id: "guitar", title: "Grade 5 Guitar Practical", quickTitle: "Grade 5 Guitar Practical", quickDetail: "Temporary certificate image.", category: "Music · completed", detail: "Completed, with certificate. Original image to be added.", asset: { src: "/assets/certificates/guitar-practical-placeholder.svg", alt: "Temporary placeholder for the Grade 5 Guitar Practical certificate", width: 900, height: 1200 }, source: "Reconstruction brief, Beyond Code. Certificate scan not supplied." },
+  { id: "theory", title: "Grade 5 Music Theory", quickTitle: "Grade 5 Music Theory", quickDetail: "Temporary certificate image.", category: "Music · completed", detail: "Completed, with certificate. Original image to be added.", asset: { src: "/assets/certificates/music-theory-placeholder.svg", alt: "Temporary placeholder for the Grade 5 Music Theory certificate", width: 900, height: 1200 }, source: "Reconstruction brief, Beyond Code. Certificate scan not supplied." },
 ];
 export const future = {
   title: "I’m not interested in staying where I am.", current: "Learning. Building. Experimenting.",
@@ -57,18 +57,15 @@ export const quickCopy = {
   entryTitle: "QUICK DISCOVERY", entryHint: "NINETY SECONDS · SCROLL TO BEGIN", scrollHint: "SCROLL",
   workTitle: "Selected work", workSubtitle: "FOUR PROJECTS · FOUR DIFFERENT QUESTIONS",
   beyondTitle: "Software is only one part of what I do.",
-  munClubTitle: "MUN CLUB",
-  munClubDetail: "I helped establish a weekly MUN club with teachers, organising lessons, debates and simulations for younger students.",
-  munConferenceDetail: "I helped organise a MUN conference: committees, topics, country allocation and delegate experience.",
-  beyondCategories: ["MUN", "DEBATE", "PUBLIC SPEAKING", "TEACHING", "LEADERSHIP", "GUITAR", "MUSIC THEORY"],
+  beyondCategories: ["MUN", "CONFERENCE", "ISSO", "SHOT PUT", "GUITAR", "MUSIC THEORY"],
   contactTitle: "Let’s talk.", contactPrompt: "Think we should talk?", contactPending: "Not added yet",
   closing: "IF NINETY SECONDS WASN’T ENOUGH", complete: "QUICK DISCOVERY COMPLETE",
   auraTail: "YOU ARE STANDING INSIDE THE LAST STEP",
   plannerNotes: ["PRIORITY WEIGHTING", "SESSION DISTRIBUTION", "SUBJECT REPETITION", "BREAKS ARE NOT OPTIONAL", "SESSION LIMITS · EDGE CASES"],
   paperNotes: ["TRACKING — PAPERS LOGGED", "ANALYSIS — SCORE, PAPER, DATE", "PREDICTION — ESTIMATED TREND"],
   paperAxes: ["FIRST PAPER", "TIME", "NEXT PAPER"],
-  munCaptions: ["ONE DELEGATE", "A COMMITTEE", "COMMITTEES", "A CONFERENCE"],
-  schematic: "Illustrative structure", paperSchematic: "Illustrative trend · no actual scores shown",
+  munCaptions: ["ONE LESSON", "A DEBATE", "A SIMULATION", "A WEEKLY CLUB"],
+  schematic: "Illustrative structure", munSchematic: "Illustrative", paperSchematic: "Illustrative trend · no actual scores shown",
   musicNote: "Certified · Grade 5", evidenceNote: "Project details",
 };
 

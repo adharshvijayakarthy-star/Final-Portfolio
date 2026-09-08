@@ -4,6 +4,7 @@ import { owner, chapters, build, auraStory, auraSteps, achievements, future, con
 import { orderedProjects } from "@/data/projects";
 import type { Project } from "@/data/types";
 import { QuickReadingStyles } from "./QuickReadingStyles";
+import { CertificateArchive } from "./CertificateArchive";
 
 import { SceneRuntime } from "./SceneRuntime";
 import styles from "./QuickDiscovery.module.css";
@@ -25,7 +26,7 @@ import styles from "./QuickDiscovery.module.css";
  * one sticky 100vh viewport. Their heights are the timing — see the module.
  */
 
-const [planner, papers, mun, aura] = orderedProjects as readonly [Project, Project, Project, Project];
+const [planner, papers, munClub, aura] = orderedProjects as readonly [Project, Project, Project, Project];
 
 /** The section index that opens most scenes, e.g. "01   WHO". */
 function ScreenLabel({
@@ -60,9 +61,11 @@ function EvidenceSlot({ project }: { project: Project }) {
 
 function ArchiveContent({ id }: { id: string }) {
   const item = achievements.find(a => a.id === id)!;
+  const isCertificate = item.id === "guitar" || item.id === "theory";
   return <>
     <div className={styles.bgSlot}>
-      {item.asset ? <Image src={item.asset.src} alt={item.asset.alt} width={item.asset.width} height={item.asset.height} loading="lazy" /> :
+      {isCertificate && item.asset ? <CertificateArchive title={item.quickTitle} src={item.asset.src} alt={item.asset.alt} /> :
+       item.asset ? <Image src={item.asset.src} alt={item.asset.alt} width={item.asset.width} height={item.asset.height} loading="lazy" /> :
         <div className={styles.archiveRecord}><span>{item.category}</span><h3>{item.quickTitle}</h3><p>{item.quickDetail}</p></div>}
     </div>
     <div className={styles.bgCaption}>{item.id === "guitar" || item.id === "theory" ? quickCopy.musicNote : item.category}</div>
@@ -276,15 +279,15 @@ export function QuickDiscovery() {
           </div>
         </section>
 
-        {/* 03C — one delegate becomes a conference */}
-        <section id={mun.id} data-stage="mun" data-screen-label="03C STRAT MUN" aria-label="STRAT MUN">
+        {/* 03C — lessons, debates and simulations become a weekly club */}
+        <section id={munClub.id} data-stage="mun" data-screen-label="03C MUN CLUB" aria-label="MUN Club">
           <div className={styles.viewport}>
             <div data-mun-spot aria-hidden="true" />
-            <ScreenLabel index="03" className={styles.projectLabel}>{mun.title.toUpperCase()}</ScreenLabel>
-            <h3 data-mun-title data-letters aria-label={mun.quick.displayTitle} className={styles.projectTitle}>{mun.quick.displayTitle}</h3>
-            <p data-mun-line="0" className={styles.line}>{mun.quick.narration[0]}</p>
-            <p data-mun-line="1" className={styles.line}>{mun.quick.narration[1]}</p>
-            <p data-mun-line="2" className={styles.line}>{mun.quick.narration[2]}</p>
+            <ScreenLabel index="03" className={styles.projectLabel}>{munClub.title.toUpperCase()}</ScreenLabel>
+            <h3 data-mun-title data-letters aria-label={munClub.quick.displayTitle} className={styles.projectTitle}>{munClub.quick.displayTitle}</h3>
+            <p data-mun-line="0" className={styles.line}>{munClub.quick.narration[0]}</p>
+            <p data-mun-line="1" className={styles.line}>{munClub.quick.narration[1]}</p>
+            <p data-mun-line="2" className={styles.line}>{munClub.quick.narration[2]}</p>
             <div data-frame="mun" style={{ width: 1000, height: 520 }} aria-hidden="true">
               <svg viewBox="0 0 1000 520">
                 <g data-mun-links />
@@ -299,8 +302,8 @@ export function QuickDiscovery() {
               <div data-mun-cap="2">{quickCopy.munCaptions[2]}</div>
               <div data-mun-cap="3">{quickCopy.munCaptions[3]}</div>
             </div>
-            <p className={styles.schematic}>{quickCopy.schematic}</p>
-            <div data-mun-evidence className={styles.evidence}><EvidenceSlot project={mun} />
+            <p className={styles.schematic}>{quickCopy.munSchematic}</p>
+            <div data-mun-evidence className={styles.evidence}><EvidenceSlot project={munClub} />
             </div>
           </div>
         </section>
@@ -356,19 +359,11 @@ export function QuickDiscovery() {
             <ScreenLabel index="04" className={styles.beyondLabel}>
               BEYOND CODE
             </ScreenLabel>
-            <div data-beyond-lead className={styles.munClubLead}>
-              <h2>{quickCopy.munClubTitle}</h2>
-              <p>{quickCopy.munClubDetail}</p>
-            </div>
+            <h2 data-beyond-lead>{quickCopy.beyondTitle}</h2>
 
             <div data-bg-layer="3"><ArchiveContent id="theory" /></div>
-            <div data-bg-layer="2"><ArchiveContent id="communication" /></div>
-            <div data-bg-layer="1">
-              <div className={styles.bgSlot}><div className={styles.archiveRecord}>
-                <span>{mun.role}</span><h3>{mun.title}</h3><p>{quickCopy.munConferenceDetail}</p>
-              </div></div>
-              <div className={styles.bgCaption}>{mun.signal}</div>
-            </div>
+            <div data-bg-layer="2"><ArchiveContent id="isso" /></div>
+            <div data-bg-layer="1"><ArchiveContent id="strat-mun" /></div>
             <div data-bg-layer="1b"><ArchiveContent id="guitar" /></div>
 
             <div data-beyond-strip>{quickCopy.beyondCategories.map(label => <span key={label}>{label}</span>)}</div>

@@ -12,7 +12,7 @@
  * null here means "not yet written", never "does not exist".
  */
 
-export type ProjectId = "study-planner" | "past-paper-logger" | "strat-mun" | "project-aura";
+export type ProjectId = "study-planner" | "past-paper-logger" | "mun-club" | "project-aura";
 
 export type ProjectLinkKind = "repository" | "live" | "case-study" | "writeup" | "external";
 

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Grade 5 Music Theory certificate placeholder</title>
+  <desc id="desc">An abstract certificate layout with no personal or certification details.</desc>
+  <rect width="900" height="1200" fill="#d3cec7"/>
+  <path d="M54 54h792v1092H54z" fill="none" stroke="#3f3b40" stroke-width="4"/>
+  <path d="M76 76h748v1048H76z" fill="none" stroke="#766d72" stroke-width="1"/>
+  <g fill="none" stroke="#5b4f56">
+    <circle cx="450" cy="245" r="78" stroke-width="4"/>
+    <path d="M395 267c34-12 65-41 94-86v111c0 27-23 48-51 48-25 0-45-15-45-35 0-22 24-38 53-38 12 0 24 3 33 8" stroke-width="8"/>
+  </g>
+  <g fill="#625d61" opacity=".5">
+    <rect x="196" y="390" width="508" height="28" rx="14"/>
+    <rect x="145" y="466" width="610" height="16" rx="8"/>
+    <rect x="187" y="512" width="526" height="16" rx="8"/>
+    <rect x="225" y="558" width="450" height="16" rx="8"/>
+    <rect x="160" y="690" width="580" height="13" rx="6"/>
+    <rect x="205" y="730" width="490" height="13" rx="6"/>
+    <rect x="248" y="770" width="404" height="13" rx="6"/>
+  </g>
+  <path d="M370 920h160v160H370z" fill="#655762" opacity=".58" transform="rotate(45 450 1000)"/>
+  <circle cx="450" cy="1000" r="52" fill="none" stroke="#d3cec7" stroke-width="3" opacity=".8"/>
+</svg>
