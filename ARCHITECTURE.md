@@ -26,7 +26,7 @@ The engine derives aria-current from the section containing the viewport reading
 
 The CSS module owns typography and layout. Serif and monospaced fonts remain unchanged. Diagram coordinates keep their authored frame sizes and scale to fit. Essential explanatory text stays outside small diagrams or compensates for scaling.
 
-`QuickReadingStyles.tsx` makes the same DOM ordinary document flow for reduced motion, disabled JavaScript, widths at or below 360px, heights at or below 650px, and phone layouts at or below 740px high. Enlarged root text also activates reading mode. Semantic copy remains accessible to screen readers throughout the animation.
+`QuickReadingStyles.tsx` makes the same DOM ordinary document flow only for the explicit reduced-motion preference or disabled JavaScript. No viewport-width, viewport-height or font-size threshold disables the cinematic runtime. Semantic copy remains accessible to screen readers throughout the animation.
 
 ## Content and evidence
 

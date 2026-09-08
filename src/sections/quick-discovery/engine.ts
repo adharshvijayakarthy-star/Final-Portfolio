@@ -116,7 +116,6 @@ class QuickDiscoveryEngine {
   private chapter = "";
 
   private sysReduced = false;
-  private largeText = false;
   private coarse = false;
   private vw = 0;
   private vh = 0;
@@ -188,12 +187,12 @@ class QuickDiscoveryEngine {
   }
 
   private get lowMotion() {
-    return this.sysReduced || this.largeText || this.opts.cinematicMotion === false;
+    return this.sysReduced || this.opts.cinematicMotion === false;
   }
 
   private setup() {
     if (this.dead) return;
-    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce), (max-height: 650px), (max-width: 360px), (max-width: 760px) and (max-height: 740px)");
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     this.sysReduced = motionQuery.matches;
     this.coarse = window.matchMedia("(pointer: coarse)").matches;
 
@@ -327,8 +326,7 @@ class QuickDiscoveryEngine {
    */
   private fit() {
     if (this.dead) return;
-    this.largeText = parseFloat(getComputedStyle(document.documentElement).fontSize) > 22;
-    this.q("[data-reading-style]")?.setAttribute("media", this.lowMotion ? "all" : "(prefers-reduced-motion: reduce), (scripting: none), (max-height: 650px), (max-width: 360px), (max-width: 760px) and (max-height: 740px)");
+    this.q("[data-reading-style]")?.setAttribute("media", this.lowMotion ? "all" : "(prefers-reduced-motion: reduce), (scripting: none)");
     for (const f of this.qa("[data-frame]")) {
       const w = parseFloat(f.style.width);
       const h = parseFloat(f.style.height);

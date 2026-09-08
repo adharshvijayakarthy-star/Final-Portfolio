@@ -4,7 +4,7 @@ Adharsh Vijayakarthy’s portfolio, refined from the approved Claude implementat
 
 - `/` — crystal and garden entrance, with a crystal morph into Quick Discovery.
 - `/quick/` — the original eleven cinematic scroll stages and six chapter links.
-- `/stay/` — the existing editorial page with deeper project accounts and notes.
+# Final-Portfolio
 
 ## Editing the words
 
@@ -33,6 +33,6 @@ Serve `out/` with a static server that resolves directories to `index.html`. Thi
 
 `src/sections/quick-discovery/engine.ts` retains the approved seeds, scene clocks, cameras and major choreography. `navigation.ts` owns chapter scrolling separately. `src/sections/entry/morph.ts` carries the existing crystal into Quick’s matching monolith.
 
-Reduced motion, very short or narrow screens, enlarged base text, and disabled JavaScript receive a readable document using the same content. Desktop remains the primary cinematic composition. Wheel and touch scrolling stay native and interrupt navigation travel.
+Only the explicit reduced-motion preference or disabled JavaScript selects the readable document. Viewport size and enlarged text never disable animation. Desktop remains the primary cinematic composition. Wheel and touch scrolling stay native and interrupt navigation travel.
 
 See `REFINEMENT_REPORT.md` for verification and `ARCHITECTURE.md` for implementation boundaries. The pre-refinement source and browser evidence remain in the ignored `.aura-work/` directory, outside the published site.

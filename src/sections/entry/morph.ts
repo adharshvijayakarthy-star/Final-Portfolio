@@ -7,7 +7,7 @@ export function bindQuickMorph(scene: HTMLElement, openQuick: () => void): () =>
     const source = (event.target as Element).closest<HTMLElement>('[data-disc="quick"]');
     if (busy && !source && (event.target as Element).closest('a')) cancelCurrent?.();
     if (!source || event.button || event.metaKey || event.ctrlKey || event.altKey || event.shiftKey) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce), (max-height: 650px), (max-width: 360px), (max-width: 760px) and (max-height: 740px)').matches) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     event.preventDefault();
     event.stopPropagation();
     if (busy) return;

@@ -45,7 +45,7 @@ const readingRules = `
 
 export function QuickReadingStyles() {
   return <>
-    <style data-reading-style media="(prefers-reduced-motion: reduce), (scripting: none), (max-height: 650px), (max-width: 360px), (max-width: 760px) and (max-height: 740px)">{readingRules}</style>
+    <style data-reading-style media="(prefers-reduced-motion: reduce), (scripting: none)">{readingRules}</style>
     <noscript><style>{readingRules}</style></noscript>
   </>;
 }

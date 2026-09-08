@@ -10,7 +10,7 @@ export const site = {
   /** Internal codename, kept for continuity. Not shown to visitors. */
   codename: "Project AURA",
   /** Set to the real origin before the first deploy; used for canonical URLs. */
-  url: "https://project-aura-adharsh.blithe-rose-8858.chatgpt.site",
+  url: "https://project-aura-adharsh.student15211.chatgpt.site",
   locale: "en",
   description: "IB student, software builder and MUN organizer. Selected work, the thinking behind it, and a direction toward AI and intelligent systems.",
 } as const;

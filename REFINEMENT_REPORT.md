@@ -1,5 +1,7 @@
 # AURA refinement verification
 
+Correction after user review: the first refinement incorrectly disabled animation at several common viewport sizes and enlarged text settings. Those automatic static-layout rules have been reverted. Verification now checks rendered CSS transforms and sticky scene tracks at short laptop and phone sizes, rather than relying only on engine values.
+
 Refined from the existing Claude source. The saved baseline is retained locally in `.aura-work/claude-baseline/`.
 
 1. **Preserved animation.** All eleven scenes retain their order and scroll-track timing. Preserved crystal convergence and rush, letter assembly and role choreography, network construction and pulses, scattered-task scheduling, graph construction and prediction, committee-network growth, AURA wireframe/shatter/pause/rebuild, four Beyond depth layers, future horizon and stars, and contact entrance. In a deterministic desktop comparison, 27 sampled sets of transforms/coordinates across nine scenes matched the baseline exactly. This comparison covers motion geometry, not identical text or pixels.
@@ -12,7 +14,7 @@ Refined from the existing Claude source. The saved baseline is retained locally 
 
 5. **Scroll pacing.** A separate smoothstep controller chooses duration from distance, capped at 4.6 seconds. Measured adjacent chapter journeys were roughly two seconds and WORK to BEYOND about 3.4 seconds in the local production test. Native wheel/touch scrolling is untouched and interrupts travel; scrolling keys and subsequent navigation also cancel it.
 
-6. **Readability.** Resized navigation, labels, supporting prose, project details, contact rows, Build explanations, AURA steps and future labels. Preserved serif/mono hierarchy. Reflowed archive text within the four existing depth layers. Very narrow or short screens use readable document flow, as do reduced motion and disabled JavaScript.
+6. **Readability.** Resized navigation, labels, supporting prose, project details, contact rows, Build explanations, AURA steps and future labels. Preserved serif/mono hierarchy. Reflowed archive text within the four existing depth layers. Viewport and text size retain the cinematic animation. Only reduced motion and disabled JavaScript use readable document flow.
 
 7. **Home identity.** AURA appears in the upper-left on the entrance and Quick. The italic crimson A, hover treatment, focus outline and real home link are implemented in the two existing section components.
 
