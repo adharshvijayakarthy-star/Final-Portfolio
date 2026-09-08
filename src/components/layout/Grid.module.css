@@ -1,0 +1,43 @@
+/**
+ * The editorial grid: 4 columns on mobile, 8 on tablet, 12 on desktop.
+ * The column count itself is a token (--grid-columns) set in layout.css, so
+ * the grid widens without this file knowing where the breakpoints are.
+ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: var(--grid-gap-x);
+  row-gap: var(--grid-gap-y);
+}
+
+/**
+ * Items declare a span per breakpoint tier via custom properties. Each tier
+ * falls back to the one below it, so `<GridItem span={4} lg={6} />` behaves
+ * correctly at tablet without needing an explicit md value.
+ */
+.item {
+  --_span-sm: var(--span, var(--grid-columns));
+  --_span-md: var(--span-md, var(--_span-sm));
+  --_span-lg: var(--span-lg, var(--_span-md));
+
+  grid-column: span var(--_span-sm) / span var(--_span-sm);
+  min-inline-size: 0; /* let content shrink instead of blowing out the track */
+}
+
+@media (min-width: 48rem) {
+  .item {
+    grid-column: span var(--_span-md) / span var(--_span-md);
+  }
+}
+
+@media (min-width: 64rem) {
+  .item {
+    grid-column: span var(--_span-lg) / span var(--_span-lg);
+  }
+
+  /* Explicit start line, desktop only. Below `lg` the composition is a single
+   * reading order and offsets would only create orphaned whitespace. */
+  .item[data-offset] {
+    grid-column-start: var(--start-lg);
+  }
+}

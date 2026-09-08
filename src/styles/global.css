@@ -1,0 +1,23 @@
+/**
+ * Project AURA — global stylesheet.
+ *
+ * The single global CSS entry point, imported once by the root layout.
+ * Everything below is either normalisation, a token declaration, an
+ * element-level default, or an accessibility guarantee. No component styling
+ * lives here — components own `.module.css` files next to their source.
+ *
+ * Import order matters: layers.css declares the cascade order and must stay
+ * first, and a11y.css must stay last.
+ */
+
+@import "./layers.css";
+
+@import "./tokens/color.css";
+@import "./tokens/typography.css";
+@import "./tokens/space.css";
+@import "./tokens/layout.css";
+@import "./tokens/motion.css";
+
+@import "./reset.css";
+@import "./base.css";
+@import "./a11y.css";

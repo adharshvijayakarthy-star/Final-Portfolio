@@ -1,0 +1,176 @@
+/**
+ * BASE
+ *
+ * Element-level typography and colour. This is where the tokens become a
+ * visible house style. Everything here is overridable by a component's own
+ * (unlayered) CSS Module.
+ */
+@layer base {
+  html {
+    /* Anchors land clear of any future fixed chrome. */
+    scroll-padding-block-start: var(--scroll-offset);
+    scroll-behavior: smooth;
+    /* NOT `scrollbar-gutter: stable`. The entry threshold is a full-bleed
+     * 100dvh stage whose composition is measured against the true viewport
+     * width; a permanently reserved gutter would leave a dead strip down the
+     * right edge and shift the whole scene. Revisit per-route if a long
+     * scrolling page later needs it. */
+  }
+
+  body {
+    background-color: var(--color-surface-page);
+    color: var(--color-ink-primary);
+
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    font-weight: var(--weight-regular);
+    line-height: var(--leading-body);
+    letter-spacing: var(--tracking-normal);
+    font-feature-settings: var(--font-features-prose);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    /* Nothing in this site may cause a sideways scrollbar. Full-bleed motion
+     * must be contained by its own section, not by the document. */
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background-color: var(--color-selection-bg);
+    color: var(--color-selection-ink);
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* PROSE DEFAULTS                                                      */
+  /* ------------------------------------------------------------------ */
+
+  p {
+    max-inline-size: var(--measure-prose);
+  }
+
+  strong,
+  b {
+    font-weight: var(--weight-semibold);
+  }
+
+  small {
+    font-size: var(--text-caption);
+  }
+
+  /* Inline links inside prose. Navigation and CTAs opt out via their own
+   * component styles — the underline here is for reading contexts, where a
+   * link must be distinguishable without relying on colour alone. */
+  :where(p, li, dd, figcaption) a {
+    color: var(--color-ink-primary);
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-accent-ink);
+    transition:
+      text-decoration-color var(--duration-fast) var(--ease-standard),
+      color var(--duration-fast) var(--ease-standard);
+  }
+
+  @media (hover: hover) {
+    :where(p, li, dd, figcaption) a:hover {
+      color: var(--color-accent-ink);
+      text-decoration-color: currentcolor;
+    }
+  }
+
+  code,
+  kbd,
+  samp,
+  pre {
+    font-family: var(--font-meta);
+    font-size: 0.92em;
+  }
+
+  hr {
+    border: 0;
+    block-size: var(--hairline);
+    background-color: var(--color-line-hairline);
+    margin-block: var(--rhythm-block);
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* TYPOGRAPHIC ROLE CLASSES                                            */
+  /* ------------------------------------------------------------------ */
+  /* Applied to whichever heading level is semantically correct, so that
+   * document outline and visual hierarchy stay independent.             */
+
+  .t-monument,
+  .t-display,
+  .t-headline,
+  .t-title {
+    font-family: var(--font-display);
+    font-weight: var(--weight-regular);
+    max-inline-size: var(--measure-tight);
+  }
+
+  .t-monument {
+    font-size: var(--text-monument);
+    line-height: var(--leading-flush);
+    letter-spacing: var(--tracking-monument);
+  }
+
+  .t-display {
+    font-size: var(--text-display);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-display);
+  }
+
+  .t-headline {
+    font-size: var(--text-headline);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .t-title {
+    font-size: var(--text-title);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .t-lead {
+    font-size: var(--text-lead);
+    line-height: var(--leading-normal);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-ink-secondary);
+    max-inline-size: var(--measure-prose);
+  }
+
+  .t-body {
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+    max-inline-size: var(--measure-prose);
+  }
+
+  .t-caption {
+    font-size: var(--text-caption);
+    line-height: var(--leading-loose);
+    color: var(--color-ink-muted);
+  }
+
+  /* The technical voice: uppercase, tracked out, monospaced. Used for section
+   * indices, roles, years, and coordinates. */
+  .t-meta {
+    font-family: var(--font-meta);
+    font-size: var(--text-meta);
+    font-weight: var(--weight-medium);
+    line-height: var(--leading-loose);
+    letter-spacing: var(--tracking-meta);
+    text-transform: uppercase;
+    font-feature-settings: var(--font-features-tabular);
+    color: var(--color-ink-muted);
+  }
+
+  .t-index {
+    font-family: var(--font-meta);
+    font-size: var(--text-meta);
+    letter-spacing: var(--tracking-meta-loose);
+    text-transform: uppercase;
+    font-feature-settings: var(--font-features-tabular);
+    color: var(--color-accent-ink);
+  }
+}

@@ -1,0 +1,72 @@
+/**
+ * TEMPORARY — shared shell for the two unbuilt experience routes.
+ *
+ * Deliberately plain. A placeholder that tries to look designed would be
+ * mistaken for a draft of the experience it is standing in for.
+ *
+ * Delete this file, ExperiencePlaceholder.tsx, and the folder once both
+ * experiences exist.
+ */
+
+.shell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--rhythm-block);
+  min-block-size: 100dvh;
+  padding: var(--rhythm-section) var(--gutter);
+  background-color: var(--color-surface-page);
+  color: var(--color-ink-primary);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rhythm-block);
+  inline-size: 100%;
+  max-inline-size: var(--container-narrow);
+  margin-inline: auto;
+}
+
+.index {
+  font-family: var(--font-meta);
+  font-size: var(--text-meta);
+  letter-spacing: var(--tracking-meta-loose);
+  text-transform: uppercase;
+  color: var(--color-accent-ink);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+}
+
+.note {
+  max-inline-size: var(--measure-prose);
+  color: var(--color-ink-secondary);
+}
+
+.back {
+  align-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  min-block-size: var(--target-min);
+  font-family: var(--font-meta);
+  font-size: var(--text-meta);
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: var(--color-ink-primary);
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-accent-ink);
+  text-underline-offset: 0.4em;
+}
+
+@media (hover: hover) {
+  .back:hover {
+    color: var(--color-accent-ink);
+    text-decoration-color: currentcolor;
+  }
+}

@@ -1,0 +1,249 @@
+/**
+ * COLOUR TOKENS
+ *
+ * Two tiers, and only the second tier may be used in components:
+ *
+ *   1. Palette (--aura-*)   raw values. Never referenced outside this file.
+ *   2. Semantic (--color-*) role-based. This is the component-facing API.
+ *
+ * The site is dark-committed: obsidian ground, bone ink. It is not a
+ * light/dark theming system — it is one art direction with a single inverted
+ * scope (`[data-surface="bone"]`) for editorial contrast between sections.
+ *
+ * Contrast ratios below are measured against the surface each token is
+ * intended to sit on and are noted so future work does not silently regress.
+ */
+@layer tokens {
+  :root {
+    /* ---------------------------------------------------------------- */
+    /* 1. PALETTE                                                        */
+    /* ---------------------------------------------------------------- */
+
+    /* Obsidian — the ground. Near-black, very slightly cool. */
+    --aura-obsidian-950: #060708;
+    --aura-obsidian-900: #0a0b0d;
+    --aura-obsidian-800: #101215;
+
+    /* Graphite / charcoal — structure, dividers, recessed planes. */
+    --aura-graphite-700: #191c20;
+    --aura-graphite-600: #242830;
+    --aura-graphite-500: #363b44;
+    --aura-graphite-400: #4e545e;
+    --aura-graphite-300: #6c727c;
+
+    /* Deep crimson — the single chromatic voice. Used with restraint. */
+    --aura-crimson-800: #3d040b;
+    --aura-crimson-700: #5c060f;
+    --aura-crimson-600: #7d0a17;
+    --aura-crimson-500: #a10e1f;
+    --aura-crimson-400: #c8172a;
+    --aura-crimson-300: #e8394a;
+
+    /* Bone — warm off-white. Never pure #fff; the warmth is the point. */
+    --aura-bone-050: #fbf9f5;
+    --aura-bone-100: #f4f1ea;
+    --aura-bone-200: #e4dfd4;
+    --aura-bone-300: #c8c1b3;
+
+    /* Pewter — restrained metallic neutral. Desaturated, slightly warm. */
+    --aura-pewter-600: #6f6e6a;
+    --aura-pewter-500: #8e8d88;
+    --aura-pewter-400: #a8a69f;
+
+    /* ---------------------------------------------------------------- */
+    /* STAY AWHILE PALETTE                                               */
+    /* ---------------------------------------------------------------- */
+    /* Seeded here, not finalised. The landing page needs enough of the
+     * second world to hint at it honestly; the full Stay Awhile system is
+     * a later phase and may extend or revise these.                     */
+
+    /* Verdure — deep forest ground.
+     *
+     * Deliberately lighter than obsidian rather than a green-tinted twin of
+     * it. Below roughly this luminance the hue stops registering at all and
+     * the two worlds read as one black rectangle — which fails the
+     * requirement that they stay distinct at rest, with no hover and no
+     * motion. Quick is the near-black world; Stay is a deep forest one. */
+    --aura-verdure-950: #0a1410;
+    --aura-verdure-900: #101c16;
+    --aura-verdure-800: #17261e;
+
+    /* Moss — structure and recessed planes. */
+    --aura-moss-700: #1a271f;
+    --aura-moss-600: #24352a;
+    --aura-moss-500: #35493a;
+
+    /* Sage — muted foliage neutral. -400 is tuned to clear 4.5:1 against
+     * verdure-900; do not darken it without re-measuring. */
+    --aura-sage-400: #778f7a;
+    --aura-sage-300: #93a894;
+
+    /* Bark / stone — warm structural neutrals. */
+    --aura-bark-600: #4a423a;
+    --aura-stone-500: #7d7a72;
+
+    /* Ivory — warm off-white. Softer and warmer than bone. */
+    --aura-ivory-100: #f2efe6;
+    --aura-ivory-200: #e0dbcd;
+
+    /* Sakura — the second world's single chromatic voice. */
+    --aura-sakura-500: #d4808f;
+    --aura-sakura-400: #e8a6b4;
+    --aura-sakura-300: #f2c3cd;
+
+    /* ---------------------------------------------------------------- */
+    /* 2. SEMANTIC — dark scope (default)                                */
+    /* ---------------------------------------------------------------- */
+
+    /* Surfaces */
+    --color-surface-page: var(--aura-obsidian-900);
+    --color-surface-sunken: var(--aura-obsidian-950);
+    --color-surface-raised: var(--aura-obsidian-800);
+    --color-surface-inset: var(--aura-graphite-700);
+
+    /* Ink — contrast is against --color-surface-page */
+    --color-ink-primary: var(--aura-bone-100); /* 17.5:1  AAA */
+    --color-ink-secondary: var(--aura-bone-300); /* 11.0:1  AAA */
+    --color-ink-muted: var(--aura-pewter-500); /*  5.9:1  AA  */
+    --color-ink-faint: var(--aura-pewter-600); /*  3.9:1  large text / non-text only */
+    --color-ink-inverse: var(--aura-obsidian-900);
+
+    /* Accent
+     * -graphic  : rules, marks, fills. Never carries text meaning alone.
+     * -ink      : the only crimson permitted for body-size text on obsidian. */
+    --color-accent-graphic: var(--aura-crimson-500);
+    --color-accent-strong: var(--aura-crimson-400);
+    --color-accent-ink: var(--aura-crimson-300); /*  4.9:1  AA  */
+    --color-accent-deep: var(--aura-crimson-800);
+
+    /* Lines. Hairlines are the primary structural device on this site —
+     * there are no cards, so edges do the work borders normally would. */
+    --color-line-hairline: color-mix(in srgb, var(--aura-bone-100) 12%, transparent);
+    --color-line-quiet: color-mix(in srgb, var(--aura-bone-100) 20%, transparent);
+    --color-line-strong: var(--aura-graphite-400);
+    --color-line-accent: var(--aura-crimson-500);
+
+    /* Interaction */
+    --color-focus-ring: var(--aura-bone-050);
+    --color-focus-ring-offset: var(--aura-obsidian-900);
+    --color-selection-bg: var(--aura-crimson-700);
+    --color-selection-ink: var(--aura-bone-050);
+
+    /* Overlay / scrim — for lazy-loaded media and future route transitions. */
+    --color-scrim: color-mix(in srgb, var(--aura-obsidian-950) 78%, transparent);
+
+    color-scheme: dark;
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* INVERTED SCOPE                                                      */
+  /* ------------------------------------------------------------------ */
+  /* Applied to a <section> or any wrapper to flip an editorial passage to
+   * bone ground. Only the semantic tier is redefined, so every component
+   * inverts correctly without knowing it exists.                        */
+  [data-surface="bone"] {
+    --color-surface-page: var(--aura-bone-050);
+    --color-surface-sunken: var(--aura-bone-200);
+    --color-surface-raised: #ffffff;
+    --color-surface-inset: var(--aura-bone-100);
+
+    --color-ink-primary: var(--aura-obsidian-900); /* 17.9:1  AAA */
+    --color-ink-secondary: var(--aura-graphite-600); /* 12.6:1  AAA */
+    --color-ink-muted: var(--aura-graphite-400); /*  6.9:1  AA  */
+    --color-ink-faint: var(--aura-pewter-500); /*  3.0:1  non-text only */
+    --color-ink-inverse: var(--aura-bone-050);
+
+    --color-accent-graphic: var(--aura-crimson-600);
+    --color-accent-strong: var(--aura-crimson-700);
+    --color-accent-ink: var(--aura-crimson-600); /* 10.4:1  AAA */
+    --color-accent-deep: var(--aura-crimson-800);
+
+    --color-line-hairline: color-mix(in srgb, var(--aura-obsidian-900) 14%, transparent);
+    --color-line-quiet: color-mix(in srgb, var(--aura-obsidian-900) 24%, transparent);
+    --color-line-strong: var(--aura-graphite-300);
+
+    --color-focus-ring: var(--aura-obsidian-900);
+    --color-focus-ring-offset: var(--aura-bone-050);
+    --color-selection-bg: var(--aura-crimson-600);
+    --color-selection-ink: var(--aura-bone-050);
+
+    --color-scrim: color-mix(in srgb, var(--aura-bone-050) 78%, transparent);
+
+    color-scheme: light;
+
+    background-color: var(--color-surface-page);
+    color: var(--color-ink-primary);
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* WORLD SCOPES                                                        */
+  /* ------------------------------------------------------------------ */
+  /* The two experiences are two expressions of one person, so they share
+   * the token NAMES and differ only in what those names resolve to. A
+   * component written against --color-ink-primary and --color-accent-ink
+   * is correct in both worlds without knowing which one it is in.
+   *
+   * Unlike [data-surface="bone"], these scopes deliberately do NOT paint a
+   * background. On the landing page a world's ground is a full-height layer
+   * behind the content, while the link that sits on it must stay
+   * transparent — so painting is left to the component.
+   *
+   * Contrast ratios are measured against that world's own ground.         */
+
+  [data-world="quick"] {
+    --color-surface-page: var(--aura-obsidian-900);
+    --color-surface-sunken: var(--aura-obsidian-950);
+    --color-surface-raised: var(--aura-obsidian-800);
+
+    --color-ink-primary: var(--aura-bone-100); /* 17.5:1  AAA */
+    --color-ink-secondary: var(--aura-bone-300); /* 11.0:1  AAA */
+    --color-ink-muted: var(--aura-pewter-500); /*  5.9:1  AA  */
+
+    --color-accent-graphic: var(--aura-crimson-500);
+    --color-accent-strong: var(--aura-crimson-400);
+    --color-accent-ink: var(--aura-crimson-300); /*  4.9:1  AA  */
+
+    --color-line-hairline: color-mix(in srgb, var(--aura-bone-100) 12%, transparent);
+    --color-line-accent: var(--aura-crimson-500);
+    --color-focus-ring: var(--aura-bone-050);
+
+    /* The atmospheric glow this world casts from the threshold. */
+    --world-glow: var(--aura-crimson-700);
+  }
+
+  [data-world="stay"] {
+    --color-surface-page: var(--aura-verdure-900);
+    --color-surface-sunken: var(--aura-verdure-950);
+    --color-surface-raised: var(--aura-verdure-800);
+
+    --color-ink-primary: var(--aura-ivory-100); /* 15.2:1  AAA */
+    --color-ink-secondary: var(--aura-sage-300); /*  6.9:1  AAA */
+    --color-ink-muted: var(--aura-sage-400); /*  5.0:1  AA  */
+
+    --color-accent-graphic: var(--aura-sakura-400); /*  8.8:1  AAA */
+    --color-accent-strong: var(--aura-sakura-300);
+    /* sakura-300 is so pale it reads as off-white at label sizes; -400 keeps
+     * the accent legibly pink while staying well above AAA. */
+    --color-accent-ink: var(--aura-sakura-400); /*  8.8:1  AAA */
+
+    --color-line-hairline: color-mix(in srgb, var(--aura-ivory-100) 12%, transparent);
+    --color-line-accent: var(--aura-sakura-400);
+    --color-focus-ring: var(--aura-ivory-100);
+
+    --world-glow: var(--aura-moss-500);
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* FORCED COLOURS / HIGH CONTRAST                                      */
+  /* ------------------------------------------------------------------ */
+  /* Windows High Contrast and similar modes replace author colours. Make
+   * sure the structural hairlines survive, since they carry layout meaning. */
+  @media (forced-colors: active) {
+    :root {
+      --color-line-hairline: CanvasText;
+      --color-line-quiet: CanvasText;
+      --color-line-strong: CanvasText;
+      --color-focus-ring: Highlight;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.container {
+  inline-size: 100%;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* Widths are attribute-driven rather than class-per-variant so that the set of
+ * legal values is enforced by the TypeScript union in Container.tsx. */
+.container[data-width="text"] {
+  max-inline-size: var(--container-text);
+}
+
+.container[data-width="narrow"] {
+  max-inline-size: var(--container-narrow);
+}
+
+.container[data-width="default"] {
+  max-inline-size: var(--container-default);
+}
+
+.container[data-width="wide"] {
+  max-inline-size: var(--container-wide);
+}
+
+/* Full-bleed: no max width and no gutter. For edge-to-edge media and for the
+ * full-viewport moments the cinematic scroll will need. Children that contain
+ * text should nest a normal Container inside. */
+.container[data-width="bleed"] {
+  max-inline-size: none;
+  padding-inline: 0;
+}

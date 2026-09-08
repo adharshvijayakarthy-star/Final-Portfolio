@@ -1,0 +1,1288 @@
+/**
+ * THE THRESHOLD — implementation of the approved "AURA Threshold" design.
+ *
+ * Values here are transcribed from the approved design rather than derived
+ * from the global token scale: this is one bespoke art-directed stage, and the
+ * geometry (clip-path vertices, glow offsets, blur radii, the exact ivory
+ * gradient of the stone) IS the design. Where the design and the token system
+ * agree — fonts, the reduced-motion contract — the tokens are used.
+ *
+ * The scene is authored at 1440x900 and scaled to fit by --world-scale, set by
+ * ThresholdRuntime. Both worlds are 560x900 boxes anchored to opposite edges.
+ *
+ * State is driven by data attributes on the scene root (`data-quick-hot`,
+ * `data-stay-hot`) and by custom properties, never by JS writing style strings
+ * — CSS Modules hash keyframe and class names, so imperative `style.animation`
+ * assignments would break.
+ */
+
+.scene {
+  /* --- palette, from the approved design ---------------------------- */
+  --sc-bg: #07070a;
+  --sc-ink: #e8e2d8;
+  --sc-ink-italic: #f2ece1;
+  --sc-ink-soft: #6d6963;
+  --sc-wordmark: #605c57;
+  --sc-crimson: #c0182a;
+  --sc-crimson-deep: #a5121f;
+  --sc-crimson-bright: #e0555f;
+  --sc-crimson-arrow: #d8404e;
+  --sc-ember-warm: #e06a4a;
+
+  --world-scale: 1;
+  --object-scale: 1;
+  --disc-x: 0px;
+  --disc-y: 0px;
+
+  position: relative;
+  isolation: isolate;
+  inline-size: 100%;
+  block-size: 100dvh;
+  min-block-size: 640px;
+  overflow: hidden;
+  background: var(--sc-bg);
+  font-family: var(--font-meta);
+  color: var(--sc-ink);
+}
+
+/* The custom cursor replaces the native one, but only once the runtime has
+ * confirmed a fine pointer and mounted it. Without JS the native cursor
+ * stays. */
+.scene[data-cursor-active="true"],
+.scene[data-cursor-active="true"] a {
+  cursor: none;
+}
+
+/* Vignette. */
+.vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(76% 66% at 50% 46%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 80%),
+    radial-gradient(120% 90% at 50% 122%, rgba(12, 12, 17, 0.75), rgba(0, 0, 0, 0) 62%);
+}
+
+/**
+ * The stage holds the question plus BOTH compositions. Mobile and desktop are
+ * genuinely different arrangements — stacked regions versus two anchored
+ * worlds — so each is authored separately and the inactive one is removed
+ * from the layout. The question itself is rendered once and simply
+ * repositioned, so the document has exactly one <h1>.
+ */
+.stageLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktopWorlds {
+  display: none;
+}
+
+.mobileRegions {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+@media (min-width: 700px) {
+  /* Desktop: enable the anchored worlds and set a modest desktop-only
+   * object scale so the two environmental anchors read stronger. */
+  .scene {
+    --object-scale: 1.13;
+  }
+
+  .desktopWorlds {
+    display: block;
+    position: absolute;
+    inset: 0;
+  }
+
+  .mobileRegions {
+    display: none;
+  }
+}
+
+/* ====================================================================== */
+/* WORLDS                                                                 */
+/* ====================================================================== */
+
+.worldQuick {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 560px;
+  height: 900px;
+  transform-origin: left bottom;
+  transform: scale(var(--world-scale));
+}
+
+.worldStay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 560px;
+  height: 900px;
+  transform-origin: right center;
+  transform: scale(var(--world-scale));
+}
+
+/* Positioned decorative layers get their geometry inline (it is unique per
+ * element and belongs with the data that describes it); this class carries
+ * only what they share. */
+.layer {
+  position: absolute;
+  opacity: 0;
+}
+
+.foliageSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.branchGroup {
+  transform-box: view-box;
+  transform-origin: 540px 40px;
+  transition: transform 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.blossomGroup {
+  transform-box: view-box;
+  transform-origin: 520px 120px;
+  transition: transform 1.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+}
+
+.branchPath {
+  fill: none;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+/* The garden leans toward you when you approach the stone. */
+.scene[data-stay-hot="true"] .branchGroup {
+  transform: rotate(0.6deg);
+}
+
+.scene[data-stay-hot="true"] .blossomGroup {
+  transform: rotate(0.9deg);
+}
+
+.leafField {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 560px;
+  height: 640px;
+  z-index: 6;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.leaf {
+  position: absolute;
+  border-radius: 100% 0 100% 0;
+  transition: transform 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform: rotate(var(--leaf-rot)) translate(0, 0);
+}
+
+.scene[data-stay-hot="true"] .leaf {
+  transform: rotate(calc(var(--leaf-rot) + var(--leaf-hot-rot)))
+    translate(var(--leaf-hot-x), var(--leaf-hot-y));
+}
+
+/* ====================================================================== */
+/* FRACTURES                                                              */
+/* ====================================================================== */
+
+.fractureField {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fracture {
+  position: absolute;
+  height: 1px;
+  opacity: var(--frac-o);
+  transition: opacity 0.5s ease;
+}
+
+.scene[data-quick-hot="true"] .fracture {
+  opacity: min(1, calc(var(--frac-o) + 0.45));
+}
+
+/* ====================================================================== */
+/* QUICK — the crystal                                                    */
+/* ====================================================================== */
+
+.quickWrap {
+  position: absolute;
+  left: 74px;
+  top: 264px;
+  width: 244px;
+  height: 380px;
+  z-index: 5;
+  opacity: 0;
+}
+
+/* One shape, reused by the drop shadow, the rim, the bevel and the link. */
+.crystalShape {
+  clip-path: polygon(
+    14% 0%,
+    86% 5%,
+    100% 22%,
+    96% 74%,
+    78% 100%,
+    22% 97%,
+    4% 78%,
+    0% 26%
+  );
+}
+
+.quickShadow {
+  position: absolute;
+  left: -16px;
+  top: -8px;
+  width: 276px;
+  height: 408px;
+  background: #010103;
+  filter: blur(11px);
+  opacity: 0.9;
+}
+
+.quickRim {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  width: 248px;
+  height: 384px;
+  background: linear-gradient(
+    160deg,
+    rgba(230, 70, 84, 0.9),
+    rgba(192, 24, 42, 0.7) 60%,
+    rgba(192, 24, 42, 0.35)
+  );
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+}
+
+.scene[data-quick-hot="true"] .quickRim {
+  opacity: 0.85;
+}
+
+.quickBevel {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 246px;
+  height: 382px;
+  background: linear-gradient(
+    148deg,
+    rgba(255, 255, 255, 0.19),
+    rgba(255, 255, 255, 0.03) 30%,
+    rgba(192, 24, 42, 0.24) 84%,
+    rgba(192, 24, 42, 0)
+  );
+  pointer-events: none;
+}
+
+.quickDisc {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: #e9e4dc;
+  text-decoration: none;
+  background: linear-gradient(
+    152deg,
+    #25242f 0%,
+    #15141c 26%,
+    #0b0b11 62%,
+    #06060b 100%
+  );
+  /* Parallax toward the cursor, capped at 7px by the runtime. */
+  transform: translate(var(--disc-x), var(--disc-y));
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.quickSheen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 52%;
+  background: linear-gradient(158deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0) 74%);
+  pointer-events: none;
+}
+
+.quickShade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 44%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+
+.innerFracture {
+  position: absolute;
+  height: 1px;
+  transition:
+    opacity 0.45s ease,
+    box-shadow 0.45s ease;
+  pointer-events: none;
+}
+
+.scene[data-quick-hot="true"] .innerFracture {
+  opacity: 0.85;
+  box-shadow: 0 0 10px rgba(192, 24, 42, 0.55);
+}
+
+/* Cursor-tracked light. The runtime only writes two coordinates. */
+.discLight {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.quickDisc .discLight {
+  background: radial-gradient(
+    150px circle at var(--light-x, 50%) var(--light-y, 50%),
+    rgba(255, 238, 226, 0.17),
+    rgba(192, 24, 42, 0.11) 40%,
+    rgba(192, 24, 42, 0) 66%
+  );
+}
+
+.scene[data-quick-hot="true"] .quickDisc .discLight {
+  opacity: 1;
+}
+
+.gleam {
+  position: absolute;
+  top: -16%;
+  height: 132%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.quickGleam {
+  left: 6%;
+  width: 56%;
+  background: radial-gradient(closest-side, rgba(255, 236, 225, 0.26), rgba(255, 236, 225, 0));
+  filter: blur(13px);
+}
+
+.quickGleam[data-play="true"] {
+  animation: auraGleamQ 1.15s cubic-bezier(0.3, 0.7, 0.2, 1);
+}
+
+.discContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.quickDisc .discContent {
+  gap: 17px;
+}
+
+.discIndex {
+  font-size: 10px;
+  letter-spacing: 0.36em;
+  color: #8b867f;
+}
+
+.discTitle {
+  text-transform: uppercase;
+  font-size: 19px;
+  letter-spacing: 0.17em;
+  line-height: 1.55;
+  text-align: center;
+  transition:
+    color 0.4s ease,
+    letter-spacing 0.4s ease;
+}
+
+.quickDisc .discTitle {
+  color: #efe9e0;
+}
+
+.scene[data-quick-hot="true"] .quickDisc .discTitle {
+  color: #fbf7f0;
+  letter-spacing: 0.19em;
+}
+
+.discDescriptor {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: #7d7873;
+}
+
+.discDuration {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+}
+
+.quickDisc .discDuration {
+  color: var(--sc-crimson-bright);
+}
+
+.discArrow {
+  font-size: 15px;
+  line-height: 1;
+  transition:
+    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+    color 0.4s ease;
+}
+
+.quickDisc .discArrow {
+  color: var(--sc-crimson-arrow);
+}
+
+.scene[data-quick-hot="true"] .quickDisc .discArrow {
+  transform: translateX(4px);
+  color: #e0303f;
+}
+
+/* ====================================================================== */
+/* STAY — the stone                                                       */
+/* ====================================================================== */
+
+.stayWrap {
+  position: absolute;
+  right: 60px;
+  top: 274px;
+  width: 346px;
+  height: 252px;
+  z-index: 5;
+  opacity: 0;
+}
+
+@media (min-width: 700px) {
+  /* Desktop: split the landing into two equal halves and center each
+   * world within its half. The world containers keep their authored size
+   * and internal absolute positioning so the art direction is preserved. */
+  .desktopWorlds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+  }
+
+  .worldQuick,
+  .worldStay {
+    position: relative;
+    width: 560px;
+    height: 900px;
+    transform: scale(calc(var(--world-scale) * var(--object-scale)));
+  }
+
+  .worldQuick {
+    justify-self: center;
+    align-self: end;
+    transform-origin: left bottom;
+    /* Nudge the quick world upward to visually align with the stay world */
+    transform: translateY(-170px) scale(calc(var(--world-scale) * var(--object-scale)));
+  }
+
+  .worldStay {
+    justify-self: center;
+    align-self: start;
+    transform-origin: right center;
+  }
+}
+
+.stayShadow {
+  position: absolute;
+  left: 18px;
+  right: -4px;
+  bottom: -22px;
+  height: 74px;
+  background: radial-gradient(52% 50% at 50% 50%, rgba(5, 9, 4, 0.8), rgba(5, 9, 4, 0) 70%);
+  filter: blur(11px);
+}
+
+.stayTilt {
+  position: absolute;
+  inset: 0;
+  transform: rotate(-2.2deg);
+}
+
+.stayDisc {
+  position: absolute;
+  inset: 0;
+  border-radius: 53% 47% 37% 63% / 63% 41% 59% 37%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: #332f28;
+  text-decoration: none;
+  background: radial-gradient(126% 138% at 70% 14%, #f2e9db 0%, #dcd0bb 46%, #b3a68f 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.34),
+    inset -14px -40px 60px rgba(64, 56, 42, 0.34),
+    inset 30px 6px 56px rgba(96, 84, 66, 0.22),
+    0 38px 66px -32px rgba(0, 0, 0, 0.85);
+  transform: translate(var(--disc-x), var(--disc-y));
+  transition:
+    transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.55s ease;
+}
+
+.stayModelling {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(30% 26% at 70% 22%, rgba(255, 250, 238, 0.22), rgba(255, 250, 238, 0) 74%),
+    radial-gradient(38% 32% at 26% 72%, rgba(96, 84, 66, 0.4), rgba(96, 84, 66, 0) 74%),
+    radial-gradient(20% 17% at 46% 34%, rgba(112, 96, 76, 0.22), rgba(112, 96, 76, 0) 72%);
+}
+
+/* Fine stippling — the stone reads as porous rather than as a flat fill. */
+.stayGrain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(88, 76, 60, 0.5) 0.5px, rgba(88, 76, 60, 0) 0.6px);
+  background-size: 5px 5px;
+  opacity: 0.4;
+}
+
+.stayForm {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    202deg,
+    rgba(255, 250, 238, 0.12) 0%,
+    rgba(70, 60, 46, 0.04) 38%,
+    rgba(40, 34, 25, 0.2) 78%,
+    rgba(26, 22, 16, 0.28) 100%
+  );
+}
+
+.stayPit {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Green bounce light from the foliage below. */
+.stayBounce {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(84% 52% at 46% 124%, rgba(48, 60, 40, 0.32), rgba(48, 60, 40, 0) 62%);
+}
+
+.stayDisc .discLight {
+  transition: opacity 0.6s ease;
+  background: radial-gradient(
+    190px circle at var(--light-x, 50%) var(--light-y, 50%),
+    rgba(255, 250, 236, 0.8),
+    rgba(255, 236, 206, 0.3) 44%,
+    rgba(255, 230, 196, 0) 72%
+  );
+}
+
+.scene[data-stay-hot="true"] .stayDisc .discLight {
+  opacity: 1;
+}
+
+.stayGleam {
+  left: 8%;
+  width: 56%;
+  background: radial-gradient(closest-side, rgba(255, 250, 238, 0.6), rgba(255, 250, 238, 0));
+  filter: blur(14px);
+}
+
+.stayGleam[data-play="true"] {
+  animation: auraGleamS 1.7s cubic-bezier(0.35, 0.7, 0.2, 1);
+}
+
+.stayDisc .discContent {
+  gap: 15px;
+  padding: 0 24px;
+}
+
+.stayDisc .discIndex {
+  color: #57503f;
+}
+
+.stayDisc .discTitle {
+  color: #2a261f;
+  transition:
+    color 0.5s ease,
+    letter-spacing 0.5s ease;
+}
+
+.scene[data-stay-hot="true"] .stayDisc .discTitle {
+  color: #211e18;
+  letter-spacing: 0.19em;
+}
+
+.stayDisc .discDescriptor {
+  color: #4a443a;
+}
+
+.stayDisc .discDuration {
+  color: #7a3f45;
+}
+
+.stayDisc .discArrow {
+  color: #3a332b;
+  transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.scene[data-stay-hot="true"] .stayDisc .discArrow {
+  transform: translateX(4px);
+}
+
+/* ====================================================================== */
+/* FOCUS                                                                  */
+/* ====================================================================== */
+/* The design suppressed the default outline on both objects. These replace
+ * it with an indicator matched to each material — the crystal takes a bright
+ * bone ring, the stone a warm halo — so keyboard users get a clearly visible
+ * state without breaking the art direction. Focus also drives every hover
+ * response via the same data attributes. */
+
+.quickDisc:focus-visible {
+  outline: 2px solid #f4efe6;
+  outline-offset: -3px;
+}
+
+.stayDisc:focus-visible {
+  outline: none;
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -38px 58px rgba(92, 80, 64, 0.34),
+    0 0 0 2px rgba(255, 246, 232, 0.95),
+    0 0 30px rgba(240, 214, 178, 0.55);
+}
+
+@media (forced-colors: active) {
+  .quickDisc:focus-visible,
+  .stayDisc:focus-visible {
+    outline: 3px solid Highlight;
+    outline-offset: 2px;
+  }
+}
+
+/* ====================================================================== */
+/* CENTRE — the question                                                  */
+/* ====================================================================== */
+
+/* Mobile: first block in the stacked column. */
+.centre {
+  position: relative;
+  z-index: 7;
+  flex: 0 0 auto;
+  padding: 84px 22px 0;
+}
+
+/* Desktop: lifted out of flow onto the design's coordinates, sitting between
+ * the two worlds. */
+@media (min-width: 700px) {
+  .centre {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: clamp(104px, 17vh, 168px);
+    padding: 0;
+    max-inline-size: 420px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    text-align: center;
+  }
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(38px, 12.4vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -0.012em;
+  color: var(--sc-ink);
+  text-wrap: balance;
+}
+
+@media (min-width: 700px) {
+  .title {
+    font-size: clamp(42px, 4.9vw, 72px);
+    line-height: 1.04;
+  }
+}
+
+/* Each line is clipped so its reveal cannot bleed into its neighbour. */
+.titleLine {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.06em;
+}
+
+/* The editorial reveal: a soft-edged mask travelling left across the words,
+ * so the line resolves out of the dark rather than typing itself in. */
+.titleWipe {
+  display: block;
+  mask-image: linear-gradient(
+    90deg,
+    #000 0,
+    #000 25%,
+    rgba(0, 0, 0, 0.4) 32%,
+    rgba(0, 0, 0, 0) 42%
+  );
+  mask-size: 400% 100%;
+  mask-repeat: no-repeat;
+  mask-position: 62% 0;
+}
+
+.titleItalic {
+  font-style: italic;
+  color: var(--sc-ink-italic);
+}
+
+.question {
+  margin-top: 26px;
+  max-inline-size: none;
+  font-size: 9.5px;
+  letter-spacing: 0.32em;
+  line-height: 2.1;
+  /* Set in natural case and uppercased visually, so assistive technology
+   * reads a sentence rather than spelling out capitals. */
+  text-transform: uppercase;
+  color: var(--sc-ink-soft);
+  mask-image: linear-gradient(
+    90deg,
+    #000 0,
+    #000 25%,
+    rgba(0, 0, 0, 0.4) 32%,
+    rgba(0, 0, 0, 0) 42%
+  );
+  mask-size: 400% 100%;
+  mask-repeat: no-repeat;
+  mask-position: 62% 0;
+}
+
+@media (min-width: 700px) {
+  .question {
+    margin-top: clamp(28px, 4.5vh, 44px);
+    font-size: 9px;
+    max-inline-size: 240px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+}
+
+.wordmark {
+  position: absolute;
+  left: clamp(22px, 2.8vw, 40px);
+  top: clamp(22px, 4vh, 36px);
+  z-index: 8;
+  margin: 0;
+  max-inline-size: none;
+  font-size: 9.5px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--sc-wordmark);
+  opacity: 0;
+}
+
+/* ====================================================================== */
+/* PARTICLES + CURSOR                                                     */
+/* ====================================================================== */
+
+.particles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  will-change: transform;
+}
+
+.cursorInner {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+.cursorRing {
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(232, 226, 216, 0.45);
+  transform: scale(1);
+  transition:
+    transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.cursorDot {
+  position: absolute;
+  left: -1.5px;
+  top: -1.5px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--sc-ink);
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.cursorGlyph {
+  position: absolute;
+  left: -6px;
+  top: -9px;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--sc-crimson);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.cursor[data-mode="quick"] .cursorRing {
+  opacity: 0;
+  transform: scale(0.4);
+}
+
+.cursor[data-mode="quick"] .cursorDot {
+  transform: scale(0);
+}
+
+.cursor[data-mode="quick"] .cursorGlyph {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.cursor[data-mode="stay"] .cursorRing {
+  opacity: 0.75;
+  transform: scale(1.55);
+  border-color: rgba(240, 224, 198, 0.5);
+}
+
+.cursor[data-mode="stay"] .cursorDot {
+  transform: scale(0.8);
+  background: #f0e2c8;
+}
+
+/* ====================================================================== */
+/* MOBILE COMPOSITION                                                     */
+/* ====================================================================== */
+
+
+
+
+.mobileRegion {
+  position: relative;
+  flex: 1 1 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.mobileEmber {
+  margin-top: 26px;
+}
+
+.mobileQuickWrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -79px;
+  margin-top: -113px;
+  width: 158px;
+  height: 226px;
+  z-index: 5;
+  opacity: 0;
+}
+
+.mobileQuickWrap .quickShadow {
+  left: -12px;
+  top: -6px;
+  width: 182px;
+  height: 244px;
+  filter: blur(9px);
+}
+
+.mobileQuickWrap .quickRim {
+  width: 162px;
+  height: 230px;
+}
+
+.mobileQuickWrap .quickBevel {
+  width: 160px;
+  height: 228px;
+}
+
+.mobileQuickWrap .discContent {
+  gap: 11px;
+  padding: 0;
+}
+
+.mobileQuickWrap .discIndex {
+  font-size: 9px;
+}
+
+.mobileQuickWrap .discTitle {
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+}
+
+.mobileQuickWrap .discDescriptor,
+.mobileQuickWrap .discDuration {
+  font-size: 9px;
+  letter-spacing: 0.28em;
+}
+
+.mobileQuickWrap .discArrow {
+  font-size: 13px;
+}
+
+.mobileQuickWrap .quickGleam {
+  left: 12%;
+  width: 64%;
+  filter: blur(12px);
+}
+
+.mobileStayWrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -110px;
+  margin-top: -86px;
+  width: 220px;
+  height: 172px;
+  z-index: 5;
+  opacity: 0;
+}
+
+.mobileStayWrap .stayShadow {
+  left: 14px;
+  right: -4px;
+  bottom: -16px;
+  height: 52px;
+  filter: blur(9px);
+}
+
+.mobileStayWrap .stayDisc {
+  border-radius: 46% 54% 41% 59% / 57% 45% 55% 43%;
+  transform: rotate(-2deg);
+  color: #3a352d;
+  background: radial-gradient(120% 130% at 32% 16%, #f5eee2 0%, #e4d8c5 48%, #bdb09d 100%);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -26px 40px rgba(92, 80, 64, 0.34),
+    0 26px 44px -24px rgba(0, 0, 0, 0.8);
+}
+
+.mobileStayWrap .stayForm {
+  background: linear-gradient(
+    202deg,
+    rgba(255, 250, 238, 0.12) 0%,
+    rgba(70, 60, 46, 0.05) 34%,
+    rgba(40, 34, 25, 0.44) 76%,
+    rgba(26, 22, 16, 0.62) 100%
+  );
+}
+
+.mobileStayWrap .stayBounce {
+  background: radial-gradient(90% 60% at 50% 108%, rgba(52, 64, 44, 0.5), rgba(52, 64, 44, 0) 62%);
+}
+
+.mobileStayWrap .discContent {
+  gap: 11px;
+  padding: 0;
+}
+
+.mobileStayWrap .discIndex {
+  font-size: 9px;
+}
+
+.mobileStayWrap .discTitle {
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+}
+
+.mobileStayWrap .discDescriptor,
+.mobileStayWrap .discDuration {
+  font-size: 9px;
+  letter-spacing: 0.28em;
+}
+
+.mobileStayWrap .discArrow {
+  font-size: 13px;
+}
+
+.mobileStayWrap .stayGleam {
+  left: 10%;
+  width: 60%;
+}
+
+.mobileLeafField {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 150px;
+  z-index: 6;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.mobileFoliageSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.mobileBranchGroup {
+  transform-box: view-box;
+  transform-origin: 380px 10px;
+  transition: transform 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.mobileBlossomGroup {
+  transform-box: view-box;
+  transform-origin: 370px 30px;
+  transition: transform 1.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+}
+
+/* ====================================================================== */
+/* ENTRANCE                                                               */
+/* ====================================================================== */
+
+@keyframes auraFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes auraRise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes auraWipe {
+  from {
+    mask-position: 62% 0;
+  }
+  to {
+    mask-position: 0% 0;
+  }
+}
+
+@keyframes auraShardL {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 22px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes auraShardR {
+  from {
+    opacity: 0;
+    transform: translate3d(28px, 16px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes auraDisc {
+  from {
+    opacity: 0;
+    transform: scale(0.93);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes auraDraw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes auraGleamQ {
+  0% {
+    opacity: 0;
+    transform: translate(-52%, -34%);
+  }
+  28% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(48%, 32%);
+  }
+}
+
+@keyframes auraGleamS {
+  0% {
+    opacity: 0;
+    transform: translate(-46%, -26%);
+  }
+  30% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(44%, 26%);
+  }
+}
+
+/* Every entrance animation is declared only inside `no-preference`, so the
+ * resting state is the finished state. With reduced motion the scene simply
+ * renders settled: nothing is hidden behind an animation that never runs, and
+ * no `!important` override is needed to rescue it. */
+/* Keyframe names are hashed by CSS Modules, so the animation is selected by
+ * class here and only its timing is passed in from the scene data. */
+@media (prefers-reduced-motion: no-preference) {
+  .enter {
+    animation-duration: var(--enter-dur, 1.5s);
+    animation-delay: var(--enter-delay, 0s);
+    animation-fill-mode: forwards;
+  }
+
+  .enterFade {
+    animation-name: auraFade;
+    animation-timing-function: ease-out;
+  }
+
+  .enterShardL {
+    animation-name: auraShardL;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .enterShardR {
+    animation-name: auraShardR;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .enterDisc {
+    animation-name: auraDisc;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .branchPath {
+    animation: auraDraw var(--enter-dur, 1.5s) cubic-bezier(0.3, 0.8, 0.2, 1)
+      var(--enter-delay, 0s) forwards;
+  }
+
+  .titleWipe {
+    will-change: mask-position;
+    animation: auraWipe var(--enter-dur, 0.88s) cubic-bezier(0.34, 0.03, 0.24, 1)
+      var(--enter-delay, 0.3s) both;
+  }
+
+  .question {
+    animation:
+      auraRise 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.36s both,
+      auraWipe 0.8s cubic-bezier(0.34, 0.03, 0.24, 1) 1.36s both;
+  }
+}
+
+/* With reduced motion the branch is drawn, not drawing. */
+@media (prefers-reduced-motion: reduce) {
+  .titleWipe, .question { mask: none; -webkit-mask: none; opacity: 1; }
+  .branchPath {
+    stroke-dashoffset: 0;
+  }
+
+  .layer,
+  .fractureField,
+  .quickWrap,
+  .stayWrap,
+  .mobileQuickWrap,
+  .mobileStayWrap,
+  .leafField,
+  .mobileLeafField,
+  .blossomGroup,
+  .mobileBlossomGroup,
+  .wordmark {
+    opacity: 1;
+  }
+}
+
+/* Keep the editorial scale while making the small entrance labels readable. */
+.question { font-size: 12px; letter-spacing: .25em; color: #aca196; }
+.wordmark { display: inline-flex; align-items: center; min-height: 44px; top: 16px; font: 400 28px/1 var(--font-display); letter-spacing: .07em; color: #d4cbc0; }
+.wordmark { text-decoration: none; }
+.wordmark i { color: #c0182a; }
+.wordmark:hover { color: #fff5e8; }
+.wordmark:focus-visible { outline: 1px solid #e0555f; outline-offset: 6px; }
+.discIndex, .discDescriptor, .discDuration { font-size: 11px; }
+@media (max-width: 760px) {
+  .scene [data-scene-layer="mq-fore"] { bottom: -95px !important; }
+  .mobileLeafField { bottom: -48px; }
+  .mobileQuickWrap .discIndex, .mobileQuickWrap .discDescriptor, .mobileQuickWrap .discDuration,
+  .mobileStayWrap .discIndex, .mobileStayWrap .discDescriptor, .mobileStayWrap .discDuration { font-size: 11px; letter-spacing: .13em; }
+}

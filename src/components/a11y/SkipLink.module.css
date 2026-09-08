@@ -1,0 +1,39 @@
+/**
+ * Off-screen until focused, then anchored to the top-left of the viewport.
+ *
+ * `translate` is used rather than `top` so that revealing the link does not
+ * trigger layout — the same discipline the rest of the site's motion follows.
+ */
+.skipLink {
+  position: fixed;
+  inset-block-start: var(--space-sm);
+  inset-inline-start: var(--space-sm);
+  z-index: var(--z-skip-link);
+
+  padding: var(--space-2xs) var(--space-sm);
+  min-block-size: var(--target-min);
+  display: inline-flex;
+  align-items: center;
+
+  background-color: var(--color-surface-page);
+  color: var(--color-ink-primary);
+  border: var(--hairline) solid var(--color-line-strong);
+
+  font-family: var(--font-meta);
+  font-size: var(--text-meta);
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  translate: 0 calc(-100% - var(--space-lg));
+  transition: translate var(--duration-fast) var(--ease-entrance);
+}
+
+.skipLink:focus-visible {
+  translate: 0 0;
+}
+
+/* Keyboard users on browsers without :focus-visible support still get it. */
+.skipLink:focus {
+  translate: 0 0;
+}

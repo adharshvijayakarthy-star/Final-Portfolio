@@ -1,0 +1,21 @@
+/**
+ * Cascade layer order for Project AURA.
+ *
+ * This file MUST be the first import in global.css. Declaring the order up
+ * front means specificity fights never decide the outcome — layer order does.
+ *
+ *   reset       normalisation only, zero opinions
+ *   tokens      custom properties, no selectors that paint
+ *   base        element-level typography and colour
+ *   layout      container / grid / section rhythm primitives
+ *   utilities   single-purpose escape hatches, used sparingly
+ *
+ * CSS Modules are intentionally left UNLAYERED. Unlayered styles beat every
+ * layered style in the cascade, so a component's own `.module.css` always wins
+ * over global base styles without needing `!important` or specificity hacks.
+ *
+ * The one exception is accessibility enforcement (see a11y.css), which uses
+ * `!important` on purpose so that no component — layered or not — can hide
+ * content from a user who has asked for reduced motion.
+ */
+@layer reset, tokens, base, layout, utilities;

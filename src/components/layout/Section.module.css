@@ -1,0 +1,41 @@
+.section {
+  position: relative;
+  padding-block: var(--rhythm-section);
+  /* A section owns its own horizontal overflow so that a full-bleed moment
+   * inside it can never introduce a document-level scrollbar. */
+  overflow-x: clip;
+}
+
+.section[data-space="tight"] {
+  padding-block: var(--rhythm-group);
+}
+
+.section[data-space="loose"] {
+  padding-block: var(--rhythm-section-loose);
+}
+
+.section[data-space="chapter"] {
+  padding-block: var(--rhythm-chapter);
+}
+
+.section[data-space="none"] {
+  padding-block: 0;
+}
+
+/* Sections carry a background because the inverted `[data-surface="bone"]`
+ * scope redefines --color-surface-page; without this the flip would only
+ * change text colour. */
+.section {
+  background-color: var(--color-surface-page);
+  color: var(--color-ink-primary);
+}
+
+/* The hairline is the house's structural device: sections are separated by a
+ * rule rather than by a shadow, a card edge, or a gradient. */
+.section[data-rule="top"] {
+  border-block-start: var(--hairline) solid var(--color-line-hairline);
+}
+
+.section[data-rule="bottom"] {
+  border-block-end: var(--hairline) solid var(--color-line-hairline);
+}

@@ -1,0 +1,64 @@
+/**
+ * SPACING TOKENS
+ *
+ * Two families:
+ *
+ *   --space-*    a component-level scale. Fixed rem values, predictable.
+ *   --rhythm-*   editorial vertical rhythm. Fluid, because the distance
+ *                between two sections is a compositional decision that must
+ *                breathe differently on a phone than on a 27" display.
+ *
+ * The scale is a modified 4pt base that opens up quickly at the top end —
+ * generous negative space is the load-bearing element of an editorial layout,
+ * so the large steps are deliberately far apart.
+ */
+@layer tokens {
+  :root {
+    /* ---------------------------------------------------------------- */
+    /* COMPONENT SCALE                                                   */
+    /* ---------------------------------------------------------------- */
+    --space-3xs: 0.25rem; /*  4px */
+    --space-2xs: 0.5rem; /*  8px */
+    --space-xs: 0.75rem; /* 12px */
+    --space-sm: 1rem; /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2rem; /* 32px */
+    --space-xl: 3rem; /* 48px */
+    --space-2xl: 4.5rem; /* 72px */
+    --space-3xl: 7rem; /* 112px */
+    --space-4xl: 10rem; /* 160px */
+
+    /* ---------------------------------------------------------------- */
+    /* EDITORIAL RHYTHM — fluid, 375px → 1440px                          */
+    /* ---------------------------------------------------------------- */
+
+    /* Gap between related blocks inside one section. */
+    --rhythm-block: clamp(1.5rem, 1.15rem + 1.5vw, 2.5rem);
+
+    /* Gap between distinct groups inside one section. */
+    --rhythm-group: clamp(2.5rem, 1.8rem + 3vw, 4.5rem);
+
+    /* Vertical padding of a standard section. */
+    --rhythm-section: clamp(4rem, 2.6rem + 6vw, 8rem);
+
+    /* Vertical padding of a section that must feel like a held breath. */
+    --rhythm-section-loose: clamp(6rem, 3.5rem + 10.5vw, 13rem);
+
+    /* Distance a full-bleed chapter break occupies. */
+    --rhythm-chapter: clamp(8rem, 4.5rem + 15vw, 18rem);
+
+    /* ---------------------------------------------------------------- */
+    /* HAIRLINE                                                          */
+    /* ---------------------------------------------------------------- */
+    /* One physical device pixel wherever the display can render it. Rules are
+     * a primary structural device here, so their weight is a token, not a
+     * literal scattered through components. */
+    --hairline: 1px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    :root {
+      --hairline: 0.5px;
+    }
+  }
+}

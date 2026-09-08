@@ -1,0 +1,85 @@
+/**
+ * LAYOUT TOKENS
+ *
+ * Containers, gutters, the editorial grid, and the z-index ladder.
+ *
+ * BREAKPOINTS
+ * Custom properties cannot be used inside media queries, so the breakpoints
+ * live as literals. They are declared once here as documentation, mirrored in
+ * TypeScript at src/lib/breakpoints.ts for JS-side use, and must be kept in
+ * sync between the three places.
+ *
+ *   sm    30rem   480px   large phone
+ *   md    48rem   768px   tablet — the grid widens to 8 columns
+ *   lg    64rem  1024px   laptop — the grid widens to 12 columns
+ *   xl    90rem  1440px   the fluid scales top out here
+ *
+ * The responsive strategy is NOT "shrink the desktop composition". Mobile is
+ * a single-column, content-first reading experience; the cinematic multi-
+ * column composition is additive and starts at `lg`.
+ */
+@layer tokens {
+  :root {
+    /* ---------------------------------------------------------------- */
+    /* CONTAINERS                                                        */
+    /* ---------------------------------------------------------------- */
+    --container-text: var(--measure-prose); /* reading column */
+    --container-narrow: 46rem;
+    --container-default: 78rem;
+    --container-wide: 96rem;
+    --container-bleed: 100%;
+
+    /* ---------------------------------------------------------------- */
+    /* GUTTERS                                                           */
+    /* ---------------------------------------------------------------- */
+    /* The page margin. Deliberately generous at desktop — the whitespace at
+     * the edge of the frame is what makes the composition read as editorial
+     * rather than as a web app. */
+    --gutter: clamp(1.25rem, 0.85rem + 1.7vw, 2rem);
+
+    /* ---------------------------------------------------------------- */
+    /* GRID                                                              */
+    /* ---------------------------------------------------------------- */
+    --grid-columns: 4;
+    --grid-gap-x: var(--space-sm);
+    --grid-gap-y: var(--rhythm-block);
+
+    /* ---------------------------------------------------------------- */
+    /* Z-INDEX LADDER                                                    */
+    /* ---------------------------------------------------------------- */
+    /* Named rungs only. A raw z-index literal in a component is a bug. */
+    --z-below: -1;
+    --z-base: 0;
+    --z-raised: 10;
+    --z-sticky: 100;
+    --z-nav: 200;
+    --z-overlay: 300;
+    --z-modal: 400;
+    --z-skip-link: 500;
+
+    /* ---------------------------------------------------------------- */
+    /* SCROLL                                                            */
+    /* ---------------------------------------------------------------- */
+    /* Offset for in-page anchors so a future fixed nav never covers the
+     * heading a keyboard user just jumped to. */
+    --scroll-offset: var(--space-2xl);
+
+    /* Minimum hit area for interactive elements (WCAG 2.5.8 target size). */
+    --target-min: 44px;
+  }
+
+  @media (min-width: 48rem) {
+    :root {
+      --grid-columns: 8;
+      --grid-gap-x: var(--space-md);
+      --gutter: clamp(2rem, 0.4rem + 3.3vw, 4rem);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    :root {
+      --grid-columns: 12;
+      --grid-gap-x: var(--space-md);
+    }
+  }
+}

@@ -1,0 +1,79 @@
+/**
+ * MOTION TOKENS
+ *
+ * Mirrored verbatim in TypeScript at src/lib/motion/tokens.ts so that CSS
+ * transitions and Motion-driven JS animations share one vocabulary. If you
+ * change a value here, change it there.
+ *
+ * THE INTENSITY MULTIPLIER
+ * ------------------------
+ * `--motion-scale` is the mechanism that makes reduced-motion structural
+ * rather than bolted on. Every travelled distance is authored as:
+ *
+ *     translateY(calc(var(--motion-travel-md) * var(--motion-scale)))
+ *
+ * Under `prefers-reduced-motion: reduce` the multiplier drops to 0, so every
+ * distance collapses to zero automatically — including distances written by
+ * code that has not yet been reviewed for accessibility. Opting IN to motion
+ * is the default; opting out is enforced centrally in a11y.css.
+ */
+@layer tokens {
+  :root {
+    /* ---------------------------------------------------------------- */
+    /* DURATION                                                          */
+    /* ---------------------------------------------------------------- */
+    --duration-instant: 90ms; /* state flips: hover, focus, press */
+    --duration-fast: 180ms; /* small UI transitions */
+    --duration-base: 320ms; /* the default */
+    --duration-slow: 620ms; /* deliberate reveals */
+    --duration-cinematic: 1100ms; /* section-scale choreography */
+    --duration-ambient: 2600ms; /* environmental drift (Stay Awhile) */
+
+    /* ---------------------------------------------------------------- */
+    /* EASING                                                            */
+    /* ---------------------------------------------------------------- */
+    /* Entrances decelerate hard — the "expensive" feel of the site comes from
+     * things arriving fast and settling slowly. Exits are the inverse. */
+    --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-entrance: cubic-bezier(0.16, 1, 0.3, 1); /* expo out */
+    --ease-exit: cubic-bezier(0.7, 0, 0.84, 0); /* expo in */
+    --ease-sharp: cubic-bezier(0.85, 0, 0.15, 1); /* decisive, symmetric */
+    --ease-glide: cubic-bezier(0.22, 1, 0.36, 1); /* long, unhurried */
+    --ease-linear: linear; /* scroll-bound only */
+
+    /* ---------------------------------------------------------------- */
+    /* INTENSITY MULTIPLIER                                              */
+    /* ---------------------------------------------------------------- */
+    /* 1 = full motion. Set to 0 under prefers-reduced-motion (a11y.css). */
+    --motion-scale: 1;
+
+    /* ---------------------------------------------------------------- */
+    /* TRAVEL — how far a thing moves before it settles                  */
+    /* ---------------------------------------------------------------- */
+    /* Always multiply by --motion-scale at the point of use. */
+    --motion-travel-xs: 4px;
+    --motion-travel-sm: 10px;
+    --motion-travel-md: 24px;
+    --motion-travel-lg: 56px;
+    --motion-travel-xl: 96px;
+
+    /* Parallax depth factors, expressed as a fraction of scroll distance. */
+    --motion-parallax-near: 0.12;
+    --motion-parallax-mid: 0.24;
+    --motion-parallax-far: 0.4;
+
+    /* ---------------------------------------------------------------- */
+    /* STAGGER                                                           */
+    /* ---------------------------------------------------------------- */
+    --motion-stagger-tight: 40ms;
+    --motion-stagger-base: 80ms;
+    --motion-stagger-loose: 140ms;
+
+    /* ---------------------------------------------------------------- */
+    /* SCROLL-DRIVEN                                                     */
+    /* ---------------------------------------------------------------- */
+    /* How far into the viewport an element must be before it is considered
+     * "revealed". Consumed by CSS animation-range and by useInView margins. */
+    --motion-reveal-threshold: 15%;
+  }
+}

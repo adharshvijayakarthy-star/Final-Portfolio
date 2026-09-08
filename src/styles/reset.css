@@ -1,0 +1,125 @@
+/**
+ * RESET
+ *
+ * Normalisation only — no aesthetics. Anything with an opinion about how the
+ * site should look belongs in base.css.
+ */
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* Never disable user zoom, and never cap it. */
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd,
+  ol,
+  ul {
+    margin: 0;
+  }
+
+  /* Lists that have been given a role in markup are presentational; strip the
+   * default styling only from those, so semantic lists keep their bullets and
+   * their announced item count. */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+    padding: 0;
+  }
+
+  /* Headings inherit by default; each component opts in to a scale step. This
+   * prevents heading level (a semantic/accessibility decision) from being
+   * entangled with visual size (a design decision). */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    text-wrap: balance;
+  }
+
+  p,
+  li,
+  figcaption {
+    text-wrap: pretty;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  img,
+  video {
+    height: auto;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+  }
+
+  button {
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  a {
+    color: inherit;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 0.18em;
+  }
+
+  /* Long unbroken strings (URLs, IDs) must not force horizontal scroll. */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  a {
+    overflow-wrap: break-word;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* Full-height frame for the eventual fixed chrome. */
+  html,
+  body {
+    min-height: 100%;
+  }
+}
