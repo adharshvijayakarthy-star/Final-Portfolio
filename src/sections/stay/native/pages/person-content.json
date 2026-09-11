@@ -1,0 +1,94 @@
+{
+  "concepts": [
+    {
+      "step": 2,
+      "name": "Desire",
+      "body": "Wanting something specific enough to work for it. Most of what I have built started as a want I couldn't put down.",
+      "join": false,
+      "wrap": {
+        "width": "min(1240px,100%)",
+        "margin": "0 auto",
+        "display": "flex",
+        "justifyContent": "flex-end",
+        "paddingBottom": "clamp(56px,14vh,180px)"
+      },
+      "inner": {
+        "maxWidth": "34ch",
+        "marginLeft": 0,
+        "marginRight": "clamp(0px,5.32vw,150px)"
+      }
+    },
+    {
+      "step": 3,
+      "name": "Freedom",
+      "body": "The ability to choose. Time, work, place, people. It is the reason the other four matter to me.",
+      "join": false,
+      "wrap": {
+        "width": "min(1240px,100%)",
+        "margin": "0 auto",
+        "display": "flex",
+        "justifyContent": "flex-start",
+        "paddingBottom": "clamp(56px,14vh,180px)"
+      },
+      "inner": {
+        "maxWidth": "34ch",
+        "marginLeft": "clamp(0px,6.6vw,240px)",
+        "marginRight": 0
+      }
+    },
+    {
+      "step": 4,
+      "name": "Capability",
+      "body": "Being genuinely good at difficult things, rather than adjacent to them. I am not there yet, and I know roughly where the gap is.",
+      "join": false,
+      "wrap": {
+        "width": "min(1240px,100%)",
+        "margin": "0 auto",
+        "display": "flex",
+        "justifyContent": "flex-end",
+        "paddingBottom": "clamp(56px,14vh,180px)"
+      },
+      "inner": {
+        "maxWidth": "34ch",
+        "marginLeft": 0,
+        "marginRight": "clamp(0px,7.840000000000001vw,150px)"
+      }
+    },
+    {
+      "step": 5,
+      "name": "Experience",
+      "body": "A life with things in it. I would take the version with failure in it over the version with nothing in it.",
+      "join": false,
+      "wrap": {
+        "width": "min(1240px,100%)",
+        "margin": "0 auto",
+        "display": "flex",
+        "justifyContent": "flex-start",
+        "paddingBottom": "clamp(56px,14vh,180px)"
+      },
+      "inner": {
+        "maxWidth": "34ch",
+        "marginLeft": "clamp(0px,3.52vw,240px)",
+        "marginRight": 0
+      }
+    },
+    {
+      "step": 6,
+      "name": "People",
+      "body": "Relationships I would still choose if nothing was gained from them. This is the part I am least willing to trade.",
+      "join": true,
+      "wrap": {
+        "width": "min(1240px,100%)",
+        "margin": "0 auto",
+        "display": "flex",
+        "justifyContent": "flex-end",
+        "paddingBottom": "clamp(56px,14vh,180px)"
+      },
+      "inner": {
+        "maxWidth": "34ch",
+        "marginLeft": 0,
+        "marginRight": "clamp(0px,4.200000000000001vw,150px)"
+      }
+    }
+  ]
+}

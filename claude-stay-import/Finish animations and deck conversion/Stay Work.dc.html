@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>The Work — Stay Awhile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #efe9dc; color: #23291f; -webkit-font-smoothing: antialiased; }
+  a { color: #3d4c3a; }
+  a:hover { color: #23291f; }
+  ::selection { background: rgba(220,192,191,0.55); }
+  :focus-visible { outline: 2px solid #3d4c3a; outline-offset: 4px; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  @keyframes blink { 0%, 48% { opacity: 1; } 52%, 100% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+</style>
+</helmet>
+<div style="position:relative;min-height:100vh;font-family:'EB Garamond',Georgia,serif">
+  <dc-import name="GardenScene" place="work" density="trace" hint-size="100%,100%"></dc-import>
+  <dc-import name="GardenNav" current="work" hint-size="0,0"></dc-import>
+
+  <main id="content" style="position:relative;z-index:1">
+    <section data-screen-label="Work opening" style="min-height:80vh;display:flex;flex-direction:column;justify-content:center;padding:16vh clamp(20px,5vw,60px) 10vh">
+      <div style="max-width:960px;margin:0 auto;width:100%">
+        <p style="margin:0 0 clamp(16px,3vh,26px);font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.3em;text-transform:uppercase;color:#5b6350;animation:rise 0.9s ease-out both">06 · Workshop</p>
+        <h1 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(2.6rem,7.4vw,6rem);line-height:0.98;letter-spacing:-0.015em;text-shadow:0 2px 22px rgba(247,243,234,0.8);animation:rise 1.4s cubic-bezier(0.22,0.61,0.36,1) both">The things I<br />actually built.</h1>
+        <p style="margin:clamp(22px,4vh,36px) 0 0;max-width:42ch;font-size:clamp(1.1rem,2vw,1.35rem);line-height:1.6;color:#3a4133;text-shadow:0 1px 14px rgba(247,243,234,0.9);animation:rise 1.8s cubic-bezier(0.22,0.61,0.36,1) both">Five projects. Each one is on the bench here with its problem, its system and its current state. The long case studies open from each entry.</p>
+        <p style="margin:clamp(26px,5vh,44px) 0 0;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.24em;text-transform:uppercase;color:#4c5545;text-shadow:0 1px 14px rgba(247,243,234,0.9);animation:rise 2.2s ease-out both">Five stations ahead · each one runs as you reach it</p>
+      </div>
+    </section>
+
+    <!-- ── STATION 01 · STUDY PLANNER ─ the schedule board on the bench ─────────── -->
+    <section id="study-planner" data-station="1" aria-labelledby="w1" style="position:relative;padding:clamp(30px,7vh,90px) clamp(20px,5vw,60px)">
+      <div style="max-width:1040px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(24px,4vw,52px);align-items:start">
+        <div>
+          <div data-step="1" style="display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:13px 20px;background:linear-gradient(163deg,#cdc6b4 0%,#c9c2af 52%,#c5bda9 100%);border:1px solid rgba(84,79,64,0.42);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,252,242,0.55), inset 0 -2px 0 rgba(70,66,52,0.22), 0 20px 36px -28px rgba(35,41,31,0.9)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.24em;color:#4f4a3c">01</span>
+            <h2 id="w1" style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.05;color:#23291f;text-shadow:0 1px 0 rgba(255,252,242,0.5)">Study Planner</h2>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:#423e33">Modular · constraints</span>
+          </div>
+          <div data-step="2" style="margin-top:clamp(20px,3vh,30px);background:#f7f2e4;border:1px solid rgba(120,108,84,0.28);box-shadow:0 18px 34px -28px rgba(35,41,31,0.8);padding:clamp(24px,3.6vw,38px) clamp(22px,3.2vw,34px);transform:rotate(-0.4deg)">
+            <p style="margin:0 0 22px;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.28;color:#23291f">A planner isn't a calendar. It's a set of competing constraints.</p>
+            <p style="margin:0 0 7px;font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">Problem</p>
+            <p style="margin:0 0 18px;font-size:1.08rem;line-height:1.7;color:#3a4133;text-wrap:pretty">The IB workload becomes difficult to organise by hand. Everything is urgent and nothing is evenly spread.</p>
+            <p style="margin:0 0 7px;font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">System</p>
+            <p style="margin:0 0 18px;font-size:1.08rem;line-height:1.7;color:#3a4133;text-wrap:pretty">Subjects, decimal priority weights, sessions, break rules, day and week views, and a focus mode with tasks and timers. Built in HTML, CSS and JavaScript with local storage.</p>
+            <p style="margin:0 0 7px;font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">The difficult part</p>
+            <p style="margin:0;font-size:1.08rem;line-height:1.7;color:#3a4133;text-wrap:pretty">The engine didn't just need to produce a schedule. It needed to produce a reasonable distribution — no subject taking over the week, no arbitrary-feeling plan, and sensible behaviour in the cases I hadn't planned for.</p>
+          </div>
+        </div>
+
+        <div data-step="3" style="position:relative;padding:clamp(16px,2.4vw,24px);background:linear-gradient(180deg,#d9d0bb 0%,#cdc3ab 62%,#c1b69c 100%);border:1px solid rgba(84,79,64,0.42);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,252,242,0.5), 0 24px 44px -32px rgba(35,41,31,0.95)">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:14px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.56rem;letter-spacing:0.22em;text-transform:uppercase;color:#565042">Week board</span>
+            <span data-lock="1" style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#4f4a3c;opacity:0">Schedule locked</span>
+          </div>
+
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;min-height:26px">
+            <span data-chip="1" style="display:flex;align-items:center;gap:7px;padding:5px 9px;background:rgba(61,76,58,0.14);border:1px solid rgba(61,76,58,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.52rem;letter-spacing:0.14em;color:#2f3629">MATH <b data-w="1" style="font-weight:500;color:#5f5949">0.4</b></span>
+            <span data-chip="2" style="display:flex;align-items:center;gap:7px;padding:5px 9px;background:rgba(61,76,58,0.14);border:1px solid rgba(61,76,58,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.52rem;letter-spacing:0.14em;color:#2f3629">PHYS <b data-w="2" style="font-weight:500;color:#5f5949">0.4</b></span>
+            <span data-chip="3" style="display:flex;align-items:center;gap:7px;padding:5px 9px;background:rgba(61,76,58,0.14);border:1px solid rgba(61,76,58,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.52rem;letter-spacing:0.14em;color:#2f3629">CHEM <b data-w="3" style="font-weight:500;color:#5f5949">0.4</b></span>
+            <span data-chip="4" style="display:flex;align-items:center;gap:7px;padding:5px 9px;background:rgba(61,76,58,0.14);border:1px solid rgba(61,76,58,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.52rem;letter-spacing:0.14em;color:#2f3629">ENG <b data-w="4" style="font-weight:500;color:#5f5949">0.4</b></span>
+            <span data-chip="5" style="display:flex;align-items:center;gap:7px;padding:5px 9px;background:rgba(61,76,58,0.14);border:1px solid rgba(61,76,58,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.52rem;letter-spacing:0.14em;color:#2f3629">HIST <b data-w="5" style="font-weight:500;color:#5f5949">0.4</b></span>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-rows:26px;gap:5px;padding:14px;border:1px solid rgba(61,76,58,0.26);background:rgba(239,233,220,0.62)">
+            <div data-blk="1" style="grid-column:1;grid-row:1/3;background:rgba(61,76,58,0.5)"></div>
+            <div data-blk="2" style="grid-column:2;grid-row:1/3;background:rgba(61,76,58,0.35)"></div>
+            <div data-blk="3" style="grid-column:3;grid-row:1/2;background:rgba(61,76,58,0.42)"></div>
+            <div data-blk="4" style="grid-column:4;grid-row:1/3;background:rgba(61,76,58,0.3)"></div>
+            <div data-blk="5" data-move="1" style="grid-column:5;grid-row:1/2;background:rgba(61,76,58,0.46)"></div>
+            <div data-brk="1" style="grid-column:1/6;grid-row:3;background:repeating-linear-gradient(90deg,rgba(176,144,79,0.55) 0 6px,rgba(176,144,79,0) 6px 12px)"></div>
+            <div data-blk="6" style="grid-column:1;grid-row:4;background:rgba(61,76,58,0.3)"></div>
+            <div data-blk="7" style="grid-column:2;grid-row:4/6;background:rgba(61,76,58,0.44)"></div>
+            <div data-blk="8" style="grid-column:3;grid-row:4;background:rgba(61,76,58,0.28)"></div>
+            <div data-blk="9" style="grid-column:4;grid-row:4;background:rgba(61,76,58,0.36)"></div>
+            <div data-blk="10" style="grid-column:5;grid-row:4/6;background:rgba(61,76,58,0.32)"></div>
+          </div>
+
+          <div style="display:flex;justify-content:space-between;gap:8px;margin-top:9px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.16em;color:#6b6553">MON</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.16em;color:#6b6553">TUE</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.16em;color:#6b6553">WED</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.16em;color:#6b6553">THU</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.16em;color:#6b6553">FRI</span>
+          </div>
+          <p data-note="1" style="margin:14px 0 0;min-height:2.6em;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.14em;line-height:1.7;color:#4f4a3c">Illustrative structure · the gold band is a break, not a session</p>
+        </div>
+      </div>
+      <p style="max-width:1040px;margin:clamp(22px,3vh,32px) auto 0;padding-top:16px;border-top:1px solid rgba(61,76,58,0.22);font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">Full case study · next pass</p>
+    </section>
+
+    <!-- ── STATION 02 · PAST PAPER LOGGER ─ the data board ─────────────────────── -->
+    <section id="past-paper-logger" data-station="2" aria-labelledby="w2" style="position:relative;padding:clamp(30px,7vh,90px) clamp(20px,5vw,60px)">
+      <div style="max-width:1040px;margin:0 auto">
+        <div data-step="1" style="display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:13px 20px;background:linear-gradient(163deg,#cdc6b4 0%,#c9c2af 52%,#c5bda9 100%);border:1px solid rgba(84,79,64,0.42);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,252,242,0.55), inset 0 -2px 0 rgba(70,66,52,0.22), 0 20px 36px -28px rgba(35,41,31,0.9)">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.24em;color:#4f4a3c">02</span>
+          <h2 id="w2" style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.5rem,3.2vw,2.2rem);line-height:1.05;color:#23291f;text-shadow:0 1px 0 rgba(255,252,242,0.5)">IGCSE Past Paper Logger &amp; Analytics</h2>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:#423e33">Data · trajectory</span>
+        </div>
+
+        <div data-step="2" style="margin-top:clamp(20px,3vh,32px);padding:clamp(18px,2.8vw,30px);background:linear-gradient(180deg,#3f4536 0%,#353b2d 100%);border:1px solid rgba(30,35,25,0.7);border-radius:2px;box-shadow:inset 0 1px 0 rgba(200,208,180,0.14), 0 26px 48px -34px rgba(20,25,16,0.95)">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:clamp(20px,3vw,36px);align-items:center">
+            <div>
+              <p style="margin:0 0 18px;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.2rem,2.4vw,1.65rem);line-height:1.3;color:#f2ecdd">I wanted to know more than just my marks. I wanted the pattern behind them.</p>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px">
+                <span data-pipe="1" style="padding:6px 10px;border:1px solid rgba(214,204,178,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.18em;text-transform:uppercase;color:#cdd3ba">Track</span>
+                <span data-pipe="2" style="padding:6px 10px;border:1px solid rgba(214,204,178,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.18em;text-transform:uppercase;color:#cdd3ba">Analyze</span>
+                <span data-pipe="3" style="padding:6px 10px;border:1px solid rgba(214,204,178,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.18em;text-transform:uppercase;color:#cdd3ba">Visualize</span>
+                <span data-pipe="4" style="padding:6px 10px;border:1px solid rgba(176,144,79,0.6);background:rgba(176,144,79,0.14);font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.18em;text-transform:uppercase;color:#e2c88c">Predict</span>
+              </div>
+              <p style="margin:0 0 7px;font-family:'IBM Plex Mono',monospace;font-size:0.56rem;letter-spacing:0.22em;text-transform:uppercase;color:#98a184">System</p>
+              <p style="margin:0 0 18px;font-size:1.05rem;line-height:1.7;color:#dcd7c5;text-wrap:pretty">It logs completed past papers, records the scores, visualises performance and identifies trends — then uses the accumulated results to estimate where performance might be heading.</p>
+              <p style="margin:0 0 7px;font-family:'IBM Plex Mono',monospace;font-size:0.56rem;letter-spacing:0.22em;text-transform:uppercase;color:#98a184">What I was after</p>
+              <p style="margin:0;font-size:1.05rem;line-height:1.7;color:#dcd7c5;text-wrap:pretty">Making my own practice history useful for deciding what to do next, rather than a pile of marks I felt vaguely bad about.</p>
+            </div>
+
+            <div>
+              <div style="display:flex;gap:6px;margin-bottom:12px;min-height:34px">
+                <span data-sheet="1" style="flex:1;padding:6px 7px;background:#f2ecdd;border:1px solid rgba(60,68,52,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.5rem;letter-spacing:0.1em;line-height:1.5;color:#4c5545;transform:rotate(-1.5deg)">PAPER<br />LOGGED</span>
+                <span data-sheet="2" style="flex:1;padding:6px 7px;background:#f2ecdd;border:1px solid rgba(60,68,52,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.5rem;letter-spacing:0.1em;line-height:1.5;color:#4c5545;transform:rotate(1deg)">SCORE<br />RECORDED</span>
+                <span data-sheet="3" style="flex:1;padding:6px 7px;background:#f2ecdd;border:1px solid rgba(60,68,52,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.5rem;letter-spacing:0.1em;line-height:1.5;color:#4c5545;transform:rotate(-0.6deg)">TREND<br />COMPUTED</span>
+              </div>
+              <svg viewBox="0 0 320 150" style="display:block;width:100%;height:auto;border:1px solid rgba(214,204,178,0.24);background:rgba(20,25,16,0.35)" aria-hidden="true">
+                <g stroke="rgba(214,204,178,0.14)" stroke-width="1">
+                  <line x1="18" y1="126" x2="306" y2="126"></line>
+                  <line x1="18" y1="94" x2="306" y2="94"></line>
+                  <line x1="18" y1="62" x2="306" y2="62"></line>
+                  <line x1="18" y1="30" x2="306" y2="30"></line>
+                </g>
+                <polyline data-line="1" points="30,112 74,100 118,86 162,90 206,68 250,56" fill="none" stroke="#cdd3ba" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline>
+                <polyline data-pred="1" points="250,56 298,36" fill="none" stroke="#d9b56a" stroke-width="1.8" stroke-dasharray="5 5" stroke-linecap="round"></polyline>
+                <g data-dots="1">
+                  <circle data-dot="1" cx="30" cy="112" r="2.6" fill="#f2ecdd"></circle>
+                  <circle data-dot="2" cx="74" cy="100" r="2.6" fill="#f2ecdd"></circle>
+                  <circle data-dot="3" cx="118" cy="86" r="2.6" fill="#f2ecdd"></circle>
+                  <circle data-dot="4" cx="162" cy="90" r="2.6" fill="#f2ecdd"></circle>
+                  <circle data-dot="5" cx="206" cy="68" r="2.6" fill="#f2ecdd"></circle>
+                  <circle data-dot="6" cx="250" cy="56" r="2.6" fill="#f2ecdd"></circle>
+                </g>
+                <circle data-tip="1" cx="298" cy="36" r="3.2" fill="none" stroke="#d9b56a" stroke-width="1.4"></circle>
+              </svg>
+              <div style="display:flex;justify-content:space-between;gap:8px;margin-top:9px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:0.52rem;letter-spacing:0.14em;color:#98a184">FIRST PAPER</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:0.52rem;letter-spacing:0.14em;color:#98a184">TIME</span>
+                <span data-est="1" style="font-family:'IBM Plex Mono',monospace;font-size:0.52rem;letter-spacing:0.14em;color:#d9b56a;opacity:0">ESTIMATE</span>
+              </div>
+              <p style="margin:14px 0 0;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.14em;line-height:1.7;color:#bfc7ad">Illustrative trend · no actual scores shown. The gold segment is an estimate, not a result.</p>
+            </div>
+          </div>
+        </div>
+        <p style="margin:clamp(22px,3vh,32px) 0 0;padding-top:16px;border-top:1px solid rgba(61,76,58,0.22);font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">Full case study · next pass</p>
+      </div>
+    </section>
+
+    <!-- ── STATION 03 · MUN CLUB ─ the committee board ──────────────────────────── -->
+    <section id="mun-club" data-station="3" aria-labelledby="w3" style="position:relative;padding:clamp(30px,7vh,90px) clamp(20px,5vw,60px)">
+      <div style="max-width:1040px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(24px,4vw,52px);align-items:start">
+        <div data-step="3" style="order:2;padding:clamp(16px,2.4vw,26px);background:linear-gradient(180deg,#c1a882 0%,#b39a70 100%);border:8px solid;border-image:linear-gradient(160deg,#7a6550,#5c4b3a) 1;box-shadow:inset 0 0 40px rgba(90,72,48,0.4), 0 24px 44px -32px rgba(35,41,31,0.95)">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div data-stage="1" style="display:flex;align-items:center;gap:11px;padding:11px 13px;background:#f4efe0;border:1px solid rgba(60,68,52,0.26);box-shadow:0 8px 14px -12px rgba(35,41,31,0.9);transform:rotate(-0.6deg)">
+              <span style="width:7px;height:7px;border-radius:50%;background:rgba(61,76,58,0.35);flex:none"></span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#2f3629">Lesson</span>
+              <span style="margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:0.5rem;letter-spacing:0.12em;color:#7c7460">rules of procedure</span>
+            </div>
+            <div data-stage="2" style="display:flex;align-items:center;gap:11px;padding:11px 13px;background:#f4efe0;border:1px solid rgba(60,68,52,0.26);box-shadow:0 8px 14px -12px rgba(35,41,31,0.9);transform:rotate(0.5deg)">
+              <span style="width:7px;height:7px;border-radius:50%;background:rgba(61,76,58,0.35);flex:none"></span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#2f3629">Debate</span>
+              <span style="margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:0.5rem;letter-spacing:0.12em;color:#7c7460">speeches · motions</span>
+            </div>
+            <div data-stage="3" style="display:flex;align-items:center;gap:11px;padding:11px 13px;background:#f4efe0;border:1px solid rgba(60,68,52,0.26);box-shadow:0 8px 14px -12px rgba(35,41,31,0.9);transform:rotate(-0.3deg)">
+              <span style="width:7px;height:7px;border-radius:50%;background:rgba(61,76,58,0.35);flex:none"></span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#2f3629">Simulation</span>
+              <span style="margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:0.5rem;letter-spacing:0.12em;color:#7c7460">scenarios</span>
+            </div>
+            <div data-stage="4" style="display:flex;align-items:center;gap:11px;padding:11px 13px;background:#f4efe0;border:1px solid rgba(60,68,52,0.26);box-shadow:0 8px 14px -12px rgba(35,41,31,0.9);transform:rotate(0.7deg)">
+              <span style="width:7px;height:7px;border-radius:50%;background:rgba(61,76,58,0.35);flex:none"></span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#2f3629">Weekly structure</span>
+              <span style="margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:0.5rem;letter-spacing:0.12em;color:#7c7460">it repeats</span>
+            </div>
+          </div>
+          <div data-slot="1" style="margin-top:16px;aspect-ratio:16/7;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border:1px dashed rgba(60,50,36,0.5);background:repeating-linear-gradient(135deg,rgba(60,50,36,0.08) 0 8px,rgba(60,50,36,0) 8px 16px)">
+            <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#4a3d2c">[Real MUN Club material]</p>
+            <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:0.53rem;letter-spacing:0.12em;color:#6b5a42;text-align:center;max-width:40ch">A real lesson plan or session document goes here.</p>
+          </div>
+        </div>
+
+        <div style="order:1">
+          <div data-step="1" style="display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:13px 20px;background:linear-gradient(163deg,#cdc6b4 0%,#c9c2af 52%,#c5bda9 100%);border:1px solid rgba(84,79,64,0.42);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,252,242,0.55), inset 0 -2px 0 rgba(70,66,52,0.22), 0 20px 36px -28px rgba(35,41,31,0.9)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.24em;color:#4f4a3c">03</span>
+            <h2 id="w3" style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.05;color:#23291f;text-shadow:0 1px 0 rgba(255,252,242,0.5)">MUN Club</h2>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:#423e33">People · rooms · documents</span>
+          </div>
+          <div data-step="2" style="margin-top:clamp(20px,3vh,30px);background:#f7f2e4;border:1px solid rgba(120,108,84,0.28);box-shadow:0 18px 34px -28px rgba(35,41,31,0.8);padding:clamp(24px,3.6vw,38px) clamp(22px,3.2vw,34px);transform:rotate(0.4deg)">
+            <p style="margin:0 0 22px;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.28;color:#23291f">I wanted younger students to experience MUN properly.</p>
+            <p style="margin:0 0 7px;font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">System</p>
+            <p style="margin:0 0 18px;font-size:1.08rem;line-height:1.7;color:#3a4133;text-wrap:pretty">A curriculum in weekly instalments: lessons, debates, simulations, rules of procedure, speeches, motions and scenarios. I designed it, taught it and kept it running.</p>
+            <p style="margin:0 0 7px;font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">The signal</p>
+            <p style="margin:0;font-size:1.08rem;line-height:1.7;color:#3a4133;text-wrap:pretty">Building systems for people. The constraints here were attention, confidence and a room of younger students — not memory or compute.</p>
+          </div>
+        </div>
+      </div>
+      <p style="max-width:1040px;margin:clamp(22px,3vh,32px) auto 0;padding-top:16px;border-top:1px solid rgba(61,76,58,0.22);font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">Full case study · next pass</p>
+    </section>
+
+    <!-- ── STATION 04 · SNRLED ─ the terminal ───────────────────────────────────── -->
+    <section id="snrled" data-station="4" aria-labelledby="w4" style="position:relative;padding:clamp(30px,7vh,90px) clamp(20px,5vw,60px)">
+      <div style="max-width:1040px;margin:0 auto">
+        <div data-step="1" style="display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:13px 20px;background:linear-gradient(163deg,#cdc6b4 0%,#c9c2af 52%,#c5bda9 100%);border:1px solid rgba(84,79,64,0.42);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,252,242,0.55), inset 0 -2px 0 rgba(70,66,52,0.22), 0 20px 36px -28px rgba(35,41,31,0.9)">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.24em;color:#4f4a3c">04</span>
+          <h2 id="w4" style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.05;color:#23291f;text-shadow:0 1px 0 rgba(255,252,242,0.5)">SNRLED Parties</h2>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:#4f3705">Archived</span>
+        </div>
+
+        <div data-step="2" style="margin-top:clamp(20px,3vh,32px);padding:clamp(16px,2.4vw,26px);background:linear-gradient(180deg,#26301f 0%,#1a2116 100%);border:1px solid rgba(14,20,10,0.8);border-radius:3px;box-shadow:inset 0 1px 0 rgba(180,196,158,0.12), 0 28px 52px -34px rgba(16,20,12,0.95)">
+          <div style="display:flex;align-items:center;gap:9px;padding-bottom:12px;margin-bottom:16px;border-bottom:1px solid rgba(180,196,158,0.16)">
+            <span style="width:8px;height:8px;border-radius:50%;background:rgba(180,196,158,0.28)"></span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.2em;text-transform:uppercase;color:#8d9a78">snrled · registration service</span>
+            <span style="margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:0.5rem;letter-spacing:0.18em;text-transform:uppercase;color:#d9b56a;border:1px solid rgba(217,181,106,0.42);padding:3px 8px">Archived · not deployed</span>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(20px,3vw,36px)">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;line-height:2.1;color:#b8c6a2">
+              <div data-log="1" style="display:flex;gap:10px"><span style="color:#5f6d4c">›</span><span>REGISTER</span></div>
+              <div data-log="2" style="display:flex;gap:10px"><span style="color:#5f6d4c">›</span><span>PAYMENT</span></div>
+              <div data-log="3" style="display:flex;gap:10px"><span style="color:#5f6d4c">›</span><span>UPLOAD PROOF</span></div>
+              <div data-log="4" style="display:flex;gap:10px"><span style="color:#5f6d4c">›</span><span>ADMIN REVIEW</span></div>
+              <div data-log="5" style="display:flex;gap:10px"><span style="color:#7fa05e">✓</span><span style="color:#cfe0b4">VERIFIED</span></div>
+              <div data-log="6" style="display:flex;gap:10px"><span style="color:#5f6d4c">+</span><span>REGISTRATION COUNT <b data-count="1" style="font-weight:500;color:#f0ead8">0</b></span></div>
+              <div data-log="7" style="display:flex;gap:10px;color:#d9b56a"><span>!</span><span data-thresh="1">EARLY-BIRD THRESHOLD REACHED</span></div>
+              <div data-log="8" style="display:flex;gap:10px"><span style="color:#5f6d4c">›</span><span>PRICE <s data-old="1" style="color:#7b8768">EARLY</s> <span data-new="1" style="color:#f0ead8;opacity:0">STANDARD</span></span></div>
+              <p style="margin:14px 0 0;font-size:0.62rem;letter-spacing:0.12em;line-height:1.7;color:#9fac89">Demo run · illustrative counts and tiers, not real registration data.</p>
+            </div>
+
+            <div>
+              <p style="margin:0 0 20px;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.2rem,2.4vw,1.6rem);line-height:1.3;color:#f2ecdd">A party registration system, built for friends.</p>
+              <p style="margin:0 0 7px;font-family:'IBM Plex Mono',monospace;font-size:0.56rem;letter-spacing:0.22em;text-transform:uppercase;color:#8d9a78">What the admin could see</p>
+              <p style="margin:0 0 18px;font-size:1.05rem;line-height:1.7;color:#dcd7c5;text-wrap:pretty">Who paid, how much they paid, how many people they paid for, and their payment screenshots.</p>
+              <p style="margin:0 0 7px;font-family:'IBM Plex Mono',monospace;font-size:0.56rem;letter-spacing:0.22em;text-transform:uppercase;color:#8d9a78">The threshold</p>
+              <p style="margin:0 0 18px;font-size:1.05rem;line-height:1.7;color:#dcd7c5;text-wrap:pretty">Once early-bird capacity was reached, the price changed. That single rule is what turned a form into a system.</p>
+              <p style="margin:0 0 7px;font-family:'IBM Plex Mono',monospace;font-size:0.56rem;letter-spacing:0.22em;text-transform:uppercase;color:#8d9a78">Current state</p>
+              <p style="margin:0 0 18px;font-size:1.05rem;line-height:1.7;color:#dcd7c5;text-wrap:pretty">Archived. The service is no longer deployed; the source code is preserved. It is not live, and I would rather say so than leave it ambiguous.</p>
+              <p style="margin:0 0 7px;font-family:'IBM Plex Mono',monospace;font-size:0.56rem;letter-spacing:0.22em;text-transform:uppercase;color:#8d9a78">Known, and to be confirmed</p>
+              <p style="margin:0;font-size:1rem;line-height:1.7;color:#b9b8a4;text-wrap:pretty">The original project used a black and blue visual identity, with frontend and backend integration via Supabase. Exact stack details await a pass through the repository rather than a guess here.</p>
+            </div>
+          </div>
+        </div>
+        <p style="margin:clamp(22px,3vh,32px) 0 0;padding-top:16px;border-top:1px solid rgba(61,76,58,0.22);font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">Full case study · next pass — including the threshold walkthrough</p>
+      </div>
+    </section>
+
+    <!-- ── STATION 05 · PROJECT AURA ─ the archive cabinet ──────────────────────── -->
+    <section id="project-aura" data-station="5" aria-labelledby="w5" style="position:relative;padding:clamp(30px,7vh,90px) clamp(20px,5vw,60px) clamp(60px,10vh,120px)">
+      <div style="max-width:1040px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(24px,4vw,52px);align-items:start">
+        <div>
+          <div data-step="1" style="display:inline-flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:13px 20px;background:linear-gradient(163deg,#cdc6b4 0%,#c9c2af 52%,#c5bda9 100%);border:1px solid rgba(84,79,64,0.42);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,252,242,0.55), inset 0 -2px 0 rgba(70,66,52,0.22), 0 20px 36px -28px rgba(35,41,31,0.9)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.24em;color:#4f4a3c">05</span>
+            <h2 id="w5" style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.05;color:#23291f;text-shadow:0 1px 0 rgba(255,252,242,0.5)">Project AURA</h2>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.55rem;letter-spacing:0.2em;text-transform:uppercase;color:#423e33">Layers · evidence · model</span>
+          </div>
+          <div data-step="2" style="margin-top:clamp(20px,3vh,30px);background:#f7f2e4;border:1px solid rgba(120,108,84,0.28);box-shadow:0 18px 34px -28px rgba(35,41,31,0.8);padding:clamp(24px,3.6vw,38px) clamp(22px,3.2vw,34px);transform:rotate(-0.3deg)">
+            <p style="margin:0 0 22px;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.28;color:#23291f">The strangest thing I've built is a model of myself.</p>
+            <p style="margin:0 0 16px;font-size:1.08rem;line-height:1.7;color:#3a4133;text-wrap:pretty">I started trying to build a portfolio. Each design decision led back to a question about the person it was meant to represent. So I paused the portfolio and began a longer process: conversation, evidence, revision.</p>
+            <p style="margin:0;font-size:1.08rem;line-height:1.7;color:#3a4133;text-wrap:pretty">AURA holds the current model, including the parts I still don't understand. This website is one expression of it. <a href="Stay%20Aura.dc.html" style="text-decoration:none;border-bottom:1px solid rgba(61,76,58,0.4)">The archive explains why</a>.</p>
+          </div>
+        </div>
+
+        <div data-step="3" style="position:relative;padding:clamp(18px,2.6vw,28px);background:linear-gradient(158deg,#6b573f 0%,#63503c 55%,#5c4a37 100%);border:1px solid rgba(44,35,26,0.6);border-radius:2px;box-shadow:inset 0 1px 0 rgba(232,214,190,0.2), 0 26px 48px -34px rgba(35,41,31,0.95)">
+          <p style="margin:0 0 14px;font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.22em;text-transform:uppercase;color:#eee2cd">Archive cabinet</p>
+          <div style="position:relative;padding:14px;background:rgba(28,24,18,0.28);border:1px solid rgba(44,35,26,0.45);display:grid;grid-template-columns:30px minmax(0,1fr);gap:8px">
+            <div style="position:relative">
+              <svg data-links="1" viewBox="0 0 30 160" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0;transition:opacity 900ms ease" aria-hidden="true">
+                <path d="M7 16 V 144" fill="none" stroke="rgba(217,181,106,0.35)" stroke-width="1" vector-effect="non-scaling-stroke"></path>
+                <path d="M7 16 C 18 16, 20 16, 30 16" fill="none" stroke="rgba(217,181,106,0.55)" stroke-width="1" vector-effect="non-scaling-stroke"></path>
+                <path d="M7 48 C 18 48, 20 48, 30 48" fill="none" stroke="rgba(217,181,106,0.45)" stroke-width="1" vector-effect="non-scaling-stroke"></path>
+                <path d="M7 80 C 18 80, 20 80, 30 80" fill="none" stroke="rgba(217,181,106,0.5)" stroke-width="1" vector-effect="non-scaling-stroke"></path>
+                <path d="M7 112 C 18 112, 20 112, 30 112" fill="none" stroke="rgba(217,181,106,0.4)" stroke-width="1" vector-effect="non-scaling-stroke"></path>
+                <path d="M7 144 C 18 144, 20 144, 30 144" fill="none" stroke="rgba(217,181,106,0.65)" stroke-width="1" vector-effect="non-scaling-stroke"></path>
+              </svg>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px">
+              <span data-doc="1" style="position:relative;padding:9px 12px;background:rgba(242,236,221,0.9);border:1px solid rgba(44,35,26,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.16em;text-transform:uppercase;color:#3a3226">Conversation</span>
+              <span data-doc="2" style="position:relative;padding:9px 12px;background:rgba(242,236,221,0.86);border:1px solid rgba(44,35,26,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.16em;text-transform:uppercase;color:#3a3226">Evidence</span>
+              <span data-doc="3" style="position:relative;padding:9px 12px;background:rgba(242,236,221,0.82);border:1px solid rgba(44,35,26,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.16em;text-transform:uppercase;color:#3a3226">Understanding</span>
+              <span data-doc="4" style="position:relative;padding:9px 12px;background:rgba(242,236,221,0.78);border:1px solid rgba(44,35,26,0.3);font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.16em;text-transform:uppercase;color:#3a3226">Model</span>
+              <span data-doc="5" style="position:relative;padding:9px 12px;background:rgba(217,181,106,0.9);border:1px solid rgba(44,35,26,0.35);font-family:'IBM Plex Mono',monospace;font-size:0.54rem;letter-spacing:0.16em;text-transform:uppercase;color:#2e2718">Expression</span>
+            </div>
+          </div>
+          <p data-note="5" style="margin:14px 0 0;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.14em;line-height:1.7;color:#ded0b8;opacity:0">The documents were not filed in this order to begin with.</p>
+        </div>
+      </div>
+      <p style="max-width:1040px;margin:clamp(22px,3vh,32px) auto 0;padding-top:16px;border-top:1px solid rgba(61,76,58,0.22);font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">Full case study · next pass</p>
+    </section>
+
+    <footer style="padding:0 clamp(20px,5vw,60px) clamp(60px,10vh,120px)">
+      <div style="max-width:1040px;margin:0 auto;border-top:1px solid rgba(61,76,58,0.24);padding-top:26px">
+        <p style="margin:0 0 20px;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.24em;text-transform:uppercase;color:#7c8469">Onward — this page ends here</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px">
+          <a href="Stay%20Future.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.6)" style-hover="background:rgba(247,243,234,0.95);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">07 · Open horizon</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">The Future</span>
+          </a>
+          <a href="Stay%20Aura.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.6)" style-hover="background:rgba(247,243,234,0.95);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">08 · Archive</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">AURA</span>
+          </a>
+          <a href="Stay%20Awhile.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.6)" style-hover="background:rgba(247,243,234,0.95);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">00 · Arrival</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">Back to the garden</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+/* SIGNATURE 07 — each station is an artifact that runs once you reach it.
+   Motion verb: OPERATE. Nothing loops; each demonstration resolves and stays resolved. */
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.reduce = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.timers = [];
+  }
+
+  at(ms, fn) { this.timers.push(window.setTimeout(fn, this.reduce ? 0 : ms)); }
+
+  q(sec, sel) { return Array.prototype.slice.call(sec.querySelectorAll(sel)); }
+
+  /* generic: hide, then bring in */
+  prep(el, dy) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(' + (dy || 14) + 'px)';
+    el.style.transition = 'opacity 800ms cubic-bezier(0.22,0.61,0.36,1), transform 1000ms cubic-bezier(0.22,0.61,0.36,1)';
+  }
+  show(el) { el.style.opacity = '1'; el.style.transform = 'none'; }
+
+  componentDidMount() {
+    const root = document.getElementById('content');
+    if (!root) return;
+    const sections = this.q(root, '[data-station]');
+
+    sections.forEach((sec) => {
+      /* frame + prose arrive first on every station */
+      this.q(sec, '[data-step]').forEach((el) => this.prep(el, 18));
+      /* the working parts start absent */
+      this.q(sec, '[data-blk],[data-brk],[data-chip],[data-sheet],[data-dot],[data-pipe],[data-stage],[data-log],[data-doc]').forEach((el) => {
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 520ms ease, transform 700ms cubic-bezier(0.22,0.61,0.36,1), background 600ms ease, box-shadow 600ms ease';
+      });
+      const slot = sec.querySelector('[data-slot]');
+      if (slot) this.prep(slot, 12);
+    });
+
+    if (this.reduce) { sections.forEach((s) => this.run(s, true)); return; }
+
+    /* run when the bench comes level with you — or immediately if a fast scroll
+       already carried you past it, so no station is ever left half-built */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.intersectionRatio >= 0.24) { io.unobserve(e.target); this.run(e.target, false); }
+        else if (e.boundingClientRect.top < 0) { io.unobserve(e.target); this.run(e.target, true); }
+      });
+    }, { threshold: [0, 0.24, 0.5] });
+    sections.forEach((s) => io.observe(s));
+    this.io = io;
+  }
+
+  run(sec, instant) {
+    const id = sec.getAttribute('data-station');
+    this.q(sec, '[data-step]').forEach((el, i) => this.at(instant ? 0 : 120 + i * 260, () => this.show(el)));
+    const slot = sec.querySelector('[data-slot]');
+    if (slot) this.at(instant ? 0 : 900, () => this.show(slot));
+    if (id === '1') this.planner(sec, instant);
+    if (id === '2') this.logger(sec, instant);
+    if (id === '3') this.committee(sec, instant);
+    if (id === '4') this.terminal(sec, instant);
+    if (id === '5') this.cabinet(sec, instant);
+  }
+
+  /* 01 — subjects get weights, blocks fall into sessions, a clash moves one, a break inserts, the week locks */
+  planner(sec, instant) {
+    const chips = this.q(sec, '[data-chip]');
+    const weights = this.q(sec, '[data-w]');
+    const blocks = this.q(sec, '[data-blk]');
+    const brk = sec.querySelector('[data-brk]');
+    const lock = sec.querySelector('[data-lock]');
+    const note = sec.querySelector('[data-note]');
+    const mover = sec.querySelector('[data-move]');
+    const targets = ['0.9', '0.7', '0.6', '0.4', '0.3'];
+
+    if (instant) {
+      chips.concat(blocks).forEach((el) => { el.style.opacity = '1'; });
+      weights.forEach((w, i) => { w.textContent = targets[i]; });
+      if (brk) brk.style.opacity = '1';
+      if (lock) lock.style.opacity = '1';
+      return;
+    }
+
+    chips.forEach((c, i) => this.at(700 + i * 130, () => { c.style.opacity = '1'; }));
+    /* priorities settle to their real weights */
+    weights.forEach((w, i) => {
+      this.at(1500 + i * 150, () => {
+        let n = 0;
+        const goal = parseFloat(targets[i]);
+        const tick = window.setInterval(() => {
+          n += 0.1;
+          if (n >= goal - 0.001) { n = goal; window.clearInterval(tick); }
+          w.textContent = n.toFixed(1);
+        }, 55);
+        this.timers.push(tick);
+      });
+    });
+    /* blocks drop into the week, weightiest first */
+    blocks.forEach((b, i) => {
+      if (b === mover) return;
+      this.at(2400 + i * 110, () => { b.style.opacity = '1'; });
+    });
+    /* the clash: one block lands in the wrong column, then moves */
+    if (mover) {
+      this.at(2500, () => { mover.style.transform = 'translateX(-215%)'; mover.style.opacity = '1'; });
+      this.at(3500, () => { if (note) note.textContent = 'Thursday already holds this subject — the block moves.'; });
+      this.at(3900, () => { mover.style.transform = 'none'; });
+    }
+    if (brk) this.at(4700, () => { brk.style.opacity = '1'; });
+    this.at(4900, () => { if (note) note.textContent = 'A break is inserted between session groups, not scheduled as one.'; });
+    this.at(5900, () => { if (lock) lock.style.opacity = '1'; });
+    this.at(6100, () => { if (note) note.textContent = 'Illustrative structure · the gold band is a break, not a session'; });
+  }
+
+  /* 02 — papers log, the trend draws itself, the estimate extends beyond the data */
+  logger(sec, instant) {
+    const pipes = this.q(sec, '[data-pipe]');
+    const sheets = this.q(sec, '[data-sheet]');
+    const dots = this.q(sec, '[data-dot]');
+    const line = sec.querySelector('[data-line]');
+    const pred = sec.querySelector('[data-pred]');
+    const tip = sec.querySelector('[data-tip]');
+    const est = sec.querySelector('[data-est]');
+
+    const arm = (el) => {
+      if (!el || !el.getTotalLength) return 0;
+      const L = el.getTotalLength();
+      el.style.strokeDasharray = el === pred ? '5 5' : L + ' ' + L;
+      if (el !== pred) el.style.strokeDashoffset = L;
+      else { el.style.opacity = '0'; }
+      return L;
+    };
+    arm(line); arm(pred);
+    if (tip) tip.style.opacity = '0';
+
+    if (instant) {
+      pipes.concat(sheets, dots).forEach((el) => { el.style.opacity = '1'; });
+      if (line) line.style.strokeDashoffset = '0';
+      if (pred) pred.style.opacity = '1';
+      if (tip) tip.style.opacity = '1';
+      if (est) est.style.opacity = '1';
+      return;
+    }
+
+    pipes.forEach((p, i) => this.at(600 + i * 200, () => { p.style.opacity = '1'; }));
+    sheets.forEach((s, i) => this.at(1500 + i * 320, () => { s.style.opacity = '1'; }));
+    dots.forEach((d, i) => this.at(2600 + i * 190, () => { d.style.opacity = '1'; }));
+    this.at(2700, () => {
+      if (!line) return;
+      line.style.transition = 'stroke-dashoffset 1900ms cubic-bezier(0.35,0.1,0.25,1)';
+      line.style.strokeDashoffset = '0';
+    });
+    this.at(4700, () => {
+      if (!pred) return;
+      pred.style.transition = 'opacity 900ms ease';
+      pred.style.opacity = '1';
+    });
+    this.at(5300, () => { if (tip) { tip.style.transition = 'opacity 700ms ease'; tip.style.opacity = '1'; } });
+    this.at(5500, () => { if (est) { est.style.transition = 'opacity 700ms ease'; est.style.opacity = '1'; } });
+  }
+
+  /* 03 — the weekly curriculum assembles: lesson, debate, simulation, and then it repeats */
+  committee(sec, instant) {
+    const stages = this.q(sec, '[data-stage]');
+    if (instant) { stages.forEach((s) => { s.style.opacity = '1'; }); return; }
+    stages.forEach((s, i) => {
+      this.at(900 + i * 520, () => {
+        s.style.opacity = '1';
+        const dot = s.querySelector('span');
+        if (dot) dot.style.background = 'rgba(176,144,79,0.85)';
+        s.style.boxShadow = '0 10px 18px -12px rgba(35,41,31,0.95)';
+      });
+      /* it settles back to a resting state once the next one takes the floor */
+      this.at(1500 + i * 520, () => {
+        const dot = s.querySelector('span');
+        if (dot && i < stages.length - 1) dot.style.background = 'rgba(61,76,58,0.4)';
+      });
+    });
+  }
+
+  /* 04 — a single registration walks the flow, the count crosses the cap, the price tier changes */
+  terminal(sec, instant) {
+    const logs = this.q(sec, '[data-log]');
+    const count = sec.querySelector('[data-count]');
+    const thresh = sec.querySelector('[data-thresh]');
+    const oldP = sec.querySelector('[data-old]');
+    const newP = sec.querySelector('[data-new]');
+    const CAP = 40;
+
+    if (instant) {
+      logs.forEach((l) => { l.style.opacity = '1'; });
+      if (count) count.textContent = CAP + ' / ' + CAP;
+      if (newP) newP.style.opacity = '1';
+      return;
+    }
+    if (count) count.textContent = '0 / ' + CAP;
+
+    logs.forEach((l, i) => {
+      if (i >= 5) return;
+      this.at(700 + i * 620, () => { l.style.opacity = '1'; });
+    });
+    /* the count runs up to the early-bird cap */
+    this.at(3900, () => {
+      if (logs[5]) logs[5].style.opacity = '1';
+      let n = 0;
+      const tick = window.setInterval(() => {
+        n += n < 30 ? 2 : 1;
+        if (n >= CAP) { n = CAP; window.clearInterval(tick); }
+        if (count) count.textContent = n + ' / ' + CAP;
+      }, 45);
+      this.timers.push(tick);
+    });
+    this.at(5300, () => { if (logs[6]) logs[6].style.opacity = '1'; });
+    this.at(5500, () => { if (thresh) thresh.style.textShadow = '0 0 18px rgba(217,181,106,0.5)'; });
+    this.at(6100, () => { if (logs[7]) logs[7].style.opacity = '1'; });
+    this.at(6700, () => {
+      if (oldP) { oldP.style.transition = 'opacity 600ms ease'; oldP.style.opacity = '0.45'; }
+      if (newP) { newP.style.transition = 'opacity 700ms ease'; newP.style.opacity = '1'; }
+    });
+  }
+
+  /* 05 — filed badly, then filed well: the documents straighten and the connections show */
+  cabinet(sec, instant) {
+    const docs = this.q(sec, '[data-doc]');
+    const links = sec.querySelector('[data-links]');
+    const note = sec.querySelector('[data-note="5"]');
+    const skew = [-2.4, 1.8, -1.4, 2.2, -0.9];
+    const shift = [-9, 7, -5, 8, -3];
+
+    if (instant) {
+      docs.forEach((d) => { d.style.opacity = '1'; });
+      if (links) links.style.opacity = '1';
+      if (note) note.style.opacity = '1';
+      return;
+    }
+
+    docs.forEach((d, i) => {
+      this.at(700 + i * 150, () => {
+        d.style.opacity = '1';
+        d.style.transform = 'rotate(' + skew[i] + 'deg) translateX(' + shift[i] + 'px)';
+      });
+    });
+    this.at(2100, () => { if (note) { note.style.transition = 'opacity 700ms ease'; note.style.opacity = '1'; } });
+    /* they align */
+    docs.forEach((d, i) => this.at(2700 + i * 170, () => { d.style.transform = 'none'; }));
+    this.at(4100, () => { if (links) links.style.opacity = '1'; });
+    this.at(4600, () => {
+      const last = docs[docs.length - 1];
+      if (last) last.style.boxShadow = '0 0 22px -4px rgba(217,181,106,0.55)';
+    });
+  }
+
+  componentWillUnmount() {
+    if (this.io) this.io.disconnect();
+    this.timers.forEach((t) => { window.clearTimeout(t); window.clearInterval(t); });
+  }
+}
+</script>
+</body>
+</html>

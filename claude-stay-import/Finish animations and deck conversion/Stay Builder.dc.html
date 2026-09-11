@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>The Builder — Stay Awhile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #efe9dc; color: #23291f; -webkit-font-smoothing: antialiased; }
+  a { color: #3d4c3a; }
+  a:hover { color: #23291f; }
+  ::selection { background: rgba(220,192,191,0.55); }
+  :focus-visible { outline: 2px solid #3d4c3a; outline-offset: 4px; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+</style>
+</helmet>
+<div style="position:relative;min-height:100vh;font-family:'EB Garamond',Georgia,serif">
+  <dc-import name="GardenScene" place="builder" density="rare" signature="assemble" hint-size="100%,100%"></dc-import>
+  <dc-import name="GardenNav" current="builder" hint-size="0,0"></dc-import>
+
+  <main id="content" style="position:relative;z-index:1">
+    <section data-screen-label="Builder opening" style="min-height:84vh;display:flex;flex-direction:column;justify-content:center;padding:16vh clamp(20px,5vw,60px) 10vh">
+      <div style="max-width:900px;margin:0 auto;width:100%">
+        <p style="margin:0 0 clamp(16px,3vh,26px);font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.3em;text-transform:uppercase;color:#5b6350;animation:rise 0.9s ease-out both">02 · Timber frame</p>
+        <h1 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(3rem,8.5vw,7rem);line-height:0.96;letter-spacing:-0.015em;animation:rise 1.4s cubic-bezier(0.22,0.61,0.36,1) both">The Builder</h1>
+        <p style="margin:clamp(22px,4vh,36px) 0 clamp(26px,4vh,42px);max-width:32ch;font-style:italic;font-size:clamp(1.2rem,2.2vw,1.7rem);line-height:1.45;color:#3a4133;animation:rise 1.8s cubic-bezier(0.22,0.61,0.36,1) both">I like turning ideas into systems.</p>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:clamp(14px,3vw,30px);animation:rise 2.2s ease-out both">
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.24em;text-transform:uppercase;color:#4c5545;padding-bottom:6px;border-bottom:1px solid rgba(61,76,58,0.35)">Build</li>
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.24em;text-transform:uppercase;color:#4c5545;padding-bottom:6px;border-bottom:1px solid rgba(61,76,58,0.35)">Systemize</li>
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.24em;text-transform:uppercase;color:#4c5545;padding-bottom:6px;border-bottom:1px solid rgba(61,76,58,0.35)">Experiment</li>
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.24em;text-transform:uppercase;color:#4c5545;padding-bottom:6px;border-bottom:1px solid rgba(61,76,58,0.35)">Iterate</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="b-intro" style="padding:0 clamp(20px,5vw,60px) clamp(50px,9vh,110px)">
+      <div style="max-width:720px;margin:0 auto;padding:clamp(28px,5vw,54px) clamp(22px,4vw,48px);background:linear-gradient(180deg,rgba(247,243,234,0) 0%,rgba(247,243,234,0.91) 8%,rgba(247,243,234,0.93) 92%,rgba(247,243,234,0) 100%)">
+        <h2 id="b-intro" style="margin:0 0 26px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.8rem,3.8vw,2.7rem);line-height:1.1;letter-spacing:-0.01em">The interesting part is never the interface.</h2>
+        <p style="margin:0 0 20px;font-size:1.19rem;line-height:1.78;color:#3a4133;text-wrap:pretty">What draws me in is the set of rules underneath a thing — the constraints, the weighting, the cases nobody planned for. An idea becomes a system at the moment you have to decide what happens when two of your own rules disagree.</p>
+        <p style="margin:0;font-size:1.19rem;line-height:1.78;color:#3a4133;text-wrap:pretty">So I build, watch where the rules break, change something, and try again. Most of what follows was built that way.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="b-artifacts" style="padding:0 clamp(20px,5vw,60px) clamp(50px,9vh,110px)">
+      <div style="max-width:900px;margin:0 auto;padding:clamp(28px,5vw,54px) clamp(22px,4vw,48px);background:linear-gradient(180deg,rgba(247,243,234,0) 0%,rgba(247,243,234,0.9) 6%,rgba(247,243,234,0.93) 94%,rgba(247,243,234,0) 100%)">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:22px;flex-wrap:wrap;margin-bottom:clamp(22px,4vh,38px)">
+          <h2 id="b-artifacts" style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.4rem);line-height:1">Five things on the bench</h2>
+          <a href="Stay%20Work.dc.html" style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(61,76,58,0.35);padding-bottom:3px">The full workshop ↗</a>
+        </div>
+        <ol style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
+          <li style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(12px,3vw,30px);align-items:baseline;padding:22px 0;border-top:1px solid rgba(61,76,58,0.2)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.16em;color:#8b9179">01</span>
+            <span style="display:flex;flex-direction:column;gap:8px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.45rem,2.6vw,1.95rem);line-height:1.1">Study Planner</span>
+              <span style="font-size:1.09rem;line-height:1.68;color:#3a4133">A planner for the IB workload. Subjects, priorities, sessions, breaks, days and weeks — and a scheduling engine that has to produce a reasonable distribution, not just a filled calendar.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">Constraints</span>
+          </li>
+          <li style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(12px,3vw,30px);align-items:baseline;padding:22px 0;border-top:1px solid rgba(61,76,58,0.2)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.16em;color:#8b9179">02</span>
+            <span style="display:flex;flex-direction:column;gap:8px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.45rem,2.6vw,1.95rem);line-height:1.1">IGCSE Past Paper Logger &amp; Analytics</span>
+              <span style="font-size:1.09rem;line-height:1.68;color:#3a4133">Logging completed past papers and their scores, then turning that record into graphs, trends and an estimate of where performance might be heading.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">Data</span>
+          </li>
+          <li style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(12px,3vw,30px);align-items:baseline;padding:22px 0;border-top:1px solid rgba(61,76,58,0.2)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.16em;color:#8b9179">03</span>
+            <span style="display:flex;flex-direction:column;gap:8px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.45rem,2.6vw,1.95rem);line-height:1.1">MUN Club</span>
+              <span style="font-size:1.09rem;line-height:1.68;color:#3a4133">A weekly Model United Nations club for younger students. The system here was made of lessons, debates and simulations rather than code — and it still had to run every week.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">People</span>
+          </li>
+          <li style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(12px,3vw,30px);align-items:baseline;padding:22px 0;border-top:1px solid rgba(61,76,58,0.2)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.16em;color:#8b9179">04</span>
+            <span style="display:flex;flex-direction:column;gap:8px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.45rem,2.6vw,1.95rem);line-height:1.1">SNRLED Parties</span>
+              <span style="font-size:1.09rem;line-height:1.68;color:#3a4133">A party registration system built for friends: registration, payment, verification, an admin view, and pricing that changed once early-bird capacity was reached. Archived — no longer deployed, source preserved.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">Archived</span>
+          </li>
+          <li style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(12px,3vw,30px);align-items:baseline;padding:22px 0;border-top:1px solid rgba(61,76,58,0.2);border-bottom:1px solid rgba(61,76,58,0.2)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.16em;color:#8b9179">05</span>
+            <span style="display:flex;flex-direction:column;gap:8px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.45rem,2.6vw,1.95rem);line-height:1.1">Project AURA</span>
+              <span style="font-size:1.09rem;line-height:1.68;color:#3a4133">The strangest thing I have built is a model of myself. It began as a portfolio and became an attempt to understand the person the portfolio was supposed to represent.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">Ongoing</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section aria-labelledby="b-honest" style="padding:0 clamp(20px,5vw,60px) clamp(60px,10vh,120px)">
+      <div style="max-width:720px;margin:0 auto;padding:clamp(28px,5vw,52px) clamp(22px,4vw,46px);background:linear-gradient(180deg,rgba(247,243,234,0) 0%,rgba(247,243,234,0.9) 8%,rgba(247,243,234,0.92) 92%,rgba(247,243,234,0) 100%);border-left:2px solid rgba(61,76,58,0.4)">
+        <p style="margin:0 0 16px;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.26em;text-transform:uppercase;color:#7c8469">Where I actually stand</p>
+        <h2 id="b-honest" style="margin:0 0 22px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.15">I have built real things. I am not yet the engineer I intend to become.</h2>
+        <p style="margin:0 0 18px;font-size:1.15rem;line-height:1.76;color:#3a4133;text-wrap:pretty">These projects exist and they work. I built them with AI assistance, and I read and understand a substantial amount of the code that came out of that. Understanding code and writing it independently are different capabilities, and I would rather name the difference than blur it.</p>
+        <p style="margin:0;font-size:1.15rem;line-height:1.76;color:#3a4133;text-wrap:pretty">My technical depth is still developing. What is already there is the appetite for difficult systems — and a habit of not stopping at the first version.</p>
+      </div>
+    </section>
+
+    <footer style="padding:0 clamp(20px,5vw,60px) clamp(60px,10vh,120px)">
+      <div style="max-width:900px;margin:0 auto;border-top:1px solid rgba(61,76,58,0.24);padding-top:26px">
+        <p style="margin:0 0 20px;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.24em;text-transform:uppercase;color:#7c8469">Onward — this page ends here</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px">
+          <a href="Stay%20Work.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.6)" style-hover="background:rgba(247,243,234,0.95);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">06 · Workshop</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">The Work</span>
+          </a>
+          <a href="Stay%20Leader.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.6)" style-hover="background:rgba(247,243,234,0.95);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">04 · Courtyard</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">The Leader</span>
+          </a>
+          <a href="Stay%20Awhile.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.6)" style-hover="background:rgba(247,243,234,0.95);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">00 · Arrival</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">Back to the garden</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</div>
+
+</x-dc>
+</body>
+</html>

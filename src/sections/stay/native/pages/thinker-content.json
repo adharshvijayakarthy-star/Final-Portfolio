@@ -1,0 +1,158 @@
+{
+  "freedoms": [
+    {
+      "i": 1,
+      "name": "Financial",
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "minHeight": "70px",
+        "padding": "10px clamp(12px,1.6vw,20px)",
+        "fontFamily": "var(--font-meta-face),monospace",
+        "fontSize": "0.62rem",
+        "letterSpacing": "0.18em",
+        "textTransform": "uppercase",
+        "color": "#2f3629",
+        "background": "linear-gradient(163deg,#d2cbba 0%,#bfb7a4 52%,#a8a08d 100%)",
+        "border": "1px solid rgba(84,79,64,0.34)",
+        "borderRadius": "10px 16px 12px 14px / 44% 56% 48% 52%",
+        "boxShadow": "inset 0 1px 0 rgba(255,252,242,0.62), inset 0 -2px 3px rgba(70,66,52,0.2), 0 10px 16px -13px rgba(35,41,31,0.9)",
+        "textShadow": "0 1px 0 rgba(255,252,242,0.5)"
+      }
+    },
+    {
+      "i": 2,
+      "name": "Time",
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "minHeight": "58px",
+        "padding": "10px clamp(12px,1.6vw,20px)",
+        "fontFamily": "var(--font-meta-face),monospace",
+        "fontSize": "0.62rem",
+        "letterSpacing": "0.18em",
+        "textTransform": "uppercase",
+        "color": "#2f3629",
+        "background": "linear-gradient(163deg,#d2cbba 0%,#bfb7a4 52%,#a8a08d 100%)",
+        "border": "1px solid rgba(84,79,64,0.34)",
+        "borderRadius": "15px 12px 18px 9px / 44% 56% 48% 52%",
+        "boxShadow": "inset 0 1px 0 rgba(255,252,242,0.62), inset 0 -2px 3px rgba(70,66,52,0.2), 0 10px 16px -13px rgba(35,41,31,0.9)",
+        "textShadow": "0 1px 0 rgba(255,252,242,0.5)"
+      }
+    },
+    {
+      "i": 3,
+      "name": "Career",
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "minHeight": "64px",
+        "padding": "10px clamp(12px,1.6vw,20px)",
+        "fontFamily": "var(--font-meta-face),monospace",
+        "fontSize": "0.62rem",
+        "letterSpacing": "0.18em",
+        "textTransform": "uppercase",
+        "color": "#2f3629",
+        "background": "linear-gradient(163deg,#d2cbba 0%,#bfb7a4 52%,#a8a08d 100%)",
+        "border": "1px solid rgba(84,79,64,0.34)",
+        "borderRadius": "20px 8px 12px 14px / 44% 56% 48% 52%",
+        "boxShadow": "inset 0 1px 0 rgba(255,252,242,0.62), inset 0 -2px 3px rgba(70,66,52,0.2), 0 10px 16px -13px rgba(35,41,31,0.9)",
+        "textShadow": "0 1px 0 rgba(255,252,242,0.5)"
+      }
+    },
+    {
+      "i": 4,
+      "name": "Relationship",
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "minHeight": "52px",
+        "padding": "10px clamp(12px,1.6vw,20px)",
+        "fontFamily": "var(--font-meta-face),monospace",
+        "fontSize": "0.62rem",
+        "letterSpacing": "0.18em",
+        "textTransform": "uppercase",
+        "color": "#2f3629",
+        "background": "linear-gradient(163deg,#d2cbba 0%,#bfb7a4 52%,#a8a08d 100%)",
+        "border": "1px solid rgba(84,79,64,0.34)",
+        "borderRadius": "10px 16px 18px 9px / 44% 56% 48% 52%",
+        "boxShadow": "inset 0 1px 0 rgba(255,252,242,0.62), inset 0 -2px 3px rgba(70,66,52,0.2), 0 10px 16px -13px rgba(35,41,31,0.9)",
+        "textShadow": "0 1px 0 rgba(255,252,242,0.5)"
+      }
+    },
+    {
+      "i": 5,
+      "name": "Geographic",
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "minHeight": "66px",
+        "padding": "10px clamp(12px,1.6vw,20px)",
+        "fontFamily": "var(--font-meta-face),monospace",
+        "fontSize": "0.62rem",
+        "letterSpacing": "0.18em",
+        "textTransform": "uppercase",
+        "color": "#2f3629",
+        "background": "linear-gradient(163deg,#d2cbba 0%,#bfb7a4 52%,#a8a08d 100%)",
+        "border": "1px solid rgba(84,79,64,0.34)",
+        "borderRadius": "15px 12px 12px 14px / 44% 56% 48% 52%",
+        "boxShadow": "inset 0 1px 0 rgba(255,252,242,0.62), inset 0 -2px 3px rgba(70,66,52,0.2), 0 10px 16px -13px rgba(35,41,31,0.9)",
+        "textShadow": "0 1px 0 rgba(255,252,242,0.5)"
+      }
+    },
+    {
+      "i": 6,
+      "name": "Intellectual",
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "minHeight": "56px",
+        "padding": "10px clamp(12px,1.6vw,20px)",
+        "fontFamily": "var(--font-meta-face),monospace",
+        "fontSize": "0.62rem",
+        "letterSpacing": "0.18em",
+        "textTransform": "uppercase",
+        "color": "#2f3629",
+        "background": "linear-gradient(163deg,#d2cbba 0%,#bfb7a4 52%,#a8a08d 100%)",
+        "border": "1px solid rgba(84,79,64,0.34)",
+        "borderRadius": "20px 8px 18px 9px / 44% 56% 48% 52%",
+        "boxShadow": "inset 0 1px 0 rgba(255,252,242,0.62), inset 0 -2px 3px rgba(70,66,52,0.2), 0 10px 16px -13px rgba(35,41,31,0.9)",
+        "textShadow": "0 1px 0 rgba(255,252,242,0.5)"
+      }
+    },
+    {
+      "i": 7,
+      "name": "Experiential",
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "minHeight": "62px",
+        "padding": "10px clamp(12px,1.6vw,20px)",
+        "fontFamily": "var(--font-meta-face),monospace",
+        "fontSize": "0.62rem",
+        "letterSpacing": "0.18em",
+        "textTransform": "uppercase",
+        "color": "#2f3629",
+        "background": "linear-gradient(163deg,#d2cbba 0%,#bfb7a4 52%,#a8a08d 100%)",
+        "border": "1px solid rgba(84,79,64,0.34)",
+        "borderRadius": "10px 16px 12px 14px / 44% 56% 48% 52%",
+        "boxShadow": "inset 0 1px 0 rgba(255,252,242,0.62), inset 0 -2px 3px rgba(70,66,52,0.2), 0 10px 16px -13px rgba(35,41,31,0.9)",
+        "textShadow": "0 1px 0 rgba(255,252,242,0.5)"
+      }
+    }
+  ]
+}

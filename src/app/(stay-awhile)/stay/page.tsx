@@ -3,21 +3,22 @@ import { notFound } from "next/navigation";
 
 import { getExperience } from "@/data/site";
 import { StayAwhile } from "@/sections/stay/StayAwhile";
+import { StayShell } from "@/sections/stay/native/StayShell";
+import { GardenContent } from "@/sections/stay/native/GardenContent";
 
 const experience = getExperience("stay-awhile");
 
 export const metadata: Metadata = {
   title: experience?.label,
-  // Not indexable until the experience actually exists.
-  description: "The work and questions behind Adharsh Vijayakarthy’s portfolio.",
+  description: "A place, rather than a page. Take your time in Adharsh Vijayakarthy’s garden.",
 };
 
 /**
- * PLACEHOLDER. The Stay Awhile entry, the garden map and the routes beneath
- * them are built in a later phase.
+ * Phase 1: native Garden entry only. Existing project hash links retain their
+ * editorial destination; no future Stay destination is registered yet.
  */
 export default function StayAwhilePage() {
   if (!experience) notFound();
 
-  return <StayAwhile />;
+  return <StayShell legacy={<StayAwhile />}><GardenContent /></StayShell>;
 }

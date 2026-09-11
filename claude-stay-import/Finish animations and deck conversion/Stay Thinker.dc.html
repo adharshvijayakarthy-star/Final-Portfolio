@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>The Thinker — Stay Awhile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #efe9dc; color: #23291f; -webkit-font-smoothing: antialiased; }
+  a { color: #3d4c3a; }
+  a:hover { color: #23291f; }
+  ::selection { background: rgba(220,192,191,0.55); }
+  :focus-visible { outline: 2px solid #3d4c3a; outline-offset: 4px; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  @keyframes surface { from { opacity: 0; transform: translateY(14px); filter: blur(7px); } to { opacity: 1; transform: none; filter: blur(0); } }
+  @keyframes ringOut { from { transform: scale(0.06); opacity: 0.85; } to { transform: scale(1); opacity: 0; } }
+  @keyframes dropIn { 0% { transform: translateY(-46vh) scale(0.6); opacity: 0; } 40% { opacity: 1; } 92% { transform: translateY(0) scale(1); opacity: 1; } 100% { transform: translateY(0) scale(0.7); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+</style>
+</helmet>
+<div style="position:relative;min-height:100vh;font-family:'EB Garamond',Georgia,serif">
+  <dc-import name="GardenScene" place="thinker" density="trace" hint-size="100%,100%"></dc-import>
+  <dc-import name="GardenNav" current="thinker" hint-size="0,0"></dc-import>
+
+  <main id="content" style="position:relative;z-index:1">
+    <section data-screen-label="Thinker opening" style="min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18vh clamp(20px,5vw,60px) 10vh;text-align:center">
+      <p style="margin:0 0 clamp(16px,3vh,26px);font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.3em;text-transform:uppercase;color:#5b6350;animation:rise 0.9s 0.5s ease-out both">03 · Quiet water</p>
+      <h1 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(3rem,8.5vw,7rem);line-height:0.96;letter-spacing:-0.015em;animation:surface 1.8s 0.9s cubic-bezier(0.22,0.61,0.36,1) both">The Thinker</h1>
+      <p style="margin:clamp(22px,4vh,36px) 0 0;max-width:30ch;font-style:italic;font-size:clamp(1.2rem,2.2vw,1.7rem);line-height:1.45;color:#3a4133;animation:surface 1.6s 1.6s cubic-bezier(0.22,0.61,0.36,1) both">Some of the things I think about have nothing to do with code.</p>
+    </section>
+
+    <!-- SIGNATURE 4 — a petal falls, meets the water, the ring opens, the line surfaces inside it -->
+    <section data-screen-label="Desire" aria-labelledby="t-desire" data-moment="1" style="position:relative;min-height:96vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(40px,8vh,90px) clamp(20px,5vw,60px);text-align:center">
+      <div aria-hidden="true" data-petal="1" style="position:absolute;left:50%;top:38%;width:11px;height:6px;margin-left:-5px;border-radius:60% 40% 55% 45%;background:#dcc0bf;box-shadow:0 1px 3px rgba(60,68,52,0.28);opacity:0"></div>
+      <div aria-hidden="true" data-rings="1" style="position:absolute;left:50%;top:38%;width:min(1100px,150%);height:min(1100px,150%);transform:translate(-50%,-50%);pointer-events:none">
+        <span data-ring="1" style="position:absolute;inset:0;border:1px solid rgba(247,243,234,0.85);border-radius:50%;opacity:0;transform:scale(0.06)"></span>
+        <span data-ring="2" style="position:absolute;inset:8%;border:1px solid rgba(247,243,234,0.6);border-radius:50%;opacity:0;transform:scale(0.06)"></span>
+        <span data-ring="3" style="position:absolute;inset:17%;border:1px solid rgba(247,243,234,0.4);border-radius:50%;opacity:0;transform:scale(0.06)"></span>
+      </div>
+      <p data-reveal="1" style="position:relative;margin:0 0 clamp(18px,3vh,30px);font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:#5b6350;text-shadow:0 1px 8px rgba(247,243,234,0.9)">01 · Desire</p>
+      <h2 id="t-desire" data-reveal="2" style="position:relative;margin:0;max-width:17ch;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(2rem,5.2vw,3.9rem);line-height:1.08;letter-spacing:-0.012em;color:#1f251b;text-shadow:0 2px 22px rgba(247,243,234,0.95),0 1px 5px rgba(247,243,234,0.95)">We are animals that want things badly enough to invent them.</h2>
+      <div data-reveal="3" style="position:relative;max-width:620px;margin:clamp(28px,5vh,48px) auto 0;padding:clamp(22px,3.5vw,34px) clamp(20px,3vw,34px);background:linear-gradient(180deg,rgba(247,243,234,0) 0%,rgba(247,243,234,0.92) 10%,rgba(247,243,234,0.94) 90%,rgba(247,243,234,0) 100%)">
+        <p style="margin:0 0 18px;font-size:1.19rem;line-height:1.8;color:#3a4133;text-wrap:pretty">The model I keep coming back to is this: human beings are animals whose unusual desire, ingenuity and perseverance let them create things that previously did not exist. Nothing about us guarantees it. The wanting comes first, and then a long stretch of stubbornness.</p>
+        <p style="margin:0;font-size:1.02rem;line-height:1.7;color:#5b6350;font-style:italic">This is a personal philosophical model, not a scientific claim.</p>
+      </div>
+    </section>
+
+    <!-- the seven freedoms as stones set in the shallows, not chips in a card -->
+    <section data-screen-label="Freedom" aria-labelledby="t-freedom" data-moment="2" style="position:relative;padding:clamp(40px,9vh,110px) clamp(20px,5vw,60px)">
+      <div style="max-width:900px;margin:0 auto;text-align:center">
+        <p data-reveal="1" style="margin:0 0 clamp(16px,3vh,26px);font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:#5b6350;text-shadow:0 1px 8px rgba(247,243,234,0.9)">02 · Freedom</p>
+        <h2 id="t-freedom" data-reveal="2" style="margin:0 auto;max-width:20ch;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.9rem,4.6vw,3.3rem);line-height:1.1;letter-spacing:-0.012em;color:#1f251b;text-shadow:0 2px 22px rgba(247,243,234,0.95),0 1px 5px rgba(247,243,234,0.95)">Money matters because it buys choice.</h2>
+        <div data-reveal="3" style="max-width:620px;margin:clamp(24px,4vh,40px) auto 0;padding:clamp(20px,3vw,30px) clamp(20px,3vw,32px);background:linear-gradient(180deg,rgba(247,243,234,0) 0%,rgba(247,243,234,0.92) 12%,rgba(247,243,234,0.94) 88%,rgba(247,243,234,0) 100%)">
+          <p style="margin:0;font-size:1.19rem;line-height:1.8;color:#3a4133;text-wrap:pretty">Freedom is not one thing. When I use the word I mean at least seven of them, and they come apart from each other more often than people admit.</p>
+        </div>
+        <ul data-stones="1" style="list-style:none;margin:clamp(34px,6vh,64px) 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:clamp(12px,2vw,22px)">
+          <sc-for list="{{ freedoms }}" as="f" hint-placeholder-count="7">
+            <li data-stone="{{ f.i }}" style="{{ f.style }}">{{ f.name }}</li>
+          </sc-for>
+        </ul>
+        <div data-reveal="4" style="max-width:620px;margin:clamp(32px,5vh,56px) auto 0;padding:clamp(20px,3vw,30px) clamp(20px,3vw,32px);background:linear-gradient(180deg,rgba(247,243,234,0) 0%,rgba(247,243,234,0.92) 12%,rgba(247,243,234,0.94) 88%,rgba(247,243,234,0) 100%)">
+          <p style="margin:0;font-size:1.19rem;line-height:1.8;color:#3a4133;text-wrap:pretty">Money matters because it creates freedom. Freedom matters because it creates choice. That is the whole of my interest in it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- failure: one line over open water, nothing around it -->
+    <section data-screen-label="Failure" aria-labelledby="t-failure" data-moment="3" style="position:relative;min-height:78vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(40px,8vh,90px) clamp(20px,5vw,60px);text-align:center">
+      <p data-reveal="1" style="margin:0 0 clamp(16px,3vh,26px);font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:#5b6350;text-shadow:0 1px 8px rgba(247,243,234,0.9)">03 · Failure</p>
+      <h2 id="t-failure" data-reveal="2" style="margin:0;max-width:18ch;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(2rem,5vw,3.6rem);line-height:1.08;letter-spacing:-0.012em;color:#1f251b;text-shadow:0 2px 22px rgba(247,243,234,0.95),0 1px 5px rgba(247,243,234,0.95)">Failing is not the lesson. The return is.</h2>
+      <div data-reveal="3" style="max-width:620px;margin:clamp(28px,5vh,48px) auto 0;padding:clamp(22px,3.5vw,32px) clamp(20px,3vw,32px);background:linear-gradient(180deg,rgba(247,243,234,0) 0%,rgba(247,243,234,0.92) 12%,rgba(247,243,234,0.94) 88%,rgba(247,243,234,0) 100%)">
+        <p style="margin:0;font-size:1.19rem;line-height:1.8;color:#3a4133;text-wrap:pretty">Failure does not automatically make someone better. Plenty of it teaches nothing at all. What reveals something about a person is the sequence: trying, failing, understanding why, changing something, and trying again. I am more interested in whether someone goes back than in whether they fell.</p>
+      </div>
+    </section>
+
+    <!-- vulnerability: an engraved plaque set at the water's edge, by the tea house -->
+    <section data-screen-label="Vulnerability" aria-labelledby="t-vuln" data-moment="4" style="position:relative;padding:clamp(30px,6vh,80px) clamp(20px,5vw,60px)">
+      <div data-reveal="1" style="max-width:700px;margin:0 auto;background:linear-gradient(154deg,rgba(122,101,80,0.96) 0%,rgba(103,84,66,0.96) 48%,rgba(84,68,53,0.96) 100%);border:1px solid rgba(48,39,30,0.5);border-radius:2px;box-shadow:inset 0 1px 0 rgba(232,214,190,0.24), inset 0 -2px 0 rgba(38,31,24,0.35), 0 22px 40px -30px rgba(35,41,31,0.9);padding:clamp(30px,5vw,54px) clamp(24px,4.5vw,50px)">
+        <p style="margin:0 0 14px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.26em;text-transform:uppercase;color:#c9b79c">04 · Vulnerability · the fortress test</p>
+        <h2 id="t-vuln" style="margin:0 0 22px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.7rem,3.6vw,2.5rem);line-height:1.12;letter-spacing:-0.01em;color:#f6efe1;text-shadow:0 1px 0 rgba(40,32,25,0.6)">I could build a life nothing could reach. I don't want it.</h2>
+        <p style="margin:0 0 18px;font-size:1.17rem;line-height:1.8;color:#eadfcb;text-wrap:pretty">Here is the test I put to myself. Suppose I designed a life where nothing could hurt me: no betrayal, no disappointment, no loss. It would work. It would also remove most of the experiences that make a life worth having.</p>
+        <p style="margin:0;font-size:1.17rem;line-height:1.8;color:#eadfcb;text-wrap:pretty">So the fortress is not the goal. Being reachable is the cost of the things I actually want.</p>
+      </div>
+    </section>
+
+    <!-- excellence: a paper note left on the tea house step -->
+    <section data-screen-label="Excellence" aria-labelledby="t-excellence" data-moment="5" style="position:relative;padding:clamp(30px,6vh,80px) clamp(20px,5vw,60px) clamp(60px,10vh,120px)">
+      <div data-reveal="1" style="max-width:620px;margin:0 auto;background:#f7f2e4;border:1px solid rgba(120,108,84,0.28);box-shadow:0 18px 34px -28px rgba(35,41,31,0.8);padding:clamp(28px,4.5vw,48px) clamp(24px,4vw,44px);transform:rotate(-0.5deg)">
+        <p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.26em;text-transform:uppercase;color:#7c8469">05 · Excellence</p>
+        <h2 id="t-excellence" style="margin:0 0 20px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.7rem,3.6vw,2.4rem);line-height:1.12;letter-spacing:-0.01em">Ship it imperfect. Keep the debt on the books.</h2>
+        <p style="margin:0;font-size:1.19rem;line-height:1.8;color:#3a4133;text-wrap:pretty">I can put out something imperfect in the short term and still intend to improve or redeem it later. Those two things are not in conflict for me. What I try to avoid is the quiet trade where shipping something rough becomes permission to stop caring about it.</p>
+      </div>
+    </section>
+
+    <footer style="padding:0 clamp(20px,5vw,60px) clamp(60px,10vh,120px)">
+      <div style="max-width:660px;margin:0 auto;border-top:1px solid rgba(61,76,58,0.24);padding-top:26px">
+        <p style="margin:0 0 20px;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.24em;text-transform:uppercase;color:#5b6350;text-shadow:0 1px 6px rgba(247,243,234,0.85)">Onward — this page ends here</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px">
+          <a href="Stay%20Stories.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 220px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.72)" style-hover="background:rgba(247,243,234,0.98);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">05 · Intimate paths</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">Stories</span>
+          </a>
+          <a href="Stay%20Contact.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 220px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.72)" style-hover="background:rgba(247,243,234,0.98);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">09 · Open garden</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">Contact</span>
+          </a>
+          <a href="Stay%20Awhile.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 220px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.72)" style-hover="background:rgba(247,243,234,0.98);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">00 · Arrival</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">Back to the garden</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+const FREEDOMS = ['Financial', 'Time', 'Career', 'Relationship', 'Geographic', 'Intellectual', 'Experiential'];
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.reduce = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
+  renderVals() {
+    const heights = [70, 58, 64, 52, 66, 56, 62];
+    const freedoms = FREEDOMS.map((name, i) => ({
+      i: i + 1, name: name,
+      style: {
+        display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center',
+        minHeight: heights[i] + 'px', padding: '10px clamp(12px,1.6vw,20px)',
+        fontFamily: "'IBM Plex Mono',monospace", fontSize: '0.62rem', letterSpacing: '0.18em',
+        textTransform: 'uppercase', color: '#2f3629',
+        background: 'linear-gradient(163deg,#d2cbba 0%,#bfb7a4 52%,#a8a08d 100%)',
+        border: '1px solid rgba(84,79,64,0.34)',
+        borderRadius: (10 + i % 3 * 5) + 'px ' + (16 - i % 3 * 4) + 'px ' + (12 + i % 2 * 6) + 'px ' + (14 - i % 2 * 5) + 'px / 44% 56% 48% 52%',
+        boxShadow: 'inset 0 1px 0 rgba(255,252,242,0.62), inset 0 -2px 3px rgba(70,66,52,0.2), 0 10px 16px -13px rgba(35,41,31,0.9)',
+        textShadow: '0 1px 0 rgba(255,252,242,0.5)'
+      }
+    }));
+    return { freedoms: freedoms };
+  }
+
+  componentDidMount() {
+    const root = document.getElementById('content');
+    if (!root) return;
+    const reveals = Array.prototype.slice.call(root.querySelectorAll('[data-reveal],[data-stone]'));
+    if (this.reduce) return;
+    reveals.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = el.hasAttribute('data-stone') ? 'translateY(14px)' : 'translateY(18px)';
+      el.style.transition = 'opacity 900ms cubic-bezier(0.22,0.61,0.36,1), transform 1100ms cubic-bezier(0.22,0.61,0.36,1)';
+    });
+    const seen = new WeakSet();
+    const show = (el, delay) => {
+      if (seen.has(el)) return;
+      seen.add(el);
+      window.setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'none'; }, delay);
+    };
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const sec = entry.target;
+        io.unobserve(sec);
+        const items = Array.prototype.slice.call(sec.querySelectorAll('[data-reveal]'));
+        const stones = Array.prototype.slice.call(sec.querySelectorAll('[data-stone]'));
+        if (sec.getAttribute('data-moment') === '1') this.ripple(sec, items);
+        else items.forEach((el, i) => show(el, 120 + i * 240));
+        stones.forEach((el, i) => show(el, 260 + i * 150));
+      });
+    }, { threshold: 0.28 });
+    Array.prototype.slice.call(root.querySelectorAll('[data-moment]')).forEach((s) => io.observe(s));
+    this.io = io;
+  }
+
+  /* SIGNATURE 4 — petal, contact, rings, then the words surface inside them */
+  ripple(sec, items) {
+    const petal = sec.querySelector('[data-petal]');
+    const rings = Array.prototype.slice.call(sec.querySelectorAll('[data-ring]'));
+    if (petal) petal.style.animation = 'dropIn 1500ms cubic-bezier(0.4,0.02,0.6,1) both';
+    window.setTimeout(() => {
+      rings.forEach((r, i) => { r.style.animation = 'ringOut ' + (3400 + i * 400) + 'ms ' + (i * 260) + 'ms cubic-bezier(0.16,0.7,0.3,1) forwards'; });
+    }, 1320);
+    items.forEach((el, i) => {
+      window.setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'none'; }, 1560 + i * 320);
+    });
+  }
+
+  componentWillUnmount() { if (this.io) this.io.disconnect(); }
+}
+
+</script>
+</body>
+</html>

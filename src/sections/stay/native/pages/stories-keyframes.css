@@ -1,0 +1,2 @@
+@keyframes stay-stories-duskIn { from { opacity: 0; transform: translateY(18px); filter: blur(8px); } to { opacity: 1; transform: none; filter: blur(0); } }
+@keyframes stay-stories-flicker { 0%,100% { opacity: 0.72; transform: scale(1); } 22% { opacity: 0.94; transform: scale(1.03); } 47% { opacity: 0.66; transform: scale(0.985); } 71% { opacity: 0.88; transform: scale(1.015); } }

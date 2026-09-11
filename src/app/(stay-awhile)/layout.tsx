@@ -1,7 +1,11 @@
 import type { ReactNode } from "react";
+import { EB_Garamond } from "next/font/google";
 
 import { MAIN_CONTENT_ID } from "@/components/a11y/SkipLink";
 import { MotionProvider } from "@/components/motion/MotionProvider";
+
+// Stay's editorial body face; never applied to the root or Quick Discovery.
+const stayBody = EB_Garamond({ subsets: ["latin"], weight: ["400", "500"], style: ["normal", "italic"], display: "swap", variable: "--stay-body-face" });
 
 /**
  * Stay Awhile — the multi-route, garden-navigated experience, entered at
@@ -15,7 +19,7 @@ import { MotionProvider } from "@/components/motion/MotionProvider";
  */
 export default function StayAwhileLayout({ children }: { children: ReactNode }) {
   return (
-    <main id={MAIN_CONTENT_ID} tabIndex={-1}>
+    <main id={MAIN_CONTENT_ID} tabIndex={-1} className={stayBody.variable}>
       <MotionProvider>{children}</MotionProvider>
     </main>
   );

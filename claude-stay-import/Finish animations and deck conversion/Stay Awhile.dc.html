@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Stay Awhile — Adharsh Vijayakarthy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #efe9dc; color: #23291f; -webkit-font-smoothing: antialiased; }
+  a { color: #3d4c3a; }
+  a:hover { color: #23291f; }
+  ::selection { background: rgba(220,192,191,0.55); }
+  :focus-visible { outline: 2px solid #3d4c3a; outline-offset: 4px; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  @keyframes emerge { from { opacity: 0; transform: translateY(26px) scale(1.015); filter: blur(11px); } to { opacity: 1; transform: none; filter: blur(0); } }
+  @keyframes glowIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes breathe { 0%,100% { opacity: 0.35; } 50% { opacity: 0.8; } }
+  @media (prefers-reduced-motion: reduce) {
+    [style*="animation"] { animation: none !important; }
+  }
+</style>
+</helmet>
+<div style="position:relative;min-height:100vh;font-family:'EB Garamond',Georgia,serif">
+  <dc-import name="GardenScene" place="garden" reveal="scroll" density="{{ density }}" hint-size="100%,100%"></dc-import>
+  <dc-import name="GardenNav" current="garden" hint-size="0,0"></dc-import>
+
+  <main id="content" style="position:relative;z-index:1">
+    <section data-screen-label="Arrival" style="position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:clamp(120px,20vh,220px) clamp(20px,5vw,60px) 14vh;text-align:center">
+      <div aria-hidden="true" style="position:absolute;left:50%;top:0;width:min(1500px,180%);height:82vh;transform:translateX(-50%);background:radial-gradient(46% 42% at 50% 34%, rgba(255,252,242,0.88) 0%, rgba(252,247,235,0.5) 46%, rgba(250,245,232,0) 78%);pointer-events:none;animation:glowIn 2.2s 0.9s ease both"></div>
+      <p style="position:relative;margin:0 0 clamp(20px,4vh,34px);font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.34em;text-transform:uppercase;color:#5b6350;animation:rise 1.4s 1.5s ease-out both">Adharsh Vijayakarthy · Experience 02</p>
+      <h1 style="position:relative;margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(3.4rem,10.5vw,8.6rem);line-height:0.94;letter-spacing:-0.015em;color:#20261c;animation:emerge 1.8s 1.9s cubic-bezier(0.22,0.61,0.36,1) both">Stay Awhile</h1>
+      <p style="position:relative;margin:clamp(18px,3vh,28px) 0 0;font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:clamp(1.25rem,2.4vw,1.85rem);color:#3f4738;animation:emerge 1.6s 2.7s cubic-bezier(0.22,0.61,0.36,1) both">Take your time.</p>
+      <div style="position:relative;margin-top:clamp(46px,9vh,96px);display:flex;flex-direction:column;align-items:center;gap:12px;animation:rise 1.4s 3.4s ease-out both">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:#3f4738;text-shadow:0 1px 6px rgba(250,246,236,0.9)">Scroll to enter the garden</span>
+        <span style="display:block;width:1px;height:clamp(40px,7vh,72px);background:linear-gradient(180deg,rgba(45,55,42,0.6),rgba(45,55,42,0));animation:breathe 4.6s ease-in-out infinite"></span>
+      </div>
+    </section>
+
+    <section data-screen-label="Orientation" aria-labelledby="orient-title" style="padding:clamp(60px,12vh,150px) clamp(20px,5vw,60px)">
+      <div style="max-width:720px;margin:0 auto;padding:clamp(30px,5vw,58px) clamp(22px,4vw,52px);background:linear-gradient(180deg,rgba(247,243,234,0) 0%,rgba(247,243,234,0.9) 9%,rgba(247,243,234,0.93) 90%,rgba(247,243,234,0) 100%)">
+        <p style="margin:0 0 22px;font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.26em;text-transform:uppercase;color:#7c8469">Where you are</p>
+        <h2 id="orient-title" style="margin:0 0 30px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(2rem,4.4vw,3.3rem);line-height:1.06;letter-spacing:-0.01em">A place, rather than a page.</h2>
+        <p style="margin:0 0 20px;font-size:1.19rem;line-height:1.78;color:#3a4133;text-wrap:pretty">There is a faster version of this portfolio. It takes ninety seconds, it is precise about what I do, and it is still next door if you would rather have the summary.</p>
+        <p style="margin:0 0 20px;font-size:1.19rem;line-height:1.78;color:#3a4133;text-wrap:pretty">This one is slower on purpose. It is laid out as a garden with nine places in it, because what I would want you to know about me does not arrive in a single order. Some of it is work. Some of it is the reason behind the work. A few parts are unfinished, and I have left them that way rather than tidy them into something more impressive.</p>
+        <p style="margin:0;font-size:1.19rem;line-height:1.78;color:#3a4133;text-wrap:pretty">Walk in whichever direction you like. The map opens from the top of any page, or by pressing <span style="font-family:'IBM Plex Mono',monospace;font-size:0.92rem;border:1px solid rgba(61,76,58,0.4);padding:1px 6px;border-radius:2px">M</span>.</p>
+      </div>
+    </section>
+
+    <section data-screen-label="Nine places" aria-labelledby="places-title" style="padding:0 clamp(20px,5vw,60px) clamp(70px,12vh,150px)">
+      <div style="max-width:900px;margin:0 auto;padding:clamp(30px,5vw,54px) clamp(22px,4vw,44px);background:linear-gradient(180deg,rgba(247,243,234,0) 0%,rgba(247,243,234,0.9) 6%,rgba(247,243,234,0.93) 94%,rgba(247,243,234,0) 100%)">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:clamp(26px,4vh,44px)">
+          <h2 id="places-title" style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.8rem,3.6vw,2.7rem);line-height:1">Nine places</h2>
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">Each one is its own page</p>
+        </div>
+        <nav aria-label="Stay Awhile destinations" style="display:flex;flex-direction:column">
+          <a href="Stay%20Person.dc.html" style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:clamp(14px,3vw,32px);padding:20px 4px;border-top:1px solid rgba(61,76,58,0.2);text-decoration:none" style-hover="background:rgba(61,76,58,0.06);padding-left:10px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.16em;color:#8b9179">01</span>
+            <span style="display:flex;flex-direction:column;gap:7px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,2.6vw,2rem);color:#23291f;line-height:1.1">The Person</span>
+              <span style="font-size:1.06rem;line-height:1.6;color:#4c5545">Before the projects, the person who keeps trying to build them.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:#7c8469">Clearing</span>
+          </a>
+          <a href="Stay%20Builder.dc.html" style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:clamp(14px,3vw,32px);padding:20px 4px;border-top:1px solid rgba(61,76,58,0.2);text-decoration:none" style-hover="background:rgba(61,76,58,0.06);padding-left:10px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.16em;color:#8b9179">02</span>
+            <span style="display:flex;flex-direction:column;gap:7px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,2.6vw,2rem);color:#23291f;line-height:1.1">The Builder</span>
+              <span style="font-size:1.06rem;line-height:1.6;color:#4c5545">I like turning ideas into systems. This is what that has produced so far.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:#7c8469">Timber frame</span>
+          </a>
+          <a href="Stay%20Thinker.dc.html" style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:clamp(14px,3vw,32px);padding:20px 4px;border-top:1px solid rgba(61,76,58,0.2);text-decoration:none" style-hover="background:rgba(61,76,58,0.06);padding-left:10px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.16em;color:#8b9179">03</span>
+            <span style="display:flex;flex-direction:column;gap:7px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,2.6vw,2rem);color:#23291f;line-height:1.1">The Thinker</span>
+              <span style="font-size:1.06rem;line-height:1.6;color:#4c5545">Desire, freedom, failure, vulnerability, excellence. None of it about code.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:#7c8469">Quiet water</span>
+          </a>
+          <a href="Stay%20Leader.dc.html" style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:clamp(14px,3vw,32px);padding:20px 4px;border-top:1px solid rgba(61,76,58,0.2);text-decoration:none" style-hover="background:rgba(61,76,58,0.06);padding-left:10px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.16em;color:#8b9179">04</span>
+            <span style="display:flex;flex-direction:column;gap:7px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,2.6vw,2rem);color:#23291f;line-height:1.1">The Leader</span>
+              <span style="font-size:1.06rem;line-height:1.6;color:#4c5545">What happens when something needs to get done and nobody has been assigned to it.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:#7c8469">Courtyard</span>
+          </a>
+          <a href="Stay%20Stories.dc.html" style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:clamp(14px,3vw,32px);padding:20px 4px;border-top:1px solid rgba(61,76,58,0.2);text-decoration:none" style-hover="background:rgba(61,76,58,0.06);padding-left:10px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.16em;color:#8b9179">05</span>
+            <span style="display:flex;flex-direction:column;gap:7px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,2.6vw,2rem);color:#23291f;line-height:1.1">Stories</span>
+              <span style="font-size:1.06rem;line-height:1.6;color:#4c5545">A handful of moments, told at their actual size.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:#7c8469">Intimate paths</span>
+          </a>
+          <a href="Stay%20Work.dc.html" style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:clamp(14px,3vw,32px);padding:20px 4px;border-top:1px solid rgba(61,76,58,0.2);text-decoration:none" style-hover="background:rgba(61,76,58,0.06);padding-left:10px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.16em;color:#8b9179">06</span>
+            <span style="display:flex;flex-direction:column;gap:7px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,2.6vw,2rem);color:#23291f;line-height:1.1">The Work</span>
+              <span style="font-size:1.06rem;line-height:1.6;color:#4c5545">Five things I actually built, and what each one asked of me.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:#7c8469">Workshop</span>
+          </a>
+          <a href="Stay%20Future.dc.html" style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:clamp(14px,3vw,32px);padding:20px 4px;border-top:1px solid rgba(61,76,58,0.2);text-decoration:none" style-hover="background:rgba(61,76,58,0.06);padding-left:10px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.16em;color:#8b9179">07</span>
+            <span style="display:flex;flex-direction:column;gap:7px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,2.6vw,2rem);color:#23291f;line-height:1.1">The Future</span>
+              <span style="font-size:1.06rem;line-height:1.6;color:#4c5545">Where I am going, without pretending I have arrived.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:#7c8469">Open horizon</span>
+          </a>
+          <a href="Stay%20Aura.dc.html" style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:clamp(14px,3vw,32px);padding:20px 4px;border-top:1px solid rgba(61,76,58,0.2);text-decoration:none" style-hover="background:rgba(61,76,58,0.06);padding-left:10px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.16em;color:#8b9179">08</span>
+            <span style="display:flex;flex-direction:column;gap:7px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,2.6vw,2rem);color:#23291f;line-height:1.1">AURA</span>
+              <span style="font-size:1.06rem;line-height:1.6;color:#4c5545">Why this portfolio is built the way it is.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:#7c8469">Archive</span>
+          </a>
+          <a href="Stay%20Contact.dc.html" style="display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:clamp(14px,3vw,32px);padding:20px 4px;border-top:1px solid rgba(61,76,58,0.2);border-bottom:1px solid rgba(61,76,58,0.2);text-decoration:none" style-hover="background:rgba(61,76,58,0.06);padding-left:10px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.16em;color:#8b9179">09</span>
+            <span style="display:flex;flex-direction:column;gap:7px">
+              <span style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,2.6vw,2rem);color:#23291f;line-height:1.1">Contact</span>
+              <span style="font-size:1.06rem;line-height:1.6;color:#4c5545">Four ways to reach me.</span>
+            </span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:#7c8469">Open garden</span>
+          </a>
+        </nav>
+        <p style="margin:26px 0 0;font-size:1.02rem;line-height:1.7;color:#5b6350;max-width:60ch">Nothing here scrolls into the next place. When a page ends, it ends — you leave when you decide to.</p>
+      </div>
+    </section>
+
+    <footer style="padding:0 clamp(20px,5vw,60px) clamp(60px,10vh,120px)">
+      <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:26px;align-items:baseline;justify-content:space-between;border-top:1px solid rgba(61,76,58,0.24);padding-top:24px">
+        <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:#7c8469">Written in first person · where something is still developing, it says so</p>
+        <a href="Quick%20Discovery.dc.html" style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(61,76,58,0.35);padding-bottom:3px">Quick Discovery · 90 seconds ↗</a>
+      </div>
+    </footer>
+  </main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;density&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;rare&quot;,&quot;occasional&quot;,&quot;steady&quot;],&quot;default&quot;:&quot;occasional&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Atmosphere&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { density: this.props.density ?? 'occasional' };
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@keyframes sway1 { 0%,100% { transform: rotate(-0.7deg); } 50% { transform: rotate(0.7deg); } }
+@keyframes sway2 { 0%,100% { transform: rotate(0.5deg) translateX(-1px); } 50% { transform: rotate(-0.6deg) translateX(1px); } }
+@keyframes sway3 { 0%,100% { transform: rotate(-1.1deg); } 50% { transform: rotate(1.1deg); } }
+@keyframes blades { 0%,100% { transform: skewX(-1.4deg); } 50% { transform: skewX(1.8deg); } }
+@keyframes drift { 0%,100% { transform: translateX(-2%); opacity: 0.46; } 50% { transform: translateX(3%); opacity: 0.74; } }
+@keyframes ripple { 0%,100% { transform: scaleX(1) translateX(-0.6%); opacity: 0.3; } 50% { transform: scaleX(1.05) translateX(1%); opacity: 0.58; } }
+@keyframes emberglow { 0%,100% { opacity: 0.3; } 50% { opacity: 0.66; } }
+@keyframes sunshift { 0%,100% { opacity: 0.32; transform: translate3d(-1.5%,1%,0); } 50% { opacity: 0.6; transform: translate3d(1.5%,-1%,0); } }
+@keyframes descend { from { opacity: 0; transform: scale(1.055); } to { opacity: 1; transform: none; } }
+</style>
+</helmet>
+<div ref="{{ rootRef }}" aria-hidden="true" style="position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0;background:#efe9dc">
+  <sc-for list="{{ washes }}" as="w" hint-placeholder-count="3">
+    <div data-depth="{{ w.depth }}" data-order="{{ w.order }}" style="{{ w.style }}"></div>
+  </sc-for>
+  <sc-for list="{{ planes }}" as="p" hint-placeholder-count="6">
+    <div data-depth="{{ p.depth }}" data-order="{{ p.order }}" style="position:absolute;inset:0;will-change:transform;transition:opacity 0.9s ease">
+      <div style="{{ p.anchor }}">
+        <svg viewBox="{{ p.vb }}" preserveAspectRatio="none" style="width:100%;height:auto;display:block;overflow:visible">
+          <sc-for list="{{ p.marks }}" as="m" hint-placeholder-count="8">
+            <path d="{{ m.d }}" data-cue="{{ m.cue }}" style="{{ m.st }}"></path>
+          </sc-for>
+        </svg>
+      </div>
+    </div>
+  </sc-for>
+  <div ref="{{ openRef }}" style="position:absolute;inset:0;opacity:0;background:linear-gradient(180deg,rgba(255,253,246,0.9) 0%,rgba(253,249,239,0.62) 42%,rgba(250,245,233,0.22) 68%,rgba(248,243,230,0) 100%)"></div>
+  <canvas ref="{{ canvasRef }}" style="position:absolute;inset:0;width:100%;height:100%"></canvas>
+  <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 34%, rgba(255,252,244,0) 44%, rgba(58,64,48,0.11) 100%)"></div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:760},&quot;place&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;garden&quot;,&quot;person&quot;,&quot;builder&quot;,&quot;thinker&quot;,&quot;leader&quot;,&quot;stories&quot;,&quot;work&quot;,&quot;future&quot;,&quot;aura&quot;,&quot;contact&quot;],&quot;default&quot;:&quot;garden&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Scene&quot;},&quot;density&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;still&quot;,&quot;trace&quot;,&quot;rare&quot;,&quot;occasional&quot;,&quot;steady&quot;],&quot;default&quot;:&quot;occasional&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Scene&quot;},&quot;reveal&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;none&quot;,&quot;scroll&quot;,&quot;thin&quot;],&quot;default&quot;:&quot;none&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Scene&quot;},&quot;signature&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;none&quot;,&quot;assemble&quot;,&quot;converge&quot;],&quot;default&quot;:&quot;none&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Scene&quot;}}">
+const C = {
+  far: '#9aa68b', far2: '#8b9880', far3: '#7d8b74',
+  mid: '#61715a', mid2: '#54654f', mid3: '#485a45',
+  near: '#3d4c3a', deep: '#2b3628',
+  earth: '#b9ac95', earth2: '#a2957f',
+  bark: '#6d5947', barkD: '#4c3f31', barkL: '#8a7460',
+  stone: '#bdb6a5', stoneD: '#9b9483', stoneDD: '#7f7869',
+  water: '#84968d', sakura: '#dcc0bf', sakuraD: '#c9a5a6', bloom: '#f0dcd8',
+  gold: '#b0904f', ivory: '#efe9dc', ivoryW: '#fbf7ec', paper: '#e6dfcd'
+};
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.rootRef = (el) => { this.root = el; };
+    this.canvasRef = (el) => { this.canvas = el; };
+    this.openRef = (el) => { this.open = el; };
+    this.reduce = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.petals = []; this.ripples = [];
+    this.pointer = { x: 0, y: 0 };
+    this.introP = 0;
+  }
+
+  /* ---------- primitives: every drawable is one <path> + one style object ---------- */
+  mk(d, o) {
+    const st = { fill: 'none', stroke: 'none', opacity: 1, strokeLinecap: 'round', strokeLinejoin: 'round' };
+    o = o || {};
+    if (o.fill) st.fill = o.fill;
+    if (o.stroke) { st.stroke = o.stroke; st.strokeWidth = (o.sw || 1) + 'px'; }
+    if (o.o !== undefined) st.opacity = o.o;
+    if (o.blur) st.filter = 'blur(' + o.blur + 'px)';
+    if (o.anim && !this.reduce) { st.animation = o.anim; st.transformBox = 'fill-box'; st.transformOrigin = o.origin || '50% 100%'; }
+    if (o.dash) st.strokeDasharray = o.dash;
+    return { d: d, st: st, cue: o.cue };
+  }
+  /* stamp a build order onto a group of marks so the scene can assemble itself */
+  cue(marks, from) {
+    marks.forEach((m, i) => { m.cue = (from || 0) + i; });
+    return marks;
+  }
+  sway(n, seed) { return 'sway' + n + ' ' + (12 + (seed % 7) * 1.6 + n * 3) + 's ease-in-out infinite'; }
+  rnd(seed) { let s = ((seed * 9301 + 49297) % 233280 + 233280) % 233280; return function () { s = (s * 9301 + 49297) % 233280; return s / 233280; }; }
+  n1(v) { return Math.round(v * 10) / 10; }
+
+  /* silhouette generators (all coordinates in the plane's own viewBox units) */
+  ridgeD(y, h, n, seed, floor) {
+    const r = this.rnd(seed); let d = 'M -60 ' + floor + ' L -60 ' + this.n1(y);
+    const step = 1120 / n; let x = -60;
+    for (let i = 0; i < n; i++) {
+      const nx = x + step;
+      d += ' Q ' + this.n1(x + step * 0.5) + ' ' + this.n1(y - h * (0.3 + r() * 0.7)) + ' ' + this.n1(nx) + ' ' + this.n1(y - h * 0.14 * r());
+      x = nx;
+    }
+    return d + ' L ' + this.n1(x) + ' ' + floor + ' Z';
+  }
+  crownD(cx, cy, rx, ry, lobes, seed) {
+    const r = this.rnd(seed); const pts = [];
+    for (let i = 0; i < lobes; i++) {
+      const a = (i / lobes) * Math.PI * 2, rr = 0.7 + r() * 0.44;
+      pts.push([cx + Math.cos(a) * rx * rr, cy + Math.sin(a) * ry * rr]);
+    }
+    let d = 'M ' + this.n1(pts[0][0]) + ' ' + this.n1(pts[0][1]);
+    for (let i = 0; i < pts.length; i++) {
+      const p = pts[i], q = pts[(i + 1) % pts.length];
+      const mx = (p[0] + q[0]) / 2, my = (p[1] + q[1]) / 2;
+      d += ' Q ' + this.n1((mx - cx) * 1.2 + cx) + ' ' + this.n1((my - cy) * 1.2 + cy) + ' ' + this.n1(q[0]) + ' ' + this.n1(q[1]);
+    }
+    return d + ' Z';
+  }
+  trunkD(x, yb, yt, w, lean) {
+    const l = lean || 0, H = yb - yt;
+    return 'M ' + this.n1(x - w) + ' ' + this.n1(yb) +
+      ' C ' + this.n1(x - w * 0.62) + ' ' + this.n1(yb - H * 0.5) + ' ' + this.n1(x + l - w * 0.3) + ' ' + this.n1(yb - H * 0.82) + ' ' + this.n1(x + l - w * 0.2) + ' ' + this.n1(yt) +
+      ' L ' + this.n1(x + l + w * 0.2) + ' ' + this.n1(yt) +
+      ' C ' + this.n1(x + l + w * 0.32) + ' ' + this.n1(yb - H * 0.82) + ' ' + this.n1(x + w * 0.66) + ' ' + this.n1(yb - H * 0.5) + ' ' + this.n1(x + w) + ' ' + this.n1(yb) + ' Z';
+  }
+  boughD(x, y, len, ang, curve) {
+    const ex = x + Math.cos(ang) * len, ey = y + Math.sin(ang) * len;
+    const cx = x + Math.cos(ang - (curve || 0.4)) * len * 0.62, cy = y + Math.sin(ang - (curve || 0.4)) * len * 0.62;
+    return 'M ' + this.n1(x) + ' ' + this.n1(y) + ' Q ' + this.n1(cx) + ' ' + this.n1(cy) + ' ' + this.n1(ex) + ' ' + this.n1(ey);
+  }
+  bladesD(x0, x1, y, h, n, seed) {
+    const r = this.rnd(seed); let d = '';
+    for (let i = 0; i < n; i++) {
+      const x = x0 + (x1 - x0) * (i / (n - 1)) + (r() - 0.5) * 8;
+      const hh = h * (0.5 + r() * 0.75), bend = (r() - 0.5) * h * 0.85;
+      d += 'M ' + this.n1(x) + ' ' + this.n1(y) + ' Q ' + this.n1(x + bend * 0.35) + ' ' + this.n1(y - hh * 0.6) + ' ' + this.n1(x + bend) + ' ' + this.n1(y - hh) + ' ';
+    }
+    return d;
+  }
+  stoneD(cx, cy, w, h, seed) {
+    const r = this.rnd(seed); const n = 8; let d = 'M ' + this.n1(cx - w * 0.5) + ' ' + this.n1(cy);
+    for (let i = 0; i <= n; i++) {
+      const a = Math.PI - (i / n) * Math.PI, rr = 0.8 + r() * 0.34;
+      d += ' L ' + this.n1(cx + Math.cos(a) * w * 0.5) + ' ' + this.n1(cy - Math.sin(a) * h * rr);
+    }
+    return d + ' L ' + this.n1(cx + w * 0.5) + ' ' + this.n1(cy) + ' Z';
+  }
+  dotD(x, y, r) { return 'M ' + this.n1(x - r) + ' ' + this.n1(y) + ' a ' + r + ' ' + r + ' 0 1 0 ' + (r * 2) + ' 0 a ' + r + ' ' + r + ' 0 1 0 ' + (-r * 2) + ' 0 Z'; }
+  boxD(x, y, w, h) { return 'M ' + this.n1(x) + ' ' + this.n1(y) + ' L ' + this.n1(x + w) + ' ' + this.n1(y) + ' L ' + this.n1(x + w) + ' ' + this.n1(y + h) + ' L ' + this.n1(x) + ' ' + this.n1(y + h) + ' Z'; }
+  eaveD(cx, y, w, h) {
+    const l = cx - w / 2, r = cx + w / 2;
+    return 'M ' + this.n1(l) + ' ' + this.n1(y) +
+      ' C ' + this.n1(cx - w * 0.33) + ' ' + this.n1(y - h * 0.16) + ' ' + this.n1(cx - w * 0.15) + ' ' + this.n1(y - h * 0.88) + ' ' + this.n1(cx) + ' ' + this.n1(y - h) +
+      ' C ' + this.n1(cx + w * 0.15) + ' ' + this.n1(y - h * 0.88) + ' ' + this.n1(cx + w * 0.33) + ' ' + this.n1(y - h * 0.16) + ' ' + this.n1(r) + ' ' + this.n1(y) +
+      ' C ' + this.n1(r - w * 0.02) + ' ' + this.n1(y + h * 0.22) + ' ' + this.n1(r - w * 0.06) + ' ' + this.n1(y + h * 0.14) + ' ' + this.n1(r - w * 0.11) + ' ' + this.n1(y + h * 0.1) +
+      ' L ' + this.n1(l + w * 0.11) + ' ' + this.n1(y + h * 0.1) +
+      ' C ' + this.n1(l + w * 0.06) + ' ' + this.n1(y + h * 0.14) + ' ' + this.n1(l + w * 0.02) + ' ' + this.n1(y + h * 0.22) + ' ' + this.n1(l) + ' ' + this.n1(y) + ' Z';
+  }
+  ribbonD(xt, wt, yt, xb, wb, yb) {
+    const h = yb - yt;
+    return 'M ' + this.n1(xt - wt / 2) + ' ' + this.n1(yt) + ' L ' + this.n1(xt + wt / 2) + ' ' + this.n1(yt) +
+      ' C ' + this.n1(xt + wt * 0.5 + (xb + wb / 2 - xt - wt / 2) * 0.22) + ' ' + this.n1(yt + h * 0.42) + ' ' + this.n1(xb + wb * 0.42) + ' ' + this.n1(yt + h * 0.76) + ' ' + this.n1(xb + wb / 2) + ' ' + this.n1(yb) +
+      ' L ' + this.n1(xb - wb / 2) + ' ' + this.n1(yb) +
+      ' C ' + this.n1(xb - wb * 0.42) + ' ' + this.n1(yt + h * 0.76) + ' ' + this.n1(xt - wt * 0.5 - (xt - wt / 2 - xb + wb / 2) * 0.22) + ' ' + this.n1(yt + h * 0.42) + ' ' + this.n1(xt - wt / 2) + ' ' + this.n1(yt) + ' Z';
+  }
+
+  /* ---------- composite objects ---------- */
+  tree(x, gy, s, seed, col, o) {
+    const r = this.rnd(seed), out = [], th = s * 0.92, lean = (r() - 0.5) * s * 0.1;
+    out.push(this.mk(this.trunkD(x, gy, gy - th, s * 0.062, lean), { fill: C.bark, o: (o || 1) * 0.92 }));
+    for (let i = 0; i < 3; i++) out.push(this.mk(this.boughD(x + lean * 0.6, gy - th * 0.7, s * 0.3, -Math.PI / 2 + (i - 1) * 0.75, 0.5), { stroke: C.bark, sw: s * 0.024, o: (o || 1) * 0.7 }));
+    out.push(this.mk(this.crownD(x + lean, gy - th - s * 0.22, s * 0.56, s * 0.4, 11, seed + 3), { fill: col, o: (o || 1) * 0.94, anim: this.sway(1, seed) }));
+    out.push(this.mk(this.crownD(x + lean - s * 0.3, gy - th + s * 0.02, s * 0.36, s * 0.26, 9, seed + 7), { fill: col, o: (o || 1) * 0.82, anim: this.sway(2, seed + 1) }));
+    out.push(this.mk(this.crownD(x + lean + s * 0.31, gy - th + s * 0.05, s * 0.34, s * 0.24, 9, seed + 11), { fill: col, o: (o || 1) * 0.78, anim: this.sway(2, seed + 2) }));
+    return out;
+  }
+  sakura(x, gy, s, seed, o) {
+    const r = this.rnd(seed), out = [], th = s * 0.78, lean = (r() - 0.5) * s * 0.16;
+    out.push(this.mk(this.trunkD(x, gy, gy - th, s * 0.058, lean), { fill: C.barkD, o: (o || 1) * 0.9 }));
+    const bx = x + lean, by = gy - th;
+    const angs = [-2.5, -1.95, -1.35, -0.8];
+    angs.forEach((a, i) => {
+      out.push(this.mk(this.boughD(bx, by + s * 0.06, s * (0.36 + (i % 2) * 0.1), a, 0.55), { stroke: C.barkD, sw: s * 0.026, o: (o || 1) * 0.78 }));
+    });
+    const puffs = [[bx, by - s * 0.2, 0.5, 0.3], [bx - s * 0.38, by - s * 0.06, 0.34, 0.22], [bx + s * 0.4, by - s * 0.1, 0.36, 0.23], [bx - s * 0.14, by - s * 0.36, 0.3, 0.19], [bx + s * 0.18, by - s * 0.38, 0.28, 0.18]];
+    puffs.forEach((p, i) => {
+      out.push(this.mk(this.crownD(p[0], p[1], s * p[2], s * p[3], 10, seed + i * 5), { fill: i % 2 ? C.sakuraD : C.sakura, o: (o || 1) * (0.9 - i * 0.06), anim: this.sway(i % 2 ? 2 : 1, seed + i) }));
+    });
+    let flecks = '';
+    for (let i = 0; i < 14; i++) flecks += this.dotD(bx + (r() - 0.5) * s * 1.1, by - s * 0.34 + (r() - 0.4) * s * 0.5, s * 0.016) + ' ';
+    out.push(this.mk(flecks, { fill: C.bloom, o: (o || 1) * 0.7 }));
+    return out;
+  }
+  bush(x, gy, w, h, seed, col, o) {
+    const out = [];
+    out.push(this.mk(this.crownD(x, gy - h * 0.55, w * 0.5, h * 0.55, 9, seed), { fill: col, o: o === undefined ? 0.9 : o, anim: this.sway(3, seed) }));
+    out.push(this.mk(this.crownD(x - w * 0.3, gy - h * 0.34, w * 0.3, h * 0.36, 8, seed + 4), { fill: col, o: (o === undefined ? 0.9 : o) * 0.86 }));
+    out.push(this.mk(this.crownD(x + w * 0.32, gy - h * 0.3, w * 0.28, h * 0.32, 8, seed + 9), { fill: col, o: (o === undefined ? 0.9 : o) * 0.82 }));
+    return out;
+  }
+  lantern(x, gy, s, o) {
+    const out = [], op = o === undefined ? 0.9 : o;
+    out.push(this.mk(this.stoneD(x, gy, s * 0.62, s * 0.14, 5), { fill: C.stoneDD, o: op }));
+    out.push(this.mk(this.boxD(x - s * 0.09, gy - s * 0.52, s * 0.18, s * 0.42), { fill: C.stoneD, o: op }));
+    out.push(this.mk(this.boxD(x - s * 0.24, gy - s * 0.6, s * 0.48, s * 0.09), { fill: C.stoneDD, o: op }));
+    out.push(this.mk(this.boxD(x - s * 0.19, gy - s * 0.9, s * 0.38, s * 0.3), { fill: C.stone, o: op }));
+    out.push(this.mk(this.dotD(x, gy - s * 0.75, s * 0.1), { fill: C.gold, o: 0.5, blur: 1.4, anim: 'emberglow 7s ease-in-out infinite', origin: '50% 50%' }));
+    out.push(this.mk(this.eaveD(x, gy - s * 0.9, s * 0.62, s * 0.22), { fill: C.stoneDD, o: op }));
+    out.push(this.mk(this.dotD(x, gy - s * 1.16, s * 0.045), { fill: C.stoneD, o: op }));
+    return out;
+  }
+  teaHouse(x, gy, s, o) {
+    const out = [], op = o === undefined ? 1 : o;
+    out.push(this.mk(this.boxD(x - s * 0.5, gy - s * 0.08, s, s * 0.08), { fill: C.stoneDD, o: op * 0.8 }));
+    out.push(this.mk(this.boxD(x - s * 0.44, gy - s * 0.46, s * 0.88, s * 0.38), { fill: C.paper, o: op * 0.82 }));
+    [0.22, 0.5, 0.78].forEach((f) => out.push(this.mk(this.boxD(x - s * 0.44 + s * 0.88 * f, gy - s * 0.46, s * 0.012, s * 0.38), { fill: C.barkD, o: op * 0.5 })));
+    out.push(this.mk(this.boxD(x - s * 0.44, gy - s * 0.28, s * 0.88, s * 0.012), { fill: C.barkD, o: op * 0.45 }));
+    out.push(this.mk(this.boxD(x - s * 0.46, gy - s * 0.5, s * 0.03, s * 0.44), { fill: C.barkD, o: op * 0.85 }));
+    out.push(this.mk(this.boxD(x + s * 0.43, gy - s * 0.5, s * 0.03, s * 0.44), { fill: C.barkD, o: op * 0.85 }));
+    out.push(this.mk(this.eaveD(x, gy - s * 0.48, s * 1.34, s * 0.34), { fill: C.barkD, o: op * 0.92 }));
+    out.push(this.mk(this.eaveD(x, gy - s * 0.5, s * 1.2, s * 0.26), { fill: C.bark, o: op * 0.5 }));
+    return out;
+  }
+  pavilion(x, gy, s, o) {
+    const out = [], op = o === undefined ? 1 : o, top = gy - s * 0.86;
+    for (let i = 0; i < 5; i++) {
+      const px = x - s * 0.5 + s * 0.25 * i;
+      out.push(this.mk(this.boxD(px - s * 0.018, top, s * 0.036, s * 0.86), { fill: i % 2 ? C.bark : C.barkD, o: op * (0.9 - i * 0.04) }));
+    }
+    out.push(this.mk(this.boxD(x - s * 0.54, top - s * 0.03, s * 1.08, s * 0.038), { fill: C.barkD, o: op * 0.95 }));
+    out.push(this.mk(this.boxD(x - s * 0.5, gy - s * 0.4, s, s * 0.022), { fill: C.bark, o: op * 0.6 }));
+    for (let i = 0; i < 6; i++) {
+      const rx = x - s * 0.46 + s * 0.185 * i;
+      out.push(this.mk('M ' + this.n1(rx) + ' ' + this.n1(top - s * 0.03) + ' L ' + this.n1(rx + s * 0.1) + ' ' + this.n1(top - s * 0.22), { stroke: C.bark, sw: s * 0.016, o: op * 0.62 }));
+      out.push(this.mk('M ' + this.n1(rx + s * 0.1) + ' ' + this.n1(top - s * 0.22) + ' L ' + this.n1(rx + s * 0.2) + ' ' + this.n1(top - s * 0.03), { stroke: C.bark, sw: s * 0.016, o: op * 0.5 }));
+    }
+    out.push(this.mk('M ' + this.n1(x - s * 0.56) + ' ' + this.n1(top - s * 0.04) + ' L ' + this.n1(x) + ' ' + this.n1(top - s * 0.26) + ' L ' + this.n1(x + s * 0.56) + ' ' + this.n1(top - s * 0.04), { stroke: C.barkD, sw: s * 0.02, o: op * 0.7 }));
+    out.push(this.mk(this.boxD(x - s * 0.58, gy - s * 0.02, s * 1.16, s * 0.03), { fill: C.stoneDD, o: op * 0.7 }));
+    return out;
+  }
+  torii(x, gy, s, o) {
+    const out = [], op = o === undefined ? 1 : o, top = gy - s;
+    out.push(this.mk('M ' + this.n1(x - s * 0.38) + ' ' + this.n1(gy) + ' L ' + this.n1(x - s * 0.33) + ' ' + this.n1(top + s * 0.14) + ' L ' + this.n1(x - s * 0.28) + ' ' + this.n1(top + s * 0.14) + ' L ' + this.n1(x - s * 0.32) + ' ' + this.n1(gy) + ' Z', { fill: C.barkD, o: op }));
+    out.push(this.mk('M ' + this.n1(x + s * 0.38) + ' ' + this.n1(gy) + ' L ' + this.n1(x + s * 0.33) + ' ' + this.n1(top + s * 0.14) + ' L ' + this.n1(x + s * 0.28) + ' ' + this.n1(top + s * 0.14) + ' L ' + this.n1(x + s * 0.32) + ' ' + this.n1(gy) + ' Z', { fill: C.barkD, o: op }));
+    out.push(this.mk(this.boxD(x - s * 0.34, top + s * 0.2, s * 0.68, s * 0.035), { fill: C.bark, o: op * 0.9 }));
+    out.push(this.mk('M ' + this.n1(x - s * 0.46) + ' ' + this.n1(top + s * 0.1) + ' Q ' + this.n1(x) + ' ' + this.n1(top - s * 0.02) + ' ' + this.n1(x + s * 0.46) + ' ' + this.n1(top + s * 0.1) + ' L ' + this.n1(x + s * 0.46) + ' ' + this.n1(top + s * 0.15) + ' Q ' + this.n1(x) + ' ' + this.n1(top + s * 0.03) + ' ' + this.n1(x - s * 0.46) + ' ' + this.n1(top + s * 0.15) + ' Z', { fill: C.barkD, o: op }));
+    return out;
+  }
+  wall(x0, x1, gy, h, o) {
+    const out = [], op = o === undefined ? 1 : o;
+    out.push(this.mk(this.boxD(x0, gy - h, x1 - x0, h), { fill: C.paper, o: op * 0.78 }));
+    out.push(this.mk(this.boxD(x0 - 4, gy - h - h * 0.16, x1 - x0 + 8, h * 0.16), { fill: C.stoneDD, o: op * 0.8 }));
+    out.push(this.mk(this.boxD(x0, gy - h * 0.18, x1 - x0, h * 0.18), { fill: C.stoneD, o: op * 0.5 }));
+    return out;
+  }
+  bench(x, gy, s, o) {
+    const out = [], op = o === undefined ? 1 : o;
+    out.push(this.mk(this.boxD(x - s * 0.5, gy - s * 0.2, s, s * 0.055), { fill: C.bark, o: op }));
+    out.push(this.mk(this.boxD(x - s * 0.42, gy - s * 0.2, s * 0.045, s * 0.2), { fill: C.barkD, o: op * 0.9 }));
+    out.push(this.mk(this.boxD(x + s * 0.37, gy - s * 0.2, s * 0.045, s * 0.2), { fill: C.barkD, o: op * 0.9 }));
+    return out;
+  }
+  bridge(x, gy, w, o) {
+    const out = [], op = o === undefined ? 1 : o, rise = w * 0.2;
+    out.push(this.mk('M ' + this.n1(x - w / 2) + ' ' + this.n1(gy) + ' Q ' + this.n1(x) + ' ' + this.n1(gy - rise * 2) + ' ' + this.n1(x + w / 2) + ' ' + this.n1(gy) + ' L ' + this.n1(x + w / 2) + ' ' + this.n1(gy + w * 0.035) + ' Q ' + this.n1(x) + ' ' + this.n1(gy - rise * 2 + w * 0.05) + ' ' + this.n1(x - w / 2) + ' ' + this.n1(gy + w * 0.035) + ' Z', { fill: C.barkD, o: op * 0.9 }));
+    out.push(this.mk('M ' + this.n1(x - w * 0.44) + ' ' + this.n1(gy - w * 0.06) + ' Q ' + this.n1(x) + ' ' + this.n1(gy - rise * 2 - w * 0.1) + ' ' + this.n1(x + w * 0.44) + ' ' + this.n1(gy - w * 0.06), { stroke: C.bark, sw: w * 0.016, o: op * 0.7 }));
+    return out;
+  }
+  shelfRack(x, gy, w, h, seed, o) {
+    const out = [], op = o === undefined ? 1 : o, r = this.rnd(seed);
+    out.push(this.mk(this.boxD(x, gy - h, w * 0.02, h), { fill: C.barkD, o: op }));
+    out.push(this.mk(this.boxD(x + w - w * 0.02, gy - h, w * 0.02, h), { fill: C.barkD, o: op }));
+    for (let i = 0; i < 4; i++) {
+      const sy = gy - h + (h / 4) * i;
+      out.push(this.mk(this.boxD(x, sy, w, h * 0.014), { fill: C.bark, o: op * 0.85 }));
+      let items = '';
+      let cx = x + w * 0.06;
+      while (cx < x + w * 0.9) {
+        const iw = w * (0.03 + r() * 0.05), ih = (h / 4) * (0.3 + r() * 0.5);
+        items += this.boxD(cx, sy - ih, iw, ih) + ' ';
+        cx += iw + w * 0.02;
+      }
+      out.push(this.mk(items, { fill: i % 2 ? C.paper : C.stoneD, o: op * 0.62 }));
+    }
+    return out;
+  }
+  reeds(x0, x1, gy, h, n, seed, col, o) {
+    return [this.mk(this.bladesD(x0, x1, gy, h, n, seed), { stroke: col, sw: h * 0.045, o: o === undefined ? 0.8 : o, anim: 'blades 9s ease-in-out infinite', origin: '50% 100%' })];
+  }
+  stones(list, seed, col, o) {
+    let d = '';
+    list.forEach((s, i) => { d += this.stoneD(s[0], s[1], s[2], s[3], seed + i * 3) + ' '; });
+    return [this.mk(d, { fill: col, o: o === undefined ? 0.8 : o })];
+  }
+  steppingStones(pts, col) {
+    let d = '', sh = '';
+    pts.forEach((p, i) => {
+      d += this.stoneD(p[0], p[1], p[2], p[2] * 0.2, 11 + i * 5) + ' ';
+      sh += this.stoneD(p[0] + p[2] * 0.04, p[1] + p[2] * 0.05, p[2] * 0.98, p[2] * 0.13, 11 + i * 5) + ' ';
+    });
+    return [this.mk(sh, { fill: '#8f8471', o: 0.34, blur: 1.2 }), this.mk(d, { fill: col, o: 0.78 })];
+  }
+
+  /* ---------- layer assembly ---------- */
+  wash(style, depth, order) { return { depth: depth === undefined ? 0.02 : depth, order: order === undefined ? -1 : order, style: Object.assign({ position: 'absolute' }, style) }; }
+  sky(a, b, c) { return this.wash({ inset: 0, background: 'linear-gradient(180deg,' + a + ' 0%,' + a + ' 34%,' + b + ' 70%,' + c + ' 100%)' }, 0.02, -1); }
+  sun(x, y) { return this.wash({ inset: 0, background: 'radial-gradient(42% 34% at ' + x + '% ' + y + '%, rgba(255,250,232,0.52) 0%, rgba(255,248,228,0) 72%)', animation: this.reduce ? undefined : 'sunshift 26s ease-in-out infinite' }, 0.03, 0.02); }
+  fog(top, h, strength, order) {
+    return this.wash({ left: '-6%', right: '-6%', top: top + '%', height: h + '%',
+      background: 'linear-gradient(180deg, rgba(251,247,236,0) 0%, rgba(251,247,236,' + strength + ') 46%, rgba(251,247,236,0) 100%)',
+      filter: 'blur(10px)', animation: this.reduce ? undefined : 'drift 30s ease-in-out infinite' }, 0.09, order === undefined ? 0.12 : order);
+  }
+  ground(top, a, b, c) { return this.wash({ left: 0, right: 0, top: top + '%', bottom: 0, background: 'linear-gradient(180deg,' + a + ' 0%,' + b + ' 42%,' + c + ' 100%)' }, 0.44, -1); }
+  pond(top, order) {
+    return this.wash({ left: 0, right: 0, top: top + '%', bottom: 0,
+      background: 'linear-gradient(180deg, rgba(150,163,155,0.55) 0%, rgba(126,142,135,0.86) 16%, rgba(106,124,117,0.95) 58%, rgba(92,109,103,0.98) 100%)' }, 0.42, order === undefined ? -1 : order);
+  }
+  rippleBand(top, h, strength) {
+    return this.wash({ left: '-4%', right: '-4%', top: top + '%', height: h + '%',
+      background: 'linear-gradient(90deg, rgba(251,247,236,0) 0%, rgba(251,247,236,' + strength + ') 50%, rgba(251,247,236,0) 100%)',
+      filter: 'blur(2px)', animation: this.reduce ? undefined : 'ripple ' + (16 + strength * 20) + 's ease-in-out infinite' }, 0.44, -1);
+  }
+  turf(seed, dark) {
+    const rows = [[46, 10, 0.3], [104, 15, 0.4], [178, 22, 0.48], [262, 32, 0.56]], marks = [], r = this.rnd(seed);
+    const blade = dark ? ['#39442d', '#28321f'] : ['#76845c', '#5d6b44'];
+    const clump = dark ? ['#3b462e', '#2a3421'] : ['#78865e', '#5f6d47'];
+    rows.forEach((rw, i) => {
+      marks.push(this.mk(this.bladesD(-40, 1040, rw[0], rw[1], 46 - i * 6, seed + i * 7),
+        { stroke: i < 2 ? blade[0] : blade[1], sw: Math.max(1, rw[1] * 0.1), o: rw[2], anim: 'blades ' + (10 + i * 2) + 's ease-in-out infinite', origin: '50% 100%' }));
+      let clumps = '';
+      for (let k = 0; k < 5 - i; k++) {
+        const x = (k % 2 ? 60 : 700) + r() * 280, w = rw[1] * (2 + r() * 2);
+        clumps += this.crownD(x, rw[0] - w * 0.2, w * 0.5, w * 0.24, 8, seed + i * 13 + k) + ' ';
+      }
+      marks.push(this.mk(clumps, { fill: i < 2 ? clump[0] : clump[1], o: rw[2] * 0.9 }));
+    });
+    return this.P(0.43, 0.4, this.anch(0, 122), 300, marks);
+  }
+  P(depth, order, anchor, vbh, marks) {
+    return { depth: depth, order: order, anchor: anchor, vb: '0 0 1000 ' + vbh, marks: marks.filter(Boolean) };
+  }
+  anch(bottom, w, top) {
+    const st = { position: 'absolute', left: '50%', width: (w || 120) + '%', minWidth: '1060px', transform: 'translateX(-50%)' };
+    if (top !== undefined) st.top = top + '%'; else st.bottom = bottom + '%';
+    return st;
+  }
+  flat(arrs) { const out = []; arrs.forEach((a) => { if (a) a.forEach((x) => out.push(x)); }); return out; }
+
+  /* shared far layers */
+  farRidges(seed) {
+    return this.P(0.06, 0.05, this.anch(45, 132), 200, this.flat([
+      [this.mk(this.ridgeD(120, 96, 5, seed, 200), { fill: C.far, o: 0.3, blur: 1.5 })],
+      [this.mk(this.ridgeD(150, 64, 7, seed + 4, 200), { fill: C.far2, o: 0.28, blur: 1 })]
+    ]));
+  }
+  farForest(seed, gy, o) {
+    const r = this.rnd(seed), marks = [], op = (o || 0.34) * 0.72;
+    for (let i = 0; i < 26; i++) {
+      const x = -30 + i * 41 + (r() - 0.5) * 22, s = 34 + r() * 26;
+      marks.push(this.mk(this.crownD(x, gy - s * 0.52, s * 0.4, s * 0.46, 8, seed + i), { fill: '#a8b399', o: op }));
+      marks.push(this.mk(this.boxD(x - s * 0.018, gy - s * 0.46, s * 0.036, s * 0.46), { fill: '#98a48a', o: op * 0.9 }));
+    }
+    return this.P(0.14, 0.2, this.anch(43, 128), 120, marks);
+  }
+  groundEdge(seed, col) {
+    return this.P(0.66, 0.5, this.anch(-1, 124), 150, this.flat([
+      this.bush(90, 140, 210, 92, seed, C.mid3, 0.9),
+      this.bush(905, 142, 240, 104, seed + 6, C.mid3, 0.88),
+      this.reeds(-20, 300, 148, 54, 26, seed + 2, C.mid2, 0.72),
+      this.reeds(700, 1030, 150, 58, 26, seed + 8, C.mid2, 0.7),
+      this.stones([[250, 148, 96, 26], [760, 150, 110, 30]], seed + 11, C.stoneDD, 0.5),
+      this.reeds(320, 680, 150, 26, 30, seed + 14, col || C.mid2, 0.4)
+    ]));
+  }
+  overheadBranch(seed, side, col) {
+    const x = side === 'right' ? 990 : 10, sgn = side === 'right' ? -1 : 1;
+    const c1 = col || C.sakura, c2 = col === C.sakura || !col ? C.sakuraD : col;
+    const marks = this.flat([
+      [this.mk(this.boughD(x, -34, 300, sgn * 0.52, -sgn * 0.62), { stroke: C.barkD, sw: 18, o: 0.8 })],
+      [this.mk(this.boughD(x + sgn * 110, 32, 130, sgn * 1.1, -sgn * 0.5), { stroke: C.barkD, sw: 9, o: 0.62 })],
+      [this.mk(this.boughD(x + sgn * 200, 62, 100, sgn * 0.24, -sgn * 0.6), { stroke: C.barkD, sw: 6, o: 0.5 })],
+      [this.mk(this.crownD(x + sgn * 60, -20, 190, 120, 12, seed), { fill: c1, o: 0.9, anim: this.sway(2, seed), origin: (side === 'right' ? '100%' : '0%') + ' 0%' })],
+      [this.mk(this.crownD(x + sgn * 210, 34, 132, 84, 10, seed + 5), { fill: c2, o: 0.8, anim: this.sway(1, seed + 3), origin: (side === 'right' ? '100%' : '0%') + ' 0%' })],
+      [this.mk(this.crownD(x + sgn * 350, 96, 104, 62, 9, seed + 9), { fill: c1, o: 0.66, anim: this.sway(3, seed + 6), origin: (side === 'right' ? '100%' : '0%') + ' 0%' })]
+    ]);
+    return this.P(0.88, 0.68, this.anch(0, 126, -12), 240, marks);
+  }
+  nearFrame(seed, col) {
+    return this.P(0.94, 0.72, this.anch(-6, 130), 190, this.flat([
+      this.bush(-20, 188, 300, 150, seed, col || C.deep, 0.5),
+      this.bush(1010, 188, 320, 160, seed + 7, col || C.deep, 0.46),
+      this.reeds(-40, 190, 188, 96, 18, seed + 3, col || C.deep, 0.42),
+      this.reeds(830, 1050, 188, 100, 18, seed + 5, col || C.deep, 0.4)
+    ]));
+  }
+
+  /* ---------- the ten places ---------- */
+  scene(place) {
+    const W = [], P = [];
+
+    if (place === 'person') {
+      W.push(this.sky('#f7f2e7', '#ece4d3', '#ded4c0'), this.sun(52, 22), this.fog(44, 14, 0.72));
+      W.push(this.ground(53, '#a5af85', '#8a9669', '#67754e'));
+      /* an open clearing: one dominant sakura holding the left, the right left empty for text */
+      P.push(this.farRidges(3));
+      P.push(this.farForest(9, 118, 0.26));
+      P.push(this.P(0.24, 0.3, this.anch(47, 118), 260, this.flat([
+        this.tree(690, 256, 92, 41, C.far3, 0.34),
+        this.tree(800, 258, 84, 45, C.far3, 0.3),
+        this.tree(900, 256, 96, 47, C.far3, 0.28),
+        this.bush(600, 258, 130, 30, 12, C.far3, 0.26)
+      ])));
+      P.push(this.P(0.36, 0.34, this.anch(40, 124), 460, this.flat([
+        this.sakura(196, 452, 430, 21),
+        this.bush(392, 456, 150, 46, 18, C.mid2, 0.5)
+      ])));
+      P.push(this.P(0.46, 0.42, this.anch(0, 122), 300, this.flat([
+        [this.mk(this.ribbonD(300, 34, 0, 210, 210, 300), { fill: '#d9ceb5', o: 0.7, blur: 0.6 })],
+        this.steppingStones([[300, 46, 28], [286, 92, 40], [268, 152, 56], [244, 232, 76]], C.stone),
+        this.stones([[604, 272, 150, 34]], 25, C.stoneDD, 0.5),
+        [this.mk(this.boxD(548, 236, 190, 15), { fill: C.stone, o: 0.8 }), this.mk(this.boxD(566, 251, 22, 26), { fill: C.stoneDD, o: 0.7 }), this.mk(this.boxD(698, 251, 22, 26), { fill: C.stoneDD, o: 0.7 })],
+        this.reeds(40, 250, 296, 40, 18, 27, C.mid2, 0.44)
+      ])));
+      P.push(this.groundEdge(51, C.mid));
+      P.push(this.overheadBranch(63, 'left', C.sakura));
+      return { W: W, P: P, water: null };
+    }
+
+    if (place === 'builder') {
+      W.push(this.sky('#f4efe3', '#e6decc', '#d5cab5'), this.sun(38, 26), this.fog(43, 12, 0.6));
+      W.push(this.ground(54, '#9ca67e', '#818d66', '#606e49'));
+      P.push(this.farRidges(7));
+      P.push(this.farForest(13, 118, 0.26));
+      P.push(this.P(0.3, 0.34, this.anch(46, 120), 340, this.flat([
+        this.cue(this.pavilion(500, 334, 420, 1), 1),
+        this.sakura(120, 336, 200, 55),
+        this.tree(880, 336, 190, 61, C.mid2, 0.72),
+        this.bush(255, 338, 130, 42, 22, C.mid2, 0.6),
+        this.bush(745, 338, 140, 46, 28, C.mid2, 0.58),
+        this.lantern(300, 338, 74, 0.55)
+      ])));
+      P.push(this.P(0.46, 0.42, this.anch(0, 120), 300, this.flat([
+        [this.mk(this.ribbonD(500, 60, 0, 500, 250, 300), { fill: '#d4c8b0', o: 0.8 })],
+        [this.mk(this.boxD(120, 250, 190, 12), { fill: C.bark, o: 0.6 }), this.mk(this.boxD(134, 234, 190, 12), { fill: C.barkL, o: 0.5 }), this.mk(this.boxD(126, 218, 190, 12), { fill: C.bark, o: 0.45 })],
+        this.stones([[790, 268, 150, 42], [700, 250, 90, 26]], 34, C.stoneDD, 0.5),
+        this.reeds(300, 700, 298, 28, 26, 37, C.mid2, 0.4)
+      ])));
+      P.push(this.groundEdge(57, C.mid));
+      P.push(this.nearFrame(67, C.deep));
+      return { W: W, P: P, water: null };
+    }
+
+    if (place === 'thinker') {
+      W.push(this.sky('#f5f1e8', '#eae3d5', '#dcd4c4'), this.sun(66, 18), this.fog(40, 16, 0.8, 0.1), this.fog(50, 10, 0.5, 0.16));
+      W.push(this.pond(57));
+      W.push(this.rippleBand(61, 1.4, 0.5), this.rippleBand(69, 2, 0.4), this.rippleBand(80, 2.6, 0.3), this.rippleBand(90, 3.2, 0.22));
+      P.push(this.farRidges(11));
+      P.push(this.farForest(17, 118, 0.2));
+      P.push(this.P(0.24, 0.3, this.anch(48, 118), 300, this.flat([
+        this.teaHouse(772, 296, 200, 0.72),
+        this.tree(660, 298, 96, 71, C.far3, 0.4),
+        this.tree(884, 298, 104, 77, C.far3, 0.36),
+        this.bush(700, 300, 110, 30, 44, C.far3, 0.34),
+        this.lantern(600, 300, 58, 0.34),
+        this.bridge(240, 296, 240, 0.4),
+        this.bush(120, 300, 150, 40, 48, C.far3, 0.32)
+      ])));
+      P.push(this.P(0.34, 0.36, this.anch(43, 120), 200, this.flat([
+        this.stones([[130, 196, 220, 54], [880, 198, 190, 44]], 52, C.stoneDD, 0.5),
+        this.reeds(60, 260, 198, 60, 20, 56, C.mid2, 0.5),
+        this.reeds(800, 990, 198, 56, 18, 58, C.mid2, 0.46)
+      ])));
+      P.push(this.P(0.52, 0.44, this.anch(0, 120), 260, this.flat([
+        this.stones([[150, 92, 260, 66], [820, 106, 230, 58]], 62, C.stoneDD, 0.72),
+        [this.mk(this.stoneD(150, 132, 250, 46, 62), { fill: '#6d8079', o: 0.34, blur: 2.5 })],
+        [this.mk(this.stoneD(820, 148, 220, 40, 65), { fill: '#6d8079', o: 0.3, blur: 2.5 })],
+        this.reeds(30, 200, 96, 78, 16, 66, C.mid3, 0.66),
+        this.reeds(880, 1030, 110, 74, 14, 68, C.mid3, 0.62)
+      ])));
+      P.push(this.overheadBranch(73, 'left', C.sakura));
+      return { W: W, P: P, water: 0.575 };
+    }
+
+    if (place === 'leader') {
+      W.push(this.sky('#f6f1e5', '#e9e1d0', '#d9cfbb'), this.sun(50, 20), this.fog(42, 12, 0.6));
+      W.push(this.ground(52, '#a7ae87', '#8c9571', '#6a7453'));
+      P.push(this.farRidges(19));
+      P.push(this.farForest(23, 118, 0.28));
+      P.push(this.P(0.26, 0.3, this.anch(48, 120), 300, this.flat([
+        this.torii(500, 296, 210, 0.85),
+        this.wall(-40, 330, 296, 78, 0.8),
+        this.wall(670, 1040, 296, 78, 0.8),
+        this.tree(180, 298, 170, 81, C.mid2, 0.62),
+        this.tree(840, 298, 180, 87, C.mid2, 0.6),
+        this.sakura(360, 298, 150, 91, 0.7),
+        this.lantern(640, 298, 82, 0.6)
+      ])));
+      P.push(this.P(0.44, 0.4, this.anch(0, 122), 320, this.flat([
+        [this.mk(this.ribbonD(500, 70, 0, 500, 210, 150), { fill: '#dcd1b8', o: 0.66, cue: 1 })],
+        [this.mk(this.ribbonD(500, 70, 0, 120, 190, 320), { fill: '#dcd1b8', o: 0.5, cue: 2 })],
+        [this.mk(this.ribbonD(500, 70, 0, 880, 190, 320), { fill: '#dcd1b8', o: 0.5, cue: 3 })],
+        [this.mk(this.stoneD(500, 250, 520, 92, 95), { fill: '#d3c8ae', o: 0.6 })],
+        this.bench(230, 268, 200, 0.75),
+        this.bench(780, 276, 210, 0.72),
+        this.lantern(500, 236, 92, 0.8),
+        this.stones([[350, 300, 130, 32], [660, 306, 150, 36]], 99, C.stoneDD, 0.44)
+      ])));
+      P.push(this.groundEdge(103, C.mid));
+      P.push(this.nearFrame(107, C.deep));
+      return { W: W, P: P, water: null };
+    }
+
+    if (place === 'stories') {
+      /* early evening: the path narrows, the greens go deep, lantern light does the work */
+      /* dusk under a closed canopy: the top of the frame is leaf, not sky */
+      W.push(this.sky('#5d6247', '#474d38', '#333a2a'), this.fog(48, 9, 0.12));
+      W.push(this.ground(56, '#39432c', '#2c3524', '#1e261a'));
+      W.push(this.wash({ inset: 0, background: 'linear-gradient(180deg, rgba(16,21,13,0.82) 0%, rgba(20,26,16,0.5) 22%, rgba(24,30,20,0.16) 44%, rgba(20,26,16,0.42) 78%, rgba(14,19,11,0.66) 100%)' }, 0.04, -1));
+      W.push(this.wash({ inset: 0, background: 'radial-gradient(58% 46% at 50% 52%, rgba(214,170,98,0.16) 0%, rgba(150,116,64,0.05) 46%, rgba(12,16,10,0.42) 100%)' }, 0.05, -1));
+      P.push(this.farForest(29, 118, 0.3));
+      P.push(this.P(0.24, 0.28, this.anch(46, 116), 280, this.flat([
+        this.tree(430, 276, 150, 111, '#39442f', 0.6),
+        this.tree(570, 278, 140, 117, '#39442f', 0.58),
+        this.lantern(468, 278, 70, 0.5),
+        this.bush(500, 280, 200, 60, 121, '#333d29', 0.55)
+      ])));
+      P.push(this.P(0.4, 0.36, this.anch(30, 122), 260, this.flat([
+        this.tree(230, 256, 240, 127, '#2c3624', 0.86),
+        this.tree(770, 258, 250, 133, '#2c3624', 0.84),
+        this.lantern(300, 258, 110, 0.8),
+        this.lantern(706, 260, 116, 0.78),
+        this.bush(150, 260, 240, 96, 137, '#242d1e', 0.86),
+        this.bush(860, 262, 250, 100, 141, '#242d1e', 0.84)
+      ])));
+      /* a low canopy closes the top of the frame */
+      P.push(this.P(0.2, 0.24, this.anch(0, 132, -18), 240, this.flat([
+        [this.mk(this.crownD(120, 60, 300, 150, 12, 181), { fill: '#232c1d', o: 0.94, anim: this.sway(1, 181), origin: '10% 0%' })],
+        [this.mk(this.crownD(420, 20, 330, 150, 12, 185), { fill: '#1e2619', o: 0.96, anim: this.sway(2, 185), origin: '50% 0%' })],
+        [this.mk(this.crownD(760, 54, 320, 160, 12, 189), { fill: '#232c1d', o: 0.94, anim: this.sway(1, 189), origin: '90% 0%' })],
+        [this.mk(this.crownD(980, 96, 260, 140, 11, 193), { fill: '#1a2116', o: 0.92 })],
+        [this.mk(this.boxD(-40, -40, 1120, 90), { fill: '#141b10', o: 0.9 })]
+      ])));
+      P.push(this.P(0.5, 0.42, this.anch(0, 122), 300, this.flat([
+        [this.mk(this.ribbonD(500, 34, 0, 500, 170, 300), { fill: '#6e6a52', o: 0.72 })],
+        this.steppingStones([[500, 44, 30], [492, 90, 44], [508, 152, 62], [488, 232, 86]], '#8a836c'),
+        this.reeds(120, 420, 298, 54, 22, 143, '#1f281a', 0.8),
+        this.reeds(600, 900, 298, 56, 22, 147, '#1f281a', 0.78)
+      ])));
+      P.push(this.P(0.72, 0.52, this.anch(-2, 132), 200, this.flat([
+        this.bush(0, 196, 420, 210, 151, '#26301f', 0.92),
+        this.bush(1000, 198, 440, 220, 157, '#26301f', 0.9),
+        this.reeds(-40, 300, 198, 130, 22, 161, '#26301f', 0.72),
+        this.reeds(720, 1060, 198, 136, 22, 163, '#26301f', 0.7)
+      ])));
+      P.push(this.P(0.96, 0.74, this.anch(-8, 136), 200, this.flat([
+        this.bush(-40, 200, 420, 250, 169, '#141b10', 0.72),
+        this.bush(1040, 202, 440, 260, 173, '#141b10', 0.7)
+      ])));
+      P.push(this.overheadBranch(177, 'right', '#1b2416'));
+      return { W: W, P: P, water: null };
+    }
+
+    if (place === 'work') {
+      W.push(this.sky('#f1ece0', '#e3dbc9', '#d0c5b0'), this.sun(50, 24), this.fog(44, 10, 0.5));
+      W.push(this.ground(55, '#a49d81', '#8b856a', '#6b6650'));
+      P.push(this.farRidges(31));
+      P.push(this.farForest(37, 118, 0.24));
+      P.push(this.P(0.22, 0.28, this.anch(47, 116), 260, this.flat([
+        this.tree(80, 256, 190, 171, C.mid2, 0.55),
+        this.tree(920, 258, 200, 177, C.mid2, 0.52),
+        this.sakura(210, 258, 160, 181, 0.5)
+      ])));
+      P.push(this.P(0.32, 0.34, this.anch(40, 118), 360, this.flat([
+        [this.mk(this.boxD(120, 96, 760, 250), { fill: '#cfc5b1', o: 0.5 })],
+        [this.mk(this.eaveD(500, 100, 880, 90), { fill: C.barkD, o: 0.92 })],
+        [this.mk(this.boxD(140, 100, 22, 246), { fill: C.barkD, o: 0.9 }), this.mk(this.boxD(838, 100, 22, 246), { fill: C.barkD, o: 0.9 })],
+        [this.mk(this.boxD(360, 100, 14, 246), { fill: C.bark, o: 0.62 }), this.mk(this.boxD(626, 100, 14, 246), { fill: C.bark, o: 0.62 })],
+        [this.mk(this.boxD(140, 168, 720, 10), { fill: C.bark, o: 0.5 })],
+        this.shelfRack(170, 344, 170, 170, 187),
+        this.shelfRack(660, 344, 180, 160, 193),
+        [this.mk(this.boxD(400, 300, 200, 12), { fill: C.bark, o: 0.8 }), this.mk(this.boxD(408, 312, 12, 34), { fill: C.barkD, o: 0.7 }), this.mk(this.boxD(580, 312, 12, 34), { fill: C.barkD, o: 0.7 })],
+        [this.mk(this.boxD(416, 258, 76, 42), { fill: C.paper, o: 0.7 }), this.mk(this.boxD(508, 264, 68, 36), { fill: C.ivoryW, o: 0.6 })],
+        [this.mk(this.boxD(440, 130, 120, 76), { fill: C.paper, o: 0.55 }), this.mk(this.boxD(452, 142, 96, 4), { fill: C.barkD, o: 0.4 }), this.mk(this.boxD(452, 156, 76, 4), { fill: C.barkD, o: 0.34 }), this.mk(this.boxD(452, 170, 88, 4), { fill: C.barkD, o: 0.3 })]
+      ])));
+      P.push(this.P(0.48, 0.42, this.anch(0, 120), 240, this.flat([
+        [this.mk(this.ribbonD(500, 90, 0, 500, 300, 240), { fill: '#cdc1a9', o: 0.7 })],
+        this.stones([[170, 214, 150, 34], [830, 220, 160, 38]], 197, C.stoneDD, 0.44),
+        this.reeds(40, 300, 236, 44, 20, 199, C.mid2, 0.5),
+        this.reeds(700, 960, 238, 46, 20, 203, C.mid2, 0.48)
+      ])));
+      P.push(this.groundEdge(207, C.mid));
+      return { W: W, P: P, water: null };
+    }
+
+    if (place === 'future') {
+      W.push(this.sky('#faf6ec', '#f1ebdc', '#e4dbc8'), this.sun(50, 34), this.fog(42, 18, 0.86, 0.08), this.fog(48, 10, 0.5, 0.14));
+      W.push(this.ground(58, '#c8c8a3', '#b2b48d', '#929571'));
+      P.push(this.P(0.05, 0.05, this.anch(47, 136), 170, this.flat([
+        [this.mk(this.ridgeD(110, 78, 4, 211, 170), { fill: C.far, o: 0.2, blur: 2.5 })],
+        [this.mk(this.ridgeD(140, 52, 6, 217, 170), { fill: C.far2, o: 0.16, blur: 2 })]
+      ])));
+      P.push(this.P(0.16, 0.24, this.anch(44, 120), 130, this.flat([
+        this.tree(60, 128, 92, 221, C.far3, 0.24),
+        this.tree(945, 128, 84, 227, C.far3, 0.2),
+        this.reeds(200, 800, 128, 16, 40, 229, C.far3, 0.18)
+      ])));
+      P.push(this.P(0.44, 0.4, this.anch(0, 120), 320, this.flat([
+        [this.mk(this.ribbonD(500, 26, 0, 500, 320, 320), { fill: '#e8dec7', o: 0.72 })],
+        this.reeds(0, 380, 316, 34, 26, 233, C.mid2, 0.34),
+        this.reeds(620, 1000, 318, 36, 26, 239, C.mid2, 0.32)
+      ])));
+      P.push(this.P(0.62, 0.5, this.anch(-2, 124), 130, this.flat([
+        this.reeds(-30, 300, 128, 62, 16, 241, C.mid3, 0.4),
+        this.reeds(720, 1040, 128, 66, 16, 247, C.mid3, 0.38)
+      ])));
+      return { W: W, P: P, water: null };
+    }
+
+    if (place === 'aura') {
+      W.push(this.sky('#f0eadd', '#e1d9c7', '#ccc1ab'), this.sun(50, 16), this.fog(44, 12, 0.62));
+      W.push(this.ground(56, '#a8a88d', '#8f8f76', '#6f6f5a'));
+      P.push(this.farRidges(251));
+      P.push(this.farForest(257, 118, 0.2));
+      P.push(this.P(0.2, 0.26, this.anch(48, 116), 260, this.flat([
+        this.tree(90, 256, 170, 263, C.mid2, 0.42),
+        this.tree(910, 258, 180, 269, C.mid2, 0.4),
+        this.sakura(760, 258, 140, 271, 0.4)
+      ])));
+      P.push(this.P(0.3, 0.32, this.anch(42, 118), 340, this.flat([
+        [this.mk(this.boxD(180, 60, 640, 276), { fill: C.stoneD, o: 0.42 })],
+        [this.mk(this.boxD(214, 92, 572, 244), { fill: C.stone, o: 0.4 })],
+        [this.mk(this.eaveD(500, 64, 760, 76), { fill: C.barkD, o: 0.86 })],
+        [this.mk(this.boxD(196, 64, 20, 272), { fill: C.barkD, o: 0.8 }), this.mk(this.boxD(784, 64, 20, 272), { fill: C.barkD, o: 0.8 })],
+        [this.mk(this.boxD(436, 196, 128, 140), { fill: '#3a4436', o: 0.55 })],
+        [this.mk(this.dotD(500, 176, 40), { fill: C.gold, o: 0.24, blur: 9, anim: 'emberglow 9s ease-in-out infinite', origin: '50% 50%' })],
+        [this.mk(this.boxD(250, 130, 84, 116), { fill: C.paper, o: 0.5 }), this.mk(this.boxD(262, 146, 60, 5), { fill: C.barkD, o: 0.3 }), this.mk(this.boxD(262, 162, 46, 5), { fill: C.barkD, o: 0.26 }), this.mk(this.boxD(262, 178, 56, 5), { fill: C.barkD, o: 0.22 })],
+        [this.mk(this.boxD(666, 130, 84, 116), { fill: C.paper, o: 0.5 }), this.mk(this.boxD(678, 146, 60, 5), { fill: C.barkD, o: 0.3 }), this.mk(this.boxD(678, 162, 46, 5), { fill: C.barkD, o: 0.26 }), this.mk(this.boxD(678, 178, 56, 5), { fill: C.barkD, o: 0.22 })]
+      ])));
+      P.push(this.P(0.46, 0.4, this.anch(0, 118), 280, this.flat([
+        [this.mk(this.boxD(120, 0, 760, 18), { fill: C.stoneDD, o: 0.5 })],
+        [this.mk(this.ribbonD(500, 70, 18, 500, 240, 280), { fill: '#c9c2b1', o: 0.6 })],
+        (function (self) {
+          const out = [];
+          for (let i = 0; i < 7; i++) {
+            const x = 140 + i * 120, h = 54 + (i % 3) * 16;
+            out.push(self.mk(self.boxD(x, 60 - h, 26, h), { fill: C.stoneDD, o: 0.42 }));
+          }
+          return out;
+        })(this),
+        this.stones([[200, 250, 150, 36], [800, 258, 160, 40]], 277, C.stoneDD, 0.4)
+      ])));
+      P.push(this.groundEdge(281, C.mid));
+      return { W: W, P: P, water: null };
+    }
+
+    if (place === 'contact') {
+      W.push(this.sky('#f9f4e9', '#ece4d3', '#ddd3bf'), this.sun(50, 26), this.fog(45, 12, 0.66));
+      W.push(this.ground(54, '#abb389', '#909a70', '#6d7752'));
+      P.push(this.farRidges(283));
+      P.push(this.farForest(289, 118, 0.24));
+      P.push(this.P(0.28, 0.32, this.anch(47, 118), 300, this.flat([
+        this.torii(500, 296, 190, 0.8),
+        this.sakura(160, 298, 210, 293),
+        this.tree(860, 298, 190, 297, C.mid2, 0.66),
+        this.bush(300, 300, 150, 46, 301, C.mid2, 0.55),
+        this.bush(700, 300, 160, 50, 307, C.mid2, 0.52),
+        this.lantern(660, 300, 78, 0.55)
+      ])));
+      P.push(this.P(0.44, 0.4, this.anch(0, 118), 280, this.flat([
+        [this.mk(this.ribbonD(500, 48, 0, 500, 260, 280), { fill: '#ded3ba', o: 0.8 })],
+        this.steppingStones([[500, 54, 32], [490, 104, 46], [510, 170, 64]], C.stone),
+        this.bench(770, 250, 190, 0.6),
+        this.reeds(80, 400, 276, 40, 22, 311, C.mid2, 0.46),
+        this.reeds(620, 940, 278, 42, 22, 313, C.mid2, 0.44)
+      ])));
+      P.push(this.groundEdge(317, C.mid));
+      return { W: W, P: P, water: null };
+    }
+
+    /* garden — the arrival */
+    W.push(this.sky('#f1ecdf', '#e1d8c6', '#ccc1aa'), this.sun(50, 20), this.fog(46, 14, 0.74));
+    W.push(this.ground(54, '#a0aa80', '#85916a', '#64724b'));
+    P.push(this.farRidges(331));
+    P.push(this.farForest(337, 118, 0.32));
+    P.push(this.P(0.22, 0.3, this.anch(47, 120), 300, this.flat([
+      this.tree(330, 298, 175, 341, C.far3, 0.5),
+      this.tree(680, 298, 160, 347, C.far3, 0.46),
+      this.tree(120, 298, 140, 343, C.far3, 0.4),
+      this.tree(900, 298, 150, 345, C.far3, 0.38),
+      this.bush(500, 300, 200, 52, 349, C.far3, 0.42)
+    ])));
+    P.push(this.P(0.34, 0.38, this.anch(42, 122), 360, this.flat([
+      this.sakura(140, 356, 280, 353),
+      this.sakura(880, 358, 260, 359),
+      this.tree(300, 358, 150, 367, C.mid, 0.7),
+      this.lantern(700, 358, 110, 0.85),
+      this.bush(400, 360, 170, 60, 373, C.mid2, 0.7),
+      this.bush(620, 360, 150, 54, 379, C.mid2, 0.68)
+    ])));
+    P.push(this.P(0.5, 0.44, this.anch(0, 122), 300, this.flat([
+      [this.mk(this.ribbonD(498, 40, 0, 490, 280, 300), { fill: '#d8cdb4', o: 0.88 })],
+      this.steppingStones([[500, 50, 32], [488, 98, 46], [510, 158, 64], [482, 234, 88]], C.stone),
+      this.reeds(70, 400, 296, 46, 24, 383, C.mid2, 0.56),
+      this.reeds(610, 950, 298, 48, 24, 389, C.mid2, 0.54)
+    ])));
+    P.push(this.groundEdge(397, C.mid));
+    P.push(this.overheadBranch(401, 'left', C.sakura));
+    P.push(this.nearFrame(409, C.deep));
+    return { W: W, P: P, water: null };
+  }
+
+  renderVals() {
+    const place = this.props.place || 'garden';
+    const sc = this.scene(place);
+    this.waterY = sc.water;
+    if (!sc.water) {
+      let at = sc.P.length;
+      for (let i = 0; i < sc.P.length; i++) if (sc.P[i].depth >= 0.4) { at = i; break; }
+      sc.P.splice(at, 0, this.turf(place.length * 31 + 5, place === 'stories'));
+    }
+    return { washes: sc.W, planes: sc.P, rootRef: this.rootRef, canvasRef: this.canvasRef, openRef: this.openRef };
+  }
+
+  /* ---------- atmosphere: parallax, arrival assembly, petals, ripples ---------- */
+  collect() {
+    this.layers = this.root ? Array.prototype.slice.call(this.root.querySelectorAll('[data-depth]')) : [];
+    if (this.revealing) {
+      this.layers.forEach((el) => {
+        const o = parseFloat(el.getAttribute('data-order'));
+        if (o >= 0 && !el.style.opacity) el.style.opacity = '0';
+      });
+    }
+  }
+
+  componentDidMount() {
+    const mode = this.props.reveal || 'none';
+    this.revealing = mode === 'scroll' && !this.reduce;
+    this.thinning = mode === 'thin' && !this.reduce;
+    this.collect();
+    this.onScroll = () => {
+      if (this.frame) return;
+      this.frame = window.requestAnimationFrame(() => { this.frame = 0; this.apply(); });
+    };
+    this.onPointer = (e) => {
+      this.pointer.x = (e.clientX / Math.max(1, window.innerWidth) - 0.5) * 2;
+      this.pointer.y = (e.clientY / Math.max(1, window.innerHeight) - 0.5) * 2;
+      this.onScroll();
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onScroll);
+    document.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
+    if (!this.reduce) window.addEventListener('pointermove', this.onPointer, { passive: true });
+    window.requestAnimationFrame(() => { this.collect(); this.apply(); if (this.revealing) this.runIntro(); });
+    this.apply();
+    this.startAtmosphere();
+    this.descend();
+    this.armSignature();
+  }
+
+  /* SIGNATURE 5 (builder) and 6 (leader) — the built things put themselves together */
+  armSignature() {
+    const sig = this.props.signature || 'none';
+    if (sig === 'none' || this.reduce || !this.root) return;
+    const cued = Array.prototype.slice.call(this.root.querySelectorAll('[data-cue]'))
+      .filter((el) => el.getAttribute('data-cue') !== '');
+    if (!cued.length) return;
+    cued.sort((a, b) => parseFloat(a.getAttribute('data-cue')) - parseFloat(b.getAttribute('data-cue')));
+    const converge = sig === 'converge';
+    cued.forEach((el) => {
+      el.setAttribute('data-o', el.style.opacity || '1');
+      el.style.opacity = '0';
+      el.style.transformBox = 'fill-box';
+      el.style.transformOrigin = converge ? '50% 0%' : '50% 100%';
+      el.style.transform = converge ? 'scaleX(0.12)' : 'translateY(14px)';
+      el.style.transition = 'opacity 820ms ease, transform 1000ms cubic-bezier(0.2,0.7,0.2,1)';
+    });
+    const fire = () => {
+      cued.forEach((el, i) => {
+        window.setTimeout(() => {
+          el.style.opacity = el.getAttribute('data-o') || '1';
+          el.style.transform = 'none';
+        }, i * (converge ? 320 : 130));
+      });
+    };
+    const watch = () => {
+      if ((window.scrollY || 0) > window.innerHeight * 0.3) { fire(); window.removeEventListener('scroll', watch); }
+    };
+    window.addEventListener('scroll', watch, { passive: true });
+    window.setTimeout(() => { if (!this.fired) { this.fired = true; fire(); } }, 2600);
+  }
+
+  /* the camera settles into the place you arrived at */
+  descend() {
+    if (this.reduce || !this.root) return;
+    /* a CSS animation, not rAF: a page that loads hidden still ends up visible */
+    this.root.style.animation = 'descend 1200ms cubic-bezier(0.18,0.72,0.14,1) both';
+  }
+
+  componentDidUpdate() {
+    if (!this.layers || this.layers.length === 0) { this.collect(); this.apply(); }
+  }
+
+  runIntro() {
+    const dur = 2600, t0 = window.performance.now();
+    const ease = (t) => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
+    const step = (now) => {
+      const t = Math.min(1, (now - t0) / dur);
+      this.introP = 0.66 * ease(t);
+      this.apply();
+      if (t < 1) this.introRaf = window.requestAnimationFrame(step);
+    };
+    this.introRaf = window.requestAnimationFrame(step);
+  }
+
+  apply() {
+    if (!this.layers || this.layers.length === 0) this.collect();
+    const y = window.scrollY || window.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || 0;
+    const vh = Math.max(1, window.innerHeight);
+    const p = Math.max(Math.min(1.4, y / (vh * 0.8)), this.introP || 0);
+    const t = this.reduce ? 0 : window.performance.now();
+    this.layers.forEach((el) => {
+      const d = parseFloat(el.getAttribute('data-depth')) || 0;
+      let dx = 0;
+      if (!this.reduce) dx = this.pointer.x * -8 * d + Math.sin(t / 11000 + d * 3) * 5 * d;
+      const dy = this.reduce ? 0 : -y * d * 0.2 + (this.reduce ? 0 : Math.cos(t / 15000 + d * 2) * 2 * d);
+      el.style.transform = 'translate3d(' + dx.toFixed(2) + 'px,' + dy.toFixed(2) + 'px,0)';
+      if (this.revealing) {
+        const o = parseFloat(el.getAttribute('data-order'));
+        if (o >= 0) el.style.opacity = Math.min(1, Math.max(0, (p - o * 0.72) / 0.34)).toFixed(3);
+      } else if (this.thinning) {
+        /* SIGNATURE 9 — the near garden thins out first, the distance holds longest */
+        const o = parseFloat(el.getAttribute('data-order'));
+        if (o >= 0.2) {
+          const start = 0.12 + (0.72 - Math.min(0.72, o)) * 1.15;
+          el.style.opacity = Math.min(1, Math.max(0, 1 - (p - start) / 0.5)).toFixed(3);
+        }
+      }
+    });
+    if (this.thinning && this.open) this.open.style.opacity = Math.min(0.85, Math.max(0, (p - 0.25) / 0.7)).toFixed(3);
+  }
+
+  startAtmosphere() {
+    const cv = this.canvas;
+    if (!cv) return;
+    const density = this.props.density || 'occasional';
+    /* per-destination ambient intensity: the world is alive, but not equally everywhere */
+    const count = this.reduce ? 0
+      : density === 'still' ? 0
+      : density === 'trace' ? 3
+      : density === 'rare' ? 7
+      : density === 'steady' ? 24
+      : 14;
+    const ctx = cv.getContext('2d');
+    const size = () => {
+      const r = Math.min(2, window.devicePixelRatio || 1);
+      cv.width = Math.max(1, Math.round(window.innerWidth * r));
+      cv.height = Math.max(1, Math.round(window.innerHeight * r));
+      ctx.setTransform(r, 0, 0, r, 0, 0);
+    };
+    size();
+    this.onResizeCv = size;
+    window.addEventListener('resize', this.onResizeCv);
+    if (!count) return;
+    const tones = ['rgba(220,192,191,0.66)', 'rgba(232,214,206,0.54)', 'rgba(247,240,229,0.58)'];
+    const W = () => window.innerWidth, H = () => window.innerHeight;
+    this.petals = [];
+    for (let i = 0; i < count; i++) {
+      this.petals.push({
+        x: Math.random() * W(), y: Math.random() * H(),
+        z: 0.35 + Math.random() * 0.9, r: 3 + Math.random() * 4,
+        vy: 0.16 + Math.random() * 0.4, ph: Math.random() * 6.283, sp: 0.004 + Math.random() * 0.01,
+        rot: Math.random() * 6.283, vr: (Math.random() - 0.5) * 0.012, tone: tones[i % tones.length]
+      });
+    }
+    let last = window.performance.now(), tick = 0;
+    const loop = (now) => {
+      this.raf = window.requestAnimationFrame(loop);
+      if (document.hidden) { last = now; return; }
+      const dt = Math.min(48, now - last); last = now;
+      if ((tick++ % 5) === 0) this.apply();
+      ctx.clearRect(0, 0, W(), H());
+      const wl = this.waterY ? this.waterY * H() : null;
+      for (const q of this.petals) {
+        q.ph += q.sp * dt; q.rot += q.vr * dt * 0.06;
+        q.y += q.vy * q.z * dt * 0.06;
+        q.x += Math.sin(q.ph) * 0.5 * q.z;
+        if (wl && q.y > wl + (1 - q.z) * 40) {
+          if (this.ripples.length < 8) this.ripples.push({ x: q.x, y: q.y, r: 2, a: 0.5, z: q.z });
+          q.y = -20; q.x = Math.random() * W();
+        }
+        if (q.y > H() + 20) { q.y = -20; q.x = Math.random() * W(); }
+        if (q.x > W() + 20) q.x = -20;
+        if (q.x < -20) q.x = W() + 20;
+        ctx.save();
+        ctx.translate(q.x, q.y); ctx.rotate(q.rot);
+        ctx.globalAlpha = 0.35 + q.z * 0.45;
+        ctx.fillStyle = q.tone;
+        ctx.beginPath();
+        ctx.ellipse(0, 0, q.r * q.z, q.r * q.z * 0.55, 0, 0, 6.283);
+        ctx.fill();
+        ctx.restore();
+      }
+      for (let i = this.ripples.length - 1; i >= 0; i--) {
+        const rp = this.ripples[i];
+        rp.r += dt * 0.026 * rp.z; rp.a -= dt * 0.00042;
+        if (rp.a <= 0) { this.ripples.splice(i, 1); continue; }
+        ctx.save();
+        ctx.strokeStyle = 'rgba(251,247,236,' + rp.a.toFixed(3) + ')';
+        ctx.lineWidth = 1.1;
+        ctx.beginPath();
+        ctx.ellipse(rp.x, rp.y, rp.r * 2.4, rp.r * 0.66, 0, 0, 6.283);
+        ctx.stroke();
+        ctx.restore();
+      }
+    };
+    this.raf = window.requestAnimationFrame(loop);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onScroll);
+    document.removeEventListener('scroll', this.onScroll, true);
+    if (this.onResizeCv) window.removeEventListener('resize', this.onResizeCv);
+    if (this.onPointer) window.removeEventListener('pointermove', this.onPointer);
+    if (this.raf) window.cancelAnimationFrame(this.raf);
+    if (this.frame) window.cancelAnimationFrame(this.frame);
+    if (this.introRaf) window.cancelAnimationFrame(this.introRaf);
+  }
+}
+
+</script>
+</body>
+</html>

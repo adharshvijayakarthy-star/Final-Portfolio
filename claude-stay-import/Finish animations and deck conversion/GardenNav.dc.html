@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet" />
+<style>
+@keyframes plateIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes veilOut { from { opacity: 1; } to { opacity: 0; } }
+</style>
+</helmet>
+<div>
+  <div ref="{{ veilRef }}" aria-hidden="true" style="position:fixed;inset:0;z-index:80;pointer-events:none;background:linear-gradient(180deg,#f3eee2 0%,#e8e1d0 56%,#d9d1bd 100%);opacity:0;animation:veilOut 620ms ease both"></div>
+  <a href="#content" style="position:absolute;left:-9999px;top:0;font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;background:#efe9dc;color:#23291f;padding:12px 18px;border:1px solid #3d4c3a;z-index:90" style-focus="left:16px;top:16px">Skip to content</a>
+  <header style="position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(15px,2.2vw,24px) clamp(18px,4vw,44px);pointer-events:none">
+    <a href="AURA%20Threshold.dc.html" style="pointer-events:auto;font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.32em;text-transform:uppercase;color:#2c3024;text-decoration:none;padding:8px 14px;background:linear-gradient(158deg,rgba(214,207,190,0.92) 0%,rgba(196,188,169,0.9) 52%,rgba(176,168,150,0.9) 100%);border:1px solid rgba(88,84,68,0.34);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,252,242,0.62), inset 0 -1px 0 rgba(74,70,56,0.18), 0 6px 18px -12px rgba(40,44,32,0.55);text-shadow:0 1px 0 rgba(255,252,242,0.5)" style-hover="color:#0f1310;border-color:rgba(88,84,68,0.6)">Aura</a>
+    <button type="button" onClick="{{ toggle }}" aria-expanded="{{ expanded }}" aria-label="Open the garden map" style="pointer-events:auto;display:flex;align-items:center;gap:9px;font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.28em;text-transform:uppercase;color:#2c3024;background:linear-gradient(158deg,rgba(214,207,190,0.92) 0%,rgba(196,188,169,0.9) 52%,rgba(176,168,150,0.9) 100%);border:1px solid rgba(88,84,68,0.34);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,252,242,0.62), inset 0 -1px 0 rgba(74,70,56,0.18), 0 6px 18px -12px rgba(40,44,32,0.55);text-shadow:0 1px 0 rgba(255,252,242,0.5);padding:8px 14px;cursor:pointer" style-hover="color:#0f1310;border-color:rgba(88,84,68,0.6)">
+      <span style="display:block;width:9px;height:9px;border:1.2px solid currentColor;border-radius:50%"></span>
+      <span>Map</span>
+    </button>
+  </header>
+  <div style="position:fixed;left:clamp(16px,3.4vw,38px);bottom:clamp(16px,3vw,30px);z-index:55;pointer-events:none;animation:plateIn 1.2s 0.5s ease-out both">
+    <div style="display:flex;align-items:stretch;gap:0;background:linear-gradient(158deg,rgba(214,207,190,0.92) 0%,rgba(196,188,169,0.9) 52%,rgba(176,168,150,0.9) 100%);border:1px solid rgba(88,84,68,0.34);border-radius:2px;box-shadow:inset 0 1px 0 rgba(255,252,242,0.62), inset 0 -1px 0 rgba(74,70,56,0.18), 0 6px 18px -12px rgba(40,44,32,0.55);padding:8px 14px 8px 11px">
+      <span style="align-self:center;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.14em;color:#6b6754;padding-right:11px;margin-right:11px;border-right:1px solid rgba(88,84,68,0.28);text-shadow:0 1px 0 rgba(255,252,242,0.5)">{{ num }}</span>
+      <span style="display:flex;flex-direction:column;gap:3px">
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-size:0.94rem;line-height:1;letter-spacing:0.04em;color:#2c3024;text-shadow:0 1px 0 rgba(255,252,242,0.55)">{{ name }}</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:0.53rem;letter-spacing:0.24em;text-transform:uppercase;color:#66624f;text-shadow:0 1px 0 rgba(255,252,242,0.45)">{{ sub }}</span>
+      </span>
+    </div>
+  </div>
+  <dc-import name="GardenMap" current="{{ current }}" hint-size="0,0"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1240,&quot;height&quot;:700},&quot;current&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;garden&quot;,&quot;person&quot;,&quot;builder&quot;,&quot;thinker&quot;,&quot;leader&quot;,&quot;stories&quot;,&quot;work&quot;,&quot;future&quot;,&quot;aura&quot;,&quot;contact&quot;],&quot;default&quot;:&quot;garden&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+const NAMES = {
+  garden:  ['00', 'The Garden',  'Arrival'],
+  person:  ['01', 'The Person',  'Open clearing'],
+  builder: ['02', 'The Builder', 'Timber frame'],
+  thinker: ['03', 'The Thinker', 'Quiet water'],
+  leader:  ['04', 'The Leader',  'Courtyard'],
+  stories: ['05', 'Stories',     'Intimate paths'],
+  work:    ['06', 'The Work',    'Workshop'],
+  future:  ['07', 'The Future',  'Open horizon'],
+  aura:    ['08', 'AURA',        'Archive'],
+  contact: ['09', 'Contact',     'Open garden']
+};
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { open: false };
+    this.toggle = () => {
+      try { window.dispatchEvent(new CustomEvent('aura:map-toggle')); } catch (e) { /* older engines */ }
+    };
+    /* the veil covers the handover between documents: the outgoing page is fully
+       gone before anything of the incoming one is visible, and the cover itself
+       is garden-coloured so a transition never reads as a blank flash */
+    this.veilRef = (el) => {
+      this.veil = el;
+      if (!el) return;
+      const reduce = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) { el.style.animation = 'none'; el.style.opacity = '0'; }
+    };
+    /* the veil lifts by CSS animation, so a page that loads hidden still clears it */
+    this.lower = () => {
+      if (!this.veil) return;
+      this.veil.style.animation = 'none';
+      this.veil.style.transition = 'opacity 420ms ease';
+      this.veil.style.opacity = '0';
+    };
+  }
+
+  componentDidMount() {
+    const id = this.props.current || 'garden';
+    try {
+      const raw = localStorage.getItem('aura.stay.visited');
+      const list = raw ? JSON.parse(raw) : [];
+      const next = Array.isArray(list) ? list : [];
+      if (next.indexOf(id) < 0) localStorage.setItem('aura.stay.visited', JSON.stringify(next.concat([id])));
+    } catch (e) { /* storage unavailable */ }
+    this.onMapState = (e) => {
+      const open = !!(e && e.detail && e.detail.open);
+      if (open !== this.state.open) this.setState({ open: open });
+    };
+    window.addEventListener('aura:map-state', this.onMapState);
+    this.onLeave = () => {
+      if (!this.veil) return;
+      this.veil.style.animation = 'none';
+      this.veil.style.transition = 'opacity 260ms ease';
+      this.veil.style.opacity = '1';
+    };
+    window.addEventListener('pagehide', this.onLeave);
+    window.addEventListener('beforeunload', this.onLeave);
+    /* any return to this page — bfcache, aborted navigation, refocus — clears the veil */
+    this.onShow = () => this.lower();
+    window.addEventListener('pageshow', this.onShow);
+    window.addEventListener('load', this.onShow);
+    this.onVis = () => { if (!document.hidden) this.lower(); };
+    document.addEventListener('visibilitychange', this.onVis);
+    this.veilTimer = window.setTimeout(this.onShow, 1400);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('aura:map-state', this.onMapState);
+    window.removeEventListener('pagehide', this.onLeave);
+    window.removeEventListener('beforeunload', this.onLeave);
+    window.removeEventListener('pageshow', this.onShow);
+    window.removeEventListener('load', this.onShow);
+    document.removeEventListener('visibilitychange', this.onVis);
+    window.clearTimeout(this.veilTimer);
+  }
+
+  renderVals() {
+    const id = this.props.current || 'garden';
+    const entry = NAMES[id] || NAMES.garden;
+    return {
+      current: id, expanded: this.state.open ? 'true' : 'false', toggle: this.toggle,
+      num: entry[0], name: entry[1], sub: entry[2]
+    };
+  }
+}
+
+</script>
+</body>
+</html>

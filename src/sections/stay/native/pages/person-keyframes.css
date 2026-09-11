@@ -1,0 +1,2 @@
+@keyframes stay-person-clearing { from { opacity: 0; transform: translateX(22px); } to { opacity: 1; transform: none; } }
+@keyframes stay-person-openUp { from { opacity: 0; transform: translateY(20px) scale(1.01); filter: blur(8px); } to { opacity: 1; transform: none; filter: blur(0); } }

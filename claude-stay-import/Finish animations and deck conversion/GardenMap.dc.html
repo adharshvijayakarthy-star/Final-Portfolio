@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet" />
+<style>
+@keyframes mapin { from { opacity: 0; } to { opacity: 1; } }
+@keyframes railin { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@keyframes pulse { 0%,100% { transform: scale(1); opacity: 0.5; } 50% { transform: scale(2); opacity: 0; } }
+</style>
+</helmet>
+<div id="aura-garden-map" ref="{{ shellRef }}" role="dialog" aria-modal="true" aria-label="Garden map" style="position:fixed;inset:0;z-index:70;display:flex;align-items:center;justify-content:center;padding:clamp(18px,4vw,44px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity 420ms ease, visibility 420ms">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(239,233,220,0.94) 0%,rgba(226,218,200,0.97) 100%);backdrop-filter:blur(16px)"></div>
+  <div style="position:relative;width:min(1180px,100%);max-height:100%;display:flex;flex-direction:column;gap:clamp(14px,2.2vh,22px);animation:mapin 420ms ease both">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:1px solid rgba(61,76,58,0.22);padding-bottom:13px">
+      <div>
+        <p style="margin:0 0 6px;font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.26em;text-transform:uppercase;color:#6f7862">Stay Awhile · overhead</p>
+        <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.7rem,3.2vw,2.5rem);font-weight:400;color:#23291f;line-height:1">The garden from above</h2>
+      </div>
+      <button type="button" onClick="{{ close }}" style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.22em;text-transform:uppercase;color:#3d4c3a;background:transparent;border:1px solid rgba(61,76,58,0.36);border-radius:2px;padding:10px 17px;cursor:pointer" style-hover="background:rgba(61,76,58,0.08)">Close · esc</button>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:clamp(20px,3vw,34px);align-items:flex-start;overflow-y:auto;overflow-x:hidden;min-height:0">
+      <div style="flex:1 1 430px;min-width:290px;display:flex;justify-content:center">
+        <div ref="{{ planRef }}" style="position:relative;width:min(100%,54vh);aspect-ratio:1/1;background:linear-gradient(168deg,#b3bd93 0%,#a2ad84 44%,#8d9971 100%);border:1px solid rgba(61,76,58,0.3);border-radius:2px;overflow:hidden;will-change:transform">
+          <svg viewBox="-7 -7 114 114" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%">
+            <sc-for list="{{ marks }}" as="m" hint-placeholder-count="40">
+              <path d="{{ m.d }}" style="{{ m.st }}"></path>
+            </sc-for>
+            <path ref="{{ travelRef }}" d="M 0 0" fill="none" stroke="#2c3626" stroke-width="1.1" stroke-linecap="round" opacity="0"></path>
+          </svg>
+          <div style="position:absolute;inset:0;background:radial-gradient(120% 100% at 50% 40%, rgba(255,252,240,0.16) 0%, rgba(43,54,40,0.2) 100%)"></div>
+          <sc-for list="{{ nodes }}" as="n" hint-placeholder-count="10">
+            <button type="button" onClick="{{ n.go }}" aria-label="{{ n.aria }}" aria-current="{{ n.current }}" style="{{ n.btnStyle }}" style-hover="transform:translate(-50%,-50%) scale(1.08)">
+              <span style="{{ n.dotStyle }}"></span>
+              <span style="{{ n.labelStyle }}">{{ n.name }}</span>
+            </button>
+          </sc-for>
+          <div ref="{{ markerRef }}" style="position:absolute;left:0;top:0;width:22px;height:22px;margin:-11px 0 0 -11px;pointer-events:none;opacity:0">
+            <span style="position:absolute;inset:0;border:1.5px solid #f7f3ea;border-radius:50%;box-shadow:0 0 0 1px rgba(35,41,31,0.5)"></span>
+            <span style="position:absolute;inset:0;border:1.5px solid #f7f3ea;border-radius:50%;animation:pulse 2.8s ease-out infinite"></span>
+          </div>
+          <p style="position:absolute;left:12px;bottom:10px;margin:0;font-family:'IBM Plex Mono',monospace;font-size:0.56rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(247,243,234,0.72)">Overhead plan · not to scale</p>
+        </div>
+      </div>
+
+      <nav aria-label="Stay Awhile destinations" style="flex:1 1 300px;min-width:270px;animation:railin 520ms 120ms ease both">
+        <p style="margin:0 0 11px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.24em;text-transform:uppercase;color:#6f7862">All destinations</p>
+        <ul style="list-style:none;margin:0;padding:0 8px 0 0;display:flex;flex-direction:column">
+          <sc-for list="{{ nodes }}" as="n" hint-placeholder-count="10">
+            <li style="border-top:1px solid rgba(61,76,58,0.18)">
+              <button type="button" onClick="{{ n.go }}" aria-current="{{ n.current }}" style="{{ n.rowStyle }}" style-hover="background:rgba(61,76,58,0.07);padding-left:8px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;color:#8b9179;min-width:24px">{{ n.num }}</span>
+                <span style="display:flex;flex-direction:column;gap:2px;text-align:left">
+                  <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.16rem;color:#23291f;line-height:1.15">{{ n.name }}</span>
+                  <span style="font-family:'EB Garamond',Georgia,serif;font-size:0.88rem;color:#5b6350">{{ n.sub }}</span>
+                </span>
+                <span style="{{ n.tagStyle }}">{{ n.tag }}</span>
+              </button>
+            </li>
+          </sc-for>
+        </ul>
+        <p style="margin:16px 0 0;font-family:'EB Garamond',Georgia,serif;font-size:0.92rem;line-height:1.6;color:#5b6350;max-width:36ch">Choose a destination and the walk there is traced on the plan. Click, tap or press any key to arrive straight away.</p>
+      </nav>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1240,&quot;height&quot;:820},&quot;current&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;garden&quot;,&quot;person&quot;,&quot;builder&quot;,&quot;thinker&quot;,&quot;leader&quot;,&quot;stories&quot;,&quot;work&quot;,&quot;future&quot;,&quot;aura&quot;,&quot;contact&quot;],&quot;default&quot;:&quot;garden&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;open&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;onClose&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;() =&gt; void&quot;}}">
+const PLACES = [
+  { id: 'garden',  num: '00', name: 'The Garden',  sub: 'Arrival',        x: 50, y: 88, built: false, file: 'Stay Awhile.dc.html' },
+  { id: 'person',  num: '01', name: 'The Person',  sub: 'Open clearing',  x: 29, y: 70, built: false, file: 'Stay Person.dc.html' },
+  { id: 'builder', num: '02', name: 'The Builder', sub: 'Timber frame',   x: 64, y: 66, built: true,  file: 'Stay Builder.dc.html' },
+  { id: 'thinker', num: '03', name: 'The Thinker', sub: 'Quiet water',    x: 19, y: 48, built: false, file: 'Stay Thinker.dc.html' },
+  { id: 'leader',  num: '04', name: 'The Leader',  sub: 'Courtyard',      x: 47, y: 49, built: true,  file: 'Stay Leader.dc.html' },
+  { id: 'stories', num: '05', name: 'Stories',     sub: 'Intimate paths', x: 33, y: 30, built: false, file: 'Stay Stories.dc.html' },
+  { id: 'work',    num: '06', name: 'The Work',    sub: 'Workshop',       x: 72, y: 40, built: true,  file: 'Stay Work.dc.html' },
+  { id: 'future',  num: '07', name: 'The Future',  sub: 'Open horizon',   x: 60, y: 15, built: false, file: 'Stay Future.dc.html' },
+  { id: 'aura',    num: '08', name: 'AURA',        sub: 'Archive',        x: 87, y: 22, built: true,  file: 'Stay Aura.dc.html' },
+  { id: 'contact', num: '09', name: 'Contact',     sub: 'Open garden',    x: 13, y: 17, built: true,  file: 'Stay Contact.dc.html' }
+];
+const ANCHOR = {
+  garden: 'column', person: 'column', builder: 'column', thinker: 'row-reverse',
+  leader: 'row', stories: 'column', work: 'column-reverse', future: 'column-reverse',
+  aura: 'column-reverse', contact: 'column-reverse'
+};
+const EDGES = [
+  ['garden', 'person'], ['garden', 'builder'], ['person', 'thinker'], ['person', 'leader'],
+  ['builder', 'leader'], ['builder', 'work'], ['leader', 'stories'], ['thinker', 'stories'],
+  ['work', 'future'], ['work', 'aura'], ['stories', 'future'], ['future', 'aura'],
+  ['stories', 'contact'], ['thinker', 'contact']
+];
+const VISITED_KEY = 'aura.stay.visited';
+const TRAIL_KEY = 'aura.stay.trails';
+
+function readList(key) {
+  try { const raw = localStorage.getItem(key); const v = raw ? JSON.parse(raw) : []; return Array.isArray(v) ? v : []; } catch (e) { return []; }
+}
+function rnd(seed) { let s = ((seed * 9301 + 49297) % 233280 + 233280) % 233280; return function () { s = (s * 9301 + 49297) % 233280; return s / 233280; }; }
+function n1(v) { return Math.round(v * 100) / 100; }
+/* the plan is drawn in a -7..107 viewBox so labels never touch the frame */
+function pc(v) { return ((v + 7) / 114 * 100); }
+function lobeD(cx, cy, rx, ry, lobes, seed) {
+  const r = rnd(seed), pts = [];
+  for (let i = 0; i < lobes; i++) {
+    const a = (i / lobes) * Math.PI * 2, rr = 0.7 + r() * 0.46;
+    pts.push([cx + Math.cos(a) * rx * rr, cy + Math.sin(a) * ry * rr]);
+  }
+  let d = 'M ' + n1(pts[0][0]) + ' ' + n1(pts[0][1]);
+  for (let i = 0; i < pts.length; i++) {
+    const p = pts[i], q = pts[(i + 1) % pts.length], mx = (p[0] + q[0]) / 2, my = (p[1] + q[1]) / 2;
+    d += ' Q ' + n1((mx - cx) * 1.2 + cx) + ' ' + n1((my - cy) * 1.2 + cy) + ' ' + n1(q[0]) + ' ' + n1(q[1]);
+  }
+  return d + ' Z';
+}
+function rectD(x, y, w, h) { return 'M ' + n1(x) + ' ' + n1(y) + ' L ' + n1(x + w) + ' ' + n1(y) + ' L ' + n1(x + w) + ' ' + n1(y + h) + ' L ' + n1(x) + ' ' + n1(y + h) + ' Z'; }
+function curveD(a, b, bow) {
+  const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2, dx = b.x - a.x, dy = b.y - a.y;
+  const len = Math.sqrt(dx * dx + dy * dy) || 1, nx = -dy / len, ny = dx / len;
+  return 'M ' + n1(a.x) + ' ' + n1(a.y) + ' Q ' + n1(mx + nx * bow) + ' ' + n1(my + ny * bow) + ' ' + n1(b.x) + ' ' + n1(b.y);
+}
+const TREE_CLUSTERS = [
+  [7, 82, 6], [38, 92, 5], [76, 86, 6], [93, 62, 5], [5, 62, 5], [56, 78, 5],
+  [40, 60, 4], [24, 57, 4], [36, 43, 5], [61, 53, 5], [84, 48, 5], [8, 33, 5],
+  [23, 12, 5], [45, 22, 6], [76, 8, 5], [95, 36, 4], [67, 30, 4], [50, 36, 3], [22, 82, 4]
+];
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { traveling: null, open: props.open === true };
+    this.planRef = (el) => { this.plan = el; };
+    this.markerRef = (el) => { this.marker = el; };
+    this.travelRef = (el) => { this.travel = el; };
+    this.emit = (open) => {
+      try { window.dispatchEvent(new CustomEvent('aura:map-state', { detail: { open: open } })); } catch (e) { /* older engines */ }
+    };
+    this.shellRef = (el) => { this.shell = el; this.paint(); };
+    this.setOpen = (open) => {
+      this.state.open = open; this.paint(); this.setState({ open: open }); this.emit(open);
+      if (open) this.lift();
+      else if (this.marker) this.marker.style.opacity = '0';
+    };
+    this.close = () => {
+      this.setOpen(false);
+      if (typeof this.props.onClose === 'function') this.props.onClose();
+    };
+    this.reduce = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.visited = readList(VISITED_KEY);
+    this.trails = readList(TRAIL_KEY);
+  }
+
+  current() { return this.props.current || 'garden'; }
+  find(id) { return PLACES.find((p) => p.id === id) || PLACES[0]; }
+  isOpen() { return this.state.open; }
+
+  paint() {
+    if (!this.shell || !this.shell.style) this.shell = document.getElementById('aura-garden-map');
+    if (!this.shell) return;
+    const open = !!this.state.open;
+    this.shell.style.opacity = open ? '1' : '0';
+    this.shell.style.visibility = open ? 'visible' : 'hidden';
+    this.shell.style.pointerEvents = open ? 'auto' : 'none';
+  }
+
+  /* SIGNATURE 2 — the camera lifts out of the current location */
+  lift() {
+    const p = this.find(this.current());
+    this.place(p.x, p.y);
+    if (this.reduce || !this.plan) return;
+    const el = this.plan;
+    el.style.transition = 'none';
+    el.style.transformOrigin = pc(p.x) + '% ' + pc(p.y) + '%';
+    el.style.transform = 'scale(3)';
+    el.style.filter = 'blur(4px)';
+    el.style.opacity = '0.35';
+    /* timer, not rAF — the lift must complete even if the tab is not painting */
+    const settle = () => {
+      el.style.transition = 'transform 1050ms cubic-bezier(0.2,0.72,0.16,1), filter 720ms ease, opacity 560ms ease';
+      el.style.transform = 'scale(1)';
+      el.style.filter = 'none';
+      el.style.opacity = '1';
+    };
+    window.requestAnimationFrame(() => window.requestAnimationFrame(settle));
+    window.setTimeout(settle, 120);
+  }
+
+  routeFor(from, to) {
+    for (let i = 0; i < EDGES.length; i++) {
+      const e = EDGES[i];
+      if (e[0] === from.id && e[1] === to.id) return curveD(from, to, ((i % 3) - 1) * 5 + 2);
+      if (e[1] === from.id && e[0] === to.id) return curveD(from, to, -(((i % 3) - 1) * 5 + 2));
+    }
+    return curveD(from, to, 7);
+  }
+
+  go(target) {
+    if (this.state.traveling) return;
+    if (target === this.current()) { this.close(); return; }
+    const from = this.find(this.current()), to = this.find(target);
+    if (this.reduce) { window.location.href = encodeURI(to.file); return; }
+    if (!this.state.open) { this.setOpen(true); window.setTimeout(() => this.walk(from, to), 700); }
+    else this.walk(from, to);
+  }
+
+  /* SIGNATURE 3 — the route draws itself and the camera walks it */
+  walk(from, to) {
+    const arrive = () => { window.location.href = encodeURI(to.file); };
+    const key = from.id + '>' + to.id;
+    try {
+      if (this.trails.indexOf(key) < 0) { this.trails = this.trails.concat([key]); localStorage.setItem(TRAIL_KEY, JSON.stringify(this.trails)); }
+      if (this.visited.indexOf(to.id) < 0) localStorage.setItem(VISITED_KEY, JSON.stringify(this.visited.concat([to.id])));
+    } catch (e) { /* storage unavailable — navigation still works */ }
+    if (!this.travel || typeof this.travel.getTotalLength !== 'function') { arrive(); return; }
+    this.setState({ traveling: to.id });
+    this.place(from.x, from.y);
+    const el = this.travel;
+    el.setAttribute('d', this.routeFor(from, to));
+    const L = el.getTotalLength() || 1;
+    el.style.strokeDasharray = L + ' ' + L;
+    el.style.strokeDashoffset = L;
+    el.setAttribute('opacity', '0.92');
+    const cleanup = () => {
+      window.removeEventListener('pointerdown', skip, true);
+      window.removeEventListener('keydown', skip, true);
+      if (this.walkRaf) window.cancelAnimationFrame(this.walkRaf);
+    };
+    const skip = () => { cleanup(); arrive(); };
+    window.addEventListener('pointerdown', skip, true);
+    window.addEventListener('keydown', skip, true);
+    const start = window.performance.now(), dur = 1150;
+    const step = (now) => {
+      const t = Math.min(1, (now - start) / dur);
+      const e = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      el.style.strokeDashoffset = (L * (1 - e)).toFixed(2);
+      const pt = el.getPointAtLength(L * e);
+      this.place(pt.x, pt.y);
+      if (t < 1) this.walkRaf = window.requestAnimationFrame(step);
+      else { cleanup(); window.setTimeout(arrive, 200); }
+    };
+    this.walkRaf = window.requestAnimationFrame(step);
+  }
+
+  place(x, y) {
+    if (!this.marker) return;
+    this.marker.style.opacity = '1';
+    this.marker.style.left = pc(x) + '%';
+    this.marker.style.top = pc(y) + '%';
+  }
+
+  /* the plan drawing: grass, water, walls, paths, roofs, canopies */
+  planMarks() {
+    const out = [], push = (d, st) => out.push({ d: d, st: st });
+    push(lobeD(50, 96, 62, 26, 9, 3), { fill: '#a9b489', opacity: 0.5 });
+    push(lobeD(64, 14, 46, 24, 9, 7), { fill: '#bcc59c', opacity: 0.55 });
+    push(lobeD(29, 70, 11, 8, 10, 11), { fill: '#c0c99f', opacity: 0.62 });
+    push(lobeD(13, 17, 10, 8, 10, 13), { fill: '#c3cba2', opacity: 0.6 });
+    push(lobeD(60, 13, 20, 15, 11, 17), { fill: '#ccd2ad', opacity: 0.55 });
+    push(rectD(2.5, 2.5, 95, 95), { fill: 'none', stroke: 'rgba(74,70,56,0.4)', strokeWidth: 0.5, strokeDasharray: '3 2' });
+    push(lobeD(18, 48, 13, 9.5, 12, 23), { fill: '#7d9089', opacity: 0.95 });
+    push(lobeD(18, 48, 10.5, 7.4, 12, 29), { fill: '#8ea099', opacity: 0.8 });
+    push('M 8 54 Q 4 66 -2 74', { fill: 'none', stroke: '#8ea099', strokeWidth: 1.4, strokeLinecap: 'round', opacity: 0.7 });
+    EDGES.forEach((pair, i) => {
+      const a = this.find(pair[0]), b = this.find(pair[1]);
+      const walked = this.trails.indexOf(pair[0] + '>' + pair[1]) >= 0 || this.trails.indexOf(pair[1] + '>' + pair[0]) >= 0;
+      const d = curveD(a, b, ((i % 3) - 1) * 5 + 2);
+      push(d, { fill: 'none', stroke: '#ddd3b8', strokeWidth: 2.1, strokeLinecap: 'round', opacity: 0.78 });
+      push(d, { fill: 'none', stroke: '#f0e8d6', strokeWidth: 0.9, strokeLinecap: 'round', opacity: walked ? 0.9 : 0.34 });
+      if (walked) push(d, { fill: 'none', stroke: '#3d4c3a', strokeWidth: 0.4, strokeLinecap: 'round', opacity: 0.5, strokeDasharray: '1.4 2' });
+    });
+    /* built landmarks read as roof plans */
+    push(rectD(60.5, 62.5, 7, 6), { fill: '#6d5947', opacity: 0.9 });
+    push('M 60.5 65.5 L 67.5 65.5', { fill: 'none', stroke: '#8a7460', strokeWidth: 0.5 });
+    push(rectD(67.5, 35.5, 9.5, 8.5), { fill: '#4c3f31', opacity: 0.9 });
+    push('M 67.5 39.75 L 77 39.75', { fill: 'none', stroke: '#8a7460', strokeWidth: 0.6 });
+    push(rectD(82.5, 18, 9.5, 8), { fill: '#4c3f31', opacity: 0.88 });
+    push(rectD(84.5, 20, 5.5, 4), { fill: '#9b9483', opacity: 0.7 });
+    push(rectD(43, 45, 8.5, 8.5), { fill: '#d3c8ae', opacity: 0.72 });
+    push(rectD(45.6, 44, 3.2, 1), { fill: '#4c3f31', opacity: 0.85 });
+    push(rectD(10, 14.4, 6, 1), { fill: '#4c3f31', opacity: 0.8 });
+    push(rectD(9.4, 18, 7.5, 3.4), { fill: '#6d5947', opacity: 0.5 });
+    /* stone lanterns along the walked spine */
+    [[41, 79], [56, 58], [39, 39], [70, 22]].forEach((p, i) => push(lobeD(p[0], p[1], 0.9, 0.9, 6, 31 + i), { fill: '#7f7869', opacity: 0.8 }));
+    /* canopies */
+    TREE_CLUSTERS.forEach((cl, ci) => {
+      const r = rnd(41 + ci * 7), n = 3 + Math.floor(r() * 4);
+      for (let i = 0; i < n; i++) {
+        const x = cl[0] + (r() - 0.5) * cl[2] * 1.7, y = cl[1] + (r() - 0.5) * cl[2] * 1.5;
+        const rr = 1.3 + r() * 1.9;
+        let near = false;
+        for (let k = 0; k < PLACES.length; k++) {
+          const dx = PLACES[k].x - x, dy = PLACES[k].y - y;
+          if (dx * dx + dy * dy < 26) { near = true; break; }
+        }
+        if (near) continue;
+        push(lobeD(x + rr * 0.22, y + rr * 0.26, rr, rr * 0.94, 9, 91 + ci * 13 + i), { fill: '#3f5039', opacity: 0.26 });
+        push(lobeD(x, y, rr, rr * 0.94, 9, 91 + ci * 13 + i), { fill: i % 3 === 0 ? '#c9a5a6' : (i % 2 ? '#54654f' : '#61715a'), opacity: 0.9 });
+      }
+    });
+    return out;
+  }
+
+  renderVals() {
+    const cur = this.current(), traveling = this.state.traveling;
+    if (!this._marks || this._marksTrail !== this.trails.length) { this._marks = this.planMarks(); this._marksTrail = this.trails.length; }
+    const nodes = PLACES.map((p) => {
+      const isCur = p.id === cur;
+      const seen = this.visited.indexOf(p.id) >= 0 || isCur;
+      const dim = traveling && traveling !== p.id;
+      return {
+        id: p.id, num: p.num, name: p.name, sub: p.sub,
+        aria: p.name + ' — ' + p.sub,
+        current: isCur ? 'page' : undefined,
+        tag: p.built ? 'built' : 'grown',
+        go: () => this.go(p.id),
+        btnStyle: {
+          position: 'absolute', left: pc(p.x) + '%', top: pc(p.y) + '%', transform: 'translate(-50%,-50%)',
+          display: 'flex', flexDirection: ANCHOR[p.id] || 'column', alignItems: 'center', gap: '6px',
+          background: 'transparent', border: 0, padding: '7px', cursor: isCur ? 'default' : 'pointer',
+          transition: 'transform 260ms ease, opacity 260ms ease', opacity: dim ? 0.3 : 1
+        },
+        dotStyle: p.built
+          ? { width: '11px', height: '11px', background: seen ? '#f7f3ea' : 'rgba(247,243,234,0.14)', border: '1.4px solid #2c3626', display: 'block' }
+          : { width: '11px', height: '11px', borderRadius: '50%', background: seen ? '#f7f3ea' : 'rgba(247,243,234,0.14)', border: '1.4px solid #2c3626', display: 'block' },
+        labelStyle: {
+          fontFamily: "'IBM Plex Mono',monospace", fontSize: '0.56rem', letterSpacing: '0.16em',
+          textTransform: 'uppercase', color: isCur ? '#1d2318' : '#2f3828', whiteSpace: 'nowrap',
+          textShadow: '0 1px 2px rgba(247,243,234,0.85), 0 0 6px rgba(247,243,234,0.7)',
+          borderBottom: isCur ? '1px solid rgba(29,35,24,0.6)' : 'none', paddingBottom: '2px'
+        },
+        rowStyle: {
+          display: 'flex', alignItems: 'center', gap: '13px', width: '100%', padding: '12px 6px',
+          background: isCur ? 'rgba(61,76,58,0.09)' : 'transparent', border: 0,
+          cursor: isCur ? 'default' : 'pointer', transition: 'background 200ms ease, padding 200ms ease'
+        },
+        tagStyle: {
+          marginLeft: 'auto', fontFamily: "'IBM Plex Mono',monospace", fontSize: '0.54rem',
+          letterSpacing: '0.2em', textTransform: 'uppercase', color: isCur ? '#23291f' : '#8b9179'
+        }
+      };
+    });
+    return {
+      nodes: nodes, marks: this._marks, close: this.close,
+      planRef: this.planRef, markerRef: this.markerRef, travelRef: this.travelRef, shellRef: this.shellRef
+    };
+  }
+
+  componentDidUpdate() { this.paint(); }
+
+  componentDidMount() {
+    const p = this.find(this.current());
+    this.paint();
+    this.place(p.x, p.y);
+    if (!this.state.open && this.marker) this.marker.style.opacity = '0';
+    if (this.state.open) this.lift();
+    this.onToggle = (e) => {
+      const want = e && e.detail && typeof e.detail.open === 'boolean' ? e.detail.open : !this.state.open;
+      this.setOpen(want);
+    };
+    this.onKey = (e) => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const tag = (e.target && e.target.tagName || '').toLowerCase();
+      if (tag === 'input' || tag === 'textarea') return;
+      if (e.key === 'm' || e.key === 'M') { e.preventDefault(); this.setOpen(!this.state.open); }
+      else if (e.key === 'Escape' && this.state.open) this.setOpen(false);
+    };
+    /* every in-garden link travels through the map rather than cutting */
+    this.onDocClick = (e) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if (!a || a.target === '_blank') return;
+      let href = a.getAttribute('href') || '';
+      try { href = decodeURIComponent(href); } catch (err) { /* leave as-is */ }
+      const hit = PLACES.filter((q) => q.file === href)[0];
+      if (!hit || hit.id === this.current() || this.reduce || this.state.traveling) return;
+      e.preventDefault();
+      this.go(hit.id);
+    };
+    window.addEventListener('aura:map-toggle', this.onToggle);
+    window.addEventListener('keydown', this.onKey);
+    document.addEventListener('click', this.onDocClick, true);
+    this.emit(this.state.open);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('aura:map-toggle', this.onToggle);
+    window.removeEventListener('keydown', this.onKey);
+    document.removeEventListener('click', this.onDocClick, true);
+    if (this.walkRaf) window.cancelAnimationFrame(this.walkRaf);
+  }
+}
+
+</script>
+</body>
+</html>

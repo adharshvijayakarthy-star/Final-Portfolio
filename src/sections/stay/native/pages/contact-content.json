@@ -1,0 +1,24 @@
+{
+  "channels": [
+    {
+      "label": "Email",
+      "value": "Not added yet",
+      "hint": "real address"
+    },
+    {
+      "label": "LinkedIn",
+      "value": "Not added yet",
+      "hint": "profile URL"
+    },
+    {
+      "label": "GitHub",
+      "value": "Not added yet",
+      "hint": "profile URL"
+    },
+    {
+      "label": "Phone",
+      "value": "Not added yet",
+      "hint": "number"
+    }
+  ]
+}

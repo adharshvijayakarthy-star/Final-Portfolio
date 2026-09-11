@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>The Future — Stay Awhile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f2ede1; color: #23291f; -webkit-font-smoothing: antialiased; }
+  a { color: #3d4c3a; }
+  a:hover { color: #23291f; }
+  ::selection { background: rgba(220,192,191,0.55); }
+  :focus-visible { outline: 2px solid #3d4c3a; outline-offset: 4px; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+</style>
+</helmet>
+<div style="position:relative;min-height:100vh;font-family:'EB Garamond',Georgia,serif">
+  <dc-import name="GardenScene" place="future" density="trace" reveal="thin" hint-size="100%,100%"></dc-import>
+  <dc-import name="GardenNav" current="future" hint-size="0,0"></dc-import>
+
+  <main id="content" style="position:relative;z-index:1">
+    <section data-screen-label="Future opening" style="min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16vh clamp(20px,5vw,60px) 12vh;text-align:center">
+      <p style="margin:0 0 clamp(16px,3vh,26px);font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.3em;text-transform:uppercase;color:#5b6350;animation:rise 0.9s ease-out both">07 · Open horizon</p>
+      <h1 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(3rem,8.5vw,7rem);line-height:0.96;letter-spacing:-0.015em;animation:rise 1.4s cubic-bezier(0.22,0.61,0.36,1) both">The Future</h1>
+      <p style="margin:clamp(22px,4vh,36px) 0 0;max-width:26ch;font-style:italic;font-size:clamp(1.2rem,2.2vw,1.7rem);line-height:1.45;color:#3a4133;animation:rise 1.8s cubic-bezier(0.22,0.61,0.36,1) both">What am I becoming?</p>
+    </section>
+
+    <section aria-labelledby="f-intent" style="padding:0 clamp(20px,5vw,60px) clamp(50px,9vh,110px)">
+      <div style="max-width:680px;margin:0 auto;padding:clamp(28px,5vw,54px) clamp(22px,4vw,46px);background:linear-gradient(180deg,rgba(248,244,235,0) 0%,rgba(248,244,235,0.9) 8%,rgba(248,244,235,0.92) 92%,rgba(248,244,235,0) 100%)">
+        <h2 id="f-intent" style="margin:0 0 28px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.1;letter-spacing:-0.01em">I'm not interested in staying where I am.</h2>
+        <p style="margin:0 0 20px;font-size:1.19rem;line-height:1.8;color:#3a4133;text-wrap:pretty">I'm moving toward AI and machine learning. Toward intelligent systems. Toward deeper technical competence, and toward research — the kind of work where the question is genuinely open.</p>
+        <p style="margin:0;font-size:1.19rem;line-height:1.8;color:#3a4133;text-wrap:pretty">Mostly I want to build things that are actually difficult, and to be the reason they work.</p>
+      </div>
+    </section>
+
+    <section aria-label="Direction" style="padding:0 clamp(20px,5vw,60px) clamp(60px,11vh,140px)">
+      <ul style="list-style:none;max-width:760px;margin:0 auto;padding:0;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <li style="width:100%;padding:clamp(14px,2.4vh,22px) 0;border-bottom:1px solid rgba(61,76,58,0.26);font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.7rem,3.6vw,2.6rem);line-height:1.12;color:#252c1f">AI &amp; machine learning</li>
+        <li style="width:88%;padding:clamp(13px,2.2vh,20px) 0;border-bottom:1px solid rgba(61,76,58,0.2);font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.45rem,3vw,2.15rem);line-height:1.12;color:#39412f">Intelligent systems</li>
+        <li style="width:76%;padding:clamp(12px,2vh,18px) 0;border-bottom:1px solid rgba(61,76,58,0.15);font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.25rem,2.5vw,1.8rem);line-height:1.12;color:#4d5541">Difficult software</li>
+        <li style="width:64%;padding:clamp(11px,1.8vh,16px) 0;border-bottom:1px solid rgba(61,76,58,0.1);font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.1rem,2vw,1.5rem);line-height:1.12;color:#5e6551">Research</li>
+      </ul>
+    </section>
+
+    <section aria-label="Where I actually am" style="min-height:120vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 clamp(20px,5vw,60px) clamp(70px,14vh,180px);text-align:center">
+      <p style="margin:0 0 clamp(90px,26vh,260px);font-family:'Instrument Serif',Georgia,serif;font-size:clamp(2.2rem,5.6vw,3.8rem);line-height:1.15;color:#20261c;text-shadow:0 2px 24px rgba(252,248,238,0.9)">I'm not there yet.</p>
+      <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.32em;text-transform:uppercase;color:#4c5545;text-shadow:0 1px 10px rgba(252,248,238,0.9)">That's the point.</p>
+    </section>
+
+    <section aria-labelledby="f-now" style="padding:0 clamp(20px,5vw,60px) clamp(50px,9vh,110px)">
+      <div style="max-width:680px;margin:0 auto;padding:clamp(26px,4vw,44px) clamp(22px,4vw,44px);background:linear-gradient(180deg,rgba(248,244,235,0) 0%,rgba(248,244,235,0.88) 10%,rgba(248,244,235,0.9) 90%,rgba(248,244,235,0) 100%);border-left:2px solid rgba(61,76,58,0.4)">
+        <h2 id="f-now" style="margin:0 0 18px;font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.26em;text-transform:uppercase;color:#7c8469;font-weight:400">Where I am today</h2>
+        <p style="margin:0;font-size:1.15rem;line-height:1.78;color:#3a4133;text-wrap:pretty">An IB student, building and experimenting, using AI assistance while developing the independent technical depth the work I want will require. A direction, not an arrival.</p>
+      </div>
+    </section>
+
+    <footer style="padding:0 clamp(20px,5vw,60px) clamp(60px,10vh,120px)">
+      <div style="max-width:800px;margin:0 auto;border-top:1px solid rgba(61,76,58,0.24);padding-top:26px">
+        <p style="margin:0 0 20px;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.24em;text-transform:uppercase;color:#7c8469">Onward — this page ends here</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px">
+          <a href="Stay%20Aura.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(248,244,235,0.6)" style-hover="background:rgba(248,244,235,0.95);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">08 · Archive</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">AURA</span>
+          </a>
+          <a href="Stay%20Contact.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(248,244,235,0.6)" style-hover="background:rgba(248,244,235,0.95);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">09 · Open garden</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">Contact</span>
+          </a>
+          <a href="Stay%20Awhile.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(248,244,235,0.6)" style-hover="background:rgba(248,244,235,0.95);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">00 · Arrival</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">Back to the garden</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</div>
+
+</x-dc>
+</body>
+</html>

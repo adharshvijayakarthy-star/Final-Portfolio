@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>The Person — Stay Awhile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #efe9dc; color: #23291f; -webkit-font-smoothing: antialiased; }
+  a { color: #3d4c3a; }
+  a:hover { color: #23291f; }
+  ::selection { background: rgba(220,192,191,0.55); }
+  :focus-visible { outline: 2px solid #3d4c3a; outline-offset: 4px; }
+  @keyframes clearing { from { opacity: 0; transform: translateX(22px); } to { opacity: 1; transform: none; } }
+  @keyframes openUp { from { opacity: 0; transform: translateY(20px) scale(1.01); filter: blur(8px); } to { opacity: 1; transform: none; filter: blur(0); } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+</style>
+</helmet>
+<div style="position:relative;min-height:100vh;font-family:'EB Garamond',Georgia,serif">
+  <dc-import name="GardenScene" place="person" density="occasional" hint-size="100%,100%"></dc-import>
+  <dc-import name="GardenNav" current="person" hint-size="0,0"></dc-import>
+
+  <!-- extreme foreground: you enter the clearing from behind a branch, and it slides past you -->
+  <div data-fg="1" aria-hidden="true" style="position:fixed;inset:0;z-index:2;pointer-events:none;will-change:transform">
+    <svg viewBox="0 0 520 360" preserveAspectRatio="xMinYMin slice" style="position:absolute;left:-2%;top:-4%;width:clamp(300px,42vw,620px);height:auto;overflow:visible">
+      <g fill="#4c5442" opacity="0.9">
+        <path d="M-30 8 C 60 30, 140 52, 214 96 C 256 121, 288 150, 306 178 C 292 156, 262 128, 220 104 C 146 62, 62 42, -30 24 Z"></path>
+        <path d="M96 38 C 118 62, 128 92, 130 122 C 124 96, 112 68, 88 46 Z"></path>
+        <path d="M182 78 C 214 86, 240 74, 262 56 C 244 84, 212 98, 178 92 Z"></path>
+      </g>
+      <g fill="#5c6650" opacity="0.85">
+        <ellipse cx="118" cy="128" rx="19" ry="8" transform="rotate(34 118 128)"></ellipse>
+        <ellipse cx="140" cy="146" rx="16" ry="7" transform="rotate(52 140 146)"></ellipse>
+        <ellipse cx="252" cy="52" rx="18" ry="7.5" transform="rotate(-22 252 52)"></ellipse>
+        <ellipse cx="276" cy="66" rx="15" ry="6.5" transform="rotate(-8 276 66)"></ellipse>
+        <ellipse cx="60" cy="44" rx="20" ry="8" transform="rotate(18 60 44)"></ellipse>
+      </g>
+      <g fill="#d7b8b7" opacity="0.88">
+        <ellipse data-leaf="1" data-rot="24" cx="196" cy="98" rx="8" ry="5" style="transform-box:fill-box;transform-origin:center;transform:rotate(24deg)"></ellipse>
+        <ellipse data-leaf="2" data-rot="-14" cx="228" cy="120" rx="7" ry="4.5" style="transform-box:fill-box;transform-origin:center;transform:rotate(-14deg)"></ellipse>
+        <ellipse data-leaf="3" data-rot="40" cx="132" cy="86" rx="7.5" ry="4.8" style="transform-box:fill-box;transform-origin:center;transform:rotate(40deg)"></ellipse>
+        <ellipse data-leaf="4" data-rot="-32" cx="292" cy="86" rx="6.5" ry="4.2" style="transform-box:fill-box;transform-origin:center;transform:rotate(-32deg)"></ellipse>
+      </g>
+    </svg>
+  </div>
+
+  <main id="content" style="position:relative;z-index:1">
+    <!-- the sakura holds the left of the frame; everything written sits in the open right half -->
+    <section data-screen-label="Person opening" style="min-height:94vh;display:flex;align-items:center;padding:16vh clamp(20px,5vw,60px) 10vh">
+      <div style="width:min(1240px,100%);margin:0 auto;display:grid;grid-template-columns:minmax(0,0.92fr) minmax(0,1.08fr);gap:clamp(20px,5vw,70px)">
+        <div aria-hidden="true"></div>
+        <div>
+          <p style="margin:0 0 clamp(16px,3vh,26px);font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.3em;text-transform:uppercase;color:#4c5545;text-shadow:0 1px 8px rgba(247,243,234,0.85);animation:clearing 1.1s 0.6s ease-out both">01 · Open clearing</p>
+          <h1 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(2.9rem,8vw,6.6rem);line-height:0.95;letter-spacing:-0.015em;color:#1f251b;text-shadow:0 2px 26px rgba(247,243,234,0.9);animation:openUp 1.8s 1s cubic-bezier(0.22,0.61,0.36,1) both">The Person</h1>
+          <p style="margin:clamp(24px,4.4vh,40px) 0 0;max-width:26ch;font-style:italic;font-size:clamp(1.2rem,2.3vw,1.75rem);line-height:1.5;color:#2f3629;text-shadow:0 1px 10px rgba(247,243,234,0.9);animation:openUp 1.6s 1.7s cubic-bezier(0.22,0.61,0.36,1) both">Before the projects, there is the person who keeps trying to build them.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- plain-spoken opening, set as loose text in the clearing rather than inside a panel -->
+    <section data-screen-label="Ambition" aria-labelledby="p-intro" data-step="1" style="padding:0 clamp(20px,5vw,60px) clamp(60px,12vh,150px)">
+      <div style="width:min(1240px,100%);margin:0 auto;display:grid;grid-template-columns:minmax(0,0.72fr) minmax(0,1.28fr);gap:clamp(20px,5vw,70px)">
+        <div aria-hidden="true"></div>
+        <div data-reveal="1" style="max-width:44ch">
+          <h2 id="p-intro" style="margin:0 0 clamp(22px,3.6vh,34px);font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(1.8rem,4vw,2.9rem);line-height:1.12;letter-spacing:-0.01em;color:#1f251b;text-shadow:0 2px 18px rgba(247,243,234,0.92)">I am ambitious, and I would rather say so plainly.</h2>
+          <p style="margin:0 0 22px;font-size:1.19rem;line-height:1.85;color:#2f3629;text-shadow:0 1px 10px rgba(247,243,234,0.95),0 0 22px rgba(247,243,234,0.8);text-wrap:pretty">I want to become exceptionally capable. Not capable in a way that looks good on a page, but capable in the way that means I can be handed a difficult problem and be trusted with it.</p>
+          <p style="margin:0 0 22px;font-size:1.19rem;line-height:1.85;color:#2f3629;text-shadow:0 1px 10px rgba(247,243,234,0.95),0 0 22px rgba(247,243,234,0.8);text-wrap:pretty">I want freedom — not simply money, but the ability to choose how I spend my time, where I go, what I work on, and who I build my life with. Money is part of that, but only as a means.</p>
+          <p style="margin:0;font-size:1.19rem;line-height:1.85;color:#2f3629;text-shadow:0 1px 10px rgba(247,243,234,0.95),0 0 22px rgba(247,243,234,0.8);text-wrap:pretty">I care about meaningful relationships, and I don't want a life protected from failure. I want a life worth experiencing, which is a different specification entirely.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- five concepts, each standing at its own point in the clearing -->
+    <section data-screen-label="Five things" aria-labelledby="p-five" style="padding:0 clamp(20px,5vw,60px)">
+      <h2 id="p-five" style="width:min(1240px,100%);margin:0 auto clamp(30px,6vh,70px);font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.28em;text-transform:uppercase;color:#4c5545;font-weight:400;text-align:center;text-shadow:0 1px 8px rgba(247,243,234,0.9)">Five things I keep returning to</h2>
+      <sc-for list="{{ concepts }}" as="c" hint-placeholder-count="5">
+        <div data-step="{{ c.step }}" style="{{ c.wrap }}">
+          <div data-reveal="1" style="{{ c.inner }}">
+            <sc-if value="{{ c.join }}" hint-placeholder-val="{{ false }}">
+              <svg data-join="1" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:58px;margin-bottom:20px;overflow:visible">
+                <path d="M2 66 C 70 60, 120 40, 298 8" fill="none" stroke="rgba(107,99,78,0.6)" stroke-width="9" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+                <path data-second="1" d="M2 4 C 90 22, 150 34, 298 8" fill="none" stroke="rgba(107,99,78,0.42)" stroke-width="7" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+              </svg>
+            </sc-if>
+            <p style="margin:0 0 14px;font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.3em;text-transform:uppercase;color:#1f251b;text-shadow:0 1px 8px rgba(247,243,234,0.95)">{{ c.name }}</p>
+            <p style="margin:0;font-size:clamp(1.18rem,2vw,1.4rem);line-height:1.72;color:#2f3629;text-shadow:0 1px 10px rgba(247,243,234,0.95),0 0 22px rgba(247,243,234,0.85);text-wrap:pretty">{{ c.body }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </section>
+
+    <section data-screen-label="The question" aria-label="The question underneath" data-step="7" style="min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(40px,10vh,130px) clamp(20px,5vw,60px);text-align:center">
+      <p data-reveal="1" style="margin:0 0 clamp(24px,4vh,40px);font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:#4c5545;text-shadow:0 1px 8px rgba(247,243,234,0.9)">And underneath most of it, one question</p>
+      <blockquote data-reveal="2" style="margin:0;max-width:19ch;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.9rem,5vw,3.5rem);line-height:1.16;letter-spacing:-0.01em;color:#1f251b;text-shadow:0 2px 26px rgba(247,243,234,0.95),0 1px 6px rgba(247,243,234,0.95)">“What would it take to become someone I could genuinely admire?”</blockquote>
+    </section>
+
+    <footer style="padding:0 clamp(20px,5vw,60px) clamp(60px,10vh,120px)">
+      <div style="max-width:840px;margin:0 auto;border-top:1px solid rgba(61,76,58,0.24);padding-top:26px">
+        <p style="margin:0 0 20px;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.24em;text-transform:uppercase;color:#5b6350;text-shadow:0 1px 6px rgba(247,243,234,0.85)">Onward — this page ends here</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px">
+          <a href="Stay%20Builder.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.72)" style-hover="background:rgba(247,243,234,0.98);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">02 · Timber frame</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">The Builder</span>
+          </a>
+          <a href="Stay%20Thinker.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.72)" style-hover="background:rgba(247,243,234,0.98);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">03 · Quiet water</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">The Thinker</span>
+          </a>
+          <a href="Stay%20Awhile.dc.html" style="display:flex;flex-direction:column;gap:5px;flex:1 1 240px;padding:18px 20px;border:1px solid rgba(61,76,58,0.32);text-decoration:none;background:rgba(247,243,234,0.72)" style-hover="background:rgba(247,243,234,0.98);border-color:rgba(61,76,58,0.6)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:#7c8469">00 · Arrival</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-size:1.35rem;color:#23291f">Back to the garden</span>
+          </a>
+        </div>
+        <p style="margin:20px 0 0;font-size:1rem;line-height:1.7;color:#3f4738;text-shadow:0 1px 8px rgba(247,243,234,0.85)">Or open the garden map for any of the nine places.</p>
+      </div>
+    </footer>
+  </main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+/* each concept stands at a different point in the clearing: its own side, indent and depth */
+const CONCEPTS = [
+  { name: 'Desire', body: "Wanting something specific enough to work for it. Most of what I have built started as a want I couldn't put down.", side: 'right', pull: 0.62 },
+  { name: 'Freedom', body: 'The ability to choose. Time, work, place, people. It is the reason the other four matter to me.', side: 'left', pull: 0.3 },
+  { name: 'Capability', body: 'Being genuinely good at difficult things, rather than adjacent to them. I am not there yet, and I know roughly where the gap is.', side: 'right', pull: 0.44 },
+  { name: 'Experience', body: 'A life with things in it. I would take the version with failure in it over the version with nothing in it.', side: 'left', pull: 0.16 },
+  { name: 'People', body: 'Relationships I would still choose if nothing was gained from them. This is the part I am least willing to trade.', side: 'right', pull: 0.7, join: true }
+];
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.reduce = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
+  renderVals() {
+    const concepts = CONCEPTS.map((c, i) => ({
+      step: i + 2, name: c.name, body: c.body, join: c.join === true,
+      wrap: {
+        width: 'min(1240px,100%)', margin: '0 auto',
+        display: 'flex', justifyContent: c.side === 'right' ? 'flex-end' : 'flex-start',
+        paddingBottom: 'clamp(56px,14vh,180px)'
+      },
+      inner: {
+        maxWidth: '34ch',
+        marginLeft: c.side === 'left' ? 'clamp(0px,' + (c.pull * 22) + 'vw,240px)' : 0,
+        marginRight: c.side === 'right' ? 'clamp(0px,' + ((1 - c.pull) * 14) + 'vw,150px)' : 0
+      }
+    }));
+    return { concepts: concepts };
+  }
+
+  /* walking the clearing: the concept you are level with resolves, the one behind you settles back */
+  componentDidMount() {
+    const root = document.getElementById('content');
+    if (!root || this.reduce) return;
+    const steps = Array.prototype.slice.call(root.querySelectorAll('[data-step]'));
+    const items = [];
+    steps.forEach((s) => Array.prototype.slice.call(s.querySelectorAll('[data-reveal]')).forEach((el) => items.push(el)));
+    items.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 1000ms cubic-bezier(0.22,0.61,0.36,1), transform 1200ms cubic-bezier(0.22,0.61,0.36,1)';
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const own = Array.prototype.slice.call(entry.target.querySelectorAll('[data-reveal]'));
+        if (entry.isIntersecting) {
+          own.forEach((el, i) => window.setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'none'; }, 140 + i * 260));
+        } else if (entry.boundingClientRect.top < 0) {
+          own.forEach((el) => { el.style.opacity = '0.34'; });
+        }
+      });
+    }, { threshold: 0.3, rootMargin: '-6% 0px -14% 0px' });
+    steps.forEach((s) => io.observe(s));
+    this.io = io;
+
+    /* ENTRY — the branch you came in behind slides past as you advance into the clearing */
+    this.fg = root.parentNode ? root.parentNode.querySelector('[data-fg]') : null;
+    if (this.fg) {
+      this.fg.style.transition = 'opacity 600ms ease';
+      this.onScroll = () => {
+        if (this.sraf) return;
+        this.sraf = window.requestAnimationFrame(() => {
+          this.sraf = 0;
+          const p = Math.min(window.scrollY / (window.innerHeight * 0.95), 1);
+          const e = p * p * (3 - 2 * p);
+          this.fg.style.transform = 'translate(' + (-42 * e).toFixed(2) + '%,' + (-26 * e).toFixed(2) + '%) scale(' + (1 + e * 0.18).toFixed(3) + ')';
+          this.fg.style.opacity = (1 - e * 0.55).toFixed(3);
+        });
+      };
+      window.addEventListener('scroll', this.onScroll, { passive: true });
+      this.onScroll();
+    }
+
+    /* the second path draws itself in as it joins yours */
+    const joins = Array.prototype.slice.call(root.querySelectorAll('[data-second]'));
+    joins.forEach((p) => {
+      const L = p.getTotalLength ? p.getTotalLength() : 320;
+      p.style.strokeDasharray = L;
+      p.style.strokeDashoffset = L;
+      p.style.transition = 'stroke-dashoffset 1600ms cubic-bezier(0.3,0.1,0.25,1)';
+    });
+    if (joins.length) {
+      const jio = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          jio.unobserve(e.target);
+          window.setTimeout(() => { e.target.style.strokeDashoffset = '0'; }, 500);
+        });
+      }, { threshold: 0.6 });
+      joins.forEach((p) => jio.observe(p));
+      this.jio = jio;
+    }
+
+    /* leaves nudge away from the cursor — a few pixels, then they drift back */
+    this.leaves = this.fg ? Array.prototype.slice.call(this.fg.querySelectorAll('[data-leaf]')) : [];
+    this.leaves.forEach((l) => { l.style.transition = 'transform 900ms cubic-bezier(0.22,0.61,0.36,1)'; });
+    if (this.leaves.length) {
+      this.onMove = (e) => {
+        this.mx = e.clientX; this.my = e.clientY;
+        if (this.mraf) return;
+        this.mraf = window.requestAnimationFrame(() => {
+          this.mraf = 0;
+          this.leaves.forEach((l) => {
+            const r = l.getBoundingClientRect();
+            const dx = (r.left + r.width / 2) - this.mx;
+            const dy = (r.top + r.height / 2) - this.my;
+            const d = Math.sqrt(dx * dx + dy * dy) || 1;
+            const k = d < 150 ? (1 - d / 150) * 5.5 : 0;
+            const rot = 'rotate(' + (l.getAttribute('data-rot') || 0) + 'deg)';
+            l.style.transform = k ? rot + ' translate(' + (dx / d * k).toFixed(2) + 'px,' + (dy / d * k).toFixed(2) + 'px)' : rot;
+          });
+        });
+      };
+      window.addEventListener('mousemove', this.onMove, { passive: true });
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.io) this.io.disconnect();
+    if (this.jio) this.jio.disconnect();
+    if (this.onScroll) window.removeEventListener('scroll', this.onScroll);
+    if (this.onMove) window.removeEventListener('mousemove', this.onMove);
+    if (this.sraf) window.cancelAnimationFrame(this.sraf);
+    if (this.mraf) window.cancelAnimationFrame(this.mraf);
+  }
+}
+
+</script>
+</body>
+</html>
