@@ -1,0 +1,22 @@
+{
+  "blender": "5.2.1 LTS",
+  "source": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\scripts\\blender\\quick-discovery\\quick-discovery-master.blend",
+  "asset": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\quick-discovery\\aura-continuity.glb",
+  "bytes": 15668,
+  "meshes": 8,
+  "triangles": 64,
+  "textures": 0,
+  "collections": [
+    "ENVIRONMENT",
+    "TYPOGRAPHY",
+    "TRANSITIONS",
+    "DESTINATION_01_WHO",
+    "DESTINATION_02_BUILD",
+    "DESTINATION_03_WORK",
+    "DESTINATION_04_BEYOND",
+    "DESTINATION_05_FUTURE",
+    "DESTINATION_06_CONTACT",
+    "GLOBAL_MOTION",
+    "EXPORT"
+  ]
+}

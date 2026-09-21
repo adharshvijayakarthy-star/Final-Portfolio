@@ -1,3 +1,5 @@
+import { stageOffset } from "./continuity";
+
 /** Only chapter clicks use this clock. Wheel/touch scrolling stays native. */
 export function navigationDuration(distance: number, viewport: number): number {
   return Math.min(4600, 650 + Math.sqrt(Math.abs(distance) / Math.max(1, viewport)) * 600);
@@ -5,6 +7,8 @@ export function navigationDuration(distance: number, viewport: number): number {
 
 export function bindChapterNavigation(root: HTMLElement, reduced: () => boolean): () => void {
   let frame = 0;
+  let hashFrame = 0;
+  let hashInnerFrame = 0;
   let cancelled = false;
   let previousBehavior = "";
   let disposed = false;
@@ -16,6 +20,7 @@ export function bindChapterNavigation(root: HTMLElement, reduced: () => boolean)
     frame = 0;
     html.style.scrollBehavior = previousBehavior;
     delete root.dataset["navigating"];
+    delete root.dataset["destination"];
   };
   const key = (e: KeyboardEvent) => {
     if (["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " ", "Escape", "Tab"].includes(e.key)) stop();
@@ -24,7 +29,7 @@ export function bindChapterNavigation(root: HTMLElement, reduced: () => boolean)
     const top = target.getBoundingClientRect().top + window.scrollY;
     const progress = reduced() ? 0 : Number(link.dataset["arrival"] || 0);
     return Math.min(document.documentElement.scrollHeight - innerHeight,
-      Math.max(0, top + progress * Math.max(0, target.offsetHeight - innerHeight) - (reduced() ? 100 : 0)));
+      Math.max(0, top + stageOffset(progress, target.offsetHeight, innerHeight) - (reduced() ? 100 : 0)));
   };
   const navigate = (e: MouseEvent) => {
     const link = (e.target as Element).closest<HTMLAnchorElement>("[data-chip]");
@@ -39,17 +44,19 @@ export function bindChapterNavigation(root: HTMLElement, reduced: () => boolean)
     html.style.scrollBehavior = "auto";
     cancelled = false;
     root.dataset["navigating"] = "true";
+    root.dataset["destination"] = link.dataset["chip"] || "";
     const start = performance.now();
     const tick = (now: number) => {
       if (cancelled) return;
       const p = duration ? Math.min(1, (now - start) / duration) : 1;
-      const eased = p * p * (3 - 2 * p);
+      const eased = p*p*p*(p*(p*6-15)+10);
       window.scrollTo({ top: from + (to - from) * eased, behavior: "instant" });
       if (p < 1) frame = requestAnimationFrame(tick);
       else {
         frame = 0;
         html.style.scrollBehavior = previousBehavior;
         delete root.dataset["navigating"];
+    delete root.dataset["destination"];
         if (location.hash !== link.hash) history.pushState(history.state, "", link.hash);
         target.tabIndex = -1;
         target.focus({ preventScroll: true });
@@ -67,16 +74,18 @@ export function bindChapterNavigation(root: HTMLElement, reduced: () => boolean)
     stop();
     window.scrollTo({ top: stage.getBoundingClientRect().top + scrollY + .99 * (stage.offsetHeight - innerHeight), behavior: "instant" });
   };
-  // Native hash loading targets the start of a scroll track, before its title
-  // appears. Only settle that exact boundary; preserve restored scroll positions.
+  // Native hash scrolling includes the global scroll padding and can still be
+  // in flight. Resolve known chapter hashes to their readable arrival pose.
   const settleHash = () => {
-    requestAnimationFrame(() => requestAnimationFrame(() => {
+    if (disposed) return;
+    cancelAnimationFrame(hashFrame); cancelAnimationFrame(hashInnerFrame);
+    hashFrame = requestAnimationFrame(() => { hashInnerFrame = requestAnimationFrame(() => {
       if (disposed || !location.hash) return;
       const target = document.getElementById(location.hash.slice(1));
       const link = Array.from(root.querySelectorAll<HTMLAnchorElement>('[data-chip]')).find(a => a.hash === location.hash);
-      if (!target || !link || Math.abs(target.getBoundingClientRect().top) > 8) return;
+      if (!target || !link) return;
       window.scrollTo({top: arrival(link, target), behavior: 'instant'});
-    }));
+    }); });
   };
   void document.fonts.ready.then(settleHash);
   window.addEventListener('hashchange', settleHash);
@@ -88,10 +97,12 @@ export function bindChapterNavigation(root: HTMLElement, reduced: () => boolean)
   window.addEventListener("pointerdown", stop, { passive: true });
   window.addEventListener("keydown", key);
   window.addEventListener("popstate", stop);
+  window.addEventListener("resize", stop);
   const onVisibility = () => { if (document.hidden) stop(); };
   document.addEventListener("visibilitychange", onVisibility);
   return () => {
     disposed = true;
+    cancelAnimationFrame(hashFrame); cancelAnimationFrame(hashInnerFrame);
     stop();
     root.removeEventListener("click", navigate);
     root.removeEventListener("focusin", onFocus);
@@ -100,6 +111,7 @@ export function bindChapterNavigation(root: HTMLElement, reduced: () => boolean)
     window.removeEventListener("pointerdown", stop);
     window.removeEventListener("keydown", key);
     window.removeEventListener("popstate", stop);
+    window.removeEventListener("resize", stop);
     window.removeEventListener('popstate', settleHash);
     window.removeEventListener('hashchange', settleHash);
     document.removeEventListener("visibilitychange", onVisibility);
