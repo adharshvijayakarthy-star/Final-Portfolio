@@ -1,0 +1,557 @@
+{
+  "garden": {
+    "source": "00-garden.blend",
+    "beautyVersion": 7,
+    "collections": {
+      "G01:desktop": {
+        "beautyMeshCount": 6,
+        "missingFromLibrary": [],
+        "triangles": 15157,
+        "variants": {}
+      },
+      "G01:mobile": {
+        "beautyMeshCount": 6,
+        "missingFromLibrary": [],
+        "triangles": 4332,
+        "variants": {}
+      },
+      "G02:desktop": {
+        "beautyMeshCount": 6,
+        "missingFromLibrary": [],
+        "triangles": 1191,
+        "variants": {
+          "LIB_G02_desktop_BEND_00": {
+            "beautyMeshCount": 2,
+            "missing": []
+          },
+          "LIB_G02_desktop_JUNCTION_00": {
+            "beautyMeshCount": 2,
+            "missing": []
+          },
+          "LIB_G02_desktop_STRAIGHT_00": {
+            "beautyMeshCount": 2,
+            "missing": []
+          }
+        }
+      },
+      "G02:mobile": {
+        "beautyMeshCount": 3,
+        "missingFromLibrary": [],
+        "triangles": 594,
+        "variants": {
+          "LIB_G02_mobile_BEND_00": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G02_mobile_JUNCTION_00": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G02_mobile_STRAIGHT_00": {
+            "beautyMeshCount": 1,
+            "missing": []
+          }
+        }
+      },
+      "G03:desktop": {
+        "beautyMeshCount": 10,
+        "missingFromLibrary": [],
+        "triangles": 4392,
+        "variants": {}
+      },
+      "G03:mobile": {
+        "beautyMeshCount": 10,
+        "missingFromLibrary": [],
+        "triangles": 1552,
+        "variants": {}
+      },
+      "G04:desktop": {
+        "beautyMeshCount": 6,
+        "missingFromLibrary": [],
+        "triangles": 872,
+        "variants": {
+          "LIB_G04_desktop_BUSH_00": {
+            "beautyMeshCount": 3,
+            "missing": []
+          },
+          "LIB_G04_desktop_BUSH_01": {
+            "beautyMeshCount": 3,
+            "missing": []
+          }
+        }
+      },
+      "G04:mobile": {
+        "beautyMeshCount": 6,
+        "missingFromLibrary": [],
+        "triangles": 240,
+        "variants": {
+          "LIB_G04_mobile_BUSH_00": {
+            "beautyMeshCount": 3,
+            "missing": []
+          },
+          "LIB_G04_mobile_BUSH_01": {
+            "beautyMeshCount": 3,
+            "missing": []
+          }
+        }
+      },
+      "G05:desktop": {
+        "beautyMeshCount": 3,
+        "missingFromLibrary": [],
+        "triangles": 240,
+        "variants": {
+          "LIB_G05_desktop_TUFT_00": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G05_desktop_TUFT_01": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G05_desktop_TUFT_02": {
+            "beautyMeshCount": 1,
+            "missing": []
+          }
+        }
+      },
+      "G05:mobile": {
+        "beautyMeshCount": 3,
+        "missingFromLibrary": [],
+        "triangles": 72,
+        "variants": {
+          "LIB_G05_mobile_TUFT_00": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G05_mobile_TUFT_01": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G05_mobile_TUFT_02": {
+            "beautyMeshCount": 1,
+            "missing": []
+          }
+        }
+      },
+      "G06:desktop": {
+        "beautyMeshCount": 4,
+        "missingFromLibrary": [],
+        "triangles": 216,
+        "variants": {
+          "LIB_G06_desktop_STONE_00": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G06_desktop_STONE_01": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G06_desktop_STONE_02": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G06_desktop_STONE_03": {
+            "beautyMeshCount": 1,
+            "missing": []
+          }
+        }
+      },
+      "G06:mobile": {
+        "beautyMeshCount": 4,
+        "missingFromLibrary": [],
+        "triangles": 132,
+        "variants": {
+          "LIB_G06_mobile_STONE_00": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G06_mobile_STONE_01": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G06_mobile_STONE_02": {
+            "beautyMeshCount": 1,
+            "missing": []
+          },
+          "LIB_G06_mobile_STONE_03": {
+            "beautyMeshCount": 1,
+            "missing": []
+          }
+        }
+      },
+      "G07:desktop": {
+        "beautyMeshCount": 1,
+        "missingFromLibrary": [],
+        "triangles": 162,
+        "variants": {}
+      },
+      "G07:mobile": {
+        "beautyMeshCount": 1,
+        "missingFromLibrary": [],
+        "triangles": 18,
+        "variants": {}
+      },
+      "G11:desktop": {
+        "beautyMeshCount": 2,
+        "missingFromLibrary": [],
+        "triangles": 2142,
+        "variants": {}
+      },
+      "G11:mobile": {
+        "beautyMeshCount": 2,
+        "missingFromLibrary": [],
+        "triangles": 410,
+        "variants": {}
+      },
+      "G14:desktop": {
+        "beautyMeshCount": 2,
+        "missingFromLibrary": [],
+        "triangles": 634,
+        "variants": {}
+      },
+      "G14:mobile": {
+        "beautyMeshCount": 2,
+        "missingFromLibrary": [],
+        "triangles": 303,
+        "variants": {}
+      }
+    },
+    "composition": {
+      "desktop": {
+        "G01": 7,
+        "G02": 2,
+        "G03": 10,
+        "G04": 6,
+        "G05": 3,
+        "G06": 1,
+        "G07": 0,
+        "G11": 2,
+        "G14": 4
+      },
+      "mobile": {
+        "G01": 7,
+        "G02": 1,
+        "G03": 10,
+        "G04": 6,
+        "G05": 3,
+        "G06": 1,
+        "G07": 0,
+        "G11": 2,
+        "G14": 4
+      }
+    },
+    "materials": {
+      "SA_M_BARK": {
+        "base": [
+          0.06847816705703735,
+          0.05448027700185776,
+          0.0423114113509655,
+          1.0
+        ],
+        "links": [
+          [
+            "Principled BSDF",
+            "BSDF",
+            "Material Output",
+            "Surface"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "SA_TONE_MULTIPLY",
+            "Color1"
+          ],
+          [
+            "SA_VERTEX_TONE",
+            "Color",
+            "SA_TONE_MULTIPLY",
+            "Color2"
+          ],
+          [
+            "SA_TONE_MULTIPLY",
+            "Color",
+            "Principled BSDF",
+            "Base Color"
+          ]
+        ]
+      },
+      "SA_M_STONE": {
+        "base": [
+          0.22322796285152435,
+          0.22696587443351746,
+          0.19120168685913086,
+          1.0
+        ],
+        "links": [
+          [
+            "Principled BSDF",
+            "BSDF",
+            "Material Output",
+            "Surface"
+          ],
+          [
+            "Color Attribute",
+            "Color",
+            "Mix (Legacy)",
+            "Color2"
+          ],
+          [
+            "Mix (Legacy)",
+            "Color",
+            "Principled BSDF",
+            "Base Color"
+          ]
+        ]
+      },
+      "SA_M_MOSS": {
+        "base": [
+          0.08437620848417282,
+          0.14702726900577545,
+          0.07421357184648514,
+          1.0
+        ],
+        "links": [
+          [
+            "Principled BSDF",
+            "BSDF",
+            "Material Output",
+            "Surface"
+          ],
+          [
+            "Color Attribute",
+            "Color",
+            "Mix (Legacy)",
+            "Color2"
+          ],
+          [
+            "Mix (Legacy)",
+            "Color",
+            "Principled BSDF",
+            "Base Color"
+          ]
+        ]
+      },
+      "SA_M_SAKURA": {
+        "base": [
+          0.8148465752601624,
+          0.42869049310684204,
+          0.5149176716804504,
+          1.0
+        ],
+        "links": [
+          [
+            "Principled BSDF",
+            "BSDF",
+            "Material Output",
+            "Surface"
+          ],
+          [
+            "SA_VERTEX_TONE",
+            "Color",
+            "SA_TONE_MULTIPLY",
+            "Color2"
+          ],
+          [
+            "SA_TONE_MULTIPLY",
+            "Color",
+            "Principled BSDF",
+            "Base Color"
+          ]
+        ]
+      },
+      "SA_M_WATER": {
+        "base": [
+          0.052860647439956665,
+          0.15896083414554596,
+          0.18782077729701996,
+          1.0
+        ],
+        "links": [
+          [
+            "Principled BSDF",
+            "BSDF",
+            "Material Output",
+            "Surface"
+          ],
+          [
+            "SA_VERTEX_TONE",
+            "Color",
+            "SA_TONE_MULTIPLY",
+            "Color2"
+          ],
+          [
+            "SA_TONE_MULTIPLY",
+            "Color",
+            "Principled BSDF",
+            "Base Color"
+          ]
+        ]
+      }
+    }
+  },
+  "person": {
+    "source": "01-person.blend",
+    "beautyVersion": 6,
+    "collections": {
+      "P01:desktop": {
+        "beautyMeshCount": 4,
+        "missingFromLibrary": [],
+        "triangles": 3584,
+        "variants": {}
+      },
+      "P01:mobile": {
+        "beautyMeshCount": 4,
+        "missingFromLibrary": [],
+        "triangles": 1036,
+        "variants": {}
+      },
+      "P02:desktop": {
+        "beautyMeshCount": 1,
+        "missingFromLibrary": [],
+        "triangles": 396,
+        "variants": {}
+      },
+      "P02:mobile": {
+        "beautyMeshCount": 1,
+        "missingFromLibrary": [],
+        "triangles": 208,
+        "variants": {}
+      },
+      "P03:desktop": {
+        "beautyMeshCount": 4,
+        "missingFromLibrary": [],
+        "triangles": 738,
+        "variants": {}
+      },
+      "P03:mobile": {
+        "beautyMeshCount": 4,
+        "missingFromLibrary": [],
+        "triangles": 406,
+        "variants": {}
+      }
+    },
+    "composition": {
+      "desktop": {
+        "P01": 6,
+        "P02": 3,
+        "P03": 4
+      },
+      "mobile": {
+        "P01": 6,
+        "P02": 3,
+        "P03": 4
+      }
+    },
+    "materials": {}
+  },
+  "builder": {
+    "source": "02-builder.blend",
+    "beautyVersion": 6,
+    "collections": {
+      "B01:desktop": {
+        "beautyMeshCount": 2,
+        "missingFromLibrary": [],
+        "triangles": 528,
+        "variants": {}
+      },
+      "B01:mobile": {
+        "beautyMeshCount": 2,
+        "missingFromLibrary": [],
+        "triangles": 300,
+        "variants": {}
+      },
+      "B02:desktop": {
+        "beautyMeshCount": 6,
+        "missingFromLibrary": [],
+        "triangles": 624,
+        "variants": {}
+      },
+      "B02:mobile": {
+        "beautyMeshCount": 6,
+        "missingFromLibrary": [],
+        "triangles": 432,
+        "variants": {}
+      },
+      "B03:desktop": {
+        "beautyMeshCount": 7,
+        "missingFromLibrary": [],
+        "triangles": 392,
+        "variants": {}
+      },
+      "B03:mobile": {
+        "beautyMeshCount": 7,
+        "missingFromLibrary": [],
+        "triangles": 168,
+        "variants": {}
+      },
+      "B05:desktop": {
+        "beautyMeshCount": 2,
+        "missingFromLibrary": [],
+        "triangles": 576,
+        "variants": {}
+      },
+      "B05:mobile": {
+        "beautyMeshCount": 2,
+        "missingFromLibrary": [],
+        "triangles": 348,
+        "variants": {}
+      }
+    },
+    "composition": {
+      "desktop": {
+        "B01": 14,
+        "B02": 12,
+        "B03": 14,
+        "B05": 4
+      },
+      "mobile": {
+        "B01": 14,
+        "B02": 12,
+        "B03": 14,
+        "B05": 4
+      }
+    },
+    "materials": {}
+  },
+  "thinker": {
+    "source": "03-thinker.blend",
+    "beautyVersion": 6,
+    "collections": {
+      "T01:desktop": {
+        "beautyMeshCount": 4,
+        "missingFromLibrary": [],
+        "triangles": 2144,
+        "variants": {}
+      },
+      "T01:mobile": {
+        "beautyMeshCount": 2,
+        "missingFromLibrary": [],
+        "triangles": 594,
+        "variants": {}
+      },
+      "T02:desktop": {
+        "beautyMeshCount": 7,
+        "missingFromLibrary": [],
+        "triangles": 566,
+        "variants": {}
+      },
+      "T02:mobile": {
+        "beautyMeshCount": 7,
+        "missingFromLibrary": [],
+        "triangles": 363,
+        "variants": {}
+      }
+    },
+    "composition": {
+      "desktop": {
+        "T01": 5,
+        "T02": 7
+      },
+      "mobile": {
+        "T01": 3,
+        "T02": 7
+      }
+    },
+    "materials": {}
+  }
+}

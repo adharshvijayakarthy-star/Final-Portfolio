@@ -1,0 +1,1654 @@
+{
+  "schemaVersion": 1,
+  "routeId": "garden",
+  "artistVersion": "senior-art-2026-09-27",
+  "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+  "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+  "specificationSha256": "1f89f2ca50ff42da80a52275a504c0a0a3c6060a01352e5428f287b278bebabc",
+  "exportDate": "2026-09-28T12:31:10.412846+00:00",
+  "ownedAssetIds": [
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G09",
+    "G10",
+    "G11",
+    "G12",
+    "G13",
+    "G14"
+  ],
+  "assetIds": [
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G08",
+    "G09",
+    "G10",
+    "G11",
+    "G13",
+    "G14"
+  ],
+  "instances": [
+    {
+      "assetId": "G01",
+      "position": [
+        0,
+        -0.13,
+        -76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_00"
+    },
+    {
+      "assetId": "G03",
+      "position": [
+        -5,
+        0,
+        -7.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_01"
+    },
+    {
+      "assetId": "G08",
+      "position": [
+        2.8,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_02"
+    },
+    {
+      "assetId": "G13",
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_03"
+    },
+    {
+      "assetId": "G14",
+      "position": [
+        1.6,
+        0,
+        -8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_04"
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -1.2,
+        0.9,
+        4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_GARDEN_INSTANCE_05"
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        1.5,
+        0.7,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_GARDEN_INSTANCE_06"
+    },
+    {
+      "assetId": "G09",
+      "position": [
+        -0.0,
+        -0.5,
+        -76.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_07"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_GARDEN_INSTANCE_08"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_GARDEN_INSTANCE_09"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_GARDEN_INSTANCE_10"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_GARDEN_INSTANCE_11"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        1.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_GARDEN_INSTANCE_12"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_GARDEN_INSTANCE_13"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        1.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_GARDEN_INSTANCE_14"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_GARDEN_INSTANCE_15"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_GARDEN_INSTANCE_16"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -2.8000000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_GARDEN_INSTANCE_17"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_GARDEN_INSTANCE_18"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -2.8000000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_GARDEN_INSTANCE_19"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_GARDEN_INSTANCE_20"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_GARDEN_INSTANCE_21"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_GARDEN_INSTANCE_22"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_GARDEN_INSTANCE_23"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -8.600000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_GARDEN_INSTANCE_24"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -9.200000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_GARDEN_INSTANCE_25"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -8.600000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_GARDEN_INSTANCE_26"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -9.200000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_GARDEN_INSTANCE_27"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -11.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_GARDEN_INSTANCE_28"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_GARDEN_INSTANCE_29"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -11.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_GARDEN_INSTANCE_30"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_GARDEN_INSTANCE_31"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -13,
+        0,
+        -55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_32"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        12,
+        0,
+        -59
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_33"
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -1.8,
+        0,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G06_STONE_02",
+      "instanceId": "SA_GARDEN_INSTANCE_34"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -27.0,
+        -0.00958122219890356,
+        -49.74591064453125
+      ],
+      "rotation": [
+        0,
+        0.55,
+        0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_35",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -10.0,
+        0.38734376430511475,
+        -48.31282043457031
+      ],
+      "rotation": [
+        0,
+        -0.4,
+        0
+      ],
+      "scale": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_36",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        10.0,
+        -0.0067984010092914104,
+        -47.974056243896484
+      ],
+      "rotation": [
+        0,
+        0.18,
+        0
+      ],
+      "scale": [
+        1.17,
+        1.17,
+        1.17
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_37",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        29.0,
+        -0.014832152985036373,
+        -45.97354507446289
+      ],
+      "rotation": [
+        0,
+        -0.65,
+        0
+      ],
+      "scale": [
+        1.02,
+        1.02,
+        1.02
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_38",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G03",
+      "position": [
+        8.399999618530273,
+        -0.015001907013356686,
+        -18.0
+      ],
+      "rotation": [
+        0,
+        1.2,
+        0
+      ],
+      "scale": [
+        0.82,
+        0.82,
+        0.82
+      ],
+      "variantNode": null,
+      "instanceId": "SA_GARDEN_INSTANCE_39",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -3.4132003784179688,
+        -0.01489128079265356,
+        0.9706422686576843
+      ],
+      "rotation": [
+        0,
+        -1.6509995460295683,
+        0
+      ],
+      "scale": [
+        0.7164163217267879,
+        0.7164163217267879,
+        0.7164163217267879
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_GARDEN_INSTANCE_40",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -3.9132003784179688,
+        -0.014910354278981686,
+        1.2706422805786133
+      ],
+      "rotation": [
+        0,
+        -1.263558023481547,
+        0
+      ],
+      "scale": [
+        0.840306287432289,
+        0.840306287432289,
+        0.840306287432289
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_GARDEN_INSTANCE_41",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        3.0545289516448975,
+        -0.014999999664723873,
+        0.6970106363296509
+      ],
+      "rotation": [
+        0,
+        -1.3597487673186843,
+        0
+      ],
+      "scale": [
+        0.7240988935871538,
+        0.7240988935871538,
+        0.7240988935871538
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_GARDEN_INSTANCE_42",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        3.5545289516448975,
+        -0.01499809231609106,
+        0.9970105886459351
+      ],
+      "rotation": [
+        0,
+        -0.15455663185577206,
+        0
+      ],
+      "scale": [
+        0.9874687126902639,
+        0.9874687126902639,
+        0.9874687126902639
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_GARDEN_INSTANCE_43",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -3.126530408859253,
+        -0.014942779205739498,
+        -3.0641720294952393
+      ],
+      "rotation": [
+        0,
+        -0.5040945726266544,
+        0
+      ],
+      "scale": [
+        0.69974410135119,
+        0.69974410135119,
+        0.69974410135119
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_GARDEN_INSTANCE_44",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -3.626530408859253,
+        -0.014927520416676998,
+        -2.764172077178955
+      ],
+      "rotation": [
+        0,
+        -0.932252473434704,
+        0
+      ],
+      "scale": [
+        1.0928785571437445,
+        1.0928785571437445,
+        1.0928785571437445
+      ],
+      "variantNode": "SA_G06_STONE_02",
+      "instanceId": "SA_GARDEN_INSTANCE_45",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        2.9724647998809814,
+        -0.01505149807780981,
+        -3.502037525177002
+      ],
+      "rotation": [
+        0,
+        1.043067102225156,
+        0
+      ],
+      "scale": [
+        0.6891631177435702,
+        0.6891631177435702,
+        0.6891631177435702
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_GARDEN_INSTANCE_46",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        3.4724647998809814,
+        -0.01502860989421606,
+        -3.2020375728607178
+      ],
+      "rotation": [
+        0,
+        -1.0786713092407854,
+        0
+      ],
+      "scale": [
+        0.8500651501932304,
+        0.8500651501932304,
+        0.8500651501932304
+      ],
+      "variantNode": "SA_G06_STONE_03",
+      "instanceId": "SA_GARDEN_INSTANCE_47",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -3.1488072872161865,
+        -0.014996184967458248,
+        -7.329769134521484
+      ],
+      "rotation": [
+        0,
+        -0.1577141838803766,
+        0
+      ],
+      "scale": [
+        0.686316855014411,
+        0.686316855014411,
+        0.686316855014411
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_GARDEN_INSTANCE_48",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -3.6488072872161865,
+        -0.015001907013356686,
+        -7.029768943786621
+      ],
+      "rotation": [
+        0,
+        0.18235341854389642,
+        0
+      ],
+      "scale": [
+        0.9332054679426109,
+        0.9332054679426109,
+        0.9332054679426109
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_GARDEN_INSTANCE_49",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        3.1124494075775146,
+        -0.01499809231609106,
+        -7.8552374839782715
+      ],
+      "rotation": [
+        0,
+        -1.095882493459123,
+        0
+      ],
+      "scale": [
+        0.8414104258518375,
+        0.8414104258518375,
+        0.8414104258518375
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_GARDEN_INSTANCE_50",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        3.6124494075775146,
+        -0.015001907013356686,
+        -7.555237293243408
+      ],
+      "rotation": [
+        0,
+        0.5184480477123357,
+        0
+      ],
+      "scale": [
+        1.0138944289643184,
+        1.0138944289643184,
+        1.0138944289643184
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_GARDEN_INSTANCE_51",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -3.688082695007324,
+        -0.01499809231609106,
+        -12.288104057312012
+      ],
+      "rotation": [
+        0,
+        1.2162277795195364,
+        0
+      ],
+      "scale": [
+        0.7610967212936534,
+        0.7610967212936534,
+        0.7610967212936534
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_GARDEN_INSTANCE_52",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -4.188082695007324,
+        -0.01499809231609106,
+        -11.988103866577148
+      ],
+      "rotation": [
+        0,
+        0.8066392062549097,
+        0
+      ],
+      "scale": [
+        0.7332730923735424,
+        0.7332730923735424,
+        0.7332730923735424
+      ],
+      "variantNode": "SA_G06_STONE_02",
+      "instanceId": "SA_GARDEN_INSTANCE_53",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        3.278877019882202,
+        -0.014999999664723873,
+        -12.16604232788086
+      ],
+      "rotation": [
+        0,
+        1.7197138209767049,
+        0
+      ],
+      "scale": [
+        0.6854443254542295,
+        0.6854443254542295,
+        0.6854443254542295
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_GARDEN_INSTANCE_54",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        3.778877019882202,
+        -0.01499809231609106,
+        -11.866042137145996
+      ],
+      "rotation": [
+        0,
+        -0.6991428942772666,
+        0
+      ],
+      "scale": [
+        0.8823132934894766,
+        0.8823132934894766,
+        0.8823132934894766
+      ],
+      "variantNode": "SA_G06_STONE_03",
+      "instanceId": "SA_GARDEN_INSTANCE_55",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -3.049604654312134,
+        -0.01500572171062231,
+        -16.534093856811523
+      ],
+      "rotation": [
+        0,
+        -1.4372186644622476,
+        0
+      ],
+      "scale": [
+        0.639219170847835,
+        0.639219170847835,
+        0.639219170847835
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_GARDEN_INSTANCE_56",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -3.549604654312134,
+        -0.015001907013356686,
+        -16.234092712402344
+      ],
+      "rotation": [
+        0,
+        -0.0327022657937972,
+        0
+      ],
+      "scale": [
+        1.0059305678965365,
+        1.0059305678965365,
+        1.0059305678965365
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_GARDEN_INSTANCE_57",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        3.115605115890503,
+        -0.014999999664723873,
+        -15.959369659423828
+      ],
+      "rotation": [
+        0,
+        0.3214722544369679,
+        0
+      ],
+      "scale": [
+        0.8981159508318348,
+        0.8981159508318348,
+        0.8981159508318348
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_GARDEN_INSTANCE_58",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        3.615605115890503,
+        -0.014999999664723873,
+        -15.659369468688965
+      ],
+      "rotation": [
+        0,
+        -1.5223292596485325,
+        0
+      ],
+      "scale": [
+        0.9735523243482909,
+        0.9735523243482909,
+        0.9735523243482909
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_GARDEN_INSTANCE_59",
+      "seniorPlacement": true
+    }
+  ],
+  "worldOrigin": [
+    0.0,
+    0.0,
+    76.0
+  ],
+  "localBounds": {
+    "width": 24.0,
+    "depth": 24.0
+  },
+  "boundsExceptions": [
+    "G01 and G09 are world-scale; G11 sits beyond camera rails; F03 intentionally beyond future local zone"
+  ],
+  "cameraKnots": [
+    {
+      "index": 0,
+      "band": [
+        0.0,
+        0.12
+      ],
+      "start": [
+        0.0,
+        0.9,
+        6.0
+      ],
+      "end": [
+        0.0,
+        1.1,
+        4.0
+      ],
+      "look": [
+        0.0,
+        1.2,
+        -3.0
+      ],
+      "reading": "center, x=50%, y=42%, 11ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.42,
+        "widthCh": 11,
+        "alignment": "center"
+      },
+      "objectScore": "ENTRY_DARK → PATH_REVEAL. G10 occupies only outer thirds; G13 is visible behind. Fog density .026→.022; global directional multiplier .65→.8. No blank black loader. Title is already readable in SSR and uses the arrival mask only after enhancement."
+    },
+    {
+      "index": 1,
+      "band": [
+        0.12,
+        0.26
+      ],
+      "start": [
+        0.0,
+        1.1,
+        4.0
+      ],
+      "end": [
+        0.0,
+        1.35,
+        1.0
+      ],
+      "look": [
+        0.0,
+        1.2,
+        -5.0
+      ],
+      "reading": "center, x=50%, y=58%, 35ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.58,
+        "widthCh": 35,
+        "alignment": "center"
+      },
+      "objectScore": "PATH_REVEAL → WORLD_REVEAL. Camera passes open gate. Foreground fronds leave frame by parallax; reveal path stones through occlusion. Sakura canopy enters upper-left; title remains still until .24. The new subtitle is editorial navigation copy derived from stay.introduction, not a personal claim."
+    },
+    {
+      "index": 2,
+      "band": [
+        0.26,
+        0.42
+      ],
+      "start": [
+        0.0,
+        1.35,
+        1.0
+      ],
+      "end": [
+        0.0,
+        1.55,
+        -3.0
+      ],
+      "look": [
+        0.0,
+        1.3,
+        -8.0
+      ],
+      "reading": "left, x=9%, y=32%, 28ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.32,
+        "widthCh": 28,
+        "alignment": "left"
+      },
+      "objectScore": "WORLD_REVEAL → TITLE_REVEAL. G03, G04 and G11 establish near/mid/far depth. Fog .022→.018; ambient petals begin at .30 only in full motion. Title exits upward ≤16 px after it is above the reading viewport."
+    },
+    {
+      "index": 3,
+      "band": [
+        0.42,
+        0.64
+      ],
+      "start": [
+        0.0,
+        1.55,
+        -3.0
+      ],
+      "end": [
+        0.0,
+        1.55,
+        -5.0
+      ],
+      "look": [
+        1.2,
+        1.0,
+        -8.0
+      ],
+      "reading": "right, x=58%, y=34%, 28ch",
+      "clearance": {
+        "x": 0.58,
+        "y": 0.34,
+        "widthCh": 28,
+        "alignment": "right"
+      },
+      "objectScore": "TITLE_REVEAL → READY. G14 becomes the primary landmark. Camera settles by .48 and holds to .64. A DOM map invitation appears beside the stone, not on its texture. A small schematic SVG plan can show all destinations; do not load nine scene GLBs."
+    },
+    {
+      "index": 4,
+      "band": [
+        0.64,
+        0.84
+      ],
+      "start": [
+        0.0,
+        1.55,
+        -5.0
+      ],
+      "end": [
+        0.0,
+        1.55,
+        -8.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -12.0
+      ],
+      "reading": "left, x=9%, y=35%, 38ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.35,
+        "widthCh": 38,
+        "alignment": "left"
+      },
+      "objectScore": "READY → HUB. Camera advances only in .64–.70, then stays fixed. Show real links to Person, Builder and Contact plus Open garden map. All nine destinations are listed in the map and no location is locked behind visit order."
+    },
+    {
+      "index": 5,
+      "band": [
+        0.84,
+        1.0
+      ],
+      "start": [
+        0.0,
+        1.55,
+        -8.0
+      ],
+      "end": [
+        0.0,
+        1.55,
+        -8.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -12.0
+      ],
+      "reading": "center, x=50%, y=42%, 38ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.42,
+        "widthCh": 38,
+        "alignment": "center"
+      },
+      "objectScore": "HUB holds. Show /quick/ link and garden map; no automatic ENTERING state on scroll. ENTERING exists only after an explicit route click and hands ownership to the route transition controller. Subtitle and controls stay opaque to the final pixel."
+    }
+  ],
+  "camera": {
+    "fov": 46,
+    "near": 0.1,
+    "far": 220,
+    "roll": 0
+  },
+  "focusAnchors": [
+    [
+      0.0,
+      1.2,
+      -3.0
+    ],
+    [
+      0.0,
+      1.2,
+      -5.0
+    ],
+    [
+      0.0,
+      1.3,
+      -8.0
+    ],
+    [
+      1.2,
+      1.0,
+      -8.0
+    ],
+    [
+      0.0,
+      1.0,
+      -12.0
+    ],
+    [
+      0.0,
+      1.0,
+      -12.0
+    ]
+  ],
+  "contentClearanceRectangles": [
+    {
+      "x": 0.5,
+      "y": 0.42,
+      "widthCh": 11,
+      "alignment": "center"
+    },
+    {
+      "x": 0.5,
+      "y": 0.58,
+      "widthCh": 35,
+      "alignment": "center"
+    },
+    {
+      "x": 0.09,
+      "y": 0.32,
+      "widthCh": 28,
+      "alignment": "left"
+    },
+    {
+      "x": 0.58,
+      "y": 0.34,
+      "widthCh": 28,
+      "alignment": "right"
+    },
+    {
+      "x": 0.09,
+      "y": 0.35,
+      "widthCh": 38,
+      "alignment": "left"
+    },
+    {
+      "x": 0.5,
+      "y": 0.42,
+      "widthCh": 38,
+      "alignment": "center"
+    }
+  ],
+  "guideNodeNames": [
+    "SA_GARDEN_ENTRY_00",
+    "SA_GARDEN_EXIT_00",
+    "SA_GARDEN_CAM_00",
+    "SA_GARDEN_LOOK_00",
+    "SA_GARDEN_TEXT_00",
+    "SA_GARDEN_CAM_01",
+    "SA_GARDEN_LOOK_01",
+    "SA_GARDEN_TEXT_01",
+    "SA_GARDEN_CAM_02",
+    "SA_GARDEN_LOOK_02",
+    "SA_GARDEN_TEXT_02",
+    "SA_GARDEN_CAM_03",
+    "SA_GARDEN_LOOK_03",
+    "SA_GARDEN_TEXT_03",
+    "SA_GARDEN_CAM_04",
+    "SA_GARDEN_LOOK_04",
+    "SA_GARDEN_TEXT_04",
+    "SA_GARDEN_CAM_05",
+    "SA_GARDEN_LOOK_05",
+    "SA_GARDEN_TEXT_05"
+  ],
+  "guideAssetId": "G01",
+  "clips": [],
+  "settledPoses": [
+    {
+      "progress": 0,
+      "camera": [
+        [
+          0.0,
+          0.9,
+          6.0
+        ],
+        [
+          0.0,
+          1.2,
+          -3.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.25,
+      "camera": [
+        [
+          0.0,
+          1.35,
+          1.0
+        ],
+        [
+          0.0,
+          1.2,
+          -5.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.5,
+      "camera": [
+        [
+          0.0,
+          1.55,
+          -5.0
+        ],
+        [
+          1.2,
+          1.0,
+          -8.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.75,
+      "camera": [
+        [
+          0.0,
+          1.55,
+          -8.0
+        ],
+        [
+          0.0,
+          1.0,
+          -12.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 1,
+      "camera": [
+        [
+          0.0,
+          1.55,
+          -8.0
+        ],
+        [
+          0.0,
+          1.0,
+          -12.0
+        ]
+      ],
+      "clipTimes": {}
+    }
+  ],
+  "placementOverrides": {},
+  "documentSocketBindings": [],
+  "posterProgress": 0.55,
+  "runtimeNotes": [
+    "No authored typography, scroll, visibility, foliage sway, water or AURA_CONNECTIONS clip.",
+    "Only sample named child transforms; root placement belongs to the instance manifest."
+  ],
+  "validation": {
+    "reopenedMaster": true,
+    "reverseSeek": true,
+    "exportStructuralRead": true
+  }
+}

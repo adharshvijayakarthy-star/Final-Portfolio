@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "route": "garden",
+      "beats": 6,
+      "oneH1": true,
+      "contiguousScore": true,
+      "nativeLinks": 16
+    },
+    {
+      "route": "person",
+      "beats": 8,
+      "oneH1": true,
+      "contiguousScore": true,
+      "nativeLinks": 14
+    },
+    {
+      "route": "builder",
+      "beats": 8,
+      "oneH1": true,
+      "contiguousScore": true,
+      "nativeLinks": 16
+    },
+    {
+      "route": "thinker",
+      "beats": 8,
+      "oneH1": true,
+      "contiguousScore": true,
+      "nativeLinks": 14
+    },
+    {
+      "route": "leader",
+      "beats": 6,
+      "oneH1": true,
+      "contiguousScore": true,
+      "nativeLinks": 14
+    },
+    {
+      "route": "stories",
+      "beats": 7,
+      "oneH1": true,
+      "contiguousScore": true,
+      "nativeLinks": 14
+    },
+    {
+      "route": "work",
+      "beats": 13,
+      "oneH1": true,
+      "contiguousScore": true,
+      "nativeLinks": 20
+    },
+    {
+      "route": "future",
+      "beats": 5,
+      "oneH1": true,
+      "contiguousScore": true,
+      "nativeLinks": 13
+    },
+    {
+      "route": "aura",
+      "beats": 8,
+      "oneH1": true,
+      "contiguousScore": true,
+      "nativeLinks": 14
+    },
+    {
+      "route": "contact",
+      "beats": 3,
+      "oneH1": true,
+      "contiguousScore": true,
+      "nativeLinks": 13
+    }
+  ],
+  "assets": 47,
+  "variants": 94
+}

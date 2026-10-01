@@ -1,6 +1,5 @@
-import { Work } from "@/sections/stay/native/pages/Work";
-import scene from "@/sections/stay/native/pages/work-geometry.json";
 import { StayShell } from "@/sections/stay/native/StayShell";
-import type { SceneGeometry } from "@/sections/stay/native/GardenScene";
+import { SceneBoundary } from "@/sections/stay/world/SceneBoundary";
+import { WorkRuntimeContent } from "@/sections/stay/world/JourneyRuntimeContent";
 export const metadata = { title: "The Work — Stay Awhile" };
-export default function Page() { return <StayShell current="work" scene={scene as SceneGeometry}><Work /></StayShell>; }
+export default function Page() { return <StayShell current="work"><SceneBoundary routeId="work"><WorkRuntimeContent /></SceneBoundary></StayShell>; }

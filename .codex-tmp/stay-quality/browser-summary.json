@@ -1,0 +1,135 @@
+{
+  "captures": 182,
+  "categories": {
+    "canonical": 50,
+    "intermediate": 72,
+    "mobile390": 30,
+    "mobile320": 11,
+    "interaction": 19
+  },
+  "horizontalOverflow": [],
+  "canonicalScoreMismatch": [],
+  "largestTimingWindows": [
+    {
+      "name": "person-beat-08-desktop",
+      "samples": 240,
+      "frameP50": 24.600000381469727,
+      "frameP95": 48.70000076293945,
+      "cpuP95": 4.900000095367432
+    },
+    {
+      "name": "builder-beat-08-desktop",
+      "samples": 240,
+      "frameP50": 24.700000762939453,
+      "frameP95": 26.100000381469727,
+      "cpuP95": 5.599999904632568
+    },
+    {
+      "name": "thinker-beat-08-desktop",
+      "samples": 240,
+      "frameP50": 24.700000762939453,
+      "frameP95": 33.79999923706055,
+      "cpuP95": 8.699999809265137
+    },
+    {
+      "name": "work-beat-07-desktop",
+      "samples": 240,
+      "frameP50": 24.700000762939453,
+      "frameP95": 47.70000076293945,
+      "cpuP95": 5.800000190734863
+    },
+    {
+      "name": "work-beat-08-desktop",
+      "samples": 240,
+      "frameP50": 24.700000762939453,
+      "frameP95": 48.900001525878906,
+      "cpuP95": 5.400000095367432
+    },
+    {
+      "name": "work-beat-09-desktop",
+      "samples": 240,
+      "frameP50": 24.700000762939453,
+      "frameP95": 48.70000076293945,
+      "cpuP95": 5.400000095367432
+    },
+    {
+      "name": "work-beat-10-desktop",
+      "samples": 240,
+      "frameP50": 24.799999237060547,
+      "frameP95": 48.599998474121094,
+      "cpuP95": 5.199999809265137
+    },
+    {
+      "name": "work-beat-11-desktop",
+      "samples": 240,
+      "frameP50": 24.799999237060547,
+      "frameP95": 48.70000076293945,
+      "cpuP95": 3.799999952316284
+    }
+  ],
+  "selectedTimingWindows": [
+    {
+      "name": "aura-beat-08-desktop",
+      "samples": 235,
+      "frameP50": 24.700000762939453,
+      "frameP95": 27.100000381469727,
+      "cpuP95": 4
+    },
+    {
+      "name": "thinker-100-mobile390",
+      "samples": 127,
+      "frameP50": 24.600000381469727,
+      "frameP95": 25.799999237060547,
+      "cpuP95": 2.9000000953674316
+    }
+  ],
+  "browserReturnCycles": [
+    {
+      "name": "cycle-01-garden",
+      "renderer": "1",
+      "resources": "13,13,1,48,41"
+    },
+    {
+      "name": "cycle-02-garden",
+      "renderer": "1",
+      "resources": "13,13,1,48,41"
+    },
+    {
+      "name": "cycle-03-garden",
+      "renderer": "1",
+      "resources": "14,14,1,49,41"
+    },
+    {
+      "name": "cycle-04-garden",
+      "renderer": "1",
+      "resources": "14,14,1,49,41"
+    },
+    {
+      "name": "cycle-05-garden",
+      "renderer": "1",
+      "resources": "14,14,1,49,41"
+    },
+    {
+      "name": "cycle-06-garden",
+      "renderer": "1",
+      "resources": "14,14,1,49,41"
+    },
+    {
+      "name": "cycle-07-garden",
+      "renderer": "1",
+      "resources": "14,14,1,49,41"
+    }
+  ],
+  "routes": [
+    "garden",
+    "person",
+    "builder",
+    "thinker",
+    "leader",
+    "stories",
+    "work",
+    "future",
+    "aura",
+    "contact"
+  ]
+}

@@ -1,0 +1,44 @@
+00:06.281  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\03-thinker.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+23:04:25 | INFO: Starting glTF 2.0 export
+23:04:25 | INFO: Extracting primitive: SA_T02_GEOMETRY_00
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_GEOMETRY_01
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_GEOMETRY_02
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_GEOMETRY_03
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_GEOMETRY_04
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_GEOMETRY_05
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_GEOMETRY_06
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Finished glTF 2.0 export in 0.23495197296142578 s
+
+EXPORTED public\models\stay\v1\thinker\freedom-stones.desktop.glb 14204
+23:04:25 | INFO: Starting glTF 2.0 export
+23:04:25 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_00
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_01
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_02
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_03
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_04
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_05
+23:04:25 | INFO: Primitives created: 1
+23:04:25 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_06
+23:04:25 | INFO: Primitives created: 1
+23:04:26 | INFO: Finished glTF 2.0 export in 0.06662130355834961 s
+
+EXPORTED public\models\stay\v1\thinker\freedom-stones.mobile.glb 11412
+PRODUCTION_PASS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,0 +1,10 @@
+00:03.000  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\05-stories.blend"
+00:03.157  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\07-future.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+Info: Saved as "05-stories.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+Info: Saved as "07-future.blend"
+TARGETED_CORRECTIONS [{"route": "stories", "source": "05-stories.blend", "beforeSha256": "d040e60d2fe25f7f9e6619df4f28892821a7b12fa33b07ec8a5e68f36654c2fb", "afterSha256": "93ef2ba80654b6bdf76c8955dc3ec08aa637cfdf35d0f454ea0e254b23d6c414", "objects": ["SA_S01_MESH_00", "SA_S01_MESH_01", "SA_S01_MESH_02", "SA_S01_MESH_03", "SA_S01_MOBILEMESH_00", "SA_S01_MOBILEMESH_01", "SA_S01_MOBILEMESH_02", "SA_S01_MOBILEMESH_03"], "reason": "Handoff review: raised S01 bay slabs 0.01 m above overlapping path tops; fixed black coplanar patches without adding geometry."}, {"route": "future", "source": "07-future.blend", "beforeSha256": "8ae03c9372025e3a2619cb590c5c658719de679ee2c5a60354a069235968caf7", "afterSha256": "efc5aabeb303a429d38795901d09dcb1e2b978cfe5e02fbf19544b6ffb6ac2ba", "objects": ["SA_FUTURE_INSTANCE_04", "SA_FUTURE_MOBILEINSTANCE_04"], "reason": "Handoff review: Future G09 instance Y=-0.51 m, placing skirt 0.01 m beneath the overlapping terrain; fixes black horizontal strip. Shared G09 geometry unchanged."}]
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

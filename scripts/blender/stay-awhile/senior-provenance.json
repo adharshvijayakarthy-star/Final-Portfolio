@@ -1,0 +1,57 @@
+[
+  {
+    "asset": "tree_small_02",
+    "creator": "Rico Cilliers",
+    "source": "Poly Haven",
+    "url": "https://polyhaven.com/a/tree_small_02",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "accessed": "2026-09-26",
+    "modified": true,
+    "modification": "Trunk retopology by reduction; sampled crown points; varied proportions. Source diffuse/opacity atlas cropped into masked leaf sprays. Sakura crown remodeled as opaque geometry."
+  },
+  {
+    "asset": "bark_brown_02",
+    "creator": "Rob Tuytel",
+    "source": "Poly Haven",
+    "url": "https://polyhaven.com/a/bark_brown_02",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "accessed": "2026-09-26",
+    "modified": true,
+    "modification": "Downsampled for shared desktop/mobile PBR maps."
+  },
+  {
+    "asset": "mossy_rock",
+    "creator": "Rob Tuytel",
+    "source": "Poly Haven",
+    "url": "https://polyhaven.com/a/mossy_rock",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "accessed": "2026-09-26",
+    "modified": true,
+    "modification": "Recolored to restrained grey-green; downsampled PBR maps."
+  },
+  {
+    "asset": "forest_ground_04",
+    "creator": "Rob Tuytel; Rico Cilliers",
+    "source": "Poly Haven",
+    "url": "https://polyhaven.com/a/forest_ground_04",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "accessed": "2026-09-26",
+    "modified": true,
+    "modification": "Recolored to moss and earth palette; downsampled."
+  },
+  {
+    "asset": "wood_planks_grey",
+    "creator": "Rob Tuytel",
+    "source": "Poly Haven",
+    "url": "https://polyhaven.com/a/wood_planks_grey",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://polyhaven.com/license",
+    "accessed": "2026-09-26",
+    "modified": true,
+    "modification": "Recolored to warm cedar; downsampled."
+  }
+]

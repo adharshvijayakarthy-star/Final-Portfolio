@@ -1,0 +1,2050 @@
+MODELED G01 Terrain
+MODELED G02 Path Kit
+MODELED G03 Sakura Canopy
+MODELED G04 Bush Kit
+MODELED G05 Grass Kit
+MODELED G06 Stone Kit
+MODELED G07 Water Plane
+MODELED G08 Lantern Kit
+MODELED G09 Horizon Ring
+MODELED G10 Foreground Fronds
+MODELED G11 Distant Tree Bank
+MODELED G12 Petal Kit
+MODELED G13 Arrival Gate
+MODELED G14 Wayfinding Stone
+C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\produce.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world=bpy.data.worlds.new('SA_ENVIRONMENT');scene.world=world;world.use_nodes=True
+Info: Saved as "00-garden.blend"
+MASTER_SAVED 00-garden.blend
+00:05.625  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+22:46:44 | INFO: Starting glTF 2.0 export
+22:46:44 | INFO: Extracting primitive: SA_G01_GEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.18687105178833008 s
+
+EXPORTED public\models\stay\v1\garden\terrain.desktop.glb 244800
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G01_MOBILEGEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.052927255630493164 s
+
+EXPORTED public\models\stay\v1\garden\terrain.mobile.glb 69360
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G02_GEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G02_GEOMETRY_02
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G02_GEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.03487658500671387 s
+
+EXPORTED public\models\stay\v1\garden\path-kit.desktop.glb 35872
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G02_MOBILEGEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G02_MOBILEGEOMETRY_02
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G02_MOBILEGEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.0333104133605957 s
+
+EXPORTED public\models\stay\v1\garden\path-kit.mobile.glb 27820
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G03_GEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_GEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_GEOMETRY_02
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_GEOMETRY_03
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_GEOMETRY_04
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_GEOMETRY_05
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_GEOMETRY_06
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.05995345115661621 s
+
+EXPORTED public\models\stay\v1\garden\sakura-canopy.desktop.glb 48940
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_02
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_03
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_04
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_05
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_06
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.05326986312866211 s
+
+EXPORTED public\models\stay\v1\garden\sakura-canopy.mobile.glb 20200
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G04_GEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G04_GEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.026741504669189453 s
+
+EXPORTED public\models\stay\v1\garden\bush-kit.desktop.glb 11432
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G04_MOBILEGEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G04_MOBILEGEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.02738332748413086 s
+
+EXPORTED public\models\stay\v1\garden\bush-kit.mobile.glb 6436
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G05_GEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G05_GEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G05_GEOMETRY_02
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.03368997573852539 s
+
+EXPORTED public\models\stay\v1\garden\grass-kit.desktop.glb 13736
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G05_MOBILEGEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G05_MOBILEGEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G05_MOBILEGEOMETRY_02
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.03433871269226074 s
+
+EXPORTED public\models\stay\v1\garden\grass-kit.mobile.glb 6972
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G06_GEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G06_GEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G06_GEOMETRY_02
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G06_GEOMETRY_03
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.04357624053955078 s
+
+EXPORTED public\models\stay\v1\garden\stone-kit.desktop.glb 13048
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G06_MOBILEGEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G06_MOBILEGEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G06_MOBILEGEOMETRY_02
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G06_MOBILEGEOMETRY_03
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.05288505554199219 s
+
+EXPORTED public\models\stay\v1\garden\stone-kit.mobile.glb 7288
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G07_GEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.02686285972595215 s
+
+EXPORTED public\models\stay\v1\garden\water-plane.desktop.glb 3576
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G07_MOBILEGEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.026865482330322266 s
+
+EXPORTED public\models\stay\v1\garden\water-plane.mobile.glb 3132
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G08_GEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G08_GEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G08_GEOMETRY_02
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G08_GEOMETRY_03
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.05218982696533203 s
+
+EXPORTED public\models\stay\v1\garden\lantern-kit.desktop.glb 33860
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G08_MOBILEGEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G08_MOBILEGEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G08_MOBILEGEOMETRY_02
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G08_MOBILEGEOMETRY_03
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.05241084098815918 s
+
+EXPORTED public\models\stay\v1\garden\lantern-kit.mobile.glb 14556
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G09_GEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.042800188064575195 s
+
+EXPORTED public\models\stay\v1\garden\horizon-ring.desktop.glb 24572
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G09_MOBILEGEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.028036117553710938 s
+
+EXPORTED public\models\stay\v1\garden\horizon-ring.mobile.glb 9596
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G10_GEOMETRY_00
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G10_GEOMETRY_01
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Extracting primitive: SA_G10_GEOMETRY_02
+22:46:45 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:45 | INFO: Primitives created: 1
+22:46:45 | INFO: Finished glTF 2.0 export in 0.033498525619506836 s
+
+EXPORTED public\models\stay\v1\garden\foreground-fronds.desktop.glb 8640
+22:46:45 | INFO: Starting glTF 2.0 export
+22:46:45 | INFO: Extracting primitive: SA_G10_MOBILEGEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_G10_MOBILEGEOMETRY_01
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_G10_MOBILEGEOMETRY_02
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.032750606536865234 s
+
+EXPORTED public\models\stay\v1\garden\foreground-fronds.mobile.glb 6396
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_G11_GEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.024814605712890625 s
+
+EXPORTED public\models\stay\v1\garden\distant-tree-bank.desktop.glb 11780
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_G11_MOBILEGEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.02384662628173828 s
+
+EXPORTED public\models\stay\v1\garden\distant-tree-bank.mobile.glb 8184
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_G12_GEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_G12_GEOMETRY_01
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.03430938720703125 s
+
+EXPORTED public\models\stay\v1\garden\petal-kit.desktop.glb 3040
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_G12_MOBILEGEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_G12_MOBILEGEOMETRY_01
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.09687113761901855 s
+
+EXPORTED public\models\stay\v1\garden\petal-kit.mobile.glb 3052
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_G13_GEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_G13_GEOMETRY_01
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.0335237979888916 s
+
+EXPORTED public\models\stay\v1\garden\arrival-gate.desktop.glb 16076
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_G13_MOBILEGEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_G13_MOBILEGEOMETRY_01
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.03486895561218262 s
+
+EXPORTED public\models\stay\v1\garden\arrival-gate.mobile.glb 7716
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_G14_GEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_G14_GEOMETRY_01
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.03170514106750488 s
+
+EXPORTED public\models\stay\v1\garden\wayfinding-stone.desktop.glb 11968
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_G14_MOBILEGEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_G14_MOBILEGEOMETRY_01
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.033141374588012695 s
+
+EXPORTED public\models\stay\v1\garden\wayfinding-stone.mobile.glb 8132
+MODELED P01 Clearing Ground
+MODELED P02 Paired Bench
+MODELED P03 Root Arch
+C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\produce.py:83: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world=bpy.data.worlds.new('SA_ENVIRONMENT');scene.world=world;world.use_nodes=True
+Info: Saved as "01-person.blend"
+MASTER_SAVED 01-person.blend
+00:10.812  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\01-person.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_P01_GEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_P01_GEOMETRY_01
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.04253339767456055 s
+
+EXPORTED public\models\stay\v1\person\clearing-ground.desktop.glb 61016
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_P01_MOBILEGEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_P01_MOBILEGEOMETRY_01
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.03732609748840332 s
+
+EXPORTED public\models\stay\v1\person\clearing-ground.mobile.glb 21848
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_P02_GEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_P02_GEOMETRY_01
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.03583407402038574 s
+
+EXPORTED public\models\stay\v1\person\paired-bench.desktop.glb 12384
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_P02_MOBILEGEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Extracting primitive: SA_P02_MOBILEGEOMETRY_01
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.033612966537475586 s
+
+EXPORTED public\models\stay\v1\person\paired-bench.mobile.glb 5856
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_P03_GEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.02447366714477539 s
+
+EXPORTED public\models\stay\v1\person\root-arch.desktop.glb 4800
+22:46:46 | INFO: Starting glTF 2.0 export
+22:46:46 | INFO: Extracting primitive: SA_P03_MOBILEGEOMETRY_00
+22:46:46 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:46 | INFO: Primitives created: 1
+22:46:46 | INFO: Finished glTF 2.0 export in 0.02067399024963379 s
+
+EXPORTED public\models\stay\v1\person\root-arch.mobile.glb 3648
+MODELED B01 Foundation
+MODELED B02 Posts
+MODELED B03 Beams
+MODELED B04 Roof Slats
+MODELED B05 Workbench
+MODELED B06 Artifact Tokens
+Info: Saved as "02-builder.blend"
+MASTER_SAVED 02-builder.blend
+00:11.515  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\02-builder.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:46:47 | INFO: Starting glTF 2.0 export
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_00
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_01
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_02
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_03
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_04
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_05
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_06
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_07
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_08
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_09
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_10
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:47 | INFO: Extracting primitive: SA_B01_GEOMETRY_11
+22:46:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:47 | INFO: Primitives created: 1
+22:46:48 | INFO: Finished glTF 2.0 export in 0.6500234603881836 s
+
+EXPORTED public\models\stay\v1\builder\foundation.desktop.glb 46704
+22:46:48 | INFO: Starting glTF 2.0 export
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_00
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_01
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_02
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_03
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_04
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_05
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_06
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_07
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_08
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_09
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_10
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_11
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Finished glTF 2.0 export in 0.6726388931274414 s
+
+EXPORTED public\models\stay\v1\builder\foundation.mobile.glb 30776
+22:46:48 | INFO: Starting glTF 2.0 export
+22:46:48 | INFO: Extracting primitive: SA_B02_GEOMETRY_00
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B02_GEOMETRY_01
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B02_GEOMETRY_02
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B02_GEOMETRY_03
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B02_GEOMETRY_04
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:48 | INFO: Extracting primitive: SA_B02_GEOMETRY_05
+22:46:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:48 | INFO: Primitives created: 1
+22:46:49 | INFO: Finished glTF 2.0 export in 0.7177267074584961 s
+
+EXPORTED public\models\stay\v1\builder\posts.desktop.glb 43192
+22:46:49 | INFO: Starting glTF 2.0 export
+22:46:49 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_00
+22:46:49 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:49 | INFO: Primitives created: 1
+22:46:49 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_01
+22:46:49 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:49 | INFO: Primitives created: 1
+22:46:49 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_02
+22:46:49 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:49 | INFO: Primitives created: 1
+22:46:49 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_03
+22:46:49 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:49 | INFO: Primitives created: 1
+22:46:49 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_04
+22:46:49 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:49 | INFO: Primitives created: 1
+22:46:49 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_05
+22:46:49 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:49 | INFO: Primitives created: 1
+22:46:50 | INFO: Finished glTF 2.0 export in 0.7367842197418213 s
+
+EXPORTED public\models\stay\v1\builder\posts.mobile.glb 27432
+22:46:50 | INFO: Starting glTF 2.0 export
+22:46:50 | INFO: Extracting primitive: SA_B03_GEOMETRY_00
+22:46:50 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:50 | INFO: Primitives created: 1
+22:46:50 | INFO: Extracting primitive: SA_B03_GEOMETRY_01
+22:46:50 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:50 | INFO: Primitives created: 1
+22:46:50 | INFO: Extracting primitive: SA_B03_GEOMETRY_02
+22:46:50 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:50 | INFO: Primitives created: 1
+22:46:50 | INFO: Extracting primitive: SA_B03_GEOMETRY_03
+22:46:50 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:50 | INFO: Primitives created: 1
+22:46:50 | INFO: Extracting primitive: SA_B03_GEOMETRY_04
+22:46:50 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:50 | INFO: Primitives created: 1
+22:46:50 | INFO: Extracting primitive: SA_B03_GEOMETRY_05
+22:46:50 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:50 | INFO: Primitives created: 1
+22:46:50 | INFO: Extracting primitive: SA_B03_GEOMETRY_06
+22:46:50 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:50 | INFO: Primitives created: 1
+22:46:51 | INFO: Finished glTF 2.0 export in 0.9467792510986328 s
+
+EXPORTED public\models\stay\v1\builder\beams.desktop.glb 45764
+22:46:51 | INFO: Starting glTF 2.0 export
+22:46:51 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_00
+22:46:51 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:51 | INFO: Primitives created: 1
+22:46:51 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_01
+22:46:51 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:51 | INFO: Primitives created: 1
+22:46:51 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_02
+22:46:51 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:51 | INFO: Primitives created: 1
+22:46:51 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_03
+22:46:51 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:51 | INFO: Primitives created: 1
+22:46:51 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_04
+22:46:51 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:51 | INFO: Primitives created: 1
+22:46:51 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_05
+22:46:51 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:51 | INFO: Primitives created: 1
+22:46:51 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_06
+22:46:51 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:51 | INFO: Primitives created: 1
+22:46:52 | INFO: Finished glTF 2.0 export in 0.9838957786560059 s
+
+EXPORTED public\models\stay\v1\builder\beams.mobile.glb 27416
+22:46:52 | INFO: Starting glTF 2.0 export
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_00
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_01
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_02
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_03
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_04
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_05
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_06
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_07
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_08
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_09
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_10
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:52 | INFO: Extracting primitive: SA_B04_GEOMETRY_11
+22:46:52 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:52 | INFO: Primitives created: 1
+22:46:53 | INFO: Finished glTF 2.0 export in 1.3904099464416504 s
+
+EXPORTED public\models\stay\v1\builder\roof-slats.desktop.glb 63704
+22:46:53 | INFO: Starting glTF 2.0 export
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_00
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_01
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_02
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_03
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_04
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_05
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_06
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_07
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_08
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_09
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_10
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:53 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_11
+22:46:53 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:53 | INFO: Primitives created: 1
+22:46:55 | INFO: Finished glTF 2.0 export in 1.424025535583496 s
+
+EXPORTED public\models\stay\v1\builder\roof-slats.mobile.glb 32404
+22:46:55 | INFO: Starting glTF 2.0 export
+22:46:55 | INFO: Extracting primitive: SA_B05_GEOMETRY_00
+22:46:55 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:55 | INFO: Primitives created: 1
+22:46:55 | INFO: Extracting primitive: SA_B05_GEOMETRY_01
+22:46:55 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:55 | INFO: Primitives created: 1
+22:46:55 | INFO: Finished glTF 2.0 export in 0.13863301277160645 s
+
+EXPORTED public\models\stay\v1\builder\workbench.desktop.glb 31112
+22:46:55 | INFO: Starting glTF 2.0 export
+22:46:55 | INFO: Extracting primitive: SA_B05_MOBILEGEOMETRY_00
+22:46:55 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:55 | INFO: Primitives created: 1
+22:46:55 | INFO: Extracting primitive: SA_B05_MOBILEGEOMETRY_01
+22:46:55 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:55 | INFO: Primitives created: 1
+22:46:55 | INFO: Finished glTF 2.0 export in 0.1514570713043213 s
+
+EXPORTED public\models\stay\v1\builder\workbench.mobile.glb 14408
+22:46:55 | INFO: Starting glTF 2.0 export
+22:46:55 | INFO: Extracting primitive: SA_B06_GEOMETRY_00
+22:46:55 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:55 | INFO: Primitives created: 1
+22:46:55 | INFO: Extracting primitive: SA_B06_GEOMETRY_01
+22:46:55 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:55 | INFO: Primitives created: 1
+22:46:55 | INFO: Extracting primitive: SA_B06_GEOMETRY_02
+22:46:55 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:55 | INFO: Primitives created: 1
+22:46:55 | INFO: Extracting primitive: SA_B06_GEOMETRY_03
+22:46:55 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:55 | INFO: Primitives created: 1
+22:46:55 | INFO: Extracting primitive: SA_B06_GEOMETRY_04
+22:46:55 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:55 | INFO: Primitives created: 1
+22:46:55 | INFO: Extracting primitive: SA_B06_GEOMETRY_05
+22:46:55 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:55 | INFO: Primitives created: 1
+22:46:55 | INFO: Extracting primitive: SA_B06_GEOMETRY_06
+22:46:55 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:55 | INFO: Primitives created: 1
+22:46:56 | INFO: Finished glTF 2.0 export in 0.6815009117126465 s
+
+EXPORTED public\models\stay\v1\builder\artifact-tokens.desktop.glb 80332
+22:46:56 | INFO: Starting glTF 2.0 export
+22:46:56 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_00
+22:46:56 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:56 | INFO: Primitives created: 1
+22:46:56 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_01
+22:46:56 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:56 | INFO: Primitives created: 1
+22:46:56 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_02
+22:46:56 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:56 | INFO: Primitives created: 1
+22:46:56 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_03
+22:46:56 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:56 | INFO: Primitives created: 1
+22:46:56 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_04
+22:46:56 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:56 | INFO: Primitives created: 1
+22:46:56 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_05
+22:46:56 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:56 | INFO: Primitives created: 1
+22:46:56 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_06
+22:46:56 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:56 | INFO: Primitives created: 1
+22:46:56 | INFO: Finished glTF 2.0 export in 0.7474648952484131 s
+
+EXPORTED public\models\stay\v1\builder\artifact-tokens.mobile.glb 30800
+MODELED T01 Tea Deck
+MODELED T02 Freedom Stones
+MODELED T03 Tea Bowl Scroll
+Info: Saved as "03-thinker.blend"
+MASTER_SAVED 03-thinker.blend
+00:21.312  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\03-thinker.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:46:57 | INFO: Starting glTF 2.0 export
+22:46:57 | INFO: Extracting primitive: SA_T01_GEOMETRY_00
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Finished glTF 2.0 export in 0.03137850761413574 s
+
+EXPORTED public\models\stay\v1\thinker\tea-deck.desktop.glb 75856
+22:46:57 | INFO: Starting glTF 2.0 export
+22:46:57 | INFO: Extracting primitive: SA_T01_MOBILEGEOMETRY_00
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Finished glTF 2.0 export in 0.03672456741333008 s
+
+EXPORTED public\models\stay\v1\thinker\tea-deck.mobile.glb 22956
+22:46:57 | INFO: Starting glTF 2.0 export
+22:46:57 | INFO: Extracting primitive: SA_T02_GEOMETRY_00
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_GEOMETRY_01
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_GEOMETRY_02
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_GEOMETRY_03
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_GEOMETRY_04
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_GEOMETRY_05
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_GEOMETRY_06
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Finished glTF 2.0 export in 0.0448763370513916 s
+
+EXPORTED public\models\stay\v1\thinker\freedom-stones.desktop.glb 16004
+22:46:57 | INFO: Starting glTF 2.0 export
+22:46:57 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_00
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_01
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_02
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_03
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_04
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_05
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_06
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Finished glTF 2.0 export in 0.04990243911743164 s
+
+EXPORTED public\models\stay\v1\thinker\freedom-stones.mobile.glb 12868
+22:46:57 | INFO: Starting glTF 2.0 export
+22:46:57 | INFO: Extracting primitive: SA_T03_GEOMETRY_02
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T03_GEOMETRY_00
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T03_GEOMETRY_01
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Finished glTF 2.0 export in 0.07548856735229492 s
+
+EXPORTED public\models\stay\v1\thinker\tea-bowl-scroll.desktop.glb 11856
+22:46:57 | INFO: Starting glTF 2.0 export
+22:46:57 | INFO: Extracting primitive: SA_T03_MOBILEGEOMETRY_02
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T03_MOBILEGEOMETRY_00
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_T03_MOBILEGEOMETRY_01
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Finished glTF 2.0 export in 0.11612820625305176 s
+
+EXPORTED public\models\stay\v1\thinker\tea-bowl-scroll.mobile.glb 9352
+MODELED L01 Courtyard
+MODELED L02 Coordination Posts
+MODELED L03 Lesson Rail
+Info: Saved as "04-leader.blend"
+MASTER_SAVED 04-leader.blend
+00:22.031  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\04-leader.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:46:57 | INFO: Starting glTF 2.0 export
+22:46:57 | INFO: Extracting primitive: SA_L01_GEOMETRY_01
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_L01_GEOMETRY_02
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_L01_GEOMETRY_03
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Extracting primitive: SA_L01_GEOMETRY_00
+22:46:57 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:57 | INFO: Primitives created: 1
+22:46:57 | INFO: Finished glTF 2.0 export in 0.04966115951538086 s
+
+EXPORTED public\models\stay\v1\leader\courtyard.desktop.glb 79864
+22:46:57 | INFO: Starting glTF 2.0 export
+22:46:58 | INFO: Extracting primitive: SA_L01_MOBILEGEOMETRY_01
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L01_MOBILEGEOMETRY_02
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L01_MOBILEGEOMETRY_03
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L01_MOBILEGEOMETRY_00
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Finished glTF 2.0 export in 0.04605460166931152 s
+
+EXPORTED public\models\stay\v1\leader\courtyard.mobile.glb 47532
+22:46:58 | INFO: Starting glTF 2.0 export
+22:46:58 | INFO: Extracting primitive: SA_L02_GEOMETRY_00
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_GEOMETRY_01
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_GEOMETRY_02
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_GEOMETRY_03
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_GEOMETRY_04
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_GEOMETRY_05
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_GEOMETRY_06
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_GEOMETRY_07
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_GEOMETRY_08
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_GEOMETRY_09
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Finished glTF 2.0 export in 0.26672983169555664 s
+
+EXPORTED public\models\stay\v1\leader\coordination-posts.desktop.glb 38624
+22:46:58 | INFO: Starting glTF 2.0 export
+22:46:58 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_00
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_01
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_02
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_03
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_04
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_05
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_06
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_07
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_08
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_09
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Finished glTF 2.0 export in 0.27750158309936523 s
+
+EXPORTED public\models\stay\v1\leader\coordination-posts.mobile.glb 25284
+22:46:58 | INFO: Starting glTF 2.0 export
+22:46:58 | INFO: Extracting primitive: SA_L03_GEOMETRY_01
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_GEOMETRY_02
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_GEOMETRY_03
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_GEOMETRY_04
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_GEOMETRY_05
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_GEOMETRY_06
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_GEOMETRY_00
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Finished glTF 2.0 export in 0.14336109161376953 s
+
+EXPORTED public\models\stay\v1\leader\lesson-rail.desktop.glb 34588
+22:46:58 | INFO: Starting glTF 2.0 export
+22:46:58 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_01
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_02
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_03
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_04
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_05
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_06
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_00
+22:46:58 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:58 | INFO: Primitives created: 1
+22:46:58 | INFO: Finished glTF 2.0 export in 0.12993097305297852 s
+
+EXPORTED public\models\stay\v1\leader\lesson-rail.mobile.glb 18068
+MODELED S01 Lantern Path
+MODELED S02 Story Lantern
+MODELED S03 Path Screen
+Info: Saved as "05-stories.blend"
+MASTER_SAVED 05-stories.blend
+00:23.312  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\05-stories.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:46:59 | INFO: Starting glTF 2.0 export
+22:46:59 | INFO: Extracting primitive: SA_S01_GEOMETRY_00
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S01_GEOMETRY_01
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S01_GEOMETRY_02
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S01_GEOMETRY_03
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S01_GEOMETRY_04
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Finished glTF 2.0 export in 0.0480198860168457 s
+
+EXPORTED public\models\stay\v1\stories\lantern-path.desktop.glb 62624
+22:46:59 | INFO: Starting glTF 2.0 export
+22:46:59 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_00
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_01
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_02
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_03
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_04
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Finished glTF 2.0 export in 0.05496859550476074 s
+
+EXPORTED public\models\stay\v1\stories\lantern-path.mobile.glb 48984
+22:46:59 | INFO: Starting glTF 2.0 export
+22:46:59 | INFO: Extracting primitive: SA_S02_GEOMETRY_00
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S02_GEOMETRY_01
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S02_GEOMETRY_02
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S02_GEOMETRY_03
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S02_GEOMETRY_04
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Finished glTF 2.0 export in 0.08322477340698242 s
+
+EXPORTED public\models\stay\v1\stories\story-lantern.desktop.glb 36796
+22:46:59 | INFO: Starting glTF 2.0 export
+22:46:59 | INFO: Extracting primitive: SA_S02_MOBILEGEOMETRY_00
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S02_MOBILEGEOMETRY_01
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S02_MOBILEGEOMETRY_02
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S02_MOBILEGEOMETRY_03
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S02_MOBILEGEOMETRY_04
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Finished glTF 2.0 export in 0.07634758949279785 s
+
+EXPORTED public\models\stay\v1\stories\story-lantern.mobile.glb 17296
+22:46:59 | INFO: Starting glTF 2.0 export
+22:46:59 | INFO: Extracting primitive: SA_S03_GEOMETRY_00
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S03_GEOMETRY_01
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S03_GEOMETRY_02
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S03_GEOMETRY_03
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S03_GEOMETRY_04
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S03_GEOMETRY_05
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Finished glTF 2.0 export in 0.05868196487426758 s
+
+EXPORTED public\models\stay\v1\stories\path-screen.desktop.glb 96664
+22:46:59 | INFO: Starting glTF 2.0 export
+22:46:59 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_00
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_01
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_02
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_03
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_04
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_05
+22:46:59 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:46:59 | INFO: Primitives created: 1
+22:46:59 | INFO: Finished glTF 2.0 export in 0.053903818130493164 s
+
+EXPORTED public\models\stay\v1\stories\path-screen.mobile.glb 31504
+MODELED W01 Archive Pavilion
+MODELED W02 Planner Station
+MODELED W03 Logger Station
+MODELED W04 Mun Station
+MODELED W05 Snrled Station
+MODELED W06 Aura Station
+Info: Saved as "06-work.blend"
+MASTER_SAVED 06-work.blend
+00:24.125  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\06-work.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:47:00 | INFO: Starting glTF 2.0 export
+22:47:00 | INFO: Extracting primitive: SA_W01_GEOMETRY_00
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Finished glTF 2.0 export in 0.045597076416015625 s
+
+EXPORTED public\models\stay\v1\work\archive-pavilion.desktop.glb 105452
+22:47:00 | INFO: Starting glTF 2.0 export
+22:47:00 | INFO: Extracting primitive: SA_W01_MOBILEGEOMETRY_00
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Finished glTF 2.0 export in 0.03858542442321777 s
+
+EXPORTED public\models\stay\v1\work\archive-pavilion.mobile.glb 30280
+22:47:00 | INFO: Starting glTF 2.0 export
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_14
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_00
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_01
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_02
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_03
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_04
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_05
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_06
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_07
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_08
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_09
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_10
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_11
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_12
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:00 | INFO: Extracting primitive: SA_W02_GEOMETRY_13
+22:47:00 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:00 | INFO: Primitives created: 1
+22:47:03 | INFO: Finished glTF 2.0 export in 3.7198143005371094 s
+
+EXPORTED public\models\stay\v1\work\planner-station.desktop.glb 125760
+22:47:03 | INFO: Starting glTF 2.0 export
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_14
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_00
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_01
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_02
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_03
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_04
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_05
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_06
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_07
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_08
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_09
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_10
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_11
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_12
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:03 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_13
+22:47:03 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:03 | INFO: Primitives created: 1
+22:47:07 | INFO: Finished glTF 2.0 export in 3.0906271934509277 s
+
+EXPORTED public\models\stay\v1\work\planner-station.mobile.glb 75200
+22:47:07 | INFO: Starting glTF 2.0 export
+22:47:07 | INFO: Extracting primitive: SA_W03_GEOMETRY_00
+22:47:07 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:07 | INFO: Primitives created: 1
+22:47:07 | INFO: Extracting primitive: SA_W03_GEOMETRY_01
+22:47:07 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:07 | INFO: Primitives created: 1
+22:47:07 | INFO: Extracting primitive: SA_W03_GEOMETRY_02
+22:47:07 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:07 | INFO: Primitives created: 1
+22:47:07 | INFO: Extracting primitive: SA_W03_GEOMETRY_03
+22:47:07 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:07 | INFO: Primitives created: 1
+22:47:07 | INFO: Extracting primitive: SA_W03_GEOMETRY_04
+22:47:07 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:07 | INFO: Primitives created: 1
+22:47:07 | INFO: Finished glTF 2.0 export in 0.5715031623840332 s
+
+EXPORTED public\models\stay\v1\work\logger-station.desktop.glb 49384
+22:47:07 | INFO: Starting glTF 2.0 export
+22:47:07 | INFO: Extracting primitive: SA_W03_MOBILEGEOMETRY_00
+22:47:07 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:07 | INFO: Primitives created: 1
+22:47:07 | INFO: Extracting primitive: SA_W03_MOBILEGEOMETRY_01
+22:47:07 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:07 | INFO: Primitives created: 1
+22:47:07 | INFO: Extracting primitive: SA_W03_MOBILEGEOMETRY_02
+22:47:07 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:07 | INFO: Primitives created: 1
+22:47:07 | INFO: Extracting primitive: SA_W03_MOBILEGEOMETRY_03
+22:47:07 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:07 | INFO: Primitives created: 1
+22:47:07 | INFO: Extracting primitive: SA_W03_MOBILEGEOMETRY_04
+22:47:07 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:07 | INFO: Primitives created: 1
+22:47:08 | INFO: Finished glTF 2.0 export in 0.6349568367004395 s
+
+EXPORTED public\models\stay\v1\work\logger-station.mobile.glb 24332
+22:47:08 | INFO: Starting glTF 2.0 export
+22:47:08 | INFO: Extracting primitive: SA_W04_GEOMETRY_05
+22:47:08 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:08 | INFO: Primitives created: 1
+22:47:08 | INFO: Extracting primitive: SA_W04_GEOMETRY_00
+22:47:08 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:08 | INFO: Primitives created: 1
+22:47:08 | INFO: Extracting primitive: SA_W04_GEOMETRY_04
+22:47:08 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:08 | INFO: Primitives created: 1
+22:47:08 | INFO: Extracting primitive: SA_W04_GEOMETRY_01
+22:47:08 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:08 | INFO: Primitives created: 1
+22:47:08 | INFO: Extracting primitive: SA_W04_GEOMETRY_02
+22:47:08 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:08 | INFO: Primitives created: 1
+22:47:08 | INFO: Extracting primitive: SA_W04_GEOMETRY_03
+22:47:08 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:08 | INFO: Primitives created: 1
+22:47:09 | INFO: Finished glTF 2.0 export in 0.8018269538879395 s
+
+EXPORTED public\models\stay\v1\work\mun-station.desktop.glb 58928
+22:47:09 | INFO: Starting glTF 2.0 export
+22:47:09 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_05
+22:47:09 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:09 | INFO: Primitives created: 1
+22:47:09 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_00
+22:47:09 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:09 | INFO: Primitives created: 1
+22:47:09 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_04
+22:47:09 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:09 | INFO: Primitives created: 1
+22:47:09 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_01
+22:47:09 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:09 | INFO: Primitives created: 1
+22:47:09 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_02
+22:47:09 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:09 | INFO: Primitives created: 1
+22:47:09 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_03
+22:47:09 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:09 | INFO: Primitives created: 1
+22:47:09 | INFO: Finished glTF 2.0 export in 0.7958331108093262 s
+
+EXPORTED public\models\stay\v1\work\mun-station.mobile.glb 28208
+22:47:09 | INFO: Starting glTF 2.0 export
+22:47:09 | INFO: Extracting primitive: SA_W05_GEOMETRY_00
+22:47:09 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:09 | INFO: Primitives created: 1
+22:47:09 | INFO: Extracting primitive: SA_W05_GEOMETRY_01
+22:47:09 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:09 | INFO: Primitives created: 1
+22:47:09 | INFO: Extracting primitive: SA_W05_GEOMETRY_02
+22:47:09 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:09 | INFO: Primitives created: 1
+22:47:09 | INFO: Extracting primitive: SA_W05_GEOMETRY_03
+22:47:09 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:09 | INFO: Primitives created: 1
+22:47:10 | INFO: Finished glTF 2.0 export in 0.3486206531524658 s
+
+EXPORTED public\models\stay\v1\work\snrled-station.desktop.glb 19668
+22:47:10 | INFO: Starting glTF 2.0 export
+22:47:10 | INFO: Extracting primitive: SA_W05_MOBILEGEOMETRY_00
+22:47:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:10 | INFO: Primitives created: 1
+22:47:10 | INFO: Extracting primitive: SA_W05_MOBILEGEOMETRY_01
+22:47:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:10 | INFO: Primitives created: 1
+22:47:10 | INFO: Extracting primitive: SA_W05_MOBILEGEOMETRY_02
+22:47:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:10 | INFO: Primitives created: 1
+22:47:10 | INFO: Extracting primitive: SA_W05_MOBILEGEOMETRY_03
+22:47:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:10 | INFO: Primitives created: 1
+22:47:10 | INFO: Finished glTF 2.0 export in 0.349506139755249 s
+
+EXPORTED public\models\stay\v1\work\snrled-station.mobile.glb 14092
+22:47:10 | INFO: Starting glTF 2.0 export
+22:47:10 | INFO: Extracting primitive: SA_W06_GEOMETRY_00
+22:47:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:10 | INFO: Primitives created: 1
+22:47:10 | INFO: Extracting primitive: SA_W06_GEOMETRY_01
+22:47:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:10 | INFO: Primitives created: 1
+22:47:10 | INFO: Extracting primitive: SA_W06_GEOMETRY_02
+22:47:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:10 | INFO: Primitives created: 1
+22:47:10 | INFO: Extracting primitive: SA_W06_GEOMETRY_03
+22:47:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:10 | INFO: Primitives created: 1
+22:47:10 | INFO: Extracting primitive: SA_W06_GEOMETRY_04
+22:47:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:10 | INFO: Primitives created: 1
+22:47:10 | INFO: Extracting primitive: SA_W06_GEOMETRY_05
+22:47:10 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:10 | INFO: Primitives created: 1
+22:47:11 | INFO: Finished glTF 2.0 export in 1.156301736831665 s
+
+EXPORTED public\models\stay\v1\work\aura-station.desktop.glb 56096
+22:47:11 | INFO: Starting glTF 2.0 export
+22:47:11 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_00
+22:47:11 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:11 | INFO: Primitives created: 1
+22:47:11 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_01
+22:47:11 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:11 | INFO: Primitives created: 1
+22:47:11 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_02
+22:47:11 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:11 | INFO: Primitives created: 1
+22:47:11 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_03
+22:47:11 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:11 | INFO: Primitives created: 1
+22:47:11 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_04
+22:47:11 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:11 | INFO: Primitives created: 1
+22:47:11 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_05
+22:47:11 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:11 | INFO: Primitives created: 1
+22:47:12 | INFO: Finished glTF 2.0 export in 0.9761154651641846 s
+
+EXPORTED public\models\stay\v1\work\aura-station.mobile.glb 31056
+MODELED F01 Opening Canopy
+MODELED F02 Horizon Path
+MODELED F03 Distant Marker
+Info: Saved as "07-future.blend"
+MASTER_SAVED 07-future.blend
+00:37.312  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\07-future.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:47:13 | INFO: Starting glTF 2.0 export
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_01
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_02
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_03
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_04
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_05
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_06
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_07
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_08
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_09
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_10
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_11
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_12
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_13
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_14
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_15
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_16
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_17
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_18
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_19
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_20
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_21
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_22
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_23
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_24
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_25
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_26
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_27
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_28
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_29
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_30
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_31
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_32
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_33
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_34
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_35
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_36
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_GEOMETRY_00
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Finished glTF 2.0 export in 0.21870827674865723 s
+
+EXPORTED public\models\stay\v1\future\opening-canopy.desktop.glb 266152
+22:47:13 | INFO: Starting glTF 2.0 export
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_01
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_02
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_03
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_04
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_05
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_06
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_07
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_08
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_09
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_10
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_11
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_12
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_13
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_14
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_15
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_16
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_17
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_18
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_19
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_20
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_21
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_22
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_23
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_24
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_25
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_26
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_27
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_28
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_29
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_30
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_31
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_32
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_33
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_34
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_35
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_36
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_00
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Finished glTF 2.0 export in 0.20463895797729492 s
+
+EXPORTED public\models\stay\v1\future\opening-canopy.mobile.glb 107176
+22:47:13 | INFO: Starting glTF 2.0 export
+22:47:13 | INFO: Extracting primitive: SA_F02_GEOMETRY_00
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Finished glTF 2.0 export in 0.025053977966308594 s
+
+EXPORTED public\models\stay\v1\future\horizon-path.desktop.glb 4292
+22:47:13 | INFO: Starting glTF 2.0 export
+22:47:13 | INFO: Extracting primitive: SA_F02_MOBILEGEOMETRY_00
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Finished glTF 2.0 export in 0.025754928588867188 s
+
+EXPORTED public\models\stay\v1\future\horizon-path.mobile.glb 2784
+22:47:13 | INFO: Starting glTF 2.0 export
+22:47:13 | INFO: Extracting primitive: SA_F03_GEOMETRY_00
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Finished glTF 2.0 export in 0.02366924285888672 s
+
+EXPORTED public\models\stay\v1\future\distant-marker.desktop.glb 4132
+22:47:13 | INFO: Starting glTF 2.0 export
+22:47:13 | INFO: Extracting primitive: SA_F03_MOBILEGEOMETRY_00
+22:47:13 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:13 | INFO: Primitives created: 1
+22:47:13 | INFO: Finished glTF 2.0 export in 0.02430105209350586 s
+
+EXPORTED public\models\stay\v1\future\distant-marker.mobile.glb 2592
+MODELED A01 Archive Frame
+MODELED A02 Evidence Documents
+MODELED A03 Relationship Filaments
+MODELED A04 Model Spine
+Info: Saved as "08-aura.blend"
+MASTER_SAVED 08-aura.blend
+00:38.281  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\08-aura.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:47:14 | INFO: Starting glTF 2.0 export
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_00
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_01
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_02
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_03
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_04
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_05
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_06
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_07
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_08
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_09
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_10
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_11
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_12
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_13
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_14
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_15
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_16
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:14 | INFO: Extracting primitive: SA_A01_GEOMETRY_17
+22:47:14 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:14 | INFO: Primitives created: 1
+22:47:15 | INFO: Finished glTF 2.0 export in 1.7454326152801514 s
+
+EXPORTED public\models\stay\v1\aura\archive-frame.desktop.glb 268636
+22:47:15 | INFO: Starting glTF 2.0 export
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_00
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_01
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_02
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_03
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_04
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_05
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_06
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_07
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_08
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_09
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_10
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_11
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_12
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_13
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_14
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_15
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_16
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:16 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_17
+22:47:16 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:16 | INFO: Primitives created: 1
+22:47:17 | INFO: Finished glTF 2.0 export in 1.727034568786621 s
+
+EXPORTED public\models\stay\v1\aura\archive-frame.mobile.glb 103996
+22:47:17 | INFO: Starting glTF 2.0 export
+22:47:17 | INFO: Extracting primitive: SA_A02_GEOMETRY_00
+22:47:17 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:17 | INFO: Primitives created: 1
+22:47:17 | INFO: Extracting primitive: SA_A02_GEOMETRY_01
+22:47:17 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:17 | INFO: Primitives created: 1
+22:47:17 | INFO: Extracting primitive: SA_A02_GEOMETRY_02
+22:47:17 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:17 | INFO: Primitives created: 1
+22:47:17 | INFO: Extracting primitive: SA_A02_GEOMETRY_03
+22:47:17 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:17 | INFO: Primitives created: 1
+22:47:17 | INFO: Extracting primitive: SA_A02_GEOMETRY_04
+22:47:17 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:17 | INFO: Primitives created: 1
+22:47:17 | INFO: Extracting primitive: SA_A02_GEOMETRY_05
+22:47:17 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:17 | INFO: Primitives created: 1
+22:47:17 | INFO: Extracting primitive: SA_A02_GEOMETRY_06
+22:47:17 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:17 | INFO: Primitives created: 1
+22:47:17 | INFO: Extracting primitive: SA_A02_GEOMETRY_07
+22:47:17 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:17 | INFO: Primitives created: 1
+22:47:17 | INFO: Extracting primitive: SA_A02_GEOMETRY_08
+22:47:17 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:17 | INFO: Primitives created: 1
+22:47:20 | INFO: Finished glTF 2.0 export in 2.5246684551239014 s
+
+EXPORTED public\models\stay\v1\aura\evidence-documents.desktop.glb 77044
+22:47:20 | INFO: Starting glTF 2.0 export
+22:47:20 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_00
+22:47:20 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:20 | INFO: Primitives created: 1
+22:47:20 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_01
+22:47:20 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:20 | INFO: Primitives created: 1
+22:47:20 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_02
+22:47:20 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:20 | INFO: Primitives created: 1
+22:47:20 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_03
+22:47:20 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:20 | INFO: Primitives created: 1
+22:47:20 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_04
+22:47:20 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:20 | INFO: Primitives created: 1
+22:47:20 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_05
+22:47:20 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:20 | INFO: Primitives created: 1
+22:47:20 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_06
+22:47:20 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:20 | INFO: Primitives created: 1
+22:47:20 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_07
+22:47:20 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:20 | INFO: Primitives created: 1
+22:47:20 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_08
+22:47:20 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:20 | INFO: Primitives created: 1
+22:47:22 | INFO: Finished glTF 2.0 export in 1.9998862743377686 s
+
+EXPORTED public\models\stay\v1\aura\evidence-documents.mobile.glb 77096
+22:47:22 | INFO: Starting glTF 2.0 export
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_00
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_01
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_02
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_03
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_04
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_05
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_06
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_07
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_08
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_09
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_10
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_GEOMETRY_11
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Finished glTF 2.0 export in 0.09954977035522461 s
+
+EXPORTED public\models\stay\v1\aura\relationship-filaments.desktop.glb 36172
+22:47:22 | INFO: Starting glTF 2.0 export
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_00
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_01
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_02
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_03
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_04
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_05
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_06
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_07
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_08
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_09
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_10
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_11
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Finished glTF 2.0 export in 0.18092679977416992 s
+
+EXPORTED public\models\stay\v1\aura\relationship-filaments.mobile.glb 21108
+22:47:22 | INFO: Starting glTF 2.0 export
+22:47:22 | INFO: Extracting primitive: SA_A04_GEOMETRY_00
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A04_GEOMETRY_01
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A04_GEOMETRY_02
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A04_GEOMETRY_03
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A04_GEOMETRY_04
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A04_GEOMETRY_05
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A04_GEOMETRY_06
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A04_GEOMETRY_07
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A04_GEOMETRY_08
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A04_GEOMETRY_09
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:22 | INFO: Extracting primitive: SA_A04_GEOMETRY_10
+22:47:22 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:22 | INFO: Primitives created: 1
+22:47:23 | INFO: Finished glTF 2.0 export in 1.054100513458252 s
+
+EXPORTED public\models\stay\v1\aura\model-spine.desktop.glb 43728
+22:47:23 | INFO: Starting glTF 2.0 export
+22:47:23 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_00
+22:47:23 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:23 | INFO: Primitives created: 1
+22:47:23 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_01
+22:47:23 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:23 | INFO: Primitives created: 1
+22:47:23 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_02
+22:47:23 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:23 | INFO: Primitives created: 1
+22:47:23 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_03
+22:47:23 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:23 | INFO: Primitives created: 1
+22:47:23 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_04
+22:47:23 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:23 | INFO: Primitives created: 1
+22:47:23 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_05
+22:47:23 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:23 | INFO: Primitives created: 1
+22:47:23 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_06
+22:47:23 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:23 | INFO: Primitives created: 1
+22:47:23 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_07
+22:47:23 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:23 | INFO: Primitives created: 1
+22:47:23 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_08
+22:47:23 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:23 | INFO: Primitives created: 1
+22:47:23 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_09
+22:47:23 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:23 | INFO: Primitives created: 1
+22:47:23 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_10
+22:47:23 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:23 | INFO: Primitives created: 1
+22:47:24 | INFO: Finished glTF 2.0 export in 1.1783783435821533 s
+
+EXPORTED public\models\stay\v1\aura\model-spine.mobile.glb 27788
+MODELED C01 Open Ground
+MODELED C02 Resting Stone
+Info: Saved as "09-contact.blend"
+MASTER_SAVED 09-contact.blend
+00:49.234  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\09-contact.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:47:25 | INFO: Starting glTF 2.0 export
+22:47:25 | INFO: Extracting primitive: SA_C01_GEOMETRY_00
+22:47:25 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:25 | INFO: Primitives created: 1
+22:47:25 | INFO: Finished glTF 2.0 export in 0.02278733253479004 s
+
+EXPORTED public\models\stay\v1\contact\open-ground.desktop.glb 54584
+22:47:25 | INFO: Starting glTF 2.0 export
+22:47:25 | INFO: Extracting primitive: SA_C01_MOBILEGEOMETRY_00
+22:47:25 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:25 | INFO: Primitives created: 1
+22:47:25 | INFO: Finished glTF 2.0 export in 0.018458127975463867 s
+
+EXPORTED public\models\stay\v1\contact\open-ground.mobile.glb 16564
+22:47:25 | INFO: Starting glTF 2.0 export
+22:47:25 | INFO: Extracting primitive: SA_C02_GEOMETRY_00
+22:47:25 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:25 | INFO: Primitives created: 1
+22:47:25 | INFO: Finished glTF 2.0 export in 0.01727151870727539 s
+
+EXPORTED public\models\stay\v1\contact\resting-stone.desktop.glb 7864
+22:47:25 | INFO: Starting glTF 2.0 export
+22:47:25 | INFO: Extracting primitive: SA_C02_MOBILEGEOMETRY_00
+22:47:25 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+22:47:25 | INFO: Primitives created: 1
+22:47:25 | INFO: Finished glTF 2.0 export in 0.015342235565185547 s
+
+EXPORTED public\models\stay\v1\contact\resting-stone.mobile.glb 3056
+PRODUCTION_PASS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

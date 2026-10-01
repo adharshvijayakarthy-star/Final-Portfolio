@@ -1,0 +1,1849 @@
+{
+  "schemaVersion": 1,
+  "routeId": "work",
+  "artistVersion": "senior-art-2026-09-27",
+  "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+  "sourceSha256": "82fb1280642a6d03818c78fd3c6eaef95223f045f5c32b6aed09e156159336dd",
+  "specificationSha256": "1f89f2ca50ff42da80a52275a504c0a0a3c6060a01352e5428f287b278bebabc",
+  "exportDate": "2026-09-28T12:31:23.711937+00:00",
+  "ownedAssetIds": [
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06"
+  ],
+  "assetIds": [
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G09",
+    "G10",
+    "G11",
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06"
+  ],
+  "instances": [
+    {
+      "assetId": "G01",
+      "position": [
+        -44,
+        -0.13,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_00"
+    },
+    {
+      "assetId": "W01",
+      "position": [
+        0,
+        0,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_01"
+    },
+    {
+      "assetId": "W02",
+      "position": [
+        -2.2,
+        0,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_02"
+    },
+    {
+      "assetId": "W03",
+      "position": [
+        2.2,
+        0,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_03"
+    },
+    {
+      "assetId": "W04",
+      "position": [
+        -2.2,
+        0,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_04"
+    },
+    {
+      "assetId": "W05",
+      "position": [
+        2.2,
+        0,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_05"
+    },
+    {
+      "assetId": "W06",
+      "position": [
+        -2.2,
+        0,
+        -22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_06"
+    },
+    {
+      "assetId": "G09",
+      "position": [
+        -44.0,
+        -0.5,
+        20.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_07"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_WORK_INSTANCE_08"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_WORK_INSTANCE_09"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_WORK_INSTANCE_10"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_WORK_INSTANCE_11"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_WORK_INSTANCE_12"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_WORK_INSTANCE_13"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -21
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_WORK_INSTANCE_14"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_WORK_INSTANCE_15"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -5.04,
+        0,
+        1.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_WORK_INSTANCE_16"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -4.39,
+        0,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_WORK_INSTANCE_17"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        5.04,
+        0,
+        1.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_WORK_INSTANCE_18"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        4.39,
+        0,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_WORK_INSTANCE_19"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -5.04,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_WORK_INSTANCE_20"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -4.39,
+        0,
+        -2.8000000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_WORK_INSTANCE_21"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        5.04,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_WORK_INSTANCE_22"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        4.39,
+        0,
+        -2.8000000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_WORK_INSTANCE_23"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -5.04,
+        0,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_WORK_INSTANCE_24"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -4.39,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_WORK_INSTANCE_25"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        5.04,
+        0,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_WORK_INSTANCE_26"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        4.39,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_WORK_INSTANCE_27"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -5.04,
+        0,
+        -8.600000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_WORK_INSTANCE_28"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -4.39,
+        0,
+        -9.200000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_WORK_INSTANCE_29"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        5.04,
+        0,
+        -8.600000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_WORK_INSTANCE_30"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        4.39,
+        0,
+        -9.200000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_WORK_INSTANCE_31"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -5.04,
+        0,
+        -11.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_WORK_INSTANCE_32"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -4.39,
+        0,
+        -12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_WORK_INSTANCE_33"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        5.04,
+        0,
+        -11.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_WORK_INSTANCE_34"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        4.39,
+        0,
+        -12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_WORK_INSTANCE_35"
+    },
+    {
+      "assetId": "G03",
+      "position": [
+        -5.04,
+        0,
+        -13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_36"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -13,
+        0,
+        -55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_37"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        12,
+        0,
+        -59
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_38"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -27.0,
+        -0.014902724884450436,
+        -61.14203643798828
+      ],
+      "rotation": [
+        0,
+        0.55,
+        0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_39",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -10.0,
+        -0.009625091217458248,
+        -67.34530639648438
+      ],
+      "rotation": [
+        0,
+        -0.4,
+        0
+      ],
+      "scale": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_40",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        10.0,
+        0.2951596975326538,
+        -64.7864990234375
+      ],
+      "rotation": [
+        0,
+        0.18,
+        0
+      ],
+      "scale": [
+        1.17,
+        1.17,
+        1.17
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_41",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        29.0,
+        0.39891183376312256,
+        -67.28783416748047
+      ],
+      "rotation": [
+        0,
+        -0.65,
+        0
+      ],
+      "scale": [
+        1.02,
+        1.02,
+        1.02
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_42",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G03",
+      "position": [
+        8.399999618530273,
+        0.17260108888149261,
+        -26.0
+      ],
+      "rotation": [
+        0,
+        1.2,
+        0
+      ],
+      "scale": [
+        0.82,
+        0.82,
+        0.82
+      ],
+      "variantNode": null,
+      "instanceId": "SA_WORK_INSTANCE_43",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -6.462440013885498,
+        -0.014979018829762936,
+        0.9931812882423401
+      ],
+      "rotation": [
+        0,
+        0.3808306185935857,
+        0
+      ],
+      "scale": [
+        0.8339473617563886,
+        0.8339473617563886,
+        0.8339473617563886
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_WORK_INSTANCE_44",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -6.962440013885498,
+        -0.014986648224294186,
+        1.293181300163269
+      ],
+      "rotation": [
+        0,
+        -1.6888208404864367,
+        0
+      ],
+      "scale": [
+        0.9302406331334884,
+        0.9302406331334884,
+        0.9302406331334884
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_WORK_INSTANCE_45",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        5.802248954772949,
+        -0.015034331940114498,
+        1.0778887271881104
+      ],
+      "rotation": [
+        0,
+        0.352283792890546,
+        0
+      ],
+      "scale": [
+        0.6568688042688307,
+        0.6568688042688307,
+        0.6568688042688307
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_WORK_INSTANCE_46",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        6.302248954772949,
+        -0.015009536407887936,
+        1.3778886795043945
+      ],
+      "rotation": [
+        0,
+        -0.23030336114453576,
+        0
+      ],
+      "scale": [
+        0.8691150182270531,
+        0.8691150182270531,
+        0.8691150182270531
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_WORK_INSTANCE_47",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -6.359335422515869,
+        -0.01505912747234106,
+        -3.0014493465423584
+      ],
+      "rotation": [
+        0,
+        -0.06168767210107973,
+        0
+      ],
+      "scale": [
+        0.6923332353055279,
+        0.6923332353055279,
+        0.6923332353055279
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_WORK_INSTANCE_48",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -6.859335422515869,
+        -0.015057220123708248,
+        -2.701449394226074
+      ],
+      "rotation": [
+        0,
+        0.29160392192208784,
+        0
+      ],
+      "scale": [
+        0.737804947233688,
+        0.737804947233688,
+        0.737804947233688
+      ],
+      "variantNode": "SA_G06_STONE_02",
+      "instanceId": "SA_WORK_INSTANCE_49",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        6.2223615646362305,
+        -0.015055312775075436,
+        -3.6691014766693115
+      ],
+      "rotation": [
+        0,
+        0.9512987763527017,
+        0
+      ],
+      "scale": [
+        0.732323781801355,
+        0.732323781801355,
+        0.732323781801355
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_WORK_INSTANCE_50",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        6.7223615646362305,
+        -0.015026702545583248,
+        -3.3691012859344482
+      ],
+      "rotation": [
+        0,
+        1.4048432636228214,
+        0
+      ],
+      "scale": [
+        0.7824779602407427,
+        0.7824779602407427,
+        0.7824779602407427
+      ],
+      "variantNode": "SA_G06_STONE_03",
+      "instanceId": "SA_WORK_INSTANCE_51",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -6.472965717315674,
+        -0.014965667389333248,
+        -7.959196090698242
+      ],
+      "rotation": [
+        0,
+        1.8680067746770908,
+        0
+      ],
+      "scale": [
+        0.8893326822684692,
+        0.8893326822684692,
+        0.8893326822684692
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_WORK_INSTANCE_52",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -6.972965717315674,
+        -0.014965667389333248,
+        -7.659195899963379
+      ],
+      "rotation": [
+        0,
+        0.16641238364309974,
+        0
+      ],
+      "scale": [
+        0.7817783260003596,
+        0.7817783260003596,
+        0.7817783260003596
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_WORK_INSTANCE_53",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        6.255540370941162,
+        -0.015070571564137936,
+        -7.537489891052246
+      ],
+      "rotation": [
+        0,
+        -0.16683963064476126,
+        0
+      ],
+      "scale": [
+        0.7067800358786838,
+        0.7067800358786838,
+        0.7067800358786838
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_WORK_INSTANCE_54",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        6.755540370941162,
+        -0.01505912747234106,
+        -7.237489700317383
+      ],
+      "rotation": [
+        0,
+        1.9420407048212902,
+        0
+      ],
+      "scale": [
+        1.0369875226491703,
+        1.0369875226491703,
+        1.0369875226491703
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_WORK_INSTANCE_55",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -6.434200763702393,
+        -0.014864577911794186,
+        -11.771697998046875
+      ],
+      "rotation": [
+        0,
+        -0.49500271370243487,
+        0
+      ],
+      "scale": [
+        0.8572611789869009,
+        0.8572611789869009,
+        0.8572611789869009
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_WORK_INSTANCE_56",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -6.934200763702393,
+        -0.014855041168630123,
+        -11.471697807312012
+      ],
+      "rotation": [
+        0,
+        0.511713999329948,
+        0
+      ],
+      "scale": [
+        0.7853301861178932,
+        0.7853301861178932,
+        0.7853301861178932
+      ],
+      "variantNode": "SA_G06_STONE_02",
+      "instanceId": "SA_WORK_INSTANCE_57",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        6.090461730957031,
+        -0.014940871857106686,
+        -12.08023452758789
+      ],
+      "rotation": [
+        0,
+        1.5240459049365946,
+        0
+      ],
+      "scale": [
+        0.8097615407411087,
+        0.8097615407411087,
+        0.8097615407411087
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_WORK_INSTANCE_58",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        6.590461730957031,
+        -0.014973296783864498,
+        -11.780235290527344
+      ],
+      "rotation": [
+        0,
+        -1.8171420558828846,
+        0
+      ],
+      "scale": [
+        1.0789780064162424,
+        1.0789780064162424,
+        1.0789780064162424
+      ],
+      "variantNode": "SA_G06_STONE_03",
+      "instanceId": "SA_WORK_INSTANCE_59",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -6.184619426727295,
+        -0.015001907013356686,
+        -16.552030563354492
+      ],
+      "rotation": [
+        0,
+        1.4197806650143798,
+        0
+      ],
+      "scale": [
+        0.8807034706931768,
+        0.8807034706931768,
+        0.8807034706931768
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_WORK_INSTANCE_60",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -6.684619426727295,
+        -0.014999999664723873,
+        -16.252031326293945
+      ],
+      "rotation": [
+        0,
+        0.8102551742452704,
+        0
+      ],
+      "scale": [
+        0.7575114355194305,
+        0.7575114355194305,
+        0.7575114355194305
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_WORK_INSTANCE_61",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        6.522400856018066,
+        -0.014979018829762936,
+        -16.530319213867188
+      ],
+      "rotation": [
+        0,
+        -0.09987129030179087,
+        0
+      ],
+      "scale": [
+        0.7409669413025898,
+        0.7409669413025898,
+        0.7409669413025898
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_WORK_INSTANCE_62",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        7.022400856018066,
+        -0.015003814361989498,
+        -16.23031997680664
+      ],
+      "rotation": [
+        0,
+        -0.09713747967989317,
+        0
+      ],
+      "scale": [
+        0.9837826774023298,
+        0.9837826774023298,
+        0.9837826774023298
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_WORK_INSTANCE_63",
+      "seniorPlacement": true
+    }
+  ],
+  "worldOrigin": [
+    44.0,
+    0.0,
+    -20.0
+  ],
+  "localBounds": {
+    "width": 12.0,
+    "depth": 32.0
+  },
+  "boundsExceptions": [
+    "G01 and G09 are world-scale; G11 sits beyond camera rails; F03 intentionally beyond future local zone"
+  ],
+  "cameraKnots": [
+    {
+      "index": 0,
+      "band": [
+        0.0,
+        0.09
+      ],
+      "start": [
+        0.0,
+        1.75,
+        5.0
+      ],
+      "end": [
+        0.0,
+        1.75,
+        1.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -6.0
+      ],
+      "reading": "center, x=50%, y=30%, 32ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.3,
+        "widthCh": 32,
+        "alignment": "center"
+      },
+      "objectScore": "ARCHIVE_ENTRY. W01 frames depth across all five bays. No project auto-opens on route entry except a named hash target."
+    },
+    {
+      "index": 1,
+      "band": [
+        0.09,
+        0.25
+      ],
+      "start": [
+        0.0,
+        1.75,
+        1.0
+      ],
+      "end": [
+        0.5,
+        1.7,
+        -1.0
+      ],
+      "look": [
+        -2.2,
+        1.0,
+        -2.0
+      ],
+      "reading": "right, x=57%, y=27%, 38ch",
+      "clearance": {
+        "x": 0.57,
+        "y": 0.27,
+        "widthCh": 38,
+        "alignment": "right"
+      },
+      "objectScore": "PLANNER. W02; local station progress q spans this band. WORK_PLANNER at 6q seconds. DOM explains decimal priorities, distribution, sessions, breaks and focus mode. Details at #study-planner."
+    },
+    {
+      "index": 2,
+      "band": [
+        0.25,
+        0.41
+      ],
+      "start": [
+        0.5,
+        1.7,
+        -1.0
+      ],
+      "end": [
+        -0.5,
+        1.7,
+        -6.0
+      ],
+      "look": [
+        2.2,
+        1.2,
+        -7.0
+      ],
+      "reading": "left, x=9%, y=27%, 38ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.27,
+        "widthCh": 38,
+        "alignment": "left"
+      },
+      "objectScore": "LOGGER. W03, WORK_LOGGER at 5q seconds. SVG graph remains HTML-adjacent; caption “Illustrative trend · no actual scores shown.” Dashed estimate is distinct from recorded points. Details at #past-paper-logger."
+    },
+    {
+      "index": 3,
+      "band": [
+        0.41,
+        0.57
+      ],
+      "start": [
+        -0.5,
+        1.7,
+        -6.0
+      ],
+      "end": [
+        0.5,
+        1.7,
+        -11.0
+      ],
+      "look": [
+        -2.2,
+        1.2,
+        -12.0
+      ],
+      "reading": "right, x=57%, y=28%, 38ch",
+      "clearance": {
+        "x": 0.57,
+        "y": 0.28,
+        "widthCh": 38,
+        "alignment": "right"
+      },
+      "objectScore": "MUN. W04, WORK_MUN at 4q seconds. Three panels progress lesson→debate→simulation; weekly loop shown as a final still arrow. No STRAT MUN content in this station. Details at #mun-club."
+    },
+    {
+      "index": 4,
+      "band": [
+        0.57,
+        0.75
+      ],
+      "start": [
+        0.5,
+        1.7,
+        -11.0
+      ],
+      "end": [
+        -0.5,
+        1.7,
+        -16.0
+      ],
+      "look": [
+        2.2,
+        1.2,
+        -17.0
+      ],
+      "reading": "left, x=9%, y=26%, 38ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.26,
+        "widthCh": 38,
+        "alignment": "left"
+      },
+      "objectScore": "SNRLED. W05, WORK_SNRLED at 6q seconds. Persistent visible status “Archived · deployment inactive · Supabase disconnected.” No payment form or live upload. Details at #snrled."
+    },
+    {
+      "index": 5,
+      "band": [
+        0.75,
+        0.92
+      ],
+      "start": [
+        -0.5,
+        1.7,
+        -16.0
+      ],
+      "end": [
+        0.5,
+        1.7,
+        -21.0
+      ],
+      "look": [
+        -2.2,
+        1.3,
+        -22.0
+      ],
+      "reading": "right, x=57%, y=28%, 38ch",
+      "clearance": {
+        "x": 0.57,
+        "y": 0.28,
+        "widthCh": 38,
+        "alignment": "right"
+      },
+      "objectScore": "AURA_STATION. W06, WORK_AURA at 5q seconds. Five folders align while HTML labels describe inquiry, not published academic research. Details at #project-aura and route link /stay/aura/."
+    },
+    {
+      "index": 6,
+      "band": [
+        0.92,
+        1.0
+      ],
+      "start": [
+        0.5,
+        1.7,
+        -21.0
+      ],
+      "end": [
+        0.0,
+        1.75,
+        -24.0
+      ],
+      "look": [
+        0.0,
+        1.2,
+        -28.0
+      ],
+      "reading": "center, x=50%, y=38%, 36ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.38,
+        "widthCh": 36,
+        "alignment": "center"
+      },
+      "objectScore": "ARCHIVE_EXIT. Camera stops .96. Last station remains visible behind through the open pavilion. No sixth station for STRAT MUN."
+    }
+  ],
+  "camera": {
+    "fov": 46,
+    "near": 0.1,
+    "far": 220,
+    "roll": 0
+  },
+  "focusAnchors": [
+    [
+      0.0,
+      1.0,
+      -6.0
+    ],
+    [
+      -2.2,
+      1.0,
+      -2.0
+    ],
+    [
+      2.2,
+      1.2,
+      -7.0
+    ],
+    [
+      -2.2,
+      1.2,
+      -12.0
+    ],
+    [
+      2.2,
+      1.2,
+      -17.0
+    ],
+    [
+      -2.2,
+      1.3,
+      -22.0
+    ],
+    [
+      0.0,
+      1.2,
+      -28.0
+    ]
+  ],
+  "contentClearanceRectangles": [
+    {
+      "x": 0.5,
+      "y": 0.3,
+      "widthCh": 32,
+      "alignment": "center"
+    },
+    {
+      "x": 0.57,
+      "y": 0.27,
+      "widthCh": 38,
+      "alignment": "right"
+    },
+    {
+      "x": 0.09,
+      "y": 0.27,
+      "widthCh": 38,
+      "alignment": "left"
+    },
+    {
+      "x": 0.57,
+      "y": 0.28,
+      "widthCh": 38,
+      "alignment": "right"
+    },
+    {
+      "x": 0.09,
+      "y": 0.26,
+      "widthCh": 38,
+      "alignment": "left"
+    },
+    {
+      "x": 0.57,
+      "y": 0.28,
+      "widthCh": 38,
+      "alignment": "right"
+    },
+    {
+      "x": 0.5,
+      "y": 0.38,
+      "widthCh": 36,
+      "alignment": "center"
+    }
+  ],
+  "guideNodeNames": [
+    "SA_WORK_ENTRY_00",
+    "SA_WORK_EXIT_00",
+    "SA_WORK_CAM_00",
+    "SA_WORK_LOOK_00",
+    "SA_WORK_TEXT_00",
+    "SA_WORK_CAM_01",
+    "SA_WORK_LOOK_01",
+    "SA_WORK_TEXT_01",
+    "SA_WORK_CAM_02",
+    "SA_WORK_LOOK_02",
+    "SA_WORK_TEXT_02",
+    "SA_WORK_CAM_03",
+    "SA_WORK_LOOK_03",
+    "SA_WORK_TEXT_03",
+    "SA_WORK_CAM_04",
+    "SA_WORK_LOOK_04",
+    "SA_WORK_TEXT_04",
+    "SA_WORK_CAM_05",
+    "SA_WORK_LOOK_05",
+    "SA_WORK_TEXT_05",
+    "SA_WORK_CAM_06",
+    "SA_WORK_LOOK_06",
+    "SA_WORK_TEXT_06"
+  ],
+  "guideAssetId": "W01",
+  "clips": [
+    {
+      "name": "WORK_PLANNER",
+      "duration": 6.0,
+      "frameCount": 181,
+      "progressBand": [
+        0.09,
+        0.25
+      ]
+    },
+    {
+      "name": "WORK_LOGGER",
+      "duration": 5.0,
+      "frameCount": 151,
+      "progressBand": [
+        0.25,
+        0.41
+      ]
+    },
+    {
+      "name": "WORK_MUN",
+      "duration": 4.0,
+      "frameCount": 121,
+      "progressBand": [
+        0.41,
+        0.57
+      ]
+    },
+    {
+      "name": "WORK_SNRLED",
+      "duration": 6.0,
+      "frameCount": 181,
+      "progressBand": [
+        0.57,
+        0.75
+      ]
+    },
+    {
+      "name": "WORK_AURA",
+      "duration": 5.0,
+      "frameCount": 151,
+      "progressBand": [
+        0.75,
+        0.92
+      ]
+    }
+  ],
+  "settledPoses": [
+    {
+      "progress": 0,
+      "camera": [
+        [
+          0.0,
+          1.75,
+          5.0
+        ],
+        [
+          0.0,
+          1.0,
+          -6.0
+        ]
+      ],
+      "clipTimes": {
+        "WORK_PLANNER": 0.0,
+        "WORK_LOGGER": 0.0,
+        "WORK_MUN": 0.0,
+        "WORK_SNRLED": 0.0,
+        "WORK_AURA": 0.0
+      }
+    },
+    {
+      "progress": 0.25,
+      "camera": [
+        [
+          0.5,
+          1.7,
+          -1.0
+        ],
+        [
+          -2.2,
+          1.0,
+          -2.0
+        ]
+      ],
+      "clipTimes": {
+        "WORK_PLANNER": 6.0,
+        "WORK_LOGGER": 0.0,
+        "WORK_MUN": 0.0,
+        "WORK_SNRLED": 0.0,
+        "WORK_AURA": 0.0
+      }
+    },
+    {
+      "progress": 0.5,
+      "camera": [
+        [
+          0.5,
+          1.7,
+          -11.0
+        ],
+        [
+          -2.2,
+          1.2,
+          -12.0
+        ]
+      ],
+      "clipTimes": {
+        "WORK_PLANNER": 6.0,
+        "WORK_LOGGER": 5.0,
+        "WORK_MUN": 2.250000000000001,
+        "WORK_SNRLED": 0.0,
+        "WORK_AURA": 0.0
+      }
+    },
+    {
+      "progress": 0.75,
+      "camera": [
+        [
+          -0.5,
+          1.7,
+          -16.0
+        ],
+        [
+          2.2,
+          1.2,
+          -17.0
+        ]
+      ],
+      "clipTimes": {
+        "WORK_PLANNER": 6.0,
+        "WORK_LOGGER": 5.0,
+        "WORK_MUN": 4.0,
+        "WORK_SNRLED": 6.0,
+        "WORK_AURA": 0.0
+      }
+    },
+    {
+      "progress": 1,
+      "camera": [
+        [
+          0.0,
+          1.75,
+          -24.0
+        ],
+        [
+          0.0,
+          1.2,
+          -28.0
+        ]
+      ],
+      "clipTimes": {
+        "WORK_PLANNER": 6.0,
+        "WORK_LOGGER": 5.0,
+        "WORK_MUN": 4.0,
+        "WORK_SNRLED": 6.0,
+        "WORK_AURA": 5.0
+      }
+    }
+  ],
+  "placementOverrides": {},
+  "documentSocketBindings": [],
+  "posterProgress": 0.12,
+  "runtimeNotes": [
+    "No authored typography, scroll, visibility, foliage sway, water or AURA_CONNECTIONS clip.",
+    "Only sample named child transforms; root placement belongs to the instance manifest."
+  ],
+  "validation": {
+    "reopenedMaster": true,
+    "reverseSeek": true,
+    "exportStructuralRead": true
+  }
+}

@@ -3,6 +3,9 @@ import { EB_Garamond } from "next/font/google";
 
 import { MAIN_CONTENT_ID } from "@/components/a11y/SkipLink";
 import { MotionProvider } from "@/components/motion/MotionProvider";
+import { StayExperienceProvider } from "@/sections/stay/world/StayExperienceProvider";
+import { StayNavigation } from "@/sections/stay/native/StayNavigation";
+import "@/sections/stay/world/editorial.css";
 
 // Stay's editorial body face; never applied to the root or Quick Discovery.
 const stayBody = EB_Garamond({ subsets: ["latin"], weight: ["400", "500"], style: ["normal", "italic"], display: "swap", variable: "--stay-body-face" });
@@ -20,7 +23,7 @@ const stayBody = EB_Garamond({ subsets: ["latin"], weight: ["400", "500"], style
 export default function StayAwhileLayout({ children }: { children: ReactNode }) {
   return (
     <main id={MAIN_CONTENT_ID} tabIndex={-1} className={stayBody.variable}>
-      <MotionProvider>{children}</MotionProvider>
+      <MotionProvider><StayExperienceProvider><StayNavigation>{children}</StayNavigation></StayExperienceProvider></MotionProvider>
     </main>
   );
 }

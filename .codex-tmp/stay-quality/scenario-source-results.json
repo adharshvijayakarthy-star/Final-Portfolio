@@ -1,0 +1,156 @@
+{
+  "environment": "HTTP fixture-source validation only; no browser rendering or accessibility acceptance",
+  "pages": [
+    {
+      "route": "garden",
+      "mode": "nojs",
+      "bytes": 8511
+    },
+    {
+      "route": "garden",
+      "mode": "reduced",
+      "bytes": 42611
+    },
+    {
+      "route": "garden",
+      "mode": "text200",
+      "bytes": 42036
+    },
+    {
+      "route": "person",
+      "mode": "nojs",
+      "bytes": 12635
+    },
+    {
+      "route": "person",
+      "mode": "reduced",
+      "bytes": 38577
+    },
+    {
+      "route": "person",
+      "mode": "text200",
+      "bytes": 38002
+    },
+    {
+      "route": "builder",
+      "mode": "nojs",
+      "bytes": 12737
+    },
+    {
+      "route": "builder",
+      "mode": "reduced",
+      "bytes": 38751
+    },
+    {
+      "route": "builder",
+      "mode": "text200",
+      "bytes": 38176
+    },
+    {
+      "route": "thinker",
+      "mode": "nojs",
+      "bytes": 12173
+    },
+    {
+      "route": "thinker",
+      "mode": "reduced",
+      "bytes": 37271
+    },
+    {
+      "route": "thinker",
+      "mode": "text200",
+      "bytes": 36696
+    },
+    {
+      "route": "leader",
+      "mode": "nojs",
+      "bytes": 10476
+    },
+    {
+      "route": "leader",
+      "mode": "reduced",
+      "bytes": 33135
+    },
+    {
+      "route": "leader",
+      "mode": "text200",
+      "bytes": 32560
+    },
+    {
+      "route": "stories",
+      "mode": "nojs",
+      "bytes": 11662
+    },
+    {
+      "route": "stories",
+      "mode": "reduced",
+      "bytes": 36076
+    },
+    {
+      "route": "stories",
+      "mode": "text200",
+      "bytes": 35501
+    },
+    {
+      "route": "work",
+      "mode": "nojs",
+      "bytes": 20655
+    },
+    {
+      "route": "work",
+      "mode": "reduced",
+      "bytes": 55058
+    },
+    {
+      "route": "work",
+      "mode": "text200",
+      "bytes": 54483
+    },
+    {
+      "route": "future",
+      "mode": "nojs",
+      "bytes": 9278
+    },
+    {
+      "route": "future",
+      "mode": "reduced",
+      "bytes": 30425
+    },
+    {
+      "route": "future",
+      "mode": "text200",
+      "bytes": 29850
+    },
+    {
+      "route": "aura",
+      "mode": "nojs",
+      "bytes": 11977
+    },
+    {
+      "route": "aura",
+      "mode": "reduced",
+      "bytes": 36999
+    },
+    {
+      "route": "aura",
+      "mode": "text200",
+      "bytes": 36424
+    },
+    {
+      "route": "contact",
+      "mode": "nojs",
+      "bytes": 6976
+    },
+    {
+      "route": "contact",
+      "mode": "reduced",
+      "bytes": 25329
+    },
+    {
+      "route": "contact",
+      "mode": "text200",
+      "bytes": 24754
+    }
+  ],
+  "failureHTTP": 503
+}

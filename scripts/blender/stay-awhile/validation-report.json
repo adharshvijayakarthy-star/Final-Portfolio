@@ -1,0 +1,249 @@
+{
+  "masterCount": 10,
+  "assetCount": 47,
+  "glbCount": 94,
+  "authoredClipCount": 18,
+  "masters": [
+    {
+      "route": "garden",
+      "path": "scripts/blender/stay-awhile/00-garden.blend",
+      "sha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "assetRoots": [
+        "SA_G01_ROOT_00",
+        "SA_G01_MOBILEROOT_00",
+        "SA_G02_ROOT_00",
+        "SA_G02_MOBILEROOT_00",
+        "SA_G03_ROOT_00",
+        "SA_G03_MOBILEROOT_00",
+        "SA_G04_ROOT_00",
+        "SA_G04_MOBILEROOT_00",
+        "SA_G05_ROOT_00",
+        "SA_G05_MOBILEROOT_00",
+        "SA_G06_ROOT_00",
+        "SA_G06_MOBILEROOT_00",
+        "SA_G07_ROOT_00",
+        "SA_G07_MOBILEROOT_00",
+        "SA_G08_ROOT_00",
+        "SA_G08_MOBILEROOT_00",
+        "SA_G09_ROOT_00",
+        "SA_G09_MOBILEROOT_00",
+        "SA_G10_ROOT_00",
+        "SA_G10_MOBILEROOT_00",
+        "SA_G11_ROOT_00",
+        "SA_G11_MOBILEROOT_00",
+        "SA_G12_ROOT_00",
+        "SA_G12_MOBILEROOT_00",
+        "SA_G13_ROOT_00",
+        "SA_G13_MOBILEROOT_00",
+        "SA_G14_ROOT_00",
+        "SA_G14_MOBILEROOT_00"
+      ],
+      "actions": [],
+      "guideCount": 20,
+      "reverseSeek": true
+    },
+    {
+      "route": "person",
+      "path": "scripts/blender/stay-awhile/01-person.blend",
+      "sha256": "e1c7e5cb9567bf19ae26a1d2f412fed37a3e515eadad8c407562157891fb8257",
+      "assetRoots": [
+        "SA_P01_ROOT_00",
+        "SA_P01_MOBILEROOT_00",
+        "SA_P02_ROOT_00",
+        "SA_P02_MOBILEROOT_00",
+        "SA_P03_ROOT_00",
+        "SA_P03_MOBILEROOT_00"
+      ],
+      "actions": [],
+      "guideCount": 26,
+      "reverseSeek": true
+    },
+    {
+      "route": "builder",
+      "path": "scripts/blender/stay-awhile/02-builder.blend",
+      "sha256": "925400afbd0c79630d3f3ba0f278dbe69be897c9fe413eee0697587985a87a01",
+      "assetRoots": [
+        "SA_B01_ROOT_00",
+        "SA_B01_MOBILEROOT_00",
+        "SA_B02_ROOT_00",
+        "SA_B02_MOBILEROOT_00",
+        "SA_B03_ROOT_00",
+        "SA_B03_MOBILEROOT_00",
+        "SA_B04_ROOT_00",
+        "SA_B04_MOBILEROOT_00",
+        "SA_B05_ROOT_00",
+        "SA_B05_MOBILEROOT_00",
+        "SA_B06_ROOT_00",
+        "SA_B06_MOBILEROOT_00"
+      ],
+      "actions": [
+        "BUILD_BEAMS",
+        "BUILD_BENCH",
+        "BUILD_FOUNDATION",
+        "BUILD_POSTS",
+        "BUILD_ROOF",
+        "BUILD_TOKENS"
+      ],
+      "guideCount": 26,
+      "reverseSeek": true
+    },
+    {
+      "route": "thinker",
+      "path": "scripts/blender/stay-awhile/03-thinker.blend",
+      "sha256": "4f2bbb42c6977d77430d8500878a77f3bdf7bb08c12ba429654d7078874e7cbd",
+      "assetRoots": [
+        "SA_T01_ROOT_00",
+        "SA_T01_MOBILEROOT_00",
+        "SA_T02_ROOT_00",
+        "SA_T02_MOBILEROOT_00",
+        "SA_T03_ROOT_00",
+        "SA_T03_MOBILEROOT_00"
+      ],
+      "actions": [
+        "THINKER_SCROLL"
+      ],
+      "guideCount": 23,
+      "reverseSeek": true
+    },
+    {
+      "route": "leader",
+      "path": "scripts/blender/stay-awhile/04-leader.blend",
+      "sha256": "29eafffc3fe356104179a98934379a7aebcbbef41ea6d1fc02f78b06a79d25f9",
+      "assetRoots": [
+        "SA_L01_ROOT_00",
+        "SA_L01_MOBILEROOT_00",
+        "SA_L02_ROOT_00",
+        "SA_L02_MOBILEROOT_00",
+        "SA_L03_ROOT_00",
+        "SA_L03_MOBILEROOT_00"
+      ],
+      "actions": [
+        "LEADER_CONVERGE",
+        "LEADER_RAIL"
+      ],
+      "guideCount": 20,
+      "reverseSeek": true
+    },
+    {
+      "route": "stories",
+      "path": "scripts/blender/stay-awhile/05-stories.blend",
+      "sha256": "478297ecbb9098c5a02b720b8ac7274258be09f3301eb77c6ec850f01c6dda03",
+      "assetRoots": [
+        "SA_S01_ROOT_00",
+        "SA_S01_MOBILEROOT_00",
+        "SA_S02_ROOT_00",
+        "SA_S02_MOBILEROOT_00",
+        "SA_S03_ROOT_00",
+        "SA_S03_MOBILEROOT_00"
+      ],
+      "actions": [
+        "STORY_SHUTTER"
+      ],
+      "guideCount": 20,
+      "reverseSeek": true
+    },
+    {
+      "route": "work",
+      "path": "scripts/blender/stay-awhile/06-work.blend",
+      "sha256": "82fb1280642a6d03818c78fd3c6eaef95223f045f5c32b6aed09e156159336dd",
+      "assetRoots": [
+        "SA_W01_ROOT_00",
+        "SA_W01_MOBILEROOT_00",
+        "SA_W02_ROOT_00",
+        "SA_W02_MOBILEROOT_00",
+        "SA_W03_ROOT_00",
+        "SA_W03_MOBILEROOT_00",
+        "SA_W04_ROOT_00",
+        "SA_W04_MOBILEROOT_00",
+        "SA_W05_ROOT_00",
+        "SA_W05_MOBILEROOT_00",
+        "SA_W06_ROOT_00",
+        "SA_W06_MOBILEROOT_00"
+      ],
+      "actions": [
+        "WORK_AURA",
+        "WORK_LOGGER",
+        "WORK_MUN",
+        "WORK_PLANNER",
+        "WORK_SNRLED"
+      ],
+      "guideCount": 23,
+      "reverseSeek": true
+    },
+    {
+      "route": "future",
+      "path": "scripts/blender/stay-awhile/07-future.blend",
+      "sha256": "3e233b4d4e31127e41db986e23774c18818d6091b5d19df21170eb852129f4d2",
+      "assetRoots": [
+        "SA_F01_ROOT_00",
+        "SA_F01_MOBILEROOT_00",
+        "SA_F02_ROOT_00",
+        "SA_F02_MOBILEROOT_00",
+        "SA_F03_ROOT_00",
+        "SA_F03_MOBILEROOT_00"
+      ],
+      "actions": [],
+      "guideCount": 17,
+      "reverseSeek": true
+    },
+    {
+      "route": "aura",
+      "path": "scripts/blender/stay-awhile/08-aura.blend",
+      "sha256": "ae4def92f3b595272a2b7806e9128eec095b2208437d2998be4ee8a56a711945",
+      "assetRoots": [
+        "SA_A01_ROOT_00",
+        "SA_A01_MOBILEROOT_00",
+        "SA_A02_ROOT_00",
+        "SA_A02_MOBILEROOT_00",
+        "SA_A03_ROOT_00",
+        "SA_A03_MOBILEROOT_00",
+        "SA_A04_ROOT_00",
+        "SA_A04_MOBILEROOT_00"
+      ],
+      "actions": [
+        "AURA_DOCUMENTS",
+        "AURA_MODEL",
+        "AURA_STRUCTURE"
+      ],
+      "guideCount": 26,
+      "reverseSeek": true
+    },
+    {
+      "route": "contact",
+      "path": "scripts/blender/stay-awhile/09-contact.blend",
+      "sha256": "d39a5b222ec73cfc35f6028fd5a597315b7a5b11115696133bd4fd95667585a9",
+      "assetRoots": [
+        "SA_C01_ROOT_00",
+        "SA_C01_MOBILEROOT_00",
+        "SA_C02_ROOT_00",
+        "SA_C02_MOBILEROOT_00"
+      ],
+      "actions": [],
+      "guideCount": 11,
+      "reverseSeek": true
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "protectedFileCount": 216,
+  "protectedFilesChanged": [
+    "src/app/(stay-awhile)/layout.tsx",
+    "src/app/(stay-awhile)/stay/page.tsx",
+    "src/app/(stay-awhile)/stay/aura/page.tsx",
+    "src/app/(stay-awhile)/stay/builder/page.tsx",
+    "src/app/(stay-awhile)/stay/contact/page.tsx",
+    "src/app/(stay-awhile)/stay/future/page.tsx",
+    "src/app/(stay-awhile)/stay/leader/page.tsx",
+    "src/app/(stay-awhile)/stay/person/page.tsx",
+    "src/app/(stay-awhile)/stay/stories/page.tsx",
+    "src/app/(stay-awhile)/stay/thinker/page.tsx",
+    "src/app/(stay-awhile)/stay/work/page.tsx",
+    "src/sections/stay/native/GardenMap.tsx",
+    "src/sections/stay/native/GardenNav.tsx",
+    "src/sections/stay/native/map-topology.ts",
+    "src/sections/stay/native/stay.module.css",
+    "src/sections/stay/native/StayNavigation.tsx",
+    "src/sections/stay/native/StayShell.tsx"
+  ],
+  "currentPassWebsiteChanges": []
+}

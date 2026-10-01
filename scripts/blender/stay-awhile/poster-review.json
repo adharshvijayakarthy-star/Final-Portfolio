@@ -1,0 +1,162 @@
+[
+  {
+    "route": "garden",
+    "lod": "desktop",
+    "path": "public/assets/stay/v1/garden-desktop.webp",
+    "bytes": 167992,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "garden",
+    "lod": "mobile",
+    "path": "public/assets/stay/v1/garden-mobile.webp",
+    "bytes": 104810,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "person",
+    "lod": "desktop",
+    "path": "public/assets/stay/v1/person-desktop.webp",
+    "bytes": 117298,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "person",
+    "lod": "mobile",
+    "path": "public/assets/stay/v1/person-mobile.webp",
+    "bytes": 75774,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "builder",
+    "lod": "desktop",
+    "path": "public/assets/stay/v1/builder-desktop.webp",
+    "bytes": 139824,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "builder",
+    "lod": "mobile",
+    "path": "public/assets/stay/v1/builder-mobile.webp",
+    "bytes": 64628,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "thinker",
+    "lod": "desktop",
+    "path": "public/assets/stay/v1/thinker-desktop.webp",
+    "bytes": 71524,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "thinker",
+    "lod": "mobile",
+    "path": "public/assets/stay/v1/thinker-mobile.webp",
+    "bytes": 39328,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "leader",
+    "lod": "desktop",
+    "path": "public/assets/stay/v1/leader-desktop.webp",
+    "bytes": 128448,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "leader",
+    "lod": "mobile",
+    "path": "public/assets/stay/v1/leader-mobile.webp",
+    "bytes": 79510,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "stories",
+    "lod": "desktop",
+    "path": "public/assets/stay/v1/stories-desktop.webp",
+    "bytes": 72540,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "stories",
+    "lod": "mobile",
+    "path": "public/assets/stay/v1/stories-mobile.webp",
+    "bytes": 43434,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "work",
+    "lod": "desktop",
+    "path": "public/assets/stay/v1/work-desktop.webp",
+    "bytes": 89022,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "work",
+    "lod": "mobile",
+    "path": "public/assets/stay/v1/work-mobile.webp",
+    "bytes": 53904,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "future",
+    "lod": "desktop",
+    "path": "public/assets/stay/v1/future-desktop.webp",
+    "bytes": 124904,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "future",
+    "lod": "mobile",
+    "path": "public/assets/stay/v1/future-mobile.webp",
+    "bytes": 66312,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "aura",
+    "lod": "desktop",
+    "path": "public/assets/stay/v1/aura-desktop.webp",
+    "bytes": 123488,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "aura",
+    "lod": "mobile",
+    "path": "public/assets/stay/v1/aura-mobile.webp",
+    "bytes": 57342,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "contact",
+    "lod": "desktop",
+    "path": "public/assets/stay/v1/contact-desktop.webp",
+    "bytes": 79544,
+    "budgetPass": true,
+    "corridorViolations": []
+  },
+  {
+    "route": "contact",
+    "lod": "mobile",
+    "path": "public/assets/stay/v1/contact-mobile.webp",
+    "bytes": 56226,
+    "budgetPass": true,
+    "corridorViolations": []
+  }
+]

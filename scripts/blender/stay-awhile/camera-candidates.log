@@ -1,0 +1,23 @@
+00:02.906  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\02-builder.blend"
+00:08.578  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\.aura-work\blender-beauty\candidates\builder-22.png'
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+CANDIDATE builder 0.22
+00:13.953  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\.aura-work\blender-beauty\candidates\builder-38.png'
+CANDIDATE builder 0.38
+00:19.437  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\.aura-work\blender-beauty\candidates\builder-52.png'
+CANDIDATE builder 0.52
+00:24.891  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\.aura-work\blender-beauty\candidates\builder-72.png'
+CANDIDATE builder 0.72
+00:30.000  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\.aura-work\blender-beauty\candidates\builder-100.png'
+CANDIDATE builder 1.0
+00:30.000  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\03-thinker.blend"
+00:35.500  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\.aura-work\blender-beauty\candidates\thinker-42.png'
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+CANDIDATE thinker 0.42
+00:41.156  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\.aura-work\blender-beauty\candidates\thinker-57.png'
+CANDIDATE thinker 0.58
+00:46.625  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\.aura-work\blender-beauty\candidates\thinker-82.png'
+CANDIDATE thinker 0.82
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

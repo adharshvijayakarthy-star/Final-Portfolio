@@ -1,0 +1,3239 @@
+{
+  "specification": "PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+  "specSha256": "1f89f2ca50ff42da80a52275a504c0a0a3c6060a01352e5428f287b278bebabc",
+  "assets": {
+    "G01": {
+      "id": "G01",
+      "name": "Terrain",
+      "Purpose and visual form": "A shallow uneven garden floor with three elevation bands; paths are recessed 20 mm rather than floating above grass.",
+      "Placement and scale": "(0,0,0); world kit root. Extents: 180 × 0.8 × 180 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "moss from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 18,000 desktop / 5,000 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤340 KiB, mobile ≤153 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static. No displacement in browser. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/terrain.desktop.glb (and .mobile.glb). Root SA_G01_ROOT_00; material groups SA_G01_MESH_00 onward; one SA_G01_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Use low mesh; preserve path silhouettes and horizon grade. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/terrain.desktop.glb",
+      "owner": "garden",
+      "slug": "terrain",
+      "source": "00-garden.blend",
+      "triangles": [
+        18000,
+        5000
+      ],
+      "kib": [
+        340,
+        153
+      ],
+      "clips": []
+    },
+    "G02": {
+      "id": "G02",
+      "name": "Path Kit",
+      "Purpose and visual form": "Three reusable stone path segments: straight 4 m, 30-degree bend and three-way junction; each has six irregular slab faces.",
+      "Placement and scale": "Instances along graph edges and local route rails. Extents: 2.4 m clear width; 0.08 m slab thickness. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "stone from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,600 desktop / 600 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤85 KiB, mobile ≤39 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static. Route staging changes visibility only behind map cover. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/path-kit.desktop.glb (and .mobile.glb). Root SA_G02_ROOT_00; material groups SA_G02_MESH_00 onward; one SA_G02_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Same clear width; remove underside bevels. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/path-kit.desktop.glb",
+      "owner": "garden",
+      "slug": "path-kit",
+      "source": "00-garden.blend",
+      "triangles": [
+        1600,
+        600
+      ],
+      "kib": [
+        85,
+        39
+      ],
+      "clips": []
+    },
+    "G03": {
+      "id": "G03",
+      "name": "Sakura Canopy",
+      "Purpose and visual form": "One 7.2 m Sakura with three major branch forks; blossom clusters occupy upper 60 percent, leaving gaps through at least 35 percent of the silhouette.",
+      "Placement and scale": "Garden (-5,0,-7.5), Person (6,0,-10); repeated kit instances. Extents: 7.2 m high; crown 7 × 5.5 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+sakura from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 12,000 desktop / 3,600 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤420 KiB, mobile ≤189 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Branch pivots SWAY_A/B/C; runtime sinusoid ±0.8 degrees, periods 9/11/13 s, seed phase by instance. No authored clip. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/sakura-canopy.desktop.glb (and .mobile.glb). Root SA_G03_ROOT_00; material groups SA_G03_MESH_00 onward; one SA_G03_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Use 30 percent clusters; silhouette unchanged, no branch movement. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/sakura-canopy.desktop.glb",
+      "owner": "garden",
+      "slug": "sakura-canopy",
+      "source": "00-garden.blend",
+      "triangles": [
+        12000,
+        3600
+      ],
+      "kib": [
+        420,
+        189
+      ],
+      "clips": []
+    },
+    "G04": {
+      "id": "G04",
+      "name": "Bush Kit",
+      "Purpose and visual form": "Two rounded but asymmetric bushes with five lobe meshes merged per material; no individual modeled leaves.",
+      "Placement and scale": "Path shoulders, at least 1.4 m from centerline. Extents: 1.1 × 0.7 × 0.8 m each. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "leaf from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,100 desktop / 300 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤55 KiB, mobile ≤25 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Runtime wind at group pivot ±0.4 degrees over 12 s. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/bush-kit.desktop.glb (and .mobile.glb). Root SA_G04_ROOT_00; material groups SA_G04_MESH_00 onward; one SA_G04_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "One lobe silhouette per bush; static. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/bush-kit.desktop.glb",
+      "owner": "garden",
+      "slug": "bush-kit",
+      "source": "00-garden.blend",
+      "triangles": [
+        1100,
+        300
+      ],
+      "kib": [
+        55,
+        25
+      ],
+      "clips": []
+    },
+    "G05": {
+      "id": "G05",
+      "name": "Grass Kit",
+      "Purpose and visual form": "Three tuft shapes with opaque tapered blades, not alpha planes.",
+      "Placement and scale": "At route edges, never crossing a content anchor ray. Extents: 0.35 m height; 0.3 m footprint. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "leaf from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 240 desktop / 72 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤18 KiB, mobile ≤9 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Runtime group rotation ±1.2 degrees, 7 s loop. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/grass-kit.desktop.glb (and .mobile.glb). Root SA_G05_ROOT_00; material groups SA_G05_MESH_00 onward; one SA_G05_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Half density and static, 72 triangles per tuft. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/grass-kit.desktop.glb",
+      "owner": "garden",
+      "slug": "grass-kit",
+      "source": "00-garden.blend",
+      "triangles": [
+        240,
+        72
+      ],
+      "kib": [
+        18,
+        9
+      ],
+      "clips": []
+    },
+    "G06": {
+      "id": "G06",
+      "name": "Stone Kit",
+      "Purpose and visual form": "Four river stones with deliberately different mass and flattened bases.",
+      "Placement and scale": "Garden entry (-1.8,0,2); distributed by manifest instance list. Extents: 0.4–1.1 m longest axis. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "stone from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,200 desktop / 320 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤60 KiB, mobile ≤27 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static, no hover on decorative stones. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/stone-kit.desktop.glb (and .mobile.glb). Root SA_G06_ROOT_00; material groups SA_G06_MESH_00 onward; one SA_G06_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Keep 2 variants; preserve route marker stones. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/stone-kit.desktop.glb",
+      "owner": "garden",
+      "slug": "stone-kit",
+      "source": "00-garden.blend",
+      "triangles": [
+        1200,
+        320
+      ],
+      "kib": [
+        60,
+        27
+      ],
+      "clips": []
+    },
+    "G07": {
+      "id": "G07",
+      "name": "Water Plane",
+      "Purpose and visual form": "An opaque basin surface with softly chamfered boundary, vertex mask at shore.",
+      "Placement and scale": "Shared material; Thinker basin at (0,-0.12,-8). Extents: 12 × 0.04 × 10 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "water from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 256 desktop / 32 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤24 KiB, mobile ≤11 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Runtime two normal-free analytic waves; amplitude 0.008 m, periods 12 and 17 s. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/water-plane.desktop.glb (and .mobile.glb). Root SA_G07_ROOT_00; material groups SA_G07_MESH_00 onward; one SA_G07_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Flat material; no wave displacement or reflection target. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/water-plane.desktop.glb",
+      "owner": "garden",
+      "slug": "water-plane",
+      "source": "00-garden.blend",
+      "triangles": [
+        256,
+        32
+      ],
+      "kib": [
+        24,
+        11
+      ],
+      "clips": []
+    },
+    "G08": {
+      "id": "G08",
+      "name": "Lantern Kit",
+      "Purpose and visual form": "Low timber lantern with opaque paper faces and a warm emissive inner insert; no transparent glass.",
+      "Placement and scale": "Garden (2.8,0,-3), Story landmarks, Contact distant edge. Extents: 1.15 m high; 0.4 m square. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+paper+light from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,100 desktop / 400 mobile triangles; target 3 material draw calls before runtime batching. High binary target ≤65 KiB, mobile ≤30 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Emissive scalar only; no flicker. Interaction rises 0.35 to 0.8 in 320 ms. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/lantern-kit.desktop.glb (and .mobile.glb). Root SA_G08_ROOT_00; material groups SA_G08_MESH_00 onward; one SA_G08_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Baked glow decal; no point light. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/lantern-kit.desktop.glb",
+      "owner": "garden",
+      "slug": "lantern-kit",
+      "source": "00-garden.blend",
+      "triangles": [
+        1100,
+        400
+      ],
+      "kib": [
+        65,
+        30
+      ],
+      "clips": []
+    },
+    "G09": {
+      "id": "G09",
+      "name": "Horizon Ring",
+      "Purpose and visual form": "Eight low hill silhouettes in a 180 m radius ring, seam hidden behind the south tree bank.",
+      "Placement and scale": "(0,-0.5,0), persistent kit. Extents: 24 m maximum relief. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "distant from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,200 desktop / 480 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤55 KiB, mobile ≤25 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static; fog color follows route palette over 620 ms. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/horizon-ring.desktop.glb (and .mobile.glb). Root SA_G09_ROOT_00; material groups SA_G09_MESH_00 onward; one SA_G09_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Four silhouettes, same skyline. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/horizon-ring.desktop.glb",
+      "owner": "garden",
+      "slug": "horizon-ring",
+      "source": "00-garden.blend",
+      "triangles": [
+        1200,
+        480
+      ],
+      "kib": [
+        55,
+        25
+      ],
+      "clips": []
+    },
+    "G10": {
+      "id": "G10",
+      "name": "Foreground Fronds",
+      "Purpose and visual form": "Three offset foliage fans with curved solid leaves that create near-field occlusion without filling the center.",
+      "Placement and scale": "Garden (-1.2,0.9,4.5) and (1.5,0.7,4.0). Extents: 1.7 × 1.2 m each. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "leaf from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,500 desktop / 400 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤70 KiB, mobile ≤32 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Pivot response ±1 degree; pointer radius 140 CSS px and displacement cap 0.03 m. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/foreground-fronds.desktop.glb (and .mobile.glb). Root SA_G10_ROOT_00; material groups SA_G10_MESH_00 onward; one SA_G10_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "One fan at each edge; no pointer response. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/foreground-fronds.desktop.glb",
+      "owner": "garden",
+      "slug": "foreground-fronds",
+      "source": "00-garden.blend",
+      "triangles": [
+        1500,
+        400
+      ],
+      "kib": [
+        70,
+        32
+      ],
+      "clips": []
+    },
+    "G11": {
+      "id": "G11",
+      "name": "Distant Tree Bank",
+      "Purpose and visual form": "Five low tree silhouettes merged as one cluster, with no close branches.",
+      "Placement and scale": "Outside 28 m from every active local camera rail. Extents: 18 × 8 × 4 m cluster. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "distant from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,400 desktop / 650 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤110 KiB, mobile ≤50 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static; shared fog removes hard overlap with route trees. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/distant-tree-bank.desktop.glb (and .mobile.glb). Root SA_G11_ROOT_00; material groups SA_G11_MESH_00 onward; one SA_G11_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Two clusters total in view. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/distant-tree-bank.desktop.glb",
+      "owner": "garden",
+      "slug": "distant-tree-bank",
+      "source": "00-garden.blend",
+      "triangles": [
+        2400,
+        650
+      ],
+      "kib": [
+        110,
+        50
+      ],
+      "clips": []
+    },
+    "G12": {
+      "id": "G12",
+      "name": "Petal Kit",
+      "Purpose and visual form": "Two shallow curved petals, one narrow and one round; opaque pale surfaces avoid sorting cost.",
+      "Placement and scale": "Runtime instances in 14 × 7 × 16 m box around camera. Extents: 0.025–0.055 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "sakura from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 48 desktop / 24 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤8 KiB, mobile ≤4 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Runtime seeded drift 0.06–0.12 m/s; lifetime 14–22 s; wraps outside frustum. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/petal-kit.desktop.glb (and .mobile.glb). Root SA_G12_ROOT_00; material groups SA_G12_MESH_00 onward; one SA_G12_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "8 instances maximum; zero in reduced motion. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/petal-kit.desktop.glb",
+      "owner": "garden",
+      "slug": "petal-kit",
+      "source": "00-garden.blend",
+      "triangles": [
+        48,
+        24
+      ],
+      "kib": [
+        8,
+        4
+      ],
+      "clips": []
+    },
+    "G13": {
+      "id": "G13",
+      "name": "Arrival Gate",
+      "Purpose and visual form": "Two timber posts and an open lintel, partly covered by moss; an ordinary garden threshold, without religious signage.",
+      "Placement and scale": "(0,0,1). Extents: 3.2 m wide; 3.3 m high. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+moss from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,600 desktop / 900 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤115 KiB, mobile ≤52 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static; camera passes beneath; no door or mandatory interaction. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/arrival-gate.desktop.glb (and .mobile.glb). Root SA_G13_ROOT_00; material groups SA_G13_MESH_00 onward; one SA_G13_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Same opening and scale, remove moss relief. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/arrival-gate.desktop.glb",
+      "owner": "garden",
+      "slug": "arrival-gate",
+      "source": "00-garden.blend",
+      "triangles": [
+        2600,
+        900
+      ],
+      "kib": [
+        115,
+        52
+      ],
+      "clips": []
+    },
+    "G14": {
+      "id": "G14",
+      "name": "Wayfinding Stone",
+      "Purpose and visual form": "An oval stone with nine shallow path grooves; the grooves are abstract navigation, not tiny baked text.",
+      "Placement and scale": "(1.6,0,-8). Extents: 1.1 × 0.75 × 0.7 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "stone from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,800 desktop / 600 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤80 KiB, mobile ≤36 KiB, excluding the shared atlas.",
+      "Motion and trigger": "DOM Open garden map button aligned nearby; stone itself remains decorative. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/00-garden.blend → public/models/stay/v1/garden/wayfinding-stone.desktop.glb (and .mobile.glb). Root SA_G14_ROOT_00; material groups SA_G14_MESH_00 onward; one SA_G14_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Static silhouette with visible adjacent map control. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/garden/wayfinding-stone.desktop.glb",
+      "owner": "garden",
+      "slug": "wayfinding-stone",
+      "source": "00-garden.blend",
+      "triangles": [
+        1800,
+        600
+      ],
+      "kib": [
+        80,
+        36
+      ],
+      "clips": []
+    },
+    "P01": {
+      "id": "P01",
+      "name": "Clearing Ground",
+      "Purpose and visual form": "An irregular oval clearing bordered by root lines; grass becomes short around the reading path.",
+      "Placement and scale": "(0,0,-5). Extents: 18 × 0.2 × 24 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "moss from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 4,000 desktop / 1,100 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤170 KiB, mobile ≤77 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static, root lines are geometry not revealed text. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/01-person.blend → public/models/stay/v1/person/clearing-ground.desktop.glb (and .mobile.glb). Root SA_P01_ROOT_00; material groups SA_P01_MESH_00 onward; one SA_P01_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Flatten micro-relief; keep open center. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/person/clearing-ground.desktop.glb",
+      "owner": "person",
+      "slug": "clearing-ground",
+      "source": "01-person.blend",
+      "triangles": [
+        4000,
+        1100
+      ],
+      "kib": [
+        170,
+        77
+      ],
+      "clips": []
+    },
+    "P02": {
+      "id": "P02",
+      "name": "Paired Bench",
+      "Purpose and visual form": "Two simple stone sitting forms sharing one timber plank; suggests company without depicting identifiable people.",
+      "Placement and scale": "(-2.2,0,-9). Extents: 2.7 × 0.55 × 0.8 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "stone+bark from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,800 desktop / 650 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤90 KiB, mobile ≤41 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static; camera reveals second support at People beat. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/01-person.blend → public/models/stay/v1/person/paired-bench.desktop.glb (and .mobile.glb). Root SA_P02_ROOT_00; material groups SA_P02_MESH_00 onward; one SA_P02_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Both supports remain visible; no replacement portrait. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/person/paired-bench.desktop.glb",
+      "owner": "person",
+      "slug": "paired-bench",
+      "source": "01-person.blend",
+      "triangles": [
+        1800,
+        650
+      ],
+      "kib": [
+        90,
+        41
+      ],
+      "clips": []
+    },
+    "P03": {
+      "id": "P03",
+      "name": "Root Arch",
+      "Purpose and visual form": "Two low roots converge beside the path, visually joining only in the final third of the camera route.",
+      "Placement and scale": "(2.8,0,-11). Extents: 3.4 × 0.7 × 2.4 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,200 desktop / 700 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤95 KiB, mobile ≤43 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static. Camera parallax creates convergence; never morph roots to imply a factual relationship. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/01-person.blend → public/models/stay/v1/person/root-arch.desktop.glb (and .mobile.glb). Root SA_P03_ROOT_00; material groups SA_P03_MESH_00 onward; one SA_P03_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Single merged mesh, same convergence framing. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/person/root-arch.desktop.glb",
+      "owner": "person",
+      "slug": "root-arch",
+      "source": "01-person.blend",
+      "triangles": [
+        2200,
+        700
+      ],
+      "kib": [
+        95,
+        43
+      ],
+      "clips": []
+    },
+    "B01": {
+      "id": "B01",
+      "name": "Foundation",
+      "Purpose and visual form": "Six stone footings arranged under the timber frame, each with a visible top seating plane.",
+      "Placement and scale": "At x ±2.5 and z 0,-3,-6. Extents: 0.6 × 0.35 × 0.6 m each. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "stone from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,800 desktop / 600 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤80 KiB, mobile ≤36 KiB, excluding the shared atlas.",
+      "Motion and trigger": "BUILD_FOUNDATION, 1.2 s; rise from y=-0.35 to 0; six 0.12 s staggered starts. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/02-builder.blend → public/models/stay/v1/builder/foundation.desktop.glb (and .mobile.glb). Root SA_B01_ROOT_00; material groups SA_B01_MESH_00 onward; one SA_B01_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Same six footings; sample final pose in low-power mode. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/builder/foundation.desktop.glb",
+      "owner": "builder",
+      "slug": "foundation",
+      "source": "02-builder.blend",
+      "triangles": [
+        1800,
+        600
+      ],
+      "kib": [
+        80,
+        36
+      ],
+      "clips": [
+        {
+          "name": "BUILD_FOUNDATION",
+          "duration": 1.2
+        }
+      ]
+    },
+    "B02": {
+      "id": "B02",
+      "name": "Posts",
+      "Purpose and visual form": "Six square timber posts with shallow joinery at their tops; separate transform nodes.",
+      "Placement and scale": "At each foundation center. Extents: 0.22 × 3.1 × 0.22 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,400 desktop / 720 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤105 KiB, mobile ≤48 KiB, excluding the shared atlas.",
+      "Motion and trigger": "BUILD_POSTS, 1.44 s; grow by translation from ground, not rubber scale; 0.12 s stagger. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/02-builder.blend → public/models/stay/v1/builder/posts.desktop.glb (and .mobile.glb). Root SA_B02_ROOT_00; material groups SA_B02_MESH_00 onward; one SA_B02_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Six simplified posts; preserve construction sequence at low density. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/builder/posts.desktop.glb",
+      "owner": "builder",
+      "slug": "posts",
+      "source": "02-builder.blend",
+      "triangles": [
+        2400,
+        720
+      ],
+      "kib": [
+        105,
+        48
+      ],
+      "clips": [
+        {
+          "name": "BUILD_POSTS",
+          "duration": 1.44
+        }
+      ]
+    },
+    "B03": {
+      "id": "B03",
+      "name": "Beams",
+      "Purpose and visual form": "Five cross beams and two longitudinal beams, with square mortise silhouettes visible against sky.",
+      "Placement and scale": "y=3.1; z 0,-3,-6. Extents: Span 5.2 m; section 0.2 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 3,000 desktop / 900 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤125 KiB, mobile ≤57 KiB, excluding the shared atlas.",
+      "Motion and trigger": "BUILD_BEAMS, 1.6 s; descend 0.8 m and rotate from 4 degrees to 0; 0.1 s stagger. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/02-builder.blend → public/models/stay/v1/builder/beams.desktop.glb (and .mobile.glb). Root SA_B03_ROOT_00; material groups SA_B03_MESH_00 onward; one SA_B03_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "No bevel loops; same joins. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/builder/beams.desktop.glb",
+      "owner": "builder",
+      "slug": "beams",
+      "source": "02-builder.blend",
+      "triangles": [
+        3000,
+        900
+      ],
+      "kib": [
+        125,
+        57
+      ],
+      "clips": [
+        {
+          "name": "BUILD_BEAMS",
+          "duration": 1.6
+        }
+      ]
+    },
+    "B04": {
+      "id": "B04",
+      "name": "Roof Slats",
+      "Purpose and visual form": "An incomplete open slatted roof that preserves sky and produces a repeated directional light rhythm.",
+      "Placement and scale": "(0,3.35,-3). Extents: 6 × 0.25 × 7 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 3,600 desktop / 1,000 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤150 KiB, mobile ≤68 KiB, excluding the shared atlas.",
+      "Motion and trigger": "BUILD_ROOF, 1.5 s; 12 strips translate 0.5 m in sequence; settle without overshoot. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/02-builder.blend → public/models/stay/v1/builder/roof-slats.desktop.glb (and .mobile.glb). Root SA_B04_ROOT_00; material groups SA_B04_MESH_00 onward; one SA_B04_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Six wider slats; optical coverage remains 55 percent. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/builder/roof-slats.desktop.glb",
+      "owner": "builder",
+      "slug": "roof-slats",
+      "source": "02-builder.blend",
+      "triangles": [
+        3600,
+        1000
+      ],
+      "kib": [
+        150,
+        68
+      ],
+      "clips": [
+        {
+          "name": "BUILD_ROOF",
+          "duration": 1.5
+        }
+      ]
+    },
+    "B05": {
+      "id": "B05",
+      "name": "Workbench",
+      "Purpose and visual form": "A thick timber workbench with five shallow artifact sockets, wide enough to distinguish the five projects.",
+      "Placement and scale": "(0,0,-4.8). Extents: 4.2 × 0.9 × 1.05 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+metal from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,600 desktop / 800 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤120 KiB, mobile ≤54 KiB, excluding the shared atlas.",
+      "Motion and trigger": "BUILD_BENCH, 1.2 s; slide from x=1.2 to 0; feet remain on ground. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/02-builder.blend → public/models/stay/v1/builder/workbench.desktop.glb (and .mobile.glb). Root SA_B05_ROOT_00; material groups SA_B05_MESH_00 onward; one SA_B05_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Same bench, no hidden drawers. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/builder/workbench.desktop.glb",
+      "owner": "builder",
+      "slug": "workbench",
+      "source": "02-builder.blend",
+      "triangles": [
+        2600,
+        800
+      ],
+      "kib": [
+        120,
+        54
+      ],
+      "clips": [
+        {
+          "name": "BUILD_BENCH",
+          "duration": 1.2
+        }
+      ]
+    },
+    "B06": {
+      "id": "B06",
+      "name": "Artifact Tokens",
+      "Purpose and visual form": "Five small unlabelled physical forms: tiled board, paper stack, committee arc, terminal slab and archive book.",
+      "Placement and scale": "Workbench x=-1.6,-0.8,0,0.8,1.6; y=0.94. Extents: Each ≤0.5 m cube. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "paper+stone+metal from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 4,200 desktop / 1,400 mobile triangles; target 3 material draw calls before runtime batching. High binary target ≤190 KiB, mobile ≤86 KiB, excluding the shared atlas.",
+      "Motion and trigger": "BUILD_TOKENS, 1.8 s; lift 0.08 m with 0.14 s stagger; settle at original y. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/02-builder.blend → public/models/stay/v1/builder/artifact-tokens.desktop.glb (and .mobile.glb). Root SA_B06_ROOT_00; material groups SA_B06_MESH_00 onward; one SA_B06_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Three materials retained; DOM text supplies all labels. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/builder/artifact-tokens.desktop.glb",
+      "owner": "builder",
+      "slug": "artifact-tokens",
+      "source": "02-builder.blend",
+      "triangles": [
+        4200,
+        1400
+      ],
+      "kib": [
+        190,
+        86
+      ],
+      "clips": [
+        {
+          "name": "BUILD_TOKENS",
+          "duration": 1.8
+        }
+      ]
+    },
+    "T01": {
+      "id": "T01",
+      "name": "Tea Deck",
+      "Purpose and visual form": "A low open tea platform on the basin edge; two timber steps and a partial lintel frame distant water.",
+      "Placement and scale": "(-3.5,0,-5). Extents: 4 × 0.3 × 4 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,400 desktop / 750 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤105 KiB, mobile ≤48 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static; no seating animation. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/03-thinker.blend → public/models/stay/v1/thinker/tea-deck.desktop.glb (and .mobile.glb). Root SA_T01_ROOT_00; material groups SA_T01_MESH_00 onward; one SA_T01_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Merge underside supports. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/thinker/tea-deck.desktop.glb",
+      "owner": "thinker",
+      "slug": "tea-deck",
+      "source": "03-thinker.blend",
+      "triangles": [
+        2400,
+        750
+      ],
+      "kib": [
+        105,
+        48
+      ],
+      "clips": []
+    },
+    "T02": {
+      "id": "T02",
+      "name": "Freedom Stones",
+      "Purpose and visual form": "Seven distinct stepping stones on the far shore in a shallow arc.",
+      "Placement and scale": "x=-3,-2,-1,0,1,2,3; z=-10,-10.6,-11,-11.2,-11,-10.6,-10. Extents: 0.6 × 0.18 × 0.5 m each. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "stone from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,100 desktop / 630 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤95 KiB, mobile ≤43 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static meshes; DOM list highlights one matching stone without movement. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/03-thinker.blend → public/models/stay/v1/thinker/freedom-stones.desktop.glb (and .mobile.glb). Root SA_T02_ROOT_00; material groups SA_T02_MESH_00 onward; one SA_T02_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Seven stones retained, 90 triangles each. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/thinker/freedom-stones.desktop.glb",
+      "owner": "thinker",
+      "slug": "freedom-stones",
+      "source": "03-thinker.blend",
+      "triangles": [
+        2100,
+        630
+      ],
+      "kib": [
+        95,
+        43
+      ],
+      "clips": []
+    },
+    "T03": {
+      "id": "T03",
+      "name": "Tea Bowl Scroll",
+      "Purpose and visual form": "A clay bowl and an unlettered half-open paper scroll on the deck.",
+      "Placement and scale": "(-2.8,0.42,-5.7). Extents: Bowl diameter 0.18 m; scroll 0.7 × 0.25 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "clay+paper from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,600 desktop / 450 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤75 KiB, mobile ≤34 KiB, excluding the shared atlas.",
+      "Motion and trigger": "THINKER_SCROLL, 2 s; curl relaxes 12 degrees during Excellence, paused otherwise. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/03-thinker.blend → public/models/stay/v1/thinker/tea-bowl-scroll.desktop.glb (and .mobile.glb). Root SA_T03_ROOT_00; material groups SA_T03_MESH_00 onward; one SA_T03_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Static open scroll; no paper deformation. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/thinker/tea-bowl-scroll.desktop.glb",
+      "owner": "thinker",
+      "slug": "tea-bowl-scroll",
+      "source": "03-thinker.blend",
+      "triangles": [
+        1600,
+        450
+      ],
+      "kib": [
+        75,
+        34
+      ],
+      "clips": [
+        {
+          "name": "THINKER_SCROLL",
+          "duration": 2.0
+        }
+      ]
+    },
+    "L01": {
+      "id": "L01",
+      "name": "Courtyard",
+      "Purpose and visual form": "A circular compacted-earth meeting court with three converging stone approach paths.",
+      "Placement and scale": "(0,0,-5). Extents: 12 m diameter. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "stone+moss from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 4,200 desktop / 1,400 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤185 KiB, mobile ≤84 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static paths; runtime restrained light progression follows each approach. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/04-leader.blend → public/models/stay/v1/leader/courtyard.desktop.glb (and .mobile.glb). Root SA_L01_ROOT_00; material groups SA_L01_MESH_00 onward; one SA_L01_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Keep three entrances and open center. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/leader/courtyard.desktop.glb",
+      "owner": "leader",
+      "slug": "courtyard",
+      "source": "04-leader.blend",
+      "triangles": [
+        4200,
+        1400
+      ],
+      "kib": [
+        185,
+        84
+      ],
+      "clips": []
+    },
+    "L02": {
+      "id": "L02",
+      "name": "Coordination Posts",
+      "Purpose and visual form": "Five waist-high timber markers around a semicircle; no human bodies, flags or implied participant counts.",
+      "Placement and scale": "Radius 3.2 m around (0,0,-5). Extents: 0.85 m high, 0.16 m thick. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,500 desktop / 500 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤70 KiB, mobile ≤32 KiB, excluding the shared atlas.",
+      "Motion and trigger": "LEADER_CONVERGE, 1.8 s; rotate in place ≤8 degrees to face center; no marching. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/04-leader.blend → public/models/stay/v1/leader/coordination-posts.desktop.glb (and .mobile.glb). Root SA_L02_ROOT_00; material groups SA_L02_MESH_00 onward; one SA_L02_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Static inward pose; keep five process markers, not five students. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/leader/coordination-posts.desktop.glb",
+      "owner": "leader",
+      "slug": "coordination-posts",
+      "source": "04-leader.blend",
+      "triangles": [
+        1500,
+        500
+      ],
+      "kib": [
+        70,
+        32
+      ],
+      "clips": [
+        {
+          "name": "LEADER_CONVERGE",
+          "duration": 1.8
+        }
+      ]
+    },
+    "L03": {
+      "id": "L03",
+      "name": "Lesson Rail",
+      "Purpose and visual form": "A timber rail supporting three blank paper holders for lesson, debate and simulation evidence.",
+      "Placement and scale": "(3,0,-7). Extents: 2.8 × 1.5 × 0.45 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+paper from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,200 desktop / 700 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤100 KiB, mobile ≤45 KiB, excluding the shared atlas.",
+      "Motion and trigger": "LEADER_RAIL, 1.2 s; holders lift 0.12 m in 0.16 s stagger. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/04-leader.blend → public/models/stay/v1/leader/lesson-rail.desktop.glb (and .mobile.glb). Root SA_L03_ROOT_00; material groups SA_L03_MESH_00 onward; one SA_L03_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Static holders; real evidence remains HTML if supplied. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/leader/lesson-rail.desktop.glb",
+      "owner": "leader",
+      "slug": "lesson-rail",
+      "source": "04-leader.blend",
+      "triangles": [
+        2200,
+        700
+      ],
+      "kib": [
+        100,
+        45
+      ],
+      "clips": [
+        {
+          "name": "LEADER_RAIL",
+          "duration": 1.2
+        }
+      ]
+    },
+    "S01": {
+      "id": "S01",
+      "name": "Lantern Path",
+      "Purpose and visual form": "A curved path with four clear stopping bays; near vegetation hides the next bay until approach.",
+      "Placement and scale": "Local centers (-1,0,-2),(2,0,-6),(-2,0,-10),(1,0,-14). Extents: 2.2 m path width; each bay 3 m diameter. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "stone+moss from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 5,200 desktop / 1,700 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤220 KiB, mobile ≤99 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static. Current bay determined by route progress; no autoplay route change. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/05-stories.blend → public/models/stay/v1/stories/lantern-path.desktop.glb (and .mobile.glb). Root SA_S01_ROOT_00; material groups SA_S01_MESH_00 onward; one SA_S01_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Straighten curve by 40 percent and keep four bays. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/stories/lantern-path.desktop.glb",
+      "owner": "stories",
+      "slug": "lantern-path",
+      "source": "05-stories.blend",
+      "triangles": [
+        5200,
+        1700
+      ],
+      "kib": [
+        220,
+        99
+      ],
+      "clips": []
+    },
+    "S02": {
+      "id": "S02",
+      "name": "Story Lantern",
+      "Purpose and visual form": "A taller variant of G08 with a pivoted paper shutter, authored once and instanced four times.",
+      "Placement and scale": "Each bay center offset 1.2 m right of path. Extents: 1.6 × 0.45 × 0.45 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+paper+light from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 1,800 desktop / 600 mobile triangles; target 3 material draw calls before runtime batching. High binary target ≤90 KiB, mobile ≤41 KiB, excluding the shared atlas.",
+      "Motion and trigger": "STORY_SHUTTER, 0.6 s; open from 0 to 18 degrees when reading selected; reverse on close. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/05-stories.blend → public/models/stay/v1/stories/story-lantern.desktop.glb (and .mobile.glb). Root SA_S02_ROOT_00; material groups SA_S02_MESH_00 onward; one SA_S02_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Shutter fixed at 12 degrees; emission state only. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/stories/story-lantern.desktop.glb",
+      "owner": "stories",
+      "slug": "story-lantern",
+      "source": "05-stories.blend",
+      "triangles": [
+        1800,
+        600
+      ],
+      "kib": [
+        90,
+        41
+      ],
+      "clips": [
+        {
+          "name": "STORY_SHUTTER",
+          "duration": 0.6
+        }
+      ]
+    },
+    "S03": {
+      "id": "S03",
+      "name": "Path Screen",
+      "Purpose and visual form": "Three dark timber/leaf screens that keep visited lamps visible in depth while hiding unreached content.",
+      "Placement and scale": "Alternating sides at z=-4,-8,-12. Extents: 2 × 2.2 × 0.25 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+leaf from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 3,000 desktop / 850 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤130 KiB, mobile ≤59 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static. No total blackout; minimum environmental luminance maintained. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/05-stories.blend → public/models/stay/v1/stories/path-screen.desktop.glb (and .mobile.glb). Root SA_S03_ROOT_00; material groups SA_S03_MESH_00 onward; one SA_S03_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Remove center screen, retain end silhouettes. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/stories/path-screen.desktop.glb",
+      "owner": "stories",
+      "slug": "path-screen",
+      "source": "05-stories.blend",
+      "triangles": [
+        3000,
+        850
+      ],
+      "kib": [
+        130,
+        59
+      ],
+      "clips": []
+    },
+    "W01": {
+      "id": "W01",
+      "name": "Archive Pavilion",
+      "Purpose and visual form": "A long open workshop gallery with five bays, one aisle and clear views to the garden.",
+      "Placement and scale": "(0,0,-10). Extents: 9 × 4.2 × 28 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+stone from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 14,000 desktop / 4,200 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤590 KiB, mobile ≤266 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static architectural shell; no repeated construction from Builder. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/06-work.blend → public/models/stay/v1/work/archive-pavilion.desktop.glb (and .mobile.glb). Root SA_W01_ROOT_00; material groups SA_W01_MESH_00 onward; one SA_W01_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Five bays retained, roof reduced to four main beams. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/work/archive-pavilion.desktop.glb",
+      "owner": "work",
+      "slug": "archive-pavilion",
+      "source": "06-work.blend",
+      "triangles": [
+        14000,
+        4200
+      ],
+      "kib": [
+        590,
+        266
+      ],
+      "clips": []
+    },
+    "W02": {
+      "id": "W02",
+      "name": "Planner Station",
+      "Purpose and visual form": "A waist-height schedule table with a 5-by-3 shallow grid and 12 separate unlettered tiles; one amber break spacer.",
+      "Placement and scale": "(-2.2,0,-2). Extents: 2.6 × 1 × 1.4 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+paper+accent from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 4,200 desktop / 1,300 mobile triangles; target 3 material draw calls before runtime batching. High binary target ≤190 KiB, mobile ≤86 KiB, excluding the shared atlas.",
+      "Motion and trigger": "WORK_PLANNER, 6 s; tiles reorder, conflicting tile moves one column, break spacer inserts, final arrangement holds. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/06-work.blend → public/models/stay/v1/work/planner-station.desktop.glb (and .mobile.glb). Root SA_W02_ROOT_00; material groups SA_W02_MESH_00 onward; one SA_W02_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Six tiles plus visible grid; DOM retains full explanation. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/work/planner-station.desktop.glb",
+      "owner": "work",
+      "slug": "planner-station",
+      "source": "06-work.blend",
+      "triangles": [
+        4200,
+        1300
+      ],
+      "kib": [
+        190,
+        86
+      ],
+      "clips": [
+        {
+          "name": "WORK_PLANNER",
+          "duration": 6.0
+        }
+      ]
+    },
+    "W03": {
+      "id": "W03",
+      "name": "Logger Station",
+      "Purpose and visual form": "A slanted paper table and thin graph frame; chart labels, values and estimate line stay in DOM/SVG.",
+      "Placement and scale": "(2.2,0,-7). Extents: 2.6 × 1.5 × 1.3 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+paper from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 3,000 desktop / 900 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤135 KiB, mobile ≤61 KiB, excluding the shared atlas.",
+      "Motion and trigger": "WORK_LOGGER, 5 s; three paper leaves translate from stack into frame, 0.3 s stagger. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/06-work.blend → public/models/stay/v1/work/logger-station.desktop.glb (and .mobile.glb). Root SA_W03_ROOT_00; material groups SA_W03_MESH_00 onward; one SA_W03_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "One paper stack; graph remains readable SVG. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/work/logger-station.desktop.glb",
+      "owner": "work",
+      "slug": "logger-station",
+      "source": "06-work.blend",
+      "triangles": [
+        3000,
+        900
+      ],
+      "kib": [
+        135,
+        61
+      ],
+      "clips": [
+        {
+          "name": "WORK_LOGGER",
+          "duration": 5.0
+        }
+      ]
+    },
+    "W04": {
+      "id": "W04",
+      "name": "Mun Station",
+      "Purpose and visual form": "A committee board with three rotating panels and an arc of abstract seats, explicitly illustrative.",
+      "Placement and scale": "(-2.2,0,-12). Extents: 2.8 × 1.8 × 1.5 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+paper from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 3,500 desktop / 1,000 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤155 KiB, mobile ≤70 KiB, excluding the shared atlas.",
+      "Motion and trigger": "WORK_MUN, 4 s; three panels rotate 12 degrees to front then weekly cycle marker settles. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/06-work.blend → public/models/stay/v1/work/mun-station.desktop.glb (and .mobile.glb). Root SA_W04_ROOT_00; material groups SA_W04_MESH_00 onward; one SA_W04_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Three panels retained; no seat animation. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/work/mun-station.desktop.glb",
+      "owner": "work",
+      "slug": "mun-station",
+      "source": "06-work.blend",
+      "triangles": [
+        3500,
+        1000
+      ],
+      "kib": [
+        155,
+        70
+      ],
+      "clips": [
+        {
+          "name": "WORK_MUN",
+          "duration": 4.0
+        }
+      ]
+    },
+    "W05": {
+      "id": "W05",
+      "name": "Snrled Station",
+      "Purpose and visual form": "A dark terminal plinth with a shallow luminous display inset; actual text and logic are DOM.",
+      "Placement and scale": "(2.2,0,-17). Extents: 2.4 × 1.5 × 1.2 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "metal+light from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,600 desktop / 800 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤115 KiB, mobile ≤52 KiB, excluding the shared atlas.",
+      "Motion and trigger": "WORK_SNRLED, 6 s; a single receipt token moves through three slots; no animated personal payment data. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/06-work.blend → public/models/stay/v1/work/snrled-station.desktop.glb (and .mobile.glb). Root SA_W05_ROOT_00; material groups SA_W05_MESH_00 onward; one SA_W05_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Static terminal, DOM stepper provides logic. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/work/snrled-station.desktop.glb",
+      "owner": "work",
+      "slug": "snrled-station",
+      "source": "06-work.blend",
+      "triangles": [
+        2600,
+        800
+      ],
+      "kib": [
+        115,
+        52
+      ],
+      "clips": [
+        {
+          "name": "WORK_SNRLED",
+          "duration": 6.0
+        }
+      ]
+    },
+    "W06": {
+      "id": "W06",
+      "name": "Aura Station",
+      "Purpose and visual form": "A five-slot archive cabinet whose unlettered sheets align from different offsets into one ordered stack.",
+      "Placement and scale": "(-2.2,0,-22). Extents: 2.6 × 1.8 × 1.2 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+paper from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 3,800 desktop / 1,100 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤170 KiB, mobile ≤77 KiB, excluding the shared atlas.",
+      "Motion and trigger": "WORK_AURA, 5 s; five sheets align in 0.18 s stagger; no private source text baked. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/06-work.blend → public/models/stay/v1/work/aura-station.desktop.glb (and .mobile.glb). Root SA_W06_ROOT_00; material groups SA_W06_MESH_00 onward; one SA_W06_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Static aligned stack. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/work/aura-station.desktop.glb",
+      "owner": "work",
+      "slug": "aura-station",
+      "source": "06-work.blend",
+      "triangles": [
+        3800,
+        1100
+      ],
+      "kib": [
+        170,
+        77
+      ],
+      "clips": [
+        {
+          "name": "WORK_AURA",
+          "duration": 5.0
+        }
+      ]
+    },
+    "F01": {
+      "id": "F01",
+      "name": "Opening Canopy",
+      "Purpose and visual form": "Two tree banks form a narrow entrance then peel outward in the sightline as the camera advances; trunks do not move.",
+      "Placement and scale": "x ±5; z=0 through -10. Extents: 14 × 8 × 12 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+leaf from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 8,500 desktop / 2,400 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤360 KiB, mobile ≤162 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static. Reveal is camera motion and occlusion, not disappearing trees. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/07-future.blend → public/models/stay/v1/future/opening-canopy.desktop.glb (and .mobile.glb). Root SA_F01_ROOT_00; material groups SA_F01_MESH_00 onward; one SA_F01_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Sparse crowns preserve opening silhouette. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/future/opening-canopy.desktop.glb",
+      "owner": "future",
+      "slug": "opening-canopy",
+      "source": "07-future.blend",
+      "triangles": [
+        8500,
+        2400
+      ],
+      "kib": [
+        360,
+        162
+      ],
+      "clips": []
+    },
+    "F02": {
+      "id": "F02",
+      "name": "Horizon Path",
+      "Purpose and visual form": "A widening pale path that starts 2.4 m wide and opens to 6 m before dissolving into grass.",
+      "Placement and scale": "Centerline (0,0,2) to (0,0,-15). Extents: 17 m long. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "stone+moss from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 3,000 desktop / 850 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤130 KiB, mobile ≤59 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static; material transition at far end is vertex color, not alpha fade. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/07-future.blend → public/models/stay/v1/future/horizon-path.desktop.glb (and .mobile.glb). Root SA_F02_ROOT_00; material groups SA_F02_MESH_00 onward; one SA_F02_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Same width progression. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/future/horizon-path.desktop.glb",
+      "owner": "future",
+      "slug": "horizon-path",
+      "source": "07-future.blend",
+      "triangles": [
+        3000,
+        850
+      ],
+      "kib": [
+        130,
+        59
+      ],
+      "clips": []
+    },
+    "F03": {
+      "id": "F03",
+      "name": "Distant Marker",
+      "Purpose and visual form": "One uninscribed vertical stone far beyond the path; a direction without a trophy or finish arch.",
+      "Placement and scale": "(1,0,-38). Extents: 1.8 × 0.4 × 0.3 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "stone from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 500 desktop / 160 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤25 KiB, mobile ≤12 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static; remains distant at final camera pose. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/07-future.blend → public/models/stay/v1/future/distant-marker.desktop.glb (and .mobile.glb). Root SA_F03_ROOT_00; material groups SA_F03_MESH_00 onward; one SA_F03_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Same silhouette; never enlarges into achievement. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/future/distant-marker.desktop.glb",
+      "owner": "future",
+      "slug": "distant-marker",
+      "source": "07-future.blend",
+      "triangles": [
+        500,
+        160
+      ],
+      "kib": [
+        25,
+        12
+      ],
+      "clips": []
+    },
+    "A01": {
+      "id": "A01",
+      "name": "Archive Frame",
+      "Purpose and visual form": "Nine timber bays rise around an initially open garden court; shelves form a legible spatial spine.",
+      "Placement and scale": "(0,0,-6). Extents: 10 × 5 × 12 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+stone from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 10,000 desktop / 3,000 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤420 KiB, mobile ≤189 KiB, excluding the shared atlas.",
+      "Motion and trigger": "AURA_STRUCTURE, 3 s; frame rotates and lifts from resting fragments by ≤2.5 m, ordered by bay. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/08-aura.blend → public/models/stay/v1/aura/archive-frame.desktop.glb (and .mobile.glb). Root SA_A01_ROOT_00; material groups SA_A01_MESH_00 onward; one SA_A01_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Four main bays; nine logical nodes retained in HTML. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/aura/archive-frame.desktop.glb",
+      "owner": "aura",
+      "slug": "archive-frame",
+      "source": "08-aura.blend",
+      "triangles": [
+        10000,
+        3000
+      ],
+      "kib": [
+        420,
+        189
+      ],
+      "clips": [
+        {
+          "name": "AURA_STRUCTURE",
+          "duration": 3.0
+        }
+      ]
+    },
+    "A02": {
+      "id": "A02",
+      "name": "Evidence Documents",
+      "Purpose and visual form": "Nine unlettered sheets, each with three shallow embossed bands; do not contain screenshots of private notes.",
+      "Placement and scale": "Around (0,1.6,-7), radius 3.6 m. Extents: 0.6 × 0.85 × 0.008 m each. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "paper from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,800 desktop / 900 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤125 KiB, mobile ≤57 KiB, excluding the shared atlas.",
+      "Motion and trigger": "AURA_DOCUMENTS, 4 s; disordered positions converge into a nine-node arc; max rotation 22 degrees. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/08-aura.blend → public/models/stay/v1/aura/evidence-documents.desktop.glb (and .mobile.glb). Root SA_A02_ROOT_00; material groups SA_A02_MESH_00 onward; one SA_A02_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Nine rigid planes; no curl geometry. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/aura/evidence-documents.desktop.glb",
+      "owner": "aura",
+      "slug": "evidence-documents",
+      "source": "08-aura.blend",
+      "triangles": [
+        2800,
+        900
+      ],
+      "kib": [
+        125,
+        57
+      ],
+      "clips": [
+        {
+          "name": "AURA_DOCUMENTS",
+          "duration": 4.0
+        }
+      ]
+    },
+    "A03": {
+      "id": "A03",
+      "name": "Relationship Filaments",
+      "Purpose and visual form": "Twelve thin solid curved strands connecting the nine public topic nodes; not a psychological certainty graph.",
+      "Placement and scale": "Between A02 anchors in archive court. Extents: 0.012 m strand radius. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "accent from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,400 desktop / 720 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤105 KiB, mobile ≤48 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Runtime channel AURA_CONNECTIONS, 2 s; reveal by runtime draw range; animations=[] and no authored clip. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/08-aura.blend → public/models/stay/v1/aura/relationship-filaments.desktop.glb (and .mobile.glb). Root SA_A03_ROOT_00; material groups SA_A03_MESH_00 onward; one SA_A03_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "DOM/SVG links replace strands in low tier. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/aura/relationship-filaments.desktop.glb",
+      "owner": "aura",
+      "slug": "relationship-filaments",
+      "source": "08-aura.blend",
+      "triangles": [
+        2400,
+        720
+      ],
+      "kib": [
+        105,
+        48
+      ],
+      "clips": []
+    },
+    "A04": {
+      "id": "A04",
+      "name": "Model Spine",
+      "Purpose and visual form": "A thin timber spine with five branch shelves, corresponding to Discovery, Evidence, Understanding, Model and Expression.",
+      "Placement and scale": "(0,0,-9). Extents: 4 m high; 3.5 m wide. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "bark+accent from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 3,200 desktop / 900 mobile triangles; target 2 material draw calls before runtime batching. High binary target ≤140 KiB, mobile ≤63 KiB, excluding the shared atlas.",
+      "Motion and trigger": "AURA_MODEL, 3 s; shelves translate up ≤0.6 m, documents settle into sockets. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/08-aura.blend → public/models/stay/v1/aura/model-spine.desktop.glb (and .mobile.glb). Root SA_A04_ROOT_00; material groups SA_A04_MESH_00 onward; one SA_A04_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Final static pose, steps in ordinary document flow. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/aura/model-spine.desktop.glb",
+      "owner": "aura",
+      "slug": "model-spine",
+      "source": "08-aura.blend",
+      "triangles": [
+        3200,
+        900
+      ],
+      "kib": [
+        140,
+        63
+      ],
+      "clips": [
+        {
+          "name": "AURA_MODEL",
+          "duration": 3.0
+        }
+      ]
+    },
+    "C01": {
+      "id": "C01",
+      "name": "Open Ground",
+      "Purpose and visual form": "An almost empty circular garden ending with a low grass boundary and one clear outward path.",
+      "Placement and scale": "(0,0,-4). Extents: 20 × 0.15 × 20 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "moss from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 2,500 desktop / 650 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤110 KiB, mobile ≤50 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static. No final cinematic transformation. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/09-contact.blend → public/models/stay/v1/contact/open-ground.desktop.glb (and .mobile.glb). Root SA_C01_ROOT_00; material groups SA_C01_MESH_00 onward; one SA_C01_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Low mesh, same open area. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/contact/open-ground.desktop.glb",
+      "owner": "contact",
+      "slug": "open-ground",
+      "source": "09-contact.blend",
+      "triangles": [
+        2500,
+        650
+      ],
+      "kib": [
+        110,
+        50
+      ],
+      "clips": []
+    },
+    "C02": {
+      "id": "C02",
+      "name": "Resting Stone",
+      "Purpose and visual form": "A single smooth stone at the right foreground anchors the empty composition.",
+      "Placement and scale": "(3,0,-3). Extents: 1.2 × 0.45 × 0.8 m. Positions are local to the owning route unless explicitly marked world. Ground-contact pivot at local base center; scale applied. Camera relationship: keep the silhouette visible at the owning route’s landmark beat; detail is readable from 1.8–8 m, while G09/G11 are distant silhouettes. Do not place this mesh inside the reading clearance volume.",
+      "Surface and light": "stone from the material table. Use the owning scene’s light multiplier; no extra material-specific point light except G08/S02 decorative glow. Geometry cap: 900 desktop / 260 mobile triangles; target 1 material draw calls before runtime batching. High binary target ≤40 KiB, mobile ≤18 KiB, excluding the shared atlas.",
+      "Motion and trigger": "Static. No contact interaction is bound to the stone. Scroll samples the route bands in Parts V–XIV; ambient effects use elapsed visible time and stop when hidden. Cursor behavior is none unless explicitly specified above; all meaningful interaction goes through matching HTML controls. States are unloaded, loading, ready, active, settled, failed and released. Active may seek in either direction; failed retains the poster and readable content.",
+      "Export and hooks": "scripts/blender/stay-awhile/09-contact.blend → public/models/stay/v1/contact/resting-stone.desktop.glb (and .mobile.glb). Root SA_C02_ROOT_00; material groups SA_C02_MESH_00 onward; one SA_C02_HOTSPOT_00 only when this asset is an interactive landmark. Clip names are the uppercase action names explicitly identified as authored clips above; runtime channels and SWAY pivot names are not clips. A03 has animations=[]; static assets also have animations=[].",
+      "Fallback and performance": "Same stone, no surface bevel. Reduced motion shows its settled silhouette in the route poster; any explanatory sequence is reproduced as ordered HTML steps. Share geometry and material handles across instances; never clone a texture per placement. Dispose only when the asset cache reference count reaches zero. This object carries no private text, personal likeness, credential scan or invented evidence.",
+      "path": "public/models/stay/v1/contact/resting-stone.desktop.glb",
+      "owner": "contact",
+      "slug": "resting-stone",
+      "source": "09-contact.blend",
+      "triangles": [
+        900,
+        260
+      ],
+      "kib": [
+        40,
+        18
+      ],
+      "clips": []
+    }
+  },
+  "routes": {
+    "garden": {
+      "id": "garden",
+      "knots": [
+        {
+          "index": 0,
+          "band": [
+            0.0,
+            0.12
+          ],
+          "start": [
+            0.0,
+            0.9,
+            6.0
+          ],
+          "end": [
+            0.0,
+            1.1,
+            4.0
+          ],
+          "look": [
+            0.0,
+            1.2,
+            -3.0
+          ],
+          "reading": "center, x=50%, y=42%, 11ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.42,
+            "widthCh": 11,
+            "alignment": "center"
+          },
+          "objectScore": "ENTRY_DARK → PATH_REVEAL. G10 occupies only outer thirds; G13 is visible behind. Fog density .026→.022; global directional multiplier .65→.8. No blank black loader. Title is already readable in SSR and uses the arrival mask only after enhancement."
+        },
+        {
+          "index": 1,
+          "band": [
+            0.12,
+            0.26
+          ],
+          "start": [
+            0.0,
+            1.1,
+            4.0
+          ],
+          "end": [
+            0.0,
+            1.35,
+            1.0
+          ],
+          "look": [
+            0.0,
+            1.2,
+            -5.0
+          ],
+          "reading": "center, x=50%, y=58%, 35ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.58,
+            "widthCh": 35,
+            "alignment": "center"
+          },
+          "objectScore": "PATH_REVEAL → WORLD_REVEAL. Camera passes open gate. Foreground fronds leave frame by parallax; reveal path stones through occlusion. Sakura canopy enters upper-left; title remains still until .24. The new subtitle is editorial navigation copy derived from stay.introduction, not a personal claim."
+        },
+        {
+          "index": 2,
+          "band": [
+            0.26,
+            0.42
+          ],
+          "start": [
+            0.0,
+            1.35,
+            1.0
+          ],
+          "end": [
+            0.0,
+            1.55,
+            -3.0
+          ],
+          "look": [
+            0.0,
+            1.3,
+            -8.0
+          ],
+          "reading": "left, x=9%, y=32%, 28ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.32,
+            "widthCh": 28,
+            "alignment": "left"
+          },
+          "objectScore": "WORLD_REVEAL → TITLE_REVEAL. G03, G04 and G11 establish near/mid/far depth. Fog .022→.018; ambient petals begin at .30 only in full motion. Title exits upward ≤16 px after it is above the reading viewport."
+        },
+        {
+          "index": 3,
+          "band": [
+            0.42,
+            0.64
+          ],
+          "start": [
+            0.0,
+            1.55,
+            -3.0
+          ],
+          "end": [
+            0.0,
+            1.55,
+            -5.0
+          ],
+          "look": [
+            1.2,
+            1.0,
+            -8.0
+          ],
+          "reading": "right, x=58%, y=34%, 28ch",
+          "clearance": {
+            "x": 0.58,
+            "y": 0.34,
+            "widthCh": 28,
+            "alignment": "right"
+          },
+          "objectScore": "TITLE_REVEAL → READY. G14 becomes the primary landmark. Camera settles by .48 and holds to .64. A DOM map invitation appears beside the stone, not on its texture. A small schematic SVG plan can show all destinations; do not load nine scene GLBs."
+        },
+        {
+          "index": 4,
+          "band": [
+            0.64,
+            0.84
+          ],
+          "start": [
+            0.0,
+            1.55,
+            -5.0
+          ],
+          "end": [
+            0.0,
+            1.55,
+            -8.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -12.0
+          ],
+          "reading": "left, x=9%, y=35%, 38ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.35,
+            "widthCh": 38,
+            "alignment": "left"
+          },
+          "objectScore": "READY → HUB. Camera advances only in .64–.70, then stays fixed. Show real links to Person, Builder and Contact plus Open garden map. All nine destinations are listed in the map and no location is locked behind visit order."
+        },
+        {
+          "index": 5,
+          "band": [
+            0.84,
+            1.0
+          ],
+          "start": [
+            0.0,
+            1.55,
+            -8.0
+          ],
+          "end": [
+            0.0,
+            1.55,
+            -8.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -12.0
+          ],
+          "reading": "center, x=50%, y=42%, 38ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.42,
+            "widthCh": 38,
+            "alignment": "center"
+          },
+          "objectScore": "HUB holds. Show /quick/ link and garden map; no automatic ENTERING state on scroll. ENTERING exists only after an explicit route click and hands ownership to the route transition controller. Subtitle and controls stay opaque to the final pixel."
+        }
+      ],
+      "worldOrigin": [
+        0.0,
+        0.0,
+        76.0
+      ],
+      "extent": [
+        24.0,
+        24.0
+      ]
+    },
+    "person": {
+      "id": "person",
+      "knots": [
+        {
+          "index": 0,
+          "band": [
+            0.0,
+            0.12
+          ],
+          "start": [
+            0.0,
+            1.6,
+            5.0
+          ],
+          "end": [
+            -0.8,
+            1.65,
+            2.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -3.0
+          ],
+          "reading": "left, x=9%, y=31%, 32ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.31,
+            "widthCh": 32,
+            "alignment": "left"
+          },
+          "objectScore": "CLEARING_ENTRY. P01 defines open floor; G03 canopy remains high. Camera passes one foreground branch and stops before the introductory paragraph."
+        },
+        {
+          "index": 1,
+          "band": [
+            0.12,
+            0.27
+          ],
+          "start": [
+            -0.8,
+            1.65,
+            2.0
+          ],
+          "end": [
+            -0.8,
+            1.65,
+            0.0
+          ],
+          "look": [
+            1.0,
+            1.0,
+            -5.0
+          ],
+          "reading": "right, x=56%, y=30%, 36ch",
+          "clearance": {
+            "x": 0.56,
+            "y": 0.3,
+            "widthCh": 36,
+            "alignment": "right"
+          },
+          "objectScore": "AMBITION. Move only .12–.17, then hold. Keep sky and short grass behind text; no trophy, award or invented biography."
+        },
+        {
+          "index": 2,
+          "band": [
+            0.27,
+            0.4
+          ],
+          "start": [
+            -0.8,
+            1.65,
+            0.0
+          ],
+          "end": [
+            0.8,
+            1.65,
+            -2.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -6.0
+          ],
+          "reading": "left, x=9%, y=32%, 34ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.32,
+            "widthCh": 34,
+            "alignment": "left"
+          },
+          "objectScore": "DESIRE. Root edge enters left foreground; camera slides right over .27–.31. No physics response on the root."
+        },
+        {
+          "index": 3,
+          "band": [
+            0.4,
+            0.53
+          ],
+          "start": [
+            0.8,
+            1.65,
+            -2.0
+          ],
+          "end": [
+            0.8,
+            1.65,
+            -4.0
+          ],
+          "look": [
+            -1.0,
+            1.0,
+            -8.0
+          ],
+          "reading": "right, x=56%, y=32%, 34ch",
+          "clearance": {
+            "x": 0.56,
+            "y": 0.32,
+            "widthCh": 34,
+            "alignment": "right"
+          },
+          "objectScore": "FREEDOM. Reveal two paths without implying a value ranking. Pause camera .45–.53."
+        },
+        {
+          "index": 4,
+          "band": [
+            0.53,
+            0.66
+          ],
+          "start": [
+            0.8,
+            1.65,
+            -4.0
+          ],
+          "end": [
+            -0.5,
+            1.65,
+            -6.0
+          ],
+          "look": [
+            1.0,
+            1.0,
+            -10.0
+          ],
+          "reading": "left, x=9%, y=32%, 34ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.32,
+            "widthCh": 34,
+            "alignment": "left"
+          },
+          "objectScore": "CAPABILITY. Bench partly visible to left; capability copy remains a developing direction. No skill-level badges."
+        },
+        {
+          "index": 5,
+          "band": [
+            0.66,
+            0.78
+          ],
+          "start": [
+            -0.5,
+            1.65,
+            -6.0
+          ],
+          "end": [
+            -0.5,
+            1.65,
+            -8.0
+          ],
+          "look": [
+            -1.5,
+            0.7,
+            -9.0
+          ],
+          "reading": "right, x=56%, y=32%, 34ch",
+          "clearance": {
+            "x": 0.56,
+            "y": 0.32,
+            "widthCh": 34,
+            "alignment": "right"
+          },
+          "objectScore": "EXPERIENCE. P02 becomes legible but unoccupied. Low canopy sway continues; no induced movement during paragraph reading."
+        },
+        {
+          "index": 6,
+          "band": [
+            0.78,
+            0.9
+          ],
+          "start": [
+            -0.5,
+            1.65,
+            -8.0
+          ],
+          "end": [
+            1.0,
+            1.65,
+            -10.0
+          ],
+          "look": [
+            -1.0,
+            0.7,
+            -10.0
+          ],
+          "reading": "left, x=9%, y=32%, 34ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.32,
+            "widthCh": 34,
+            "alignment": "left"
+          },
+          "objectScore": "PEOPLE. Perspective shows both bench supports and the P03 root convergence. No names or sensitive relationship detail."
+        },
+        {
+          "index": 7,
+          "band": [
+            0.9,
+            1.0
+          ],
+          "start": [
+            1.0,
+            1.65,
+            -10.0
+          ],
+          "end": [
+            1.0,
+            1.65,
+            -12.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -16.0
+          ],
+          "reading": "center, x=50%, y=35%, 24ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.35,
+            "widthCh": 24,
+            "alignment": "center"
+          },
+          "objectScore": "QUESTION → EXIT_READY. Camera arrives by .93. Heading uses quotation styling only as established public copy; links remain visible after .95 and never navigate on scroll."
+        }
+      ],
+      "worldOrigin": [
+        -42.0,
+        0.0,
+        40.0
+      ],
+      "extent": [
+        18.0,
+        24.0
+      ]
+    },
+    "builder": {
+      "id": "builder",
+      "knots": [
+        {
+          "index": 0,
+          "band": [
+            0.0,
+            0.1
+          ],
+          "start": [
+            1.4,
+            1.8,
+            7.0
+          ],
+          "end": [
+            1.4,
+            1.8,
+            6.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -2.0
+          ],
+          "reading": "left, x=9%, y=30%, 30ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.3,
+            "widthCh": 30,
+            "alignment": "left"
+          },
+          "objectScore": "EMPTY → GROUND. Ground and footing recesses visible; no other B meshes visible before their band. Title word THE precedes BUILDER by .025p."
+        },
+        {
+          "index": 1,
+          "band": [
+            0.1,
+            0.2
+          ],
+          "start": [
+            1.4,
+            1.8,
+            6.0
+          ],
+          "end": [
+            1.0,
+            1.8,
+            5.0
+          ],
+          "look": [
+            0.0,
+            0.3,
+            -2.0
+          ],
+          "reading": "right, x=58%, y=32%, 34ch",
+          "clearance": {
+            "x": 0.58,
+            "y": 0.32,
+            "widthCh": 34,
+            "alignment": "right"
+          },
+          "objectScore": "FOUNDATION. Sample BUILD_FOUNDATION 0→1.2 s over .10–.18; hold .18–.20. Each footing rises .35 m from its pocket with .12 s stagger."
+        },
+        {
+          "index": 2,
+          "band": [
+            0.2,
+            0.32
+          ],
+          "start": [
+            1.0,
+            1.8,
+            5.0
+          ],
+          "end": [
+            0.6,
+            1.8,
+            4.0
+          ],
+          "look": [
+            0.0,
+            1.7,
+            -3.0
+          ],
+          "reading": "left, x=9%, y=34%, 34ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.34,
+            "widthCh": 34,
+            "alignment": "left"
+          },
+          "objectScore": "POSTS. Sample BUILD_POSTS over .20–.30, hold .30–.32. Posts translate upward, no stretchy scaling. Camera advances 1 m; beams remain absent."
+        },
+        {
+          "index": 3,
+          "band": [
+            0.32,
+            0.44
+          ],
+          "start": [
+            0.6,
+            1.8,
+            4.0
+          ],
+          "end": [
+            0.0,
+            1.8,
+            2.5
+          ],
+          "look": [
+            0.0,
+            2.4,
+            -3.0
+          ],
+          "reading": "right, x=58%, y=35%, 34ch",
+          "clearance": {
+            "x": 0.58,
+            "y": 0.35,
+            "widthCh": 34,
+            "alignment": "right"
+          },
+          "objectScore": "BEAMS. BUILD_BEAMS .32–.41, 1.6 s; all connections settle before camera enters. Copy mask direction follows horizontal beam movement, cap 14 px."
+        },
+        {
+          "index": 4,
+          "band": [
+            0.44,
+            0.56
+          ],
+          "start": [
+            0.0,
+            1.8,
+            2.5
+          ],
+          "end": [
+            0.0,
+            1.8,
+            1.0
+          ],
+          "look": [
+            0.0,
+            2.0,
+            -4.0
+          ],
+          "reading": "left, x=9%, y=35%, 34ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.35,
+            "widthCh": 34,
+            "alignment": "left"
+          },
+          "objectScore": "STRUCTURE. BUILD_ROOF .44–.53, 1.5 s; slats occupy 55% roof coverage. Hold .53–.56; do not darken text with physical shadows."
+        },
+        {
+          "index": 5,
+          "band": [
+            0.56,
+            0.68
+          ],
+          "start": [
+            0.0,
+            1.8,
+            1.0
+          ],
+          "end": [
+            -0.8,
+            1.65,
+            -1.0
+          ],
+          "look": [
+            0.0,
+            0.95,
+            -4.8
+          ],
+          "reading": "right, x=57%, y=27%, 35ch",
+          "clearance": {
+            "x": 0.57,
+            "y": 0.27,
+            "widthCh": 35,
+            "alignment": "right"
+          },
+          "objectScore": "WORKBENCH. BUILD_BENCH .56–.64, 1.2 s; right-to-center 1.2 m movement; hold .64–.68. Five labels are HTML links to matching /stay/work/# anchors, not one generic card row."
+        },
+        {
+          "index": 6,
+          "band": [
+            0.68,
+            0.82
+          ],
+          "start": [
+            -0.8,
+            1.65,
+            -1.0
+          ],
+          "end": [
+            -0.8,
+            1.65,
+            -2.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -4.8
+          ],
+          "reading": "left, x=9%, y=30%, 35ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.3,
+            "widthCh": 35,
+            "alignment": "left"
+          },
+          "objectScore": "ARTIFACTS. BUILD_TOKENS .68–.79, 1.8 s. Each token rises .08 m then settles. This shorter editorial statement preserves source capability limits; do not retain the unqualified “they work” claim as proof of current deployment."
+        },
+        {
+          "index": 7,
+          "band": [
+            0.82,
+            1.0
+          ],
+          "start": [
+            -0.8,
+            1.65,
+            -2.0
+          ],
+          "end": [
+            0.0,
+            1.65,
+            -3.0
+          ],
+          "look": [
+            0.0,
+            1.4,
+            -7.0
+          ],
+          "reading": "center, x=50%, y=35%, 32ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.35,
+            "widthCh": 32,
+            "alignment": "center"
+          },
+          "objectScore": "COMPLETE → EXIT_READY. All build clips stay at end; camera stops at .88. Current SNRLED status remains Archived. Exit links become visible at .92; reverse scroll disassembles deterministically."
+        }
+      ],
+      "worldOrigin": [
+        28.0,
+        0.0,
+        32.0
+      ],
+      "extent": [
+        12.0,
+        14.0
+      ]
+    },
+    "thinker": {
+      "id": "thinker",
+      "knots": [
+        {
+          "index": 0,
+          "band": [
+            0.0,
+            0.12
+          ],
+          "start": [
+            3.8,
+            1.5,
+            3.0
+          ],
+          "end": [
+            3.2,
+            1.5,
+            1.0
+          ],
+          "look": [
+            0.0,
+            0.2,
+            -7.0
+          ],
+          "reading": "right, x=57%, y=30%, 35ch",
+          "clearance": {
+            "x": 0.57,
+            "y": 0.3,
+            "widthCh": 35,
+            "alignment": "right"
+          },
+          "objectScore": "WATER_ENTRY. G07 fills lower-left region; tea deck on far left. Fog .02, directional .88. Only eight petals on desktop, two mobile."
+        },
+        {
+          "index": 1,
+          "band": [
+            0.12,
+            0.28
+          ],
+          "start": [
+            3.2,
+            1.5,
+            1.0
+          ],
+          "end": [
+            2.8,
+            1.5,
+            -1.0
+          ],
+          "look": [
+            0.0,
+            0.1,
+            -7.0
+          ],
+          "reading": "left, x=9%, y=30%, 38ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.3,
+            "widthCh": 38,
+            "alignment": "left"
+          },
+          "objectScore": "DESIRE. One optional decorative petal touches water during .13–.16; ripple lasts 2.4 s when explicitly replayed, otherwise scroll-sampled. Camera holds .17–.28. Disclaimer is adjacent and equally readable."
+        },
+        {
+          "index": 2,
+          "band": [
+            0.28,
+            0.44
+          ],
+          "start": [
+            2.8,
+            1.5,
+            -1.0
+          ],
+          "end": [
+            1.0,
+            1.5,
+            -3.0
+          ],
+          "look": [
+            0.0,
+            0.3,
+            -10.0
+          ],
+          "reading": "right, x=56%, y=27%, 36ch",
+          "clearance": {
+            "x": 0.56,
+            "y": 0.27,
+            "widthCh": 36,
+            "alignment": "right"
+          },
+          "objectScore": "FREEDOM. Reveal seven T02 stones via perspective; DOM labels appear as a semantic list. Highlight focus changes emissive tint only, no stone jumps. Hold .34–.44."
+        },
+        {
+          "index": 3,
+          "band": [
+            0.44,
+            0.6
+          ],
+          "start": [
+            1.0,
+            1.5,
+            -3.0
+          ],
+          "end": [
+            -0.4,
+            1.45,
+            -5.0
+          ],
+          "look": [
+            -2.5,
+            0.4,
+            -6.0
+          ],
+          "reading": "left, x=9%, y=30%, 38ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.3,
+            "widthCh": 38,
+            "alignment": "left"
+          },
+          "objectScore": "FAILURE. Tea deck enters the foreground. Water ripple has settled; ambient camera drift is zero during .49–.60. No invented failure story accompanies the idea."
+        },
+        {
+          "index": 4,
+          "band": [
+            0.6,
+            0.76
+          ],
+          "start": [
+            -0.4,
+            1.45,
+            -5.0
+          ],
+          "end": [
+            -1.2,
+            1.4,
+            -6.0
+          ],
+          "look": [
+            0.0,
+            0.2,
+            -11.0
+          ],
+          "reading": "right, x=55%, y=31%, 37ch",
+          "clearance": {
+            "x": 0.55,
+            "y": 0.31,
+            "widthCh": 37,
+            "alignment": "right"
+          },
+          "objectScore": "VULNERABILITY. Use this public-safe compression of the existing fortress passage. No betrayal, romantic decisions or private fears are carried into the page. Negative space ≥55% of frame."
+        },
+        {
+          "index": 5,
+          "band": [
+            0.76,
+            0.9
+          ],
+          "start": [
+            -1.2,
+            1.4,
+            -6.0
+          ],
+          "end": [
+            -2.0,
+            1.4,
+            -8.0
+          ],
+          "look": [
+            -2.8,
+            0.42,
+            -5.7
+          ],
+          "reading": "left, x=9%, y=32%, 38ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.32,
+            "widthCh": 38,
+            "alignment": "left"
+          },
+          "objectScore": "EXCELLENCE. THINKER_SCROLL 0→2 s over .76–.82; hold .82–.90. Scroll is unlettered; HTML paragraph remains level and stationary."
+        },
+        {
+          "index": 6,
+          "band": [
+            0.9,
+            1.0
+          ],
+          "start": [
+            -2.0,
+            1.4,
+            -8.0
+          ],
+          "end": [
+            -2.0,
+            1.4,
+            -9.0
+          ],
+          "look": [
+            0.0,
+            0.2,
+            -14.0
+          ],
+          "reading": "center, x=50%, y=40%, 32ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.4,
+            "widthCh": 32,
+            "alignment": "center"
+          },
+          "objectScore": "STILL → EXIT_READY. Camera stops by .92. Water stays at low amplitude; exit controls and map remain available. No full-screen ivory content panel."
+        }
+      ],
+      "worldOrigin": [
+        -62.0,
+        0.0,
+        -4.0
+      ],
+      "extent": [
+        18.0,
+        22.0
+      ]
+    },
+    "leader": {
+      "id": "leader",
+      "knots": [
+        {
+          "index": 0,
+          "band": [
+            0.0,
+            0.14
+          ],
+          "start": [
+            0.0,
+            1.7,
+            6.0
+          ],
+          "end": [
+            0.0,
+            1.7,
+            3.0
+          ],
+          "look": [
+            0.0,
+            0.8,
+            -5.0
+          ],
+          "reading": "left, x=9%, y=30%, 35ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.3,
+            "widthCh": 35,
+            "alignment": "left"
+          },
+          "objectScore": "APPROACH. Three L01 paths enter from different sides; no nodes labeled as real people."
+        },
+        {
+          "index": 1,
+          "band": [
+            0.14,
+            0.36
+          ],
+          "start": [
+            0.0,
+            1.7,
+            3.0
+          ],
+          "end": [
+            -1.2,
+            1.7,
+            0.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -5.0
+          ],
+          "reading": "right, x=56%, y=30%, 38ch",
+          "clearance": {
+            "x": 0.56,
+            "y": 0.3,
+            "widthCh": 38,
+            "alignment": "right"
+          },
+          "objectScore": "CONVERGE. LEADER_CONVERGE 0→1.8 s during .14–.24; hold .24–.36. Five markers represent responsibilities: lesson design, debates, simulations, teaching and weekly operation. Do not count them as participants."
+        },
+        {
+          "index": 2,
+          "band": [
+            0.36,
+            0.53
+          ],
+          "start": [
+            -1.2,
+            1.7,
+            0.0
+          ],
+          "end": [
+            1.3,
+            1.7,
+            -3.0
+          ],
+          "look": [
+            3.0,
+            1.0,
+            -7.0
+          ],
+          "reading": "left, x=9%, y=30%, 36ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.3,
+            "widthCh": 36,
+            "alignment": "left"
+          },
+          "objectScore": "COORDINATE. LEADER_RAIL .36–.43; hold .43–.53. Existing source supports authorship, but omit the unnecessarily absolute “Nobody handed me…” sentence. Evidence holders stay blank unless real approved files arrive."
+        },
+        {
+          "index": 3,
+          "band": [
+            0.53,
+            0.68
+          ],
+          "start": [
+            1.3,
+            1.7,
+            -3.0
+          ],
+          "end": [
+            1.3,
+            1.7,
+            -5.0
+          ],
+          "look": [
+            0.0,
+            0.8,
+            -8.0
+          ],
+          "reading": "right, x=56%, y=32%, 38ch",
+          "clearance": {
+            "x": 0.56,
+            "y": 0.32,
+            "widthCh": 38,
+            "alignment": "right"
+          },
+          "objectScore": "OWNERSHIP. Keep secondary House example at its sourced scale. No dates, attendance counts or invented outcomes. Camera hold starts .58."
+        },
+        {
+          "index": 4,
+          "band": [
+            0.68,
+            0.84
+          ],
+          "start": [
+            1.3,
+            1.7,
+            -5.0
+          ],
+          "end": [
+            1.4,
+            1.7,
+            -6.5
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -9.0
+          ],
+          "reading": "left, x=9%, y=33%, 36ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.33,
+            "widthCh": 36,
+            "alignment": "left"
+          },
+          "objectScore": "COMMUNICATE. Markers remain coordinated while the camera leaves central court. This is a synthesis of source activities, not an award claim."
+        },
+        {
+          "index": 5,
+          "band": [
+            0.84,
+            1.0
+          ],
+          "start": [
+            1.4,
+            1.7,
+            -6.5
+          ],
+          "end": [
+            1.4,
+            1.7,
+            -8.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -12.0
+          ],
+          "reading": "center, x=50%, y=32%, 38ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.32,
+            "widthCh": 38,
+            "alignment": "center"
+          },
+          "objectScore": "REFLECT → EXIT_READY. Replace the current import’s stronger assertion that others were deprived of growth. Label internal provenance HYPOTHESIS / potential over-functioning. No collapsing figures or abandoned participants."
+        }
+      ],
+      "worldOrigin": [
+        -6.0,
+        0.0,
+        -2.0
+      ],
+      "extent": [
+        18.0,
+        18.0
+      ]
+    },
+    "stories": {
+      "id": "stories",
+      "knots": [
+        {
+          "index": 0,
+          "band": [
+            0.0,
+            0.12
+          ],
+          "start": [
+            0.0,
+            1.6,
+            4.0
+          ],
+          "end": [
+            0.0,
+            1.6,
+            1.0
+          ],
+          "look": [
+            -1.0,
+            1.0,
+            -2.0
+          ],
+          "reading": "center, x=50%, y=31%, 32ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.31,
+            "widthCh": 32,
+            "alignment": "center"
+          },
+          "objectScore": "PATH_ENTRY. Keep four public stories only. Remove the appearance teaser from the public page; do not expose private story metadata."
+        },
+        {
+          "index": 1,
+          "band": [
+            0.12,
+            0.3
+          ],
+          "start": [
+            0.0,
+            1.6,
+            1.0
+          ],
+          "end": [
+            -0.4,
+            1.6,
+            -1.0
+          ],
+          "look": [
+            -1.0,
+            1.0,
+            -2.0
+          ],
+          "reading": "right, x=56%, y=30%, 38ch",
+          "clearance": {
+            "x": 0.56,
+            "y": 0.3,
+            "widthCh": 38,
+            "alignment": "right"
+          },
+          "objectScore": "LANTERN_1. Approach at .12; title .14; read control .16; text region .18–.29. Lamp emission .35→.65; selected .8. Leave retains emission .45. No claim of broad influence."
+        },
+        {
+          "index": 2,
+          "band": [
+            0.3,
+            0.48
+          ],
+          "start": [
+            -0.4,
+            1.6,
+            -1.0
+          ],
+          "end": [
+            0.8,
+            1.6,
+            -5.0
+          ],
+          "look": [
+            2.0,
+            1.0,
+            -6.0
+          ],
+          "reading": "left, x=9%, y=32%, 38ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.32,
+            "widthCh": 38,
+            "alignment": "left"
+          },
+          "objectScore": "LANTERN_2. Previous lamp visible through first screen gap. No named friend, fabricated quotation or private dialogue. Text remains accessible when closed via native details summary; this public copy is the complete supplied account."
+        },
+        {
+          "index": 3,
+          "band": [
+            0.48,
+            0.7
+          ],
+          "start": [
+            0.8,
+            1.6,
+            -5.0
+          ],
+          "end": [
+            -0.8,
+            1.6,
+            -9.0
+          ],
+          "look": [
+            -2.0,
+            1.0,
+            -10.0
+          ],
+          "reading": "right, x=56%, y=30%, 38ch",
+          "clearance": {
+            "x": 0.56,
+            "y": 0.3,
+            "widthCh": 38,
+            "alignment": "right"
+          },
+          "objectScore": "LANTERN_3. Use current capability language; do not freeze the older exact Python level as a current fact. Extra beat room permits two paragraphs. Lamp never flashes at the word gap."
+        },
+        {
+          "index": 4,
+          "band": [
+            0.7,
+            0.9
+          ],
+          "start": [
+            -0.8,
+            1.6,
+            -9.0
+          ],
+          "end": [
+            0.4,
+            1.6,
+            -13.0
+          ],
+          "look": [
+            1.0,
+            1.0,
+            -14.0
+          ],
+          "reading": "left, x=9%, y=31%, 38ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.31,
+            "widthCh": 38,
+            "alignment": "left"
+          },
+          "objectScore": "LANTERN_4. Link to /stay/leader/ for the fuller account. Four lamps stay in scene; only nearest two emit runtime point lights on high tier."
+        },
+        {
+          "index": 5,
+          "band": [
+            0.9,
+            1.0
+          ],
+          "start": [
+            0.4,
+            1.6,
+            -13.0
+          ],
+          "end": [
+            0.0,
+            1.6,
+            -16.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -20.0
+          ],
+          "reading": "center, x=50%, y=38%, 34ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.38,
+            "widthCh": 34,
+            "alignment": "center"
+          },
+          "objectScore": "PATH_EXIT. Fog lightens .028→.022; do not force the user toward Future. All stories retain native anchors story-mentality, story-openness, story-technical-gap and story-leadership."
+        }
+      ],
+      "worldOrigin": [
+        -34.0,
+        0.0,
+        -40.0
+      ],
+      "extent": [
+        12.0,
+        22.0
+      ]
+    },
+    "work": {
+      "id": "work",
+      "knots": [
+        {
+          "index": 0,
+          "band": [
+            0.0,
+            0.09
+          ],
+          "start": [
+            0.0,
+            1.75,
+            5.0
+          ],
+          "end": [
+            0.0,
+            1.75,
+            1.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -6.0
+          ],
+          "reading": "center, x=50%, y=30%, 32ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.3,
+            "widthCh": 32,
+            "alignment": "center"
+          },
+          "objectScore": "ARCHIVE_ENTRY. W01 frames depth across all five bays. No project auto-opens on route entry except a named hash target."
+        },
+        {
+          "index": 1,
+          "band": [
+            0.09,
+            0.25
+          ],
+          "start": [
+            0.0,
+            1.75,
+            1.0
+          ],
+          "end": [
+            0.5,
+            1.7,
+            -1.0
+          ],
+          "look": [
+            -2.2,
+            1.0,
+            -2.0
+          ],
+          "reading": "right, x=57%, y=27%, 38ch",
+          "clearance": {
+            "x": 0.57,
+            "y": 0.27,
+            "widthCh": 38,
+            "alignment": "right"
+          },
+          "objectScore": "PLANNER. W02; local station progress q spans this band. WORK_PLANNER at 6q seconds. DOM explains decimal priorities, distribution, sessions, breaks and focus mode. Details at #study-planner."
+        },
+        {
+          "index": 2,
+          "band": [
+            0.25,
+            0.41
+          ],
+          "start": [
+            0.5,
+            1.7,
+            -1.0
+          ],
+          "end": [
+            -0.5,
+            1.7,
+            -6.0
+          ],
+          "look": [
+            2.2,
+            1.2,
+            -7.0
+          ],
+          "reading": "left, x=9%, y=27%, 38ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.27,
+            "widthCh": 38,
+            "alignment": "left"
+          },
+          "objectScore": "LOGGER. W03, WORK_LOGGER at 5q seconds. SVG graph remains HTML-adjacent; caption “Illustrative trend · no actual scores shown.” Dashed estimate is distinct from recorded points. Details at #past-paper-logger."
+        },
+        {
+          "index": 3,
+          "band": [
+            0.41,
+            0.57
+          ],
+          "start": [
+            -0.5,
+            1.7,
+            -6.0
+          ],
+          "end": [
+            0.5,
+            1.7,
+            -11.0
+          ],
+          "look": [
+            -2.2,
+            1.2,
+            -12.0
+          ],
+          "reading": "right, x=57%, y=28%, 38ch",
+          "clearance": {
+            "x": 0.57,
+            "y": 0.28,
+            "widthCh": 38,
+            "alignment": "right"
+          },
+          "objectScore": "MUN. W04, WORK_MUN at 4q seconds. Three panels progress lesson→debate→simulation; weekly loop shown as a final still arrow. No STRAT MUN content in this station. Details at #mun-club."
+        },
+        {
+          "index": 4,
+          "band": [
+            0.57,
+            0.75
+          ],
+          "start": [
+            0.5,
+            1.7,
+            -11.0
+          ],
+          "end": [
+            -0.5,
+            1.7,
+            -16.0
+          ],
+          "look": [
+            2.2,
+            1.2,
+            -17.0
+          ],
+          "reading": "left, x=9%, y=26%, 38ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.26,
+            "widthCh": 38,
+            "alignment": "left"
+          },
+          "objectScore": "SNRLED. W05, WORK_SNRLED at 6q seconds. Persistent visible status “Archived · deployment inactive · Supabase disconnected.” No payment form or live upload. Details at #snrled."
+        },
+        {
+          "index": 5,
+          "band": [
+            0.75,
+            0.92
+          ],
+          "start": [
+            -0.5,
+            1.7,
+            -16.0
+          ],
+          "end": [
+            0.5,
+            1.7,
+            -21.0
+          ],
+          "look": [
+            -2.2,
+            1.3,
+            -22.0
+          ],
+          "reading": "right, x=57%, y=28%, 38ch",
+          "clearance": {
+            "x": 0.57,
+            "y": 0.28,
+            "widthCh": 38,
+            "alignment": "right"
+          },
+          "objectScore": "AURA_STATION. W06, WORK_AURA at 5q seconds. Five folders align while HTML labels describe inquiry, not published academic research. Details at #project-aura and route link /stay/aura/."
+        },
+        {
+          "index": 6,
+          "band": [
+            0.92,
+            1.0
+          ],
+          "start": [
+            0.5,
+            1.7,
+            -21.0
+          ],
+          "end": [
+            0.0,
+            1.75,
+            -24.0
+          ],
+          "look": [
+            0.0,
+            1.2,
+            -28.0
+          ],
+          "reading": "center, x=50%, y=38%, 36ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.38,
+            "widthCh": 36,
+            "alignment": "center"
+          },
+          "objectScore": "ARCHIVE_EXIT. Camera stops .96. Last station remains visible behind through the open pavilion. No sixth station for STRAT MUN."
+        }
+      ],
+      "worldOrigin": [
+        44.0,
+        0.0,
+        -20.0
+      ],
+      "extent": [
+        12.0,
+        32.0
+      ]
+    },
+    "future": {
+      "id": "future",
+      "knots": [
+        {
+          "index": 0,
+          "band": [
+            0.0,
+            0.16
+          ],
+          "start": [
+            0.0,
+            1.65,
+            5.0
+          ],
+          "end": [
+            0.0,
+            1.7,
+            2.0
+          ],
+          "look": [
+            0.0,
+            1.4,
+            -10.0
+          ],
+          "reading": "left, x=9%, y=32%, 32ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.32,
+            "widthCh": 32,
+            "alignment": "left"
+          },
+          "objectScore": "CANOPY_ENTRY. F01 fills top and outer edges; path width 2.4 m. Typography starts at route title scale, not giant hero scale."
+        },
+        {
+          "index": 1,
+          "band": [
+            0.16,
+            0.36
+          ],
+          "start": [
+            0.0,
+            1.7,
+            2.0
+          ],
+          "end": [
+            0.0,
+            1.75,
+            -2.0
+          ],
+          "look": [
+            0.0,
+            1.4,
+            -18.0
+          ],
+          "reading": "right, x=56%, y=32%, 38ch",
+          "clearance": {
+            "x": 0.56,
+            "y": 0.32,
+            "widthCh": 38,
+            "alignment": "right"
+          },
+          "objectScore": "OPENING. Camera passes under static tree banks; occlusion reveals sky, no trees dissolve. Fog .018→.014."
+        },
+        {
+          "index": 2,
+          "band": [
+            0.36,
+            0.58
+          ],
+          "start": [
+            0.0,
+            1.75,
+            -2.0
+          ],
+          "end": [
+            0.0,
+            1.8,
+            -6.0
+          ],
+          "look": [
+            1.0,
+            1.0,
+            -30.0
+          ],
+          "reading": "center, x=50%, y=30%, 26ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.3,
+            "widthCh": 26,
+            "alignment": "center"
+          },
+          "objectScore": "PATH_WIDENS. F02 opens to 4.2 m. Direction words reveal one phrase at a time, never per character. F03 remains small."
+        },
+        {
+          "index": 3,
+          "band": [
+            0.58,
+            0.8
+          ],
+          "start": [
+            0.0,
+            1.8,
+            -6.0
+          ],
+          "end": [
+            0.0,
+            1.8,
+            -10.0
+          ],
+          "look": [
+            1.0,
+            1.0,
+            -38.0
+          ],
+          "reading": "left, x=9%, y=36%, 38ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.36,
+            "widthCh": 38,
+            "alignment": "left"
+          },
+          "objectScore": "HORIZON. Path reaches 6 m width, foliage occupies ≤20% of frame. Camera holds .66–.80. Do not add employers, universities, research publications or dates."
+        },
+        {
+          "index": 4,
+          "band": [
+            0.8,
+            1.0
+          ],
+          "start": [
+            0.0,
+            1.8,
+            -10.0
+          ],
+          "end": [
+            0.0,
+            1.8,
+            -12.0
+          ],
+          "look": [
+            1.0,
+            1.0,
+            -38.0
+          ],
+          "reading": "center, x=50%, y=40%, 30ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.4,
+            "widthCh": 30,
+            "alignment": "center"
+          },
+          "objectScore": "OPEN → EXIT_READY. Fog .012. Camera stops .86; F03 never becomes a finish gate. Intentional stillness before onward links."
+        }
+      ],
+      "worldOrigin": [
+        20.0,
+        0.0,
+        -70.0
+      ],
+      "extent": [
+        20.0,
+        30.0
+      ]
+    },
+    "aura": {
+      "id": "aura",
+      "knots": [
+        {
+          "index": 0,
+          "band": [
+            0.0,
+            0.12
+          ],
+          "start": [
+            0.0,
+            1.7,
+            6.0
+          ],
+          "end": [
+            0.0,
+            1.7,
+            4.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -6.0
+          ],
+          "reading": "left, x=9%, y=30%, 32ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.3,
+            "widthCh": 32,
+            "alignment": "left"
+          },
+          "objectScore": "GARDEN. G03 silhouettes frame A01 resting pieces as plausible garden furniture; documents absent. No animation begins from a blank black frame."
+        },
+        {
+          "index": 1,
+          "band": [
+            0.12,
+            0.24
+          ],
+          "start": [
+            0.0,
+            1.7,
+            4.0
+          ],
+          "end": [
+            -1.0,
+            1.8,
+            2.0
+          ],
+          "look": [
+            0.0,
+            1.2,
+            -6.0
+          ],
+          "reading": "center, x=50%, y=30%, 28ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.3,
+            "widthCh": 28,
+            "alignment": "center"
+          },
+          "objectScore": "QUESTION. Camera moves 2 m then holds. Frame pieces align slightly in anticipation but remain below .4 m; no giant spinning archive."
+        },
+        {
+          "index": 2,
+          "band": [
+            0.24,
+            0.38
+          ],
+          "start": [
+            -1.0,
+            1.8,
+            2.0
+          ],
+          "end": [
+            -1.0,
+            1.8,
+            0.0
+          ],
+          "look": [
+            0.0,
+            1.6,
+            -6.0
+          ],
+          "reading": "right, x=55%, y=27%, 32ch",
+          "clearance": {
+            "x": 0.55,
+            "y": 0.27,
+            "widthCh": 32,
+            "alignment": "right"
+          },
+          "objectScore": "REALISATION. AURA_STRUCTURE samples first 30% during .24–.32; reading hold .32–.38. Word group “the person” settles last by 80 ms, not a speed-reading sequence."
+        },
+        {
+          "index": 3,
+          "band": [
+            0.38,
+            0.49
+          ],
+          "start": [
+            -1.0,
+            1.8,
+            0.0
+          ],
+          "end": [
+            0.0,
+            2.0,
+            -1.0
+          ],
+          "look": [
+            0.0,
+            2.0,
+            -6.0
+          ],
+          "reading": "left, x=9%, y=32%, 32ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.32,
+            "widthCh": 32,
+            "alignment": "left"
+          },
+          "objectScore": "STRUCTURE. AURA_STRUCTURE .9→3 s; columns rise around camera, max translation 2.5 m. Preserve clear escape corridor; do not bring meshes through text plane."
+        },
+        {
+          "index": 4,
+          "band": [
+            0.49,
+            0.62
+          ],
+          "start": [
+            0.0,
+            2.0,
+            -1.0
+          ],
+          "end": [
+            1.5,
+            2.1,
+            -3.0
+          ],
+          "look": [
+            0.0,
+            1.6,
+            -7.0
+          ],
+          "reading": "right, x=56%, y=28%, 36ch",
+          "clearance": {
+            "x": 0.56,
+            "y": 0.28,
+            "widthCh": 36,
+            "alignment": "right"
+          },
+          "objectScore": "ARCHIVE → DOCUMENTS. AURA_DOCUMENTS 0→4 s over .49–.60. Nine sheets travel from separated offsets into an arc; max yaw 22 degrees. Archive label placeholders are abstract, never actual private document pages."
+        },
+        {
+          "index": 5,
+          "band": [
+            0.62,
+            0.74
+          ],
+          "start": [
+            1.5,
+            2.1,
+            -3.0
+          ],
+          "end": [
+            1.5,
+            2.1,
+            -4.0
+          ],
+          "look": [
+            0.0,
+            1.6,
+            -7.0
+          ],
+          "reading": "left, x=9%, y=30%, 34ch",
+          "clearance": {
+            "x": 0.09,
+            "y": 0.3,
+            "widthCh": 34,
+            "alignment": "left"
+          },
+          "objectScore": "EVIDENCE → RELATIONSHIPS. A03 draw range 0→1 over .64–.71. Every link is a narrative connection, not proof of psychological causation. Camera and text hold .68–.74."
+        },
+        {
+          "index": 6,
+          "band": [
+            0.74,
+            0.88
+          ],
+          "start": [
+            1.5,
+            2.1,
+            -4.0
+          ],
+          "end": [
+            0.0,
+            2.2,
+            -5.0
+          ],
+          "look": [
+            0.0,
+            2.0,
+            -9.0
+          ],
+          "reading": "right, x=56%, y=32%, 34ch",
+          "clearance": {
+            "x": 0.56,
+            "y": 0.32,
+            "widthCh": 34,
+            "alignment": "right"
+          },
+          "objectScore": "MODEL. AURA_MODEL 0→3 s over .74–.85; nine sheets occupy their final sockets. The five process labels have HTML definitions. Avoid claiming that every tension has been resolved."
+        },
+        {
+          "index": 7,
+          "band": [
+            0.88,
+            1.0
+          ],
+          "start": [
+            0.0,
+            2.2,
+            -5.0
+          ],
+          "end": [
+            0.0,
+            2.0,
+            -7.0
+          ],
+          "look": [
+            0.0,
+            1.8,
+            -11.0
+          ],
+          "reading": "center, x=50%, y=35%, 32ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.35,
+            "widthCh": 32,
+            "alignment": "center"
+          },
+          "objectScore": "EXPRESSION → EXIT_READY. Directional multiplier .78→1.0, fog returns .018. The final arrangement remains stable; do not turn 3D into rendered video. Contact and Work links appear after .94."
+        }
+      ],
+      "worldOrigin": [
+        74.0,
+        0.0,
+        -56.0
+      ],
+      "extent": [
+        18.0,
+        20.0
+      ]
+    },
+    "contact": {
+      "id": "contact",
+      "knots": [
+        {
+          "index": 0,
+          "band": [
+            0.0,
+            0.25
+          ],
+          "start": [
+            0.0,
+            1.65,
+            4.0
+          ],
+          "end": [
+            0.0,
+            1.65,
+            3.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -8.0
+          ],
+          "reading": "center, x=50%, y=31%, 25ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.31,
+            "widthCh": 25,
+            "alignment": "center"
+          },
+          "objectScore": "ARRIVE. C01 and C02 with one distant G08 lantern. Camera advances at most 1 m during arrival, then stops. Runtime petals=0."
+        },
+        {
+          "index": 1,
+          "band": [
+            0.25,
+            0.75
+          ],
+          "start": [
+            0.0,
+            1.65,
+            3.0
+          ],
+          "end": [
+            0.0,
+            1.65,
+            3.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -8.0
+          ],
+          "reading": "center, x=50%, y=50%, 38ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.5,
+            "widthCh": 38,
+            "alignment": "center"
+          },
+          "objectScore": "CONTACT_READY. Read values from src/data/content.ts contact; all four currently YOUR_* placeholders. Render labels and “Not added yet” as text, no fake href or disabled button. When verified values arrive, use contactHref and actual links."
+        },
+        {
+          "index": 2,
+          "band": [
+            0.75,
+            1.0
+          ],
+          "start": [
+            0.0,
+            1.65,
+            3.0
+          ],
+          "end": [
+            0.0,
+            1.65,
+            3.0
+          ],
+          "look": [
+            0.0,
+            1.0,
+            -8.0
+          ],
+          "reading": "center, x=50%, y=62%, 36ch",
+          "clearance": {
+            "x": 0.5,
+            "y": 0.62,
+            "widthCh": 36,
+            "alignment": "center"
+          },
+          "objectScore": "STILL. Garden link and /quick/ link remain ordinary anchors. Heading may leave via native scroll but channel links never fade to zero while on screen."
+        }
+      ],
+      "worldOrigin": [
+        -74.0,
+        0.0,
+        -66.0
+      ],
+      "extent": [
+        20.0,
+        20.0
+      ]
+    }
+  }
+}

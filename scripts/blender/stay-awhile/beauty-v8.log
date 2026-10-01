@@ -1,0 +1,19 @@
+00:03.000  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend"
+Info: Saved as "00-garden.blend"
+BEAUTIFIED garden
+00:03.454  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\03-thinker.blend"
+Traceback (most recent call last):
+  File "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\beautify_first_four.py", line 648, in <module>
+    for route in only:scene_route(route)
+                      ~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\beautify_first_four.py", line 618, in scene_route
+    if aid=='T01':repair_tea_deck_overlap(a.col)
+                  ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\beautify_first_four.py", line 398, in repair_tea_deck_overlap
+    if len(candidate)!=1:raise RuntimeError(f'Expected one skewed T01 plank, found {len(candidate)} in {obj.name}')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected one skewed T01 plank, found 0 in SA_T01_MOBILEMESH_00
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

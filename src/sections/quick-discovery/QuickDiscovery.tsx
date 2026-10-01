@@ -29,7 +29,7 @@ function Stage({ name, id, label, children }: { name: string; id?: string; label
 
 export function QuickDiscovery() {
   return <div className={styles.root} data-qd-root>
-    <div className={styles.world} data-world aria-hidden="true"><canvas data-world-canvas /><div className={styles.atmosphere} data-atmosphere /></div>
+    <div className={styles.world} data-world aria-hidden="true"><canvas data-world-canvas /><div className={styles.atmosphere} data-atmosphere /><div className={styles.embers} data-embers>{Array.from({length:36},(_,i)=><i className={styles.ember} data-ember key={i} />)}</div></div>
     <div className={styles.progress} data-progress aria-hidden="true" />
     <Link className={styles.markLeft} data-home href={routes.home} aria-label={quickCopy.quickHomeLabel}><i>{quickCopy.quickMark[0]}</i><span>{quickCopy.quickMark.slice(1)}</span></Link>
     <span className={styles.markRight}>QUICK DISCOVERY</span>

@@ -1,0 +1,869 @@
+{
+  "routes": {
+    "garden": {
+      "master": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "90ef7c43f8527f1be464d297088678e04af978d03b2456a4370b8827a582d4cf",
+      "ownedAssetIds": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G12",
+        "G13",
+        "G14"
+      ],
+      "collectionLinks": 70,
+      "linkedGarden": false,
+      "actions": [],
+      "posters": [
+        {
+          "route": "garden",
+          "lod": "desktop",
+          "path": "public/assets/stay/v1/garden-desktop.webp",
+          "bytes": 40532,
+          "budgetPass": true,
+          "corridorViolations": []
+        },
+        {
+          "route": "garden",
+          "lod": "mobile",
+          "path": "public/assets/stay/v1/garden-mobile.webp",
+          "bytes": 20386,
+          "budgetPass": true,
+          "corridorViolations": []
+        }
+      ],
+      "reverseSeek": true
+    },
+    "person": {
+      "master": "scripts/blender/stay-awhile/01-person.blend",
+      "sourceSha256": "3072ad3ce2468739e017d1a45c3d660c630c4b6bddefaff90eb755464e588aab",
+      "ownedAssetIds": [
+        "P01",
+        "P02",
+        "P03"
+      ],
+      "collectionLinks": 70,
+      "linkedGarden": true,
+      "actions": [],
+      "posters": [
+        {
+          "route": "person",
+          "lod": "desktop",
+          "path": "public/assets/stay/v1/person-desktop.webp",
+          "bytes": 34840,
+          "budgetPass": true,
+          "corridorViolations": []
+        },
+        {
+          "route": "person",
+          "lod": "mobile",
+          "path": "public/assets/stay/v1/person-mobile.webp",
+          "bytes": 14802,
+          "budgetPass": true,
+          "corridorViolations": []
+        }
+      ],
+      "reverseSeek": true
+    },
+    "builder": {
+      "master": "scripts/blender/stay-awhile/02-builder.blend",
+      "sourceSha256": "3194f8b53ab1eda70c65f3d63699abc728545754a05f13c0ebe628966f5c80f7",
+      "ownedAssetIds": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06"
+      ],
+      "collectionLinks": 62,
+      "linkedGarden": true,
+      "actions": [
+        "BUILD_BEAMS",
+        "BUILD_BENCH",
+        "BUILD_FOUNDATION",
+        "BUILD_POSTS",
+        "BUILD_ROOF",
+        "BUILD_TOKENS"
+      ],
+      "posters": [
+        {
+          "route": "builder",
+          "lod": "desktop",
+          "path": "public/assets/stay/v1/builder-desktop.webp",
+          "bytes": 67494,
+          "budgetPass": true,
+          "corridorViolations": []
+        },
+        {
+          "route": "builder",
+          "lod": "mobile",
+          "path": "public/assets/stay/v1/builder-mobile.webp",
+          "bytes": 29342,
+          "budgetPass": true,
+          "corridorViolations": []
+        }
+      ],
+      "reverseSeek": true
+    },
+    "thinker": {
+      "master": "scripts/blender/stay-awhile/03-thinker.blend",
+      "sourceSha256": "2ce082944af452e7685aed3cebf787f6a0575a065bc1d014d566311ba9e16152",
+      "ownedAssetIds": [
+        "T01",
+        "T02",
+        "T03"
+      ],
+      "collectionLinks": 58,
+      "linkedGarden": true,
+      "actions": [
+        "THINKER_SCROLL"
+      ],
+      "posters": [
+        {
+          "route": "thinker",
+          "lod": "desktop",
+          "path": "public/assets/stay/v1/thinker-desktop.webp",
+          "bytes": 76708,
+          "budgetPass": true,
+          "corridorViolations": []
+        },
+        {
+          "route": "thinker",
+          "lod": "mobile",
+          "path": "public/assets/stay/v1/thinker-mobile.webp",
+          "bytes": 37122,
+          "budgetPass": true,
+          "corridorViolations": []
+        }
+      ],
+      "reverseSeek": true
+    }
+  },
+  "assets": [
+    {
+      "assetId": "G01",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/terrain.desktop.glb",
+          "bytes": 346272,
+          "byteCap": 348160,
+          "triangles": 16494,
+          "triangleCap": 18000,
+          "beautyMeshCount": 12,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/terrain.mobile.glb",
+          "bytes": 126728,
+          "byteCap": 156672,
+          "triangles": 4832,
+          "triangleCap": 5000,
+          "beautyMeshCount": 12,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G02",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/path-kit.desktop.glb",
+          "bytes": 49680,
+          "byteCap": 87040,
+          "triangles": 1191,
+          "triangleCap": 1600,
+          "beautyMeshCount": 6,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/path-kit.mobile.glb",
+          "bytes": 26108,
+          "byteCap": 39936,
+          "triangles": 594,
+          "triangleCap": 600,
+          "beautyMeshCount": 3,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G03",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/sakura-canopy.desktop.glb",
+          "bytes": 119348,
+          "byteCap": 430080,
+          "triangles": 4392,
+          "triangleCap": 12000,
+          "beautyMeshCount": 10,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/sakura-canopy.mobile.glb",
+          "bytes": 49352,
+          "byteCap": 193536,
+          "triangles": 1552,
+          "triangleCap": 3600,
+          "beautyMeshCount": 10,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G04",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/bush-kit.desktop.glb",
+          "bytes": 42664,
+          "byteCap": 56320,
+          "triangles": 872,
+          "triangleCap": 1100,
+          "beautyMeshCount": 6,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/bush-kit.mobile.glb",
+          "bytes": 17172,
+          "byteCap": 25600,
+          "triangles": 240,
+          "triangleCap": 300,
+          "beautyMeshCount": 6,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G05",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/grass-kit.desktop.glb",
+          "bytes": 9248,
+          "byteCap": 18432,
+          "triangles": 240,
+          "triangleCap": 240,
+          "beautyMeshCount": 3,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/grass-kit.mobile.glb",
+          "bytes": 5212,
+          "byteCap": 9216,
+          "triangles": 72,
+          "triangleCap": 72,
+          "beautyMeshCount": 3,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G06",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/stone-kit.desktop.glb",
+          "bytes": 12492,
+          "byteCap": 61440,
+          "triangles": 216,
+          "triangleCap": 1200,
+          "beautyMeshCount": 4,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/stone-kit.mobile.glb",
+          "bytes": 9500,
+          "byteCap": 27648,
+          "triangles": 132,
+          "triangleCap": 320,
+          "beautyMeshCount": 4,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G07",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/water-plane.desktop.glb",
+          "bytes": 4376,
+          "byteCap": 24576,
+          "triangles": 162,
+          "triangleCap": 256,
+          "beautyMeshCount": 1,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/water-plane.mobile.glb",
+          "bytes": 2160,
+          "byteCap": 11264,
+          "triangles": 18,
+          "triangleCap": 32,
+          "beautyMeshCount": 1,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G08",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/lantern-kit.desktop.glb",
+          "bytes": 37504,
+          "byteCap": 66560,
+          "triangles": 344,
+          "triangleCap": 1100,
+          "beautyMeshCount": 0,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/lantern-kit.mobile.glb",
+          "bytes": 16380,
+          "byteCap": 30720,
+          "triangles": 120,
+          "triangleCap": 400,
+          "beautyMeshCount": 0,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G09",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/horizon-ring.desktop.glb",
+          "bytes": 16496,
+          "byteCap": 56320,
+          "triangles": 992,
+          "triangleCap": 1200,
+          "beautyMeshCount": 0,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/horizon-ring.mobile.glb",
+          "bytes": 7060,
+          "byteCap": 25600,
+          "triangles": 336,
+          "triangleCap": 480,
+          "beautyMeshCount": 0,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G10",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/foreground-fronds.desktop.glb",
+          "bytes": 5692,
+          "byteCap": 71680,
+          "triangles": 108,
+          "triangleCap": 1500,
+          "beautyMeshCount": 0,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/foreground-fronds.mobile.glb",
+          "bytes": 4648,
+          "byteCap": 32768,
+          "triangles": 60,
+          "triangleCap": 400,
+          "beautyMeshCount": 0,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G11",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/distant-tree-bank.desktop.glb",
+          "bytes": 82732,
+          "byteCap": 112640,
+          "triangles": 2142,
+          "triangleCap": 2400,
+          "beautyMeshCount": 2,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/distant-tree-bank.mobile.glb",
+          "bytes": 20224,
+          "byteCap": 51200,
+          "triangles": 410,
+          "triangleCap": 650,
+          "beautyMeshCount": 2,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G12",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/petal-kit.desktop.glb",
+          "bytes": 2720,
+          "byteCap": 8192,
+          "triangles": 8,
+          "triangleCap": 48,
+          "beautyMeshCount": 0,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/petal-kit.mobile.glb",
+          "bytes": 2732,
+          "byteCap": 4096,
+          "triangles": 8,
+          "triangleCap": 24,
+          "beautyMeshCount": 0,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G13",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/arrival-gate.desktop.glb",
+          "bytes": 23620,
+          "byteCap": 117760,
+          "triangles": 208,
+          "triangleCap": 2600,
+          "beautyMeshCount": 0,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/arrival-gate.mobile.glb",
+          "bytes": 10064,
+          "byteCap": 53248,
+          "triangles": 112,
+          "triangleCap": 900,
+          "beautyMeshCount": 0,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "G14",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/wayfinding-stone.desktop.glb",
+          "bytes": 37740,
+          "byteCap": 81920,
+          "triangles": 634,
+          "triangleCap": 1800,
+          "beautyMeshCount": 2,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/wayfinding-stone.mobile.glb",
+          "bytes": 20616,
+          "byteCap": 36864,
+          "triangles": 303,
+          "triangleCap": 600,
+          "beautyMeshCount": 2,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "P01",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/person/clearing-ground.desktop.glb",
+          "bytes": 106716,
+          "byteCap": 174080,
+          "triangles": 3584,
+          "triangleCap": 4000,
+          "beautyMeshCount": 4,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/person/clearing-ground.mobile.glb",
+          "bytes": 41352,
+          "byteCap": 78848,
+          "triangles": 1036,
+          "triangleCap": 1100,
+          "beautyMeshCount": 4,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "P02",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/person/paired-bench.desktop.glb",
+          "bytes": 27892,
+          "byteCap": 92160,
+          "triangles": 396,
+          "triangleCap": 1800,
+          "beautyMeshCount": 1,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/person/paired-bench.mobile.glb",
+          "bytes": 15412,
+          "byteCap": 41984,
+          "triangles": 208,
+          "triangleCap": 650,
+          "beautyMeshCount": 1,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "P03",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/person/root-arch.desktop.glb",
+          "bytes": 36668,
+          "byteCap": 97280,
+          "triangles": 738,
+          "triangleCap": 2200,
+          "beautyMeshCount": 4,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/person/root-arch.mobile.glb",
+          "bytes": 19988,
+          "byteCap": 44032,
+          "triangles": 406,
+          "triangleCap": 700,
+          "beautyMeshCount": 4,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "B01",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/foundation.desktop.glb",
+          "bytes": 52952,
+          "byteCap": 81920,
+          "triangles": 528,
+          "triangleCap": 1800,
+          "beautyMeshCount": 2,
+          "clips": [
+            {
+              "name": "BUILD_FOUNDATION",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 6
+            }
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/foundation.mobile.glb",
+          "bytes": 35368,
+          "byteCap": 36864,
+          "triangles": 300,
+          "triangleCap": 600,
+          "beautyMeshCount": 2,
+          "clips": [
+            {
+              "name": "BUILD_FOUNDATION",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assetId": "B02",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/posts.desktop.glb",
+          "bytes": 56604,
+          "byteCap": 107520,
+          "triangles": 624,
+          "triangleCap": 2400,
+          "beautyMeshCount": 6,
+          "clips": [
+            {
+              "name": "BUILD_POSTS",
+              "duration": 1.44,
+              "frameCount": 44,
+              "channels": 6
+            }
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/posts.mobile.glb",
+          "bytes": 38760,
+          "byteCap": 49152,
+          "triangles": 432,
+          "triangleCap": 720,
+          "beautyMeshCount": 6,
+          "clips": [
+            {
+              "name": "BUILD_POSTS",
+              "duration": 1.44,
+              "frameCount": 44,
+              "channels": 6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assetId": "B03",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/beams.desktop.glb",
+          "bytes": 45372,
+          "byteCap": 128000,
+          "triangles": 308,
+          "triangleCap": 3000,
+          "beautyMeshCount": 0,
+          "clips": [
+            {
+              "name": "BUILD_BEAMS",
+              "duration": 1.6,
+              "frameCount": 49,
+              "channels": 14
+            }
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/beams.mobile.glb",
+          "bytes": 26416,
+          "byteCap": 58368,
+          "triangles": 84,
+          "triangleCap": 900,
+          "beautyMeshCount": 0,
+          "clips": [
+            {
+              "name": "BUILD_BEAMS",
+              "duration": 1.6,
+              "frameCount": 49,
+              "channels": 14
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assetId": "B04",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/roof-slats.desktop.glb",
+          "bytes": 57252,
+          "byteCap": 153600,
+          "triangles": 528,
+          "triangleCap": 3600,
+          "beautyMeshCount": 0,
+          "clips": [
+            {
+              "name": "BUILD_ROOF",
+              "duration": 1.5,
+              "frameCount": 46,
+              "channels": 12
+            }
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/roof-slats.mobile.glb",
+          "bytes": 31096,
+          "byteCap": 69632,
+          "triangles": 144,
+          "triangleCap": 1000,
+          "beautyMeshCount": 0,
+          "clips": [
+            {
+              "name": "BUILD_ROOF",
+              "duration": 1.5,
+              "frameCount": 46,
+              "channels": 12
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assetId": "B05",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/workbench.desktop.glb",
+          "bytes": 44824,
+          "byteCap": 122880,
+          "triangles": 576,
+          "triangleCap": 2600,
+          "beautyMeshCount": 2,
+          "clips": [
+            {
+              "name": "BUILD_BENCH",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 1
+            }
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/workbench.mobile.glb",
+          "bytes": 25004,
+          "byteCap": 55296,
+          "triangles": 348,
+          "triangleCap": 800,
+          "beautyMeshCount": 2,
+          "clips": [
+            {
+              "name": "BUILD_BENCH",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assetId": "B06",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/artifact-tokens.desktop.glb",
+          "bytes": 64076,
+          "byteCap": 194560,
+          "triangles": 792,
+          "triangleCap": 4200,
+          "beautyMeshCount": 0,
+          "clips": [
+            {
+              "name": "BUILD_TOKENS",
+              "duration": 1.8,
+              "frameCount": 55,
+              "channels": 5
+            }
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/artifact-tokens.mobile.glb",
+          "bytes": 27096,
+          "byteCap": 88064,
+          "triangles": 216,
+          "triangleCap": 1400,
+          "beautyMeshCount": 0,
+          "clips": [
+            {
+              "name": "BUILD_TOKENS",
+              "duration": 1.8,
+              "frameCount": 55,
+              "channels": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assetId": "T01",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/thinker/tea-deck.desktop.glb",
+          "bytes": 103588,
+          "byteCap": 107520,
+          "triangles": 2144,
+          "triangleCap": 2400,
+          "beautyMeshCount": 4,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/thinker/tea-deck.mobile.glb",
+          "bytes": 32800,
+          "byteCap": 49152,
+          "triangles": 594,
+          "triangleCap": 750,
+          "beautyMeshCount": 2,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "T02",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/thinker/freedom-stones.desktop.glb",
+          "bytes": 29108,
+          "byteCap": 97280,
+          "triangles": 566,
+          "triangleCap": 2100,
+          "beautyMeshCount": 7,
+          "clips": []
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/thinker/freedom-stones.mobile.glb",
+          "bytes": 21176,
+          "byteCap": 44032,
+          "triangles": 363,
+          "triangleCap": 630,
+          "beautyMeshCount": 7,
+          "clips": []
+        }
+      }
+    },
+    {
+      "assetId": "T03",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/thinker/tea-bowl-scroll.desktop.glb",
+          "bytes": 12984,
+          "byteCap": 76800,
+          "triangles": 206,
+          "triangleCap": 1600,
+          "beautyMeshCount": 0,
+          "clips": [
+            {
+              "name": "THINKER_SCROLL",
+              "duration": 2.0,
+              "frameCount": 61,
+              "channels": 1
+            }
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/thinker/tea-bowl-scroll.mobile.glb",
+          "bytes": 9492,
+          "byteCap": 34816,
+          "triangles": 110,
+          "triangleCap": 450,
+          "beautyMeshCount": 0,
+          "clips": [
+            {
+              "name": "THINKER_SCROLL",
+              "duration": 2.0,
+              "frameCount": 61,
+              "channels": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "desktopExports": 26,
+  "mobileExports": 26,
+  "beautyMeshesPresent": 147,
+  "authoredClips": 7,
+  "protectedFileCount": 216,
+  "historicalProtectedBaselineMismatches": [
+    "src/app/(stay-awhile)/layout.tsx",
+    "src/app/(stay-awhile)/stay/page.tsx",
+    "src/app/(stay-awhile)/stay/builder/page.tsx",
+    "src/app/(stay-awhile)/stay/leader/page.tsx",
+    "src/app/(stay-awhile)/stay/person/page.tsx",
+    "src/app/(stay-awhile)/stay/thinker/page.tsx",
+    "src/sections/stay/native/GardenMap.tsx",
+    "src/sections/stay/native/GardenNav.tsx",
+    "src/sections/stay/native/map-topology.ts",
+    "src/sections/stay/native/stay.module.css",
+    "src/sections/stay/native/StayNavigation.tsx",
+    "src/sections/stay/native/StayShell.tsx"
+  ]
+}

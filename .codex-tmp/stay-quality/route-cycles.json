@@ -1,0 +1,23 @@
+[
+  {
+    "cycle": 1,
+    "away": {
+      "canvases": 1,
+      "progress": "1.000",
+      "renderer": "1",
+      "resources": "14,14,1,55,53",
+      "route": "person",
+      "world": "ready",
+      "y": 4550
+    },
+    "back": {
+      "canvases": 1,
+      "progress": "0.000",
+      "renderer": "1",
+      "resources": "13,13,1,48,41",
+      "route": "garden",
+      "world": "ready",
+      "y": 0
+    }
+  }
+]

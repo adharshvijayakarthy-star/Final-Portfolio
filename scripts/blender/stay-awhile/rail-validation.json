@@ -1,0 +1,146 @@
+{
+  "routes": [
+    {
+      "route": "garden",
+      "lod": "desktop",
+      "samples": 270,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "garden",
+      "lod": "mobile",
+      "samples": 270,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "person",
+      "lod": "desktop",
+      "samples": 360,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "person",
+      "lod": "mobile",
+      "samples": 360,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "builder",
+      "lod": "desktop",
+      "samples": 360,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "builder",
+      "lod": "mobile",
+      "samples": 360,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "thinker",
+      "lod": "desktop",
+      "samples": 315,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "thinker",
+      "lod": "mobile",
+      "samples": 315,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "leader",
+      "lod": "desktop",
+      "samples": 270,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "leader",
+      "lod": "mobile",
+      "samples": 270,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "stories",
+      "lod": "desktop",
+      "samples": 270,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "stories",
+      "lod": "mobile",
+      "samples": 270,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "work",
+      "lod": "desktop",
+      "samples": 315,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "work",
+      "lod": "mobile",
+      "samples": 315,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "future",
+      "lod": "desktop",
+      "samples": 225,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "future",
+      "lod": "mobile",
+      "samples": 225,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "aura",
+      "lod": "desktop",
+      "samples": 360,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "aura",
+      "lod": "mobile",
+      "samples": 360,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "contact",
+      "lod": "desktop",
+      "samples": 135,
+      "clearanceMetres": 0.5,
+      "violations": []
+    },
+    {
+      "route": "contact",
+      "lod": "mobile",
+      "samples": 135,
+      "clearanceMetres": 0.5,
+      "violations": []
+    }
+  ],
+  "totalSamples": 5760,
+  "violations": 0
+}

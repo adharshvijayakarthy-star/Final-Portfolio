@@ -1,0 +1,7 @@
+.artifact{max-width:32rem;margin-top:24px;border-top:1px solid rgba(247,242,231,.45);padding-top:18px;font:400 .8rem/1.5 var(--font-body-face),sans-serif}
+.artifact label{display:flex;justify-content:space-between;align-items:center;min-height:44px}
+.artifact input{width:100%;min-height:44px;accent-color:#e2cba8;cursor:pointer}
+.blocks{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:0;margin:12px 0}
+.blocks li{padding:8px 10px;border-left:2px solid #e2cba8;background:rgba(10,25,19,.5);min-width:0}
+.blocks span{display:block}.blocks small{display:block;color:#e2cba8;margin-top:4px}
+@media(max-width:400px){.blocks{grid-template-columns:repeat(2,minmax(0,1fr))}}

@@ -1,0 +1,851 @@
+{
+  "variants": [
+    {
+      "assetId": "G01",
+      "lod": "desktop",
+      "triangles": 14446,
+      "imagesLoaded": 10,
+      "meshObjects": 13,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G01",
+      "lod": "mobile",
+      "triangles": 4849,
+      "imagesLoaded": 10,
+      "meshObjects": 13,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G02",
+      "lod": "desktop",
+      "triangles": 1191,
+      "imagesLoaded": 3,
+      "meshObjects": 6,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G02",
+      "lod": "mobile",
+      "triangles": 594,
+      "imagesLoaded": 3,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G03",
+      "lod": "desktop",
+      "triangles": 11300,
+      "imagesLoaded": 3,
+      "meshObjects": 6,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G03",
+      "lod": "mobile",
+      "triangles": 3199,
+      "imagesLoaded": 3,
+      "meshObjects": 6,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G04",
+      "lod": "desktop",
+      "triangles": 656,
+      "imagesLoaded": 1,
+      "meshObjects": 4,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G04",
+      "lod": "mobile",
+      "triangles": 184,
+      "imagesLoaded": 1,
+      "meshObjects": 4,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G05",
+      "lod": "desktop",
+      "triangles": 240,
+      "imagesLoaded": 0,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G05",
+      "lod": "mobile",
+      "triangles": 72,
+      "imagesLoaded": 0,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G06",
+      "lod": "desktop",
+      "triangles": 1018,
+      "imagesLoaded": 3,
+      "meshObjects": 4,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G06",
+      "lod": "mobile",
+      "triangles": 160,
+      "imagesLoaded": 3,
+      "meshObjects": 4,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G07",
+      "lod": "desktop",
+      "triangles": 120,
+      "imagesLoaded": 0,
+      "meshObjects": 1,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G07",
+      "lod": "mobile",
+      "triangles": 12,
+      "imagesLoaded": 0,
+      "meshObjects": 1,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G08",
+      "lod": "desktop",
+      "triangles": 544,
+      "imagesLoaded": 4,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G08",
+      "lod": "mobile",
+      "triangles": 192,
+      "imagesLoaded": 4,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G09",
+      "lod": "desktop",
+      "triangles": 992,
+      "imagesLoaded": 3,
+      "meshObjects": 1,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G09",
+      "lod": "mobile",
+      "triangles": 336,
+      "imagesLoaded": 3,
+      "meshObjects": 1,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G10",
+      "lod": "desktop",
+      "triangles": 1050,
+      "imagesLoaded": 0,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G10",
+      "lod": "mobile",
+      "triangles": 342,
+      "imagesLoaded": 0,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G11",
+      "lod": "desktop",
+      "triangles": 2185,
+      "imagesLoaded": 4,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G11",
+      "lod": "mobile",
+      "triangles": 615,
+      "imagesLoaded": 4,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G12",
+      "lod": "desktop",
+      "triangles": 40,
+      "imagesLoaded": 0,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G12",
+      "lod": "mobile",
+      "triangles": 16,
+      "imagesLoaded": 0,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G13",
+      "lod": "desktop",
+      "triangles": 640,
+      "imagesLoaded": 6,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G13",
+      "lod": "mobile",
+      "triangles": 112,
+      "imagesLoaded": 6,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G14",
+      "lod": "desktop",
+      "triangles": 514,
+      "imagesLoaded": 3,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "G14",
+      "lod": "mobile",
+      "triangles": 93,
+      "imagesLoaded": 3,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "P01",
+      "lod": "desktop",
+      "triangles": 3584,
+      "imagesLoaded": 9,
+      "meshObjects": 6,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "P01",
+      "lod": "mobile",
+      "triangles": 1036,
+      "imagesLoaded": 9,
+      "meshObjects": 6,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "P02",
+      "lod": "desktop",
+      "triangles": 1492,
+      "imagesLoaded": 6,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "P02",
+      "lod": "mobile",
+      "triangles": 208,
+      "imagesLoaded": 6,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "P03",
+      "lod": "desktop",
+      "triangles": 380,
+      "imagesLoaded": 6,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "P03",
+      "lod": "mobile",
+      "triangles": 172,
+      "imagesLoaded": 3,
+      "meshObjects": 1,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B01",
+      "lod": "desktop",
+      "triangles": 1632,
+      "imagesLoaded": 6,
+      "meshObjects": 14,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B01",
+      "lod": "mobile",
+      "triangles": 300,
+      "imagesLoaded": 6,
+      "meshObjects": 14,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B02",
+      "lod": "desktop",
+      "triangles": 2256,
+      "imagesLoaded": 3,
+      "meshObjects": 12,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B02",
+      "lod": "mobile",
+      "triangles": 432,
+      "imagesLoaded": 3,
+      "meshObjects": 12,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B03",
+      "lod": "desktop",
+      "triangles": 1316,
+      "imagesLoaded": 3,
+      "meshObjects": 7,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B03",
+      "lod": "mobile",
+      "triangles": 84,
+      "imagesLoaded": 3,
+      "meshObjects": 7,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B04",
+      "lod": "desktop",
+      "triangles": 2256,
+      "imagesLoaded": 3,
+      "meshObjects": 12,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B04",
+      "lod": "mobile",
+      "triangles": 144,
+      "imagesLoaded": 3,
+      "meshObjects": 12,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B05",
+      "lod": "desktop",
+      "triangles": 1760,
+      "imagesLoaded": 6,
+      "meshObjects": 4,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B05",
+      "lod": "mobile",
+      "triangles": 348,
+      "imagesLoaded": 6,
+      "meshObjects": 4,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B06",
+      "lod": "desktop",
+      "triangles": 1656,
+      "imagesLoaded": 7,
+      "meshObjects": 7,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "B06",
+      "lod": "mobile",
+      "triangles": 216,
+      "imagesLoaded": 7,
+      "meshObjects": 7,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "T01",
+      "lod": "desktop",
+      "triangles": 2144,
+      "imagesLoaded": 9,
+      "meshObjects": 5,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "T01",
+      "lod": "mobile",
+      "triangles": 594,
+      "imagesLoaded": 6,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "T02",
+      "lod": "desktop",
+      "triangles": 1895,
+      "imagesLoaded": 3,
+      "meshObjects": 7,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "T02",
+      "lod": "mobile",
+      "triangles": 363,
+      "imagesLoaded": 3,
+      "meshObjects": 7,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "T03",
+      "lod": "desktop",
+      "triangles": 206,
+      "imagesLoaded": 1,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "T03",
+      "lod": "mobile",
+      "triangles": 110,
+      "imagesLoaded": 1,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "L01",
+      "lod": "desktop",
+      "triangles": 2419,
+      "imagesLoaded": 3,
+      "meshObjects": 5,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "L01",
+      "lod": "mobile",
+      "triangles": 1229,
+      "imagesLoaded": 5,
+      "meshObjects": 5,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "L02",
+      "lod": "desktop",
+      "triangles": 735,
+      "imagesLoaded": 6,
+      "meshObjects": 15,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "L02",
+      "lod": "mobile",
+      "triangles": 225,
+      "imagesLoaded": 6,
+      "meshObjects": 10,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "L03",
+      "lod": "desktop",
+      "triangles": 796,
+      "imagesLoaded": 7,
+      "meshObjects": 11,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "L03",
+      "lod": "mobile",
+      "triangles": 306,
+      "imagesLoaded": 7,
+      "meshObjects": 11,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "S01",
+      "lod": "desktop",
+      "triangles": 3809,
+      "imagesLoaded": 3,
+      "meshObjects": 5,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "S01",
+      "lod": "mobile",
+      "triangles": 1650,
+      "imagesLoaded": 3,
+      "meshObjects": 5,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "S02",
+      "lod": "desktop",
+      "triangles": 566,
+      "imagesLoaded": 7,
+      "meshObjects": 6,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "S02",
+      "lod": "mobile",
+      "triangles": 225,
+      "imagesLoaded": 7,
+      "meshObjects": 6,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "S03",
+      "lod": "desktop",
+      "triangles": 1590,
+      "imagesLoaded": 7,
+      "meshObjects": 12,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "S03",
+      "lod": "mobile",
+      "triangles": 546,
+      "imagesLoaded": 7,
+      "meshObjects": 12,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W01",
+      "lod": "desktop",
+      "triangles": 6084,
+      "imagesLoaded": 6,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W01",
+      "lod": "mobile",
+      "triangles": 1260,
+      "imagesLoaded": 6,
+      "meshObjects": 3,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W02",
+      "lod": "desktop",
+      "triangles": 544,
+      "imagesLoaded": 4,
+      "meshObjects": 16,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W02",
+      "lod": "mobile",
+      "triangles": 384,
+      "imagesLoaded": 4,
+      "meshObjects": 16,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W03",
+      "lod": "desktop",
+      "triangles": 468,
+      "imagesLoaded": 4,
+      "meshObjects": 5,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W03",
+      "lod": "mobile",
+      "triangles": 180,
+      "imagesLoaded": 4,
+      "meshObjects": 5,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W04",
+      "lod": "desktop",
+      "triangles": 954,
+      "imagesLoaded": 7,
+      "meshObjects": 9,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W04",
+      "lod": "mobile",
+      "triangles": 423,
+      "imagesLoaded": 7,
+      "meshObjects": 9,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W05",
+      "lod": "desktop",
+      "triangles": 144,
+      "imagesLoaded": 1,
+      "meshObjects": 4,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W05",
+      "lod": "mobile",
+      "triangles": 144,
+      "imagesLoaded": 1,
+      "meshObjects": 4,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W06",
+      "lod": "desktop",
+      "triangles": 828,
+      "imagesLoaded": 4,
+      "meshObjects": 7,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "W06",
+      "lod": "mobile",
+      "triangles": 348,
+      "imagesLoaded": 4,
+      "meshObjects": 7,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "F01",
+      "lod": "desktop",
+      "triangles": 8160,
+      "imagesLoaded": 4,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "F01",
+      "lod": "mobile",
+      "triangles": 2214,
+      "imagesLoaded": 4,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "F02",
+      "lod": "desktop",
+      "triangles": 722,
+      "imagesLoaded": 6,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "F02",
+      "lod": "mobile",
+      "triangles": 220,
+      "imagesLoaded": 6,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "F03",
+      "lod": "desktop",
+      "triangles": 134,
+      "imagesLoaded": 3,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "F03",
+      "lod": "mobile",
+      "triangles": 92,
+      "imagesLoaded": 3,
+      "meshObjects": 2,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "A01",
+      "lod": "desktop",
+      "triangles": 6930,
+      "imagesLoaded": 6,
+      "meshObjects": 18,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "A01",
+      "lod": "mobile",
+      "triangles": 1890,
+      "imagesLoaded": 6,
+      "meshObjects": 18,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "A02",
+      "lod": "desktop",
+      "triangles": 612,
+      "imagesLoaded": 1,
+      "meshObjects": 9,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "A02",
+      "lod": "mobile",
+      "triangles": 612,
+      "imagesLoaded": 1,
+      "meshObjects": 9,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "A03",
+      "lod": "desktop",
+      "triangles": 1704,
+      "imagesLoaded": 0,
+      "meshObjects": 24,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "A03",
+      "lod": "mobile",
+      "triangles": 540,
+      "imagesLoaded": 0,
+      "meshObjects": 13,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "A04",
+      "lod": "desktop",
+      "triangles": 931,
+      "imagesLoaded": 3,
+      "meshObjects": 11,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "A04",
+      "lod": "mobile",
+      "triangles": 352,
+      "imagesLoaded": 3,
+      "meshObjects": 11,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "C01",
+      "lod": "desktop",
+      "triangles": 560,
+      "imagesLoaded": 3,
+      "meshObjects": 1,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "C01",
+      "lod": "mobile",
+      "triangles": 112,
+      "imagesLoaded": 3,
+      "meshObjects": 1,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "C02",
+      "lod": "desktop",
+      "triangles": 468,
+      "imagesLoaded": 3,
+      "meshObjects": 1,
+      "imported": true,
+      "missingImages": []
+    },
+    {
+      "assetId": "C02",
+      "lod": "mobile",
+      "triangles": 61,
+      "imagesLoaded": 3,
+      "meshObjects": 1,
+      "imported": true,
+      "missingImages": []
+    }
+  ],
+  "errors": []
+}

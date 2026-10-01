@@ -1,0 +1,417 @@
+{
+  "environment": "Node fixture with real controllers/store and mocked browser, loader and renderer; not GPU or browser acceptance",
+  "cycles": [
+    {
+      "cycle": 1,
+      "route": "person",
+      "away": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      },
+      "back": {
+        "entries": 13,
+        "references": 13,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 7,
+        "textures": 7
+      }
+    },
+    {
+      "cycle": 2,
+      "route": "builder",
+      "away": {
+        "entries": 17,
+        "references": 17,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 11,
+        "textures": 11
+      },
+      "back": {
+        "entries": 13,
+        "references": 13,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 7,
+        "textures": 7
+      }
+    },
+    {
+      "cycle": 3,
+      "route": "thinker",
+      "away": {
+        "entries": 15,
+        "references": 15,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 10,
+        "textures": 9
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 4,
+      "route": "leader",
+      "away": {
+        "entries": 15,
+        "references": 15,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 9,
+        "textures": 9
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 5,
+      "route": "stories",
+      "away": {
+        "entries": 15,
+        "references": 15,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 9,
+        "textures": 9
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 6,
+      "route": "work",
+      "away": {
+        "entries": 18,
+        "references": 18,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 12,
+        "textures": 12
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 7,
+      "route": "future",
+      "away": {
+        "entries": 15,
+        "references": 15,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 9,
+        "textures": 9
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 8,
+      "route": "aura",
+      "away": {
+        "entries": 16,
+        "references": 16,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 10,
+        "textures": 10
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 9,
+      "route": "contact",
+      "away": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 10,
+      "route": "person",
+      "away": {
+        "entries": 15,
+        "references": 15,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 9,
+        "textures": 9
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 11,
+      "route": "builder",
+      "away": {
+        "entries": 18,
+        "references": 18,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 12,
+        "textures": 12
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 12,
+      "route": "thinker",
+      "away": {
+        "entries": 15,
+        "references": 15,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 10,
+        "textures": 9
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 13,
+      "route": "leader",
+      "away": {
+        "entries": 15,
+        "references": 15,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 9,
+        "textures": 9
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 14,
+      "route": "stories",
+      "away": {
+        "entries": 15,
+        "references": 15,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 9,
+        "textures": 9
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 15,
+      "route": "work",
+      "away": {
+        "entries": 18,
+        "references": 18,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 12,
+        "textures": 12
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 16,
+      "route": "future",
+      "away": {
+        "entries": 15,
+        "references": 15,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 9,
+        "textures": 9
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 17,
+      "route": "aura",
+      "away": {
+        "entries": 16,
+        "references": 16,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 10,
+        "textures": 10
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 18,
+      "route": "contact",
+      "away": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 19,
+      "route": "person",
+      "away": {
+        "entries": 15,
+        "references": 15,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 9,
+        "textures": 9
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    },
+    {
+      "cycle": 20,
+      "route": "builder",
+      "away": {
+        "entries": 18,
+        "references": 18,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 12,
+        "textures": 12
+      },
+      "back": {
+        "entries": 14,
+        "references": 14,
+        "roots": 1,
+        "frame": 0,
+        "geometries": 8,
+        "textures": 8
+      }
+    }
+  ],
+  "concurrency": "deduplicated fetch and idempotent release",
+  "cancellation": "late generation and disposal during preparation passed",
+  "poseCaching": "stationary clips are not re-evaluated; resize and score changes invalidate",
+  "maximumFrames": 1,
+  "disposed": {
+    "entries": 0,
+    "references": 0,
+    "roots": 0,
+    "frame": 0,
+    "geometries": 8,
+    "textures": 8
+  }
+}

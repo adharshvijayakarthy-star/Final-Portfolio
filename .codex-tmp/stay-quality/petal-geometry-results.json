@@ -1,0 +1,25 @@
+{
+  "source": "Actual delivered quantized desktop/mobile G12 buffers; synthetic canopy/camera for geometry regression only",
+  "records": [
+    {
+      "variant": "desktop",
+      "shape": [
+        0.8749999854480854,
+        0.21874999636202136,
+        1
+      ],
+      "count": 5,
+      "maxPixels": 6.24
+    },
+    {
+      "variant": "mobile",
+      "shape": [
+        1,
+        0.14285714523296567,
+        0.6785713858066178
+      ],
+      "count": 3,
+      "maxPixels": 6.26
+    }
+  ]
+}

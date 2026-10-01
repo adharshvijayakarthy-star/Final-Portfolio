@@ -1,0 +1,42 @@
+[
+  {
+    "assetId": "G01",
+    "lod": "desktop",
+    "maxBoundsErrorMetres": 0.0009737014770507812
+  },
+  {
+    "assetId": "G01",
+    "lod": "mobile",
+    "maxBoundsErrorMetres": 0.0012640953063964844
+  },
+  {
+    "assetId": "G02",
+    "lod": "desktop",
+    "maxBoundsErrorMetres": 0.00048363208770751953
+  },
+  {
+    "assetId": "G02",
+    "lod": "mobile",
+    "maxBoundsErrorMetres": 0.00047016143798828125
+  },
+  {
+    "assetId": "G03",
+    "lod": "desktop",
+    "maxBoundsErrorMetres": 0.0004968643188476562
+  },
+  {
+    "assetId": "G03",
+    "lod": "mobile",
+    "maxBoundsErrorMetres": 0.0004999637603759766
+  },
+  {
+    "assetId": "T01",
+    "lod": "desktop",
+    "maxBoundsErrorMetres": 0.00038051605224609375
+  },
+  {
+    "assetId": "T01",
+    "lod": "mobile",
+    "maxBoundsErrorMetres": 0.0004100799560546875
+  }
+]

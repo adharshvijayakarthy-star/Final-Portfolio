@@ -1,0 +1,114 @@
+﻿diff --git a/src/sections/quick-discovery/QuickDiscovery.module.css b/src/sections/quick-discovery/QuickDiscovery.module.css
+index cc6bbb6..c68afc5 100644
+--- a/src/sections/quick-discovery/QuickDiscovery.module.css
++++ b/src/sections/quick-discovery/QuickDiscovery.module.css
+@@ -7,6 +7,9 @@
+ .world{position:fixed;inset:0;z-index:-1;pointer-events:none;display:none}
+ .world canvas{display:block;width:100%;height:100%}
+ .atmosphere{position:absolute;inset:-5%;background:radial-gradient(ellipse at 72% 47%,transparent 20%,#06060a88 80%),radial-gradient(ellipse at 75% 66%,#720a1914,transparent 50%);will-change:transform}
++.embers{position:absolute;inset:0;overflow:hidden;pointer-events:none;mix-blend-mode:screen}
++.ember{position:absolute;left:0;top:0;width:clamp(2px,.28vw,5px);height:clamp(2px,.28vw,5px);border-radius:50%;background:#e8b5a5;box-shadow:0 0 9px 2px #c94a4f99;opacity:0;will-change:left,top,transform,opacity}
++.ember:nth-child(3n){background:#f2d7c0;box-shadow:0 0 13px 3px #d8776d99}.ember:nth-child(5n){width:clamp(3px,.42vw,7px);height:clamp(3px,.42vw,7px);background:#d86a66}
+ .progress{position:fixed;inset:0 auto auto 0;width:100%;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;z-index:25}
+ .markLeft{position:fixed;top:22px;left:28px;z-index:25;font:36px/.9 var(--font-display);letter-spacing:-.13em;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+ .markLeft i{color:#d73846;font-weight:400}.markLeft span{color:#b58ae8}.markLeft:hover{transform:scale(1.06) rotate(-3deg)}
+diff --git a/src/sections/quick-discovery/QuickDiscovery.tsx b/src/sections/quick-discovery/QuickDiscovery.tsx
+index 3b8dd4f..9ea2e43 100644
+--- a/src/sections/quick-discovery/QuickDiscovery.tsx
++++ b/src/sections/quick-discovery/QuickDiscovery.tsx
+@@ -29,7 +29,7 @@ function Stage({ name, id, label, children }: { name: string; id?: string; label
+ 
+ export function QuickDiscovery() {
+   return <div className={styles.root} data-qd-root>
+-    <div className={styles.world} data-world aria-hidden="true"><canvas data-world-canvas /><div className={styles.atmosphere} data-atmosphere /></div>
++    <div className={styles.world} data-world aria-hidden="true"><canvas data-world-canvas /><div className={styles.atmosphere} data-atmosphere /><div className={styles.embers} data-embers>{Array.from({length:36},(_,i)=><i className={styles.ember} data-ember key={i} />)}</div></div>
+     <div className={styles.progress} data-progress aria-hidden="true" />
+     <Link className={styles.markLeft} data-home href={routes.home} aria-label={quickCopy.quickHomeLabel}><i>{quickCopy.quickMark[0]}</i><span>{quickCopy.quickMark.slice(1)}</span></Link>
+     <span className={styles.markRight}>QUICK DISCOVERY</span>
+diff --git a/src/sections/quick-discovery/engine.ts b/src/sections/quick-discovery/engine.ts
+index 7b706dd..b4a30cf 100644
+--- a/src/sections/quick-discovery/engine.ts
++++ b/src/sections/quick-discovery/engine.ts
+@@ -17,6 +17,7 @@ export function startQuickDiscovery(root: HTMLElement) {
+   const canvas=root.querySelector<HTMLCanvasElement>("[data-world-canvas]")!;
+   const toggle=root.querySelector<HTMLButtonElement>("[data-motion-toggle]")!;
+   const atmosphere=root.querySelector<HTMLElement>("[data-atmosphere]")!;
++  const emberNodes=all<HTMLElement>(root,"[data-ember]");
+   const progress=root.querySelector<HTMLElement>("[data-progress]")!;
+   const line=root.querySelector<SVGPathElement>("[data-build-line]")!;
+   const count=root.querySelector<HTMLElement>("[data-count]")!;
+@@ -39,6 +40,7 @@ export function startQuickDiscovery(root: HTMLElement) {
+       s.chars.forEach(el=>el.removeAttribute("data-cursor"));
+     });
+     magnets.forEach(m=>{m.el.style.removeProperty("translate");m.x=m.y=m.tx=m.ty=0;});
++    emberNodes.forEach(el=>{el.removeAttribute("style");});
+     line.style.strokeDashoffset="0";
+   };
+   const updateNavigation=()=>{
+@@ -124,6 +126,24 @@ export function startQuickDiscovery(root: HTMLElement) {
+     drawNative(current);updateNavigation();
+     asset?.draw(current,x,y,elapsed);
+     atmosphere.style.transform=`translate3d(${x*7+Math.sin(elapsed*.11)*5}px,${y*4+Math.cos(elapsed*.09)*4}px,0)`;
++    // A small DOM layer keeps the ember response visible even when the WebGL
++    // layer is distant or visually quiet. Each particle rises on a loop, then
++    // receives a local cursor repulsion instead of a uniform screen shift.
++    const cursorX=(x+1)/2,cursorY=(y+1)/2;
++    emberNodes.forEach((ember,i)=>{
++      const baseX=((i*37)%101)/100;
++      const baseY=((i*61+17)%101)/100;
++      const phase=(i*.173)%1,speed=.045+(i%5)*.009;
++      const rise=(elapsed*speed+phase)%1;
++      const px=baseX,py=baseY+1.12-rise*1.18;
++      const dx=px-cursorX,dy=py-cursorY,dist=Math.hypot(dx,dy),influence=Math.max(0,1-dist/.26);
++      const repel=dist?influence/dist:0;
++      const ox=dx*repel*26,oy=dy*repel*26;
++      const fade=Math.min(1,rise/.12,(1-rise)/.16);
++      ember.style.left=`${(px*100).toFixed(2)}%`;ember.style.top=`${(py*100).toFixed(2)}%`;
++      ember.style.opacity=String((.28+(i%4)*.12)*fade);
++      ember.style.transform=`translate3d(${ox.toFixed(2)}px,${oy.toFixed(2)}px,0) scale(${(1+influence*.8).toFixed(3)})`;
++    });
+     progress.style.transform=`scaleX(${clamp(scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight))})`;
+     magnets.forEach(m=>{m.x=damp(m.x,m.tx,dt,9);m.y=damp(m.y,m.ty,dt,9);m.el.style.translate=`${m.x.toFixed(2)}px ${m.y.toFixed(2)}px`;});
+     frameCount++;frameTotal+=actualDt;sampleTime+=dt;
+diff --git a/src/sections/quick-discovery/spatial-asset.ts b/src/sections/quick-discovery/spatial-asset.ts
+index 4890334..e6f1843 100644
+--- a/src/sections/quick-discovery/spatial-asset.ts
++++ b/src/sections/quick-discovery/spatial-asset.ts
+@@ -29,6 +29,8 @@ export class SpatialAsset {
+   private focal: { object: THREE.Object3D; stage: number }[] = [];
+   private farEmbers: THREE.Object3D[] = [];
+   private nearEmbers: THREE.Object3D[] = [];
++  private emberHome = new Map<THREE.Object3D, THREE.Vector3>();
++  private emberMotion = new Map<THREE.Object3D, { phase:number; speed:number; lift:number }>();
+   private statsClock = 0;
+   private surroundings: {object:THREE.Object3D;from:number;to:number}[]=[];
+   private facets:THREE.Object3D[]=[];
+@@ -86,6 +88,14 @@ export class SpatialAsset {
+         (obj.name.startsWith("Ember_Far")?this.farEmbers:this.nearEmbers).push(obj);
+         for(const m of Array.isArray(obj.material)?obj.material:[obj.material]) {m.depthWrite=false;m.side=THREE.DoubleSide;}
+       });
++      const sourceEmbers=[...this.farEmbers,...this.nearEmbers];
++      sourceEmbers.forEach((source,index)=>{for(let copy=0;copy<2;copy++){
++        const clone=source.clone();clone.name=`${source.name}_Density_${copy}`;
++        clone.position.x+=(copy?1:-1)*(1.4+(index%5)*.32);clone.position.y+=((index%4)-1.5)*.7;clone.position.z-=copy?1.8:2.6;
++          embers.scene.add(clone);(source.name.startsWith("Ember_Far")?this.farEmbers:this.nearEmbers).push(clone);
++          this.emberMotion.set(clone,{phase:(index*1.71+copy*2.3)%6.28,speed:.42+(index%5)*.055,lift:source.name.startsWith("Ember_Far")?2.2:3.8});
++      }});
++      [...this.farEmbers,...this.nearEmbers].forEach(obj=>this.emberHome.set(obj,obj.position.clone()));
+       this.canvas.dataset["asset"]="ready";
+       this.canvas.dataset["clips"]=String(world.animations.length+embers.animations.length);
+       this.canvas.dataset["source"]=this.manifest.sourceSHA256;
+@@ -154,10 +164,10 @@ export class SpatialAsset {
+       workshop.visible=workshopAlpha>.001;
+       workshop.children.forEach(obj=>{if(obj instanceof THREE.Mesh&&!Array.isArray(obj.material))obj.material.opacity=workshopAlpha*.55;});
+     }
+-    this.farEmbers.forEach((obj,i)=>{obj.scale.multiplyScalar(1-quiet*.35);obj.visible=!mobile||i%3===0;});
++    this.farEmbers.forEach((obj,i)=>{obj.scale.setScalar(1-quiet*.35);obj.visible=!mobile||i%3===0;const home=this.emberHome.get(obj);const motion=this.emberMotion.get(obj);if(home){if(motion){const lift=((seconds*motion.speed+motion.phase)%6.28)/6.28*motion.lift-motion.lift*.5;obj.position.x=home.x+(mobile?0:x*(.16+(i%4)*.018))+Math.sin(seconds*.7+motion.phase)*.12;obj.position.y=home.y+lift+(mobile?0:-y*.1);}else if(!mobile){obj.position.x+=x*(.045+(i%4)*.008);obj.position.y-=y*.035;}}});
+     this.nearEmbers.forEach((obj,i)=>{
+-      obj.scale.multiplyScalar(1-quiet*.5);obj.visible=!mobile||i%2===0;
+-      if(!mobile){obj.position.x+=x*.08;obj.position.z-=y*.05;}
++      obj.scale.setScalar(1-quiet*.5);obj.visible=!mobile||i%2===0;
++      const home=this.emberHome.get(obj);const motion=this.emberMotion.get(obj);if(home){if(motion){const lift=((seconds*motion.speed+motion.phase)%6.28)/6.28*motion.lift-motion.lift*.5;obj.position.x=home.x+(mobile?0:x*(.3+(i%5)*.035))+Math.sin(seconds*.9+motion.phase)*.18;obj.position.y=home.y+lift+(mobile?0:-y*(.22+(i%3)*.035));obj.position.z=home.z;}else if(!mobile){obj.position.x+=x*(.16+(i%5)*.025);obj.position.y-=y*(.12+(i%3)*.025);}}
+     });
+     this.renderer.render(this.scene,this.camera);
+     // AnimationMixer may skip unchanged tracks while scroll is stationary.

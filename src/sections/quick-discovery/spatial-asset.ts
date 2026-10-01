@@ -29,6 +29,8 @@ export class SpatialAsset {
   private focal: { object: THREE.Object3D; stage: number }[] = [];
   private farEmbers: THREE.Object3D[] = [];
   private nearEmbers: THREE.Object3D[] = [];
+  private emberHome = new Map<THREE.Object3D, THREE.Vector3>();
+  private emberMotion = new Map<THREE.Object3D, { phase:number; speed:number; lift:number }>();
   private statsClock = 0;
   private surroundings: {object:THREE.Object3D;from:number;to:number}[]=[];
   private facets:THREE.Object3D[]=[];
@@ -86,6 +88,14 @@ export class SpatialAsset {
         (obj.name.startsWith("Ember_Far")?this.farEmbers:this.nearEmbers).push(obj);
         for(const m of Array.isArray(obj.material)?obj.material:[obj.material]) {m.depthWrite=false;m.side=THREE.DoubleSide;}
       });
+      const sourceEmbers=[...this.farEmbers,...this.nearEmbers];
+      sourceEmbers.forEach((source,index)=>{for(let copy=0;copy<2;copy++){
+        const clone=source.clone();clone.name=`${source.name}_Density_${copy}`;
+        clone.position.x+=(copy?1:-1)*(1.4+(index%5)*.32);clone.position.y+=((index%4)-1.5)*.7;clone.position.z-=copy?1.8:2.6;
+          embers.scene.add(clone);(source.name.startsWith("Ember_Far")?this.farEmbers:this.nearEmbers).push(clone);
+          this.emberMotion.set(clone,{phase:(index*1.71+copy*2.3)%6.28,speed:.42+(index%5)*.055,lift:source.name.startsWith("Ember_Far")?2.2:3.8});
+      }});
+      [...this.farEmbers,...this.nearEmbers].forEach(obj=>this.emberHome.set(obj,obj.position.clone()));
       this.canvas.dataset["asset"]="ready";
       this.canvas.dataset["clips"]=String(world.animations.length+embers.animations.length);
       this.canvas.dataset["source"]=this.manifest.sourceSHA256;
@@ -154,10 +164,10 @@ export class SpatialAsset {
       workshop.visible=workshopAlpha>.001;
       workshop.children.forEach(obj=>{if(obj instanceof THREE.Mesh&&!Array.isArray(obj.material))obj.material.opacity=workshopAlpha*.55;});
     }
-    this.farEmbers.forEach((obj,i)=>{obj.scale.multiplyScalar(1-quiet*.35);obj.visible=!mobile||i%3===0;});
+    this.farEmbers.forEach((obj,i)=>{obj.scale.setScalar(1-quiet*.35);obj.visible=!mobile||i%3===0;const home=this.emberHome.get(obj);const motion=this.emberMotion.get(obj);if(home){if(motion){const lift=((seconds*motion.speed+motion.phase)%6.28)/6.28*motion.lift-motion.lift*.5;obj.position.x=home.x+(mobile?0:x*(.16+(i%4)*.018))+Math.sin(seconds*.7+motion.phase)*.12;obj.position.y=home.y+lift+(mobile?0:-y*.1);}else if(!mobile){obj.position.x+=x*(.045+(i%4)*.008);obj.position.y-=y*.035;}}});
     this.nearEmbers.forEach((obj,i)=>{
-      obj.scale.multiplyScalar(1-quiet*.5);obj.visible=!mobile||i%2===0;
-      if(!mobile){obj.position.x+=x*.08;obj.position.z-=y*.05;}
+      obj.scale.setScalar(1-quiet*.5);obj.visible=!mobile||i%2===0;
+      const home=this.emberHome.get(obj);const motion=this.emberMotion.get(obj);if(home){if(motion){const lift=((seconds*motion.speed+motion.phase)%6.28)/6.28*motion.lift-motion.lift*.5;obj.position.x=home.x+(mobile?0:x*(.3+(i%5)*.035))+Math.sin(seconds*.9+motion.phase)*.18;obj.position.y=home.y+lift+(mobile?0:-y*(.22+(i%3)*.035));obj.position.z=home.z;}else if(!mobile){obj.position.x+=x*(.16+(i%5)*.025);obj.position.y-=y*(.12+(i%3)*.025);}}
     });
     this.renderer.render(this.scene,this.camera);
     // AnimationMixer may skip unchanged tracks while scroll is stationary.

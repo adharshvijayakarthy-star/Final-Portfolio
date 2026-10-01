@@ -1,0 +1,303 @@
+[
+  {
+    "beat": {
+      "from": "0",
+      "stayBeat": "person-b01",
+      "textProgress": "0.000",
+      "to": "0.12",
+      "typePhase": "prepare"
+    },
+    "canvas": {
+      "engine": "three.js r186",
+      "stayAmbient": "active",
+      "stayAtlas": "0.000",
+      "stayAttachmentMs": "27215.00",
+      "stayCamera": "-42.00,1.60,45.00",
+      "stayDrawCalls": "101",
+      "stayEmitters": "3",
+      "stayFirstFrameMs": "109.50",
+      "stayG10Visible": "true,true,true,true,true,true,true,true,true,true",
+      "stayLoads": "{\"/models/stay/v1/garden/grass-kit.desktop.glb\":{\"bytes\":12048,\"fetchMs\":61.599999994039536,\"parseMs\":2.9000000059604645},\"/models/stay/v1/garden/foreground-fronds.desktop.glb\":{\"bytes\":43272,\"fetchMs\":73.79999999701977,\"parseMs\":1.7000000029802322},\"/models/stay/v1/garden/petal-kit.desktop.glb\":{\"bytes\":4908,\"fetchMs\":117.79999999701977,\"parseMs\":1.5},\"/models/stay/v1/garden/bush-kit.desktop.glb\":{\"bytes\":22432,\"fetchMs\":55.70000000298023,\"parseMs\":98.79999999701977},\"/models/stay/v1/garden/path-kit.desktop.glb\":{\"bytes\":60376,\"fetchMs\":40.6000000089407,\"parseMs\":117.79999999701977},\"/models/stay/v1/garden/stone-kit.desktop.glb\":{\"bytes\":27392,\"fetchMs\":65.90000000596046,\"parseMs\":95.3999999910593},\"/models/stay/v1/garden/horizon-ring.desktop.glb\":{\"bytes\":19988,\"fetchMs\":69.90000000596046,\"parseMs\":94},\"/models/stay/v1/garden/distant-tree-bank.desktop.glb\":{\"bytes\":54384,\"fetchMs\":75.5,\"parseMs\":117.69999998807907},\"/models/stay/v1/person/paired-bench.desktop.glb\":{\"bytes\":48992,\"fetchMs\":82.59999999403954,\"parseMs\":221.40000000596046},\"/models/stay/v1/person/clearing-ground.desktop.glb\":{\"bytes\":108252,\"fetchMs\":89.19999998807907,\"parseMs\":225.40000000596046},\"/models/stay/v1/garden/sakura-canopy.desktop.glb\":{\"bytes\":341688,\"fetchMs\":109.70000000298023,\"parseMs\":211.79999999701977},\"/models/stay/v1/person/root-arch.desktop.glb\":{\"bytes\":12416,\"fetchMs\":112.59999999403954,\"parseMs\":218.40000000596046},\"/models/stay/v1/garden/terrain.desktop.glb\":{\"bytes\":348020,\"fetchMs\":98.5,\"parseMs\":238.79999999701977}}",
+      "stayPetals": "{\"count\":15,\"visible\":15,\"nearCanopy\":3,\"maxPixels\":9,\"zones\":[{\"min\":[1.6437613000000013,2.258,-14.235259],\"max\":[7.513656900000001,7.196,-6.379778799999997]},{\"min\":[-7.856238699999999,2.258,-17.235259],\"max\":[-1.9863430999999991,7.196,-9.3797788]},{\"min\":[-12.631274297872231,1.8269984607076644,-19.915528263196677],\"max\":[-4.974920625764902,5.876158460707664,-14.237645876259094]}]}",
+      "stayProgress": "0.000",
+      "stayRenderer": "1",
+      "stayResources": "13,13,1,40,49",
+      "stayRoute": "person",
+      "stayScheduler": "single",
+      "stayShaderPrepareMs": "254.30",
+      "stayTargetProgress": "0.000",
+      "stayTextureBytes": "85983232",
+      "stayTexturePrepareMs": "83.20",
+      "stayTiming": "{\"samples\":85,\"frameP50\":1005.5999755859375,\"frameP95\":1017.2999877929688,\"frameMax\":1018.5,\"cpuP95\":9.300000190734863}",
+      "stayTriangles": "69242",
+      "stayVariant": "desktop"
+    },
+    "canvases": 1,
+    "height": 900,
+    "overflow": false,
+    "phrases": [
+      {
+        "clip": "polygon(-3% -14%, -3% -14%, -23% 118%, -3% 118%)",
+        "exposure": "0.000",
+        "opacity": "1",
+        "text": "The person",
+        "tracking": "",
+        "transform": ""
+      },
+      {
+        "clip": "polygon(-3% -14%, -3% -14%, -23% 118%, -3% 118%)",
+        "exposure": "0.000",
+        "opacity": "1",
+        "text": "underneath the roles.",
+        "tracking": "",
+        "transform": ""
+      }
+    ],
+    "support": [
+      {
+        "clip": "inset(-4% -2% 100%)",
+        "exposure": "0.000",
+        "opacity": "0.18",
+        "text": "Student, builder, MUN organiser, future engineer. Those names describe parts of "
+      },
+      {
+        "clip": "inset(-4% -2% 100%)",
+        "exposure": "0.000",
+        "opacity": "0.18",
+        "text": "The current picture is someone trying to become capable and useful, while keepin"
+      }
+    ],
+    "title": "The person underneath the roles.",
+    "titleBottom": 494.078125,
+    "titleTop": 299.421875,
+    "url": "http://127.0.0.1:3132/stay/person/",
+    "width": 1440,
+    "world": "ready",
+    "y": 0,
+    "name": "hardfix-person-00-concealed"
+  },
+  {
+    "beat": {
+      "from": "0",
+      "stayBeat": "person-b01",
+      "textProgress": "0.286",
+      "to": "0.12",
+      "typePhase": "reveal"
+    },
+    "canvas": {
+      "engine": "three.js r186",
+      "stayAmbient": "active",
+      "stayAtlas": "0.000",
+      "stayAttachmentMs": "27215.00",
+      "stayCamera": "-42.33,1.62,43.93",
+      "stayDrawCalls": "99",
+      "stayEmitters": "3",
+      "stayFirstFrameMs": "109.50",
+      "stayG10Visible": "true,true,true,true,true,true,true,true,true,true",
+      "stayLoads": "{\"/models/stay/v1/garden/grass-kit.desktop.glb\":{\"bytes\":12048,\"fetchMs\":61.599999994039536,\"parseMs\":2.9000000059604645},\"/models/stay/v1/garden/foreground-fronds.desktop.glb\":{\"bytes\":43272,\"fetchMs\":73.79999999701977,\"parseMs\":1.7000000029802322},\"/models/stay/v1/garden/petal-kit.desktop.glb\":{\"bytes\":4908,\"fetchMs\":117.79999999701977,\"parseMs\":1.5},\"/models/stay/v1/garden/bush-kit.desktop.glb\":{\"bytes\":22432,\"fetchMs\":55.70000000298023,\"parseMs\":98.79999999701977},\"/models/stay/v1/garden/path-kit.desktop.glb\":{\"bytes\":60376,\"fetchMs\":40.6000000089407,\"parseMs\":117.79999999701977},\"/models/stay/v1/garden/stone-kit.desktop.glb\":{\"bytes\":27392,\"fetchMs\":65.90000000596046,\"parseMs\":95.3999999910593},\"/models/stay/v1/garden/horizon-ring.desktop.glb\":{\"bytes\":19988,\"fetchMs\":69.90000000596046,\"parseMs\":94},\"/models/stay/v1/garden/distant-tree-bank.desktop.glb\":{\"bytes\":54384,\"fetchMs\":75.5,\"parseMs\":117.69999998807907},\"/models/stay/v1/person/paired-bench.desktop.glb\":{\"bytes\":48992,\"fetchMs\":82.59999999403954,\"parseMs\":221.40000000596046},\"/models/stay/v1/person/clearing-ground.desktop.glb\":{\"bytes\":108252,\"fetchMs\":89.19999998807907,\"parseMs\":225.40000000596046},\"/models/stay/v1/garden/sakura-canopy.desktop.glb\":{\"bytes\":341688,\"fetchMs\":109.70000000298023,\"parseMs\":211.79999999701977},\"/models/stay/v1/person/root-arch.desktop.glb\":{\"bytes\":12416,\"fetchMs\":112.59999999403954,\"parseMs\":218.40000000596046},\"/models/stay/v1/garden/terrain.desktop.glb\":{\"bytes\":348020,\"fetchMs\":98.5,\"parseMs\":238.79999999701977}}",
+      "stayPetals": "{\"count\":15,\"visible\":13,\"nearCanopy\":2,\"maxPixels\":9,\"zones\":[{\"min\":[1.6437613000000013,2.258,-14.235259],\"max\":[7.513656900000001,7.196,-6.379778799999997]},{\"min\":[-7.856238699999999,2.258,-17.235259],\"max\":[-1.9863430999999991,7.196,-9.3797788]},{\"min\":[-12.631274297872231,1.8269984607076644,-19.915528263196677],\"max\":[-4.974920625764902,5.876158460707664,-14.237645876259094]}]}",
+      "stayProgress": "0.024",
+      "stayRenderer": "1",
+      "stayResources": "13,13,1,40,49",
+      "stayRoute": "person",
+      "stayScheduler": "single",
+      "stayShaderPrepareMs": "254.30",
+      "stayTargetProgress": "0.024",
+      "stayTextureBytes": "85983232",
+      "stayTexturePrepareMs": "83.20",
+      "stayTiming": "{\"samples\":205,\"frameP50\":1006.4000244140625,\"frameP95\":1017.7000122070312,\"frameMax\":1018.9000244140625,\"cpuP95\":6.300000190734863}",
+      "stayTriangles": "68682",
+      "stayVariant": "desktop"
+    },
+    "canvases": 1,
+    "height": 900,
+    "overflow": false,
+    "phrases": [
+      {
+        "clip": "polygon(-3% -14%, 49.5432% -14%, 29.5432% 118%, -3% 118%)",
+        "exposure": "0.417",
+        "opacity": "1",
+        "text": "The person",
+        "tracking": "",
+        "transform": ""
+      },
+      {
+        "clip": "polygon(-3% -14%, 10.5551% -14%, -9.4449% 118%, -3% 118%)",
+        "exposure": "0.108",
+        "opacity": "1",
+        "text": "underneath the roles.",
+        "tracking": "",
+        "transform": ""
+      }
+    ],
+    "support": [
+      {
+        "clip": "inset(-4% -2% 100%)",
+        "exposure": "0.000",
+        "opacity": "0.18",
+        "text": "Student, builder, MUN organiser, future engineer. Those names describe parts of "
+      },
+      {
+        "clip": "inset(-4% -2% 100%)",
+        "exposure": "0.000",
+        "opacity": "0.18",
+        "text": "The current picture is someone trying to become capable and useful, while keepin"
+      }
+    ],
+    "title": "The person underneath the roles.",
+    "titleBottom": 404.078125,
+    "titleTop": 209.421875,
+    "url": "http://127.0.0.1:3132/stay/person/",
+    "width": 1440,
+    "world": "ready",
+    "y": 90,
+    "name": "hardfix-person-01-reveal"
+  },
+  {
+    "beat": {
+      "from": "0",
+      "stayBeat": "person-b01",
+      "textProgress": "0.000",
+      "to": "0.12",
+      "typePhase": "prepare"
+    },
+    "canvas": {
+      "engine": "three.js r186",
+      "stayAmbient": "active",
+      "stayAtlas": "0.000",
+      "stayAttachmentMs": "34190.10",
+      "stayCamera": "-42.00,1.60,45.00",
+      "stayDrawCalls": "101",
+      "stayEmitters": "3",
+      "stayFirstFrameMs": "110.80",
+      "stayG10Visible": "true,true,true,true,true,true,true,true,true,true",
+      "stayLoads": "{\"/models/stay/v1/garden/grass-kit.desktop.glb\":{\"bytes\":12048,\"fetchMs\":233.79999999701977,\"parseMs\":10.299999997019768},\"/models/stay/v1/garden/foreground-fronds.desktop.glb\":{\"bytes\":43272,\"fetchMs\":249,\"parseMs\":8.5},\"/models/stay/v1/garden/petal-kit.desktop.glb\":{\"bytes\":4908,\"fetchMs\":304.8999999910593,\"parseMs\":4.300000011920929},\"/models/stay/v1/garden/path-kit.desktop.glb\":{\"bytes\":60376,\"fetchMs\":73.20000000298023,\"parseMs\":441.69999998807907},\"/models/stay/v1/garden/terrain.desktop.glb\":{\"bytes\":348020,\"fetchMs\":106.20000000298023,\"parseMs\":549.2000000029802},\"/models/stay/v1/garden/bush-kit.desktop.glb\":{\"bytes\":22432,\"fetchMs\":227.79999999701977,\"parseMs\":442},\"/models/stay/v1/garden/sakura-canopy.desktop.glb\":{\"bytes\":341688,\"fetchMs\":153,\"parseMs\":521.7000000029802},\"/models/stay/v1/garden/stone-kit.desktop.glb\":{\"bytes\":27392,\"fetchMs\":245.59999999403954,\"parseMs\":431.90000000596046},\"/models/stay/v1/garden/horizon-ring.desktop.glb\":{\"bytes\":19988,\"fetchMs\":260.5,\"parseMs\":443.70000000298023},\"/models/stay/v1/garden/distant-tree-bank.desktop.glb\":{\"bytes\":54384,\"fetchMs\":266.20000000298023,\"parseMs\":475.20000000298023},\"/models/stay/v1/person/clearing-ground.desktop.glb\":{\"bytes\":108252,\"fetchMs\":270.3999999910593,\"parseMs\":488.29999999701977},\"/models/stay/v1/person/paired-bench.desktop.glb\":{\"bytes\":48992,\"fetchMs\":310.3999999910593,\"parseMs\":451.6000000089407},\"/models/stay/v1/person/root-arch.desktop.glb\":{\"bytes\":12416,\"fetchMs\":320.40000000596046,\"parseMs\":504.09999999403954}}",
+      "stayPetals": "{\"count\":15,\"visible\":15,\"nearCanopy\":4,\"maxPixels\":9,\"shape\":[null,null,null],\"samples\":[0.4614991247653961,0.3995567560195923,0.9863718748092651,0.3139883875846863,0.27329564094543457,0.9887153506278992,0.45949283242225647,0.044233184307813644,0.9861802458763123,0.667966365814209,0.821315348148346,0.9867063760757446,0.42929041385650635,0.5267515778541565,0.9888032078742981,-0.2998482882976532,0.4776281416416168,0.9888280034065247],\"zones\":[{\"min\":[1.6437613000000013,2.258,-14.235259],\"max\":[7.513656900000001,7.196,-6.379778799999997]},{\"min\":[-7.856238699999999,2.258,-17.235259],\"max\":[-1.9863430999999991,7.196,-9.3797788]},{\"min\":[-12.631274297872231,1.8269984607076644,-19.915528263196677],\"max\":[-4.974920625764902,5.876158460707664,-14.237645876259094]}]}",
+      "stayProgress": "0.000",
+      "stayRenderer": "1",
+      "stayResources": "13,13,1,40,49",
+      "stayRoute": "person",
+      "stayScheduler": "single",
+      "stayShaderPrepareMs": "718.30",
+      "stayTargetProgress": "0.000",
+      "stayTextureBytes": "85983232",
+      "stayTexturePrepareMs": "110.80",
+      "stayTiming": "{\"samples\":145,\"frameP50\":1007.5,\"frameP95\":1017.7999877929688,\"frameMax\":1019.7000122070312,\"cpuP95\":4.699999809265137}",
+      "stayTriangles": "69242",
+      "stayVariant": "desktop"
+    },
+    "canvases": 1,
+    "height": 900,
+    "overflow": false,
+    "phrases": [
+      {
+        "clip": "polygon(-3% -14%, -3% -14%, -23% 118%, -3% 118%)",
+        "exposure": "0.000",
+        "opacity": "1",
+        "text": "The person",
+        "tracking": "",
+        "transform": ""
+      },
+      {
+        "clip": "polygon(-3% -14%, -3% -14%, -23% 118%, -3% 118%)",
+        "exposure": "0.000",
+        "opacity": "1",
+        "text": "underneath the roles.",
+        "tracking": "",
+        "transform": ""
+      }
+    ],
+    "support": [
+      {
+        "clip": "inset(-4% -2% 100%)",
+        "exposure": "0.000",
+        "opacity": "0.18",
+        "text": "Student, builder, MUN organiser, future engineer. Those names describe parts of "
+      },
+      {
+        "clip": "inset(-4% -2% 100%)",
+        "exposure": "0.000",
+        "opacity": "0.18",
+        "text": "The current picture is someone trying to become capable and useful, while keepin"
+      }
+    ],
+    "title": "The person underneath the roles.",
+    "titleBottom": 494.078125,
+    "titleTop": 299.421875,
+    "url": "http://127.0.0.1:3132/stay/person/",
+    "width": 1440,
+    "world": "ready",
+    "y": 0,
+    "name": "hardfix-person-canopy-debug"
+  },
+  {
+    "beat": {
+      "from": "0",
+      "stayBeat": "person-b01",
+      "textProgress": "0.000",
+      "to": "0.12",
+      "typePhase": "prepare"
+    },
+    "canvas": {
+      "engine": "three.js r186",
+      "stayAmbient": "idle",
+      "stayAtlas": "0.000",
+      "stayCamera": "0.00,0.00,0.00",
+      "stayDrawCalls": "0",
+      "stayEmitters": "0",
+      "stayPetals": "{\"count\":0,\"visible\":0,\"nearCanopy\":0,\"maxPixels\":0,\"zones\":[]}",
+      "stayProgress": "0.000",
+      "stayRenderer": "1",
+      "stayResources": "13,13,0,0,9",
+      "stayScheduler": "single",
+      "stayShaderPrepareMs": "193.30",
+      "stayTargetProgress": "0.000",
+      "stayTiming": "{\"samples\":11,\"frameP50\":1005.2999877929688,\"frameP95\":1065.300048828125,\"frameMax\":1065.300048828125,\"cpuP95\":22.600000381469727}",
+      "stayTriangles": "0",
+      "stayVariant": "desktop"
+    },
+    "canvases": 1,
+    "height": 900,
+    "overflow": false,
+    "phrases": [
+      {
+        "clip": "polygon(-3% -14%, -3% -14%, -23% 118%, -3% 118%)",
+        "exposure": "0.000",
+        "opacity": "1",
+        "text": "The person",
+        "tracking": "",
+        "transform": ""
+      },
+      {
+        "clip": "polygon(-3% -14%, -3% -14%, -23% 118%, -3% 118%)",
+        "exposure": "0.000",
+        "opacity": "1",
+        "text": "underneath the roles.",
+        "tracking": "",
+        "transform": ""
+      }
+    ],
+    "support": [
+      {
+        "clip": "inset(-4% -2% 100%)",
+        "exposure": "0.000",
+        "opacity": "0.18",
+        "text": "Student, builder, MUN organiser, future engineer. Those names describe parts of "
+      },
+      {
+        "clip": "inset(-4% -2% 100%)",
+        "exposure": "0.000",
+        "opacity": "0.18",
+        "text": "The current picture is someone trying to become capable and useful, while keepin"
+      }
+    ],
+    "title": "The person underneath the roles.",
+    "titleBottom": 494.078125,
+    "titleTop": 299.421875,
+    "url": "http://127.0.0.1:3132/stay/person/",
+    "width": 1440,
+    "world": "loading",
+    "y": 0,
+    "name": "final-person-00-concealed-petals"
+  }
+]

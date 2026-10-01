@@ -1,4 +1,4 @@
-import { all, one, show, type DestinationController } from "./motion-scope";
+import { all, show, type DestinationController } from "./motion-scope";
 
 export const startThinker: DestinationController = (root, scope, reduced) => {
   if (reduced) return;
@@ -14,8 +14,6 @@ export const startThinker: DestinationController = (root, scope, reduced) => {
     if (!entry.isIntersecting) return; owner.unobserve(entry.target);
     const items = all(entry.target, "[data-reveal]");
     if (entry.target.getAttribute("data-moment") === "1") {
-      const petal = one(entry.target, "[data-petal]");
-      if (petal) petal.style.animation = "stay-thinker-dropIn 1500ms cubic-bezier(.4,.02,.6,1) both";
       scope.after(1320, () => all(entry.target, "[data-ring]").forEach((ring, i) => {
         ring.style.animation = `stay-thinker-ringOut ${3400 + i * 400}ms ${i * 260}ms cubic-bezier(.16,.7,.3,1) forwards`;
       }));

@@ -1,0 +1,56 @@
+{
+  "routes": [
+    {
+      "id": "garden",
+      "samples": 2002,
+      "maxVelocityDifference": 0.0007290422619044747
+    },
+    {
+      "id": "person",
+      "samples": 2002,
+      "maxVelocityDifference": 0.001125210622990464
+    },
+    {
+      "id": "builder",
+      "samples": 2002,
+      "maxVelocityDifference": 0.0008368477138614544
+    },
+    {
+      "id": "thinker",
+      "samples": 2002,
+      "maxVelocityDifference": 0.000543800756785891
+    },
+    {
+      "id": "leader",
+      "samples": 2002,
+      "maxVelocityDifference": 0.0012068121755122849
+    },
+    {
+      "id": "stories",
+      "samples": 2002,
+      "maxVelocityDifference": 0.0008093478726556352
+    },
+    {
+      "id": "work",
+      "samples": 2002,
+      "maxVelocityDifference": 0.0023576089159394495
+    },
+    {
+      "id": "future",
+      "samples": 2002,
+      "maxVelocityDifference": 0.00027192470497539034
+    },
+    {
+      "id": "aura",
+      "samples": 2002,
+      "maxVelocityDifference": 0.0009918683529413245
+    },
+    {
+      "id": "contact",
+      "samples": 2002,
+      "maxVelocityDifference": 0.00011306156011436517
+    }
+  ],
+  "textSamples": 1001,
+  "profiler": "bounded, reset, zero interval exclusion, visible stall inclusion passed"
+}

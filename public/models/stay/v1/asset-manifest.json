@@ -1,0 +1,5041 @@
+{
+  "schemaVersion": 1,
+  "artistVersion": "senior-art-2026-09-27",
+  "specificationSha256": "1f89f2ca50ff42da80a52275a504c0a0a3c6060a01352e5428f287b278bebabc",
+  "artDirectionSpecificationSha256": "ec0ce6ca9574df3851917e8162b2cf5a68b132ba76b4f663ce75994f69056a4f",
+  "assets": [
+    {
+      "schemaVersion": 1,
+      "assetId": "G01",
+      "name": "Terrain",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-bark-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-bark-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-bark-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-rough.mobile.jpg",
+        "/models/stay/v1/shared/senior-ground-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-spray.desktop.png",
+        "/models/stay/v1/shared/senior-spray.mobile.png",
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 348020,
+          "sha256": "74778085cdbed4a49c28f5285b63a880ad619642730f503ac711e1c521281f42",
+          "triangles": 14446,
+          "materialCount": 5,
+          "nodeNames": [
+            "SA_G01_MESH_00",
+            "SA_G01_MESH_60",
+            "SA_G01_MESH_61",
+            "SA_G01_MESH_64",
+            "SA_G01_MESH_65",
+            "SA_G01_MESH_70",
+            "SA_G01_MESH_71",
+            "SA_G01_MESH_72",
+            "SA_G01_MESH_73",
+            "SA_G01_MESH_80",
+            "SA_G01_MESH_81",
+            "SA_G01_MESH_90",
+            "SA_G01_MESH_91",
+            "SA_G01_ROOT_00",
+            "SA_GARDEN_CAM_00",
+            "SA_GARDEN_CAM_01",
+            "SA_GARDEN_CAM_02",
+            "SA_GARDEN_CAM_03",
+            "SA_GARDEN_CAM_04",
+            "SA_GARDEN_CAM_05",
+            "SA_GARDEN_ENTRY_00",
+            "SA_GARDEN_EXIT_00",
+            "SA_GARDEN_LOOK_00",
+            "SA_GARDEN_LOOK_01",
+            "SA_GARDEN_LOOK_02",
+            "SA_GARDEN_LOOK_03",
+            "SA_GARDEN_LOOK_04",
+            "SA_GARDEN_LOOK_05",
+            "SA_GARDEN_TEXT_00",
+            "SA_GARDEN_TEXT_01",
+            "SA_GARDEN_TEXT_02",
+            "SA_GARDEN_TEXT_03",
+            "SA_GARDEN_TEXT_04",
+            "SA_GARDEN_TEXT_05"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -90.0,
+              -0.15000000596046448,
+              -90.0
+            ],
+            "max": [
+              90.0,
+              7.190000534057617,
+              90.0
+            ]
+          },
+          "uri": "/models/stay/v1/garden/terrain.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 122664,
+          "sha256": "4b19dd757960c36c4efeccb29874360a614a15372dd15a2e8bbadc4bee7fcba9",
+          "triangles": 4849,
+          "materialCount": 5,
+          "nodeNames": [
+            "SA_G01_MESH_00",
+            "SA_G01_MESH_60",
+            "SA_G01_MESH_61",
+            "SA_G01_MESH_64",
+            "SA_G01_MESH_65",
+            "SA_G01_MESH_70",
+            "SA_G01_MESH_71",
+            "SA_G01_MESH_72",
+            "SA_G01_MESH_73",
+            "SA_G01_MESH_80",
+            "SA_G01_MESH_81",
+            "SA_G01_MESH_90",
+            "SA_G01_MESH_91",
+            "SA_G01_ROOT_00",
+            "SA_GARDEN_CAM_00",
+            "SA_GARDEN_CAM_01",
+            "SA_GARDEN_CAM_02",
+            "SA_GARDEN_CAM_03",
+            "SA_GARDEN_CAM_04",
+            "SA_GARDEN_CAM_05",
+            "SA_GARDEN_ENTRY_00",
+            "SA_GARDEN_EXIT_00",
+            "SA_GARDEN_LOOK_00",
+            "SA_GARDEN_LOOK_01",
+            "SA_GARDEN_LOOK_02",
+            "SA_GARDEN_LOOK_03",
+            "SA_GARDEN_LOOK_04",
+            "SA_GARDEN_LOOK_05",
+            "SA_GARDEN_TEXT_00",
+            "SA_GARDEN_TEXT_01",
+            "SA_GARDEN_TEXT_02",
+            "SA_GARDEN_TEXT_03",
+            "SA_GARDEN_TEXT_04",
+            "SA_GARDEN_TEXT_05"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -90.0,
+              -0.15000000596046448,
+              -90.0
+            ],
+            "max": [
+              90.0,
+              7.65000057220459,
+              90.0
+            ]
+          },
+          "uri": "/models/stay/v1/garden/terrain.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/terrain.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/terrain.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G02",
+      "name": "Path Kit",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 60376,
+          "sha256": "87d984cbb97ebda5c86e5edf1a6ab6ec4a64c33c0fd6177f03d1a935af836c18",
+          "triangles": 1191,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_G02_MESH_62",
+            "SA_G02_MESH_63",
+            "SA_G02_BEND_00",
+            "SA_G02_MESH_64",
+            "SA_G02_MESH_65",
+            "SA_G02_JUNCTION_00",
+            "SA_G02_MESH_60",
+            "SA_G02_MESH_61",
+            "SA_G02_STRAIGHT_00",
+            "SA_G02_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -1.942000150680542,
+              -0.12400000542402267,
+              -2.071000099182129
+            ],
+            "max": [
+              1.873000144958496,
+              0.07500000298023224,
+              1.9930001497268677
+            ]
+          },
+          "uri": "/models/stay/v1/garden/path-kit.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 32116,
+          "sha256": "ce02f5afd77d449cebcd9d3b20a077475e0a237820f48f35314cccfe39b7a2e1",
+          "triangles": 594,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G02_MESH_61",
+            "SA_G02_BEND_00",
+            "SA_G02_MESH_62",
+            "SA_G02_JUNCTION_00",
+            "SA_G02_MESH_60",
+            "SA_G02_STRAIGHT_00",
+            "SA_G02_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -1.8940000534057617,
+              -0.12400000542402267,
+              -2.0510001182556152
+            ],
+            "max": [
+              1.9640001058578491,
+              0.0,
+              2.009000062942505
+            ]
+          },
+          "uri": "/models/stay/v1/garden/path-kit.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/path-kit.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/path-kit.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G03",
+      "name": "Sakura Canopy",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-bark-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-bark-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-bark-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 341688,
+          "sha256": "5776eaa291e4cb4bc48ed9e019a35dc527938ad29f95a0535c1169868afb226c",
+          "triangles": 11300,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_G03_MESH_62",
+            "SA_G03_MESH_61",
+            "SA_G03_MESH_64",
+            "SA_G03_SWAY_A_00",
+            "SA_G03_MESH_63",
+            "SA_G03_SWAY_B_00",
+            "SA_G03_MESH_60",
+            "SA_G03_MESH_65",
+            "SA_G03_SWAY_C_00",
+            "SA_G03_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -4.356238842010498,
+              -0.04200000315904617,
+              -4.235259056091309
+            ],
+            "max": [
+              1.5136569738388062,
+              7.196000099182129,
+              3.6202213764190674
+            ]
+          },
+          "uri": "/models/stay/v1/garden/sakura-canopy.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 98836,
+          "sha256": "f1a3474198765f8e577a20e228f0e01f64d59dbcbf5bc20b7696e5c42359e94d",
+          "triangles": 3199,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_G03_MESH_62",
+            "SA_G03_MESH_61",
+            "SA_G03_MESH_64",
+            "SA_G03_SWAY_A_00",
+            "SA_G03_MESH_63",
+            "SA_G03_SWAY_B_00",
+            "SA_G03_MESH_60",
+            "SA_G03_MESH_65",
+            "SA_G03_SWAY_C_00",
+            "SA_G03_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -4.380239009857178,
+              -0.04200000315904617,
+              -4.493259429931641
+            ],
+            "max": [
+              1.3626737594604492,
+              10.018000602722168,
+              3.511221408843994
+            ]
+          },
+          "uri": "/models/stay/v1/garden/sakura-canopy.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/sakura-canopy.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/sakura-canopy.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G04",
+      "name": "Bush Kit",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-spray.desktop.png",
+        "/models/stay/v1/shared/senior-spray.mobile.png"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 22432,
+          "sha256": "fe9eb93205410296075ee846f4791784c6a214f0fd2cabcdffb54bce99b7c99e",
+          "triangles": 656,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_G04_MESH_60",
+            "SA_G04_MESH_61",
+            "SA_G04_BUSH_00",
+            "SA_G04_MESH_62",
+            "SA_G04_MESH_63",
+            "SA_G04_BUSH_01",
+            "SA_G04_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.550000011920929,
+              -0.009000000543892384,
+              -0.4610000252723694
+            ],
+            "max": [
+              0.5410000085830688,
+              0.8320000171661377,
+              0.46400001645088196
+            ]
+          },
+          "uri": "/models/stay/v1/garden/bush-kit.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 9804,
+          "sha256": "8f2528b238a0dbb2a883dda448bb2de71fb91c8f0f48198371a402048e49a6c4",
+          "triangles": 184,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_G04_MESH_60",
+            "SA_G04_MESH_61",
+            "SA_G04_BUSH_00",
+            "SA_G04_MESH_62",
+            "SA_G04_MESH_63",
+            "SA_G04_BUSH_01",
+            "SA_G04_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.5240000486373901,
+              -0.06300000101327896,
+              -0.5100000500679016
+            ],
+            "max": [
+              0.550000011920929,
+              0.9050000309944153,
+              0.46400001645088196
+            ]
+          },
+          "uri": "/models/stay/v1/garden/bush-kit.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/bush-kit.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/bush-kit.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G05",
+      "name": "Grass Kit",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 12048,
+          "sha256": "6647f4d3bb1df8f4f20833201641c84010ac522d3c368002b1bc4eed3efc776d",
+          "triangles": 240,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G05_MESH_60",
+            "SA_G05_TUFT_00",
+            "SA_G05_MESH_61",
+            "SA_G05_TUFT_01",
+            "SA_G05_MESH_62",
+            "SA_G05_TUFT_02",
+            "SA_G05_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.30000001192092896,
+              0.0,
+              -0.2990000247955322
+            ],
+            "max": [
+              0.2990000247955322,
+              0.3140000104904175,
+              0.29600000381469727
+            ]
+          },
+          "uri": "/models/stay/v1/garden/grass-kit.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 5984,
+          "sha256": "d099a4b2e4687dbb8ea1371599e327854c95153781e7e44a9daac92485253df8",
+          "triangles": 72,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G05_MESH_60",
+            "SA_G05_TUFT_00",
+            "SA_G05_MESH_61",
+            "SA_G05_TUFT_01",
+            "SA_G05_MESH_62",
+            "SA_G05_TUFT_02",
+            "SA_G05_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.23000000417232513,
+              0.0,
+              -0.2990000247955322
+            ],
+            "max": [
+              0.2990000247955322,
+              0.3140000104904175,
+              0.22100001573562622
+            ]
+          },
+          "uri": "/models/stay/v1/garden/grass-kit.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/grass-kit.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/grass-kit.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G06",
+      "name": "Stone Kit",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 27392,
+          "sha256": "b4db3d8af737ed3e6cb6323a1268d1bcdc60b05558278c446a05fcf0fb3f91ea",
+          "triangles": 1018,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G06_MESH_60",
+            "SA_G06_STONE_00",
+            "SA_G06_MESH_61",
+            "SA_G06_STONE_01",
+            "SA_G06_MESH_62",
+            "SA_G06_STONE_02",
+            "SA_G06_MESH_63",
+            "SA_G06_STONE_03",
+            "SA_G06_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.5680000185966492,
+              -0.02500000037252903,
+              -0.5860000252723694
+            ],
+            "max": [
+              0.625,
+              0.6170000433921814,
+              0.5960000157356262
+            ]
+          },
+          "uri": "/models/stay/v1/garden/stone-kit.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 10428,
+          "sha256": "0604188e342ce97a375fd60cd32652829c8852067f35222e6659a97249ff97dc",
+          "triangles": 160,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G06_MESH_60",
+            "SA_G06_STONE_00",
+            "SA_G06_MESH_61",
+            "SA_G06_STONE_01",
+            "SA_G06_MESH_62",
+            "SA_G06_STONE_02",
+            "SA_G06_MESH_63",
+            "SA_G06_STONE_03",
+            "SA_G06_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.703000009059906,
+              -0.02500000037252903,
+              -0.5080000162124634
+            ],
+            "max": [
+              0.6130000352859497,
+              0.6340000033378601,
+              0.4690000116825104
+            ]
+          },
+          "uri": "/models/stay/v1/garden/stone-kit.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/stone-kit.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/stone-kit.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G07",
+      "name": "Water Plane",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 6004,
+          "sha256": "fe52e0ad68722b430a3d41032002f07aa18fc43f17646759c11f5322c52581e4",
+          "triangles": 120,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G07_MESH_60",
+            "SA_G07_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -5.964000225067139,
+              -0.003000000026077032,
+              -4.966000080108643
+            ],
+            "max": [
+              6.13800048828125,
+              0.013000000268220901,
+              5.150000095367432
+            ]
+          },
+          "uri": "/models/stay/v1/garden/water-plane.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 2272,
+          "sha256": "492b9f089c635aa8afe31bf14c74ef0867d64634529f6438e4a0de5c228092be",
+          "triangles": 12,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G07_MESH_60",
+            "SA_G07_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -5.934000492095947,
+              -0.003000000026077032,
+              -4.958000183105469
+            ],
+            "max": [
+              6.160000324249268,
+              0.010000000707805157,
+              5.124000072479248
+            ]
+          },
+          "uri": "/models/stay/v1/garden/water-plane.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/water-plane.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/water-plane.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G08",
+      "name": "Lantern Kit",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 34372,
+          "sha256": "ba80bc206845bdd406633aae3747ce864d82a428317d4057fcffd881b26a9e99",
+          "triangles": 544,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_G08_MESH_60",
+            "SA_G08_MESH_61",
+            "SA_G08_MESH_62",
+            "SA_G08_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.2600000202655792,
+              0.0,
+              -0.2600000202655792
+            ],
+            "max": [
+              0.2600000202655792,
+              1.1069999933242798,
+              0.2600000202655792
+            ]
+          },
+          "uri": "/models/stay/v1/garden/lantern-kit.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 14596,
+          "sha256": "2d6cf196a011a1f21382d08edba579451b2cb60458e662434a7effcd17a8ea6b",
+          "triangles": 192,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_G08_MESH_60",
+            "SA_G08_MESH_61",
+            "SA_G08_MESH_62",
+            "SA_G08_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.2600000202655792,
+              0.0,
+              -0.2600000202655792
+            ],
+            "max": [
+              0.2600000202655792,
+              1.1069999933242798,
+              0.2600000202655792
+            ]
+          },
+          "uri": "/models/stay/v1/garden/lantern-kit.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/lantern-kit.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/lantern-kit.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G09",
+      "name": "Horizon Ring",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-ground-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 19988,
+          "sha256": "2a20029e12cf60324b36899b3dd1e1ed124a66fc8ad18db51d240392e43e90bc",
+          "triangles": 992,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G09_MESH_00",
+            "SA_G09_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -314.9700012207031,
+              0.0,
+              -302.6300048828125
+            ],
+            "max": [
+              316.2099914550781,
+              11.769999504089355,
+              296.8500061035156
+            ]
+          },
+          "uri": "/models/stay/v1/garden/horizon-ring.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 9324,
+          "sha256": "9e009b6707d4a1dbfa1bb402aca7361557a885280aab2ff911c250a6cfa40557",
+          "triangles": 336,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G09_MESH_00",
+            "SA_G09_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -291.97998046875,
+              0.0,
+              -278.8399963378906
+            ],
+            "max": [
+              297.4499816894531,
+              11.769999504089355,
+              276.0199890136719
+            ]
+          },
+          "uri": "/models/stay/v1/garden/horizon-ring.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/horizon-ring.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/horizon-ring.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G10",
+      "name": "Foreground Fronds",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 43272,
+          "sha256": "816a47191d07d1482619c2be0700341f4eae532714e9a24b575184aa40bbd740",
+          "triangles": 1050,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G10_MESH_60",
+            "SA_G10_FAN_00",
+            "SA_G10_MESH_61",
+            "SA_G10_FAN_01",
+            "SA_G10_MESH_62",
+            "SA_G10_FAN_02",
+            "SA_G10_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.7140000462532043,
+              -0.007000000216066837,
+              -0.24400001764297485
+            ],
+            "max": [
+              1.1050000190734863,
+              0.8530000448226929,
+              0.44700002670288086
+            ]
+          },
+          "uri": "/models/stay/v1/garden/foreground-fronds.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 16444,
+          "sha256": "b5b32b655c6c081426fbfab7413e0a60d9f7d7c1735b843911338c7842deeee8",
+          "triangles": 342,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G10_MESH_60",
+            "SA_G10_FAN_00",
+            "SA_G10_MESH_61",
+            "SA_G10_FAN_01",
+            "SA_G10_MESH_62",
+            "SA_G10_FAN_02",
+            "SA_G10_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.7140000462532043,
+              -0.006000000052154064,
+              -0.18900001049041748
+            ],
+            "max": [
+              0.5440000295639038,
+              0.8530000448226929,
+              0.44700002670288086
+            ]
+          },
+          "uri": "/models/stay/v1/garden/foreground-fronds.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/foreground-fronds.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/foreground-fronds.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G11",
+      "name": "Distant Tree Bank",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-bark-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-spray.desktop.png",
+        "/models/stay/v1/shared/senior-spray.mobile.png"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 54384,
+          "sha256": "8d574121b0f816354c94d87c40b816eadac2d3ab7fa09ea56198767553f34278",
+          "triangles": 2185,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_G11_MESH_60",
+            "SA_G11_MESH_61",
+            "SA_G11_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -9.36500072479248,
+              -0.046000003814697266,
+              -3.939000129699707
+            ],
+            "max": [
+              8.357000350952148,
+              8.5910005569458,
+              4.680000305175781
+            ]
+          },
+          "uri": "/models/stay/v1/garden/distant-tree-bank.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 17996,
+          "sha256": "9c9c474565eb6ca7ce6ff380695081bfa417157a3648e732dde22c8a1c170bc3",
+          "triangles": 615,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_G11_MESH_60",
+            "SA_G11_MESH_61",
+            "SA_G11_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -9.67300033569336,
+              -0.046000003814697266,
+              -4.022000312805176
+            ],
+            "max": [
+              8.414999961853027,
+              8.890000343322754,
+              5.111000061035156
+            ]
+          },
+          "uri": "/models/stay/v1/garden/distant-tree-bank.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/distant-tree-bank.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/distant-tree-bank.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G12",
+      "name": "Petal Kit",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 4908,
+          "sha256": "162bf12309049059162010e3fbb0328f002ff750a9c7aaf8f334e30232fa4f0a",
+          "triangles": 40,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G12_MESH_60",
+            "SA_G12_PETAL_00",
+            "SA_G12_MESH_61",
+            "SA_G12_PETAL_01",
+            "SA_G12_MESH_62",
+            "SA_G12_PETAL_02",
+            "SA_G12_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.03500000014901161,
+              -0.013000000268220901,
+              -0.026000000536441803
+            ],
+            "max": [
+              0.03800000250339508,
+              0.018000001087784767,
+              0.039000000804662704
+            ]
+          },
+          "uri": "/models/stay/v1/garden/petal-kit.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 3404,
+          "sha256": "bafbfe69c223621de32c6869c1b34301810fcd46f543f6f95f9242ef2ff9084f",
+          "triangles": 16,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G12_MESH_60",
+            "SA_G12_PETAL_00",
+            "SA_G12_MESH_61",
+            "SA_G12_PETAL_01",
+            "SA_G12_MESH_62",
+            "SA_G12_PETAL_02",
+            "SA_G12_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.04000000283122063,
+              -0.0010000000474974513,
+              -0.018000001087784767
+            ],
+            "max": [
+              0.03800000250339508,
+              0.007000000216066837,
+              0.02800000086426735
+            ]
+          },
+          "uri": "/models/stay/v1/garden/petal-kit.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/petal-kit.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/petal-kit.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G13",
+      "name": "Arrival Gate",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-ground-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 27728,
+          "sha256": "6228c6ee269d8ef46d7672018445da1de81dfa8782167589162e19593d6ec29f",
+          "triangles": 640,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_G13_MESH_00",
+            "SA_G13_MESH_01",
+            "SA_G13_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -1.790000081062317,
+              0.0,
+              -0.23000000417232513
+            ],
+            "max": [
+              1.6100001335144043,
+              3.3000001907348633,
+              0.23400001227855682
+            ]
+          },
+          "uri": "/models/stay/v1/garden/arrival-gate.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 7256,
+          "sha256": "d1b36df7ebccafb8d5b47277051067c0db2489d07dd2358c5ab1e28e445f0058",
+          "triangles": 112,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_G13_MESH_00",
+            "SA_G13_MESH_01",
+            "SA_G13_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -1.790000081062317,
+              0.0,
+              -0.23000000417232513
+            ],
+            "max": [
+              1.6100001335144043,
+              3.3000001907348633,
+              0.23400001227855682
+            ]
+          },
+          "uri": "/models/stay/v1/garden/arrival-gate.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/arrival-gate.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/arrival-gate.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "G14",
+      "name": "Wayfinding Stone",
+      "ownerRoute": "garden",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "sourceSha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/garden-desktop.webp",
+        "mobile": "/assets/stay/v1/garden-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 15212,
+          "sha256": "5b9f1b88e29a653bcb0c845831c4cc2c04b1e77f405ff2e35262a252a49c66e4",
+          "triangles": 514,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G14_MESH_60",
+            "SA_G14_MESH_61",
+            "SA_G14_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.4870000183582306,
+              -0.04000000283122063,
+              -0.3150000274181366
+            ],
+            "max": [
+              0.4970000088214874,
+              0.7210000157356262,
+              0.37400001287460327
+            ]
+          },
+          "uri": "/models/stay/v1/garden/wayfinding-stone.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 6732,
+          "sha256": "ac60d9ad49d64594351849c7701621af9f632352e526f3c103f01a1dacf30047",
+          "triangles": 93,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_G14_MESH_60",
+            "SA_G14_MESH_61",
+            "SA_G14_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.5530000329017639,
+              -0.04400000348687172,
+              -0.35600000619888306
+            ],
+            "max": [
+              0.5700000524520874,
+              0.7380000352859497,
+              0.37400001287460327
+            ]
+          },
+          "uri": "/models/stay/v1/garden/wayfinding-stone.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/garden/wayfinding-stone.desktop.glb",
+      "mobileUrl": "/models/stay/v1/garden/wayfinding-stone.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "P01",
+      "name": "Clearing Ground",
+      "ownerRoute": "person",
+      "sourceBlend": "scripts/blender/stay-awhile/01-person.blend",
+      "sourceSha256": "e1c7e5cb9567bf19ae26a1d2f412fed37a3e515eadad8c407562157891fb8257",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-ground-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/person-desktop.webp",
+        "mobile": "/assets/stay/v1/person-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 108252,
+          "sha256": "f46ea07f7f0c56509a44914b39555a4ae7eab2ad7e7225f986a310c0ca80cd6a",
+          "triangles": 3584,
+          "materialCount": 4,
+          "nodeNames": [
+            "SA_P01_MESH_00",
+            "SA_P01_MESH_01",
+            "SA_P01_MESH_60",
+            "SA_P01_MESH_61",
+            "SA_P01_MESH_62",
+            "SA_P01_MESH_63",
+            "SA_P01_ROOT_00",
+            "SA_PERSON_CAM_00",
+            "SA_PERSON_CAM_01",
+            "SA_PERSON_CAM_02",
+            "SA_PERSON_CAM_03",
+            "SA_PERSON_CAM_04",
+            "SA_PERSON_CAM_05",
+            "SA_PERSON_CAM_06",
+            "SA_PERSON_CAM_07",
+            "SA_PERSON_ENTRY_00",
+            "SA_PERSON_EXIT_00",
+            "SA_PERSON_LOOK_00",
+            "SA_PERSON_LOOK_01",
+            "SA_PERSON_LOOK_02",
+            "SA_PERSON_LOOK_03",
+            "SA_PERSON_LOOK_04",
+            "SA_PERSON_LOOK_05",
+            "SA_PERSON_LOOK_06",
+            "SA_PERSON_LOOK_07",
+            "SA_PERSON_TEXT_00",
+            "SA_PERSON_TEXT_01",
+            "SA_PERSON_TEXT_02",
+            "SA_PERSON_TEXT_03",
+            "SA_PERSON_TEXT_04",
+            "SA_PERSON_TEXT_05",
+            "SA_PERSON_TEXT_06",
+            "SA_PERSON_TEXT_07"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -9.0,
+              -0.12000000476837158,
+              -12.000000953674316
+            ],
+            "max": [
+              9.0,
+              0.4360000193119049,
+              12.000000953674316
+            ]
+          },
+          "uri": "/models/stay/v1/person/clearing-ground.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 41868,
+          "sha256": "ee00da15d090384dd24b79d93161f8ca8b091fe4005daae891a8dc30c0c61b9c",
+          "triangles": 1036,
+          "materialCount": 4,
+          "nodeNames": [
+            "SA_P01_MESH_00",
+            "SA_P01_MESH_01",
+            "SA_P01_MESH_60",
+            "SA_P01_MESH_61",
+            "SA_P01_MESH_62",
+            "SA_P01_MESH_63",
+            "SA_P01_ROOT_00",
+            "SA_PERSON_CAM_00",
+            "SA_PERSON_CAM_01",
+            "SA_PERSON_CAM_02",
+            "SA_PERSON_CAM_03",
+            "SA_PERSON_CAM_04",
+            "SA_PERSON_CAM_05",
+            "SA_PERSON_CAM_06",
+            "SA_PERSON_CAM_07",
+            "SA_PERSON_ENTRY_00",
+            "SA_PERSON_EXIT_00",
+            "SA_PERSON_LOOK_00",
+            "SA_PERSON_LOOK_01",
+            "SA_PERSON_LOOK_02",
+            "SA_PERSON_LOOK_03",
+            "SA_PERSON_LOOK_04",
+            "SA_PERSON_LOOK_05",
+            "SA_PERSON_LOOK_06",
+            "SA_PERSON_LOOK_07",
+            "SA_PERSON_TEXT_00",
+            "SA_PERSON_TEXT_01",
+            "SA_PERSON_TEXT_02",
+            "SA_PERSON_TEXT_03",
+            "SA_PERSON_TEXT_04",
+            "SA_PERSON_TEXT_05",
+            "SA_PERSON_TEXT_06",
+            "SA_PERSON_TEXT_07"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -9.0,
+              -0.11400000751018524,
+              -12.000000953674316
+            ],
+            "max": [
+              9.0,
+              0.4360000193119049,
+              12.000000953674316
+            ]
+          },
+          "uri": "/models/stay/v1/person/clearing-ground.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/person/clearing-ground.desktop.glb",
+      "mobileUrl": "/models/stay/v1/person/clearing-ground.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "P02",
+      "name": "Paired Bench",
+      "ownerRoute": "person",
+      "sourceBlend": "scripts/blender/stay-awhile/01-person.blend",
+      "sourceSha256": "e1c7e5cb9567bf19ae26a1d2f412fed37a3e515eadad8c407562157891fb8257",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/person-desktop.webp",
+        "mobile": "/assets/stay/v1/person-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 48992,
+          "sha256": "a467b4a79932eea4980bb019aec5160d4314af7fafdee292231ba269c027f0f8",
+          "triangles": 1492,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_P02_MESH_00",
+            "SA_P02_MESH_01",
+            "SA_P02_MESH_60",
+            "SA_P02_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -1.350000023841858,
+              0.003000000026077032,
+              -0.42000001668930054
+            ],
+            "max": [
+              1.350000023841858,
+              0.8550000190734863,
+              0.42000001668930054
+            ]
+          },
+          "uri": "/models/stay/v1/person/paired-bench.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 12644,
+          "sha256": "9e6ac1d30e170c956ba94b0f303e2c33a0825f07fb515cd1def71f4ad639046d",
+          "triangles": 208,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_P02_MESH_00",
+            "SA_P02_MESH_01",
+            "SA_P02_MESH_60",
+            "SA_P02_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -1.350000023841858,
+              0.0,
+              -0.42000001668930054
+            ],
+            "max": [
+              1.350000023841858,
+              0.8550000190734863,
+              0.42000001668930054
+            ]
+          },
+          "uri": "/models/stay/v1/person/paired-bench.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/person/paired-bench.desktop.glb",
+      "mobileUrl": "/models/stay/v1/person/paired-bench.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "P03",
+      "name": "Root Arch",
+      "ownerRoute": "person",
+      "sourceBlend": "scripts/blender/stay-awhile/01-person.blend",
+      "sourceSha256": "e1c7e5cb9567bf19ae26a1d2f412fed37a3e515eadad8c407562157891fb8257",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-bark-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-bark-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-bark-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-rough.mobile.jpg",
+        "/models/stay/v1/shared/senior-ground-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/person-desktop.webp",
+        "mobile": "/assets/stay/v1/person-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 12416,
+          "sha256": "3e72ee412797c78660e3d58a7669042e6c8551eb2759efa48b3f1698937eedd1",
+          "triangles": 380,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_P03_MESH_60",
+            "SA_P03_MESH_61",
+            "SA_P03_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -1.7130000591278076,
+              -0.23800000548362732,
+              -0.4830000102519989
+            ],
+            "max": [
+              1.7420001029968262,
+              0.6240000128746033,
+              1.158000111579895
+            ]
+          },
+          "uri": "/models/stay/v1/person/root-arch.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 5792,
+          "sha256": "961cd7852ef33acc0ad5c1051ec74297ee3e7831d53db756eefdf316008c13e4",
+          "triangles": 172,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_P03_MESH_60",
+            "SA_P03_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -1.717000126838684,
+              -0.20600001513957977,
+              -0.484000027179718
+            ],
+            "max": [
+              1.7420001029968262,
+              0.625,
+              1.1640000343322754
+            ]
+          },
+          "uri": "/models/stay/v1/person/root-arch.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/person/root-arch.desktop.glb",
+      "mobileUrl": "/models/stay/v1/person/root-arch.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "B01",
+      "name": "Foundation",
+      "ownerRoute": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "sourceSha256": "925400afbd0c79630d3f3ba0f278dbe69be897c9fe413eee0697587985a87a01",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/builder-desktop.webp",
+        "mobile": "/assets/stay/v1/builder-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 50308,
+          "sha256": "62dd87abdcf6b6d234fb9bd3f2e4472768668304fd8e546d77b594317e4dd37a",
+          "triangles": 1632,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_B01_MESH_00",
+            "SA_B01_MESH_01",
+            "SA_B01_FOOTING_00",
+            "SA_B01_MESH_02",
+            "SA_B01_MESH_03",
+            "SA_B01_FOOTING_01",
+            "SA_B01_MESH_04",
+            "SA_B01_MESH_05",
+            "SA_B01_FOOTING_02",
+            "SA_B01_MESH_06",
+            "SA_B01_MESH_07",
+            "SA_B01_FOOTING_03",
+            "SA_B01_MESH_08",
+            "SA_B01_MESH_09",
+            "SA_B01_FOOTING_04",
+            "SA_B01_MESH_10",
+            "SA_B01_MESH_11",
+            "SA_B01_FOOTING_05",
+            "SA_B01_MESH_60",
+            "SA_B01_MESH_61",
+            "SA_B01_ROOT_00",
+            "SA_BUILDER_CAM_00",
+            "SA_BUILDER_CAM_01",
+            "SA_BUILDER_CAM_02",
+            "SA_BUILDER_CAM_03",
+            "SA_BUILDER_CAM_04",
+            "SA_BUILDER_CAM_05",
+            "SA_BUILDER_CAM_06",
+            "SA_BUILDER_CAM_07",
+            "SA_BUILDER_ENTRY_00",
+            "SA_BUILDER_EXIT_00",
+            "SA_BUILDER_LOOK_00",
+            "SA_BUILDER_LOOK_01",
+            "SA_BUILDER_LOOK_02",
+            "SA_BUILDER_LOOK_03",
+            "SA_BUILDER_LOOK_04",
+            "SA_BUILDER_LOOK_05",
+            "SA_BUILDER_LOOK_06",
+            "SA_BUILDER_LOOK_07",
+            "SA_BUILDER_TEXT_00",
+            "SA_BUILDER_TEXT_01",
+            "SA_BUILDER_TEXT_02",
+            "SA_BUILDER_TEXT_03",
+            "SA_BUILDER_TEXT_04",
+            "SA_BUILDER_TEXT_05",
+            "SA_BUILDER_TEXT_06",
+            "SA_BUILDER_TEXT_07"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_FOUNDATION",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 6
+            }
+          ],
+          "bounds": {
+            "min": [
+              -2.81000018119812,
+              -0.3490000069141388,
+              -6.298999786376953
+            ],
+            "max": [
+              2.81000018119812,
+              0.2240000069141388,
+              0.4000000059604645
+            ]
+          },
+          "uri": "/models/stay/v1/builder/foundation.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 30792,
+          "sha256": "4c2502ca11f9f74a45e8e1740a9769b935df922d95893a8be21fb0b4cc3013f4",
+          "triangles": 300,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_B01_MESH_00",
+            "SA_B01_MESH_01",
+            "SA_B01_FOOTING_00",
+            "SA_B01_MESH_02",
+            "SA_B01_MESH_03",
+            "SA_B01_FOOTING_01",
+            "SA_B01_MESH_04",
+            "SA_B01_MESH_05",
+            "SA_B01_FOOTING_02",
+            "SA_B01_MESH_06",
+            "SA_B01_MESH_07",
+            "SA_B01_FOOTING_03",
+            "SA_B01_MESH_08",
+            "SA_B01_MESH_09",
+            "SA_B01_FOOTING_04",
+            "SA_B01_MESH_10",
+            "SA_B01_MESH_11",
+            "SA_B01_FOOTING_05",
+            "SA_B01_MESH_60",
+            "SA_B01_MESH_61",
+            "SA_B01_ROOT_00",
+            "SA_BUILDER_CAM_00",
+            "SA_BUILDER_CAM_01",
+            "SA_BUILDER_CAM_02",
+            "SA_BUILDER_CAM_03",
+            "SA_BUILDER_CAM_04",
+            "SA_BUILDER_CAM_05",
+            "SA_BUILDER_CAM_06",
+            "SA_BUILDER_CAM_07",
+            "SA_BUILDER_ENTRY_00",
+            "SA_BUILDER_EXIT_00",
+            "SA_BUILDER_LOOK_00",
+            "SA_BUILDER_LOOK_01",
+            "SA_BUILDER_LOOK_02",
+            "SA_BUILDER_LOOK_03",
+            "SA_BUILDER_LOOK_04",
+            "SA_BUILDER_LOOK_05",
+            "SA_BUILDER_LOOK_06",
+            "SA_BUILDER_LOOK_07",
+            "SA_BUILDER_TEXT_00",
+            "SA_BUILDER_TEXT_01",
+            "SA_BUILDER_TEXT_02",
+            "SA_BUILDER_TEXT_03",
+            "SA_BUILDER_TEXT_04",
+            "SA_BUILDER_TEXT_05",
+            "SA_BUILDER_TEXT_06",
+            "SA_BUILDER_TEXT_07"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_FOUNDATION",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 6
+            }
+          ],
+          "bounds": {
+            "min": [
+              -2.81000018119812,
+              -0.3499999940395355,
+              -6.300000190734863
+            ],
+            "max": [
+              2.81000018119812,
+              0.23000000417232513,
+              0.4000000059604645
+            ]
+          },
+          "uri": "/models/stay/v1/builder/foundation.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/builder/foundation.desktop.glb",
+      "mobileUrl": "/models/stay/v1/builder/foundation.mobile.glb",
+      "clipNames": [
+        "BUILD_FOUNDATION"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "B02",
+      "name": "Posts",
+      "ownerRoute": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "sourceSha256": "925400afbd0c79630d3f3ba0f278dbe69be897c9fe413eee0697587985a87a01",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/builder-desktop.webp",
+        "mobile": "/assets/stay/v1/builder-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 100248,
+          "sha256": "6ae8fbaf6d8f76a37df8927453d640890517ed54558e58e506466bb963cb5dd5",
+          "triangles": 2256,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_B02_MESH_00",
+            "SA_B02_MESH_60",
+            "SA_B02_POST_00",
+            "SA_B02_MESH_01",
+            "SA_B02_MESH_61",
+            "SA_B02_POST_01",
+            "SA_B02_MESH_02",
+            "SA_B02_MESH_62",
+            "SA_B02_POST_02",
+            "SA_B02_MESH_03",
+            "SA_B02_MESH_63",
+            "SA_B02_POST_03",
+            "SA_B02_MESH_04",
+            "SA_B02_MESH_64",
+            "SA_B02_POST_04",
+            "SA_B02_MESH_05",
+            "SA_B02_MESH_65",
+            "SA_B02_POST_05",
+            "SA_B02_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_POSTS",
+              "duration": 1.44,
+              "frameCount": 44,
+              "channels": 6
+            }
+          ],
+          "bounds": {
+            "min": [
+              -2.617000102996826,
+              -3.0999999046325684,
+              -6.117000102996826
+            ],
+            "max": [
+              2.6679999828338623,
+              2.384185791015625e-07,
+              0.11700000613927841
+            ]
+          },
+          "uri": "/models/stay/v1/builder/posts.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 31776,
+          "sha256": "065c3c36c817c4b7b765d14f52596d3cd544f99b84af22af9d149dca0a3863eb",
+          "triangles": 432,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_B02_MESH_00",
+            "SA_B02_MESH_60",
+            "SA_B02_POST_00",
+            "SA_B02_MESH_01",
+            "SA_B02_MESH_61",
+            "SA_B02_POST_01",
+            "SA_B02_MESH_02",
+            "SA_B02_MESH_62",
+            "SA_B02_POST_02",
+            "SA_B02_MESH_03",
+            "SA_B02_MESH_63",
+            "SA_B02_POST_03",
+            "SA_B02_MESH_04",
+            "SA_B02_MESH_64",
+            "SA_B02_POST_04",
+            "SA_B02_MESH_05",
+            "SA_B02_MESH_65",
+            "SA_B02_POST_05",
+            "SA_B02_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_POSTS",
+              "duration": 1.44,
+              "frameCount": 44,
+              "channels": 6
+            }
+          ],
+          "bounds": {
+            "min": [
+              -2.617000102996826,
+              -3.0999999046325684,
+              -6.117000102996826
+            ],
+            "max": [
+              2.6679999828338623,
+              2.384185791015625e-07,
+              0.11700000613927841
+            ]
+          },
+          "uri": "/models/stay/v1/builder/posts.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/builder/posts.desktop.glb",
+      "mobileUrl": "/models/stay/v1/builder/posts.mobile.glb",
+      "clipNames": [
+        "BUILD_POSTS"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "B03",
+      "name": "Beams",
+      "ownerRoute": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "sourceSha256": "925400afbd0c79630d3f3ba0f278dbe69be897c9fe413eee0697587985a87a01",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/builder-desktop.webp",
+        "mobile": "/assets/stay/v1/builder-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 62232,
+          "sha256": "347451f482bb1ebabf2c5624a284d6306e299f2a7fb6712c363ee3c4bd71a014",
+          "triangles": 1316,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_B03_MESH_00",
+            "SA_B03_BEAM_00",
+            "SA_B03_MESH_01",
+            "SA_B03_BEAM_01",
+            "SA_B03_MESH_02",
+            "SA_B03_BEAM_02",
+            "SA_B03_MESH_03",
+            "SA_B03_BEAM_03",
+            "SA_B03_MESH_04",
+            "SA_B03_BEAM_04",
+            "SA_B03_MESH_05",
+            "SA_B03_BEAM_05",
+            "SA_B03_MESH_06",
+            "SA_B03_BEAM_06",
+            "SA_B03_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_BEAMS",
+              "duration": 1.6,
+              "frameCount": 49,
+              "channels": 14
+            }
+          ],
+          "bounds": {
+            "min": [
+              -2.8160014152526855,
+              3.8000001907348633,
+              -6.281123161315918
+            ],
+            "max": [
+              2.8160014152526855,
+              4.0,
+              0.2811232805252075
+            ]
+          },
+          "uri": "/models/stay/v1/builder/beams.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 20744,
+          "sha256": "e1457107c99056fcdfb22509ea7da189cbaf6cf6723b27390fd69f2c8829991b",
+          "triangles": 84,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_B03_MESH_00",
+            "SA_B03_BEAM_00",
+            "SA_B03_MESH_01",
+            "SA_B03_BEAM_01",
+            "SA_B03_MESH_02",
+            "SA_B03_BEAM_02",
+            "SA_B03_MESH_03",
+            "SA_B03_BEAM_03",
+            "SA_B03_MESH_04",
+            "SA_B03_BEAM_04",
+            "SA_B03_MESH_05",
+            "SA_B03_BEAM_05",
+            "SA_B03_MESH_06",
+            "SA_B03_BEAM_06",
+            "SA_B03_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_BEAMS",
+              "duration": 1.6,
+              "frameCount": 49,
+              "channels": 14
+            }
+          ],
+          "bounds": {
+            "min": [
+              -2.8160014152526855,
+              3.8000001907348633,
+              -6.281123161315918
+            ],
+            "max": [
+              2.8160014152526855,
+              4.0,
+              0.2811232805252075
+            ]
+          },
+          "uri": "/models/stay/v1/builder/beams.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/builder/beams.desktop.glb",
+      "mobileUrl": "/models/stay/v1/builder/beams.mobile.glb",
+      "clipNames": [
+        "BUILD_BEAMS"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "B04",
+      "name": "Roof Slats",
+      "ownerRoute": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "sourceSha256": "925400afbd0c79630d3f3ba0f278dbe69be897c9fe413eee0697587985a87a01",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/builder-desktop.webp",
+        "mobile": "/assets/stay/v1/builder-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 94528,
+          "sha256": "1155ed01b33273c1a028e8dd742c97592e79538a1c750f0e4a803409fc4053fb",
+          "triangles": 2256,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_B04_MESH_00",
+            "SA_B04_SLAT_00",
+            "SA_B04_MESH_01",
+            "SA_B04_SLAT_01",
+            "SA_B04_MESH_02",
+            "SA_B04_SLAT_02",
+            "SA_B04_MESH_03",
+            "SA_B04_SLAT_03",
+            "SA_B04_MESH_04",
+            "SA_B04_SLAT_04",
+            "SA_B04_MESH_05",
+            "SA_B04_SLAT_05",
+            "SA_B04_MESH_06",
+            "SA_B04_SLAT_06",
+            "SA_B04_MESH_07",
+            "SA_B04_SLAT_07",
+            "SA_B04_MESH_08",
+            "SA_B04_SLAT_08",
+            "SA_B04_MESH_09",
+            "SA_B04_SLAT_09",
+            "SA_B04_MESH_10",
+            "SA_B04_SLAT_10",
+            "SA_B04_MESH_11",
+            "SA_B04_SLAT_11",
+            "SA_B04_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_ROOF",
+              "duration": 1.5,
+              "frameCount": 46,
+              "channels": 12
+            }
+          ],
+          "bounds": {
+            "min": [
+              -2.888000011444092,
+              0.4399999976158142,
+              -3.500000238418579
+            ],
+            "max": [
+              2.888000011444092,
+              0.5600000023841858,
+              3.500000238418579
+            ]
+          },
+          "uri": "/models/stay/v1/builder/roof-slats.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 24192,
+          "sha256": "3509d94a6eaed2c77aaa93ab499edf3b0b38437072119f4e5bbb3c3d0a661b19",
+          "triangles": 144,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_B04_MESH_00",
+            "SA_B04_SLAT_00",
+            "SA_B04_MESH_01",
+            "SA_B04_SLAT_01",
+            "SA_B04_MESH_02",
+            "SA_B04_SLAT_02",
+            "SA_B04_MESH_03",
+            "SA_B04_SLAT_03",
+            "SA_B04_MESH_04",
+            "SA_B04_SLAT_04",
+            "SA_B04_MESH_05",
+            "SA_B04_SLAT_05",
+            "SA_B04_MESH_06",
+            "SA_B04_SLAT_06",
+            "SA_B04_MESH_07",
+            "SA_B04_SLAT_07",
+            "SA_B04_MESH_08",
+            "SA_B04_SLAT_08",
+            "SA_B04_MESH_09",
+            "SA_B04_SLAT_09",
+            "SA_B04_MESH_10",
+            "SA_B04_SLAT_10",
+            "SA_B04_MESH_11",
+            "SA_B04_SLAT_11",
+            "SA_B04_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_ROOF",
+              "duration": 1.5,
+              "frameCount": 46,
+              "channels": 12
+            }
+          ],
+          "bounds": {
+            "min": [
+              -2.888000011444092,
+              0.4399999976158142,
+              -3.500000238418579
+            ],
+            "max": [
+              2.888000011444092,
+              0.5600000023841858,
+              3.500000238418579
+            ]
+          },
+          "uri": "/models/stay/v1/builder/roof-slats.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/builder/roof-slats.desktop.glb",
+      "mobileUrl": "/models/stay/v1/builder/roof-slats.mobile.glb",
+      "clipNames": [
+        "BUILD_ROOF"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "B05",
+      "name": "Workbench",
+      "ownerRoute": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "sourceSha256": "925400afbd0c79630d3f3ba0f278dbe69be897c9fe413eee0697587985a87a01",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/builder-desktop.webp",
+        "mobile": "/assets/stay/v1/builder-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 80644,
+          "sha256": "299b3769c4d92bcd42585d759a073ace3b78a47036172a05f04d5b1d992f0c1e",
+          "triangles": 1760,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_B05_MESH_00",
+            "SA_B05_MESH_01",
+            "SA_B05_MESH_60",
+            "SA_B05_MESH_61",
+            "SA_B05_BENCH_00",
+            "SA_B05_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_BENCH",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 1
+            }
+          ],
+          "bounds": {
+            "min": [
+              -0.9000000953674316,
+              0.0,
+              -0.5250000357627869
+            ],
+            "max": [
+              3.3000001907348633,
+              1.099000096321106,
+              0.5250000357627869
+            ]
+          },
+          "uri": "/models/stay/v1/builder/workbench.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 21748,
+          "sha256": "10b1fef8cff2b4d40e6e5a21ade45aa3447d6b70f41da150b30b71cbbdd86d0b",
+          "triangles": 348,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_B05_MESH_00",
+            "SA_B05_MESH_01",
+            "SA_B05_MESH_60",
+            "SA_B05_MESH_61",
+            "SA_B05_BENCH_00",
+            "SA_B05_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_BENCH",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 1
+            }
+          ],
+          "bounds": {
+            "min": [
+              -0.9000000953674316,
+              0.0,
+              -0.5250000357627869
+            ],
+            "max": [
+              3.3000001907348633,
+              1.099000096321106,
+              0.5250000357627869
+            ]
+          },
+          "uri": "/models/stay/v1/builder/workbench.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/builder/workbench.desktop.glb",
+      "mobileUrl": "/models/stay/v1/builder/workbench.mobile.glb",
+      "clipNames": [
+        "BUILD_BENCH"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "B06",
+      "name": "Artifact Tokens",
+      "ownerRoute": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "sourceSha256": "925400afbd0c79630d3f3ba0f278dbe69be897c9fe413eee0697587985a87a01",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/builder-desktop.webp",
+        "mobile": "/assets/stay/v1/builder-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 80164,
+          "sha256": "94a3e568918450f5d79307a82b92dd7f4d8df5563b9aed715ebe936fe97b7ed8",
+          "triangles": 1656,
+          "materialCount": 5,
+          "nodeNames": [
+            "SA_B06_HOTSPOT_00",
+            "SA_B06_HOTSPOT_01",
+            "SA_B06_HOTSPOT_02",
+            "SA_B06_HOTSPOT_03",
+            "SA_B06_HOTSPOT_04",
+            "SA_B06_MESH_00",
+            "SA_B06_TOKEN_00",
+            "SA_B06_MESH_01",
+            "SA_B06_TOKEN_01",
+            "SA_B06_MESH_02",
+            "SA_B06_TOKEN_02",
+            "SA_B06_MESH_03",
+            "SA_B06_MESH_04",
+            "SA_B06_TOKEN_03",
+            "SA_B06_MESH_05",
+            "SA_B06_MESH_06",
+            "SA_B06_TOKEN_04",
+            "SA_B06_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_TOKENS",
+              "duration": 1.8,
+              "frameCount": 55,
+              "channels": 5
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.7699999809265137,
+              0.0,
+              -0.21000000834465027
+            ],
+            "max": [
+              1.7799999713897705,
+              0.16700001060962677,
+              0.20500001311302185
+            ]
+          },
+          "uri": "/models/stay/v1/builder/artifact-tokens.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 22028,
+          "sha256": "17cfbb9e199ff1a248a169c52ab1c7c0bca1f1b4e0c6c83138bb4c425b623caf",
+          "triangles": 216,
+          "materialCount": 5,
+          "nodeNames": [
+            "SA_B06_HOTSPOT_00",
+            "SA_B06_HOTSPOT_01",
+            "SA_B06_HOTSPOT_02",
+            "SA_B06_HOTSPOT_03",
+            "SA_B06_HOTSPOT_04",
+            "SA_B06_MESH_00",
+            "SA_B06_TOKEN_00",
+            "SA_B06_MESH_01",
+            "SA_B06_TOKEN_01",
+            "SA_B06_MESH_02",
+            "SA_B06_TOKEN_02",
+            "SA_B06_MESH_03",
+            "SA_B06_MESH_04",
+            "SA_B06_TOKEN_03",
+            "SA_B06_MESH_05",
+            "SA_B06_MESH_06",
+            "SA_B06_TOKEN_04",
+            "SA_B06_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "BUILD_TOKENS",
+              "duration": 1.8,
+              "frameCount": 55,
+              "channels": 5
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.7699999809265137,
+              0.0,
+              -0.21000000834465027
+            ],
+            "max": [
+              1.7799999713897705,
+              0.16700001060962677,
+              0.20500001311302185
+            ]
+          },
+          "uri": "/models/stay/v1/builder/artifact-tokens.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/builder/artifact-tokens.desktop.glb",
+      "mobileUrl": "/models/stay/v1/builder/artifact-tokens.mobile.glb",
+      "clipNames": [
+        "BUILD_TOKENS"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "T01",
+      "name": "Tea Deck",
+      "ownerRoute": "thinker",
+      "sourceBlend": "scripts/blender/stay-awhile/03-thinker.blend",
+      "sourceSha256": "4f2bbb42c6977d77430d8500878a77f3bdf7bb08c12ba429654d7078874e7cbd",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-ground-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/thinker-desktop.webp",
+        "mobile": "/assets/stay/v1/thinker-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 103548,
+          "sha256": "eda4e4c37f095249c165ed99e6a32be18faeb9e211906a5dd4bca5915ea8d2c4",
+          "triangles": 2144,
+          "materialCount": 4,
+          "nodeNames": [
+            "SA_T01_MESH_00",
+            "SA_T01_MESH_60",
+            "SA_T01_MESH_61",
+            "SA_T01_MESH_62",
+            "SA_T01_MESH_63",
+            "SA_T01_ROOT_00",
+            "SA_THINKER_CAM_00",
+            "SA_THINKER_CAM_01",
+            "SA_THINKER_CAM_02",
+            "SA_THINKER_CAM_03",
+            "SA_THINKER_CAM_04",
+            "SA_THINKER_CAM_05",
+            "SA_THINKER_CAM_06",
+            "SA_THINKER_ENTRY_00",
+            "SA_THINKER_EXIT_00",
+            "SA_THINKER_LOOK_00",
+            "SA_THINKER_LOOK_01",
+            "SA_THINKER_LOOK_02",
+            "SA_THINKER_LOOK_03",
+            "SA_THINKER_LOOK_04",
+            "SA_THINKER_LOOK_05",
+            "SA_THINKER_LOOK_06",
+            "SA_THINKER_TEXT_00",
+            "SA_THINKER_TEXT_01",
+            "SA_THINKER_TEXT_02",
+            "SA_THINKER_TEXT_03",
+            "SA_THINKER_TEXT_04",
+            "SA_THINKER_TEXT_05",
+            "SA_THINKER_TEXT_06"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -3.3310000896453857,
+              -0.08500000089406967,
+              -3.881000280380249
+            ],
+            "max": [
+              2.809000015258789,
+              3.070000171661377,
+              2.570000171661377
+            ]
+          },
+          "uri": "/models/stay/v1/thinker/tea-deck.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 33600,
+          "sha256": "671fdc30d019f59d9a0eb9325c0fa841439a30df4bcd1981d588a44429423c07",
+          "triangles": 594,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_T01_MESH_00",
+            "SA_T01_MESH_60",
+            "SA_T01_MESH_61",
+            "SA_T01_ROOT_00",
+            "SA_THINKER_CAM_00",
+            "SA_THINKER_CAM_01",
+            "SA_THINKER_CAM_02",
+            "SA_THINKER_CAM_03",
+            "SA_THINKER_CAM_04",
+            "SA_THINKER_CAM_05",
+            "SA_THINKER_CAM_06",
+            "SA_THINKER_ENTRY_00",
+            "SA_THINKER_EXIT_00",
+            "SA_THINKER_LOOK_00",
+            "SA_THINKER_LOOK_01",
+            "SA_THINKER_LOOK_02",
+            "SA_THINKER_LOOK_03",
+            "SA_THINKER_LOOK_04",
+            "SA_THINKER_LOOK_05",
+            "SA_THINKER_LOOK_06",
+            "SA_THINKER_TEXT_00",
+            "SA_THINKER_TEXT_01",
+            "SA_THINKER_TEXT_02",
+            "SA_THINKER_TEXT_03",
+            "SA_THINKER_TEXT_04",
+            "SA_THINKER_TEXT_05",
+            "SA_THINKER_TEXT_06"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -3.2980000972747803,
+              -0.08500000089406967,
+              -3.892000198364258
+            ],
+            "max": [
+              2.7790000438690186,
+              3.070000171661377,
+              2.570000171661377
+            ]
+          },
+          "uri": "/models/stay/v1/thinker/tea-deck.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/thinker/tea-deck.desktop.glb",
+      "mobileUrl": "/models/stay/v1/thinker/tea-deck.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "T02",
+      "name": "Freedom Stones",
+      "ownerRoute": "thinker",
+      "sourceBlend": "scripts/blender/stay-awhile/03-thinker.blend",
+      "sourceSha256": "4f2bbb42c6977d77430d8500878a77f3bdf7bb08c12ba429654d7078874e7cbd",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/thinker-desktop.webp",
+        "mobile": "/assets/stay/v1/thinker-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 51420,
+          "sha256": "0e39cfdbec46254c92157cd8ae90cd3f0d737448b5684bc37fb326c2c5013436",
+          "triangles": 1895,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_T02_MESH_60",
+            "SA_T02_FREEDOM_00",
+            "SA_T02_MESH_61",
+            "SA_T02_FREEDOM_01",
+            "SA_T02_MESH_62",
+            "SA_T02_FREEDOM_02",
+            "SA_T02_MESH_63",
+            "SA_T02_FREEDOM_03",
+            "SA_T02_MESH_64",
+            "SA_T02_FREEDOM_04",
+            "SA_T02_MESH_65",
+            "SA_T02_FREEDOM_05",
+            "SA_T02_MESH_66",
+            "SA_T02_FREEDOM_06",
+            "SA_T02_HOTSPOT_00",
+            "SA_T02_HOTSPOT_01",
+            "SA_T02_HOTSPOT_02",
+            "SA_T02_HOTSPOT_03",
+            "SA_T02_HOTSPOT_04",
+            "SA_T02_HOTSPOT_05",
+            "SA_T02_HOTSPOT_06",
+            "SA_T02_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -3.424999952316284,
+              -0.11000000685453415,
+              -11.578999519348145
+            ],
+            "max": [
+              3.5240001678466797,
+              0.08400000631809235,
+              -9.526000022888184
+            ]
+          },
+          "uri": "/models/stay/v1/thinker/freedom-stones.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 20428,
+          "sha256": "bb01143b683d9678cbf291aa4a4fed2c3b8de663f193112497b018851474a97c",
+          "triangles": 363,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_T02_MESH_60",
+            "SA_T02_FREEDOM_00",
+            "SA_T02_MESH_61",
+            "SA_T02_FREEDOM_01",
+            "SA_T02_MESH_62",
+            "SA_T02_FREEDOM_02",
+            "SA_T02_MESH_63",
+            "SA_T02_FREEDOM_03",
+            "SA_T02_MESH_64",
+            "SA_T02_FREEDOM_04",
+            "SA_T02_MESH_65",
+            "SA_T02_FREEDOM_05",
+            "SA_T02_MESH_66",
+            "SA_T02_FREEDOM_06",
+            "SA_T02_HOTSPOT_00",
+            "SA_T02_HOTSPOT_01",
+            "SA_T02_HOTSPOT_02",
+            "SA_T02_HOTSPOT_03",
+            "SA_T02_HOTSPOT_04",
+            "SA_T02_HOTSPOT_05",
+            "SA_T02_HOTSPOT_06",
+            "SA_T02_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -3.447999954223633,
+              -0.11000000685453415,
+              -11.6589994430542
+            ],
+            "max": [
+              3.5199999809265137,
+              0.10000000149011612,
+              -9.550000190734863
+            ]
+          },
+          "uri": "/models/stay/v1/thinker/freedom-stones.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/thinker/freedom-stones.desktop.glb",
+      "mobileUrl": "/models/stay/v1/thinker/freedom-stones.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "T03",
+      "name": "Tea Bowl Scroll",
+      "ownerRoute": "thinker",
+      "sourceBlend": "scripts/blender/stay-awhile/03-thinker.blend",
+      "sourceSha256": "4f2bbb42c6977d77430d8500878a77f3bdf7bb08c12ba429654d7078874e7cbd",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/thinker-desktop.webp",
+        "mobile": "/assets/stay/v1/thinker-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 14452,
+          "sha256": "deb7ca782663e248b25a1dc1fe8f0f2a21d3e8374f222bab56a437c8e8cad56f",
+          "triangles": 206,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_T03_MESH_02",
+            "SA_T03_CURL_00",
+            "SA_T03_MESH_00",
+            "SA_T03_MESH_01",
+            "SA_T03_SCROLL_00",
+            "SA_T03_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "THINKER_SCROLL",
+              "duration": 2,
+              "frameCount": 61,
+              "channels": 1
+            }
+          ],
+          "bounds": {
+            "min": [
+              -0.09000000357627869,
+              -0.031512077897787094,
+              -0.125
+            ],
+            "max": [
+              0.7215120792388916,
+              0.07200000435113907,
+              0.125
+            ]
+          },
+          "uri": "/models/stay/v1/thinker/tea-bowl-scroll.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 9908,
+          "sha256": "238a18063e60a50534a4b24f2d19f8674321c8259ade8bea3a0b9b65e3d32899",
+          "triangles": 110,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_T03_MESH_02",
+            "SA_T03_CURL_00",
+            "SA_T03_MESH_00",
+            "SA_T03_MESH_01",
+            "SA_T03_SCROLL_00",
+            "SA_T03_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "THINKER_SCROLL",
+              "duration": 2,
+              "frameCount": 61,
+              "channels": 1
+            }
+          ],
+          "bounds": {
+            "min": [
+              -0.09000000357627869,
+              -0.028100403025746346,
+              -0.125
+            ],
+            "max": [
+              0.7142492532730103,
+              0.07200000435113907,
+              0.125
+            ]
+          },
+          "uri": "/models/stay/v1/thinker/tea-bowl-scroll.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/thinker/tea-bowl-scroll.desktop.glb",
+      "mobileUrl": "/models/stay/v1/thinker/tea-bowl-scroll.mobile.glb",
+      "clipNames": [
+        "THINKER_SCROLL"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "L01",
+      "name": "Courtyard",
+      "ownerRoute": "leader",
+      "sourceBlend": "scripts/blender/stay-awhile/04-leader.blend",
+      "sourceSha256": "29eafffc3fe356104179a98934379a7aebcbbef41ea6d1fc02f78b06a79d25f9",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/leader-desktop.webp",
+        "mobile": "/assets/stay/v1/leader-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 107684,
+          "sha256": "cf18a7d80aa30c5917a5fdbc054e0db20dccdc34dc824990290f0dff3464baec",
+          "triangles": 2419,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_L01_MESH_61",
+            "SA_L01_APPROACH_00",
+            "SA_L01_MESH_63",
+            "SA_L01_APPROACH_01",
+            "SA_L01_MESH_64",
+            "SA_L01_APPROACH_02",
+            "SA_L01_MESH_60",
+            "SA_L01_MESH_62",
+            "SA_L01_ROOT_00",
+            "SA_LEADER_CAM_00",
+            "SA_LEADER_CAM_01",
+            "SA_LEADER_CAM_02",
+            "SA_LEADER_CAM_03",
+            "SA_LEADER_CAM_04",
+            "SA_LEADER_CAM_05",
+            "SA_LEADER_ENTRY_00",
+            "SA_LEADER_EXIT_00",
+            "SA_LEADER_LOOK_00",
+            "SA_LEADER_LOOK_01",
+            "SA_LEADER_LOOK_02",
+            "SA_LEADER_LOOK_03",
+            "SA_LEADER_LOOK_04",
+            "SA_LEADER_LOOK_05",
+            "SA_LEADER_TEXT_00",
+            "SA_LEADER_TEXT_01",
+            "SA_LEADER_TEXT_02",
+            "SA_LEADER_TEXT_03",
+            "SA_LEADER_TEXT_04",
+            "SA_LEADER_TEXT_05"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -7.443000316619873,
+              -0.08000000566244125,
+              -5.992000102996826
+            ],
+            "max": [
+              7.423000335693359,
+              0.08500000089406967,
+              8.318000793457031
+            ]
+          },
+          "uri": "/models/stay/v1/leader/courtyard.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 61524,
+          "sha256": "61ad95436b6553fc54308fdd71a5b77dfb982682d1e6d874418a255c0bdcd75c",
+          "triangles": 1229,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_L01_MESH_61",
+            "SA_L01_APPROACH_00",
+            "SA_L01_MESH_63",
+            "SA_L01_APPROACH_01",
+            "SA_L01_MESH_64",
+            "SA_L01_APPROACH_02",
+            "SA_L01_MESH_60",
+            "SA_L01_MESH_62",
+            "SA_L01_ROOT_00",
+            "SA_LEADER_CAM_00",
+            "SA_LEADER_CAM_01",
+            "SA_LEADER_CAM_02",
+            "SA_LEADER_CAM_03",
+            "SA_LEADER_CAM_04",
+            "SA_LEADER_CAM_05",
+            "SA_LEADER_ENTRY_00",
+            "SA_LEADER_EXIT_00",
+            "SA_LEADER_LOOK_00",
+            "SA_LEADER_LOOK_01",
+            "SA_LEADER_LOOK_02",
+            "SA_LEADER_LOOK_03",
+            "SA_LEADER_LOOK_04",
+            "SA_LEADER_LOOK_05",
+            "SA_LEADER_TEXT_00",
+            "SA_LEADER_TEXT_01",
+            "SA_LEADER_TEXT_02",
+            "SA_LEADER_TEXT_03",
+            "SA_LEADER_TEXT_04",
+            "SA_LEADER_TEXT_05"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -7.338000297546387,
+              -0.08000000566244125,
+              -6.0960001945495605
+            ],
+            "max": [
+              7.410000324249268,
+              0.08500000089406967,
+              8.28700065612793
+            ]
+          },
+          "uri": "/models/stay/v1/leader/courtyard.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/leader/courtyard.desktop.glb",
+      "mobileUrl": "/models/stay/v1/leader/courtyard.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "L02",
+      "name": "Coordination Posts",
+      "ownerRoute": "leader",
+      "sourceBlend": "scripts/blender/stay-awhile/04-leader.blend",
+      "sourceSha256": "29eafffc3fe356104179a98934379a7aebcbbef41ea6d1fc02f78b06a79d25f9",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/leader-desktop.webp",
+        "mobile": "/assets/stay/v1/leader-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 50848,
+          "sha256": "e07d0227b295357e601dc5dcb74f4a637e7d7ae1b84cc126f4d362694250bc88",
+          "triangles": 735,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_L02_MESH_60",
+            "SA_L02_MESH_61",
+            "SA_L02_MESH_62",
+            "SA_L02_MARKER_00",
+            "SA_L02_MESH_63",
+            "SA_L02_MESH_64",
+            "SA_L02_MESH_65",
+            "SA_L02_MARKER_01",
+            "SA_L02_MESH_66",
+            "SA_L02_MESH_67",
+            "SA_L02_MESH_68",
+            "SA_L02_MARKER_02",
+            "SA_L02_MESH_69",
+            "SA_L02_MESH_70",
+            "SA_L02_MESH_71",
+            "SA_L02_MARKER_03",
+            "SA_L02_MESH_72",
+            "SA_L02_MESH_73",
+            "SA_L02_MESH_74",
+            "SA_L02_MARKER_04",
+            "SA_L02_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "LEADER_CONVERGE",
+              "duration": 1.8,
+              "frameCount": 55,
+              "channels": 5
+            }
+          ],
+          "bounds": {
+            "min": [
+              -3.446528196334839,
+              -0.06000000238418579,
+              -3.5702426433563232
+            ],
+            "max": [
+              3.4720427989959717,
+              0.8700000643730164,
+              -0.5962323546409607
+            ]
+          },
+          "uri": "/models/stay/v1/leader/coordination-posts.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 25892,
+          "sha256": "e4d97daefb530b980a73bf043c194a3a7dd19bbd72373f1ac944d43db5c0a9ce",
+          "triangles": 225,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_L02_MESH_60",
+            "SA_L02_MESH_61",
+            "SA_L02_MARKER_00",
+            "SA_L02_MESH_62",
+            "SA_L02_MESH_63",
+            "SA_L02_MARKER_01",
+            "SA_L02_MESH_64",
+            "SA_L02_MESH_65",
+            "SA_L02_MARKER_02",
+            "SA_L02_MESH_66",
+            "SA_L02_MESH_67",
+            "SA_L02_MARKER_03",
+            "SA_L02_MESH_68",
+            "SA_L02_MESH_69",
+            "SA_L02_MARKER_04",
+            "SA_L02_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "LEADER_CONVERGE",
+              "duration": 1.8,
+              "frameCount": 55,
+              "channels": 5
+            }
+          ],
+          "bounds": {
+            "min": [
+              -3.383850336074829,
+              -0.06000000238418579,
+              -3.5878372192382812
+            ],
+            "max": [
+              3.451218843460083,
+              0.8200000524520874,
+              -0.6371578574180603
+            ]
+          },
+          "uri": "/models/stay/v1/leader/coordination-posts.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/leader/coordination-posts.desktop.glb",
+      "mobileUrl": "/models/stay/v1/leader/coordination-posts.mobile.glb",
+      "clipNames": [
+        "LEADER_CONVERGE"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "L03",
+      "name": "Lesson Rail",
+      "ownerRoute": "leader",
+      "sourceBlend": "scripts/blender/stay-awhile/04-leader.blend",
+      "sourceSha256": "29eafffc3fe356104179a98934379a7aebcbbef41ea6d1fc02f78b06a79d25f9",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/leader-desktop.webp",
+        "mobile": "/assets/stay/v1/leader-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 53860,
+          "sha256": "8c82b06519e265b4458c16a01b3a66557e832aeb0db2b5fb9c0c82b9bb2ce46e",
+          "triangles": 796,
+          "materialCount": 4,
+          "nodeNames": [
+            "SA_L03_MESH_62",
+            "SA_L03_MESH_63",
+            "SA_L03_MESH_64",
+            "SA_L03_HOLDER_00",
+            "SA_L03_MESH_65",
+            "SA_L03_MESH_66",
+            "SA_L03_MESH_67",
+            "SA_L03_HOLDER_01",
+            "SA_L03_MESH_68",
+            "SA_L03_MESH_69",
+            "SA_L03_MESH_70",
+            "SA_L03_HOLDER_02",
+            "SA_L03_MESH_60",
+            "SA_L03_MESH_61",
+            "SA_L03_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "LEADER_RAIL",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 3
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.6290000677108765,
+              -0.06000000238418579,
+              -0.35200002789497375
+            ],
+            "max": [
+              1.6440000534057617,
+              1.3450000286102295,
+              0.3760000169277191
+            ]
+          },
+          "uri": "/models/stay/v1/leader/lesson-rail.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 27548,
+          "sha256": "ddde038e01827c85e0ecb8ce49b239a71a78b72689e1db4d400ee952ce487211",
+          "triangles": 306,
+          "materialCount": 4,
+          "nodeNames": [
+            "SA_L03_MESH_62",
+            "SA_L03_MESH_63",
+            "SA_L03_MESH_64",
+            "SA_L03_HOLDER_00",
+            "SA_L03_MESH_65",
+            "SA_L03_MESH_66",
+            "SA_L03_MESH_67",
+            "SA_L03_HOLDER_01",
+            "SA_L03_MESH_68",
+            "SA_L03_MESH_69",
+            "SA_L03_MESH_70",
+            "SA_L03_HOLDER_02",
+            "SA_L03_MESH_60",
+            "SA_L03_MESH_61",
+            "SA_L03_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "LEADER_RAIL",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 3
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.5800000429153442,
+              -0.06000000238418579,
+              -0.3330000042915344
+            ],
+            "max": [
+              1.652000069618225,
+              1.3450000286102295,
+              0.3400000035762787
+            ]
+          },
+          "uri": "/models/stay/v1/leader/lesson-rail.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/leader/lesson-rail.desktop.glb",
+      "mobileUrl": "/models/stay/v1/leader/lesson-rail.mobile.glb",
+      "clipNames": [
+        "LEADER_RAIL"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "S01",
+      "name": "Lantern Path",
+      "ownerRoute": "stories",
+      "sourceBlend": "scripts/blender/stay-awhile/05-stories.blend",
+      "sourceSha256": "478297ecbb9098c5a02b720b8ac7274258be09f3301eb77c6ec850f01c6dda03",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/stories-desktop.webp",
+        "mobile": "/assets/stay/v1/stories-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 180356,
+          "sha256": "17ae7ad6305e82f09207c420c805d457ee23af3a877caed0d361bdb0ae33c241",
+          "triangles": 3809,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_S01_MESH_60",
+            "SA_S01_BAY_00",
+            "SA_S01_MESH_61",
+            "SA_S01_BAY_01",
+            "SA_S01_MESH_62",
+            "SA_S01_BAY_02",
+            "SA_S01_MESH_63",
+            "SA_S01_BAY_03",
+            "SA_S01_MESH_64",
+            "SA_S01_ROOT_00",
+            "SA_STORIES_CAM_00",
+            "SA_STORIES_CAM_01",
+            "SA_STORIES_CAM_02",
+            "SA_STORIES_CAM_03",
+            "SA_STORIES_CAM_04",
+            "SA_STORIES_CAM_05",
+            "SA_STORIES_ENTRY_00",
+            "SA_STORIES_EXIT_00",
+            "SA_STORIES_LOOK_00",
+            "SA_STORIES_LOOK_01",
+            "SA_STORIES_LOOK_02",
+            "SA_STORIES_LOOK_03",
+            "SA_STORIES_LOOK_04",
+            "SA_STORIES_LOOK_05",
+            "SA_STORIES_TEXT_00",
+            "SA_STORIES_TEXT_01",
+            "SA_STORIES_TEXT_02",
+            "SA_STORIES_TEXT_03",
+            "SA_STORIES_TEXT_04",
+            "SA_STORIES_TEXT_05"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -3.49399995803833,
+              -0.06000000238418579,
+              -18.85900115966797
+            ],
+            "max": [
+              3.447000026702881,
+              0.08000000566244125,
+              3.699000120162964
+            ]
+          },
+          "uri": "/models/stay/v1/stories/lantern-path.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 84420,
+          "sha256": "e4acb8e0c376884e9e6c6aeec8d71624e5e8bf160c517683a79964e8e2bf7cfa",
+          "triangles": 1650,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_S01_MESH_60",
+            "SA_S01_BAY_00",
+            "SA_S01_MESH_61",
+            "SA_S01_BAY_01",
+            "SA_S01_MESH_62",
+            "SA_S01_BAY_02",
+            "SA_S01_MESH_63",
+            "SA_S01_BAY_03",
+            "SA_S01_MESH_64",
+            "SA_S01_ROOT_00",
+            "SA_STORIES_CAM_00",
+            "SA_STORIES_CAM_01",
+            "SA_STORIES_CAM_02",
+            "SA_STORIES_CAM_03",
+            "SA_STORIES_CAM_04",
+            "SA_STORIES_CAM_05",
+            "SA_STORIES_ENTRY_00",
+            "SA_STORIES_EXIT_00",
+            "SA_STORIES_LOOK_00",
+            "SA_STORIES_LOOK_01",
+            "SA_STORIES_LOOK_02",
+            "SA_STORIES_LOOK_03",
+            "SA_STORIES_LOOK_04",
+            "SA_STORIES_LOOK_05",
+            "SA_STORIES_TEXT_00",
+            "SA_STORIES_TEXT_01",
+            "SA_STORIES_TEXT_02",
+            "SA_STORIES_TEXT_03",
+            "SA_STORIES_TEXT_04",
+            "SA_STORIES_TEXT_05"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -3.072000026702881,
+              -0.06000000238418579,
+              -18.68800163269043
+            ],
+            "max": [
+              3.2119998931884766,
+              0.08000000566244125,
+              3.622000217437744
+            ]
+          },
+          "uri": "/models/stay/v1/stories/lantern-path.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/stories/lantern-path.desktop.glb",
+      "mobileUrl": "/models/stay/v1/stories/lantern-path.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "S02",
+      "name": "Story Lantern",
+      "ownerRoute": "stories",
+      "sourceBlend": "scripts/blender/stay-awhile/05-stories.blend",
+      "sourceSha256": "478297ecbb9098c5a02b720b8ac7274258be09f3301eb77c6ec850f01c6dda03",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/stories-desktop.webp",
+        "mobile": "/assets/stay/v1/stories-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 40424,
+          "sha256": "2e4096651400392b3a43c8272c992631fa31f3c82f85837d982d24a7a9b3d29d",
+          "triangles": 566,
+          "materialCount": 4,
+          "nodeNames": [
+            "SA_S02_HOTSPOT_00",
+            "SA_S02_MESH_60",
+            "SA_S02_MESH_61",
+            "SA_S02_MESH_62",
+            "SA_S02_MESH_63",
+            "SA_S02_MESH_64",
+            "SA_S02_MESH_65",
+            "SA_S02_SHUTTER_00",
+            "SA_S02_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "STORY_SHUTTER",
+              "duration": 0.6,
+              "frameCount": 19,
+              "channels": 1
+            }
+          ],
+          "bounds": {
+            "min": [
+              -0.6490000486373901,
+              -0.07000000029802322,
+              -0.6080000400543213
+            ],
+            "max": [
+              0.6610000133514404,
+              1.6070001125335693,
+              0.5900000333786011
+            ]
+          },
+          "uri": "/models/stay/v1/stories/story-lantern.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 21156,
+          "sha256": "273344e61a621b0d0c9d63e9bab5375354983daafc56582349dbb326fd67f916",
+          "triangles": 225,
+          "materialCount": 4,
+          "nodeNames": [
+            "SA_S02_HOTSPOT_00",
+            "SA_S02_MESH_60",
+            "SA_S02_MESH_61",
+            "SA_S02_MESH_62",
+            "SA_S02_MESH_63",
+            "SA_S02_MESH_64",
+            "SA_S02_MESH_65",
+            "SA_S02_SHUTTER_00",
+            "SA_S02_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "STORY_SHUTTER",
+              "duration": 0.6,
+              "frameCount": 19,
+              "channels": 1
+            }
+          ],
+          "bounds": {
+            "min": [
+              -0.5230000019073486,
+              -0.07000000029802322,
+              -0.612000048160553
+            ],
+            "max": [
+              0.6420000195503235,
+              1.6070001125335693,
+              0.5879999995231628
+            ]
+          },
+          "uri": "/models/stay/v1/stories/story-lantern.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/stories/story-lantern.desktop.glb",
+      "mobileUrl": "/models/stay/v1/stories/story-lantern.mobile.glb",
+      "clipNames": [
+        "STORY_SHUTTER"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "S03",
+      "name": "Path Screen",
+      "ownerRoute": "stories",
+      "sourceBlend": "scripts/blender/stay-awhile/05-stories.blend",
+      "sourceSha256": "478297ecbb9098c5a02b720b8ac7274258be09f3301eb77c6ec850f01c6dda03",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/stories-desktop.webp",
+        "mobile": "/assets/stay/v1/stories-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 85400,
+          "sha256": "a9c51ee5758a48ff8f3a8dade9ab9ad1f04136f803272a183f97a3d3c84a921f",
+          "triangles": 1590,
+          "materialCount": 4,
+          "nodeNames": [
+            "SA_S03_MESH_60",
+            "SA_S03_MESH_61",
+            "SA_S03_MESH_62",
+            "SA_S03_MESH_63",
+            "SA_S03_SCREEN_00",
+            "SA_S03_MESH_64",
+            "SA_S03_MESH_65",
+            "SA_S03_MESH_66",
+            "SA_S03_MESH_67",
+            "SA_S03_SCREEN_01",
+            "SA_S03_MESH_68",
+            "SA_S03_MESH_69",
+            "SA_S03_MESH_70",
+            "SA_S03_MESH_71",
+            "SA_S03_SCREEN_02",
+            "SA_S03_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -4.283999919891357,
+              -0.07000000029802322,
+              -12.319000244140625
+            ],
+            "max": [
+              4.3520002365112305,
+              2.200000047683716,
+              -3.671999931335449
+            ]
+          },
+          "uri": "/models/stay/v1/stories/path-screen.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 37500,
+          "sha256": "3fe744d5b5449e2ea492469a469672717bc2376754fd5a5ac41c8dba54b37761",
+          "triangles": 546,
+          "materialCount": 4,
+          "nodeNames": [
+            "SA_S03_MESH_60",
+            "SA_S03_MESH_61",
+            "SA_S03_MESH_62",
+            "SA_S03_MESH_63",
+            "SA_S03_SCREEN_00",
+            "SA_S03_MESH_64",
+            "SA_S03_MESH_65",
+            "SA_S03_MESH_66",
+            "SA_S03_MESH_67",
+            "SA_S03_SCREEN_01",
+            "SA_S03_MESH_68",
+            "SA_S03_MESH_69",
+            "SA_S03_MESH_70",
+            "SA_S03_MESH_71",
+            "SA_S03_SCREEN_02",
+            "SA_S03_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -4.283999919891357,
+              -0.07000000029802322,
+              -12.319000244140625
+            ],
+            "max": [
+              4.3520002365112305,
+              2.200000047683716,
+              -3.671999931335449
+            ]
+          },
+          "uri": "/models/stay/v1/stories/path-screen.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/stories/path-screen.desktop.glb",
+      "mobileUrl": "/models/stay/v1/stories/path-screen.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "W01",
+      "name": "Archive Pavilion",
+      "ownerRoute": "work",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "sourceSha256": "82fb1280642a6d03818c78fd3c6eaef95223f045f5c32b6aed09e156159336dd",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/work-desktop.webp",
+        "mobile": "/assets/stay/v1/work-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 280308,
+          "sha256": "e7cc14d309863662329e1bb40a3df85378a824f3f2356ad36ed5996c4bcb3d08",
+          "triangles": 6084,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_W01_MESH_60",
+            "SA_W01_MESH_61",
+            "SA_W01_MESH_62",
+            "SA_W01_ROOT_00",
+            "SA_WORK_CAM_00",
+            "SA_WORK_CAM_01",
+            "SA_WORK_CAM_02",
+            "SA_WORK_CAM_03",
+            "SA_WORK_CAM_04",
+            "SA_WORK_CAM_05",
+            "SA_WORK_CAM_06",
+            "SA_WORK_ENTRY_00",
+            "SA_WORK_EXIT_00",
+            "SA_WORK_LOOK_00",
+            "SA_WORK_LOOK_01",
+            "SA_WORK_LOOK_02",
+            "SA_WORK_LOOK_03",
+            "SA_WORK_LOOK_04",
+            "SA_WORK_LOOK_05",
+            "SA_WORK_LOOK_06",
+            "SA_WORK_TEXT_00",
+            "SA_WORK_TEXT_01",
+            "SA_WORK_TEXT_02",
+            "SA_WORK_TEXT_03",
+            "SA_WORK_TEXT_04",
+            "SA_WORK_TEXT_05",
+            "SA_WORK_TEXT_06"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -4.697000026702881,
+              -0.11000000685453415,
+              -14.500000953674316
+            ],
+            "max": [
+              4.701000213623047,
+              4.230000019073486,
+              12.500000953674316
+            ]
+          },
+          "uri": "/models/stay/v1/work/archive-pavilion.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 62448,
+          "sha256": "8b03359645585859e1bac63cb9650e6d982b52ac5ae3833420e29e4d9b6faaa1",
+          "triangles": 1260,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_W01_MESH_60",
+            "SA_W01_MESH_61",
+            "SA_W01_MESH_62",
+            "SA_W01_ROOT_00",
+            "SA_WORK_CAM_00",
+            "SA_WORK_CAM_01",
+            "SA_WORK_CAM_02",
+            "SA_WORK_CAM_03",
+            "SA_WORK_CAM_04",
+            "SA_WORK_CAM_05",
+            "SA_WORK_CAM_06",
+            "SA_WORK_ENTRY_00",
+            "SA_WORK_EXIT_00",
+            "SA_WORK_LOOK_00",
+            "SA_WORK_LOOK_01",
+            "SA_WORK_LOOK_02",
+            "SA_WORK_LOOK_03",
+            "SA_WORK_LOOK_04",
+            "SA_WORK_LOOK_05",
+            "SA_WORK_LOOK_06",
+            "SA_WORK_TEXT_00",
+            "SA_WORK_TEXT_01",
+            "SA_WORK_TEXT_02",
+            "SA_WORK_TEXT_03",
+            "SA_WORK_TEXT_04",
+            "SA_WORK_TEXT_05",
+            "SA_WORK_TEXT_06"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -4.636000156402588,
+              -0.11000000685453415,
+              -14.500000953674316
+            ],
+            "max": [
+              4.698000431060791,
+              4.230000019073486,
+              12.500000953674316
+            ]
+          },
+          "uri": "/models/stay/v1/work/archive-pavilion.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/work/archive-pavilion.desktop.glb",
+      "mobileUrl": "/models/stay/v1/work/archive-pavilion.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "W02",
+      "name": "Planner Station",
+      "ownerRoute": "work",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "sourceSha256": "82fb1280642a6d03818c78fd3c6eaef95223f045f5c32b6aed09e156159336dd",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/work-desktop.webp",
+        "mobile": "/assets/stay/v1/work-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 55420,
+          "sha256": "079b2146d39f48130d2595f31fb97ce7b5189afccecf3fb7a5f4b799c79598cd",
+          "triangles": 544,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_W02_MESH_75",
+            "SA_W02_BREAK_00",
+            "SA_W02_HOTSPOT_00",
+            "SA_W02_MESH_60",
+            "SA_W02_MESH_61",
+            "SA_W02_MESH_62",
+            "SA_W02_MESH_63",
+            "SA_W02_TILE_00",
+            "SA_W02_MESH_64",
+            "SA_W02_TILE_01",
+            "SA_W02_MESH_65",
+            "SA_W02_TILE_02",
+            "SA_W02_MESH_66",
+            "SA_W02_TILE_03",
+            "SA_W02_MESH_67",
+            "SA_W02_TILE_04",
+            "SA_W02_MESH_68",
+            "SA_W02_TILE_05",
+            "SA_W02_MESH_69",
+            "SA_W02_TILE_06",
+            "SA_W02_MESH_70",
+            "SA_W02_TILE_07",
+            "SA_W02_MESH_71",
+            "SA_W02_TILE_08",
+            "SA_W02_MESH_72",
+            "SA_W02_TILE_09",
+            "SA_W02_MESH_73",
+            "SA_W02_TILE_10",
+            "SA_W02_MESH_74",
+            "SA_W02_TILE_11",
+            "SA_W02_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "WORK_PLANNER",
+              "duration": 6,
+              "frameCount": 181,
+              "channels": 13
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.2850000858306885,
+              0.0,
+              -0.675000011920929
+            ],
+            "max": [
+              1.2850000858306885,
+              1.087999939918518,
+              1.3600000143051147
+            ]
+          },
+          "uri": "/models/stay/v1/work/planner-station.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 45432,
+          "sha256": "6966fa9ff2667eaea27b921a9c17148870252a0c37fba0409be4f8ab1a319990",
+          "triangles": 384,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_W02_MESH_75",
+            "SA_W02_BREAK_00",
+            "SA_W02_HOTSPOT_00",
+            "SA_W02_MESH_60",
+            "SA_W02_MESH_61",
+            "SA_W02_MESH_62",
+            "SA_W02_MESH_63",
+            "SA_W02_TILE_00",
+            "SA_W02_MESH_64",
+            "SA_W02_TILE_01",
+            "SA_W02_MESH_65",
+            "SA_W02_TILE_02",
+            "SA_W02_MESH_66",
+            "SA_W02_TILE_03",
+            "SA_W02_MESH_67",
+            "SA_W02_TILE_04",
+            "SA_W02_MESH_68",
+            "SA_W02_TILE_05",
+            "SA_W02_MESH_69",
+            "SA_W02_TILE_06",
+            "SA_W02_MESH_70",
+            "SA_W02_TILE_07",
+            "SA_W02_MESH_71",
+            "SA_W02_TILE_08",
+            "SA_W02_MESH_72",
+            "SA_W02_TILE_09",
+            "SA_W02_MESH_73",
+            "SA_W02_TILE_10",
+            "SA_W02_MESH_74",
+            "SA_W02_TILE_11",
+            "SA_W02_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "WORK_PLANNER",
+              "duration": 6,
+              "frameCount": 181,
+              "channels": 13
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.2850000858306885,
+              0.0,
+              -0.675000011920929
+            ],
+            "max": [
+              1.2850000858306885,
+              1.087999939918518,
+              1.3600000143051147
+            ]
+          },
+          "uri": "/models/stay/v1/work/planner-station.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/work/planner-station.desktop.glb",
+      "mobileUrl": "/models/stay/v1/work/planner-station.mobile.glb",
+      "clipNames": [
+        "WORK_PLANNER"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "W03",
+      "name": "Logger Station",
+      "ownerRoute": "work",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "sourceSha256": "82fb1280642a6d03818c78fd3c6eaef95223f045f5c32b6aed09e156159336dd",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/work-desktop.webp",
+        "mobile": "/assets/stay/v1/work-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 32692,
+          "sha256": "15758adb89c1ee05b2904ea6cb1040bb1a93388465ebc2a84ca6b625e8e7053f",
+          "triangles": 468,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_W03_HOTSPOT_00",
+            "SA_W03_MESH_60",
+            "SA_W03_MESH_61",
+            "SA_W03_MESH_62",
+            "SA_W03_PAPER_00",
+            "SA_W03_MESH_63",
+            "SA_W03_PAPER_01",
+            "SA_W03_MESH_64",
+            "SA_W03_PAPER_02",
+            "SA_W03_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "WORK_LOGGER",
+              "duration": 5,
+              "frameCount": 151,
+              "channels": 3
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.3000000715255737,
+              0.0,
+              -0.6300000548362732
+            ],
+            "max": [
+              1.3000000715255737,
+              1.5550000667572021,
+              0.6300000548362732
+            ]
+          },
+          "uri": "/models/stay/v1/work/logger-station.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 18404,
+          "sha256": "ea1c0f0a8eca1ff3c6fd357b4aa5573ae3739e71df766802da791c63b15533b7",
+          "triangles": 180,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_W03_HOTSPOT_00",
+            "SA_W03_MESH_60",
+            "SA_W03_MESH_61",
+            "SA_W03_MESH_62",
+            "SA_W03_PAPER_00",
+            "SA_W03_MESH_63",
+            "SA_W03_PAPER_01",
+            "SA_W03_MESH_64",
+            "SA_W03_PAPER_02",
+            "SA_W03_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "WORK_LOGGER",
+              "duration": 5,
+              "frameCount": 151,
+              "channels": 3
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.3000000715255737,
+              0.0,
+              -0.6300000548362732
+            ],
+            "max": [
+              1.3000000715255737,
+              1.5550000667572021,
+              0.6300000548362732
+            ]
+          },
+          "uri": "/models/stay/v1/work/logger-station.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/work/logger-station.desktop.glb",
+      "mobileUrl": "/models/stay/v1/work/logger-station.mobile.glb",
+      "clipNames": [
+        "WORK_LOGGER"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "W04",
+      "name": "Mun Station",
+      "ownerRoute": "work",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "sourceSha256": "82fb1280642a6d03818c78fd3c6eaef95223f045f5c32b6aed09e156159336dd",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/work-desktop.webp",
+        "mobile": "/assets/stay/v1/work-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 63024,
+          "sha256": "3b73455c2f7934fc0e41f613343c5a76d471ebdac9cf1654bc8f77c1cf817930",
+          "triangles": 954,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_W04_MESH_68",
+            "SA_W04_CYCLE_00",
+            "SA_W04_HOTSPOT_00",
+            "SA_W04_MESH_60",
+            "SA_W04_MESH_61",
+            "SA_W04_MESH_62",
+            "SA_W04_MESH_63",
+            "SA_W04_PANEL_00",
+            "SA_W04_MESH_64",
+            "SA_W04_MESH_65",
+            "SA_W04_PANEL_01",
+            "SA_W04_MESH_66",
+            "SA_W04_MESH_67",
+            "SA_W04_PANEL_02",
+            "SA_W04_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "WORK_MUN",
+              "duration": 4,
+              "frameCount": 121,
+              "channels": 4
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.4600000381469727,
+              -0.12000000476837158,
+              -0.6300000548362732
+            ],
+            "max": [
+              1.437000036239624,
+              2.1700000762939453,
+              0.956000030040741
+            ]
+          },
+          "uri": "/models/stay/v1/work/mun-station.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 35452,
+          "sha256": "e97242bd0c424c610692d167224e3f1398b77975cff2c15f84071b6c1e98d053",
+          "triangles": 423,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_W04_MESH_68",
+            "SA_W04_CYCLE_00",
+            "SA_W04_HOTSPOT_00",
+            "SA_W04_MESH_60",
+            "SA_W04_MESH_61",
+            "SA_W04_MESH_62",
+            "SA_W04_MESH_63",
+            "SA_W04_PANEL_00",
+            "SA_W04_MESH_64",
+            "SA_W04_MESH_65",
+            "SA_W04_PANEL_01",
+            "SA_W04_MESH_66",
+            "SA_W04_MESH_67",
+            "SA_W04_PANEL_02",
+            "SA_W04_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "WORK_MUN",
+              "duration": 4,
+              "frameCount": 121,
+              "channels": 4
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.4220000505447388,
+              -0.12000000476837158,
+              -0.6140000224113464
+            ],
+            "max": [
+              1.4580000638961792,
+              2.1700000762939453,
+              0.9410000443458557
+            ]
+          },
+          "uri": "/models/stay/v1/work/mun-station.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/work/mun-station.desktop.glb",
+      "mobileUrl": "/models/stay/v1/work/mun-station.mobile.glb",
+      "clipNames": [
+        "WORK_MUN"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "W05",
+      "name": "Snrled Station",
+      "ownerRoute": "work",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "sourceSha256": "82fb1280642a6d03818c78fd3c6eaef95223f045f5c32b6aed09e156159336dd",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/work-desktop.webp",
+        "mobile": "/assets/stay/v1/work-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 14260,
+          "sha256": "910dc7eb6a1673f91509ab5f0421a76de6ff5229678b0280115a6d74b21353e4",
+          "triangles": 144,
+          "materialCount": 4,
+          "nodeNames": [
+            "SA_W05_HOTSPOT_00",
+            "SA_W05_MESH_60",
+            "SA_W05_MESH_61",
+            "SA_W05_MESH_62",
+            "SA_W05_MESH_63",
+            "SA_W05_RECEIPT_00",
+            "SA_W05_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "WORK_SNRLED",
+              "duration": 6,
+              "frameCount": 181,
+              "channels": 1
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.190000057220459,
+              0.0,
+              -0.5890000462532043
+            ],
+            "max": [
+              1.190000057220459,
+              1.412000060081482,
+              0.5750000476837158
+            ]
+          },
+          "uri": "/models/stay/v1/work/snrled-station.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 12452,
+          "sha256": "d6db041e8a4e3fa749e5a02b55930378fcc9a43a4611c3094a682fd0b28af9d5",
+          "triangles": 144,
+          "materialCount": 4,
+          "nodeNames": [
+            "SA_W05_HOTSPOT_00",
+            "SA_W05_MESH_60",
+            "SA_W05_MESH_61",
+            "SA_W05_MESH_62",
+            "SA_W05_MESH_63",
+            "SA_W05_RECEIPT_00",
+            "SA_W05_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "WORK_SNRLED",
+              "duration": 6,
+              "frameCount": 181,
+              "channels": 1
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.190000057220459,
+              0.0,
+              -0.5890000462532043
+            ],
+            "max": [
+              1.190000057220459,
+              1.412000060081482,
+              0.5750000476837158
+            ]
+          },
+          "uri": "/models/stay/v1/work/snrled-station.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/work/snrled-station.desktop.glb",
+      "mobileUrl": "/models/stay/v1/work/snrled-station.mobile.glb",
+      "clipNames": [
+        "WORK_SNRLED"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "W06",
+      "name": "Aura Station",
+      "ownerRoute": "work",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "sourceSha256": "82fb1280642a6d03818c78fd3c6eaef95223f045f5c32b6aed09e156159336dd",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/work-desktop.webp",
+        "mobile": "/assets/stay/v1/work-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 54860,
+          "sha256": "55b52369f04cae7fff1b5742dcb41c95a44ed0d00eb70447c3fb38efbf08da73",
+          "triangles": 828,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_W06_HOTSPOT_00",
+            "SA_W06_MESH_60",
+            "SA_W06_MESH_66",
+            "SA_W06_MESH_61",
+            "SA_W06_SHEET_00",
+            "SA_W06_MESH_62",
+            "SA_W06_SHEET_01",
+            "SA_W06_MESH_63",
+            "SA_W06_SHEET_02",
+            "SA_W06_MESH_64",
+            "SA_W06_SHEET_03",
+            "SA_W06_MESH_65",
+            "SA_W06_SHEET_04",
+            "SA_W06_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "WORK_AURA",
+              "duration": 5,
+              "frameCount": 151,
+              "channels": 5
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.2950000762939453,
+              0.0,
+              -0.6000000238418579
+            ],
+            "max": [
+              1.2950000762939453,
+              1.8600001335144043,
+              0.9300000667572021
+            ]
+          },
+          "uri": "/models/stay/v1/work/aura-station.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 28556,
+          "sha256": "2284884fd5165e19c12aa89f10e7936475ef5f3b9e07bb2738147cdae9b4dfce",
+          "triangles": 348,
+          "materialCount": 3,
+          "nodeNames": [
+            "SA_W06_HOTSPOT_00",
+            "SA_W06_MESH_60",
+            "SA_W06_MESH_66",
+            "SA_W06_MESH_61",
+            "SA_W06_SHEET_00",
+            "SA_W06_MESH_62",
+            "SA_W06_SHEET_01",
+            "SA_W06_MESH_63",
+            "SA_W06_SHEET_02",
+            "SA_W06_MESH_64",
+            "SA_W06_SHEET_03",
+            "SA_W06_MESH_65",
+            "SA_W06_SHEET_04",
+            "SA_W06_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "WORK_AURA",
+              "duration": 5,
+              "frameCount": 151,
+              "channels": 5
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.2950000762939453,
+              0.0,
+              -0.6000000238418579
+            ],
+            "max": [
+              1.2950000762939453,
+              1.8600001335144043,
+              0.9300000667572021
+            ]
+          },
+          "uri": "/models/stay/v1/work/aura-station.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/work/aura-station.desktop.glb",
+      "mobileUrl": "/models/stay/v1/work/aura-station.mobile.glb",
+      "clipNames": [
+        "WORK_AURA"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "F01",
+      "name": "Opening Canopy",
+      "ownerRoute": "future",
+      "sourceBlend": "scripts/blender/stay-awhile/07-future.blend",
+      "sourceSha256": "3e233b4d4e31127e41db986e23774c18818d6091b5d19df21170eb852129f4d2",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-bark-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-bark-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-spray.desktop.png",
+        "/models/stay/v1/shared/senior-spray.mobile.png"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/future-desktop.webp",
+        "mobile": "/assets/stay/v1/future-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 189572,
+          "sha256": "723e129c109f366a970fcee38457727161101925a3e98c646336672f45f2ea0c",
+          "triangles": 8160,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_F01_BRANCH_00",
+            "SA_F01_BRANCH_01",
+            "SA_F01_BRANCH_02",
+            "SA_F01_BRANCH_03",
+            "SA_F01_BRANCH_04",
+            "SA_F01_BRANCH_05",
+            "SA_F01_BRANCH_06",
+            "SA_F01_BRANCH_07",
+            "SA_F01_BRANCH_08",
+            "SA_F01_BRANCH_09",
+            "SA_F01_BRANCH_10",
+            "SA_F01_BRANCH_11",
+            "SA_F01_BRANCH_12",
+            "SA_F01_BRANCH_13",
+            "SA_F01_BRANCH_14",
+            "SA_F01_BRANCH_15",
+            "SA_F01_BRANCH_16",
+            "SA_F01_BRANCH_17",
+            "SA_F01_MESH_60",
+            "SA_F01_MESH_61",
+            "SA_F01_ROOT_00",
+            "SA_FUTURE_CAM_00",
+            "SA_FUTURE_CAM_01",
+            "SA_FUTURE_CAM_02",
+            "SA_FUTURE_CAM_03",
+            "SA_FUTURE_CAM_04",
+            "SA_FUTURE_ENTRY_00",
+            "SA_FUTURE_EXIT_00",
+            "SA_FUTURE_LOOK_00",
+            "SA_FUTURE_LOOK_01",
+            "SA_FUTURE_LOOK_02",
+            "SA_FUTURE_LOOK_03",
+            "SA_FUTURE_LOOK_04",
+            "SA_FUTURE_TEXT_00",
+            "SA_FUTURE_TEXT_01",
+            "SA_FUTURE_TEXT_02",
+            "SA_FUTURE_TEXT_03",
+            "SA_FUTURE_TEXT_04"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -8.867000579833984,
+              -0.049000002443790436,
+              -15.016000747680664
+            ],
+            "max": [
+              10.151000022888184,
+              8.266000747680664,
+              3.0270001888275146
+            ]
+          },
+          "uri": "/models/stay/v1/future/opening-canopy.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 57308,
+          "sha256": "6068ceff83ec49d452c87b3882f52fc802309eff99dd7dc82e2ab56aad843fa7",
+          "triangles": 2214,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_F01_BRANCH_00",
+            "SA_F01_BRANCH_01",
+            "SA_F01_BRANCH_02",
+            "SA_F01_BRANCH_03",
+            "SA_F01_BRANCH_04",
+            "SA_F01_BRANCH_05",
+            "SA_F01_BRANCH_06",
+            "SA_F01_BRANCH_07",
+            "SA_F01_BRANCH_08",
+            "SA_F01_BRANCH_09",
+            "SA_F01_BRANCH_10",
+            "SA_F01_BRANCH_11",
+            "SA_F01_BRANCH_12",
+            "SA_F01_BRANCH_13",
+            "SA_F01_BRANCH_14",
+            "SA_F01_BRANCH_15",
+            "SA_F01_BRANCH_16",
+            "SA_F01_BRANCH_17",
+            "SA_F01_MESH_60",
+            "SA_F01_MESH_61",
+            "SA_F01_ROOT_00",
+            "SA_FUTURE_CAM_00",
+            "SA_FUTURE_CAM_01",
+            "SA_FUTURE_CAM_02",
+            "SA_FUTURE_CAM_03",
+            "SA_FUTURE_CAM_04",
+            "SA_FUTURE_ENTRY_00",
+            "SA_FUTURE_EXIT_00",
+            "SA_FUTURE_LOOK_00",
+            "SA_FUTURE_LOOK_01",
+            "SA_FUTURE_LOOK_02",
+            "SA_FUTURE_LOOK_03",
+            "SA_FUTURE_LOOK_04",
+            "SA_FUTURE_TEXT_00",
+            "SA_FUTURE_TEXT_01",
+            "SA_FUTURE_TEXT_02",
+            "SA_FUTURE_TEXT_03",
+            "SA_FUTURE_TEXT_04"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -9.245000839233398,
+              -0.046000003814697266,
+              -15.572000503540039
+            ],
+            "max": [
+              10.720000267028809,
+              8.642000198364258,
+              3.4680001735687256
+            ]
+          },
+          "uri": "/models/stay/v1/future/opening-canopy.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/future/opening-canopy.desktop.glb",
+      "mobileUrl": "/models/stay/v1/future/opening-canopy.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "F02",
+      "name": "Horizon Path",
+      "ownerRoute": "future",
+      "sourceBlend": "scripts/blender/stay-awhile/07-future.blend",
+      "sourceSha256": "3e233b4d4e31127e41db986e23774c18818d6091b5d19df21170eb852129f4d2",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-ground-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/future-desktop.webp",
+        "mobile": "/assets/stay/v1/future-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 37536,
+          "sha256": "901565ce0d9c482593552d7a513deb1db47725787b6d6e1f04f68528491faace",
+          "triangles": 722,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_F02_MESH_60",
+            "SA_F02_MESH_61",
+            "SA_F02_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -2.9770002365112305,
+              -0.08000000566244125,
+              -15.000000953674316
+            ],
+            "max": [
+              3.0230002403259277,
+              0.03500000014901161,
+              2.0
+            ]
+          },
+          "uri": "/models/stay/v1/future/horizon-path.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 14704,
+          "sha256": "0a812b5e51348fe8ee6c79130b233b30337e2486cee48bf9ee6433e1175f6575",
+          "triangles": 220,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_F02_MESH_60",
+            "SA_F02_MESH_61",
+            "SA_F02_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -2.9210002422332764,
+              -0.08000000566244125,
+              -15.000000953674316
+            ],
+            "max": [
+              3.079000234603882,
+              0.032999999821186066,
+              2.0
+            ]
+          },
+          "uri": "/models/stay/v1/future/horizon-path.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/future/horizon-path.desktop.glb",
+      "mobileUrl": "/models/stay/v1/future/horizon-path.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "F03",
+      "name": "Distant Marker",
+      "ownerRoute": "future",
+      "sourceBlend": "scripts/blender/stay-awhile/07-future.blend",
+      "sourceSha256": "3e233b4d4e31127e41db986e23774c18818d6091b5d19df21170eb852129f4d2",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/future-desktop.webp",
+        "mobile": "/assets/stay/v1/future-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 7152,
+          "sha256": "3836552a3aa81e3a511d1cf86abce545145ab74a82c162ac4d0ebeb1310f8c5c",
+          "triangles": 134,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_F03_MESH_60",
+            "SA_F03_MESH_61",
+            "SA_F03_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.38100001215934753,
+              -0.07000000029802322,
+              -0.27900001406669617
+            ],
+            "max": [
+              0.39900001883506775,
+              1.8200000524520874,
+              0.29500001668930054
+            ]
+          },
+          "uri": "/models/stay/v1/future/distant-marker.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 6256,
+          "sha256": "84f6f1b0ca9c8355a0599dec345d291ade91dbdc68798d7235701a09b0991b06",
+          "triangles": 92,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_F03_MESH_60",
+            "SA_F03_MESH_61",
+            "SA_F03_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.3850000202655792,
+              -0.07000000029802322,
+              -0.2840000092983246
+            ],
+            "max": [
+              0.3830000162124634,
+              1.821000099182129,
+              0.28600001335144043
+            ]
+          },
+          "uri": "/models/stay/v1/future/distant-marker.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/future/distant-marker.desktop.glb",
+      "mobileUrl": "/models/stay/v1/future/distant-marker.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "A01",
+      "name": "Archive Frame",
+      "ownerRoute": "aura",
+      "sourceBlend": "scripts/blender/stay-awhile/08-aura.blend",
+      "sourceSha256": "ae4def92f3b595272a2b7806e9128eec095b2208437d2998be4ee8a56a711945",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/aura-desktop.webp",
+        "mobile": "/assets/stay/v1/aura-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 345072,
+          "sha256": "fd2dc1760b385d293f59f04b06e0c6757d5ab8608fdd82cc6cbf7bfa5fdf9ed1",
+          "triangles": 6930,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_A01_MESH_60",
+            "SA_A01_MESH_61",
+            "SA_A01_BAY_00",
+            "SA_A01_MESH_62",
+            "SA_A01_MESH_63",
+            "SA_A01_BAY_01",
+            "SA_A01_MESH_64",
+            "SA_A01_MESH_65",
+            "SA_A01_BAY_02",
+            "SA_A01_MESH_66",
+            "SA_A01_MESH_67",
+            "SA_A01_BAY_03",
+            "SA_A01_MESH_68",
+            "SA_A01_MESH_69",
+            "SA_A01_BAY_04",
+            "SA_A01_MESH_70",
+            "SA_A01_MESH_71",
+            "SA_A01_BAY_05",
+            "SA_A01_MESH_72",
+            "SA_A01_MESH_73",
+            "SA_A01_BAY_06",
+            "SA_A01_MESH_74",
+            "SA_A01_MESH_75",
+            "SA_A01_BAY_07",
+            "SA_A01_MESH_76",
+            "SA_A01_MESH_77",
+            "SA_A01_BAY_08",
+            "SA_A01_ROOT_00",
+            "SA_AURA_CAM_00",
+            "SA_AURA_CAM_01",
+            "SA_AURA_CAM_02",
+            "SA_AURA_CAM_03",
+            "SA_AURA_CAM_04",
+            "SA_AURA_CAM_05",
+            "SA_AURA_CAM_06",
+            "SA_AURA_CAM_07",
+            "SA_AURA_ENTRY_00",
+            "SA_AURA_EXIT_00",
+            "SA_AURA_LOOK_00",
+            "SA_AURA_LOOK_01",
+            "SA_AURA_LOOK_02",
+            "SA_AURA_LOOK_03",
+            "SA_AURA_LOOK_04",
+            "SA_AURA_LOOK_05",
+            "SA_AURA_LOOK_06",
+            "SA_AURA_LOOK_07",
+            "SA_AURA_TEXT_00",
+            "SA_AURA_TEXT_01",
+            "SA_AURA_TEXT_02",
+            "SA_AURA_TEXT_03",
+            "SA_AURA_TEXT_04",
+            "SA_AURA_TEXT_05",
+            "SA_AURA_TEXT_06",
+            "SA_AURA_TEXT_07"
+          ],
+          "clips": [
+            {
+              "name": "AURA_STRUCTURE",
+              "duration": 3,
+              "frameCount": 91,
+              "channels": 18
+            }
+          ],
+          "bounds": {
+            "min": [
+              -4.774221420288086,
+              -2.5999999046325684,
+              -6.563018798828125
+            ],
+            "max": [
+              4.774221420288086,
+              2.4800000190734863,
+              5.547491073608398
+            ]
+          },
+          "uri": "/models/stay/v1/aura/archive-frame.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 121248,
+          "sha256": "b34e471f5bd1c3222ca76c1c54619da6836c12ede2a4265805130c2bc9b69f92",
+          "triangles": 1890,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_A01_MESH_60",
+            "SA_A01_MESH_61",
+            "SA_A01_BAY_00",
+            "SA_A01_MESH_62",
+            "SA_A01_MESH_63",
+            "SA_A01_BAY_01",
+            "SA_A01_MESH_64",
+            "SA_A01_MESH_65",
+            "SA_A01_BAY_02",
+            "SA_A01_MESH_66",
+            "SA_A01_MESH_67",
+            "SA_A01_BAY_03",
+            "SA_A01_MESH_68",
+            "SA_A01_MESH_69",
+            "SA_A01_BAY_04",
+            "SA_A01_MESH_70",
+            "SA_A01_MESH_71",
+            "SA_A01_BAY_05",
+            "SA_A01_MESH_72",
+            "SA_A01_MESH_73",
+            "SA_A01_BAY_06",
+            "SA_A01_MESH_74",
+            "SA_A01_MESH_75",
+            "SA_A01_BAY_07",
+            "SA_A01_MESH_76",
+            "SA_A01_MESH_77",
+            "SA_A01_BAY_08",
+            "SA_A01_ROOT_00",
+            "SA_AURA_CAM_00",
+            "SA_AURA_CAM_01",
+            "SA_AURA_CAM_02",
+            "SA_AURA_CAM_03",
+            "SA_AURA_CAM_04",
+            "SA_AURA_CAM_05",
+            "SA_AURA_CAM_06",
+            "SA_AURA_CAM_07",
+            "SA_AURA_ENTRY_00",
+            "SA_AURA_EXIT_00",
+            "SA_AURA_LOOK_00",
+            "SA_AURA_LOOK_01",
+            "SA_AURA_LOOK_02",
+            "SA_AURA_LOOK_03",
+            "SA_AURA_LOOK_04",
+            "SA_AURA_LOOK_05",
+            "SA_AURA_LOOK_06",
+            "SA_AURA_LOOK_07",
+            "SA_AURA_TEXT_00",
+            "SA_AURA_TEXT_01",
+            "SA_AURA_TEXT_02",
+            "SA_AURA_TEXT_03",
+            "SA_AURA_TEXT_04",
+            "SA_AURA_TEXT_05",
+            "SA_AURA_TEXT_06",
+            "SA_AURA_TEXT_07"
+          ],
+          "clips": [
+            {
+              "name": "AURA_STRUCTURE",
+              "duration": 3,
+              "frameCount": 91,
+              "channels": 18
+            }
+          ],
+          "bounds": {
+            "min": [
+              -4.774221420288086,
+              -2.5999999046325684,
+              -6.563018798828125
+            ],
+            "max": [
+              4.774221420288086,
+              2.4800000190734863,
+              5.547491073608398
+            ]
+          },
+          "uri": "/models/stay/v1/aura/archive-frame.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/aura/archive-frame.desktop.glb",
+      "mobileUrl": "/models/stay/v1/aura/archive-frame.mobile.glb",
+      "clipNames": [
+        "AURA_STRUCTURE"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "A02",
+      "name": "Evidence Documents",
+      "ownerRoute": "aura",
+      "sourceBlend": "scripts/blender/stay-awhile/08-aura.blend",
+      "sourceSha256": "ae4def92f3b595272a2b7806e9128eec095b2208437d2998be4ee8a56a711945",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/aura-desktop.webp",
+        "mobile": "/assets/stay/v1/aura-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 56392,
+          "sha256": "811fae9d28f8cc22ab7e3dc0ef9a4f5850376327b69756b9875c54ba71315a66",
+          "triangles": 612,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_A02_MESH_60",
+            "SA_A02_DOCUMENT_00",
+            "SA_A02_MESH_61",
+            "SA_A02_DOCUMENT_01",
+            "SA_A02_MESH_62",
+            "SA_A02_DOCUMENT_02",
+            "SA_A02_MESH_63",
+            "SA_A02_DOCUMENT_03",
+            "SA_A02_MESH_64",
+            "SA_A02_DOCUMENT_04",
+            "SA_A02_MESH_65",
+            "SA_A02_DOCUMENT_05",
+            "SA_A02_MESH_66",
+            "SA_A02_DOCUMENT_06",
+            "SA_A02_MESH_67",
+            "SA_A02_DOCUMENT_07",
+            "SA_A02_MESH_68",
+            "SA_A02_DOCUMENT_08",
+            "SA_A02_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "AURA_DOCUMENTS",
+              "duration": 4,
+              "frameCount": 121,
+              "channels": 18
+            }
+          ],
+          "bounds": {
+            "min": [
+              -3.071427345275879,
+              1.600000023841858,
+              -10.114339828491211
+            ],
+            "max": [
+              3.0762972831726074,
+              2.75,
+              -7.591541290283203
+            ]
+          },
+          "uri": "/models/stay/v1/aura/evidence-documents.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 54584,
+          "sha256": "0482fe8b13e613480cc3c493001ce8bb3d9ed71341c1da54a5abd88f7aaffbb0",
+          "triangles": 612,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_A02_MESH_60",
+            "SA_A02_DOCUMENT_00",
+            "SA_A02_MESH_61",
+            "SA_A02_DOCUMENT_01",
+            "SA_A02_MESH_62",
+            "SA_A02_DOCUMENT_02",
+            "SA_A02_MESH_63",
+            "SA_A02_DOCUMENT_03",
+            "SA_A02_MESH_64",
+            "SA_A02_DOCUMENT_04",
+            "SA_A02_MESH_65",
+            "SA_A02_DOCUMENT_05",
+            "SA_A02_MESH_66",
+            "SA_A02_DOCUMENT_06",
+            "SA_A02_MESH_67",
+            "SA_A02_DOCUMENT_07",
+            "SA_A02_MESH_68",
+            "SA_A02_DOCUMENT_08",
+            "SA_A02_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "AURA_DOCUMENTS",
+              "duration": 4,
+              "frameCount": 121,
+              "channels": 18
+            }
+          ],
+          "bounds": {
+            "min": [
+              -3.071427345275879,
+              1.600000023841858,
+              -10.114339828491211
+            ],
+            "max": [
+              3.0762972831726074,
+              2.75,
+              -7.591541290283203
+            ]
+          },
+          "uri": "/models/stay/v1/aura/evidence-documents.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/aura/evidence-documents.desktop.glb",
+      "mobileUrl": "/models/stay/v1/aura/evidence-documents.mobile.glb",
+      "clipNames": [
+        "AURA_DOCUMENTS"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "A03",
+      "name": "Relationship Filaments",
+      "ownerRoute": "aura",
+      "sourceBlend": "scripts/blender/stay-awhile/08-aura.blend",
+      "sourceSha256": "ae4def92f3b595272a2b7806e9128eec095b2208437d2998be4ee8a56a711945",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/aura-desktop.webp",
+        "mobile": "/assets/stay/v1/aura-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 77104,
+          "sha256": "07e98b0fd3910e67b880403b64e943d58daa5465f1733777d3f8e89b9ab1f4ee",
+          "triangles": 1704,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_A03_MESH_60",
+            "SA_A03_MESH_61",
+            "SA_A03_STRAND_00",
+            "SA_A03_MESH_62",
+            "SA_A03_MESH_63",
+            "SA_A03_STRAND_01",
+            "SA_A03_MESH_64",
+            "SA_A03_MESH_65",
+            "SA_A03_STRAND_02",
+            "SA_A03_MESH_66",
+            "SA_A03_MESH_67",
+            "SA_A03_STRAND_03",
+            "SA_A03_MESH_68",
+            "SA_A03_MESH_69",
+            "SA_A03_STRAND_04",
+            "SA_A03_MESH_70",
+            "SA_A03_MESH_71",
+            "SA_A03_STRAND_05",
+            "SA_A03_MESH_72",
+            "SA_A03_MESH_73",
+            "SA_A03_STRAND_06",
+            "SA_A03_MESH_74",
+            "SA_A03_MESH_75",
+            "SA_A03_STRAND_07",
+            "SA_A03_MESH_76",
+            "SA_A03_MESH_77",
+            "SA_A03_STRAND_08",
+            "SA_A03_MESH_78",
+            "SA_A03_MESH_79",
+            "SA_A03_STRAND_09",
+            "SA_A03_MESH_80",
+            "SA_A03_MESH_81",
+            "SA_A03_STRAND_10",
+            "SA_A03_MESH_82",
+            "SA_A03_MESH_83",
+            "SA_A03_STRAND_11",
+            "SA_A03_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -3.3960001468658447,
+              1.5530000925064087,
+              -10.657000541687012
+            ],
+            "max": [
+              3.4050002098083496,
+              1.7680001258850098,
+              -8.267000198364258
+            ]
+          },
+          "uri": "/models/stay/v1/aura/relationship-filaments.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 28232,
+          "sha256": "01fc4b82b634eefa12e62e3c4a2c38c9cb85db97a60bfea7953aef45bb7f74c6",
+          "triangles": 540,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_A03_MESH_72",
+            "SA_A03_MESH_60",
+            "SA_A03_STRAND_00",
+            "SA_A03_MESH_61",
+            "SA_A03_STRAND_01",
+            "SA_A03_MESH_62",
+            "SA_A03_STRAND_02",
+            "SA_A03_MESH_63",
+            "SA_A03_STRAND_03",
+            "SA_A03_MESH_64",
+            "SA_A03_STRAND_04",
+            "SA_A03_MESH_65",
+            "SA_A03_STRAND_05",
+            "SA_A03_MESH_66",
+            "SA_A03_STRAND_06",
+            "SA_A03_MESH_67",
+            "SA_A03_STRAND_07",
+            "SA_A03_MESH_68",
+            "SA_A03_STRAND_08",
+            "SA_A03_MESH_69",
+            "SA_A03_STRAND_09",
+            "SA_A03_MESH_70",
+            "SA_A03_STRAND_10",
+            "SA_A03_MESH_71",
+            "SA_A03_STRAND_11",
+            "SA_A03_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -3.38700008392334,
+              1.5750000476837158,
+              -10.640000343322754
+            ],
+            "max": [
+              3.38700008392334,
+              1.7730001211166382,
+              -8.285000801086426
+            ]
+          },
+          "uri": "/models/stay/v1/aura/relationship-filaments.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/aura/relationship-filaments.desktop.glb",
+      "mobileUrl": "/models/stay/v1/aura/relationship-filaments.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "A04",
+      "name": "Model Spine",
+      "ownerRoute": "aura",
+      "sourceBlend": "scripts/blender/stay-awhile/08-aura.blend",
+      "sourceSha256": "ae4def92f3b595272a2b7806e9128eec095b2208437d2998be4ee8a56a711945",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-timber-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-diff.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-nor_gl.mobile.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.desktop.jpg",
+        "/models/stay/v1/shared/senior-timber-rough.mobile.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/aura-desktop.webp",
+        "mobile": "/assets/stay/v1/aura-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 56340,
+          "sha256": "ac116446b1cd19fcf2dee2843898a59bab26ef0f8c15d240e43da7480c2782b2",
+          "triangles": 931,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_A04_MESH_60",
+            "SA_A04_MESH_61",
+            "SA_A04_MESH_62",
+            "SA_A04_SOCKET_00",
+            "SA_A04_SOCKET_05",
+            "SA_A04_SHELF_00",
+            "SA_A04_MESH_63",
+            "SA_A04_MESH_64",
+            "SA_A04_SOCKET_01",
+            "SA_A04_SOCKET_06",
+            "SA_A04_SHELF_01",
+            "SA_A04_MESH_65",
+            "SA_A04_MESH_66",
+            "SA_A04_SOCKET_02",
+            "SA_A04_SOCKET_07",
+            "SA_A04_SHELF_02",
+            "SA_A04_MESH_67",
+            "SA_A04_MESH_68",
+            "SA_A04_SOCKET_03",
+            "SA_A04_SOCKET_08",
+            "SA_A04_SHELF_03",
+            "SA_A04_MESH_69",
+            "SA_A04_MESH_70",
+            "SA_A04_SOCKET_04",
+            "SA_A04_SHELF_04",
+            "SA_A04_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "AURA_MODEL",
+              "duration": 3,
+              "frameCount": 91,
+              "channels": 5
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.7100000381469727,
+              -0.11000000685453415,
+              -0.3270000219345093
+            ],
+            "max": [
+              1.7100000381469727,
+              4.100000381469727,
+              0.30900001525878906
+            ]
+          },
+          "uri": "/models/stay/v1/aura/model-spine.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 29276,
+          "sha256": "8c13c05880dde5b650f6c9e17c4999c179ad5607caf06ecb8f6d5d6044b4c14d",
+          "triangles": 352,
+          "materialCount": 2,
+          "nodeNames": [
+            "SA_A04_MESH_60",
+            "SA_A04_MESH_61",
+            "SA_A04_MESH_62",
+            "SA_A04_SOCKET_00",
+            "SA_A04_SOCKET_05",
+            "SA_A04_SHELF_00",
+            "SA_A04_MESH_63",
+            "SA_A04_MESH_64",
+            "SA_A04_SOCKET_01",
+            "SA_A04_SOCKET_06",
+            "SA_A04_SHELF_01",
+            "SA_A04_MESH_65",
+            "SA_A04_MESH_66",
+            "SA_A04_SOCKET_02",
+            "SA_A04_SOCKET_07",
+            "SA_A04_SHELF_02",
+            "SA_A04_MESH_67",
+            "SA_A04_MESH_68",
+            "SA_A04_SOCKET_03",
+            "SA_A04_SOCKET_08",
+            "SA_A04_SHELF_03",
+            "SA_A04_MESH_69",
+            "SA_A04_MESH_70",
+            "SA_A04_SOCKET_04",
+            "SA_A04_SHELF_04",
+            "SA_A04_ROOT_00"
+          ],
+          "clips": [
+            {
+              "name": "AURA_MODEL",
+              "duration": 3,
+              "frameCount": 91,
+              "channels": 5
+            }
+          ],
+          "bounds": {
+            "min": [
+              -1.7100000381469727,
+              -0.11000000685453415,
+              -0.3330000042915344
+            ],
+            "max": [
+              1.7100000381469727,
+              4.100000381469727,
+              0.31300002336502075
+            ]
+          },
+          "uri": "/models/stay/v1/aura/model-spine.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/aura/model-spine.desktop.glb",
+      "mobileUrl": "/models/stay/v1/aura/model-spine.mobile.glb",
+      "clipNames": [
+        "AURA_MODEL"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "C01",
+      "name": "Open Ground",
+      "ownerRoute": "contact",
+      "sourceBlend": "scripts/blender/stay-awhile/09-contact.blend",
+      "sourceSha256": "d39a5b222ec73cfc35f6028fd5a597315b7a5b11115696133bd4fd95667585a9",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-ground-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-ground-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/contact-desktop.webp",
+        "mobile": "/assets/stay/v1/contact-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 23996,
+          "sha256": "71b99dc71e19bdc15a815f418077215b3d6d61edb410a5608fbc0336745f96f7",
+          "triangles": 560,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_C01_MESH_60",
+            "SA_C01_ROOT_00",
+            "SA_CONTACT_CAM_00",
+            "SA_CONTACT_CAM_01",
+            "SA_CONTACT_CAM_02",
+            "SA_CONTACT_ENTRY_00",
+            "SA_CONTACT_EXIT_00",
+            "SA_CONTACT_LOOK_00",
+            "SA_CONTACT_LOOK_01",
+            "SA_CONTACT_LOOK_02",
+            "SA_CONTACT_TEXT_00",
+            "SA_CONTACT_TEXT_01",
+            "SA_CONTACT_TEXT_02"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -9.336000442504883,
+              -0.06000000238418579,
+              -8.962000846862793
+            ],
+            "max": [
+              9.346000671386719,
+              0.2590000033378601,
+              9.51300048828125
+            ]
+          },
+          "uri": "/models/stay/v1/contact/open-ground.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 7936,
+          "sha256": "139db14f75fd271130013e6a20b426eaafd86df258076844d18f37d3d12ba7b8",
+          "triangles": 112,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_C01_MESH_60",
+            "SA_C01_ROOT_00",
+            "SA_CONTACT_CAM_00",
+            "SA_CONTACT_CAM_01",
+            "SA_CONTACT_CAM_02",
+            "SA_CONTACT_ENTRY_00",
+            "SA_CONTACT_EXIT_00",
+            "SA_CONTACT_LOOK_00",
+            "SA_CONTACT_LOOK_01",
+            "SA_CONTACT_LOOK_02",
+            "SA_CONTACT_TEXT_00",
+            "SA_CONTACT_TEXT_01",
+            "SA_CONTACT_TEXT_02"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -9.230000495910645,
+              -0.06000000238418579,
+              -8.947999954223633
+            ],
+            "max": [
+              9.24000072479248,
+              0.24800001084804535,
+              9.143000602722168
+            ]
+          },
+          "uri": "/models/stay/v1/contact/open-ground.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/contact/open-ground.desktop.glb",
+      "mobileUrl": "/models/stay/v1/contact/open-ground.mobile.glb",
+      "clipNames": []
+    },
+    {
+      "schemaVersion": 1,
+      "assetId": "C02",
+      "name": "Resting Stone",
+      "ownerRoute": "contact",
+      "sourceBlend": "scripts/blender/stay-awhile/09-contact.blend",
+      "sourceSha256": "d39a5b222ec73cfc35f6028fd5a597315b7a5b11115696133bd4fd95667585a9",
+      "artistVersion": "senior-art-2026-09-27",
+      "atlasDependencies": [
+        "/models/stay/v1/shared/senior-stone-diff.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-nor_gl.desktop.jpg",
+        "/models/stay/v1/shared/senior-stone-rough.desktop.jpg"
+      ],
+      "posterUrls": {
+        "desktop": "/assets/stay/v1/contact-desktop.webp",
+        "mobile": "/assets/stay/v1/contact-mobile.webp"
+      },
+      "variants": {
+        "desktop": {
+          "byteLength": 12468,
+          "sha256": "8d00db983cda0c37e3fa76f38db016f27f0dcd14bea3c7f62bcb0851f3e2f35c",
+          "triangles": 468,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_C02_MESH_60",
+            "SA_C02_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.6290000081062317,
+              -0.11000000685453415,
+              -0.4280000329017639
+            ],
+            "max": [
+              0.612000048160553,
+              0.3190000057220459,
+              0.43700000643730164
+            ]
+          },
+          "uri": "/models/stay/v1/contact/resting-stone.desktop.glb"
+        },
+        "mobile": {
+          "byteLength": 4436,
+          "sha256": "4a6a6380e4290bfa2962952df033b4d72a287f3cb7aff760c855ab7109448d46",
+          "triangles": 61,
+          "materialCount": 1,
+          "nodeNames": [
+            "SA_C02_MESH_60",
+            "SA_C02_ROOT_00"
+          ],
+          "clips": [],
+          "bounds": {
+            "min": [
+              -0.6080000400543213,
+              -0.11000000685453415,
+              -0.41600000858306885
+            ],
+            "max": [
+              0.5690000057220459,
+              0.33400002121925354,
+              0.4740000367164612
+            ]
+          },
+          "uri": "/models/stay/v1/contact/resting-stone.mobile.glb"
+        }
+      },
+      "desktopUrl": "/models/stay/v1/contact/resting-stone.desktop.glb",
+      "mobileUrl": "/models/stay/v1/contact/resting-stone.mobile.glb",
+      "clipNames": []
+    }
+  ]
+}

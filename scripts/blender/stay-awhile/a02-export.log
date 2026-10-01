@@ -1,0 +1,52 @@
+00:03.109  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\08-aura.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+22:59:27 | INFO: Starting glTF 2.0 export
+22:59:27 | INFO: Extracting primitive: SA_A02_GEOMETRY_00
+22:59:27 | INFO: Primitives created: 1
+22:59:27 | INFO: Extracting primitive: SA_A02_GEOMETRY_01
+22:59:27 | INFO: Primitives created: 1
+22:59:27 | INFO: Extracting primitive: SA_A02_GEOMETRY_02
+22:59:27 | INFO: Primitives created: 1
+22:59:27 | INFO: Extracting primitive: SA_A02_GEOMETRY_03
+22:59:27 | INFO: Primitives created: 1
+22:59:27 | INFO: Extracting primitive: SA_A02_GEOMETRY_04
+22:59:27 | INFO: Primitives created: 1
+22:59:27 | INFO: Extracting primitive: SA_A02_GEOMETRY_05
+22:59:27 | INFO: Primitives created: 1
+22:59:27 | INFO: Extracting primitive: SA_A02_GEOMETRY_06
+22:59:27 | INFO: Primitives created: 1
+22:59:27 | INFO: Extracting primitive: SA_A02_GEOMETRY_07
+22:59:27 | INFO: Primitives created: 1
+22:59:27 | INFO: Extracting primitive: SA_A02_GEOMETRY_08
+22:59:27 | INFO: Primitives created: 1
+22:59:28 | INFO: Finished glTF 2.0 export in 1.3144032955169678 s
+
+EXPORTED public\models\stay\v1\aura\evidence-documents.desktop.glb 65672
+22:59:28 | INFO: Starting glTF 2.0 export
+22:59:28 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_00_LOW
+22:59:28 | INFO: Primitives created: 1
+22:59:28 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_01_LOW
+22:59:28 | INFO: Primitives created: 1
+22:59:28 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_02_LOW
+22:59:28 | INFO: Primitives created: 1
+22:59:28 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_03_LOW
+22:59:28 | INFO: Primitives created: 1
+22:59:28 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_04_LOW
+22:59:28 | INFO: Primitives created: 1
+22:59:28 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_05_LOW
+22:59:28 | INFO: Primitives created: 1
+22:59:28 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_06_LOW
+22:59:28 | INFO: Primitives created: 1
+22:59:28 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_07_LOW
+22:59:28 | INFO: Primitives created: 1
+22:59:28 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_08_LOW
+22:59:28 | INFO: Primitives created: 1
+22:59:30 | INFO: Finished glTF 2.0 export in 1.346083641052246 s
+
+EXPORTED public\models\stay\v1\aura\evidence-documents.mobile.glb 37772
+PRODUCTION_PASS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

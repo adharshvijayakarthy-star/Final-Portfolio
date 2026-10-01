@@ -1,0 +1,677 @@
+{
+  "schemaVersion": 1,
+  "routeId": "future",
+  "artistVersion": "senior-art-2026-09-27",
+  "sourceBlend": "scripts/blender/stay-awhile/07-future.blend",
+  "sourceSha256": "3e233b4d4e31127e41db986e23774c18818d6091b5d19df21170eb852129f4d2",
+  "specificationSha256": "1f89f2ca50ff42da80a52275a504c0a0a3c6060a01352e5428f287b278bebabc",
+  "exportDate": "2026-09-28T12:31:24.778212+00:00",
+  "ownedAssetIds": [
+    "F01",
+    "F02",
+    "F03"
+  ],
+  "assetIds": [
+    "F01",
+    "F02",
+    "F03",
+    "G01",
+    "G09",
+    "G10",
+    "G11"
+  ],
+  "instances": [
+    {
+      "assetId": "G01",
+      "position": [
+        -20,
+        -0.13,
+        70
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_FUTURE_INSTANCE_00"
+    },
+    {
+      "assetId": "F01",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_FUTURE_INSTANCE_01"
+    },
+    {
+      "assetId": "F02",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_FUTURE_INSTANCE_02"
+    },
+    {
+      "assetId": "F03",
+      "position": [
+        1,
+        0,
+        -38
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_FUTURE_INSTANCE_03"
+    },
+    {
+      "assetId": "G09",
+      "position": [
+        -20.0,
+        -0.51,
+        70.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_FUTURE_INSTANCE_04"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -13,
+        0,
+        -55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_FUTURE_INSTANCE_05"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        12,
+        0,
+        -59
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_FUTURE_INSTANCE_06"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -27.0,
+        0.0,
+        -50.60830307006836
+      ],
+      "rotation": [
+        0,
+        0.55,
+        0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "variantNode": null,
+      "instanceId": "SA_FUTURE_INSTANCE_07",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -10.0,
+        0.0,
+        -53.97330856323242
+      ],
+      "rotation": [
+        0,
+        -0.4,
+        0
+      ],
+      "scale": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "variantNode": null,
+      "instanceId": "SA_FUTURE_INSTANCE_08",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        10.0,
+        0.0,
+        -54.607059478759766
+      ],
+      "rotation": [
+        0,
+        0.18,
+        0
+      ],
+      "scale": [
+        1.17,
+        1.17,
+        1.17
+      ],
+      "variantNode": null,
+      "instanceId": "SA_FUTURE_INSTANCE_09",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        29.0,
+        0.0,
+        -52.83377456665039
+      ],
+      "rotation": [
+        0,
+        -0.65,
+        0
+      ],
+      "scale": [
+        1.02,
+        1.02,
+        1.02
+      ],
+      "variantNode": null,
+      "instanceId": "SA_FUTURE_INSTANCE_10",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.099999904632568,
+        -0.014917983673512936,
+        1.0
+      ],
+      "rotation": [
+        0,
+        -1.8587039474940008,
+        0
+      ],
+      "scale": [
+        0.6134542892448069,
+        0.6134542892448069,
+        0.6134542892448069
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_FUTURE_INSTANCE_11",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.300000190734863,
+        -0.014805450104176998,
+        -1.0
+      ],
+      "rotation": [
+        0,
+        0.6569981603642745,
+        0
+      ],
+      "scale": [
+        0.8778181559700158,
+        0.8778181559700158,
+        0.8778181559700158
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_FUTURE_INSTANCE_12",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.800000190734863,
+        -0.014940871857106686,
+        -5.0
+      ],
+      "rotation": [
+        0,
+        0.4390956920619753,
+        0
+      ],
+      "scale": [
+        0.6128939868921554,
+        0.6128939868921554,
+        0.6128939868921554
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_FUTURE_INSTANCE_13",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.800000190734863,
+        -0.014780654571950436,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        1.2896558344681872,
+        0
+      ],
+      "scale": [
+        0.5877463313488227,
+        0.5877463313488227,
+        0.5877463313488227
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_FUTURE_INSTANCE_14",
+      "seniorPlacement": true
+    }
+  ],
+  "worldOrigin": [
+    20.0,
+    0.0,
+    -70.0
+  ],
+  "localBounds": {
+    "width": 20.0,
+    "depth": 30.0
+  },
+  "boundsExceptions": [
+    "G01 and G09 are world-scale; G11 sits beyond camera rails; F03 intentionally beyond future local zone"
+  ],
+  "cameraKnots": [
+    {
+      "index": 0,
+      "band": [
+        0.0,
+        0.16
+      ],
+      "start": [
+        0.0,
+        1.65,
+        5.0
+      ],
+      "end": [
+        0.0,
+        1.7,
+        2.0
+      ],
+      "look": [
+        0.0,
+        1.4,
+        -10.0
+      ],
+      "reading": "left, x=9%, y=32%, 32ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.32,
+        "widthCh": 32,
+        "alignment": "left"
+      },
+      "objectScore": "CANOPY_ENTRY. F01 fills top and outer edges; path width 2.4 m. Typography starts at route title scale, not giant hero scale."
+    },
+    {
+      "index": 1,
+      "band": [
+        0.16,
+        0.36
+      ],
+      "start": [
+        0.0,
+        1.7,
+        2.0
+      ],
+      "end": [
+        0.0,
+        1.75,
+        -2.0
+      ],
+      "look": [
+        0.0,
+        1.4,
+        -18.0
+      ],
+      "reading": "right, x=56%, y=32%, 38ch",
+      "clearance": {
+        "x": 0.56,
+        "y": 0.32,
+        "widthCh": 38,
+        "alignment": "right"
+      },
+      "objectScore": "OPENING. Camera passes under static tree banks; occlusion reveals sky, no trees dissolve. Fog .018→.014."
+    },
+    {
+      "index": 2,
+      "band": [
+        0.36,
+        0.58
+      ],
+      "start": [
+        0.0,
+        1.75,
+        -2.0
+      ],
+      "end": [
+        0.0,
+        1.8,
+        -6.0
+      ],
+      "look": [
+        1.0,
+        1.0,
+        -30.0
+      ],
+      "reading": "center, x=50%, y=30%, 26ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.3,
+        "widthCh": 26,
+        "alignment": "center"
+      },
+      "objectScore": "PATH_WIDENS. F02 opens to 4.2 m. Direction words reveal one phrase at a time, never per character. F03 remains small."
+    },
+    {
+      "index": 3,
+      "band": [
+        0.58,
+        0.8
+      ],
+      "start": [
+        0.0,
+        1.8,
+        -6.0
+      ],
+      "end": [
+        0.0,
+        1.8,
+        -10.0
+      ],
+      "look": [
+        1.0,
+        1.0,
+        -38.0
+      ],
+      "reading": "left, x=9%, y=36%, 38ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.36,
+        "widthCh": 38,
+        "alignment": "left"
+      },
+      "objectScore": "HORIZON. Path reaches 6 m width, foliage occupies ≤20% of frame. Camera holds .66–.80. Do not add employers, universities, research publications or dates."
+    },
+    {
+      "index": 4,
+      "band": [
+        0.8,
+        1.0
+      ],
+      "start": [
+        0.0,
+        1.8,
+        -10.0
+      ],
+      "end": [
+        0.0,
+        1.8,
+        -12.0
+      ],
+      "look": [
+        1.0,
+        1.0,
+        -38.0
+      ],
+      "reading": "center, x=50%, y=40%, 30ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.4,
+        "widthCh": 30,
+        "alignment": "center"
+      },
+      "objectScore": "OPEN → EXIT_READY. Fog .012. Camera stops .86; F03 never becomes a finish gate. Intentional stillness before onward links."
+    }
+  ],
+  "camera": {
+    "fov": 46,
+    "near": 0.1,
+    "far": 220,
+    "roll": 0
+  },
+  "focusAnchors": [
+    [
+      0.0,
+      1.4,
+      -10.0
+    ],
+    [
+      0.0,
+      1.4,
+      -18.0
+    ],
+    [
+      1.0,
+      1.0,
+      -30.0
+    ],
+    [
+      1.0,
+      1.0,
+      -38.0
+    ],
+    [
+      1.0,
+      1.0,
+      -38.0
+    ]
+  ],
+  "contentClearanceRectangles": [
+    {
+      "x": 0.09,
+      "y": 0.32,
+      "widthCh": 32,
+      "alignment": "left"
+    },
+    {
+      "x": 0.56,
+      "y": 0.32,
+      "widthCh": 38,
+      "alignment": "right"
+    },
+    {
+      "x": 0.5,
+      "y": 0.3,
+      "widthCh": 26,
+      "alignment": "center"
+    },
+    {
+      "x": 0.09,
+      "y": 0.36,
+      "widthCh": 38,
+      "alignment": "left"
+    },
+    {
+      "x": 0.5,
+      "y": 0.4,
+      "widthCh": 30,
+      "alignment": "center"
+    }
+  ],
+  "guideNodeNames": [
+    "SA_FUTURE_ENTRY_00",
+    "SA_FUTURE_EXIT_00",
+    "SA_FUTURE_CAM_00",
+    "SA_FUTURE_LOOK_00",
+    "SA_FUTURE_TEXT_00",
+    "SA_FUTURE_CAM_01",
+    "SA_FUTURE_LOOK_01",
+    "SA_FUTURE_TEXT_01",
+    "SA_FUTURE_CAM_02",
+    "SA_FUTURE_LOOK_02",
+    "SA_FUTURE_TEXT_02",
+    "SA_FUTURE_CAM_03",
+    "SA_FUTURE_LOOK_03",
+    "SA_FUTURE_TEXT_03",
+    "SA_FUTURE_CAM_04",
+    "SA_FUTURE_LOOK_04",
+    "SA_FUTURE_TEXT_04"
+  ],
+  "guideAssetId": "F01",
+  "clips": [],
+  "settledPoses": [
+    {
+      "progress": 0,
+      "camera": [
+        [
+          0.0,
+          1.65,
+          5.0
+        ],
+        [
+          0.0,
+          1.4,
+          -10.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.25,
+      "camera": [
+        [
+          0.0,
+          1.75,
+          -2.0
+        ],
+        [
+          0.0,
+          1.4,
+          -18.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.5,
+      "camera": [
+        [
+          0.0,
+          1.8,
+          -6.0
+        ],
+        [
+          1.0,
+          1.0,
+          -30.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.75,
+      "camera": [
+        [
+          0.0,
+          1.8,
+          -10.0
+        ],
+        [
+          1.0,
+          1.0,
+          -38.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 1,
+      "camera": [
+        [
+          0.0,
+          1.8,
+          -12.0
+        ],
+        [
+          1.0,
+          1.0,
+          -38.0
+        ]
+      ],
+      "clipTimes": {}
+    }
+  ],
+  "placementOverrides": {},
+  "documentSocketBindings": [],
+  "posterProgress": 0.85,
+  "runtimeNotes": [
+    "No authored typography, scroll, visibility, foliage sway, water or AURA_CONNECTIONS clip.",
+    "Only sample named child transforms; root placement belongs to the instance manifest."
+  ],
+  "validation": {
+    "reopenedMaster": true,
+    "reverseSeek": true,
+    "exportStructuralRead": true
+  }
+}

@@ -1,0 +1,22 @@
+.journey{position:relative;z-index:1}
+.poster{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.poster img{width:100%;height:100%;object-fit:cover;object-position:center}
+:global(main:has([data-world-status="ready"])) .poster{opacity:0}
+.beat{min-height:100svh;display:flex;align-items:center}
+.copy{width:min(36rem,44vw)}
+.eyebrow{font-family:var(--font-meta-face),monospace}
+.exits{display:flex;flex-direction:column}
+.exits a,.stationIndex a{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:48px;text-decoration:none}
+.stationIndex{display:flex;flex-direction:column;gap:0;margin-top:22px;border-top:1px solid rgba(247,242,231,.4)}
+.stationIndex a{justify-content:flex-start;border-bottom:1px solid rgba(247,242,231,.4);color:#f7f2e7;font:500 .85rem/1.35 var(--font-body-face),Arial,sans-serif}
+.stationIndex a:hover,.stationIndex a:focus-visible{padding-left:8px;background:rgba(255,255,255,.08)}
+.stationIndex a span{min-width:2.2rem;color:#d8c6a6;font:500 .66rem var(--font-meta-face),monospace;letter-spacing:.14em}
+.disclosure{margin-top:25px;padding:14px 0;border-top:1px solid rgba(247,242,231,.5);border-bottom:1px solid rgba(247,242,231,.5)}
+.disclosure summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;cursor:pointer;list-style:none;color:#f7f2e7;font:400 1.1rem var(--font-display-face),Georgia,serif}
+.disclosure summary::-webkit-details-marker{display:none}
+.disclosure summary span{font:500 .66rem var(--font-meta-face),monospace;letter-spacing:.15em;text-transform:uppercase;color:#d8c6a6}
+.disclosure p{padding:10px 0 4px}
+.channels{list-style:none;margin:20px 0 0;padding:0;border-top:1px solid rgba(247,242,231,.45)}
+.channels li{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:56px;border-bottom:1px solid rgba(247,242,231,.45);color:#f7f2e7;font:500 .8rem var(--font-meta-face),monospace;letter-spacing:.1em;text-transform:uppercase}
+.channels strong{font:400 1rem var(--font-body-face),Arial,sans-serif;letter-spacing:0;text-transform:none;color:rgba(247,242,231,.72)}
+@media(max-width:767px){.copy{width:100%}.stationIndex{margin-top:16px}.channels li{min-height:50px}}

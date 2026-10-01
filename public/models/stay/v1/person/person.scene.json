@@ -1,0 +1,1731 @@
+{
+  "schemaVersion": 1,
+  "routeId": "person",
+  "artistVersion": "senior-art-2026-09-27",
+  "sourceBlend": "scripts/blender/stay-awhile/01-person.blend",
+  "sourceSha256": "e1c7e5cb9567bf19ae26a1d2f412fed37a3e515eadad8c407562157891fb8257",
+  "specificationSha256": "1f89f2ca50ff42da80a52275a504c0a0a3c6060a01352e5428f287b278bebabc",
+  "exportDate": "2026-09-28T12:31:12.909644+00:00",
+  "ownedAssetIds": [
+    "P01",
+    "P02",
+    "P03"
+  ],
+  "assetIds": [
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G09",
+    "G10",
+    "G11",
+    "P01",
+    "P02",
+    "P03"
+  ],
+  "instances": [
+    {
+      "assetId": "G01",
+      "position": [
+        42,
+        -0.14,
+        -40
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_00"
+    },
+    {
+      "assetId": "P01",
+      "position": [
+        0,
+        0,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_01"
+    },
+    {
+      "assetId": "P02",
+      "position": [
+        -2.2,
+        0,
+        -9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_02"
+    },
+    {
+      "assetId": "P03",
+      "position": [
+        2.8,
+        0,
+        -11
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_03"
+    },
+    {
+      "assetId": "G03",
+      "position": [
+        6,
+        0,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_04"
+    },
+    {
+      "assetId": "G09",
+      "position": [
+        42.0,
+        -0.5,
+        -40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_05"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_PERSON_INSTANCE_06"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_PERSON_INSTANCE_07"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_PERSON_INSTANCE_08"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_PERSON_INSTANCE_09"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_PERSON_INSTANCE_10"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_BEND_00",
+      "instanceId": "SA_PERSON_INSTANCE_11"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        1.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_PERSON_INSTANCE_12"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_PERSON_INSTANCE_13"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        1.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_PERSON_INSTANCE_14"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_PERSON_INSTANCE_15"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_PERSON_INSTANCE_16"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -2.8000000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_PERSON_INSTANCE_17"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_PERSON_INSTANCE_18"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -2.8000000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_PERSON_INSTANCE_19"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_PERSON_INSTANCE_20"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_PERSON_INSTANCE_21"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_PERSON_INSTANCE_22"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_PERSON_INSTANCE_23"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -8.600000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_PERSON_INSTANCE_24"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -9.200000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_PERSON_INSTANCE_25"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -8.600000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_PERSON_INSTANCE_26"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -9.200000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_PERSON_INSTANCE_27"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -11.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_PERSON_INSTANCE_28"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_PERSON_INSTANCE_29"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -11.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_PERSON_INSTANCE_30"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_PERSON_INSTANCE_31"
+    },
+    {
+      "assetId": "G03",
+      "position": [
+        -3.5,
+        0,
+        -13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_32"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -13,
+        0,
+        -55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_33"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        12,
+        0,
+        -59
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_34"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -27.0,
+        -0.07166732847690582,
+        -55.61564636230469
+      ],
+      "rotation": [
+        0,
+        0.55,
+        0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_35",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -10.0,
+        -0.024780884385108948,
+        -51.7800178527832
+      ],
+      "rotation": [
+        0,
+        -0.4,
+        0
+      ],
+      "scale": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_36",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        10.0,
+        0.15032897889614105,
+        -50.78009796142578
+      ],
+      "rotation": [
+        0,
+        0.18,
+        0
+      ],
+      "scale": [
+        1.17,
+        1.17,
+        1.17
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_37",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        29.0,
+        -0.024704590439796448,
+        -53.27603530883789
+      ],
+      "rotation": [
+        0,
+        -0.65,
+        0
+      ],
+      "scale": [
+        1.02,
+        1.02,
+        1.02
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_38",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G03",
+      "position": [
+        -8.100000381469727,
+        -0.02456153929233551,
+        -18.0
+      ],
+      "rotation": [
+        0,
+        1.2,
+        0
+      ],
+      "scale": [
+        0.82,
+        0.82,
+        0.82
+      ],
+      "variantNode": null,
+      "instanceId": "SA_PERSON_INSTANCE_39",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.1077470779418945,
+        -0.02485908567905426,
+        0.986813485622406
+      ],
+      "rotation": [
+        0,
+        0.04440426363719574,
+        0
+      ],
+      "scale": [
+        0.5870200928565676,
+        0.5870200928565676,
+        0.5870200928565676
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_PERSON_INSTANCE_40",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -4.6077470779418945,
+        -0.024757996201515198,
+        1.286813497543335
+      ],
+      "rotation": [
+        0,
+        0.7311704789841427,
+        0
+      ],
+      "scale": [
+        0.7585802889139296,
+        0.7585802889139296,
+        0.7585802889139296
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_PERSON_INSTANCE_41",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.495758056640625,
+        -0.024628296494483948,
+        0.7139595746994019
+      ],
+      "rotation": [
+        0,
+        -0.6843319707885875,
+        0
+      ],
+      "scale": [
+        0.846263188224309,
+        0.846263188224309,
+        0.846263188224309
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_PERSON_INSTANCE_42",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        4.995758056640625,
+        -0.02461494505405426,
+        1.013959527015686
+      ],
+      "rotation": [
+        0,
+        1.7381424559892826,
+        0
+      ],
+      "scale": [
+        0.8348715853621773,
+        0.8348715853621773,
+        0.8348715853621773
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_PERSON_INSTANCE_43",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.517127513885498,
+        -0.024166718125343323,
+        -3.58612060546875
+      ],
+      "rotation": [
+        0,
+        1.5006055319611376,
+        0
+      ],
+      "scale": [
+        0.806010092906982,
+        0.806010092906982,
+        0.806010092906982
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_PERSON_INSTANCE_44",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -5.017127513885498,
+        -0.024328842759132385,
+        -3.286120653152466
+      ],
+      "rotation": [
+        0,
+        -1.448186148234127,
+        0
+      ],
+      "scale": [
+        0.8317111375301207,
+        0.8317111375301207,
+        0.8317111375301207
+      ],
+      "variantNode": "SA_G06_STONE_02",
+      "instanceId": "SA_PERSON_INSTANCE_45",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.083829879760742,
+        -0.024578705430030823,
+        -3.0545196533203125
+      ],
+      "rotation": [
+        0,
+        -0.2860023345525735,
+        0
+      ],
+      "scale": [
+        0.5742188125087504,
+        0.5742188125087504,
+        0.5742188125087504
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_PERSON_INSTANCE_46",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        4.583829879760742,
+        -0.02459205687046051,
+        -2.7545197010040283
+      ],
+      "rotation": [
+        0,
+        -1.3020429986952102,
+        0
+      ],
+      "scale": [
+        0.7497034236763688,
+        0.7497034236763688,
+        0.7497034236763688
+      ],
+      "variantNode": "SA_G06_STONE_03",
+      "instanceId": "SA_PERSON_INSTANCE_47",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.462326526641846,
+        -0.02434028685092926,
+        -7.512075424194336
+      ],
+      "rotation": [
+        0,
+        -1.7163564382152892,
+        0
+      ],
+      "scale": [
+        0.7399282443979593,
+        0.7399282443979593,
+        0.7399282443979593
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_PERSON_INSTANCE_48",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -4.962326526641846,
+        -0.024212494492530823,
+        -7.212075710296631
+      ],
+      "rotation": [
+        0,
+        -1.470793255046099,
+        0
+      ],
+      "scale": [
+        1.1136654077245995,
+        1.1136654077245995,
+        1.1136654077245995
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_PERSON_INSTANCE_49",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.185540676116943,
+        -0.024571076035499573,
+        -7.655866622924805
+      ],
+      "rotation": [
+        0,
+        1.9884510823477002,
+        0
+      ],
+      "scale": [
+        0.5863974145428404,
+        0.5863974145428404,
+        0.5863974145428404
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_PERSON_INSTANCE_50",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        4.685540676116943,
+        -0.02458442747592926,
+        -7.355866432189941
+      ],
+      "rotation": [
+        0,
+        0.24945079726761143,
+        0
+      ],
+      "scale": [
+        0.9417185313118724,
+        0.9417185313118724,
+        0.9417185313118724
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_PERSON_INSTANCE_51",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.084568023681641,
+        -0.024624481797218323,
+        -11.839433670043945
+      ],
+      "rotation": [
+        0,
+        1.997332315207998,
+        0
+      ],
+      "scale": [
+        0.7792407403158708,
+        0.7792407403158708,
+        0.7792407403158708
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_PERSON_INSTANCE_52",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -4.584568023681641,
+        -0.02456153929233551,
+        -11.539433479309082
+      ],
+      "rotation": [
+        0,
+        -0.5330160862206768,
+        0
+      ],
+      "scale": [
+        0.935000242490087,
+        0.935000242490087,
+        0.935000242490087
+      ],
+      "variantNode": "SA_G06_STONE_02",
+      "instanceId": "SA_PERSON_INSTANCE_53",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.647251605987549,
+        -0.024571076035499573,
+        -12.185832023620605
+      ],
+      "rotation": [
+        0,
+        0.6721097431685714,
+        0
+      ],
+      "scale": [
+        0.6160312215519907,
+        0.6160312215519907,
+        0.6160312215519907
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_PERSON_INSTANCE_54",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        5.147251605987549,
+        -0.02458442747592926,
+        -11.885831832885742
+      ],
+      "rotation": [
+        0,
+        -0.16982465513666467,
+        0
+      ],
+      "scale": [
+        1.0380983786447011,
+        1.0380983786447011,
+        1.0380983786447011
+      ],
+      "variantNode": "SA_G06_STONE_03",
+      "instanceId": "SA_PERSON_INSTANCE_55",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.18259859085083,
+        -0.024643555283546448,
+        -15.92105484008789
+      ],
+      "rotation": [
+        0,
+        -1.0522613299663717,
+        0
+      ],
+      "scale": [
+        0.8453535845132565,
+        0.8453535845132565,
+        0.8453535845132565
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_PERSON_INSTANCE_56",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -4.68259859085083,
+        -0.024765625596046448,
+        -15.621054649353027
+      ],
+      "rotation": [
+        0,
+        0.04629373186665031,
+        0
+      ],
+      "scale": [
+        1.0437417836383744,
+        1.0437417836383744,
+        1.0437417836383744
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_PERSON_INSTANCE_57",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.692892074584961,
+        -0.02456153929233551,
+        -16.42410659790039
+      ],
+      "rotation": [
+        0,
+        0.7078831875459115,
+        0
+      ],
+      "scale": [
+        0.5793651553296312,
+        0.5793651553296312,
+        0.5793651553296312
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_PERSON_INSTANCE_58",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        5.192892074584961,
+        -0.024574890732765198,
+        -16.12410545349121
+      ],
+      "rotation": [
+        0,
+        -0.3084745813884928,
+        0
+      ],
+      "scale": [
+        1.0476241274288458,
+        1.0476241274288458,
+        1.0476241274288458
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_PERSON_INSTANCE_59",
+      "seniorPlacement": true
+    }
+  ],
+  "worldOrigin": [
+    -42.0,
+    0.0,
+    40.0
+  ],
+  "localBounds": {
+    "width": 18.0,
+    "depth": 24.0
+  },
+  "boundsExceptions": [
+    "G01 and G09 are world-scale; G11 sits beyond camera rails; F03 intentionally beyond future local zone"
+  ],
+  "cameraKnots": [
+    {
+      "index": 0,
+      "band": [
+        0.0,
+        0.12
+      ],
+      "start": [
+        0.0,
+        1.6,
+        5.0
+      ],
+      "end": [
+        -0.8,
+        1.65,
+        2.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -3.0
+      ],
+      "reading": "left, x=9%, y=31%, 32ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.31,
+        "widthCh": 32,
+        "alignment": "left"
+      },
+      "objectScore": "CLEARING_ENTRY. P01 defines open floor; G03 canopy remains high. Camera passes one foreground branch and stops before the introductory paragraph."
+    },
+    {
+      "index": 1,
+      "band": [
+        0.12,
+        0.27
+      ],
+      "start": [
+        -0.8,
+        1.65,
+        2.0
+      ],
+      "end": [
+        -0.8,
+        1.65,
+        0.0
+      ],
+      "look": [
+        1.0,
+        1.0,
+        -5.0
+      ],
+      "reading": "right, x=56%, y=30%, 36ch",
+      "clearance": {
+        "x": 0.56,
+        "y": 0.3,
+        "widthCh": 36,
+        "alignment": "right"
+      },
+      "objectScore": "AMBITION. Move only .12–.17, then hold. Keep sky and short grass behind text; no trophy, award or invented biography."
+    },
+    {
+      "index": 2,
+      "band": [
+        0.27,
+        0.4
+      ],
+      "start": [
+        -0.8,
+        1.65,
+        0.0
+      ],
+      "end": [
+        0.8,
+        1.65,
+        -2.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -6.0
+      ],
+      "reading": "left, x=9%, y=32%, 34ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.32,
+        "widthCh": 34,
+        "alignment": "left"
+      },
+      "objectScore": "DESIRE. Root edge enters left foreground; camera slides right over .27–.31. No physics response on the root."
+    },
+    {
+      "index": 3,
+      "band": [
+        0.4,
+        0.53
+      ],
+      "start": [
+        0.8,
+        1.65,
+        -2.0
+      ],
+      "end": [
+        0.8,
+        1.65,
+        -4.0
+      ],
+      "look": [
+        -1.0,
+        1.0,
+        -8.0
+      ],
+      "reading": "right, x=56%, y=32%, 34ch",
+      "clearance": {
+        "x": 0.56,
+        "y": 0.32,
+        "widthCh": 34,
+        "alignment": "right"
+      },
+      "objectScore": "FREEDOM. Reveal two paths without implying a value ranking. Pause camera .45–.53."
+    },
+    {
+      "index": 4,
+      "band": [
+        0.53,
+        0.66
+      ],
+      "start": [
+        0.8,
+        1.65,
+        -4.0
+      ],
+      "end": [
+        -0.5,
+        1.65,
+        -6.0
+      ],
+      "look": [
+        1.0,
+        1.0,
+        -10.0
+      ],
+      "reading": "left, x=9%, y=32%, 34ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.32,
+        "widthCh": 34,
+        "alignment": "left"
+      },
+      "objectScore": "CAPABILITY. Bench partly visible to left; capability copy remains a developing direction. No skill-level badges."
+    },
+    {
+      "index": 5,
+      "band": [
+        0.66,
+        0.78
+      ],
+      "start": [
+        -0.5,
+        1.65,
+        -6.0
+      ],
+      "end": [
+        -0.5,
+        1.65,
+        -8.0
+      ],
+      "look": [
+        -1.5,
+        0.7,
+        -9.0
+      ],
+      "reading": "right, x=56%, y=32%, 34ch",
+      "clearance": {
+        "x": 0.56,
+        "y": 0.32,
+        "widthCh": 34,
+        "alignment": "right"
+      },
+      "objectScore": "EXPERIENCE. P02 becomes legible but unoccupied. Low canopy sway continues; no induced movement during paragraph reading."
+    },
+    {
+      "index": 6,
+      "band": [
+        0.78,
+        0.9
+      ],
+      "start": [
+        -0.5,
+        1.65,
+        -8.0
+      ],
+      "end": [
+        1.0,
+        1.65,
+        -10.0
+      ],
+      "look": [
+        -1.0,
+        0.7,
+        -10.0
+      ],
+      "reading": "left, x=9%, y=32%, 34ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.32,
+        "widthCh": 34,
+        "alignment": "left"
+      },
+      "objectScore": "PEOPLE. Perspective shows both bench supports and the P03 root convergence. No names or sensitive relationship detail."
+    },
+    {
+      "index": 7,
+      "band": [
+        0.9,
+        1.0
+      ],
+      "start": [
+        1.0,
+        1.65,
+        -10.0
+      ],
+      "end": [
+        1.0,
+        1.65,
+        -12.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -16.0
+      ],
+      "reading": "center, x=50%, y=35%, 24ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.35,
+        "widthCh": 24,
+        "alignment": "center"
+      },
+      "objectScore": "QUESTION → EXIT_READY. Camera arrives by .93. Heading uses quotation styling only as established public copy; links remain visible after .95 and never navigate on scroll."
+    }
+  ],
+  "camera": {
+    "fov": 46,
+    "near": 0.1,
+    "far": 220,
+    "roll": 0
+  },
+  "focusAnchors": [
+    [
+      0.0,
+      1.0,
+      -3.0
+    ],
+    [
+      1.0,
+      1.0,
+      -5.0
+    ],
+    [
+      0.0,
+      1.0,
+      -6.0
+    ],
+    [
+      -1.0,
+      1.0,
+      -8.0
+    ],
+    [
+      1.0,
+      1.0,
+      -10.0
+    ],
+    [
+      -1.5,
+      0.7,
+      -9.0
+    ],
+    [
+      -1.0,
+      0.7,
+      -10.0
+    ],
+    [
+      0.0,
+      1.0,
+      -16.0
+    ]
+  ],
+  "contentClearanceRectangles": [
+    {
+      "x": 0.09,
+      "y": 0.31,
+      "widthCh": 32,
+      "alignment": "left"
+    },
+    {
+      "x": 0.56,
+      "y": 0.3,
+      "widthCh": 36,
+      "alignment": "right"
+    },
+    {
+      "x": 0.09,
+      "y": 0.32,
+      "widthCh": 34,
+      "alignment": "left"
+    },
+    {
+      "x": 0.56,
+      "y": 0.32,
+      "widthCh": 34,
+      "alignment": "right"
+    },
+    {
+      "x": 0.09,
+      "y": 0.32,
+      "widthCh": 34,
+      "alignment": "left"
+    },
+    {
+      "x": 0.56,
+      "y": 0.32,
+      "widthCh": 34,
+      "alignment": "right"
+    },
+    {
+      "x": 0.09,
+      "y": 0.32,
+      "widthCh": 34,
+      "alignment": "left"
+    },
+    {
+      "x": 0.5,
+      "y": 0.35,
+      "widthCh": 24,
+      "alignment": "center"
+    }
+  ],
+  "guideNodeNames": [
+    "SA_PERSON_ENTRY_00",
+    "SA_PERSON_EXIT_00",
+    "SA_PERSON_CAM_00",
+    "SA_PERSON_LOOK_00",
+    "SA_PERSON_TEXT_00",
+    "SA_PERSON_CAM_01",
+    "SA_PERSON_LOOK_01",
+    "SA_PERSON_TEXT_01",
+    "SA_PERSON_CAM_02",
+    "SA_PERSON_LOOK_02",
+    "SA_PERSON_TEXT_02",
+    "SA_PERSON_CAM_03",
+    "SA_PERSON_LOOK_03",
+    "SA_PERSON_TEXT_03",
+    "SA_PERSON_CAM_04",
+    "SA_PERSON_LOOK_04",
+    "SA_PERSON_TEXT_04",
+    "SA_PERSON_CAM_05",
+    "SA_PERSON_LOOK_05",
+    "SA_PERSON_TEXT_05",
+    "SA_PERSON_CAM_06",
+    "SA_PERSON_LOOK_06",
+    "SA_PERSON_TEXT_06",
+    "SA_PERSON_CAM_07",
+    "SA_PERSON_LOOK_07",
+    "SA_PERSON_TEXT_07"
+  ],
+  "guideAssetId": "P01",
+  "clips": [],
+  "settledPoses": [
+    {
+      "progress": 0,
+      "camera": [
+        [
+          0.0,
+          1.6,
+          5.0
+        ],
+        [
+          0.0,
+          1.0,
+          -3.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.25,
+      "camera": [
+        [
+          -0.8,
+          1.65,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          -5.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.5,
+      "camera": [
+        [
+          0.8,
+          1.65,
+          -4.0
+        ],
+        [
+          -1.0,
+          1.0,
+          -8.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.75,
+      "camera": [
+        [
+          -0.5,
+          1.65,
+          -8.0
+        ],
+        [
+          -1.5,
+          0.7,
+          -9.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 1,
+      "camera": [
+        [
+          1.0,
+          1.65,
+          -12.0
+        ],
+        [
+          0.0,
+          1.0,
+          -16.0
+        ]
+      ],
+      "clipTimes": {}
+    }
+  ],
+  "placementOverrides": {},
+  "documentSocketBindings": [],
+  "posterProgress": 0.6,
+  "runtimeNotes": [
+    "No authored typography, scroll, visibility, foliage sway, water or AURA_CONNECTIONS clip.",
+    "Only sample named child transforms; root placement belongs to the instance manifest."
+  ],
+  "validation": {
+    "reopenedMaster": true,
+    "reverseSeek": true,
+    "exportStructuralRead": true
+  }
+}

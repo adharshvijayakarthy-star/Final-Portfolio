@@ -1,0 +1,21 @@
+00:03.094  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\05-stories.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+RAY stories 0.12 0.94 SA_S01_MESH_01 1 [1.4360103607177734, 0.015000224113464355, -7.035730361938477]
+DETAIL SA_M_STONE normal [0.0, 0.0, 1.0] colors [('COLOR_0', [[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]])]
+RAY stories 0.26 0.94 SA_S01_MESH_01 1 [1.7088332176208496, 0.014999866485595703, -6.708343505859375]
+DETAIL SA_M_STONE normal [0.0, 0.0, 1.0] colors [('COLOR_0', [[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]])]
+RAY stories 0.5 0.75 SA_S01_MESH_01 1 [2.675358533859253, 0.014999985694885254, -6.562798500061035]
+DETAIL SA_M_STONE normal [0.0, 0.0, 1.0] colors [('COLOR_0', [[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]])]
+00:03.141  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\07-future.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+RAY future 0.5 0.74 SA_G01_MESH_00 84 [0.28936767578125, 1.1920928955078125e-07, -19.241783142089844]
+DETAIL SA_M_MOSS normal [0.0, 0.0, 1.0] colors [('COLOR_0', [[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]])]
+RAY future 0.5 0.79 SA_G01_MESH_00 84 [0.24462509155273438, 2.384185791015625e-07, -18.06072998046875]
+DETAIL SA_M_MOSS normal [0.0, 0.0, 1.0] colors [('COLOR_0', [[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]])]
+RAY future 0.5 0.83 SA_G01_MESH_00 224 [0.21763992309570312, -1.1920928955078125e-07, -17.348434448242188]
+DETAIL SA_M_MOSS normal [0.0, 0.0, 1.0] colors [('COLOR_0', [[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]])]
+RAY future 0.3 0.6 SA_G09_MESH_00 424 [-3.6542892456054688, 0.0, -27.34062957763672]
+DETAIL SA_M_DISTANT normal [0.0, 0.0, 1.0] colors [('COLOR_0', [[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]])]
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

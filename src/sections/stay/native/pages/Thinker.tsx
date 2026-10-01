@@ -18,7 +18,6 @@ export function Thinker(){ return <div className={styles.page}><DestinationFrame
 </section>
 
 <section className={styles.s6} data-screen-label="Desire" aria-labelledby="t-desire" data-moment="1">
-<div className={styles.s7} aria-hidden="true" data-petal="1"></div>
 <div className={styles.s8} aria-hidden="true" data-rings="1">
 <span className={styles.s9} data-ring="1"></span>
 <span className={styles.s10} data-ring="2"></span>

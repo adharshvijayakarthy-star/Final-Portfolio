@@ -1,0 +1,628 @@
+{
+  "schemaVersion": 1,
+  "routeId": "contact",
+  "artistVersion": "senior-art-2026-09-27",
+  "sourceBlend": "scripts/blender/stay-awhile/09-contact.blend",
+  "sourceSha256": "d39a5b222ec73cfc35f6028fd5a597315b7a5b11115696133bd4fd95667585a9",
+  "specificationSha256": "1f89f2ca50ff42da80a52275a504c0a0a3c6060a01352e5428f287b278bebabc",
+  "exportDate": "2026-09-28T12:31:27.583754+00:00",
+  "ownedAssetIds": [
+    "C01",
+    "C02"
+  ],
+  "assetIds": [
+    "C01",
+    "C02",
+    "G01",
+    "G02",
+    "G05",
+    "G08",
+    "G09",
+    "G10",
+    "G11"
+  ],
+  "instances": [
+    {
+      "assetId": "G01",
+      "position": [
+        74,
+        -0.14,
+        66
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_CONTACT_INSTANCE_00"
+    },
+    {
+      "assetId": "C01",
+      "position": [
+        0,
+        0,
+        -4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_CONTACT_INSTANCE_01"
+    },
+    {
+      "assetId": "C02",
+      "position": [
+        3,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_CONTACT_INSTANCE_02"
+    },
+    {
+      "assetId": "G08",
+      "position": [
+        -6,
+        0,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_CONTACT_INSTANCE_03"
+    },
+    {
+      "assetId": "G09",
+      "position": [
+        74.0,
+        -0.5,
+        66.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_CONTACT_INSTANCE_04"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_CONTACT_INSTANCE_05"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_CONTACT_INSTANCE_06"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_CONTACT_INSTANCE_07"
+    },
+    {
+      "assetId": "G02",
+      "position": [
+        0,
+        0.03,
+        -11
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G02_STRAIGHT_00",
+      "instanceId": "SA_CONTACT_INSTANCE_08"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -13,
+        0,
+        -55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_CONTACT_INSTANCE_09"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        12,
+        0,
+        -59
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_CONTACT_INSTANCE_10"
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -3.0,
+        -0.024702683091163635,
+        1.0
+      ],
+      "rotation": [
+        0,
+        -0.5573082481886491,
+        0
+      ],
+      "scale": [
+        0.6873049617154796,
+        0.6873049617154796,
+        0.6873049617154796
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_CONTACT_INSTANCE_11",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -3.0,
+        -0.024702683091163635,
+        1.0
+      ],
+      "rotation": [
+        0,
+        0.6731357147362367,
+        0
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_CONTACT_INSTANCE_12",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.799999952316284,
+        -0.024891510605812073,
+        -9.0
+      ],
+      "rotation": [
+        0,
+        -1.9816507770399037,
+        0
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_CONTACT_INSTANCE_13",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.0,
+        -0.024830475449562073,
+        -10.0
+      ],
+      "rotation": [
+        0,
+        -0.5279813884597284,
+        0
+      ],
+      "scale": [
+        0.584583379616435,
+        0.584583379616435,
+        0.584583379616435
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_CONTACT_INSTANCE_14",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        4.0,
+        -0.024830475449562073,
+        -10.0
+      ],
+      "rotation": [
+        0,
+        0.09247333901311938,
+        0
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_CONTACT_INSTANCE_15",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        3.799999952316284,
+        -0.024799957871437073,
+        -4.0
+      ],
+      "rotation": [
+        0,
+        0.16497634734370603,
+        0
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_CONTACT_INSTANCE_16",
+      "seniorPlacement": true
+    }
+  ],
+  "worldOrigin": [
+    -74.0,
+    0.0,
+    -66.0
+  ],
+  "localBounds": {
+    "width": 20.0,
+    "depth": 20.0
+  },
+  "boundsExceptions": [
+    "G01 and G09 are world-scale; G11 sits beyond camera rails; F03 intentionally beyond future local zone"
+  ],
+  "cameraKnots": [
+    {
+      "index": 0,
+      "band": [
+        0.0,
+        0.25
+      ],
+      "start": [
+        0.0,
+        1.65,
+        4.0
+      ],
+      "end": [
+        0.0,
+        1.65,
+        3.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -8.0
+      ],
+      "reading": "center, x=50%, y=31%, 25ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.31,
+        "widthCh": 25,
+        "alignment": "center"
+      },
+      "objectScore": "ARRIVE. C01 and C02 with one distant G08 lantern. Camera advances at most 1 m during arrival, then stops. Runtime petals=0."
+    },
+    {
+      "index": 1,
+      "band": [
+        0.25,
+        0.75
+      ],
+      "start": [
+        0.0,
+        1.65,
+        3.0
+      ],
+      "end": [
+        0.0,
+        1.65,
+        3.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -8.0
+      ],
+      "reading": "center, x=50%, y=50%, 38ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.5,
+        "widthCh": 38,
+        "alignment": "center"
+      },
+      "objectScore": "CONTACT_READY. Read values from src/data/content.ts contact; all four currently YOUR_* placeholders. Render labels and “Not added yet” as text, no fake href or disabled button. When verified values arrive, use contactHref and actual links."
+    },
+    {
+      "index": 2,
+      "band": [
+        0.75,
+        1.0
+      ],
+      "start": [
+        0.0,
+        1.65,
+        3.0
+      ],
+      "end": [
+        0.0,
+        1.65,
+        3.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -8.0
+      ],
+      "reading": "center, x=50%, y=62%, 36ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.62,
+        "widthCh": 36,
+        "alignment": "center"
+      },
+      "objectScore": "STILL. Garden link and /quick/ link remain ordinary anchors. Heading may leave via native scroll but channel links never fade to zero while on screen."
+    }
+  ],
+  "camera": {
+    "fov": 46,
+    "near": 0.1,
+    "far": 220,
+    "roll": 0
+  },
+  "focusAnchors": [
+    [
+      0.0,
+      1.0,
+      -8.0
+    ],
+    [
+      0.0,
+      1.0,
+      -8.0
+    ],
+    [
+      0.0,
+      1.0,
+      -8.0
+    ]
+  ],
+  "contentClearanceRectangles": [
+    {
+      "x": 0.5,
+      "y": 0.31,
+      "widthCh": 25,
+      "alignment": "center"
+    },
+    {
+      "x": 0.5,
+      "y": 0.5,
+      "widthCh": 38,
+      "alignment": "center"
+    },
+    {
+      "x": 0.5,
+      "y": 0.62,
+      "widthCh": 36,
+      "alignment": "center"
+    }
+  ],
+  "guideNodeNames": [
+    "SA_CONTACT_ENTRY_00",
+    "SA_CONTACT_EXIT_00",
+    "SA_CONTACT_CAM_00",
+    "SA_CONTACT_LOOK_00",
+    "SA_CONTACT_TEXT_00",
+    "SA_CONTACT_CAM_01",
+    "SA_CONTACT_LOOK_01",
+    "SA_CONTACT_TEXT_01",
+    "SA_CONTACT_CAM_02",
+    "SA_CONTACT_LOOK_02",
+    "SA_CONTACT_TEXT_02"
+  ],
+  "guideAssetId": "C01",
+  "clips": [],
+  "settledPoses": [
+    {
+      "progress": 0,
+      "camera": [
+        [
+          0.0,
+          1.65,
+          4.0
+        ],
+        [
+          0.0,
+          1.0,
+          -8.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.25,
+      "camera": [
+        [
+          0.0,
+          1.65,
+          3.0
+        ],
+        [
+          0.0,
+          1.0,
+          -8.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.5,
+      "camera": [
+        [
+          0.0,
+          1.65,
+          3.0
+        ],
+        [
+          0.0,
+          1.0,
+          -8.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 0.75,
+      "camera": [
+        [
+          0.0,
+          1.65,
+          3.0
+        ],
+        [
+          0.0,
+          1.0,
+          -8.0
+        ]
+      ],
+      "clipTimes": {}
+    },
+    {
+      "progress": 1,
+      "camera": [
+        [
+          0.0,
+          1.65,
+          3.0
+        ],
+        [
+          0.0,
+          1.0,
+          -8.0
+        ]
+      ],
+      "clipTimes": {}
+    }
+  ],
+  "placementOverrides": {},
+  "documentSocketBindings": [],
+  "posterProgress": 0.5,
+  "runtimeNotes": [
+    "No authored typography, scroll, visibility, foliage sway, water or AURA_CONNECTIONS clip.",
+    "Only sample named child transforms; root placement belongs to the instance manifest."
+  ],
+  "validation": {
+    "reopenedMaster": true,
+    "reverseSeek": true,
+    "exportStructuralRead": true
+  }
+}

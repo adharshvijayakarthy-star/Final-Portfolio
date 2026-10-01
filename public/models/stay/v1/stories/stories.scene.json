@@ -1,0 +1,1846 @@
+{
+  "schemaVersion": 1,
+  "routeId": "stories",
+  "artistVersion": "senior-art-2026-09-27",
+  "sourceBlend": "scripts/blender/stay-awhile/05-stories.blend",
+  "sourceSha256": "478297ecbb9098c5a02b720b8ac7274258be09f3301eb77c6ec850f01c6dda03",
+  "specificationSha256": "1f89f2ca50ff42da80a52275a504c0a0a3c6060a01352e5428f287b278bebabc",
+  "exportDate": "2026-09-28T12:31:21.564904+00:00",
+  "ownedAssetIds": [
+    "S01",
+    "S02",
+    "S03"
+  ],
+  "assetIds": [
+    "G01",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G09",
+    "G10",
+    "G11",
+    "S01",
+    "S02",
+    "S03"
+  ],
+  "instances": [
+    {
+      "assetId": "G01",
+      "position": [
+        34,
+        -0.13,
+        40
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_00"
+    },
+    {
+      "assetId": "S01",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_01"
+    },
+    {
+      "assetId": "S03",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_02"
+    },
+    {
+      "assetId": "S02",
+      "position": [
+        1.1,
+        0,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_03"
+    },
+    {
+      "assetId": "S02",
+      "position": [
+        3.2,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_04"
+    },
+    {
+      "assetId": "S02",
+      "position": [
+        -1.6,
+        0,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_05"
+    },
+    {
+      "assetId": "S02",
+      "position": [
+        2.2,
+        0,
+        -14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_06"
+    },
+    {
+      "assetId": "G09",
+      "position": [
+        34.0,
+        -0.5,
+        40.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_07"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        1.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_STORIES_INSTANCE_08"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_STORIES_INSTANCE_09"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        1.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_STORIES_INSTANCE_10"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_STORIES_INSTANCE_11"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_STORIES_INSTANCE_12"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -2.8000000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_STORIES_INSTANCE_13"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_STORIES_INSTANCE_14"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -2.8000000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_STORIES_INSTANCE_15"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_STORIES_INSTANCE_16"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_STORIES_INSTANCE_17"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_STORIES_INSTANCE_18"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_STORIES_INSTANCE_19"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -8.600000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_STORIES_INSTANCE_20"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -9.200000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_STORIES_INSTANCE_21"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -8.600000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_STORIES_INSTANCE_22"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -9.200000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_STORIES_INSTANCE_23"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -11.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_STORIES_INSTANCE_24"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_STORIES_INSTANCE_25"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -11.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_STORIES_INSTANCE_26"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_STORIES_INSTANCE_27"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -15.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_STORIES_INSTANCE_28"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -15.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_STORIES_INSTANCE_29"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -15.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_STORIES_INSTANCE_30"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -15.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_STORIES_INSTANCE_31"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -18.200000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_STORIES_INSTANCE_32"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -18.800000000000004
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_STORIES_INSTANCE_33"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -18.200000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_STORIES_INSTANCE_34"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -18.800000000000004
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_STORIES_INSTANCE_35"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -3.5,
+        0,
+        -21.400000000000002
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_STORIES_INSTANCE_36"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -2.85,
+        0,
+        -22.000000000000004
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_STORIES_INSTANCE_37"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        3.5,
+        0,
+        -21.400000000000002
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_STORIES_INSTANCE_38"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        2.85,
+        0,
+        -22.000000000000004
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_STORIES_INSTANCE_39"
+    },
+    {
+      "assetId": "G03",
+      "position": [
+        -3.5,
+        0,
+        -13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_40"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -13,
+        0,
+        -55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_41"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        12,
+        0,
+        -59
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_42"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -27.0,
+        0.0,
+        -54.08352279663086
+      ],
+      "rotation": [
+        0,
+        0.55,
+        0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_43",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -10.0,
+        0.0,
+        -59.552345275878906
+      ],
+      "rotation": [
+        0,
+        -0.4,
+        0
+      ],
+      "scale": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_44",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        10.0,
+        0.0,
+        -59.524452209472656
+      ],
+      "rotation": [
+        0,
+        0.18,
+        0
+      ],
+      "scale": [
+        1.17,
+        1.17,
+        1.17
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_45",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        29.0,
+        0.0,
+        -53.247806549072266
+      ],
+      "rotation": [
+        0,
+        -0.65,
+        0
+      ],
+      "scale": [
+        1.02,
+        1.02,
+        1.02
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_46",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G03",
+      "position": [
+        8.399999618530273,
+        -0.014420165680348873,
+        -18.0
+      ],
+      "rotation": [
+        0,
+        1.2,
+        0
+      ],
+      "scale": [
+        0.82,
+        0.82,
+        0.82
+      ],
+      "variantNode": null,
+      "instanceId": "SA_STORIES_INSTANCE_47",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.0606889724731445,
+        -0.014858855865895748,
+        0.9828299880027771
+      ],
+      "rotation": [
+        0,
+        1.0358188929223142,
+        0
+      ],
+      "scale": [
+        0.7820835036315219,
+        0.7820835036315219,
+        0.7820835036315219
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_STORIES_INSTANCE_48",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -4.5606889724731445,
+        -0.014977111481130123,
+        1.282829999923706
+      ],
+      "rotation": [
+        0,
+        -1.241562370609616,
+        0
+      ],
+      "scale": [
+        1.1144289621324668,
+        1.1144289621324668,
+        1.1144289621324668
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_STORIES_INSTANCE_49",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.47266960144043,
+        -0.014694823883473873,
+        0.7741920948028564
+      ],
+      "rotation": [
+        0,
+        -0.9068811936224996,
+        0
+      ],
+      "scale": [
+        0.7948566301140287,
+        0.7948566301140287,
+        0.7948566301140287
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_STORIES_INSTANCE_50",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        4.97266960144043,
+        -0.01486839260905981,
+        1.0741920471191406
+      ],
+      "rotation": [
+        0,
+        -0.10827235959364367,
+        0
+      ],
+      "scale": [
+        0.9816771632154031,
+        0.9816771632154031,
+        0.9816771632154031
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_STORIES_INSTANCE_51",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.210519790649414,
+        -0.01447166409343481,
+        -3.3718464374542236
+      ],
+      "rotation": [
+        0,
+        -0.8207074407592678,
+        0
+      ],
+      "scale": [
+        0.6186136906987638,
+        0.6186136906987638,
+        0.6186136906987638
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_STORIES_INSTANCE_52",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -4.710519790649414,
+        -0.01450981106609106,
+        -3.0718464851379395
+      ],
+      "rotation": [
+        0,
+        -0.03605287567904902,
+        0
+      ],
+      "scale": [
+        0.9864479844697921,
+        0.9864479844697921,
+        0.9864479844697921
+      ],
+      "variantNode": "SA_G06_STONE_02",
+      "instanceId": "SA_STORIES_INSTANCE_53",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.190199375152588,
+        -0.014378204010426998,
+        -2.9251770973205566
+      ],
+      "rotation": [
+        0,
+        -0.32106391215974206,
+        0
+      ],
+      "scale": [
+        0.6480745235464539,
+        0.6480745235464539,
+        0.6480745235464539
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_STORIES_INSTANCE_54",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        4.690199375152588,
+        -0.014496459625661373,
+        -2.6251771450042725
+      ],
+      "rotation": [
+        0,
+        0.815764672840869,
+        0
+      ],
+      "scale": [
+        0.7808000915427515,
+        0.7808000915427515,
+        0.7808000915427515
+      ],
+      "variantNode": "SA_G06_STONE_03",
+      "instanceId": "SA_STORIES_INSTANCE_55",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.058244228363037,
+        -0.01474632229655981,
+        -7.33823299407959
+      ],
+      "rotation": [
+        0,
+        -1.8492048433274282,
+        0
+      ],
+      "scale": [
+        0.7770233401462082,
+        0.7770233401462082,
+        0.7770233401462082
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_STORIES_INSTANCE_56",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -4.558244228363037,
+        -0.01451744046062231,
+        -7.038233280181885
+      ],
+      "rotation": [
+        0,
+        0.04994279623033737,
+        0
+      ],
+      "scale": [
+        0.9696517833107811,
+        0.9696517833107811,
+        0.9696517833107811
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_STORIES_INSTANCE_57",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.697707176208496,
+        -0.014170303009450436,
+        -7.831567287445068
+      ],
+      "rotation": [
+        0,
+        -1.1354826933298008,
+        0
+      ],
+      "scale": [
+        0.6903299594044199,
+        0.6903299594044199,
+        0.6903299594044199
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_STORIES_INSTANCE_58",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        5.197707176208496,
+        -0.01426567044109106,
+        -7.531567096710205
+      ],
+      "rotation": [
+        0,
+        1.0226186964615884,
+        0
+      ],
+      "scale": [
+        0.7422539072395464,
+        0.7422539072395464,
+        0.7422539072395464
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_STORIES_INSTANCE_59",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.514560699462891,
+        -0.014948501251637936,
+        -11.569742202758789
+      ],
+      "rotation": [
+        0,
+        0.27635932019955867,
+        0
+      ],
+      "scale": [
+        0.7966397859831509,
+        0.7966397859831509,
+        0.7966397859831509
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_STORIES_INSTANCE_60",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -5.014560699462891,
+        -0.014858855865895748,
+        -11.269742012023926
+      ],
+      "rotation": [
+        0,
+        -0.6782069600969041,
+        0
+      ],
+      "scale": [
+        0.9881847546495917,
+        0.9881847546495917,
+        0.9881847546495917
+      ],
+      "variantNode": "SA_G06_STONE_02",
+      "instanceId": "SA_STORIES_INSTANCE_61",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.109400272369385,
+        -0.01405967678874731,
+        -11.80088996887207
+      ],
+      "rotation": [
+        0,
+        -1.5038480393181244,
+        0
+      ],
+      "scale": [
+        0.5500032486315208,
+        0.5500032486315208,
+        0.5500032486315208
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_STORIES_INSTANCE_62",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        4.609400272369385,
+        -0.014046325348317623,
+        -11.500889778137207
+      ],
+      "rotation": [
+        0,
+        0.013988907830934316,
+        0
+      ],
+      "scale": [
+        0.8064956121103111,
+        0.8064956121103111,
+        0.8064956121103111
+      ],
+      "variantNode": "SA_G06_STONE_03",
+      "instanceId": "SA_STORIES_INSTANCE_63",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.241931438446045,
+        -0.01460899319499731,
+        -16.092206954956055
+      ],
+      "rotation": [
+        0,
+        1.2164670590540876,
+        0
+      ],
+      "scale": [
+        0.560430575545711,
+        0.560430575545711,
+        0.560430575545711
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_STORIES_INSTANCE_64",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -4.741931438446045,
+        -0.014727248810231686,
+        -15.792207717895508
+      ],
+      "rotation": [
+        0,
+        -1.2467001573326457,
+        0
+      ],
+      "scale": [
+        0.9445268526557069,
+        0.9445268526557069,
+        0.9445268526557069
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_STORIES_INSTANCE_65",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.611993789672852,
+        -0.013872756622731686,
+        -16.307859420776367
+      ],
+      "rotation": [
+        0,
+        -0.9191174480920332,
+        0
+      ],
+      "scale": [
+        0.75119299457356,
+        0.75119299457356,
+        0.75119299457356
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_STORIES_INSTANCE_66",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        5.111993789672852,
+        -0.013855590485036373,
+        -16.00786018371582
+      ],
+      "rotation": [
+        0,
+        -0.9613118994113621,
+        0
+      ],
+      "scale": [
+        1.0243281223509473,
+        1.0243281223509473,
+        1.0243281223509473
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_STORIES_INSTANCE_67",
+      "seniorPlacement": true
+    }
+  ],
+  "worldOrigin": [
+    -34.0,
+    0.0,
+    -40.0
+  ],
+  "localBounds": {
+    "width": 12.0,
+    "depth": 22.0
+  },
+  "boundsExceptions": [
+    "G01 and G09 are world-scale; G11 sits beyond camera rails; F03 intentionally beyond future local zone"
+  ],
+  "cameraKnots": [
+    {
+      "index": 0,
+      "band": [
+        0.0,
+        0.12
+      ],
+      "start": [
+        0.0,
+        1.6,
+        4.0
+      ],
+      "end": [
+        0.0,
+        1.6,
+        1.0
+      ],
+      "look": [
+        -1.0,
+        1.0,
+        -2.0
+      ],
+      "reading": "center, x=50%, y=31%, 32ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.31,
+        "widthCh": 32,
+        "alignment": "center"
+      },
+      "objectScore": "PATH_ENTRY. Keep four public stories only. Remove the appearance teaser from the public page; do not expose private story metadata."
+    },
+    {
+      "index": 1,
+      "band": [
+        0.12,
+        0.3
+      ],
+      "start": [
+        0.0,
+        1.6,
+        1.0
+      ],
+      "end": [
+        -0.4,
+        1.6,
+        -1.0
+      ],
+      "look": [
+        -1.0,
+        1.0,
+        -2.0
+      ],
+      "reading": "right, x=56%, y=30%, 38ch",
+      "clearance": {
+        "x": 0.56,
+        "y": 0.3,
+        "widthCh": 38,
+        "alignment": "right"
+      },
+      "objectScore": "LANTERN_1. Approach at .12; title .14; read control .16; text region .18–.29. Lamp emission .35→.65; selected .8. Leave retains emission .45. No claim of broad influence."
+    },
+    {
+      "index": 2,
+      "band": [
+        0.3,
+        0.48
+      ],
+      "start": [
+        -0.4,
+        1.6,
+        -1.0
+      ],
+      "end": [
+        0.8,
+        1.6,
+        -5.0
+      ],
+      "look": [
+        2.0,
+        1.0,
+        -6.0
+      ],
+      "reading": "left, x=9%, y=32%, 38ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.32,
+        "widthCh": 38,
+        "alignment": "left"
+      },
+      "objectScore": "LANTERN_2. Previous lamp visible through first screen gap. No named friend, fabricated quotation or private dialogue. Text remains accessible when closed via native details summary; this public copy is the complete supplied account."
+    },
+    {
+      "index": 3,
+      "band": [
+        0.48,
+        0.7
+      ],
+      "start": [
+        0.8,
+        1.6,
+        -5.0
+      ],
+      "end": [
+        -0.8,
+        1.6,
+        -9.0
+      ],
+      "look": [
+        -2.0,
+        1.0,
+        -10.0
+      ],
+      "reading": "right, x=56%, y=30%, 38ch",
+      "clearance": {
+        "x": 0.56,
+        "y": 0.3,
+        "widthCh": 38,
+        "alignment": "right"
+      },
+      "objectScore": "LANTERN_3. Use current capability language; do not freeze the older exact Python level as a current fact. Extra beat room permits two paragraphs. Lamp never flashes at the word gap."
+    },
+    {
+      "index": 4,
+      "band": [
+        0.7,
+        0.9
+      ],
+      "start": [
+        -0.8,
+        1.6,
+        -9.0
+      ],
+      "end": [
+        0.4,
+        1.6,
+        -13.0
+      ],
+      "look": [
+        1.0,
+        1.0,
+        -14.0
+      ],
+      "reading": "left, x=9%, y=31%, 38ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.31,
+        "widthCh": 38,
+        "alignment": "left"
+      },
+      "objectScore": "LANTERN_4. Link to /stay/leader/ for the fuller account. Four lamps stay in scene; only nearest two emit runtime point lights on high tier."
+    },
+    {
+      "index": 5,
+      "band": [
+        0.9,
+        1.0
+      ],
+      "start": [
+        0.4,
+        1.6,
+        -13.0
+      ],
+      "end": [
+        0.0,
+        1.6,
+        -16.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -20.0
+      ],
+      "reading": "center, x=50%, y=38%, 34ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.38,
+        "widthCh": 34,
+        "alignment": "center"
+      },
+      "objectScore": "PATH_EXIT. Fog lightens .028→.022; do not force the user toward Future. All stories retain native anchors story-mentality, story-openness, story-technical-gap and story-leadership."
+    }
+  ],
+  "camera": {
+    "fov": 46,
+    "near": 0.1,
+    "far": 220,
+    "roll": 0
+  },
+  "focusAnchors": [
+    [
+      -1.0,
+      1.0,
+      -2.0
+    ],
+    [
+      -1.0,
+      1.0,
+      -2.0
+    ],
+    [
+      2.0,
+      1.0,
+      -6.0
+    ],
+    [
+      -2.0,
+      1.0,
+      -10.0
+    ],
+    [
+      1.0,
+      1.0,
+      -14.0
+    ],
+    [
+      0.0,
+      1.0,
+      -20.0
+    ]
+  ],
+  "contentClearanceRectangles": [
+    {
+      "x": 0.5,
+      "y": 0.31,
+      "widthCh": 32,
+      "alignment": "center"
+    },
+    {
+      "x": 0.56,
+      "y": 0.3,
+      "widthCh": 38,
+      "alignment": "right"
+    },
+    {
+      "x": 0.09,
+      "y": 0.32,
+      "widthCh": 38,
+      "alignment": "left"
+    },
+    {
+      "x": 0.56,
+      "y": 0.3,
+      "widthCh": 38,
+      "alignment": "right"
+    },
+    {
+      "x": 0.09,
+      "y": 0.31,
+      "widthCh": 38,
+      "alignment": "left"
+    },
+    {
+      "x": 0.5,
+      "y": 0.38,
+      "widthCh": 34,
+      "alignment": "center"
+    }
+  ],
+  "guideNodeNames": [
+    "SA_STORIES_ENTRY_00",
+    "SA_STORIES_EXIT_00",
+    "SA_STORIES_CAM_00",
+    "SA_STORIES_LOOK_00",
+    "SA_STORIES_TEXT_00",
+    "SA_STORIES_CAM_01",
+    "SA_STORIES_LOOK_01",
+    "SA_STORIES_TEXT_01",
+    "SA_STORIES_CAM_02",
+    "SA_STORIES_LOOK_02",
+    "SA_STORIES_TEXT_02",
+    "SA_STORIES_CAM_03",
+    "SA_STORIES_LOOK_03",
+    "SA_STORIES_TEXT_03",
+    "SA_STORIES_CAM_04",
+    "SA_STORIES_LOOK_04",
+    "SA_STORIES_TEXT_04",
+    "SA_STORIES_CAM_05",
+    "SA_STORIES_LOOK_05",
+    "SA_STORIES_TEXT_05"
+  ],
+  "guideAssetId": "S01",
+  "clips": [
+    {
+      "name": "STORY_SHUTTER",
+      "duration": 0.6,
+      "frameCount": 19,
+      "progressBand": null
+    }
+  ],
+  "settledPoses": [
+    {
+      "progress": 0,
+      "camera": [
+        [
+          0.0,
+          1.6,
+          4.0
+        ],
+        [
+          -1.0,
+          1.0,
+          -2.0
+        ]
+      ],
+      "clipTimes": {
+        "STORY_SHUTTER": 0
+      }
+    },
+    {
+      "progress": 0.25,
+      "camera": [
+        [
+          -0.4,
+          1.6,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0,
+          -2.0
+        ]
+      ],
+      "clipTimes": {
+        "STORY_SHUTTER": 0
+      }
+    },
+    {
+      "progress": 0.5,
+      "camera": [
+        [
+          0.5322427951539095,
+          1.6,
+          -5.6693930121152265
+        ],
+        [
+          -2.0,
+          1.0,
+          -10.0
+        ]
+      ],
+      "clipTimes": {
+        "STORY_SHUTTER": 0
+      }
+    },
+    {
+      "progress": 0.75,
+      "camera": [
+        [
+          0.16209912536443238,
+          1.6,
+          -12.206997084548107
+        ],
+        [
+          1.0,
+          1.0,
+          -14.0
+        ]
+      ],
+      "clipTimes": {
+        "STORY_SHUTTER": 0
+      }
+    },
+    {
+      "progress": 1,
+      "camera": [
+        [
+          0.0,
+          1.6,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -20.0
+        ]
+      ],
+      "clipTimes": {
+        "STORY_SHUTTER": 0
+      }
+    }
+  ],
+  "placementOverrides": {
+    "S02-lamp1": {
+      "nominal": [
+        0.2,
+        0,
+        -2
+      ],
+      "actual": [
+        1.1,
+        0,
+        -2
+      ],
+      "reason": "0.50 m camera corridor"
+    },
+    "S02-lamp3": {
+      "nominal": [
+        -0.8,
+        0,
+        -10
+      ],
+      "actual": [
+        -1.6,
+        0,
+        -10
+      ],
+      "reason": "0.50 m camera corridor"
+    }
+  },
+  "documentSocketBindings": [],
+  "posterProgress": 0.48,
+  "runtimeNotes": [
+    "No authored typography, scroll, visibility, foliage sway, water or AURA_CONNECTIONS clip.",
+    "Only sample named child transforms; root placement belongs to the instance manifest."
+  ],
+  "validation": {
+    "reopenedMaster": true,
+    "reverseSeek": true,
+    "exportStructuralRead": true
+  }
+}

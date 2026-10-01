@@ -1,0 +1,74 @@
+[
+  {
+    "canvas": {
+      "engine": "three.js r186",
+      "stayAmbient": "idle",
+      "stayAtlas": "0.000",
+      "stayCamera": "0.00,0.00,0.00",
+      "stayDrawCalls": "0",
+      "stayEmitters": "0",
+      "stayProgress": "0.000",
+      "stayRenderer": "1",
+      "stayResources": "13,13,0,0,13",
+      "stayScheduler": "single",
+      "stayShaderPrepareMs": "255.10",
+      "stayTargetProgress": "0.000",
+      "stayTiming": "{\"samples\":11,\"frameP50\":1012.0999755859375,\"frameP95\":1408.199951171875,\"frameMax\":1408.199951171875,\"cpuP95\":5.400000095367432}",
+      "stayTriangles": "0",
+      "stayVariant": "desktop"
+    },
+    "canvases": 1,
+    "focus": "Skip to contentgarden illustration shown while the world prepares.AuraMapPause a",
+    "headings": [
+      {
+        "height": 900,
+        "id": "",
+        "title": "Stay Awhile",
+        "top": 0
+      },
+      {
+        "height": 900,
+        "id": "",
+        "title": "Scroll to enter the garden",
+        "top": 900
+      },
+      {
+        "height": 900,
+        "id": "",
+        "title": "A place, rather than a page.",
+        "top": 1800
+      },
+      {
+        "height": 900,
+        "id": "",
+        "title": "Nine places",
+        "top": 2700
+      },
+      {
+        "height": 900,
+        "id": "",
+        "title": "Choose a path",
+        "top": 3600
+      },
+      {
+        "height": 900,
+        "id": "",
+        "title": "Stay as long as you like",
+        "top": 4500
+      }
+    ],
+    "height": 900,
+    "host": {
+      "stayHostCommits": "3"
+    },
+    "overflow": false,
+    "url": "http://localhost:3132/stay/",
+    "width": 1440,
+    "world": {
+      "worldRoute": "garden",
+      "worldStatus": "loading"
+    },
+    "y": 0,
+    "name": "final-garden-ready-desktop"
+  }
+]

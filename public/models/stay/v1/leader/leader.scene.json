@@ -1,0 +1,1466 @@
+{
+  "schemaVersion": 1,
+  "routeId": "leader",
+  "artistVersion": "senior-art-2026-09-27",
+  "sourceBlend": "scripts/blender/stay-awhile/04-leader.blend",
+  "sourceSha256": "29eafffc3fe356104179a98934379a7aebcbbef41ea6d1fc02f78b06a79d25f9",
+  "specificationSha256": "1f89f2ca50ff42da80a52275a504c0a0a3c6060a01352e5428f287b278bebabc",
+  "exportDate": "2026-09-28T12:31:20.012769+00:00",
+  "ownedAssetIds": [
+    "L01",
+    "L02",
+    "L03"
+  ],
+  "assetIds": [
+    "G01",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G09",
+    "G10",
+    "G11",
+    "L01",
+    "L02",
+    "L03"
+  ],
+  "instances": [
+    {
+      "assetId": "G01",
+      "position": [
+        6,
+        -0.15,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_00"
+    },
+    {
+      "assetId": "L01",
+      "position": [
+        0,
+        0,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_01"
+    },
+    {
+      "assetId": "L02",
+      "position": [
+        0,
+        0,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_02"
+    },
+    {
+      "assetId": "L03",
+      "position": [
+        3.3,
+        0,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_03"
+    },
+    {
+      "assetId": "G09",
+      "position": [
+        6.0,
+        -0.5,
+        2.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_04"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -7.56,
+        0,
+        1.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_LEADER_INSTANCE_05"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -6.909999999999999,
+        0,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_LEADER_INSTANCE_06"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        7.56,
+        0,
+        1.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_LEADER_INSTANCE_07"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        6.909999999999999,
+        0,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_LEADER_INSTANCE_08"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -7.56,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_LEADER_INSTANCE_09"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -6.909999999999999,
+        0,
+        -2.8000000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_LEADER_INSTANCE_10"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        7.56,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_LEADER_INSTANCE_11"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        6.909999999999999,
+        0,
+        -2.8000000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_LEADER_INSTANCE_12"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -7.56,
+        0,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_LEADER_INSTANCE_13"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -6.909999999999999,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_LEADER_INSTANCE_14"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        7.56,
+        0,
+        -5.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_LEADER_INSTANCE_15"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        6.909999999999999,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_02",
+      "instanceId": "SA_LEADER_INSTANCE_16"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -7.56,
+        0,
+        -8.600000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_LEADER_INSTANCE_17"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -6.909999999999999,
+        0,
+        -9.200000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_LEADER_INSTANCE_18"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        7.56,
+        0,
+        -8.600000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_01",
+      "instanceId": "SA_LEADER_INSTANCE_19"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        6.909999999999999,
+        0,
+        -9.200000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_00",
+      "instanceId": "SA_LEADER_INSTANCE_20"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        -7.56,
+        0,
+        -11.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_LEADER_INSTANCE_21"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        -6.909999999999999,
+        0,
+        -12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_LEADER_INSTANCE_22"
+    },
+    {
+      "assetId": "G04",
+      "position": [
+        7.56,
+        0,
+        -11.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G04_BUSH_00",
+      "instanceId": "SA_LEADER_INSTANCE_23"
+    },
+    {
+      "assetId": "G05",
+      "position": [
+        6.909999999999999,
+        0,
+        -12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": "SA_G05_TUFT_01",
+      "instanceId": "SA_LEADER_INSTANCE_24"
+    },
+    {
+      "assetId": "G03",
+      "position": [
+        -7.56,
+        0,
+        -13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_25"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -13,
+        0,
+        -55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_26"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        12,
+        0,
+        -59
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_27"
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -27.0,
+        -0.03439010679721832,
+        -45.39236068725586
+      ],
+      "rotation": [
+        0,
+        0.55,
+        0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_28",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        -10.0,
+        -0.0042463685385882854,
+        -49.53787612915039
+      ],
+      "rotation": [
+        0,
+        -0.4,
+        0
+      ],
+      "scale": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_29",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        10.0,
+        0.02758537232875824,
+        -48.7208366394043
+      ],
+      "rotation": [
+        0,
+        0.18,
+        0
+      ],
+      "scale": [
+        1.17,
+        1.17,
+        1.17
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_30",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G11",
+      "position": [
+        29.0,
+        0.13092933595180511,
+        -46.00080490112305
+      ],
+      "rotation": [
+        0,
+        -0.65,
+        0
+      ],
+      "scale": [
+        1.02,
+        1.02,
+        1.02
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_31",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G03",
+      "position": [
+        8.399999618530273,
+        -0.03525222837924957,
+        -18.0
+      ],
+      "rotation": [
+        0,
+        1.2,
+        0
+      ],
+      "scale": [
+        0.82,
+        0.82,
+        0.82
+      ],
+      "variantNode": null,
+      "instanceId": "SA_LEADER_INSTANCE_32",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        6.447426795959473,
+        -0.03497566282749176,
+        -2.4298388957977295
+      ],
+      "rotation": [
+        0,
+        -1.0723314269951172,
+        0
+      ],
+      "scale": [
+        0.6144951569517042,
+        0.6144951569517042,
+        0.6144951569517042
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_LEADER_INSTANCE_33",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        6.947426795959473,
+        -0.034979477524757385,
+        -2.1298389434814453
+      ],
+      "rotation": [
+        0,
+        -0.17927496314164681,
+        0
+      ],
+      "scale": [
+        0.7888665178337276,
+        0.7888665178337276,
+        0.7888665178337276
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_LEADER_INSTANCE_34",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        3.782116174697876,
+        -0.034979477524757385,
+        0.5537084937095642
+      ],
+      "rotation": [
+        0,
+        -0.5339599347595216,
+        0
+      ],
+      "scale": [
+        0.6448942610118757,
+        0.6448942610118757,
+        0.6448942610118757
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_LEADER_INSTANCE_35",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        4.282115936279297,
+        -0.0349813848733902,
+        0.8537085056304932
+      ],
+      "rotation": [
+        0,
+        1.4357389510330645,
+        0
+      ],
+      "scale": [
+        0.8798196218317702,
+        0.8798196218317702,
+        0.8798196218317702
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_LEADER_INSTANCE_36",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -0.9019114375114441,
+        -0.03492988646030426,
+        1.5449877977371216
+      ],
+      "rotation": [
+        0,
+        -0.4402752381300048,
+        0
+      ],
+      "scale": [
+        0.5739764685598352,
+        0.5739764685598352,
+        0.5739764685598352
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_LEADER_INSTANCE_37",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -1.4019114971160889,
+        -0.03491272032260895,
+        1.8449877500534058
+      ],
+      "rotation": [
+        0,
+        -0.32336779056020815,
+        0
+      ],
+      "scale": [
+        1.0505870875095993,
+        1.0505870875095993,
+        1.0505870875095993
+      ],
+      "variantNode": "SA_G06_STONE_02",
+      "instanceId": "SA_LEADER_INSTANCE_38",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -6.328505039215088,
+        -0.03491653501987457,
+        -2.179292678833008
+      ],
+      "rotation": [
+        0,
+        1.764008646800408,
+        0
+      ],
+      "scale": [
+        0.6271284067539578,
+        0.6271284067539578,
+        0.6271284067539578
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_LEADER_INSTANCE_39",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -6.828505039215088,
+        -0.03493942320346832,
+        -1.8792928457260132
+      ],
+      "rotation": [
+        0,
+        -1.9359520929094818,
+        0
+      ],
+      "scale": [
+        1.1085009622350344,
+        1.1085009622350344,
+        1.1085009622350344
+      ],
+      "variantNode": "SA_G06_STONE_03",
+      "instanceId": "SA_LEADER_INSTANCE_40",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -6.767587184906006,
+        -0.03493942320346832,
+        -6.68657112121582
+      ],
+      "rotation": [
+        0,
+        1.1109488956010107,
+        0
+      ],
+      "scale": [
+        0.7203525528031733,
+        0.7203525528031733,
+        0.7203525528031733
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_LEADER_INSTANCE_41",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -7.267587184906006,
+        -0.034941330552101135,
+        -6.386571407318115
+      ],
+      "rotation": [
+        0,
+        -1.0763041084073457,
+        0
+      ],
+      "scale": [
+        1.0245751500115636,
+        1.0245751500115636,
+        1.0245751500115636
+      ],
+      "variantNode": "SA_G06_STONE_00",
+      "instanceId": "SA_LEADER_INSTANCE_42",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -4.023767471313477,
+        -0.03453506529331207,
+        -10.400629043579102
+      ],
+      "rotation": [
+        0,
+        1.4305623810226251,
+        0
+      ],
+      "scale": [
+        0.6206850632886322,
+        0.6206850632886322,
+        0.6206850632886322
+      ],
+      "variantNode": "SA_G10_FAN_02",
+      "instanceId": "SA_LEADER_INSTANCE_43",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -4.523767471313477,
+        -0.03459610044956207,
+        -10.100628852844238
+      ],
+      "rotation": [
+        0,
+        1.73384949525969,
+        0
+      ],
+      "scale": [
+        1.0918602372881523,
+        1.0918602372881523,
+        1.0918602372881523
+      ],
+      "variantNode": "SA_G06_STONE_01",
+      "instanceId": "SA_LEADER_INSTANCE_44",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        -0.08672064542770386,
+        -0.03448738157749176,
+        -11.599493026733398
+      ],
+      "rotation": [
+        0,
+        -1.4741017688087084,
+        0
+      ],
+      "scale": [
+        0.8648832315214404,
+        0.8648832315214404,
+        0.8648832315214404
+      ],
+      "variantNode": "SA_G10_FAN_00",
+      "instanceId": "SA_LEADER_INSTANCE_45",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        -0.5867206454277039,
+        -0.03440918028354645,
+        -11.299493789672852
+      ],
+      "rotation": [
+        0,
+        -1.013009189371389,
+        0
+      ],
+      "scale": [
+        0.7891698869829168,
+        0.7891698869829168,
+        0.7891698869829168
+      ],
+      "variantNode": "SA_G06_STONE_02",
+      "instanceId": "SA_LEADER_INSTANCE_46",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G10",
+      "position": [
+        4.960688591003418,
+        -0.034254685044288635,
+        -9.656566619873047
+      ],
+      "rotation": [
+        0,
+        0.30528972068630145,
+        0
+      ],
+      "scale": [
+        0.7656544694746841,
+        0.7656544694746841,
+        0.7656544694746841
+      ],
+      "variantNode": "SA_G10_FAN_01",
+      "instanceId": "SA_LEADER_INSTANCE_47",
+      "seniorPlacement": true
+    },
+    {
+      "assetId": "G06",
+      "position": [
+        5.460688591003418,
+        -0.03427566587924957,
+        -9.356566429138184
+      ],
+      "rotation": [
+        0,
+        -1.3767017673562898,
+        0
+      ],
+      "scale": [
+        0.9435162782174077,
+        0.9435162782174077,
+        0.9435162782174077
+      ],
+      "variantNode": "SA_G06_STONE_03",
+      "instanceId": "SA_LEADER_INSTANCE_48",
+      "seniorPlacement": true
+    }
+  ],
+  "worldOrigin": [
+    -6.0,
+    0.0,
+    -2.0
+  ],
+  "localBounds": {
+    "width": 18.0,
+    "depth": 18.0
+  },
+  "boundsExceptions": [
+    "G01 and G09 are world-scale; G11 sits beyond camera rails; F03 intentionally beyond future local zone"
+  ],
+  "cameraKnots": [
+    {
+      "index": 0,
+      "band": [
+        0.0,
+        0.14
+      ],
+      "start": [
+        0.0,
+        1.7,
+        6.0
+      ],
+      "end": [
+        0.0,
+        1.7,
+        3.0
+      ],
+      "look": [
+        0.0,
+        0.8,
+        -5.0
+      ],
+      "reading": "left, x=9%, y=30%, 35ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.3,
+        "widthCh": 35,
+        "alignment": "left"
+      },
+      "objectScore": "APPROACH. Three L01 paths enter from different sides; no nodes labeled as real people."
+    },
+    {
+      "index": 1,
+      "band": [
+        0.14,
+        0.36
+      ],
+      "start": [
+        0.0,
+        1.7,
+        3.0
+      ],
+      "end": [
+        -1.2,
+        1.7,
+        0.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -5.0
+      ],
+      "reading": "right, x=56%, y=30%, 38ch",
+      "clearance": {
+        "x": 0.56,
+        "y": 0.3,
+        "widthCh": 38,
+        "alignment": "right"
+      },
+      "objectScore": "CONVERGE. LEADER_CONVERGE 0→1.8 s during .14–.24; hold .24–.36. Five markers represent responsibilities: lesson design, debates, simulations, teaching and weekly operation. Do not count them as participants."
+    },
+    {
+      "index": 2,
+      "band": [
+        0.36,
+        0.53
+      ],
+      "start": [
+        -1.2,
+        1.7,
+        0.0
+      ],
+      "end": [
+        1.3,
+        1.7,
+        -3.0
+      ],
+      "look": [
+        3.0,
+        1.0,
+        -7.0
+      ],
+      "reading": "left, x=9%, y=30%, 36ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.3,
+        "widthCh": 36,
+        "alignment": "left"
+      },
+      "objectScore": "COORDINATE. LEADER_RAIL .36–.43; hold .43–.53. Existing source supports authorship, but omit the unnecessarily absolute “Nobody handed me…” sentence. Evidence holders stay blank unless real approved files arrive."
+    },
+    {
+      "index": 3,
+      "band": [
+        0.53,
+        0.68
+      ],
+      "start": [
+        1.3,
+        1.7,
+        -3.0
+      ],
+      "end": [
+        1.3,
+        1.7,
+        -5.0
+      ],
+      "look": [
+        0.0,
+        0.8,
+        -8.0
+      ],
+      "reading": "right, x=56%, y=32%, 38ch",
+      "clearance": {
+        "x": 0.56,
+        "y": 0.32,
+        "widthCh": 38,
+        "alignment": "right"
+      },
+      "objectScore": "OWNERSHIP. Keep secondary House example at its sourced scale. No dates, attendance counts or invented outcomes. Camera hold starts .58."
+    },
+    {
+      "index": 4,
+      "band": [
+        0.68,
+        0.84
+      ],
+      "start": [
+        1.3,
+        1.7,
+        -5.0
+      ],
+      "end": [
+        1.4,
+        1.7,
+        -6.5
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -9.0
+      ],
+      "reading": "left, x=9%, y=33%, 36ch",
+      "clearance": {
+        "x": 0.09,
+        "y": 0.33,
+        "widthCh": 36,
+        "alignment": "left"
+      },
+      "objectScore": "COMMUNICATE. Markers remain coordinated while the camera leaves central court. This is a synthesis of source activities, not an award claim."
+    },
+    {
+      "index": 5,
+      "band": [
+        0.84,
+        1.0
+      ],
+      "start": [
+        1.4,
+        1.7,
+        -6.5
+      ],
+      "end": [
+        1.4,
+        1.7,
+        -8.0
+      ],
+      "look": [
+        0.0,
+        1.0,
+        -12.0
+      ],
+      "reading": "center, x=50%, y=32%, 38ch",
+      "clearance": {
+        "x": 0.5,
+        "y": 0.32,
+        "widthCh": 38,
+        "alignment": "center"
+      },
+      "objectScore": "REFLECT → EXIT_READY. Replace the current import’s stronger assertion that others were deprived of growth. Label internal provenance HYPOTHESIS / potential over-functioning. No collapsing figures or abandoned participants."
+    }
+  ],
+  "camera": {
+    "fov": 46,
+    "near": 0.1,
+    "far": 220,
+    "roll": 0
+  },
+  "focusAnchors": [
+    [
+      0.0,
+      0.8,
+      -5.0
+    ],
+    [
+      0.0,
+      1.0,
+      -5.0
+    ],
+    [
+      3.0,
+      1.0,
+      -7.0
+    ],
+    [
+      0.0,
+      0.8,
+      -8.0
+    ],
+    [
+      0.0,
+      1.0,
+      -9.0
+    ],
+    [
+      0.0,
+      1.0,
+      -12.0
+    ]
+  ],
+  "contentClearanceRectangles": [
+    {
+      "x": 0.09,
+      "y": 0.3,
+      "widthCh": 35,
+      "alignment": "left"
+    },
+    {
+      "x": 0.56,
+      "y": 0.3,
+      "widthCh": 38,
+      "alignment": "right"
+    },
+    {
+      "x": 0.09,
+      "y": 0.3,
+      "widthCh": 36,
+      "alignment": "left"
+    },
+    {
+      "x": 0.56,
+      "y": 0.32,
+      "widthCh": 38,
+      "alignment": "right"
+    },
+    {
+      "x": 0.09,
+      "y": 0.33,
+      "widthCh": 36,
+      "alignment": "left"
+    },
+    {
+      "x": 0.5,
+      "y": 0.32,
+      "widthCh": 38,
+      "alignment": "center"
+    }
+  ],
+  "guideNodeNames": [
+    "SA_LEADER_ENTRY_00",
+    "SA_LEADER_EXIT_00",
+    "SA_LEADER_CAM_00",
+    "SA_LEADER_LOOK_00",
+    "SA_LEADER_TEXT_00",
+    "SA_LEADER_CAM_01",
+    "SA_LEADER_LOOK_01",
+    "SA_LEADER_TEXT_01",
+    "SA_LEADER_CAM_02",
+    "SA_LEADER_LOOK_02",
+    "SA_LEADER_TEXT_02",
+    "SA_LEADER_CAM_03",
+    "SA_LEADER_LOOK_03",
+    "SA_LEADER_TEXT_03",
+    "SA_LEADER_CAM_04",
+    "SA_LEADER_LOOK_04",
+    "SA_LEADER_TEXT_04",
+    "SA_LEADER_CAM_05",
+    "SA_LEADER_LOOK_05",
+    "SA_LEADER_TEXT_05"
+  ],
+  "guideAssetId": "L01",
+  "clips": [
+    {
+      "name": "LEADER_CONVERGE",
+      "duration": 1.8,
+      "frameCount": 55,
+      "progressBand": [
+        0.14,
+        0.24
+      ]
+    },
+    {
+      "name": "LEADER_RAIL",
+      "duration": 1.2,
+      "frameCount": 37,
+      "progressBand": [
+        0.36,
+        0.43
+      ]
+    }
+  ],
+  "settledPoses": [
+    {
+      "progress": 0,
+      "camera": [
+        [
+          0.0,
+          1.7,
+          6.0
+        ],
+        [
+          0.0,
+          0.8,
+          -5.0
+        ]
+      ],
+      "clipTimes": {
+        "LEADER_CONVERGE": 0.0,
+        "LEADER_RAIL": 0.0
+      }
+    },
+    {
+      "progress": 0.25,
+      "camera": [
+        [
+          -1.2,
+          1.7,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -5.0
+        ]
+      ],
+      "clipTimes": {
+        "LEADER_CONVERGE": 1.8,
+        "LEADER_RAIL": 0.0
+      }
+    },
+    {
+      "progress": 0.5,
+      "camera": [
+        [
+          1.3,
+          1.7,
+          -3.0
+        ],
+        [
+          3.0,
+          1.0,
+          -7.0
+        ]
+      ],
+      "clipTimes": {
+        "LEADER_CONVERGE": 1.8,
+        "LEADER_RAIL": 1.2
+      }
+    },
+    {
+      "progress": 0.75,
+      "camera": [
+        [
+          1.4,
+          1.7,
+          -6.5
+        ],
+        [
+          0.0,
+          1.0,
+          -9.0
+        ]
+      ],
+      "clipTimes": {
+        "LEADER_CONVERGE": 1.8,
+        "LEADER_RAIL": 1.2
+      }
+    },
+    {
+      "progress": 1,
+      "camera": [
+        [
+          1.4,
+          1.7,
+          -8.0
+        ],
+        [
+          0.0,
+          1.0,
+          -12.0
+        ]
+      ],
+      "clipTimes": {
+        "LEADER_CONVERGE": 1.8,
+        "LEADER_RAIL": 1.2
+      }
+    }
+  ],
+  "placementOverrides": {
+    "L03": {
+      "nominal": [
+        3,
+        0,
+        -7
+      ],
+      "actual": [
+        3.3,
+        0,
+        -7
+      ],
+      "reason": "0.50 m camera corridor"
+    }
+  },
+  "documentSocketBindings": [],
+  "posterProgress": 0.48,
+  "runtimeNotes": [
+    "No authored typography, scroll, visibility, foliage sway, water or AURA_CONNECTIONS clip.",
+    "Only sample named child transforms; root placement belongs to the instance manifest."
+  ],
+  "validation": {
+    "reopenedMaster": true,
+    "reverseSeek": true,
+    "exportStructuralRead": true
+  }
+}

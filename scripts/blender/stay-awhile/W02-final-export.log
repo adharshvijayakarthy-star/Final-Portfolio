@@ -1,0 +1,76 @@
+00:08.453  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\06-work.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+23:03:47 | INFO: Starting glTF 2.0 export
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_14
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_00
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_01
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_02
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_03
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_04
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_05
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_06
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_07
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_08
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_09
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_10
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_11
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_12
+23:03:47 | INFO: Primitives created: 1
+23:03:47 | INFO: Extracting primitive: SA_W02_GEOMETRY_13
+23:03:47 | INFO: Primitives created: 1
+23:03:53 | INFO: Finished glTF 2.0 export in 6.750276803970337 s
+
+EXPORTED public\models\stay\v1\work\planner-station.desktop.glb 113440
+23:03:54 | INFO: Starting glTF 2.0 export
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_14
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_00
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_01
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_02
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_03
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_04
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_05
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_06
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_07
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_08
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_09
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_10
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_11
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_12
+23:03:54 | INFO: Primitives created: 1
+23:03:54 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_13
+23:03:54 | INFO: Primitives created: 1
+23:04:00 | INFO: Finished glTF 2.0 export in 6.873074293136597 s
+
+EXPORTED public\models\stay\v1\work\planner-station.mobile.glb 56204
+PRODUCTION_PASS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

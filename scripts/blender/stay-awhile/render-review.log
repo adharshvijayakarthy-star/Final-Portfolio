@@ -1,0 +1,63 @@
+00:03.000  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend"
+00:24.469  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\garden-desktop.webp'
+POSTER garden desktop 23464 CORRIDOR []
+00:38.047  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\garden-mobile.webp'
+POSTER garden mobile 15212 CORRIDOR []
+00:38.047  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\01-person.blend"
+01:00.516  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\person-desktop.webp'
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+POSTER person desktop 26426 CORRIDOR []
+01:12.344  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\person-mobile.webp'
+POSTER person mobile 17616 CORRIDOR []
+01:12.344  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\02-builder.blend"
+01:33.344  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\builder-desktop.webp'
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+POSTER builder desktop 23922 CORRIDOR []
+01:45.297  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\builder-mobile.webp'
+POSTER builder mobile 12586 CORRIDOR []
+01:45.297  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\03-thinker.blend"
+02:06.266  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\thinker-desktop.webp'
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+POSTER thinker desktop 18242 CORRIDOR []
+02:17.969  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\thinker-mobile.webp'
+POSTER thinker mobile 8540 CORRIDOR []
+02:17.984  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\04-leader.blend"
+02:38.813  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\leader-desktop.webp'
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+POSTER leader desktop 23390 CORRIDOR []
+02:50.453  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\leader-mobile.webp'
+POSTER leader mobile 14732 CORRIDOR []
+02:50.469  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\05-stories.blend"
+03:13.844  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\stories-desktop.webp'
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+POSTER stories desktop 27864 CORRIDOR []
+03:26.609  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\stories-mobile.webp'
+POSTER stories mobile 16588 CORRIDOR []
+03:26.609  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\06-work.blend"
+03:48.219  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\work-desktop.webp'
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+POSTER work desktop 29552 CORRIDOR []
+04:00.703  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\work-mobile.webp'
+POSTER work mobile 22046 CORRIDOR []
+04:00.703  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\07-future.blend"
+04:20.688  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\future-desktop.webp'
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+POSTER future desktop 12960 CORRIDOR []
+04:32.109  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\future-mobile.webp'
+POSTER future mobile 7556 CORRIDOR []
+04:32.109  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\08-aura.blend"
+04:53.938  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\aura-desktop.webp'
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+POSTER aura desktop 21672 CORRIDOR []
+05:06.547  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\aura-mobile.webp'
+POSTER aura mobile 13572 CORRIDOR []
+05:06.547  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\09-contact.blend"
+05:26.891  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\contact-desktop.webp'
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+POSTER contact desktop 18128 CORRIDOR []
+05:38.375  render           | Saved: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\public\assets\stay\v1\contact-mobile.webp'
+POSTER contact mobile 13554 CORRIDOR []
+POSTERS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

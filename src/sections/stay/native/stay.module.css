@@ -1,9 +1,15 @@
 .stay{position:relative;isolation:isolate;min-height:100vh;background:#efe9dc;color:#23291f;font-family:var(--stay-body-face),Georgia,serif;font-size:16px;line-height:normal;letter-spacing:normal;font-feature-settings:normal;color-scheme:light}
 .stay *{box-sizing:border-box}
 .stay{overflow-x:clip}
+.stay[data-destination=garden]{background:transparent}
+.stay[data-destination=person]{background:transparent}
+.stay[data-destination=builder]{background:transparent}
+.stay[data-destination=thinker]{background:transparent}
+.stay[data-destination=leader]{background:transparent}
+.stay[data-destination=stories],.stay[data-destination=work],.stay[data-destination=future],.stay[data-destination=aura],.stay[data-destination=contact]{background:transparent;color:#f7f2e7}
 .stay{--measure-prose:none}
 :where(.stay) :where(h1,h2,h3,h4,h5,h6,p,li,figcaption){text-wrap:wrap}
-.stay[data-destination=stories]{background:#2b3324;color:#f0e6d3}
+.stay[data-destination=stories]{background:transparent;color:#f0e6d3}
 .stay[data-destination=stories] a{color:#e4d3ac}
 .stay[data-destination=stories] a:hover{color:#f7ecd6}
 .stay[data-destination=stories] :focus-visible{outline-color:#d8c49a}
@@ -46,26 +52,55 @@
 .mapColumns{display:flex;flex-wrap:wrap;gap:clamp(20px,3vw,34px);align-items:flex-start;overflow-y:auto;overflow-x:hidden;min-height:0}
 .planColumn{flex:1 1 430px;min-width:min(290px,100%);display:flex;justify-content:center}
 .plan{position:relative;width:min(100%,54vh);aspect-ratio:1;background:linear-gradient(168deg,#b3bd93 0%,#a2ad84 44%,#8d9971 100%);border:1px solid rgba(61,76,58,.3);border-radius:2px;overflow:hidden;will-change:transform;animation:lift 1050ms cubic-bezier(.2,.72,.16,1) both,focus 720ms ease both,resolve 560ms ease both}
-@keyframes lift{from{transform:scale(3)}to{transform:scale(1)}}
+@keyframes lift{from{transform:scale(.94)}to{transform:scale(1)}}
 @keyframes focus{from{filter:blur(4px)}to{filter:none}}
 @keyframes resolve{from{opacity:.35}to{opacity:1}}
 .planSvg,.planWash{position:absolute;inset:0;width:100%;height:100%}
 .planWash{background:radial-gradient(120% 100% at 50% 40%,rgba(255,252,240,.16),rgba(43,54,40,.2))}
 .mapNode:hover{transform:translate(-50%,-50%) scale(1.08)!important}
+.mapNode{min-width:48px;min-height:48px}
 .marker{position:absolute;width:22px;height:22px;margin:-11px 0 0 -11px;pointer-events:none}
 .marker span{position:absolute;inset:0;border:1.5px solid #f7f3ea;border-radius:50%;box-shadow:0 0 0 1px rgba(35,41,31,.5)}
 .marker span:last-child{animation:var(--stay-pulse) 2.8s ease-out infinite;box-shadow:none}
 .planCaption{position:absolute;left:12px;bottom:10px;margin:0;font:.56rem var(--font-meta-face),monospace;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,243,234,.72)}
 .mapList{flex:1 1 300px;min-width:min(270px,100%);animation:var(--stay-railin) 520ms 120ms ease both}
+.stay[data-stay-quiet] *,.stay[data-stay-quiet] *::before,.stay[data-stay-quiet] *::after{animation:none!important;transition:none!important}
+.fallbackAtlas{position:relative;z-index:60;margin:110px 24px 0;padding:16px;background:#eee8db;color:#23291f}
+.fallbackAtlas summary{cursor:pointer;min-height:44px}
+.fallbackAtlas nav{display:flex;flex-wrap:wrap;gap:12px 24px}
+.fallbackAtlas a{display:inline-flex;align-items:center;min-height:44px;color:inherit}
 .listHeading{margin:0 0 11px;font:.6rem var(--font-meta-face),monospace;letter-spacing:.24em;text-transform:uppercase;color:#6f7862}
 .destinationList{list-style:none;margin:0;padding:0}
 .destinationList li{border-top:1px solid rgba(61,76,58,.18)}
-.destinationList button:hover{background:rgba(61,76,58,.07)!important;padding-left:8px!important}
+.destinationList a:hover{background:rgba(61,76,58,.07)!important;padding-left:8px!important}
 .nodeNumber{font:.64rem var(--font-meta-face),monospace;letter-spacing:.16em;color:#8b9179;min-width:24px}
 .nodeText{display:flex;flex-direction:column;gap:2px;text-align:left}
 .nodeName{font:1.16rem/1.15 var(--font-display-face),Georgia,serif;color:#23291f}
 .nodeSub{font:.88rem var(--stay-body-face),Georgia,serif;color:#5b6350}
+.visitStatus{font:10px/1.4 var(--font-meta-face),monospace;letter-spacing:.06em;color:#3d4c3a}
 .availability{font:.92rem/1.6 var(--stay-body-face),Georgia,serif;color:#5b6350;margin:16px 0 0;max-width:36ch}
 @media(prefers-reduced-motion:reduce){.stay *,.stay *::before,.stay *::after{animation:none!important;transition:none!important}.scene [data-depth]{opacity:1!important;transform:none!important}}
 
 .stay{--stay-rise:stay-rise;--stay-emerge:stay-emerge;--stay-glowIn:stay-glowIn;--stay-breathe:stay-breathe;--stay-sway1:stay-sway1;--stay-sway2:stay-sway2;--stay-sway3:stay-sway3;--stay-blades:stay-blades;--stay-drift:stay-drift;--stay-ripple:stay-ripple;--stay-emberglow:stay-emberglow;--stay-sunshift:stay-sunshift;--stay-descend:stay-descend;--stay-plateIn:stay-plateIn;--stay-veilOut:stay-veilOut;--stay-mapin:stay-mapin;--stay-railin:stay-railin;--stay-pulse:stay-pulse;}
+
+/* Small wayfinding objects sit in the world without looking like cards. */
+.nav{padding:clamp(19px,2.5vw,35px) clamp(24px,4vw,56px)}
+.nav .plate{min-height:48px;border:1px solid rgba(235,228,209,.46);border-radius:0;background:rgba(20,38,31,.78);box-shadow:none;text-shadow:none;color:#f8f0e0!important;letter-spacing:.2em;backdrop-filter:blur(8px);transition:background .2s ease,border-color .2s ease}
+.nav .plate:hover{background:rgba(20,38,31,.94);color:#fff!important;border-color:#f8f0e0}
+.locationPlate{border:1px solid rgba(235,228,209,.34);border-radius:0;background:rgba(20,38,31,.72);box-shadow:none;text-shadow:none;backdrop-filter:blur(8px)}
+.locationText,.locationText small,.ordinal{color:#f8f0e0}
+.locationText small{opacity:.72}
+.ordinal{border-color:rgba(235,228,209,.3)}
+@media(max-width:767px){.nav{padding:14px 18px 136px;background:linear-gradient(180deg,rgba(19,39,31,.86),rgba(19,39,31,.62) 46%,transparent)}.location{display:none}}
+@media(max-width:767px){
+  .dialog{padding:16px 18px 0;align-items:stretch;overflow:hidden}
+  .dialog[open]{align-items:stretch}
+  .mapShell{height:100%;max-height:none;gap:0}
+  .mapHeading{flex:none;gap:10px;padding-bottom:14px}
+  .mapHeading h2{font-size:1.75rem}
+  .close{min-height:44px}
+  .mapColumns{display:block;flex:1;overflow-y:auto;overscroll-behavior:contain;padding:16px 0 28px}
+  .planColumn{display:block;min-width:0}
+  .plan{width:min(100%,390px);margin:auto}
+  .mapList{margin-top:22px}
+}

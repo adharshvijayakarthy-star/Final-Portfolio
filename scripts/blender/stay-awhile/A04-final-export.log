@@ -1,0 +1,60 @@
+00:07.391  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\08-aura.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+23:04:11 | INFO: Starting glTF 2.0 export
+23:04:12 | INFO: Extracting primitive: SA_A04_GEOMETRY_00
+23:04:12 | INFO: Primitives created: 1
+23:04:12 | INFO: Extracting primitive: SA_A04_GEOMETRY_01
+23:04:12 | INFO: Primitives created: 1
+23:04:12 | INFO: Extracting primitive: SA_A04_GEOMETRY_02
+23:04:12 | INFO: Primitives created: 1
+23:04:12 | INFO: Extracting primitive: SA_A04_GEOMETRY_03
+23:04:12 | INFO: Primitives created: 1
+23:04:12 | INFO: Extracting primitive: SA_A04_GEOMETRY_04
+23:04:12 | INFO: Primitives created: 1
+23:04:12 | INFO: Extracting primitive: SA_A04_GEOMETRY_05
+23:04:12 | INFO: Primitives created: 1
+23:04:12 | INFO: Extracting primitive: SA_A04_GEOMETRY_06
+23:04:12 | INFO: Primitives created: 1
+23:04:12 | INFO: Extracting primitive: SA_A04_GEOMETRY_07
+23:04:12 | INFO: Primitives created: 1
+23:04:12 | INFO: Extracting primitive: SA_A04_GEOMETRY_08
+23:04:12 | INFO: Primitives created: 1
+23:04:12 | INFO: Extracting primitive: SA_A04_GEOMETRY_09
+23:04:12 | INFO: Primitives created: 1
+23:04:12 | INFO: Extracting primitive: SA_A04_GEOMETRY_10
+23:04:12 | INFO: Primitives created: 1
+23:04:14 | INFO: Finished glTF 2.0 export in 2.198866844177246 s
+
+EXPORTED public\models\stay\v1\aura\model-spine.desktop.glb 46056
+23:04:14 | INFO: Starting glTF 2.0 export
+23:04:14 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_00
+23:04:14 | INFO: Primitives created: 1
+23:04:14 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_01
+23:04:14 | INFO: Primitives created: 1
+23:04:14 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_02
+23:04:14 | INFO: Primitives created: 1
+23:04:14 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_03
+23:04:14 | INFO: Primitives created: 1
+23:04:14 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_04
+23:04:14 | INFO: Primitives created: 1
+23:04:14 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_05
+23:04:14 | INFO: Primitives created: 1
+23:04:14 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_06
+23:04:14 | INFO: Primitives created: 1
+23:04:14 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_07
+23:04:14 | INFO: Primitives created: 1
+23:04:14 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_08
+23:04:14 | INFO: Primitives created: 1
+23:04:14 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_09
+23:04:14 | INFO: Primitives created: 1
+23:04:14 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_10
+23:04:14 | INFO: Primitives created: 1
+23:04:16 | INFO: Finished glTF 2.0 export in 1.941619873046875 s
+
+EXPORTED public\models\stay\v1\aura\model-spine.mobile.glb 26592
+PRODUCTION_PASS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

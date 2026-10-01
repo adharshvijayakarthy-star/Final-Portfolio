@@ -1,0 +1,645 @@
+{
+  "date": "2026-09-28",
+  "scope": "Blender and asset files only",
+  "masters": 10,
+  "logicalAssets": 47,
+  "desktopGlbs": 47,
+  "mobileGlbs": 47,
+  "authoredClips": 18,
+  "glbTotalBytes": 5067936,
+  "newSharedTextures": 26,
+  "newSharedTextureBytes": 1029151,
+  "khronosErrors": 0,
+  "khronosWarnings": 330,
+  "warningCode": "MESH_PRIMITIVE_GENERATED_TANGENT_SPACE",
+  "importedGlbs": 94,
+  "motionSamples": 1210,
+  "cameraSamples": 5760,
+  "cameraViolations": 0,
+  "websiteFilesProtected": 169,
+  "websiteChanges": [],
+  "posterCount": 20,
+  "sourceReviewImages": 70,
+  "renderReview": [
+    {
+      "route": "garden",
+      "view": "wide",
+      "path": ".aura-work/senior-art-pass/review/garden/wide.png",
+      "sha256": "6a5b5eed00e46be3f6ec0b433bcd293bbc745de41a2f65be3835cb45f6c4fa81"
+    },
+    {
+      "route": "garden",
+      "view": "primary",
+      "path": ".aura-work/senior-art-pass/review/garden/primary.png",
+      "sha256": "e13b492db170030fa8b474b83b95963db4e0184c65b1226575cefde965c02865"
+    },
+    {
+      "route": "garden",
+      "view": "landmark",
+      "path": ".aura-work/senior-art-pass/review/garden/landmark.png",
+      "sha256": "d230d02c14b43a1c2dfb6843d4207b4fab47883c6245b20e0278e38f1cad4b43"
+    },
+    {
+      "route": "garden",
+      "view": "close",
+      "path": ".aura-work/senior-art-pass/review/garden/close.png",
+      "sha256": "eacc3d84ee9370d28ed019570f8ae6378e02847beebd00a4f1a1f1778d79da83"
+    },
+    {
+      "route": "garden",
+      "view": "reverse",
+      "path": ".aura-work/senior-art-pass/review/garden/reverse.png",
+      "sha256": "7ac0d24d7ee791fc0f2d9c35c0497a4d4cbaf3913c245ced6e92fced6f62ae7a"
+    },
+    {
+      "route": "garden",
+      "view": "mobile",
+      "path": ".aura-work/senior-art-pass/review/garden/mobile.png",
+      "sha256": "f6ab0efcdf772b6bbac43ce9b13e5b73ee0dee2ee806fb802f7451f206fc0be7"
+    },
+    {
+      "route": "garden",
+      "view": "material",
+      "path": ".aura-work/senior-art-pass/review/garden/material.png",
+      "sha256": "8ee31becdf6346ba98bd1f807a5132513edc124eebf604caa514c9f3c60573db"
+    },
+    {
+      "route": "person",
+      "view": "wide",
+      "path": ".aura-work/senior-art-pass/review/person/wide.png",
+      "sha256": "f0cee2333c18652d948ea69773d329efe6e60c482af94d4b43bdf1d79494f482"
+    },
+    {
+      "route": "person",
+      "view": "primary",
+      "path": ".aura-work/senior-art-pass/review/person/primary.png",
+      "sha256": "cb015cee40c6fed1b1b41be7de63915d3277770d75a31e40075b7375550ee272"
+    },
+    {
+      "route": "person",
+      "view": "landmark",
+      "path": ".aura-work/senior-art-pass/review/person/landmark.png",
+      "sha256": "0e96208933ea394d8ec9687ae109b100649e14e858c7bd87d94292680c1e397d"
+    },
+    {
+      "route": "person",
+      "view": "close",
+      "path": ".aura-work/senior-art-pass/review/person/close.png",
+      "sha256": "9dc13615c18a75cb3200d0b627bda79a611f9b1fa9e911dbd6789e6f117e015d"
+    },
+    {
+      "route": "person",
+      "view": "reverse",
+      "path": ".aura-work/senior-art-pass/review/person/reverse.png",
+      "sha256": "31963a8117af744765c0e34338cb364f663d7b8e70f768f25a3919ddb13129a3"
+    },
+    {
+      "route": "person",
+      "view": "mobile",
+      "path": ".aura-work/senior-art-pass/review/person/mobile.png",
+      "sha256": "f3021274fba18bb34c22286acd3c4d25056dfbff980d56961ae37d0de8b6b014"
+    },
+    {
+      "route": "person",
+      "view": "material",
+      "path": ".aura-work/senior-art-pass/review/person/material.png",
+      "sha256": "d67c15202df1c6b47b3b8aa8df4030463913e86dce9e3cbd4727ee9a350e0e89"
+    },
+    {
+      "route": "builder",
+      "view": "wide",
+      "path": ".aura-work/senior-art-pass/review/builder/wide.png",
+      "sha256": "67ec43f7ade23ca4781675a68a5fe8cec350bfaebec5161487a39a434df632f4"
+    },
+    {
+      "route": "builder",
+      "view": "primary",
+      "path": ".aura-work/senior-art-pass/review/builder/primary.png",
+      "sha256": "c697fa69fe6bfb58faeb701da018d02574d85256668a98b9ece354db3e2287df"
+    },
+    {
+      "route": "builder",
+      "view": "landmark",
+      "path": ".aura-work/senior-art-pass/review/builder/landmark.png",
+      "sha256": "4157eb3d18ccbcae607f8279026de49cf1ae8081c4e5b07ef5b11672a324459a"
+    },
+    {
+      "route": "builder",
+      "view": "close",
+      "path": ".aura-work/senior-art-pass/review/builder/close.png",
+      "sha256": "decaa2eb060a981a0a09d0ee2f554db1ec6113398c2a48f7561cd904a46d6d8b"
+    },
+    {
+      "route": "builder",
+      "view": "reverse",
+      "path": ".aura-work/senior-art-pass/review/builder/reverse.png",
+      "sha256": "52eeb760a3953ac9783e56c3363cd278df065dc20ec141c7641652b9a35166c8"
+    },
+    {
+      "route": "builder",
+      "view": "mobile",
+      "path": ".aura-work/senior-art-pass/review/builder/mobile.png",
+      "sha256": "66b946a6a7174ec69cdf1f3670c48f418f49ab71ab5ed8082abd8df5b90f4a91"
+    },
+    {
+      "route": "builder",
+      "view": "material",
+      "path": ".aura-work/senior-art-pass/review/builder/material.png",
+      "sha256": "0a12b103b55c6744fc07248b79768bfeddf18869a3e56c566f5558093e1c13dd"
+    },
+    {
+      "route": "thinker",
+      "view": "wide",
+      "path": ".aura-work/senior-art-pass/review/thinker/wide.png",
+      "sha256": "6fd281583efa3224de507404b5542f2d900a23b99b1cd8d39764bf0530cfb935"
+    },
+    {
+      "route": "thinker",
+      "view": "primary",
+      "path": ".aura-work/senior-art-pass/review/thinker/primary.png",
+      "sha256": "3a07c8565238b15282922ff91d3fce16ecec02e4deb3ecb2586cf26b6730baf9"
+    },
+    {
+      "route": "thinker",
+      "view": "landmark",
+      "path": ".aura-work/senior-art-pass/review/thinker/landmark.png",
+      "sha256": "a8c4526a3159dcbed68fa0e09a1b15c779d3ae046c64dd103dd610fc61e46559"
+    },
+    {
+      "route": "thinker",
+      "view": "close",
+      "path": ".aura-work/senior-art-pass/review/thinker/close.png",
+      "sha256": "bb5f20118ad1f90555f255fd0cd00b065034072b74161f438e126d4b5545b71f"
+    },
+    {
+      "route": "thinker",
+      "view": "reverse",
+      "path": ".aura-work/senior-art-pass/review/thinker/reverse.png",
+      "sha256": "bf4379bdbc5760fc7358c2d408044945c5f2fcefda57158e51edb0c01574ada6"
+    },
+    {
+      "route": "thinker",
+      "view": "mobile",
+      "path": ".aura-work/senior-art-pass/review/thinker/mobile.png",
+      "sha256": "d738211f9f3115f013185af5dd653ab9ec313c30746b09af2db4580a65ac287c"
+    },
+    {
+      "route": "thinker",
+      "view": "material",
+      "path": ".aura-work/senior-art-pass/review/thinker/material.png",
+      "sha256": "39d26db61f749f37c4fc7b70ca809ac888ef4fd3b4797abd991251a7c3b09e40"
+    },
+    {
+      "route": "leader",
+      "view": "wide",
+      "path": ".aura-work/senior-art-pass/review/leader/wide.png",
+      "sha256": "76a3e7a779a5bbf41b1a84cbbb6ebf7e2d08488702abe11731635756a34ba029"
+    },
+    {
+      "route": "leader",
+      "view": "primary",
+      "path": ".aura-work/senior-art-pass/review/leader/primary.png",
+      "sha256": "f763c49813113a1ca72a4d76112493ce56a59f0dc874fa9b43acdf9df09eb23a"
+    },
+    {
+      "route": "leader",
+      "view": "landmark",
+      "path": ".aura-work/senior-art-pass/review/leader/landmark.png",
+      "sha256": "0f58b9e6ba71d6df0b56663421532e1cc2d056f6f5da17fd8c999e6035602ded"
+    },
+    {
+      "route": "leader",
+      "view": "close",
+      "path": ".aura-work/senior-art-pass/review/leader/close.png",
+      "sha256": "d9e69985340cbb39a879155066380e9df120acd9e27d01e2d8179ad1ededb323"
+    },
+    {
+      "route": "leader",
+      "view": "reverse",
+      "path": ".aura-work/senior-art-pass/review/leader/reverse.png",
+      "sha256": "34da7f8a4e5fb500fcd599290b65df882ac07cfdad183b181c350e2e22fd5617"
+    },
+    {
+      "route": "leader",
+      "view": "mobile",
+      "path": ".aura-work/senior-art-pass/review/leader/mobile.png",
+      "sha256": "8a9b13dd90676dbea56c5360bbd02cc97505789b9b8bca596d4b753d900fedba"
+    },
+    {
+      "route": "leader",
+      "view": "material",
+      "path": ".aura-work/senior-art-pass/review/leader/material.png",
+      "sha256": "8cb65faa7081860df7a4e17f4ba193e28afc230c448a0c44f487a36095439332"
+    },
+    {
+      "route": "stories",
+      "view": "wide",
+      "path": ".aura-work/senior-art-pass/review/stories/wide.png",
+      "sha256": "161524242d8e1469e98179dec0b3a13f2005cb2ee67a60309924808f0c9c57cb"
+    },
+    {
+      "route": "stories",
+      "view": "primary",
+      "path": ".aura-work/senior-art-pass/review/stories/primary.png",
+      "sha256": "8b4a573665c81b5106b039f57970c1fb5129ae737f35a05a5cfed666f26f6bdb"
+    },
+    {
+      "route": "stories",
+      "view": "landmark",
+      "path": ".aura-work/senior-art-pass/review/stories/landmark.png",
+      "sha256": "5bdf889da9b5d445e9395a41f48366b54c62a08ddc4b7d8add9f02e48ab8e6aa"
+    },
+    {
+      "route": "stories",
+      "view": "close",
+      "path": ".aura-work/senior-art-pass/review/stories/close.png",
+      "sha256": "d9796c76e9c27e60f4e3d49b5fd03c00012edd28508f666a1ad86417d4572e77"
+    },
+    {
+      "route": "stories",
+      "view": "reverse",
+      "path": ".aura-work/senior-art-pass/review/stories/reverse.png",
+      "sha256": "ad86e9140dceeeb8ff8d1461052e5f97b2a70fe7e3bab3ba9bef2b772a00e765"
+    },
+    {
+      "route": "stories",
+      "view": "mobile",
+      "path": ".aura-work/senior-art-pass/review/stories/mobile.png",
+      "sha256": "73e5cee96de7c8e471e36ce4003f7e401ee59f0ea79f6a4e62fb102c617fc2e1"
+    },
+    {
+      "route": "stories",
+      "view": "material",
+      "path": ".aura-work/senior-art-pass/review/stories/material.png",
+      "sha256": "f82810bfca17b500761687ec0bddfdf0371dfcf0258bab35e3b639955b9e3009"
+    },
+    {
+      "route": "work",
+      "view": "wide",
+      "path": ".aura-work/senior-art-pass/review/work/wide.png",
+      "sha256": "f90e69a82475f4084cae5878a81bce155baea44501b9fa21b65e28f79503561f"
+    },
+    {
+      "route": "work",
+      "view": "primary",
+      "path": ".aura-work/senior-art-pass/review/work/primary.png",
+      "sha256": "2f1aaca2af636334006368ad3b23729a2457e661128760a283154d7716827462"
+    },
+    {
+      "route": "work",
+      "view": "landmark",
+      "path": ".aura-work/senior-art-pass/review/work/landmark.png",
+      "sha256": "47d512253af14697bf77dd5541387196500c6825e6ee60d500ec2cd753ecabce"
+    },
+    {
+      "route": "work",
+      "view": "close",
+      "path": ".aura-work/senior-art-pass/review/work/close.png",
+      "sha256": "1ea6f9172e19dea0f602525a840ca2764d722798ce47eac8113cade3621948a5"
+    },
+    {
+      "route": "work",
+      "view": "reverse",
+      "path": ".aura-work/senior-art-pass/review/work/reverse.png",
+      "sha256": "f929de6c4c828663f01c0b726f20a4111ce29c93dc1fc0f50a5858a3e2f843f8"
+    },
+    {
+      "route": "work",
+      "view": "mobile",
+      "path": ".aura-work/senior-art-pass/review/work/mobile.png",
+      "sha256": "2d0e134f0dba20d67fa4e110f084a20942c45fa7c7cd9610a738aee57bce3829"
+    },
+    {
+      "route": "work",
+      "view": "material",
+      "path": ".aura-work/senior-art-pass/review/work/material.png",
+      "sha256": "dae899cb9b93e17d76c1d0542b20a1b7b3702545f134002381129dec29d3c67c"
+    },
+    {
+      "route": "future",
+      "view": "wide",
+      "path": ".aura-work/senior-art-pass/review/future/wide.png",
+      "sha256": "f40f6b13cc2fc1065e2a21e65780201e968095c32d18729ec39ff45d5ecc6b35"
+    },
+    {
+      "route": "future",
+      "view": "primary",
+      "path": ".aura-work/senior-art-pass/review/future/primary.png",
+      "sha256": "9146a4c1932f0a30515f041507403708550717aabac1bebff0a500b8c3636f46"
+    },
+    {
+      "route": "future",
+      "view": "landmark",
+      "path": ".aura-work/senior-art-pass/review/future/landmark.png",
+      "sha256": "bd9e8e15c115b8e7bf2a8d3802d52ba208490f63e1b024adff60e46c3dc935e3"
+    },
+    {
+      "route": "future",
+      "view": "close",
+      "path": ".aura-work/senior-art-pass/review/future/close.png",
+      "sha256": "bdcb98ef65ee48cf3b4efdbd1ad7bcfc0e5a396db7b2604610b82aa537094be2"
+    },
+    {
+      "route": "future",
+      "view": "reverse",
+      "path": ".aura-work/senior-art-pass/review/future/reverse.png",
+      "sha256": "f9458bed26ec501e7a60e281aeab00399dc75687d0cb164251e9454110a7be4a"
+    },
+    {
+      "route": "future",
+      "view": "mobile",
+      "path": ".aura-work/senior-art-pass/review/future/mobile.png",
+      "sha256": "8ca422138679bb7eac13e748e1594ab24a0cf81bfdecc5320afa10a4b5124893"
+    },
+    {
+      "route": "future",
+      "view": "material",
+      "path": ".aura-work/senior-art-pass/review/future/material.png",
+      "sha256": "02c72bc7662a51d1f29c60b1a4935fcad6ce5cd3584488e9eb61d3251c7c3b58"
+    },
+    {
+      "route": "aura",
+      "view": "wide",
+      "path": ".aura-work/senior-art-pass/review/aura/wide.png",
+      "sha256": "77856610976436dc41dac7efc142399ea63ea09dabd0c5805904170efddbc04b"
+    },
+    {
+      "route": "aura",
+      "view": "primary",
+      "path": ".aura-work/senior-art-pass/review/aura/primary.png",
+      "sha256": "8cbbdbab7d93ebcc8ef153d3760713dc754741649877a5b247e3d39be68aadaf"
+    },
+    {
+      "route": "aura",
+      "view": "landmark",
+      "path": ".aura-work/senior-art-pass/review/aura/landmark.png",
+      "sha256": "a51d763bc742c4325b1ea6c4a0dbcba5e7a699e9290bcfdd39fc5051d347e5f1"
+    },
+    {
+      "route": "aura",
+      "view": "close",
+      "path": ".aura-work/senior-art-pass/review/aura/close.png",
+      "sha256": "87c8cb7483c6e95992245bc18fbf64f6c8d22c4eb7b36ef74898ca56e5a0af83"
+    },
+    {
+      "route": "aura",
+      "view": "reverse",
+      "path": ".aura-work/senior-art-pass/review/aura/reverse.png",
+      "sha256": "1176b63326d1065e26ae74dab01534493d039113b610e96df63902d4734e3b18"
+    },
+    {
+      "route": "aura",
+      "view": "mobile",
+      "path": ".aura-work/senior-art-pass/review/aura/mobile.png",
+      "sha256": "0fafb6364e1fc519f8d91eb241a360db803dbe59cb7814397ba5c9ab6bf54ad0"
+    },
+    {
+      "route": "aura",
+      "view": "material",
+      "path": ".aura-work/senior-art-pass/review/aura/material.png",
+      "sha256": "cb5073e1ed6198c79b1658b86a6f687be4a544c2a83bdbd79fa2b8086faac835"
+    },
+    {
+      "route": "contact",
+      "view": "wide",
+      "path": ".aura-work/senior-art-pass/review/contact/wide.png",
+      "sha256": "520204b2a2ee911c31fd01b897ec28eb2783243a308d496a166fee7fc6b2cc0c"
+    },
+    {
+      "route": "contact",
+      "view": "primary",
+      "path": ".aura-work/senior-art-pass/review/contact/primary.png",
+      "sha256": "7bd3849a07daf0b0cdb1780c17cf086b351d05589ae3381f5aaa2cbeb69cbb2d"
+    },
+    {
+      "route": "contact",
+      "view": "landmark",
+      "path": ".aura-work/senior-art-pass/review/contact/landmark.png",
+      "sha256": "83bbfb04cd5c38e33572e5a5b9e5066aefb60a6956f3069312aaf9e00379061e"
+    },
+    {
+      "route": "contact",
+      "view": "close",
+      "path": ".aura-work/senior-art-pass/review/contact/close.png",
+      "sha256": "42e7257b2898c8989d6a2aec6ab20b08739e51da14d5271943c1bc1d1690d8af"
+    },
+    {
+      "route": "contact",
+      "view": "reverse",
+      "path": ".aura-work/senior-art-pass/review/contact/reverse.png",
+      "sha256": "7016ededbe36bde1da28acb28a2ab5301cb6878c97f72951439b44fa4ed8fa30"
+    },
+    {
+      "route": "contact",
+      "view": "mobile",
+      "path": ".aura-work/senior-art-pass/review/contact/mobile.png",
+      "sha256": "8ef2cc27cd42b372414bdb9902ac589c5692277c30e404b569c0ac22732f8459"
+    },
+    {
+      "route": "contact",
+      "view": "material",
+      "path": ".aura-work/senior-art-pass/review/contact/material.png",
+      "sha256": "df467c28d3aa7d8848a81f2ef4196c924d8294dc5ddb34e7bcfe055483558564"
+    }
+  ],
+  "sceneCounts": [
+    {
+      "route": "garden",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 65686,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 106
+        },
+        "mobile": {
+          "triangles": 19430,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 102
+        }
+      }
+    },
+    {
+      "route": "person",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 80526,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 117
+        },
+        "mobile": {
+          "triangles": 23776,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 110
+        }
+      }
+    },
+    {
+      "route": "builder",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 72264,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 144
+        },
+        "mobile": {
+          "triangles": 19497,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 144
+        }
+      }
+    },
+    {
+      "route": "thinker",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 65753,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 104
+        },
+        "mobile": {
+          "triangles": 19052,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 102
+        }
+      }
+    },
+    {
+      "route": "leader",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 64014,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 115
+        },
+        "mobile": {
+          "triangles": 19425,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 110
+        }
+      }
+    },
+    {
+      "route": "stories",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 71499,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 147
+        },
+        "mobile": {
+          "triangles": 21765,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 147
+        }
+      }
+    },
+    {
+      "route": "work",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 73586,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 148
+        },
+        "mobile": {
+          "triangles": 22296,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 140
+        }
+      }
+    },
+    {
+      "route": "future",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 38964,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 36
+        },
+        "mobile": {
+          "triangles": 11857,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 36
+        }
+      }
+    },
+    {
+      "route": "aura",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 73153,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 158
+        },
+        "mobile": {
+          "triangles": 22159,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 143
+        }
+      }
+    },
+    {
+      "route": "contact",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 23988,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 37
+        },
+        "mobile": {
+          "triangles": 7896,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 33
+        }
+      }
+    }
+  ],
+  "limits": [
+    "330 tangent-space portability advisories remain.",
+    "Browser performance, lifecycle and visual acceptance not tested.",
+    "Whole-scene unbatched primitive counts are not measured visible browser draw calls."
+  ],
+  "reports": [
+    "SENIOR_ART_PASS_REPORT.md",
+    "SENIOR_VISUAL_AUDIT.md",
+    "validation-report.json",
+    "master-handoff-validation.json",
+    "senior-integrity.json",
+    "senior-roundtrip.json",
+    "khronos-validation.json",
+    "motion-validation.json",
+    "rail-validation.json",
+    "poster-review.json",
+    "astra-v2-final-package-check.json"
+  ]
+}

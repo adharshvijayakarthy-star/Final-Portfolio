@@ -1,0 +1,1453 @@
+00:03.219  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+22:54:13 | INFO: Starting glTF 2.0 export
+22:54:13 | INFO: Extracting primitive: SA_G01_GEOMETRY_00
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Finished glTF 2.0 export in 0.09865665435791016 s
+
+EXPORTED public\models\stay\v1\garden\terrain.desktop.glb 224436
+22:54:13 | INFO: Starting glTF 2.0 export
+22:54:13 | INFO: Extracting primitive: SA_G01_MOBILEGEOMETRY_00
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Finished glTF 2.0 export in 0.02107524871826172 s
+
+EXPORTED public\models\stay\v1\garden\terrain.mobile.glb 63684
+22:54:13 | INFO: Starting glTF 2.0 export
+22:54:13 | INFO: Extracting primitive: SA_G02_GEOMETRY_01
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Extracting primitive: SA_G02_GEOMETRY_02
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Extracting primitive: SA_G02_GEOMETRY_00
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Finished glTF 2.0 export in 0.017705440521240234 s
+
+EXPORTED public\models\stay\v1\garden\path-kit.desktop.glb 31884
+22:54:13 | INFO: Starting glTF 2.0 export
+22:54:13 | INFO: Extracting primitive: SA_G02_MOBILEGEOMETRY_01
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Extracting primitive: SA_G02_MOBILEGEOMETRY_02
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Extracting primitive: SA_G02_MOBILEGEOMETRY_00
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Finished glTF 2.0 export in 0.02244257926940918 s
+
+EXPORTED public\models\stay\v1\garden\path-kit.mobile.glb 24700
+22:54:13 | INFO: Starting glTF 2.0 export
+22:54:13 | INFO: Extracting primitive: SA_G03_GEOMETRY_00
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Extracting primitive: SA_G03_GEOMETRY_01
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Extracting primitive: SA_G03_GEOMETRY_02
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Extracting primitive: SA_G03_GEOMETRY_03
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Extracting primitive: SA_G03_GEOMETRY_04
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Extracting primitive: SA_G03_GEOMETRY_05
+22:54:13 | INFO: Primitives created: 1
+22:54:13 | INFO: Extracting primitive: SA_G03_GEOMETRY_06
+22:54:13 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.13683557510375977 s
+
+EXPORTED public\models\stay\v1\garden\sakura-canopy.desktop.glb 113492
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_02
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_03
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_04
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_05
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G03_MOBILEGEOMETRY_06
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.031231164932250977 s
+
+EXPORTED public\models\stay\v1\garden\sakura-canopy.mobile.glb 45008
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G04_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G04_GEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.015544414520263672 s
+
+EXPORTED public\models\stay\v1\garden\bush-kit.desktop.glb 10312
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G04_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G04_MOBILEGEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.015912294387817383 s
+
+EXPORTED public\models\stay\v1\garden\bush-kit.mobile.glb 5800
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G05_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G05_GEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G05_GEOMETRY_02
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.017803430557250977 s
+
+EXPORTED public\models\stay\v1\garden\grass-kit.desktop.glb 12220
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G05_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G05_MOBILEGEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G05_MOBILEGEOMETRY_02
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.018163442611694336 s
+
+EXPORTED public\models\stay\v1\garden\grass-kit.mobile.glb 6176
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G06_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G06_GEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G06_GEOMETRY_02
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G06_GEOMETRY_03
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.020026683807373047 s
+
+EXPORTED public\models\stay\v1\garden\stone-kit.desktop.glb 11496
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G06_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G06_MOBILEGEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G06_MOBILEGEOMETRY_02
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G06_MOBILEGEOMETRY_03
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.019660472869873047 s
+
+EXPORTED public\models\stay\v1\garden\stone-kit.mobile.glb 6332
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G07_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.013374805450439453 s
+
+EXPORTED public\models\stay\v1\garden\water-plane.desktop.glb 3268
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G07_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.012953519821166992 s
+
+EXPORTED public\models\stay\v1\garden\water-plane.mobile.glb 2868
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G08_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G08_GEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G08_GEOMETRY_02
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G08_GEOMETRY_03
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.028155088424682617 s
+
+EXPORTED public\models\stay\v1\garden\lantern-kit.desktop.glb 66572
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G08_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G08_MOBILEGEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G08_MOBILEGEOMETRY_02
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G08_MOBILEGEOMETRY_03
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.06633329391479492 s
+
+EXPORTED public\models\stay\v1\garden\lantern-kit.mobile.glb 26136
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G09_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.014326810836791992 s
+
+EXPORTED public\models\stay\v1\garden\horizon-ring.desktop.glb 22528
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G09_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.012537240982055664 s
+
+EXPORTED public\models\stay\v1\garden\horizon-ring.mobile.glb 8800
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G10_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G10_GEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G10_GEOMETRY_02
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.01735377311706543 s
+
+EXPORTED public\models\stay\v1\garden\foreground-fronds.desktop.glb 7668
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G10_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G10_MOBILEGEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G10_MOBILEGEOMETRY_02
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.017072439193725586 s
+
+EXPORTED public\models\stay\v1\garden\foreground-fronds.mobile.glb 5668
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G11_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.013679981231689453 s
+
+EXPORTED public\models\stay\v1\garden\distant-tree-bank.desktop.glb 10796
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G11_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.013674497604370117 s
+
+EXPORTED public\models\stay\v1\garden\distant-tree-bank.mobile.glb 7500
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G12_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G12_GEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.01656055450439453 s
+
+EXPORTED public\models\stay\v1\garden\petal-kit.desktop.glb 2736
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G12_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G12_MOBILEGEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.015935182571411133 s
+
+EXPORTED public\models\stay\v1\garden\petal-kit.mobile.glb 2748
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G13_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G13_GEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.018554210662841797 s
+
+EXPORTED public\models\stay\v1\garden\arrival-gate.desktop.glb 48532
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G13_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G13_MOBILEGEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.01788783073425293 s
+
+EXPORTED public\models\stay\v1\garden\arrival-gate.mobile.glb 19028
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G14_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G14_GEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.020076274871826172 s
+
+EXPORTED public\models\stay\v1\garden\wayfinding-stone.desktop.glb 50888
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_G14_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_G14_MOBILEGEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.018291473388671875 s
+
+EXPORTED public\models\stay\v1\garden\wayfinding-stone.mobile.glb 27088
+00:05.000  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\01-person.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_P01_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_P01_GEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.04041171073913574 s
+
+EXPORTED public\models\stay\v1\person\clearing-ground.desktop.glb 94720
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_P01_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_P01_MOBILEGEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.032773494720458984 s
+
+EXPORTED public\models\stay\v1\person\clearing-ground.mobile.glb 36016
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_P02_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_P02_GEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.02945709228515625 s
+
+EXPORTED public\models\stay\v1\person\paired-bench.desktop.glb 43760
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_P02_MOBILEGEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Extracting primitive: SA_P02_MOBILEGEOMETRY_01
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.022548198699951172 s
+
+EXPORTED public\models\stay\v1\person\paired-bench.mobile.glb 16972
+22:54:14 | INFO: Starting glTF 2.0 export
+22:54:14 | INFO: Extracting primitive: SA_P03_GEOMETRY_00
+22:54:14 | INFO: Primitives created: 1
+22:54:14 | INFO: Finished glTF 2.0 export in 0.01602792739868164 s
+
+EXPORTED public\models\stay\v1\person\root-arch.desktop.glb 43168
+22:54:15 | INFO: Starting glTF 2.0 export
+22:54:15 | INFO: Extracting primitive: SA_P03_MOBILEGEOMETRY_00
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Finished glTF 2.0 export in 0.01731395721435547 s
+
+EXPORTED public\models\stay\v1\person\root-arch.mobile.glb 19244
+00:05.313  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\02-builder.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:54:15 | INFO: Starting glTF 2.0 export
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_00
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_01
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_02
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_03
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_04
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_05
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_06
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_07
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_08
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_09
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_10
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_GEOMETRY_11
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Finished glTF 2.0 export in 0.5525281429290771 s
+
+EXPORTED public\models\stay\v1\builder\foundation.desktop.glb 41252
+22:54:15 | INFO: Starting glTF 2.0 export
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_00
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_01
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_02
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_03
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_04
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_05
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_06
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_07
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_08
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_09
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_10
+22:54:15 | INFO: Primitives created: 1
+22:54:15 | INFO: Extracting primitive: SA_B01_MOBILEGEOMETRY_11
+22:54:15 | INFO: Primitives created: 1
+22:54:16 | INFO: Finished glTF 2.0 export in 0.5351641178131104 s
+
+EXPORTED public\models\stay\v1\builder\foundation.mobile.glb 27060
+22:54:16 | INFO: Starting glTF 2.0 export
+22:54:16 | INFO: Extracting primitive: SA_B02_GEOMETRY_00
+22:54:16 | INFO: Primitives created: 1
+22:54:16 | INFO: Extracting primitive: SA_B02_GEOMETRY_01
+22:54:16 | INFO: Primitives created: 1
+22:54:16 | INFO: Extracting primitive: SA_B02_GEOMETRY_02
+22:54:16 | INFO: Primitives created: 1
+22:54:16 | INFO: Extracting primitive: SA_B02_GEOMETRY_03
+22:54:16 | INFO: Primitives created: 1
+22:54:16 | INFO: Extracting primitive: SA_B02_GEOMETRY_04
+22:54:16 | INFO: Primitives created: 1
+22:54:16 | INFO: Extracting primitive: SA_B02_GEOMETRY_05
+22:54:16 | INFO: Primitives created: 1
+22:54:16 | INFO: Finished glTF 2.0 export in 0.576448917388916 s
+
+EXPORTED public\models\stay\v1\builder\posts.desktop.glb 78120
+22:54:16 | INFO: Starting glTF 2.0 export
+22:54:16 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_00
+22:54:16 | INFO: Primitives created: 1
+22:54:16 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_01
+22:54:16 | INFO: Primitives created: 1
+22:54:16 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_02
+22:54:16 | INFO: Primitives created: 1
+22:54:16 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_03
+22:54:16 | INFO: Primitives created: 1
+22:54:16 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_04
+22:54:16 | INFO: Primitives created: 1
+22:54:16 | INFO: Extracting primitive: SA_B02_MOBILEGEOMETRY_05
+22:54:16 | INFO: Primitives created: 1
+22:54:17 | INFO: Finished glTF 2.0 export in 0.6038615703582764 s
+
+EXPORTED public\models\stay\v1\builder\posts.mobile.glb 40348
+22:54:17 | INFO: Starting glTF 2.0 export
+22:54:17 | INFO: Extracting primitive: SA_B03_GEOMETRY_00
+22:54:17 | INFO: Primitives created: 1
+22:54:17 | INFO: Extracting primitive: SA_B03_GEOMETRY_01
+22:54:17 | INFO: Primitives created: 1
+22:54:17 | INFO: Extracting primitive: SA_B03_GEOMETRY_02
+22:54:17 | INFO: Primitives created: 1
+22:54:17 | INFO: Extracting primitive: SA_B03_GEOMETRY_03
+22:54:17 | INFO: Primitives created: 1
+22:54:17 | INFO: Extracting primitive: SA_B03_GEOMETRY_04
+22:54:17 | INFO: Primitives created: 1
+22:54:17 | INFO: Extracting primitive: SA_B03_GEOMETRY_05
+22:54:17 | INFO: Primitives created: 1
+22:54:17 | INFO: Extracting primitive: SA_B03_GEOMETRY_06
+22:54:17 | INFO: Primitives created: 1
+22:54:18 | INFO: Finished glTF 2.0 export in 0.7674262523651123 s
+
+EXPORTED public\models\stay\v1\builder\beams.desktop.glb 77356
+22:54:18 | INFO: Starting glTF 2.0 export
+22:54:18 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_00
+22:54:18 | INFO: Primitives created: 1
+22:54:18 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_01
+22:54:18 | INFO: Primitives created: 1
+22:54:18 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_02
+22:54:18 | INFO: Primitives created: 1
+22:54:18 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_03
+22:54:18 | INFO: Primitives created: 1
+22:54:18 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_04
+22:54:18 | INFO: Primitives created: 1
+22:54:18 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_05
+22:54:18 | INFO: Primitives created: 1
+22:54:18 | INFO: Extracting primitive: SA_B03_MOBILEGEOMETRY_06
+22:54:18 | INFO: Primitives created: 1
+22:54:19 | INFO: Finished glTF 2.0 export in 0.7521865367889404 s
+
+EXPORTED public\models\stay\v1\builder\beams.mobile.glb 36708
+22:54:19 | INFO: Starting glTF 2.0 export
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_00
+22:54:19 | INFO: Primitives created: 1
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_01
+22:54:19 | INFO: Primitives created: 1
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_02
+22:54:19 | INFO: Primitives created: 1
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_03
+22:54:19 | INFO: Primitives created: 1
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_04
+22:54:19 | INFO: Primitives created: 1
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_05
+22:54:19 | INFO: Primitives created: 1
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_06
+22:54:19 | INFO: Primitives created: 1
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_07
+22:54:19 | INFO: Primitives created: 1
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_08
+22:54:19 | INFO: Primitives created: 1
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_09
+22:54:19 | INFO: Primitives created: 1
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_10
+22:54:19 | INFO: Primitives created: 1
+22:54:19 | INFO: Extracting primitive: SA_B04_GEOMETRY_11
+22:54:19 | INFO: Primitives created: 1
+22:54:20 | INFO: Finished glTF 2.0 export in 1.228762149810791 s
+
+EXPORTED public\models\stay\v1\builder\roof-slats.desktop.glb 98504
+22:54:20 | INFO: Starting glTF 2.0 export
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_00
+22:54:20 | INFO: Primitives created: 1
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_01
+22:54:20 | INFO: Primitives created: 1
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_02
+22:54:20 | INFO: Primitives created: 1
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_03
+22:54:20 | INFO: Primitives created: 1
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_04
+22:54:20 | INFO: Primitives created: 1
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_05
+22:54:20 | INFO: Primitives created: 1
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_06
+22:54:20 | INFO: Primitives created: 1
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_07
+22:54:20 | INFO: Primitives created: 1
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_08
+22:54:20 | INFO: Primitives created: 1
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_09
+22:54:20 | INFO: Primitives created: 1
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_10
+22:54:20 | INFO: Primitives created: 1
+22:54:20 | INFO: Extracting primitive: SA_B04_MOBILEGEOMETRY_11
+22:54:20 | INFO: Primitives created: 1
+22:54:21 | INFO: Finished glTF 2.0 export in 1.2193653583526611 s
+
+EXPORTED public\models\stay\v1\builder\roof-slats.mobile.glb 43480
+22:54:21 | INFO: Starting glTF 2.0 export
+22:54:21 | INFO: Extracting primitive: SA_B05_GEOMETRY_00
+22:54:21 | INFO: Primitives created: 1
+22:54:21 | INFO: Extracting primitive: SA_B05_GEOMETRY_01
+22:54:21 | INFO: Primitives created: 1
+22:54:21 | INFO: Finished glTF 2.0 export in 0.08660125732421875 s
+
+EXPORTED public\models\stay\v1\builder\workbench.desktop.glb 64360
+22:54:21 | INFO: Starting glTF 2.0 export
+22:54:21 | INFO: Extracting primitive: SA_B05_MOBILEGEOMETRY_00
+22:54:21 | INFO: Primitives created: 1
+22:54:21 | INFO: Extracting primitive: SA_B05_MOBILEGEOMETRY_01
+22:54:21 | INFO: Primitives created: 1
+22:54:21 | INFO: Finished glTF 2.0 export in 0.11504673957824707 s
+
+EXPORTED public\models\stay\v1\builder\workbench.mobile.glb 25648
+22:54:21 | INFO: Starting glTF 2.0 export
+22:54:21 | INFO: Extracting primitive: SA_B06_GEOMETRY_00
+22:54:21 | INFO: Primitives created: 1
+22:54:21 | INFO: Extracting primitive: SA_B06_GEOMETRY_01
+22:54:21 | INFO: Primitives created: 1
+22:54:21 | INFO: Extracting primitive: SA_B06_GEOMETRY_02
+22:54:21 | INFO: Primitives created: 1
+22:54:21 | INFO: Extracting primitive: SA_B06_GEOMETRY_03
+22:54:21 | INFO: Primitives created: 1
+22:54:21 | INFO: Extracting primitive: SA_B06_GEOMETRY_04
+22:54:21 | INFO: Primitives created: 1
+22:54:21 | INFO: Extracting primitive: SA_B06_GEOMETRY_05
+22:54:21 | INFO: Primitives created: 1
+22:54:21 | INFO: Extracting primitive: SA_B06_GEOMETRY_06
+22:54:21 | INFO: Primitives created: 1
+22:54:22 | INFO: Finished glTF 2.0 export in 0.5988664627075195 s
+
+EXPORTED public\models\stay\v1\builder\artifact-tokens.desktop.glb 110612
+22:54:22 | INFO: Starting glTF 2.0 export
+22:54:22 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_00
+22:54:22 | INFO: Primitives created: 1
+22:54:22 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_01
+22:54:22 | INFO: Primitives created: 1
+22:54:22 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_02
+22:54:22 | INFO: Primitives created: 1
+22:54:22 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_03
+22:54:22 | INFO: Primitives created: 1
+22:54:22 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_04
+22:54:22 | INFO: Primitives created: 1
+22:54:22 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_05
+22:54:22 | INFO: Primitives created: 1
+22:54:22 | INFO: Extracting primitive: SA_B06_MOBILEGEOMETRY_06
+22:54:22 | INFO: Primitives created: 1
+22:54:23 | INFO: Finished glTF 2.0 export in 0.5774767398834229 s
+
+EXPORTED public\models\stay\v1\builder\artifact-tokens.mobile.glb 40236
+00:13.454  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\03-thinker.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:54:23 | INFO: Starting glTF 2.0 export
+22:54:23 | INFO: Extracting primitive: SA_T01_GEOMETRY_00
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Finished glTF 2.0 export in 0.02710747718811035 s
+
+EXPORTED public\models\stay\v1\thinker\tea-deck.desktop.glb 114864
+22:54:23 | INFO: Starting glTF 2.0 export
+22:54:23 | INFO: Extracting primitive: SA_T01_MOBILEGEOMETRY_00
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Finished glTF 2.0 export in 0.02029585838317871 s
+
+EXPORTED public\models\stay\v1\thinker\tea-deck.mobile.glb 36208
+22:54:23 | INFO: Starting glTF 2.0 export
+22:54:23 | INFO: Extracting primitive: SA_T02_GEOMETRY_00
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_GEOMETRY_01
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_GEOMETRY_02
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_GEOMETRY_03
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_GEOMETRY_04
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_GEOMETRY_05
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_GEOMETRY_06
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Finished glTF 2.0 export in 0.03228950500488281 s
+
+EXPORTED public\models\stay\v1\thinker\freedom-stones.desktop.glb 14024
+22:54:23 | INFO: Starting glTF 2.0 export
+22:54:23 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_00
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_01
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_02
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_03
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_04
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_05
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T02_MOBILEGEOMETRY_06
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Finished glTF 2.0 export in 0.030601024627685547 s
+
+EXPORTED public\models\stay\v1\thinker\freedom-stones.mobile.glb 11232
+22:54:23 | INFO: Starting glTF 2.0 export
+22:54:23 | INFO: Extracting primitive: SA_T03_GEOMETRY_02
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T03_GEOMETRY_00
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T03_GEOMETRY_01
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Finished glTF 2.0 export in 0.046607017517089844 s
+
+EXPORTED public\models\stay\v1\thinker\tea-bowl-scroll.desktop.glb 43704
+22:54:23 | INFO: Starting glTF 2.0 export
+22:54:23 | INFO: Extracting primitive: SA_T03_MOBILEGEOMETRY_02
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T03_MOBILEGEOMETRY_00
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_T03_MOBILEGEOMETRY_01
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Finished glTF 2.0 export in 0.04259371757507324 s
+
+EXPORTED public\models\stay\v1\thinker\tea-bowl-scroll.mobile.glb 20600
+00:13.797  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\04-leader.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:54:23 | INFO: Starting glTF 2.0 export
+22:54:23 | INFO: Extracting primitive: SA_L01_GEOMETRY_01
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L01_GEOMETRY_02
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L01_GEOMETRY_03
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L01_GEOMETRY_00
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Finished glTF 2.0 export in 0.03202319145202637 s
+
+EXPORTED public\models\stay\v1\leader\courtyard.desktop.glb 72072
+22:54:23 | INFO: Starting glTF 2.0 export
+22:54:23 | INFO: Extracting primitive: SA_L01_MOBILEGEOMETRY_01
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L01_MOBILEGEOMETRY_02
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L01_MOBILEGEOMETRY_03
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L01_MOBILEGEOMETRY_00
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Finished glTF 2.0 export in 0.03707265853881836 s
+
+EXPORTED public\models\stay\v1\leader\courtyard.mobile.glb 42720
+22:54:23 | INFO: Starting glTF 2.0 export
+22:54:23 | INFO: Extracting primitive: SA_L02_GEOMETRY_00
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_GEOMETRY_01
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_GEOMETRY_02
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_GEOMETRY_03
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_GEOMETRY_04
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_GEOMETRY_05
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_GEOMETRY_06
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_GEOMETRY_07
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_GEOMETRY_08
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_GEOMETRY_09
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Finished glTF 2.0 export in 0.16685891151428223 s
+
+EXPORTED public\models\stay\v1\leader\coordination-posts.desktop.glb 70640
+22:54:23 | INFO: Starting glTF 2.0 export
+22:54:23 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_00
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_01
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_02
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_03
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_04
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_05
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_06
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_07
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_08
+22:54:23 | INFO: Primitives created: 1
+22:54:23 | INFO: Extracting primitive: SA_L02_MOBILEGEOMETRY_09
+22:54:23 | INFO: Primitives created: 1
+22:54:24 | INFO: Finished glTF 2.0 export in 0.21185898780822754 s
+
+EXPORTED public\models\stay\v1\leader\coordination-posts.mobile.glb 35592
+22:54:24 | INFO: Starting glTF 2.0 export
+22:54:24 | INFO: Extracting primitive: SA_L03_GEOMETRY_01
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_GEOMETRY_02
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_GEOMETRY_03
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_GEOMETRY_04
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_GEOMETRY_05
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_GEOMETRY_06
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_GEOMETRY_00
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Finished glTF 2.0 export in 0.11934375762939453 s
+
+EXPORTED public\models\stay\v1\leader\lesson-rail.desktop.glb 68104
+22:54:24 | INFO: Starting glTF 2.0 export
+22:54:24 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_01
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_02
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_03
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_04
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_05
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_06
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_L03_MOBILEGEOMETRY_00
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Finished glTF 2.0 export in 0.07274627685546875 s
+
+EXPORTED public\models\stay\v1\leader\lesson-rail.mobile.glb 29584
+00:14.625  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\05-stories.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:54:24 | INFO: Starting glTF 2.0 export
+22:54:24 | INFO: Extracting primitive: SA_S01_GEOMETRY_00
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S01_GEOMETRY_01
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S01_GEOMETRY_02
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S01_GEOMETRY_03
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S01_GEOMETRY_04
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Finished glTF 2.0 export in 0.030251741409301758 s
+
+EXPORTED public\models\stay\v1\stories\lantern-path.desktop.glb 56216
+22:54:24 | INFO: Starting glTF 2.0 export
+22:54:24 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_00
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_01
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_02
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_03
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_04
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Finished glTF 2.0 export in 0.03791189193725586 s
+
+EXPORTED public\models\stay\v1\stories\lantern-path.mobile.glb 43964
+22:54:24 | INFO: Starting glTF 2.0 export
+22:54:24 | INFO: Extracting primitive: SA_S02_GEOMETRY_00
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S02_GEOMETRY_01
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S02_GEOMETRY_02
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S02_GEOMETRY_03
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S02_GEOMETRY_04
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Finished glTF 2.0 export in 0.06726551055908203 s
+
+EXPORTED public\models\stay\v1\stories\story-lantern.desktop.glb 69596
+22:54:24 | INFO: Starting glTF 2.0 export
+22:54:24 | INFO: Extracting primitive: SA_S02_MOBILEGEOMETRY_00
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S02_MOBILEGEOMETRY_01
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S02_MOBILEGEOMETRY_02
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S02_MOBILEGEOMETRY_03
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S02_MOBILEGEOMETRY_04
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Finished glTF 2.0 export in 0.08667755126953125 s
+
+EXPORTED public\models\stay\v1\stories\story-lantern.mobile.glb 28964
+22:54:24 | INFO: Starting glTF 2.0 export
+22:54:24 | INFO: Extracting primitive: SA_S03_GEOMETRY_00
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S03_GEOMETRY_01
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S03_GEOMETRY_02
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S03_GEOMETRY_03
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S03_GEOMETRY_04
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S03_GEOMETRY_05
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Finished glTF 2.0 export in 0.04428529739379883 s
+
+EXPORTED public\models\stay\v1\stories\path-screen.desktop.glb 136580
+22:54:24 | INFO: Starting glTF 2.0 export
+22:54:24 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_00
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_01
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_02
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_03
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_04
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Extracting primitive: SA_S03_MOBILEGEOMETRY_05
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Finished glTF 2.0 export in 0.05148577690124512 s
+
+EXPORTED public\models\stay\v1\stories\path-screen.mobile.glb 44376
+00:15.125  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\06-work.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:54:24 | INFO: Starting glTF 2.0 export
+22:54:24 | INFO: Extracting primitive: SA_W01_GEOMETRY_00
+22:54:24 | INFO: Primitives created: 1
+22:54:24 | INFO: Finished glTF 2.0 export in 0.04223918914794922 s
+
+EXPORTED public\models\stay\v1\work\archive-pavilion.desktop.glb 147536
+22:54:25 | INFO: Starting glTF 2.0 export
+22:54:25 | INFO: Extracting primitive: SA_W01_MOBILEGEOMETRY_00
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Finished glTF 2.0 export in 0.03552746772766113 s
+
+EXPORTED public\models\stay\v1\work\archive-pavilion.mobile.glb 44300
+22:54:25 | INFO: Starting glTF 2.0 export
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_14
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_00
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_01
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_02
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_03
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_04
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_05
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_06
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_07
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_08
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_09
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_10
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_11
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_12
+22:54:25 | INFO: Primitives created: 1
+22:54:25 | INFO: Extracting primitive: SA_W02_GEOMETRY_13
+22:54:25 | INFO: Primitives created: 1
+22:54:28 | INFO: Finished glTF 2.0 export in 3.456239700317383 s
+
+EXPORTED public\models\stay\v1\work\planner-station.desktop.glb 141260
+22:54:28 | INFO: Starting glTF 2.0 export
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_14
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_00
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_01
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_02
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_03
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_04
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_05
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_06
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_07
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_08
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_09
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_10
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_11
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_12
+22:54:28 | INFO: Primitives created: 1
+22:54:28 | INFO: Extracting primitive: SA_W02_MOBILEGEOMETRY_13
+22:54:28 | INFO: Primitives created: 1
+22:54:33 | INFO: Finished glTF 2.0 export in 4.707622289657593 s
+
+EXPORTED public\models\stay\v1\work\planner-station.mobile.glb 65544
+22:54:33 | INFO: Starting glTF 2.0 export
+22:54:33 | INFO: Extracting primitive: SA_W03_GEOMETRY_00
+22:54:33 | INFO: Primitives created: 1
+22:54:33 | INFO: Extracting primitive: SA_W03_GEOMETRY_01
+22:54:33 | INFO: Primitives created: 1
+22:54:33 | INFO: Extracting primitive: SA_W03_GEOMETRY_02
+22:54:33 | INFO: Primitives created: 1
+22:54:33 | INFO: Extracting primitive: SA_W03_GEOMETRY_03
+22:54:33 | INFO: Primitives created: 1
+22:54:33 | INFO: Extracting primitive: SA_W03_GEOMETRY_04
+22:54:33 | INFO: Primitives created: 1
+22:54:34 | INFO: Finished glTF 2.0 export in 1.3682069778442383 s
+
+EXPORTED public\models\stay\v1\work\logger-station.desktop.glb 77692
+22:54:34 | INFO: Starting glTF 2.0 export
+22:54:34 | INFO: Extracting primitive: SA_W03_MOBILEGEOMETRY_00
+22:54:35 | INFO: Primitives created: 1
+22:54:35 | INFO: Extracting primitive: SA_W03_MOBILEGEOMETRY_01
+22:54:35 | INFO: Primitives created: 1
+22:54:35 | INFO: Extracting primitive: SA_W03_MOBILEGEOMETRY_02
+22:54:35 | INFO: Primitives created: 1
+22:54:35 | INFO: Extracting primitive: SA_W03_MOBILEGEOMETRY_03
+22:54:35 | INFO: Primitives created: 1
+22:54:35 | INFO: Extracting primitive: SA_W03_MOBILEGEOMETRY_04
+22:54:35 | INFO: Primitives created: 1
+22:54:36 | INFO: Finished glTF 2.0 export in 1.4251792430877686 s
+
+EXPORTED public\models\stay\v1\work\logger-station.mobile.glb 31504
+22:54:36 | INFO: Starting glTF 2.0 export
+22:54:36 | INFO: Extracting primitive: SA_W04_GEOMETRY_05
+22:54:36 | INFO: Primitives created: 1
+22:54:36 | INFO: Extracting primitive: SA_W04_GEOMETRY_00
+22:54:36 | INFO: Primitives created: 1
+22:54:36 | INFO: Extracting primitive: SA_W04_GEOMETRY_04
+22:54:36 | INFO: Primitives created: 1
+22:54:36 | INFO: Extracting primitive: SA_W04_GEOMETRY_01
+22:54:36 | INFO: Primitives created: 1
+22:54:36 | INFO: Extracting primitive: SA_W04_GEOMETRY_02
+22:54:36 | INFO: Primitives created: 1
+22:54:36 | INFO: Extracting primitive: SA_W04_GEOMETRY_03
+22:54:36 | INFO: Primitives created: 1
+22:54:38 | INFO: Finished glTF 2.0 export in 1.684321403503418 s
+
+EXPORTED public\models\stay\v1\work\mun-station.desktop.glb 84948
+22:54:38 | INFO: Starting glTF 2.0 export
+22:54:38 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_05
+22:54:38 | INFO: Primitives created: 1
+22:54:38 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_00
+22:54:38 | INFO: Primitives created: 1
+22:54:38 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_04
+22:54:38 | INFO: Primitives created: 1
+22:54:38 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_01
+22:54:38 | INFO: Primitives created: 1
+22:54:38 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_02
+22:54:38 | INFO: Primitives created: 1
+22:54:38 | INFO: Extracting primitive: SA_W04_MOBILEGEOMETRY_03
+22:54:38 | INFO: Primitives created: 1
+22:54:39 | INFO: Finished glTF 2.0 export in 1.618950605392456 s
+
+EXPORTED public\models\stay\v1\work\mun-station.mobile.glb 33716
+22:54:39 | INFO: Starting glTF 2.0 export
+22:54:39 | INFO: Extracting primitive: SA_W05_GEOMETRY_00
+22:54:39 | INFO: Primitives created: 1
+22:54:39 | INFO: Extracting primitive: SA_W05_GEOMETRY_01
+22:54:39 | INFO: Primitives created: 1
+22:54:39 | INFO: Extracting primitive: SA_W05_GEOMETRY_02
+22:54:39 | INFO: Primitives created: 1
+22:54:39 | INFO: Extracting primitive: SA_W05_GEOMETRY_03
+22:54:39 | INFO: Primitives created: 1
+22:54:40 | INFO: Finished glTF 2.0 export in 0.6441607475280762 s
+
+EXPORTED public\models\stay\v1\work\snrled-station.desktop.glb 48436
+22:54:40 | INFO: Starting glTF 2.0 export
+22:54:40 | INFO: Extracting primitive: SA_W05_MOBILEGEOMETRY_00
+22:54:40 | INFO: Primitives created: 1
+22:54:40 | INFO: Extracting primitive: SA_W05_MOBILEGEOMETRY_01
+22:54:40 | INFO: Primitives created: 1
+22:54:40 | INFO: Extracting primitive: SA_W05_MOBILEGEOMETRY_02
+22:54:40 | INFO: Primitives created: 1
+22:54:40 | INFO: Extracting primitive: SA_W05_MOBILEGEOMETRY_03
+22:54:40 | INFO: Primitives created: 1
+22:54:41 | INFO: Finished glTF 2.0 export in 0.7419321537017822 s
+
+EXPORTED public\models\stay\v1\work\snrled-station.mobile.glb 23168
+22:54:41 | INFO: Starting glTF 2.0 export
+22:54:41 | INFO: Extracting primitive: SA_W06_GEOMETRY_00
+22:54:41 | INFO: Primitives created: 1
+22:54:41 | INFO: Extracting primitive: SA_W06_GEOMETRY_01
+22:54:41 | INFO: Primitives created: 1
+22:54:41 | INFO: Extracting primitive: SA_W06_GEOMETRY_02
+22:54:41 | INFO: Primitives created: 1
+22:54:41 | INFO: Extracting primitive: SA_W06_GEOMETRY_03
+22:54:41 | INFO: Primitives created: 1
+22:54:41 | INFO: Extracting primitive: SA_W06_GEOMETRY_04
+22:54:41 | INFO: Primitives created: 1
+22:54:41 | INFO: Extracting primitive: SA_W06_GEOMETRY_05
+22:54:41 | INFO: Primitives created: 1
+22:54:44 | INFO: Finished glTF 2.0 export in 3.2929296493530273 s
+
+EXPORTED public\models\stay\v1\work\aura-station.desktop.glb 84048
+22:54:44 | INFO: Starting glTF 2.0 export
+22:54:44 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_00
+22:54:44 | INFO: Primitives created: 1
+22:54:44 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_01
+22:54:44 | INFO: Primitives created: 1
+22:54:44 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_02
+22:54:44 | INFO: Primitives created: 1
+22:54:44 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_03
+22:54:44 | INFO: Primitives created: 1
+22:54:44 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_04
+22:54:44 | INFO: Primitives created: 1
+22:54:44 | INFO: Extracting primitive: SA_W06_MOBILEGEOMETRY_05
+22:54:44 | INFO: Primitives created: 1
+22:54:48 | INFO: Finished glTF 2.0 export in 3.3028273582458496 s
+
+EXPORTED public\models\stay\v1\work\aura-station.mobile.glb 36148
+00:38.422  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\07-future.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:54:48 | INFO: Starting glTF 2.0 export
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_01
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_02
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_03
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_04
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_05
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_06
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_07
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_08
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_09
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_10
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_11
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_12
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_13
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_14
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_15
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_16
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_17
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_18
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_19
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_20
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_21
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_22
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_23
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_24
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_25
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_26
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_27
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_28
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_29
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_30
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_31
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_32
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_33
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_34
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_35
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_36
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_GEOMETRY_00
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Finished glTF 2.0 export in 0.4024474620819092 s
+
+EXPORTED public\models\stay\v1\future\opening-canopy.desktop.glb 396208
+22:54:48 | INFO: Starting glTF 2.0 export
+22:54:48 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_01
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_02
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_03
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_04
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_05
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_06
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_07
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_08
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_09
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_10
+22:54:48 | INFO: Primitives created: 1
+22:54:48 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_11
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_12
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_13
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_14
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_15
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_16
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_17
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_18
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_19
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_20
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_21
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_22
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_23
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_24
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_25
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_26
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_27
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_28
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_29
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_30
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_31
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_32
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_33
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_34
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_35
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_36
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_F01_MOBILEGEOMETRY_00
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Finished glTF 2.0 export in 0.3131859302520752 s
+
+EXPORTED public\models\stay\v1\future\opening-canopy.mobile.glb 160632
+22:54:49 | INFO: Starting glTF 2.0 export
+22:54:49 | INFO: Extracting primitive: SA_F02_GEOMETRY_00
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Finished glTF 2.0 export in 0.03695487976074219 s
+
+EXPORTED public\models\stay\v1\future\horizon-path.desktop.glb 3848
+22:54:49 | INFO: Starting glTF 2.0 export
+22:54:49 | INFO: Extracting primitive: SA_F02_MOBILEGEOMETRY_00
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Finished glTF 2.0 export in 0.03789854049682617 s
+
+EXPORTED public\models\stay\v1\future\horizon-path.mobile.glb 2480
+22:54:49 | INFO: Starting glTF 2.0 export
+22:54:49 | INFO: Extracting primitive: SA_F03_GEOMETRY_00
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Finished glTF 2.0 export in 0.038544416427612305 s
+
+EXPORTED public\models\stay\v1\future\distant-marker.desktop.glb 3728
+22:54:49 | INFO: Starting glTF 2.0 export
+22:54:49 | INFO: Extracting primitive: SA_F03_MOBILEGEOMETRY_00
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Finished glTF 2.0 export in 0.021658897399902344 s
+
+EXPORTED public\models\stay\v1\future\distant-marker.mobile.glb 2320
+00:39.797  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\08-aura.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:54:49 | INFO: Starting glTF 2.0 export
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_00
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_01
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_02
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_03
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_04
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_05
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_06
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_07
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_08
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_09
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_10
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_11
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_12
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_13
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_14
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_15
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_16
+22:54:49 | INFO: Primitives created: 1
+22:54:49 | INFO: Extracting primitive: SA_A01_GEOMETRY_17
+22:54:49 | INFO: Primitives created: 1
+22:54:53 | INFO: Finished glTF 2.0 export in 3.3551206588745117 s
+
+EXPORTED public\models\stay\v1\aura\archive-frame.desktop.glb 306596
+22:54:53 | INFO: Starting glTF 2.0 export
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_00
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_01
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_02
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_03
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_04
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_05
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_06
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_07
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_08
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_09
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_10
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_11
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_12
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_13
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_14
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_15
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_16
+22:54:53 | INFO: Primitives created: 1
+22:54:53 | INFO: Extracting primitive: SA_A01_MOBILEGEOMETRY_17
+22:54:53 | INFO: Primitives created: 1
+22:54:57 | INFO: Finished glTF 2.0 export in 3.697772264480591 s
+
+EXPORTED public\models\stay\v1\aura\archive-frame.mobile.glb 108712
+22:54:57 | INFO: Starting glTF 2.0 export
+22:54:57 | INFO: Extracting primitive: SA_A02_GEOMETRY_00
+22:54:57 | INFO: Primitives created: 1
+22:54:57 | INFO: Extracting primitive: SA_A02_GEOMETRY_01
+22:54:57 | INFO: Primitives created: 1
+22:54:57 | INFO: Extracting primitive: SA_A02_GEOMETRY_02
+22:54:57 | INFO: Primitives created: 1
+22:54:57 | INFO: Extracting primitive: SA_A02_GEOMETRY_03
+22:54:57 | INFO: Primitives created: 1
+22:54:57 | INFO: Extracting primitive: SA_A02_GEOMETRY_04
+22:54:57 | INFO: Primitives created: 1
+22:54:57 | INFO: Extracting primitive: SA_A02_GEOMETRY_05
+22:54:57 | INFO: Primitives created: 1
+22:54:57 | INFO: Extracting primitive: SA_A02_GEOMETRY_06
+22:54:57 | INFO: Primitives created: 1
+22:54:57 | INFO: Extracting primitive: SA_A02_GEOMETRY_07
+22:54:57 | INFO: Primitives created: 1
+22:54:57 | INFO: Extracting primitive: SA_A02_GEOMETRY_08
+22:54:57 | INFO: Primitives created: 1
+22:55:02 | INFO: Finished glTF 2.0 export in 5.153965950012207 s
+
+EXPORTED public\models\stay\v1\aura\evidence-documents.desktop.glb 93656
+22:55:02 | INFO: Starting glTF 2.0 export
+22:55:02 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_00
+22:55:02 | INFO: Primitives created: 1
+22:55:02 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_01
+22:55:02 | INFO: Primitives created: 1
+22:55:02 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_02
+22:55:02 | INFO: Primitives created: 1
+22:55:02 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_03
+22:55:02 | INFO: Primitives created: 1
+22:55:02 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_04
+22:55:02 | INFO: Primitives created: 1
+22:55:02 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_05
+22:55:02 | INFO: Primitives created: 1
+22:55:02 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_06
+22:55:02 | INFO: Primitives created: 1
+22:55:02 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_07
+22:55:02 | INFO: Primitives created: 1
+22:55:02 | INFO: Extracting primitive: SA_A02_MOBILEGEOMETRY_08
+22:55:02 | INFO: Primitives created: 1
+22:55:06 | INFO: Finished glTF 2.0 export in 3.9644558429718018 s
+
+EXPORTED public\models\stay\v1\aura\evidence-documents.mobile.glb 73428
+22:55:06 | INFO: Starting glTF 2.0 export
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_00
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_01
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_02
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_03
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_04
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_05
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_06
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_07
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_08
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_09
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_10
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_GEOMETRY_11
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Finished glTF 2.0 export in 0.17029929161071777 s
+
+EXPORTED public\models\stay\v1\aura\relationship-filaments.desktop.glb 31708
+22:55:06 | INFO: Starting glTF 2.0 export
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_00
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_01
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_02
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_03
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_04
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_05
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_06
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_07
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_08
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_09
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_10
+22:55:06 | INFO: Primitives created: 1
+22:55:06 | INFO: Extracting primitive: SA_A03_MOBILEGEOMETRY_11
+22:55:06 | INFO: Primitives created: 1
+22:55:07 | INFO: Finished glTF 2.0 export in 0.1327364444732666 s
+
+EXPORTED public\models\stay\v1\aura\relationship-filaments.mobile.glb 18296
+22:55:07 | INFO: Starting glTF 2.0 export
+22:55:07 | INFO: Extracting primitive: SA_A04_GEOMETRY_00
+22:55:07 | INFO: Primitives created: 1
+22:55:07 | INFO: Extracting primitive: SA_A04_GEOMETRY_01
+22:55:07 | INFO: Primitives created: 1
+22:55:07 | INFO: Extracting primitive: SA_A04_GEOMETRY_02
+22:55:07 | INFO: Primitives created: 1
+22:55:07 | INFO: Extracting primitive: SA_A04_GEOMETRY_03
+22:55:07 | INFO: Primitives created: 1
+22:55:07 | INFO: Extracting primitive: SA_A04_GEOMETRY_04
+22:55:07 | INFO: Primitives created: 1
+22:55:07 | INFO: Extracting primitive: SA_A04_GEOMETRY_05
+22:55:07 | INFO: Primitives created: 1
+22:55:07 | INFO: Extracting primitive: SA_A04_GEOMETRY_06
+22:55:07 | INFO: Primitives created: 1
+22:55:07 | INFO: Extracting primitive: SA_A04_GEOMETRY_07
+22:55:07 | INFO: Primitives created: 1
+22:55:07 | INFO: Extracting primitive: SA_A04_GEOMETRY_08
+22:55:07 | INFO: Primitives created: 1
+22:55:07 | INFO: Extracting primitive: SA_A04_GEOMETRY_09
+22:55:07 | INFO: Primitives created: 1
+22:55:07 | INFO: Extracting primitive: SA_A04_GEOMETRY_10
+22:55:07 | INFO: Primitives created: 1
+22:55:09 | INFO: Finished glTF 2.0 export in 2.0339958667755127 s
+
+EXPORTED public\models\stay\v1\aura\model-spine.desktop.glb 72964
+22:55:09 | INFO: Starting glTF 2.0 export
+22:55:09 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_00
+22:55:09 | INFO: Primitives created: 1
+22:55:09 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_01
+22:55:09 | INFO: Primitives created: 1
+22:55:09 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_02
+22:55:09 | INFO: Primitives created: 1
+22:55:09 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_03
+22:55:09 | INFO: Primitives created: 1
+22:55:09 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_04
+22:55:09 | INFO: Primitives created: 1
+22:55:09 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_05
+22:55:09 | INFO: Primitives created: 1
+22:55:09 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_06
+22:55:09 | INFO: Primitives created: 1
+22:55:09 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_07
+22:55:09 | INFO: Primitives created: 1
+22:55:09 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_08
+22:55:09 | INFO: Primitives created: 1
+22:55:09 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_09
+22:55:09 | INFO: Primitives created: 1
+22:55:09 | INFO: Extracting primitive: SA_A04_MOBILEGEOMETRY_10
+22:55:09 | INFO: Primitives created: 1
+22:55:11 | INFO: Finished glTF 2.0 export in 1.8204495906829834 s
+
+EXPORTED public\models\stay\v1\aura\model-spine.mobile.glb 35024
+01:01.391  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\09-contact.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+22:55:11 | INFO: Starting glTF 2.0 export
+22:55:11 | INFO: Extracting primitive: SA_C01_GEOMETRY_00
+22:55:11 | INFO: Primitives created: 1
+22:55:11 | INFO: Finished glTF 2.0 export in 0.027342796325683594 s
+
+EXPORTED public\models\stay\v1\contact\open-ground.desktop.glb 50028
+22:55:11 | INFO: Starting glTF 2.0 export
+22:55:11 | INFO: Extracting primitive: SA_C01_MOBILEGEOMETRY_00
+22:55:11 | INFO: Primitives created: 1
+22:55:11 | INFO: Finished glTF 2.0 export in 0.016519784927368164 s
+
+EXPORTED public\models\stay\v1\contact\open-ground.mobile.glb 15208
+22:55:11 | INFO: Starting glTF 2.0 export
+22:55:11 | INFO: Extracting primitive: SA_C02_GEOMETRY_00
+22:55:11 | INFO: Primitives created: 1
+22:55:11 | INFO: Finished glTF 2.0 export in 0.013160228729248047 s
+
+EXPORTED public\models\stay\v1\contact\resting-stone.desktop.glb 7148
+22:55:11 | INFO: Starting glTF 2.0 export
+22:55:11 | INFO: Extracting primitive: SA_C02_MOBILEGEOMETRY_00
+22:55:11 | INFO: Primitives created: 1
+22:55:11 | INFO: Finished glTF 2.0 export in 0.019392728805541992 s
+
+EXPORTED public\models\stay\v1\contact\resting-stone.mobile.glb 2744
+PRODUCTION_PASS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

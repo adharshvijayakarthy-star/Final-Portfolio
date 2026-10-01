@@ -1,0 +1,3653 @@
+{
+  "specification": {
+    "path": "PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+    "sha256": "1f89f2ca50ff42da80a52275a504c0a0a3c6060a01352e5428f287b278bebabc",
+    "freshExtractionMatches": true
+  },
+  "masters": [
+    {
+      "route": "garden",
+      "path": "scripts/blender/stay-awhile/00-garden.blend",
+      "sha256": "90ef7c43f8527f1be464d297088678e04af978d03b2456a4370b8827a582d4cf",
+      "matchesPreviousValidation": false,
+      "matchesFinalFirstFourValidation": true
+    },
+    {
+      "route": "person",
+      "path": "scripts/blender/stay-awhile/01-person.blend",
+      "sha256": "3072ad3ce2468739e017d1a45c3d660c630c4b6bddefaff90eb755464e588aab",
+      "matchesPreviousValidation": false,
+      "matchesFinalFirstFourValidation": true
+    },
+    {
+      "route": "builder",
+      "path": "scripts/blender/stay-awhile/02-builder.blend",
+      "sha256": "3194f8b53ab1eda70c65f3d63699abc728545754a05f13c0ebe628966f5c80f7",
+      "matchesPreviousValidation": false,
+      "matchesFinalFirstFourValidation": true
+    },
+    {
+      "route": "thinker",
+      "path": "scripts/blender/stay-awhile/03-thinker.blend",
+      "sha256": "2ce082944af452e7685aed3cebf787f6a0575a065bc1d014d566311ba9e16152",
+      "matchesPreviousValidation": false,
+      "matchesFinalFirstFourValidation": true
+    },
+    {
+      "route": "leader",
+      "path": "scripts/blender/stay-awhile/04-leader.blend",
+      "sha256": "f4e091a64ad50340b022f07c8905195e46933181ce51fbd3aee1ee3d0732900c",
+      "matchesPreviousValidation": true
+    },
+    {
+      "route": "stories",
+      "path": "scripts/blender/stay-awhile/05-stories.blend",
+      "sha256": "93ef2ba80654b6bdf76c8955dc3ec08aa637cfdf35d0f454ea0e254b23d6c414",
+      "matchesPreviousValidation": true
+    },
+    {
+      "route": "work",
+      "path": "scripts/blender/stay-awhile/06-work.blend",
+      "sha256": "69d8cbb4ea06d9453cc917b2a6dbfa48b69708989710cd49cccf1fecebfe4d67",
+      "matchesPreviousValidation": true
+    },
+    {
+      "route": "future",
+      "path": "scripts/blender/stay-awhile/07-future.blend",
+      "sha256": "efc5aabeb303a429d38795901d09dcb1e2b978cfe5e02fbf19544b6ffb6ac2ba",
+      "matchesPreviousValidation": true
+    },
+    {
+      "route": "aura",
+      "path": "scripts/blender/stay-awhile/08-aura.blend",
+      "sha256": "bcdc3b27aa832ae3dc6f9dd90ed18ad9429f3fa1b4619beb3b7eecf53fcb1f59",
+      "matchesPreviousValidation": true
+    },
+    {
+      "route": "contact",
+      "path": "scripts/blender/stay-awhile/09-contact.blend",
+      "sha256": "e8e5ab49144b02d3a46545621131065fa32b4d930a1d4a30f0b2c2a0d3cb5fde",
+      "matchesPreviousValidation": true
+    }
+  ],
+  "assets": [
+    {
+      "assetId": "G01",
+      "expected": "Terrain",
+      "actual": "Terrain",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/terrain.desktop.glb",
+          "sha256": "03dca3baed07fd25056b6d50f41d7af6d8a89821ba1f99d7038503dd8374d7a0",
+          "triangles": 16494,
+          "triangleCap": 18000,
+          "bytes": 346272,
+          "byteCap": 348160,
+          "clips": [],
+          "materials": [
+            "SA_M_MOSS",
+            "SA_M_STONE",
+            "SA_M_BARK",
+            "SA_M_SAKURA",
+            "SA_M_LEAF"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/terrain.mobile.glb",
+          "sha256": "ff8703bc8a64a8f418794520a71b9f8a4a68440c7026953dc32f06fe8de22091",
+          "triangles": 4832,
+          "triangleCap": 5000,
+          "bytes": 126728,
+          "byteCap": 156672,
+          "clips": [],
+          "materials": [
+            "SA_M_MOSS",
+            "SA_M_STONE",
+            "SA_M_BARK_MOBILE",
+            "SA_M_SAKURA",
+            "SA_M_LEAF"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G02",
+      "expected": "Path Kit",
+      "actual": "Path Kit",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/path-kit.desktop.glb",
+          "sha256": "3d7153c685807a89e3bd63fcd4ce7ea683c16a0cdfc66db17c28405e3c960b92",
+          "triangles": 1191,
+          "triangleCap": 1600,
+          "bytes": 49680,
+          "byteCap": 87040,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_LEAF"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/path-kit.mobile.glb",
+          "sha256": "f58671fa6a67f5e1aea531c6fa4c0acfc0739d97ae00ef7b276c6b8a48c3cb86",
+          "triangles": 594,
+          "triangleCap": 600,
+          "bytes": 26108,
+          "byteCap": 39936,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G03",
+      "expected": "Sakura Canopy",
+      "actual": "Sakura Canopy",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/sakura-canopy.desktop.glb",
+          "sha256": "d6ffc0dfa27803626ba43cc122c1137781b74c9a42a55e30a12a0cee37d9d4d7",
+          "triangles": 4392,
+          "triangleCap": 12000,
+          "bytes": 119348,
+          "byteCap": 430080,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_SAKURA"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/sakura-canopy.mobile.glb",
+          "sha256": "cf109acaa0f0e3c9b99acf8e9265b39adb1a6a3aee7167ba3ba7d4ad6b78b246",
+          "triangles": 1552,
+          "triangleCap": 3600,
+          "bytes": 49352,
+          "byteCap": 193536,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK_MOBILE",
+            "SA_M_SAKURA"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G04",
+      "expected": "Bush Kit",
+      "actual": "Bush Kit",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/bush-kit.desktop.glb",
+          "sha256": "0fe97dc099ef0b5b3fd973d81697f834bed73f885b9fbcab7a14d8e54004ef5a",
+          "triangles": 872,
+          "triangleCap": 1100,
+          "bytes": 42664,
+          "byteCap": 56320,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_LEAF"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/bush-kit.mobile.glb",
+          "sha256": "ab3127770e1736c98e2b0cc1626f1a7defb41d3bb46091eb4a3ab7a32277825b",
+          "triangles": 240,
+          "triangleCap": 300,
+          "bytes": 17172,
+          "byteCap": 25600,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK_MOBILE",
+            "SA_M_LEAF"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G05",
+      "expected": "Grass Kit",
+      "actual": "Grass Kit",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/grass-kit.desktop.glb",
+          "sha256": "8110f05e37b334aac7d0a32eb1d52bd1bdfa756b88b9fcbc02731d7603cbb7a0",
+          "triangles": 240,
+          "triangleCap": 240,
+          "bytes": 9248,
+          "byteCap": 18432,
+          "clips": [],
+          "materials": [
+            "SA_M_LEAF"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/grass-kit.mobile.glb",
+          "sha256": "78a92fbfb4bbde395fc7268ae06effba80dfd04d142147d3a9e1444706ce44b4",
+          "triangles": 72,
+          "triangleCap": 72,
+          "bytes": 5212,
+          "byteCap": 9216,
+          "clips": [],
+          "materials": [
+            "SA_M_LEAF"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G06",
+      "expected": "Stone Kit",
+      "actual": "Stone Kit",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/stone-kit.desktop.glb",
+          "sha256": "32823aa60a793c0d3f401802bffcb694f98c4f72388c33fffec9d56ecab6a019",
+          "triangles": 216,
+          "triangleCap": 1200,
+          "bytes": 12492,
+          "byteCap": 61440,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/stone-kit.mobile.glb",
+          "sha256": "19c3fc9945890954baf7bdf173decaf99216f289f7db34afe8f8d29c45cdd578",
+          "triangles": 132,
+          "triangleCap": 320,
+          "bytes": 9500,
+          "byteCap": 27648,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G07",
+      "expected": "Water Plane",
+      "actual": "Water Plane",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/water-plane.desktop.glb",
+          "sha256": "6fdb4130159683f90881860af8e15b7467337ee179d1a89e4b4b096ef8419a04",
+          "triangles": 162,
+          "triangleCap": 256,
+          "bytes": 4376,
+          "byteCap": 24576,
+          "clips": [],
+          "materials": [
+            "SA_M_WATER"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/water-plane.mobile.glb",
+          "sha256": "d53c8cfffcd476c99a158197183fb7fbe727e4ad353609b99323f59ad4c6bc7c",
+          "triangles": 18,
+          "triangleCap": 32,
+          "bytes": 2160,
+          "byteCap": 11264,
+          "clips": [],
+          "materials": [
+            "SA_M_WATER"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G08",
+      "expected": "Lantern Kit",
+      "actual": "Lantern Kit",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/lantern-kit.desktop.glb",
+          "sha256": "dc9619fd1dbb33b7779412d9dba5d189a78c2b44574d367f13d3f30c7c88d072",
+          "triangles": 344,
+          "triangleCap": 1100,
+          "bytes": 37504,
+          "byteCap": 66560,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_BARK",
+            "SA_M_LIGHT",
+            "SA_M_PAPER"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/lantern-kit.mobile.glb",
+          "sha256": "e3d3c40af291a88673c512c7c03fcf03b739511c26ae24a911090d31494c9ffb",
+          "triangles": 120,
+          "triangleCap": 400,
+          "bytes": 16380,
+          "byteCap": 30720,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_BARK_MOBILE",
+            "SA_M_LIGHT",
+            "SA_M_PAPER_MOBILE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G09",
+      "expected": "Horizon Ring",
+      "actual": "Horizon Ring",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/horizon-ring.desktop.glb",
+          "sha256": "70d42ce39fc0b10a69ec0bd046bcb285a3fff5dee59e4f102c02b9af7900a369",
+          "triangles": 992,
+          "triangleCap": 1200,
+          "bytes": 16496,
+          "byteCap": 56320,
+          "clips": [],
+          "materials": [
+            "SA_M_DISTANT"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/horizon-ring.mobile.glb",
+          "sha256": "7f7da15a00e1bca1a2ebff579b15260116c354b75708aca871fa5d94aecf6106",
+          "triangles": 336,
+          "triangleCap": 480,
+          "bytes": 7060,
+          "byteCap": 25600,
+          "clips": [],
+          "materials": [
+            "SA_M_DISTANT"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G10",
+      "expected": "Foreground Fronds",
+      "actual": "Foreground Fronds",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/foreground-fronds.desktop.glb",
+          "sha256": "4908c90a7e2608b22881725071bbd7c9ea5f705d83df6d49370f2e7da7d9e724",
+          "triangles": 108,
+          "triangleCap": 1500,
+          "bytes": 5692,
+          "byteCap": 71680,
+          "clips": [],
+          "materials": [
+            "SA_M_LEAF"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/foreground-fronds.mobile.glb",
+          "sha256": "556a936fdaf63c6bd1067ada19683ba0b2d1f3ae8c9b013c9314e0ebfd3e937e",
+          "triangles": 60,
+          "triangleCap": 400,
+          "bytes": 4648,
+          "byteCap": 32768,
+          "clips": [],
+          "materials": [
+            "SA_M_LEAF"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G11",
+      "expected": "Distant Tree Bank",
+      "actual": "Distant Tree Bank",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/distant-tree-bank.desktop.glb",
+          "sha256": "ef171d4fb7a9c49e4b8630432ac66e9f7661da94f3219667d53a124a0102a326",
+          "triangles": 2142,
+          "triangleCap": 2400,
+          "bytes": 82732,
+          "byteCap": 112640,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_DISTANT"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/distant-tree-bank.mobile.glb",
+          "sha256": "11219bd1c2268891651448418e156d51f4a439fbcbea24d89a8038e03b35e562",
+          "triangles": 410,
+          "triangleCap": 650,
+          "bytes": 20224,
+          "byteCap": 51200,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK_MOBILE",
+            "SA_M_DISTANT"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G12",
+      "expected": "Petal Kit",
+      "actual": "Petal Kit",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/petal-kit.desktop.glb",
+          "sha256": "c1da8c7f6225795d0f2ddf7b40231d113d9d9a26c37717948fe9f2a1233ba3a9",
+          "triangles": 8,
+          "triangleCap": 48,
+          "bytes": 2720,
+          "byteCap": 8192,
+          "clips": [],
+          "materials": [
+            "SA_M_SAKURA"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/petal-kit.mobile.glb",
+          "sha256": "44e6d8a42e95244de05eda1ddbd6d7218cd456b2c04148c185ed5923668629ea",
+          "triangles": 8,
+          "triangleCap": 24,
+          "bytes": 2732,
+          "byteCap": 4096,
+          "clips": [],
+          "materials": [
+            "SA_M_SAKURA"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G13",
+      "expected": "Arrival Gate",
+      "actual": "Arrival Gate",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/arrival-gate.desktop.glb",
+          "sha256": "d01437e3ac9b62ac95ae01405c3c9f13e348c672985d05c5e5089a4e409a5aec",
+          "triangles": 208,
+          "triangleCap": 2600,
+          "bytes": 23620,
+          "byteCap": 117760,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_MOSS"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/arrival-gate.mobile.glb",
+          "sha256": "ac5b060b0e1b1f95c255d099a3e85047c65c16a87eceb5778437fd40953ba3e7",
+          "triangles": 112,
+          "triangleCap": 900,
+          "bytes": 10064,
+          "byteCap": 53248,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK_MOBILE",
+            "SA_M_MOSS"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "G14",
+      "expected": "Wayfinding Stone",
+      "actual": "Wayfinding Stone",
+      "sourceBlend": "scripts/blender/stay-awhile/00-garden.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/garden/wayfinding-stone.desktop.glb",
+          "sha256": "cae76c05ed1b9db92a8df435ec0e77e201ec36c917e9c9ba6ee476e29061a104",
+          "triangles": 634,
+          "triangleCap": 1800,
+          "bytes": 37740,
+          "byteCap": 81920,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_BARK",
+            "SA_M_MOSS"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/garden/wayfinding-stone.mobile.glb",
+          "sha256": "b9de46e935d30a23966cd6ffb7fe6211576939db6559cca7c81f3b2e428f5ec8",
+          "triangles": 303,
+          "triangleCap": 600,
+          "bytes": 20616,
+          "byteCap": 36864,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_BARK_MOBILE",
+            "SA_M_MOSS"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "P01",
+      "expected": "Clearing Ground",
+      "actual": "Clearing Ground",
+      "sourceBlend": "scripts/blender/stay-awhile/01-person.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/person/clearing-ground.desktop.glb",
+          "sha256": "087288d5f903ff02fe59cb1f911a98eb302bbbdaa831c2f1cc2b15e1a2c39623",
+          "triangles": 3584,
+          "triangleCap": 4000,
+          "bytes": 106716,
+          "byteCap": 174080,
+          "clips": [],
+          "materials": [
+            "SA_M_MOSS",
+            "SA_M_BARK",
+            "SA_M_STONE",
+            "SA_M_LEAF"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/person/clearing-ground.mobile.glb",
+          "sha256": "cd8ca520a7c4a168a51037457f629a12babad1bc45deb27a8f794cb9d9e042e1",
+          "triangles": 1036,
+          "triangleCap": 1100,
+          "bytes": 41352,
+          "byteCap": 78848,
+          "clips": [],
+          "materials": [
+            "SA_M_MOSS",
+            "SA_M_BARK_MOBILE",
+            "SA_M_STONE",
+            "SA_M_LEAF"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "P02",
+      "expected": "Paired Bench",
+      "actual": "Paired Bench",
+      "sourceBlend": "scripts/blender/stay-awhile/01-person.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/person/paired-bench.desktop.glb",
+          "sha256": "774b08861c19eb7c5652f75c6e919735595cb25526590f9946e235a0c7e5ee8f",
+          "triangles": 396,
+          "triangleCap": 1800,
+          "bytes": 27892,
+          "byteCap": 92160,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_BARK"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/person/paired-bench.mobile.glb",
+          "sha256": "dd781b522272198ecf19e1c5c342f1aa4535c723fcb4357692870a8721f5d646",
+          "triangles": 208,
+          "triangleCap": 650,
+          "bytes": 15412,
+          "byteCap": 41984,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_BARK_MOBILE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "P03",
+      "expected": "Root Arch",
+      "actual": "Root Arch",
+      "sourceBlend": "scripts/blender/stay-awhile/01-person.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/person/root-arch.desktop.glb",
+          "sha256": "b1a463aeb9e42528b25b99fe379a870ab06b6487adfd5e0afa7605f18ae7ea1f",
+          "triangles": 738,
+          "triangleCap": 2200,
+          "bytes": 36668,
+          "byteCap": 97280,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_LEAF",
+            "SA_M_MOSS",
+            "SA_M_SAKURA"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/person/root-arch.mobile.glb",
+          "sha256": "2bbd118e6e314c7044c9e2f3757a6581ce8ecb3d332c0a8f512ee2253ec2d170",
+          "triangles": 406,
+          "triangleCap": 700,
+          "bytes": 19988,
+          "byteCap": 44032,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK_MOBILE",
+            "SA_M_LEAF",
+            "SA_M_MOSS",
+            "SA_M_SAKURA"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "B01",
+      "expected": "Foundation",
+      "actual": "Foundation",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/foundation.desktop.glb",
+          "sha256": "a5d461d66146c3a382d9d28ad7d993c1846c2f746c8eadd88006f47bd56fbcd1",
+          "triangles": 528,
+          "triangleCap": 1800,
+          "bytes": 52952,
+          "byteCap": 81920,
+          "clips": [
+            {
+              "name": "BUILD_FOUNDATION",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 6
+            }
+          ],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_METAL",
+            "SA_M_BARK"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/foundation.mobile.glb",
+          "sha256": "104574c1da60f03d98daafc7712e6be378504c59f9ec986412d81da193087667",
+          "triangles": 300,
+          "triangleCap": 600,
+          "bytes": 35368,
+          "byteCap": 36864,
+          "clips": [
+            {
+              "name": "BUILD_FOUNDATION",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 6
+            }
+          ],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_METAL",
+            "SA_M_BARK_MOBILE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "B02",
+      "expected": "Posts",
+      "actual": "Posts",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/posts.desktop.glb",
+          "sha256": "bac79e7f2d90e9c6faf327b6bea799de8087e763a0294fa653870534a816e44c",
+          "triangles": 624,
+          "triangleCap": 2400,
+          "bytes": 56604,
+          "byteCap": 107520,
+          "clips": [
+            {
+              "name": "BUILD_POSTS",
+              "duration": 1.44,
+              "frameCount": 44,
+              "channels": 6
+            }
+          ],
+          "materials": [
+            "SA_M_BARK"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/posts.mobile.glb",
+          "sha256": "7eb2bb1a70b5995c82d3480a2c61d608c2e4c440a7daafb49cad2bf1e77b60a0",
+          "triangles": 432,
+          "triangleCap": 720,
+          "bytes": 38760,
+          "byteCap": 49152,
+          "clips": [
+            {
+              "name": "BUILD_POSTS",
+              "duration": 1.44,
+              "frameCount": 44,
+              "channels": 6
+            }
+          ],
+          "materials": [
+            "SA_M_BARK_MOBILE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "B03",
+      "expected": "Beams",
+      "actual": "Beams",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/beams.desktop.glb",
+          "sha256": "c5d658417f1862cf0d9f548d22d4d899fa2cd31ea129b5ed6bea7a6adf81c52d",
+          "triangles": 308,
+          "triangleCap": 3000,
+          "bytes": 45372,
+          "byteCap": 128000,
+          "clips": [
+            {
+              "name": "BUILD_BEAMS",
+              "duration": 1.6,
+              "frameCount": 49,
+              "channels": 14
+            }
+          ],
+          "materials": [
+            "SA_M_BARK"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/beams.mobile.glb",
+          "sha256": "0ea043b410f569530d4c87d2a7183911a7d593e3e987f5ed94146c4bf048b937",
+          "triangles": 84,
+          "triangleCap": 900,
+          "bytes": 26416,
+          "byteCap": 58368,
+          "clips": [
+            {
+              "name": "BUILD_BEAMS",
+              "duration": 1.6,
+              "frameCount": 49,
+              "channels": 14
+            }
+          ],
+          "materials": [
+            "SA_M_BARK_MOBILE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "B04",
+      "expected": "Roof Slats",
+      "actual": "Roof Slats",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/roof-slats.desktop.glb",
+          "sha256": "68aa401d0463269e79fa3e064cc7ee24c263926f6310e7853c451a85174e0dd1",
+          "triangles": 528,
+          "triangleCap": 3600,
+          "bytes": 57252,
+          "byteCap": 153600,
+          "clips": [
+            {
+              "name": "BUILD_ROOF",
+              "duration": 1.5,
+              "frameCount": 46,
+              "channels": 12
+            }
+          ],
+          "materials": [
+            "SA_M_BARK"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/roof-slats.mobile.glb",
+          "sha256": "8ea033f9a6f10121cb3f263d53cd605504f4b9464764ae4bb75bcd303accc6c3",
+          "triangles": 144,
+          "triangleCap": 1000,
+          "bytes": 31096,
+          "byteCap": 69632,
+          "clips": [
+            {
+              "name": "BUILD_ROOF",
+              "duration": 1.5,
+              "frameCount": 46,
+              "channels": 12
+            }
+          ],
+          "materials": [
+            "SA_M_BARK_MOBILE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "B05",
+      "expected": "Workbench",
+      "actual": "Workbench",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/workbench.desktop.glb",
+          "sha256": "2a865144679a477dfca21243d6aed4d4f63d460ddc501531293f7b47fc7af4b9",
+          "triangles": 576,
+          "triangleCap": 2600,
+          "bytes": 44824,
+          "byteCap": 122880,
+          "clips": [
+            {
+              "name": "BUILD_BENCH",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 1
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_METAL",
+            "SA_M_STONE"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/workbench.mobile.glb",
+          "sha256": "e63d581b283465d76ff17f8cc6e3a86e33848a863d0c1e5ad5ab0742e2745721",
+          "triangles": 348,
+          "triangleCap": 800,
+          "bytes": 25004,
+          "byteCap": 55296,
+          "clips": [
+            {
+              "name": "BUILD_BENCH",
+              "duration": 1.2,
+              "frameCount": 37,
+              "channels": 1
+            }
+          ],
+          "materials": [
+            "SA_M_BARK_MOBILE",
+            "SA_M_METAL",
+            "SA_M_STONE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "B06",
+      "expected": "Artifact Tokens",
+      "actual": "Artifact Tokens",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/builder/artifact-tokens.desktop.glb",
+          "sha256": "2819d8c5d6430f1e10ded2f1b457181e1dffec47004287ecfbb4630c00f7640f",
+          "triangles": 792,
+          "triangleCap": 4200,
+          "bytes": 64076,
+          "byteCap": 194560,
+          "clips": [
+            {
+              "name": "BUILD_TOKENS",
+              "duration": 1.8,
+              "frameCount": 55,
+              "channels": 5
+            }
+          ],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_PAPER",
+            "SA_M_BARK",
+            "SA_M_METAL",
+            "SA_M_LIGHT"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/builder/artifact-tokens.mobile.glb",
+          "sha256": "60a9ef44b8051766baabc85498dadaeaa80d6445fdaa564d63941e191bc44f4d",
+          "triangles": 216,
+          "triangleCap": 1400,
+          "bytes": 27096,
+          "byteCap": 88064,
+          "clips": [
+            {
+              "name": "BUILD_TOKENS",
+              "duration": 1.8,
+              "frameCount": 55,
+              "channels": 5
+            }
+          ],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_PAPER_MOBILE",
+            "SA_M_BARK_MOBILE",
+            "SA_M_METAL",
+            "SA_M_LIGHT"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "T01",
+      "expected": "Tea Deck",
+      "actual": "Tea Deck",
+      "sourceBlend": "scripts/blender/stay-awhile/03-thinker.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/thinker/tea-deck.desktop.glb",
+          "sha256": "b7c1809a96dfe7830e83d2f7edc1c86e858ad71025e943ff836740313cbd4940",
+          "triangles": 2144,
+          "triangleCap": 2400,
+          "bytes": 103588,
+          "byteCap": 107520,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_STONE",
+            "SA_M_LEAF",
+            "SA_M_MOSS"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/thinker/tea-deck.mobile.glb",
+          "sha256": "2b9993d79be5b77f2092229ccbf512eff5de9d871c4eba5fbf44b24048689dc9",
+          "triangles": 594,
+          "triangleCap": 750,
+          "bytes": 32800,
+          "byteCap": 49152,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK_MOBILE",
+            "SA_M_STONE",
+            "SA_M_LEAF"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "T02",
+      "expected": "Freedom Stones",
+      "actual": "Freedom Stones",
+      "sourceBlend": "scripts/blender/stay-awhile/03-thinker.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/thinker/freedom-stones.desktop.glb",
+          "sha256": "7d28f87b1ea73207e95c926fd7e047b65fa239d1ff41c523da5c20d7badca7ad",
+          "triangles": 566,
+          "triangleCap": 2100,
+          "bytes": 29108,
+          "byteCap": 97280,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/thinker/freedom-stones.mobile.glb",
+          "sha256": "01cf01b1d18355badad056ed46592e81cb4330cb09dc02c3213d1acf2addddbd",
+          "triangles": 363,
+          "triangleCap": 630,
+          "bytes": 21176,
+          "byteCap": 44032,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "T03",
+      "expected": "Tea Bowl Scroll",
+      "actual": "Tea Bowl Scroll",
+      "sourceBlend": "scripts/blender/stay-awhile/03-thinker.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/thinker/tea-bowl-scroll.desktop.glb",
+          "sha256": "d080b9148ea6a533eae9f0477f5c12b7e66f13be2295574df8fd33920a50933f",
+          "triangles": 206,
+          "triangleCap": 1600,
+          "bytes": 12984,
+          "byteCap": 76800,
+          "clips": [
+            {
+              "name": "THINKER_SCROLL",
+              "duration": 2.0,
+              "frameCount": 61,
+              "channels": 1
+            }
+          ],
+          "materials": [
+            "SA_M_PAPER",
+            "SA_M_CLAY"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/thinker/tea-bowl-scroll.mobile.glb",
+          "sha256": "6c3fecd9a33fc15c99a1285c87a7231971fb3dac0165a2e1f93cb7fc972a2648",
+          "triangles": 110,
+          "triangleCap": 450,
+          "bytes": 9492,
+          "byteCap": 34816,
+          "clips": [
+            {
+              "name": "THINKER_SCROLL",
+              "duration": 2.0,
+              "frameCount": 61,
+              "channels": 1
+            }
+          ],
+          "materials": [
+            "SA_M_PAPER_MOBILE",
+            "SA_M_CLAY"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "L01",
+      "expected": "Courtyard",
+      "actual": "Courtyard",
+      "sourceBlend": "scripts/blender/stay-awhile/04-leader.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/leader/courtyard.desktop.glb",
+          "sha256": "a3b47385aa07d9c9c913e935d112c2dc231241ccb377f626b6fc9fc069fcb024",
+          "triangles": 1824,
+          "triangleCap": 4200,
+          "bytes": 75088,
+          "byteCap": 189440,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_CLAY"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/leader/courtyard.mobile.glb",
+          "sha256": "f874d6b97b345f16072504b4fac9e22db507ee49a8d15e66e7f3e7d4069035ae",
+          "triangles": 768,
+          "triangleCap": 1400,
+          "bytes": 44964,
+          "byteCap": 86016,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_CLAY"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "L02",
+      "expected": "Coordination Posts",
+      "actual": "Coordination Posts",
+      "sourceBlend": "scripts/blender/stay-awhile/04-leader.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/leader/coordination-posts.desktop.glb",
+          "sha256": "5fd3295ca352df08a189c8b08397d5c33efd268dd8ede58980db28eb741e90db",
+          "triangles": 280,
+          "triangleCap": 1500,
+          "bytes": 42632,
+          "byteCap": 71680,
+          "clips": [
+            {
+              "name": "LEADER_CONVERGE",
+              "duration": 1.8,
+              "targetNodes": 5
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_PAPER"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/leader/coordination-posts.mobile.glb",
+          "sha256": "43bcc4e15d5f5e029387ae11f0922244084b9069c006863cf76eeb715d671ffd",
+          "triangles": 120,
+          "triangleCap": 500,
+          "bytes": 26044,
+          "byteCap": 32768,
+          "clips": [
+            {
+              "name": "LEADER_CONVERGE",
+              "duration": 1.8,
+              "targetNodes": 5
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_PAPER"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "L03",
+      "expected": "Lesson Rail",
+      "actual": "Lesson Rail",
+      "sourceBlend": "scripts/blender/stay-awhile/04-leader.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/leader/lesson-rail.desktop.glb",
+          "sha256": "ba630945f57e2e6e4ae5402f5acbeeccec03d82d9215b55362707cfcae4cd0e9",
+          "triangles": 300,
+          "triangleCap": 2200,
+          "bytes": 40096,
+          "byteCap": 102400,
+          "clips": [
+            {
+              "name": "LEADER_RAIL",
+              "duration": 1.2,
+              "targetNodes": 3
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_PAPER"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/leader/lesson-rail.mobile.glb",
+          "sha256": "95352a4de2909dd7f753f715edd254926cd746225ec7a52f889134737367ac1c",
+          "triangles": 108,
+          "triangleCap": 700,
+          "bytes": 20036,
+          "byteCap": 46080,
+          "clips": [
+            {
+              "name": "LEADER_RAIL",
+              "duration": 1.2,
+              "targetNodes": 3
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_PAPER"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "S01",
+      "expected": "Lantern Path",
+      "actual": "Lantern Path",
+      "sourceBlend": "scripts/blender/stay-awhile/05-stories.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/stories/lantern-path.desktop.glb",
+          "sha256": "14992ef227c92bb2cc50d6d46539cd51118575f0db3b7af3224c397926f56d59",
+          "triangles": 812,
+          "triangleCap": 5200,
+          "bytes": 56328,
+          "byteCap": 225280,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/stories/lantern-path.mobile.glb",
+          "sha256": "6e569359df9fbc054b3a51b451e8945d700fd4d6de2ce44f52ca444624809b5e",
+          "triangles": 580,
+          "triangleCap": 1700,
+          "bytes": 44080,
+          "byteCap": 101376,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "S02",
+      "expected": "Story Lantern",
+      "actual": "Story Lantern",
+      "sourceBlend": "scripts/blender/stay-awhile/05-stories.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/stories/story-lantern.desktop.glb",
+          "sha256": "6985fd94548eca4c3be89f478ad5eb94b75140e74fb8af5e4da4103725ba253c",
+          "triangles": 356,
+          "triangleCap": 1800,
+          "bytes": 41588,
+          "byteCap": 92160,
+          "clips": [
+            {
+              "name": "STORY_SHUTTER",
+              "duration": 0.6,
+              "targetNodes": 1
+            }
+          ],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_BARK",
+            "SA_M_LIGHT",
+            "SA_M_PAPER"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/stories/story-lantern.mobile.glb",
+          "sha256": "a1c049c1dd524494356fe93cbf6a139fb4435986c74617ed5ccbbd616e74c730",
+          "triangles": 132,
+          "triangleCap": 600,
+          "bytes": 19416,
+          "byteCap": 41984,
+          "clips": [
+            {
+              "name": "STORY_SHUTTER",
+              "duration": 0.6,
+              "targetNodes": 1
+            }
+          ],
+          "materials": [
+            "SA_M_STONE",
+            "SA_M_BARK",
+            "SA_M_LIGHT",
+            "SA_M_PAPER"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "S03",
+      "expected": "Path Screen",
+      "actual": "Path Screen",
+      "sourceBlend": "scripts/blender/stay-awhile/05-stories.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/stories/path-screen.desktop.glb",
+          "sha256": "5beaae7db816e084eaa8034ddf627f5bd16ef960f1f2b2f5dd0afd855c65bf6e",
+          "triangles": 1284,
+          "triangleCap": 3000,
+          "bytes": 108572,
+          "byteCap": 133120,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_LEAF"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/stories/path-screen.mobile.glb",
+          "sha256": "220801f7369e9e0721ea363fc831a79a987e4347ca42669823594fa2769cd6b5",
+          "triangles": 444,
+          "triangleCap": 850,
+          "bytes": 34836,
+          "byteCap": 60416,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_LEAF"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "W01",
+      "expected": "Archive Pavilion",
+      "actual": "Archive Pavilion",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/work/archive-pavilion.desktop.glb",
+          "sha256": "c54773bc86b1fb300a6721461422e92fe1d2e9feefeef788cd82be7ae99ef417",
+          "triangles": 1188,
+          "triangleCap": 14000,
+          "bytes": 119524,
+          "byteCap": 604160,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/work/archive-pavilion.mobile.glb",
+          "sha256": "d070b55b1497e487a48a393d2dfdbf5c64c98d845cc864d7137f57e6651273f3",
+          "triangles": 324,
+          "triangleCap": 4200,
+          "bytes": 34760,
+          "byteCap": 272384,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "W02",
+      "expected": "Planner Station",
+      "actual": "Planner Station",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/work/planner-station.desktop.glb",
+          "sha256": "526b7f3476199308fda374c21fbf0909b8a1e6c81781d014828fdaf9fbb77138",
+          "triangles": 956,
+          "triangleCap": 4200,
+          "bytes": 113440,
+          "byteCap": 194560,
+          "clips": [
+            {
+              "name": "WORK_PLANNER",
+              "duration": 6.0,
+              "targetNodes": 13
+            }
+          ],
+          "materials": [
+            "SA_M_ACCENT",
+            "SA_M_BARK",
+            "SA_M_METAL",
+            "SA_M_PAPER"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/work/planner-station.mobile.glb",
+          "sha256": "4e30d43be8d65c3efd704759ef82a264ba938a2a988fb1859fa0293b3e9165f1",
+          "triangles": 348,
+          "triangleCap": 1300,
+          "bytes": 56192,
+          "byteCap": 88064,
+          "clips": [
+            {
+              "name": "WORK_PLANNER",
+              "duration": 6.0,
+              "targetNodes": 13
+            }
+          ],
+          "materials": [
+            "SA_M_ACCENT",
+            "SA_M_BARK",
+            "SA_M_METAL",
+            "SA_M_PAPER"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "W03",
+      "expected": "Logger Station",
+      "actual": "Logger Station",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/work/logger-station.desktop.glb",
+          "sha256": "d925964b1aea26788c2ef56545d9bd7861534b14949074a9ffa0afe39113d36a",
+          "triangles": 432,
+          "triangleCap": 3000,
+          "bytes": 49680,
+          "byteCap": 138240,
+          "clips": [
+            {
+              "name": "WORK_LOGGER",
+              "duration": 5.0,
+              "targetNodes": 3
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_METAL",
+            "SA_M_PAPER"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/work/logger-station.mobile.glb",
+          "sha256": "9501bdbe333cf8e1b86662e1ac4c3ed8e6d4971272ea2c01270d0561f4868ac9",
+          "triangles": 144,
+          "triangleCap": 900,
+          "bytes": 21956,
+          "byteCap": 62464,
+          "clips": [
+            {
+              "name": "WORK_LOGGER",
+              "duration": 5.0,
+              "targetNodes": 3
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_METAL",
+            "SA_M_PAPER"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "W04",
+      "expected": "Mun Station",
+      "actual": "Mun Station",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/work/mun-station.desktop.glb",
+          "sha256": "828ec4bf687c468c84252f3af5bd932e971803634b9098058f9dcc69f2eff3df",
+          "triangles": 512,
+          "triangleCap": 3500,
+          "bytes": 56940,
+          "byteCap": 158720,
+          "clips": [
+            {
+              "name": "WORK_MUN",
+              "duration": 4.0,
+              "targetNodes": 4
+            }
+          ],
+          "materials": [
+            "SA_M_ACCENT",
+            "SA_M_BARK",
+            "SA_M_STONE",
+            "SA_M_PAPER"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/work/mun-station.mobile.glb",
+          "sha256": "04adb14bdd7c3651b05b4b1e74a97e50fe0fe8caba207a6b893868a29fd5b9e3",
+          "triangles": 152,
+          "triangleCap": 1000,
+          "bytes": 24168,
+          "byteCap": 71680,
+          "clips": [
+            {
+              "name": "WORK_MUN",
+              "duration": 4.0,
+              "targetNodes": 4
+            }
+          ],
+          "materials": [
+            "SA_M_ACCENT",
+            "SA_M_BARK",
+            "SA_M_STONE",
+            "SA_M_PAPER"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "W05",
+      "expected": "Snrled Station",
+      "actual": "Snrled Station",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/work/snrled-station.desktop.glb",
+          "sha256": "0441afbd6697f43a6cc4bb1aa7299f4df3096f3de4cf5f7f81aa84ca2c5f6596",
+          "triangles": 136,
+          "triangleCap": 2600,
+          "bytes": 20428,
+          "byteCap": 117760,
+          "clips": [
+            {
+              "name": "WORK_SNRLED",
+              "duration": 6.0,
+              "targetNodes": 1
+            }
+          ],
+          "materials": [
+            "SA_M_METAL",
+            "SA_M_LIGHT",
+            "SA_M_BARK",
+            "SA_M_PAPER"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/work/snrled-station.mobile.glb",
+          "sha256": "cca56833bc97694637a661d9612dad358034cb7c71bf7caea386a2ca3bc57e48",
+          "triangles": 72,
+          "triangleCap": 800,
+          "bytes": 13620,
+          "byteCap": 53248,
+          "clips": [
+            {
+              "name": "WORK_SNRLED",
+              "duration": 6.0,
+              "targetNodes": 1
+            }
+          ],
+          "materials": [
+            "SA_M_METAL",
+            "SA_M_LIGHT",
+            "SA_M_BARK",
+            "SA_M_PAPER"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "W06",
+      "expected": "Aura Station",
+      "actual": "Aura Station",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/work/aura-station.desktop.glb",
+          "sha256": "b240458f0864c5765bfb7dd5c5784e7ee539e603cd534b23cb47046b2f8652c8",
+          "triangles": 456,
+          "triangleCap": 3800,
+          "bytes": 56036,
+          "byteCap": 174080,
+          "clips": [
+            {
+              "name": "WORK_AURA",
+              "duration": 5.0,
+              "targetNodes": 5
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_PAPER"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/work/aura-station.mobile.glb",
+          "sha256": "6d32cff446c3e0e5157fc86ef099537073daa2d3a4703fef201cea49c2315553",
+          "triangles": 168,
+          "triangleCap": 1100,
+          "bytes": 26600,
+          "byteCap": 78848,
+          "clips": [
+            {
+              "name": "WORK_AURA",
+              "duration": 5.0,
+              "targetNodes": 5
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_PAPER"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "F01",
+      "expected": "Opening Canopy",
+      "actual": "Opening Canopy",
+      "sourceBlend": "scripts/blender/stay-awhile/07-future.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/future/opening-canopy.desktop.glb",
+          "sha256": "7a331f42f493a57fa1adc54667c77982aa38a1c4a3224a06c09443c0191efb82",
+          "triangles": 7960,
+          "triangleCap": 8500,
+          "bytes": 368200,
+          "byteCap": 368640,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_LEAF"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/future/opening-canopy.mobile.glb",
+          "sha256": "9b55d33b9a2057b7a57255d56759d422a7372f5546030787e474ad35a288a6d0",
+          "triangles": 2196,
+          "triangleCap": 2400,
+          "bytes": 151092,
+          "byteCap": 165888,
+          "clips": [],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_LEAF"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "F02",
+      "expected": "Horizon Path",
+      "actual": "Horizon Path",
+      "sourceBlend": "scripts/blender/stay-awhile/07-future.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/future/horizon-path.desktop.glb",
+          "sha256": "25b8ce54dac3ed6279071729d3c7e8793f002cb5ba27190973f6143be2ef1999",
+          "triangles": 60,
+          "triangleCap": 3000,
+          "bytes": 3920,
+          "byteCap": 133120,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/future/horizon-path.mobile.glb",
+          "sha256": "b5833fadaea8142c570851f9dadd539e8bdd3649f714f5053c1f7c97d5e58c1e",
+          "triangles": 24,
+          "triangleCap": 850,
+          "bytes": 2552,
+          "byteCap": 60416,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "F03",
+      "expected": "Distant Marker",
+      "actual": "Distant Marker",
+      "sourceBlend": "scripts/blender/stay-awhile/07-future.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/future/distant-marker.desktop.glb",
+          "sha256": "0a9844e513f3b30dfdc5fe0214ac47d8179cb8040fc253967786b44bec47c401",
+          "triangles": 96,
+          "triangleCap": 500,
+          "bytes": 3728,
+          "byteCap": 25600,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/future/distant-marker.mobile.glb",
+          "sha256": "49e1a06d2cfd1350a021ed8ab43ec04e179a597490ce1f8ffa7630610c27eba3",
+          "triangles": 32,
+          "triangleCap": 160,
+          "bytes": 2320,
+          "byteCap": 12288,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "A01",
+      "expected": "Archive Frame",
+      "actual": "Archive Frame",
+      "sourceBlend": "scripts/blender/stay-awhile/08-aura.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/aura/archive-frame.desktop.glb",
+          "sha256": "39fa9018a3175cf5303528b394e8fffbc58776831aec92c61ccbf336e9846d00",
+          "triangles": 2772,
+          "triangleCap": 10000,
+          "bytes": 278584,
+          "byteCap": 430080,
+          "clips": [
+            {
+              "name": "AURA_STRUCTURE",
+              "duration": 3.0,
+              "targetNodes": 9
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_STONE"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/aura/archive-frame.mobile.glb",
+          "sha256": "7fc27c326871d2a5a25afad55c43f9dc3915cc97da5bd15473fc3807060990f9",
+          "triangles": 756,
+          "triangleCap": 3000,
+          "bytes": 99172,
+          "byteCap": 193536,
+          "clips": [
+            {
+              "name": "AURA_STRUCTURE",
+              "duration": 3.0,
+              "targetNodes": 9
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_STONE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "A02",
+      "expected": "Evidence Documents",
+      "actual": "Evidence Documents",
+      "sourceBlend": "scripts/blender/stay-awhile/08-aura.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/aura/evidence-documents.desktop.glb",
+          "sha256": "53b66d87d8ea4e71bab3eaf6b9e13a448748b36bd2b98bc295df32a9cfe7e0b9",
+          "triangles": 432,
+          "triangleCap": 2800,
+          "bytes": 65672,
+          "byteCap": 128000,
+          "clips": [
+            {
+              "name": "AURA_DOCUMENTS",
+              "duration": 4.0,
+              "targetNodes": 9
+            }
+          ],
+          "materials": [
+            "SA_M_PAPER"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/aura/evidence-documents.mobile.glb",
+          "sha256": "5553051ccd565be25a82d5227be998404b638b92ea9b878f736deb2213216840",
+          "triangles": 108,
+          "triangleCap": 900,
+          "bytes": 37764,
+          "byteCap": 58368,
+          "clips": [
+            {
+              "name": "AURA_DOCUMENTS",
+              "duration": 4.0,
+              "targetNodes": 9
+            }
+          ],
+          "materials": [
+            "SA_M_PAPER"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "A03",
+      "expected": "Relationship Filaments",
+      "actual": "Relationship Filaments",
+      "sourceBlend": "scripts/blender/stay-awhile/08-aura.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/aura/relationship-filaments.desktop.glb",
+          "sha256": "dbc5f2ca2d4661c000ac3bcee8a1d4551e7e8bbdcc62d4a4e7ca5e91344d03a9",
+          "triangles": 1248,
+          "triangleCap": 2400,
+          "bytes": 31708,
+          "byteCap": 107520,
+          "clips": [],
+          "materials": [
+            "SA_M_ACCENT"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/aura/relationship-filaments.mobile.glb",
+          "sha256": "4231e255865371665775350bcc6d5e1f27cc520f27c0614cb50c4b27df415795",
+          "triangles": 432,
+          "triangleCap": 720,
+          "bytes": 18296,
+          "byteCap": 49152,
+          "clips": [],
+          "materials": [
+            "SA_M_ACCENT"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "A04",
+      "expected": "Model Spine",
+      "actual": "Model Spine",
+      "sourceBlend": "scripts/blender/stay-awhile/08-aura.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/aura/model-spine.desktop.glb",
+          "sha256": "0893b2fa65e1b35ccb5f5054d8d8599994b1042faaec005491ddab0f7d823def",
+          "triangles": 324,
+          "triangleCap": 3200,
+          "bytes": 46056,
+          "byteCap": 143360,
+          "clips": [
+            {
+              "name": "AURA_MODEL",
+              "duration": 3.0,
+              "targetNodes": 5
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_ACCENT"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/aura/model-spine.mobile.glb",
+          "sha256": "1f019b4589b005f0b26900dcf16a92366a85177967a1e5695637165b1fa8df72",
+          "triangles": 132,
+          "triangleCap": 900,
+          "bytes": 26584,
+          "byteCap": 64512,
+          "clips": [
+            {
+              "name": "AURA_MODEL",
+              "duration": 3.0,
+              "targetNodes": 5
+            }
+          ],
+          "materials": [
+            "SA_M_BARK",
+            "SA_M_ACCENT"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "C01",
+      "expected": "Open Ground",
+      "actual": "Open Ground",
+      "sourceBlend": "scripts/blender/stay-awhile/09-contact.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/contact/open-ground.desktop.glb",
+          "sha256": "e7e560f0420d0a4b4c29fe28490dd93aaa57ee63ee37221f1ff29a8cd42db308",
+          "triangles": 2048,
+          "triangleCap": 2500,
+          "bytes": 50028,
+          "byteCap": 112640,
+          "clips": [],
+          "materials": [
+            "SA_M_MOSS"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/contact/open-ground.mobile.glb",
+          "sha256": "4ad07711fb71ec6c5aed5a67c692f6942ec991c3ff298ad600b4ad383fbd641c",
+          "triangles": 512,
+          "triangleCap": 650,
+          "bytes": 15208,
+          "byteCap": 51200,
+          "clips": [],
+          "materials": [
+            "SA_M_MOSS"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    },
+    {
+      "assetId": "C02",
+      "expected": "Resting Stone",
+      "actual": "Resting Stone",
+      "sourceBlend": "scripts/blender/stay-awhile/09-contact.blend",
+      "variants": {
+        "desktop": {
+          "path": "public/models/stay/v1/contact/resting-stone.desktop.glb",
+          "sha256": "67f7b34a03f41b2c721be5a38e493c6694918f1e695a7562fd5241cf6196dca1",
+          "triangles": 252,
+          "triangleCap": 900,
+          "bytes": 7148,
+          "byteCap": 40960,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        },
+        "mobile": {
+          "path": "public/models/stay/v1/contact/resting-stone.mobile.glb",
+          "sha256": "8e4bfb8932f00960488afa204466d9c7f4318e9885490dbaa8bf1303e1f5adff",
+          "triangles": 52,
+          "triangleCap": 260,
+          "bytes": 2744,
+          "byteCap": 18432,
+          "clips": [],
+          "materials": [
+            "SA_M_STONE"
+          ]
+        }
+      },
+      "status": "COMPLETE"
+    }
+  ],
+  "authoredClips": [
+    {
+      "name": "BUILD_FOUNDATION",
+      "duration": 1.2,
+      "route": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "assetId": "B01",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "BUILD_POSTS",
+      "duration": 1.44,
+      "route": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "assetId": "B02",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "BUILD_BEAMS",
+      "duration": 1.6,
+      "route": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "assetId": "B03",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "BUILD_ROOF",
+      "duration": 1.5,
+      "route": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "assetId": "B04",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "BUILD_BENCH",
+      "duration": 1.2,
+      "route": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "assetId": "B05",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "BUILD_TOKENS",
+      "duration": 1.8,
+      "route": "builder",
+      "sourceBlend": "scripts/blender/stay-awhile/02-builder.blend",
+      "assetId": "B06",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "THINKER_SCROLL",
+      "duration": 2.0,
+      "route": "thinker",
+      "sourceBlend": "scripts/blender/stay-awhile/03-thinker.blend",
+      "assetId": "T03",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "LEADER_CONVERGE",
+      "duration": 1.8,
+      "route": "leader",
+      "sourceBlend": "scripts/blender/stay-awhile/04-leader.blend",
+      "assetId": "L02",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "LEADER_RAIL",
+      "duration": 1.2,
+      "route": "leader",
+      "sourceBlend": "scripts/blender/stay-awhile/04-leader.blend",
+      "assetId": "L03",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "STORY_SHUTTER",
+      "duration": 0.6,
+      "route": "stories",
+      "sourceBlend": "scripts/blender/stay-awhile/05-stories.blend",
+      "assetId": "S02",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "WORK_PLANNER",
+      "duration": 6.0,
+      "route": "work",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "assetId": "W02",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "WORK_LOGGER",
+      "duration": 5.0,
+      "route": "work",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "assetId": "W03",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "WORK_MUN",
+      "duration": 4.0,
+      "route": "work",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "assetId": "W04",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "WORK_SNRLED",
+      "duration": 6.0,
+      "route": "work",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "assetId": "W05",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "WORK_AURA",
+      "duration": 5.0,
+      "route": "work",
+      "sourceBlend": "scripts/blender/stay-awhile/06-work.blend",
+      "assetId": "W06",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "AURA_STRUCTURE",
+      "duration": 3.0,
+      "route": "aura",
+      "sourceBlend": "scripts/blender/stay-awhile/08-aura.blend",
+      "assetId": "A01",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "AURA_DOCUMENTS",
+      "duration": 4.0,
+      "route": "aura",
+      "sourceBlend": "scripts/blender/stay-awhile/08-aura.blend",
+      "assetId": "A02",
+      "exportStatus": "desktop + mobile verified"
+    },
+    {
+      "name": "AURA_MODEL",
+      "duration": 3.0,
+      "route": "aura",
+      "sourceBlend": "scripts/blender/stay-awhile/08-aura.blend",
+      "assetId": "A04",
+      "exportStatus": "desktop + mobile verified"
+    }
+  ],
+  "sceneManifests": [
+    {
+      "route": "garden",
+      "path": "public/models/stay/v1/garden/garden.scene.json",
+      "keys": [
+        "schemaVersion",
+        "routeId",
+        "artistVersion",
+        "sourceBlend",
+        "sourceSha256",
+        "specificationSha256",
+        "exportDate",
+        "ownedAssetIds",
+        "assetIds",
+        "instances",
+        "worldOrigin",
+        "localBounds",
+        "boundsExceptions",
+        "cameraKnots",
+        "camera",
+        "focusAnchors",
+        "contentClearanceRectangles",
+        "guideNodeNames",
+        "guideAssetId",
+        "clips",
+        "settledPoses",
+        "placementOverrides",
+        "documentSocketBindings",
+        "posterProgress",
+        "runtimeNotes",
+        "validation"
+      ],
+      "missingFields": []
+    },
+    {
+      "route": "person",
+      "path": "public/models/stay/v1/person/person.scene.json",
+      "keys": [
+        "schemaVersion",
+        "routeId",
+        "artistVersion",
+        "sourceBlend",
+        "sourceSha256",
+        "specificationSha256",
+        "exportDate",
+        "ownedAssetIds",
+        "assetIds",
+        "instances",
+        "worldOrigin",
+        "localBounds",
+        "boundsExceptions",
+        "cameraKnots",
+        "camera",
+        "focusAnchors",
+        "contentClearanceRectangles",
+        "guideNodeNames",
+        "guideAssetId",
+        "clips",
+        "settledPoses",
+        "placementOverrides",
+        "documentSocketBindings",
+        "posterProgress",
+        "runtimeNotes",
+        "validation"
+      ],
+      "missingFields": []
+    },
+    {
+      "route": "builder",
+      "path": "public/models/stay/v1/builder/builder.scene.json",
+      "keys": [
+        "schemaVersion",
+        "routeId",
+        "artistVersion",
+        "sourceBlend",
+        "sourceSha256",
+        "specificationSha256",
+        "exportDate",
+        "ownedAssetIds",
+        "assetIds",
+        "instances",
+        "worldOrigin",
+        "localBounds",
+        "boundsExceptions",
+        "cameraKnots",
+        "camera",
+        "focusAnchors",
+        "contentClearanceRectangles",
+        "guideNodeNames",
+        "guideAssetId",
+        "clips",
+        "settledPoses",
+        "placementOverrides",
+        "documentSocketBindings",
+        "posterProgress",
+        "runtimeNotes",
+        "validation"
+      ],
+      "missingFields": []
+    },
+    {
+      "route": "thinker",
+      "path": "public/models/stay/v1/thinker/thinker.scene.json",
+      "keys": [
+        "schemaVersion",
+        "routeId",
+        "artistVersion",
+        "sourceBlend",
+        "sourceSha256",
+        "specificationSha256",
+        "exportDate",
+        "ownedAssetIds",
+        "assetIds",
+        "instances",
+        "worldOrigin",
+        "localBounds",
+        "boundsExceptions",
+        "cameraKnots",
+        "camera",
+        "focusAnchors",
+        "contentClearanceRectangles",
+        "guideNodeNames",
+        "guideAssetId",
+        "clips",
+        "settledPoses",
+        "placementOverrides",
+        "documentSocketBindings",
+        "posterProgress",
+        "runtimeNotes",
+        "validation"
+      ],
+      "missingFields": []
+    },
+    {
+      "route": "leader",
+      "path": "public/models/stay/v1/leader/leader.scene.json",
+      "keys": [
+        "schemaVersion",
+        "routeId",
+        "artistVersion",
+        "sourceBlend",
+        "sourceSha256",
+        "specificationSha256",
+        "exportDate",
+        "ownedAssetIds",
+        "assetIds",
+        "instances",
+        "worldOrigin",
+        "localBounds",
+        "boundsExceptions",
+        "cameraKnots",
+        "camera",
+        "focusAnchors",
+        "contentClearanceRectangles",
+        "guideNodeNames",
+        "guideAssetId",
+        "clips",
+        "settledPoses",
+        "placementOverrides",
+        "documentSocketBindings",
+        "posterProgress",
+        "runtimeNotes",
+        "validation"
+      ],
+      "missingFields": []
+    },
+    {
+      "route": "stories",
+      "path": "public/models/stay/v1/stories/stories.scene.json",
+      "keys": [
+        "schemaVersion",
+        "routeId",
+        "artistVersion",
+        "sourceBlend",
+        "sourceSha256",
+        "specificationSha256",
+        "exportDate",
+        "ownedAssetIds",
+        "assetIds",
+        "instances",
+        "worldOrigin",
+        "localBounds",
+        "boundsExceptions",
+        "cameraKnots",
+        "camera",
+        "focusAnchors",
+        "contentClearanceRectangles",
+        "guideNodeNames",
+        "guideAssetId",
+        "clips",
+        "settledPoses",
+        "placementOverrides",
+        "documentSocketBindings",
+        "posterProgress",
+        "runtimeNotes",
+        "validation"
+      ],
+      "missingFields": []
+    },
+    {
+      "route": "work",
+      "path": "public/models/stay/v1/work/work.scene.json",
+      "keys": [
+        "schemaVersion",
+        "routeId",
+        "artistVersion",
+        "sourceBlend",
+        "sourceSha256",
+        "specificationSha256",
+        "exportDate",
+        "ownedAssetIds",
+        "assetIds",
+        "instances",
+        "worldOrigin",
+        "localBounds",
+        "boundsExceptions",
+        "cameraKnots",
+        "camera",
+        "focusAnchors",
+        "contentClearanceRectangles",
+        "guideNodeNames",
+        "guideAssetId",
+        "clips",
+        "settledPoses",
+        "placementOverrides",
+        "documentSocketBindings",
+        "posterProgress",
+        "runtimeNotes",
+        "validation"
+      ],
+      "missingFields": []
+    },
+    {
+      "route": "future",
+      "path": "public/models/stay/v1/future/future.scene.json",
+      "keys": [
+        "schemaVersion",
+        "routeId",
+        "artistVersion",
+        "sourceBlend",
+        "sourceSha256",
+        "specificationSha256",
+        "exportDate",
+        "ownedAssetIds",
+        "assetIds",
+        "instances",
+        "worldOrigin",
+        "localBounds",
+        "boundsExceptions",
+        "cameraKnots",
+        "camera",
+        "focusAnchors",
+        "contentClearanceRectangles",
+        "guideNodeNames",
+        "guideAssetId",
+        "clips",
+        "settledPoses",
+        "placementOverrides",
+        "documentSocketBindings",
+        "posterProgress",
+        "runtimeNotes",
+        "validation"
+      ],
+      "missingFields": []
+    },
+    {
+      "route": "aura",
+      "path": "public/models/stay/v1/aura/aura.scene.json",
+      "keys": [
+        "schemaVersion",
+        "routeId",
+        "artistVersion",
+        "sourceBlend",
+        "sourceSha256",
+        "specificationSha256",
+        "exportDate",
+        "ownedAssetIds",
+        "assetIds",
+        "instances",
+        "worldOrigin",
+        "localBounds",
+        "boundsExceptions",
+        "cameraKnots",
+        "camera",
+        "focusAnchors",
+        "contentClearanceRectangles",
+        "guideNodeNames",
+        "guideAssetId",
+        "clips",
+        "settledPoses",
+        "placementOverrides",
+        "documentSocketBindings",
+        "posterProgress",
+        "runtimeNotes",
+        "validation"
+      ],
+      "missingFields": []
+    },
+    {
+      "route": "contact",
+      "path": "public/models/stay/v1/contact/contact.scene.json",
+      "keys": [
+        "schemaVersion",
+        "routeId",
+        "artistVersion",
+        "sourceBlend",
+        "sourceSha256",
+        "specificationSha256",
+        "exportDate",
+        "ownedAssetIds",
+        "assetIds",
+        "instances",
+        "worldOrigin",
+        "localBounds",
+        "boundsExceptions",
+        "cameraKnots",
+        "camera",
+        "focusAnchors",
+        "contentClearanceRectangles",
+        "guideNodeNames",
+        "guideAssetId",
+        "clips",
+        "settledPoses",
+        "placementOverrides",
+        "documentSocketBindings",
+        "posterProgress",
+        "runtimeNotes",
+        "validation"
+      ],
+      "missingFields": []
+    }
+  ],
+  "posters": [
+    {
+      "route": "garden",
+      "lod": "desktop",
+      "path": "public/assets/stay/v1/garden-desktop.webp",
+      "sha256": "5e49981d30810e0159039e5eb30fe0b4f45ce634d24674cddf6c1b1f92d14a75",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 40532
+    },
+    {
+      "route": "garden",
+      "lod": "mobile",
+      "path": "public/assets/stay/v1/garden-mobile.webp",
+      "sha256": "aa99154b4895a5bcd21d793aa4b37e91a831216cd767eabd819fd56d7f388627",
+      "dimensions": [
+        780,
+        1200
+      ],
+      "bytes": 20386
+    },
+    {
+      "route": "person",
+      "lod": "desktop",
+      "path": "public/assets/stay/v1/person-desktop.webp",
+      "sha256": "7d4bd6c750b3609fec179458f6890e3fb46c6a9880bfa8df3cf6a06e2b39f4ec",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 34840
+    },
+    {
+      "route": "person",
+      "lod": "mobile",
+      "path": "public/assets/stay/v1/person-mobile.webp",
+      "sha256": "42011492e054a2d01d8304b59dae99c29c39fc5d8b871f19db74c9899f3cf769",
+      "dimensions": [
+        780,
+        1200
+      ],
+      "bytes": 14802
+    },
+    {
+      "route": "builder",
+      "lod": "desktop",
+      "path": "public/assets/stay/v1/builder-desktop.webp",
+      "sha256": "33a91c363ed5b7cfd94489a26684b404a942b4f5ab854336f68776fd6227988e",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 67494
+    },
+    {
+      "route": "builder",
+      "lod": "mobile",
+      "path": "public/assets/stay/v1/builder-mobile.webp",
+      "sha256": "3f2d03c25ed3e0f6ffef803772f82a67942211b52c6da805b2e4cdb155ab6667",
+      "dimensions": [
+        780,
+        1200
+      ],
+      "bytes": 29342
+    },
+    {
+      "route": "thinker",
+      "lod": "desktop",
+      "path": "public/assets/stay/v1/thinker-desktop.webp",
+      "sha256": "c1fdea9c721e44c299d0381dc9e123b87d5c56c4994f17a0dde62cbd27980943",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 76708
+    },
+    {
+      "route": "thinker",
+      "lod": "mobile",
+      "path": "public/assets/stay/v1/thinker-mobile.webp",
+      "sha256": "42617344486a4a01952fc9178962c4c0adce5c8678793d04edd97a0989a391bc",
+      "dimensions": [
+        780,
+        1200
+      ],
+      "bytes": 37122
+    },
+    {
+      "route": "leader",
+      "lod": "desktop",
+      "path": "public/assets/stay/v1/leader-desktop.webp",
+      "sha256": "d2e12467653e1c06535858c1183c67a8cced3d102821b70152a92bbab02571b8",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 23390
+    },
+    {
+      "route": "leader",
+      "lod": "mobile",
+      "path": "public/assets/stay/v1/leader-mobile.webp",
+      "sha256": "a60316d0c4afed3519548c5869f9f52cf09ce53c683afd10230feadb31502d57",
+      "dimensions": [
+        780,
+        1200
+      ],
+      "bytes": 14732
+    },
+    {
+      "route": "stories",
+      "lod": "desktop",
+      "path": "public/assets/stay/v1/stories-desktop.webp",
+      "sha256": "c4f0753fed32529feec46b3f8a15ee3976614876faa2ac14def39b9af1cc3985",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 24682
+    },
+    {
+      "route": "stories",
+      "lod": "mobile",
+      "path": "public/assets/stay/v1/stories-mobile.webp",
+      "sha256": "aa25e91b5c08f91242d922aedaf8e268734c4584f68d353cb12e2daef8b99e3e",
+      "dimensions": [
+        780,
+        1200
+      ],
+      "bytes": 13924
+    },
+    {
+      "route": "work",
+      "lod": "desktop",
+      "path": "public/assets/stay/v1/work-desktop.webp",
+      "sha256": "1aad7841bc49525725496b074af80b8ddf108995e727a89674a2afd7848d3b21",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 29552
+    },
+    {
+      "route": "work",
+      "lod": "mobile",
+      "path": "public/assets/stay/v1/work-mobile.webp",
+      "sha256": "3376cf181d3735783ee5fe86fffe86042c0ed4538d69303361eb62cf0d5f459c",
+      "dimensions": [
+        780,
+        1200
+      ],
+      "bytes": 22046
+    },
+    {
+      "route": "future",
+      "lod": "desktop",
+      "path": "public/assets/stay/v1/future-desktop.webp",
+      "sha256": "d6500e800f6dbb96d470e088e663e0651d2dfe55d65e584c4032253000b8bff1",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 12066
+    },
+    {
+      "route": "future",
+      "lod": "mobile",
+      "path": "public/assets/stay/v1/future-mobile.webp",
+      "sha256": "e77d9ef1454f55b7076fefe384ccfb3252f28d58e7103ff01723b1102e62b129",
+      "dimensions": [
+        780,
+        1200
+      ],
+      "bytes": 6976
+    },
+    {
+      "route": "aura",
+      "lod": "desktop",
+      "path": "public/assets/stay/v1/aura-desktop.webp",
+      "sha256": "6b34951c9888efebf2fe66c4edc6445d987facac89ae7bf38902fd9221483e77",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 21672
+    },
+    {
+      "route": "aura",
+      "lod": "mobile",
+      "path": "public/assets/stay/v1/aura-mobile.webp",
+      "sha256": "f754a04f348519bbfb577cdf18415cc562610db037c24d1ba1e0a3e1eff77d71",
+      "dimensions": [
+        780,
+        1200
+      ],
+      "bytes": 13572
+    },
+    {
+      "route": "contact",
+      "lod": "desktop",
+      "path": "public/assets/stay/v1/contact-desktop.webp",
+      "sha256": "c17a980cf21ed31fba99e029efaefe2c295820357d28a9e7db5a11fa69e53b55",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 18128
+    },
+    {
+      "route": "contact",
+      "lod": "mobile",
+      "path": "public/assets/stay/v1/contact-mobile.webp",
+      "sha256": "5c807e04000baa860c744ed3ba41a6753a040b3e81ab2e8ad1888cb86ad0b210",
+      "dimensions": [
+        780,
+        1200
+      ],
+      "bytes": 13554
+    }
+  ],
+  "protectedFiles": {
+    "count": 216,
+    "changed": []
+  },
+  "validation": {
+    "khronosFiles": 94,
+    "khronosErrors": 0,
+    "khronosWarnings": 0,
+    "reportsPostdateAllExports": false,
+    "allSourceAndExportHashesMatchPriorValidation": false,
+    "clearanceSamples": 5760,
+    "clearanceViolations": 0,
+    "clearanceScope": "Five geometry states; active desktop geometry with both camera poses; sampled nearest-surface distance 0.5 m, not a swept frustum test.",
+    "motionVariantComparisons": 36,
+    "motionErrors": 0,
+    "motionTolerance": 0.005,
+    "motionMaxError": 0.0031216530844543344,
+    "sourceReverseSeek": true,
+    "masterOpenPass": 10,
+    "firstFourFinal": {
+      "checkedAt": "2026-09-24T02:27:46.694888+00:00",
+      "masterCount": 4,
+      "assetCount": 26,
+      "desktopExports": 26,
+      "mobileExports": 26,
+      "khronosErrors": 0,
+      "khronosWarnings": 0,
+      "authoredClipCount": 7,
+      "motionSamples": 450,
+      "motionErrors": 0,
+      "staticRoundtrips": 8,
+      "maxStaticBoundsErrorMetres": 0.0012640953063964844,
+      "reference": "scripts/blender/stay-awhile/validation-first-four.json"
+    }
+  },
+  "stagingFiles": [],
+  "generatedAt": "2026-09-23T02:18:12.721814+00:00",
+  "schemaVersion": 1,
+  "counts": {
+    "masters": 10,
+    "assetIds": 47,
+    "desktopGlbs": 47,
+    "mobileGlbs": 47,
+    "totalGlbs": 94,
+    "sceneManifests": 10,
+    "assetManifests": 1,
+    "authoredClips": 18,
+    "clipBearingGlbs": 36,
+    "posters": 20,
+    "protectedFiles": 216
+  },
+  "renderReview": {
+    "routesReviewed": 10,
+    "postersReviewed": 20,
+    "status": "COMPLETE",
+    "scope": "Specified final still viewpoints; obvious composition/placement/clipping/obstruction/landmark defects only; not full rail cinematography or website screenshots.",
+    "routes": [
+      {
+        "route": "garden",
+        "status": "COMPLETE",
+        "notes": "Path and wayfinding stone visible; no catastrophic obstruction or unsupported landmark."
+      },
+      {
+        "route": "person",
+        "status": "COMPLETE",
+        "notes": "Converging roots visible. Bench is at the edge/outside the portrait frame at the prescribed root-focused pose; no camera change made."
+      },
+      {
+        "route": "builder",
+        "status": "COMPLETE",
+        "notes": "Completed bench and tokens visible under the slatted structure; portrait frame crops the outer tokens at the specified close camera."
+      },
+      {
+        "route": "thinker",
+        "status": "COMPLETE",
+        "notes": "Water and freedom stones visible; deck is at the left edge of this lateral reference pose."
+      },
+      {
+        "route": "leader",
+        "status": "COMPLETE",
+        "notes": "Lesson rail and coordination markers grounded; corrected rail placement remains clear."
+      },
+      {
+        "route": "stories",
+        "status": "COMPLETE",
+        "notes": "Black coplanar path patches corrected by a 1 cm bay-slab offset; both final posters reviewed."
+      },
+      {
+        "route": "work",
+        "status": "COMPLETE",
+        "notes": "Planner station and tiles visible. The offset amber spacer is an authored demo transform, not accidental floating environment geometry."
+      },
+      {
+        "route": "future",
+        "status": "COMPLETE",
+        "notes": "Black terrain/skirt overlap corrected by lowering this route G09 instance 1 cm. Distant marker remains visible; camera is near/beyond the modeled path end, so path is largely below the desktop frame."
+      },
+      {
+        "route": "aura",
+        "status": "COMPLETE",
+        "notes": "Spine, sheets and relationship strands visible. Close shelving framing is prescribed; runtime document-to-socket binding remains explicit in the manifest."
+      },
+      {
+        "route": "contact",
+        "status": "COMPLETE",
+        "notes": "Resting stone, outward path and open ground visible; no catastrophic obstruction."
+      }
+    ]
+  },
+  "continuationChanges": {
+    "masters": [
+      "scripts/blender/stay-awhile/05-stories.blend",
+      "scripts/blender/stay-awhile/07-future.blend"
+    ],
+    "glbs": [
+      "public/models/stay/v1/stories/lantern-path.desktop.glb",
+      "public/models/stay/v1/stories/lantern-path.mobile.glb"
+    ],
+    "posters": [
+      "public/assets/stay/v1/stories-desktop.webp",
+      "public/assets/stay/v1/stories-mobile.webp",
+      "public/assets/stay/v1/future-desktop.webp",
+      "public/assets/stay/v1/future-mobile.webp"
+    ],
+    "allAnimatedGlbsUnchanged": true,
+    "corrections": [
+      {
+        "route": "stories",
+        "source": "05-stories.blend",
+        "beforeSha256": "d040e60d2fe25f7f9e6619df4f28892821a7b12fa33b07ec8a5e68f36654c2fb",
+        "afterSha256": "93ef2ba80654b6bdf76c8955dc3ec08aa637cfdf35d0f454ea0e254b23d6c414",
+        "objects": [
+          "SA_S01_MESH_00",
+          "SA_S01_MESH_01",
+          "SA_S01_MESH_02",
+          "SA_S01_MESH_03",
+          "SA_S01_MOBILEMESH_00",
+          "SA_S01_MOBILEMESH_01",
+          "SA_S01_MOBILEMESH_02",
+          "SA_S01_MOBILEMESH_03"
+        ],
+        "reason": "Handoff review: raised S01 bay slabs 0.01 m above overlapping path tops; fixed black coplanar patches without adding geometry."
+      },
+      {
+        "route": "future",
+        "source": "07-future.blend",
+        "beforeSha256": "8ae03c9372025e3a2619cb590c5c658719de679ee2c5a60354a069235968caf7",
+        "afterSha256": "efc5aabeb303a429d38795901d09dcb1e2b978cfe5e02fbf19544b6ffb6ac2ba",
+        "objects": [
+          "SA_FUTURE_INSTANCE_04",
+          "SA_FUTURE_MOBILEINSTANCE_04"
+        ],
+        "reason": "Handoff review: Future G09 instance Y=-0.51 m, placing skirt 0.01 m beneath the overlapping terrain; fixes black horizontal strip. Shared G09 geometry unchanged."
+      }
+    ],
+    "websiteFilesChanged": [],
+    "note": "Refreshed manifests and validation evidence after two narrow source fixes. Corrected render helper root resolution; discarded four stray preview files from the first relative-path attempt."
+  },
+  "specificationAudit": [
+    {
+      "specificationItem": "Part I 1.1 — 47 unique modeled identities and ten Stay masters",
+      "status": "COMPLETE",
+      "evidence": "delivery-inventory.json; master-handoff-validation.json",
+      "notes": "47 logical IDs; LOD pairs and scene instances do not inflate the count."
+    },
+    {
+      "specificationItem": "Part I 1.1 — full integration asset gate",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "validation-report.json; this audit",
+      "notes": "Blender/package checks pass. The isolated browser viewer, direct mobile entry, rendered reading clearances and integrated performance gates have not been run."
+    },
+    {
+      "specificationItem": "Part I 1.2 — ten named source files",
+      "status": "COMPLETE",
+      "evidence": "00-garden.blend through 09-contact.blend",
+      "notes": "All reopened with Blender 5.2.1 LTS; no missing source."
+    },
+    {
+      "specificationItem": "Part I 1.2 — protected Quick and reserved Landing source",
+      "status": "NOT APPLICABLE",
+      "evidence": "protected-baseline.json",
+      "notes": "Quick remains protected; creating or migrating a Landing master is excluded by the specification."
+    },
+    {
+      "specificationItem": "Part I 1.2 — shared kit linked relatively",
+      "status": "COMPLETE",
+      "evidence": "master-handoff-validation.json: libraries",
+      "notes": "Nine dependent masters resolve //00-garden.blend; no duplicated shared kit exports under route names."
+    },
+    {
+      "specificationItem": "Part I 1.2 — world/map reference anchors",
+      "status": "COMPLETE",
+      "evidence": "00-garden.blend: 00_REFERENCE; contract.json: routes",
+      "notes": "Garden carries the ten world-position reference empties; this is authoring reference, not a functioning website map."
+    },
+    {
+      "specificationItem": "Part I 1.2 — READ_ME content and source provenance",
+      "status": "COMPLETE",
+      "evidence": "master-handoff-validation.json: readMe",
+      "notes": "Version, purpose, IDs, provenance, coordinates, export command, dependencies, validation status and artist notes are present in all ten masters."
+    },
+    {
+      "specificationItem": "Part I 1.2 — portable exporter root validation",
+      "status": "COMPLETE",
+      "evidence": "produce.py; render_review.py",
+      "notes": "Exporter requires passed repository root and checks package.json/scripts/blender. Render helper now resolves its root before handing paths to Blender."
+    },
+    {
+      "specificationItem": "Part I 1.3 — metric units and applied object scales",
+      "status": "COMPLETE",
+      "evidence": "validation-report.json; master-handoff-validation.json",
+      "notes": "Metric unit scale 1; owned export objects have applied scale and root origins at zero; glTF conversion applied once."
+    },
+    {
+      "specificationItem": "Part I 1.3 — eleven required collection groups",
+      "status": "COMPLETE",
+      "evidence": "master-handoff-validation.json: collections",
+      "notes": "00_REFERENCE through 10_EXPORT_MOBILE exist; authoring guides do not become prop geometry."
+    },
+    {
+      "specificationItem": "Part I 1.3 — node grammar, roots and LOD anchors",
+      "status": "COMPLETE",
+      "evidence": "asset-manifest.json; validation-report.json",
+      "notes": "All 94 exports have unique SA names and matching assetId/lod extras; anchor names match with translation tolerance 0.01 m."
+    },
+    {
+      "specificationItem": "Part I 1.3 — ENTRY/EXIT/CAM/LOOK/TEXT guides",
+      "status": "COMPLETE",
+      "evidence": "master-handoff-validation.json; *.scene.json: guideAssetId",
+      "notes": "All route guides exist; CAM/LOOK/TEXT coordinates match the extracted specification. The first owned asset pair is the documented guide container."
+    },
+    {
+      "specificationItem": "Part I 1.3 — scene metadata",
+      "status": "COMPLETE",
+      "evidence": "ten *.scene.json files",
+      "notes": "Route/source hashes, version/date, IDs, instance transforms, camera knots, focus anchors, bounds, reading rectangles, clips and five settled reference poses verified; no required fields missing."
+    },
+    {
+      "specificationItem": "Part I 1.3 — 0.5 m sampled camera clearance",
+      "status": "COMPLETE",
+      "evidence": "rail-validation.json",
+      "notes": "5,760 camera samples, desktop/mobile camera poses, ten routes and five geometry states; zero nearest-surface clearance violations. This is a sampled Blender test."
+    },
+    {
+      "specificationItem": "Part I 1.3 — near-plane headroom and continuous mobile geometry clearance",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "08_COLLISION_GUIDES; check_rails.py; render_review.py",
+      "notes": "0.25 m headroom is authored as metadata. The existing BVH test measures camera-center clearance using the active desktop composition and both camera poses; it is not a continuous frustum sweep or an independent mobile-geometry sweep."
+    },
+    {
+      "specificationItem": "Part I 1.4 — material palette and export references",
+      "status": "COMPLETE",
+      "evidence": "master-handoff-validation.json; all GLBs; geometry.py",
+      "notes": "Required meshes have assigned SA_M materials; no missing GLB primitive material indices or broken image references. Blank paper remains unlettered."
+    },
+    {
+      "specificationItem": "Part I 1.4 — shared atlas, UVs and vertex colors",
+      "status": "COMPLETE",
+      "evidence": "public/models/stay/v1/shared/timber-paper.*.png; GLBs",
+      "notes": "1024-square desktop and 512-square mobile atlas, sRGB image flags, UV0 on textured surfaces and exported COLOR_0 channels; PNGs embedded in affected GLBs."
+    },
+    {
+      "specificationItem": "Part I 1.4 — gray/ivory browser color calibration",
+      "status": "NOT STARTED",
+      "evidence": "No browser color calibration report",
+      "notes": "Blender preview uses Standard view transform; exact browser ACES/sRGB equivalence remains unverified."
+    },
+    {
+      "specificationItem": "Part I 1.4 — runtime hemisphere/directional rig, fog and light limits",
+      "status": "NOT STARTED",
+      "evidence": "produce.py: preview rig only",
+      "notes": "Blender light/camera references and route multipliers exist; the specified runtime lighting system is not implemented by this asset task."
+    },
+    {
+      "specificationItem": "Part I 1.5 — final triangle and per-file byte caps",
+      "status": "COMPLETE",
+      "evidence": "asset-manifest.json; delivery-inventory.json: assets",
+      "notes": "All 47 desktop/mobile pairs pass their own final-triangle and binary-size limits."
+    },
+    {
+      "specificationItem": "Part I 1.5 — selected GLB2 exports and dependencies",
+      "status": "COMPLETE",
+      "evidence": "94 GLBs; produce.py; khronos-validation.json",
+      "notes": "No prop cameras, unsupported external buffers/images, mandatory compression decoders or accidental default Blender object names."
+    },
+    {
+      "specificationItem": "Part I 1.5 — 30 fps authored transform clips",
+      "status": "COMPLETE",
+      "evidence": "master-handoff-validation.json; motion-validation.json",
+      "notes": "Exactly 18 Actions and the corresponding 18 logical clips in both variants; exact names/durations and frame counts verified."
+    },
+    {
+      "specificationItem": "Part I 1.5 — deterministic first/last and reverse seeking",
+      "status": "COMPLETE",
+      "evidence": "validation-report.json; motion-validation.json",
+      "notes": "Five canonical clip fractions compared to source transforms within 0.005 m/rad; source forward/reverse frame evaluation matches. Browser mixer seeking is a later check."
+    },
+    {
+      "specificationItem": "Part I 1.5 — runtime channel separation",
+      "status": "COMPLETE",
+      "evidence": "contract.json; *.scene.json: runtimeNotes",
+      "notes": "No SWAY, water, petal, visibility, opacity or AURA_CONNECTIONS Action was counted or exported."
+    },
+    {
+      "specificationItem": "Part I 1.5 — browser batching, live instancing and cache disposal",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world runtime",
+      "notes": "Source collection instances and material grouping exist; runtime batching/refcounts/disposal are not implemented."
+    },
+    {
+      "specificationItem": "Part I 1.5 — optional KTX2/Draco/meshopt and extra atlases",
+      "status": "NOT APPLICABLE",
+      "evidence": "GLB extension inspection",
+      "notes": "Optional measured optimizations are not baseline production requirements and were not introduced."
+    },
+    {
+      "specificationItem": "Part I 1.6 — 00-garden.blend authored deliverables",
+      "status": "COMPLETE",
+      "evidence": "scripts/blender/stay-awhile/00-garden.blend; public/models/stay/v1/garden/garden.scene.json",
+      "notes": "14 owned IDs, paired exports, source guides, five settled reference poses and both posters verified; layout exceptions are documented."
+    },
+    {
+      "specificationItem": "Part I 1.6 — 01-person.blend authored deliverables",
+      "status": "COMPLETE",
+      "evidence": "scripts/blender/stay-awhile/01-person.blend; public/models/stay/v1/person/person.scene.json",
+      "notes": "3 owned IDs, paired exports, source guides, five settled reference poses and both posters verified; layout exceptions are documented."
+    },
+    {
+      "specificationItem": "Part I 1.6 — 02-builder.blend authored deliverables",
+      "status": "COMPLETE",
+      "evidence": "scripts/blender/stay-awhile/02-builder.blend; public/models/stay/v1/builder/builder.scene.json",
+      "notes": "6 owned IDs, paired exports, source guides, five settled reference poses and both posters verified; layout exceptions are documented."
+    },
+    {
+      "specificationItem": "Part I 1.6 — 03-thinker.blend authored deliverables",
+      "status": "COMPLETE",
+      "evidence": "scripts/blender/stay-awhile/03-thinker.blend; public/models/stay/v1/thinker/thinker.scene.json",
+      "notes": "3 owned IDs, paired exports, source guides, five settled reference poses and both posters verified; layout exceptions are documented."
+    },
+    {
+      "specificationItem": "Part I 1.6 — 04-leader.blend authored deliverables",
+      "status": "COMPLETE",
+      "evidence": "scripts/blender/stay-awhile/04-leader.blend; public/models/stay/v1/leader/leader.scene.json",
+      "notes": "3 owned IDs, paired exports, source guides, five settled reference poses and both posters verified; layout exceptions are documented."
+    },
+    {
+      "specificationItem": "Part I 1.6 — 05-stories.blend authored deliverables",
+      "status": "COMPLETE",
+      "evidence": "scripts/blender/stay-awhile/05-stories.blend; public/models/stay/v1/stories/stories.scene.json",
+      "notes": "3 owned IDs, paired exports, source guides, five settled reference poses and both posters verified; layout exceptions are documented."
+    },
+    {
+      "specificationItem": "Part I 1.6 — 06-work.blend authored deliverables",
+      "status": "COMPLETE",
+      "evidence": "scripts/blender/stay-awhile/06-work.blend; public/models/stay/v1/work/work.scene.json",
+      "notes": "6 owned IDs, paired exports, source guides, five settled reference poses and both posters verified; layout exceptions are documented."
+    },
+    {
+      "specificationItem": "Part I 1.6 — 07-future.blend authored deliverables",
+      "status": "COMPLETE",
+      "evidence": "scripts/blender/stay-awhile/07-future.blend; public/models/stay/v1/future/future.scene.json",
+      "notes": "3 owned IDs, paired exports, source guides, five settled reference poses and both posters verified; layout exceptions are documented."
+    },
+    {
+      "specificationItem": "Part I 1.6 — 08-aura.blend authored deliverables",
+      "status": "COMPLETE",
+      "evidence": "scripts/blender/stay-awhile/08-aura.blend; public/models/stay/v1/aura/aura.scene.json",
+      "notes": "4 owned IDs, paired exports, source guides, five settled reference poses and both posters verified; layout exceptions are documented."
+    },
+    {
+      "specificationItem": "Part I 1.6 — 09-contact.blend authored deliverables",
+      "status": "COMPLETE",
+      "evidence": "scripts/blender/stay-awhile/09-contact.blend; public/models/stay/v1/contact/contact.scene.json",
+      "notes": "2 owned IDs, paired exports, source guides, five settled reference poses and both posters verified; layout exceptions are documented."
+    },
+    {
+      "specificationItem": "Part I 1.6 — route runtime, mobile transformation and reduced-motion HTML behavior",
+      "status": "NOT STARTED",
+      "evidence": "Existing native pages are unchanged",
+      "notes": "Production posters/mobile assets exist. New route adapters, full fallbacks, mobile runtime cameras and reduced-motion behavior have not been integrated."
+    },
+    {
+      "specificationItem": "Part I 1.7 / Appendix B — individual 47 asset delivery contracts",
+      "status": "COMPLETE",
+      "evidence": "47-row asset table below; asset-manifest.json",
+      "notes": "Every specified ID maps to the correct source and both exports, with required roots, materials, clips and caps. This completes the file/export contract, not every in-browser behavioral condition in the asset prose."
+    },
+    {
+      "specificationItem": "Part I 1.7 — camera relationships, reading volumes and all runtime asset states",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "ten poster pairs; camera guides; scene metadata",
+      "notes": "Specified poster viewpoints reviewed for catastrophic defects. Unloaded/loading/active/failed/released behavior, HTML hooks, complete rail visual review and DOM reading-clearance tests remain runtime work."
+    },
+    {
+      "specificationItem": "Part I 1.8 — staging, parsing and checksummed asset manifest",
+      "status": "COMPLETE",
+      "evidence": "produce.py; validate.py; asset-manifest.json",
+      "notes": "Final staging directory has no files; all 94 published exports parse and match manifest checksums."
+    },
+    {
+      "specificationItem": "Part I 1.8 — twenty prescribed posters",
+      "status": "COMPLETE",
+      "evidence": "poster-review.json; delivery-inventory.json: renderReview",
+      "notes": "10 desktop at 1600x1000, 10 mobile at 780x1200; prescribed p values; all byte caps pass; visual review completed after two targeted overlap corrections."
+    },
+    {
+      "specificationItem": "Part I 1.8 — Khronos validation",
+      "status": "COMPLETE",
+      "evidence": "khronos-validation.json",
+      "notes": "94 final files, zero errors and zero warnings. Informational empty-node messages are expected guide/hook nodes."
+    },
+    {
+      "specificationItem": "Part I 1.8 — absolute bounds inside every declared route zone",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "asset-manifest.json: bounds; *.scene.json: boundsExceptions",
+      "notes": "Bounds are measured. G01/G09 world extents and G11/F03 distance deliberately exceed local zones; manifests explicitly document exceptions. A blanket all-bounds-inside assertion would be false."
+    },
+    {
+      "specificationItem": "Part I 1.8 — isolated GLB viewer and five browser poses",
+      "status": "NOT STARTED",
+      "evidence": "No isolated final-export browser viewer report",
+      "notes": "Source/GLB numerical comparison is complete; it does not substitute for an actual browser viewer load/seek/release check."
+    },
+    {
+      "specificationItem": "Part I 1.8 — direct mobile entry without Garden",
+      "status": "NOT STARTED",
+      "evidence": "No new route integration",
+      "notes": "Requires later browser asset-gate/integration work; no website changes were authorized here."
+    },
+    {
+      "specificationItem": "Part I 1.8 — loader schema rejection and fallback behavior",
+      "status": "NOT STARTED",
+      "evidence": "No AssetStore implementation",
+      "notes": "Manifest schema is present; the consuming loader and failure UI are later work."
+    },
+    {
+      "specificationItem": "Appendix B — 47 IDs / 94 GLBs / 10 scene manifests / 1 asset manifest / 20 posters",
+      "status": "COMPLETE",
+      "evidence": "delivery-inventory.json",
+      "notes": "Exact deliverable counts, paths and source/export checksums verified."
+    },
+    {
+      "specificationItem": "Appendix B — eighteen authored clip register",
+      "status": "COMPLETE",
+      "evidence": "18-row authored clip table below",
+      "notes": "18 logical clips, 36 clip-bearing GLB variants. No additional authored clips."
+    },
+    {
+      "specificationItem": "Appendix B — protected/reserved non-Stay source locations",
+      "status": "NOT APPLICABLE",
+      "evidence": "Part I 1.2 exclusion; protected-baseline.json",
+      "notes": "Ten Stay masters are complete; the two non-Stay locations are not missing Stay deliverables."
+    },
+    {
+      "specificationItem": "Appendix C — AN-01 Garden arrival",
+      "status": "NOT STARTED",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "The specified shared-runtime system has not been implemented; existing native effects do not establish completion of this specification."
+    },
+    {
+      "specificationItem": "Appendix C — AN-02 Route camera choreography",
+      "status": "NOT STARTED",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "The specified shared-runtime system has not been implemented; existing native effects do not establish completion of this specification."
+    },
+    {
+      "specificationItem": "Appendix C — AN-03 Destination travel",
+      "status": "NOT STARTED",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "The specified shared-runtime system has not been implemented; existing native effects do not establish completion of this specification."
+    },
+    {
+      "specificationItem": "Appendix C — AN-04 Map spatial lift",
+      "status": "NOT STARTED",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "The specified shared-runtime system has not been implemented; existing native effects do not establish completion of this specification."
+    },
+    {
+      "specificationItem": "Appendix C — AN-05 Map route trace",
+      "status": "NOT STARTED",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "The specified shared-runtime system has not been implemented; existing native effects do not establish completion of this specification."
+    },
+    {
+      "specificationItem": "Appendix C — AN-06 Heading entrances",
+      "status": "NOT STARTED",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "The specified shared-runtime system has not been implemented; existing native effects do not establish completion of this specification."
+    },
+    {
+      "specificationItem": "Appendix C — AN-07 Body reading reveals",
+      "status": "NOT STARTED",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "The specified shared-runtime system has not been implemented; existing native effects do not establish completion of this specification."
+    },
+    {
+      "specificationItem": "Appendix C — AN-08 Control feedback",
+      "status": "NOT STARTED",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "The specified shared-runtime system has not been implemented; existing native effects do not establish completion of this specification."
+    },
+    {
+      "specificationItem": "Appendix C — AN-09 Foreground parallax",
+      "status": "NOT STARTED",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "The specified shared-runtime system has not been implemented; existing native effects do not establish completion of this specification."
+    },
+    {
+      "specificationItem": "Appendix C — AN-10 Canopy wind",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-11 Petal atmosphere",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-12 Water response",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-13 Builder assembly",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-14 Leader convergence",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-15 Story lantern focus",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-16 Planner demonstration",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-17 Logger demonstration",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-18 MUN demonstration",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-19 SNRLED demonstration",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-20 Work AURA demonstration",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-21 Future opening",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-22 AURA archive synthesis",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "Asset/clip or static geometry prerequisite exists; the specified runtime driver, state lifecycle and reduced-motion outcome are not implemented."
+    },
+    {
+      "specificationItem": "Appendix C — AN-23 Certificate overlay",
+      "status": "NOT STARTED",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "The specified shared-runtime system has not been implemented; existing native effects do not establish completion of this specification."
+    },
+    {
+      "specificationItem": "Appendix C — AN-24 Reading-mode change",
+      "status": "NOT STARTED",
+      "evidence": "contract.json; authored clip table; existing native code unchanged",
+      "notes": "The specified shared-runtime system has not been implemented; existing native effects do not establish completion of this specification."
+    },
+    {
+      "specificationItem": "Appendix C.1 — single writer, interruption and lifecycle invariants",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "*.scene.json: runtimeNotes; source/GLB reverse checks",
+      "notes": "Authoring ownership and deterministic transform prerequisites are recorded; runtime camera arbitration, cancellation and cleanup are not implemented."
+    },
+    {
+      "specificationItem": "Appendix F — First route HTML/CSS/Stay JS",
+      "status": "NOT STARTED",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "This is a rendered/runtime/device metric. No measurement was made in this Blender-only continuation. Target: ≤250 KiB gzip incremental over shared app desktop; ≤220 KiB gzip mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Shared garden kit first use",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "Stored asset sizes are available and individually pass. First-use visibility, compressed network transfer and loading policy are not measured. Target: ≤1.8 MiB compressed transfer desktop; ≤700 KiB mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Active route unique GLBs",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "Owned package byte totals are recorded. Active set, actual transfer and loading policy remain unmeasured. Target: ≤2.4 MiB desktop; ≤900 KiB mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Initial visible poster",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "All physical poster dimensions and file caps pass. Correct responsive source selection and single-poster network transfer remain untested. Target: ≤180 KiB desktop; ≤110 KiB mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Total first route 3D transfer",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "Individual files pass; no cold-cache route/network test has established this combined cap. Target: ≤4.5 MiB including kit and route desktop; ≤1.8 MiB mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Visible triangles",
+      "status": "NOT STARTED",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "This is a rendered/runtime/device metric. No measurement was made in this Blender-only continuation. Target: ≤160,000 desktop; ≤55,000 mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Visible draw calls",
+      "status": "NOT STARTED",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "This is a rendered/runtime/device metric. No measurement was made in this Blender-only continuation. Target: ≤90 baseline / 110 with optional shadow desktop; ≤45 mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Texture GPU allocation",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "Atlas dimensions and embedded images verified; actual decoded texture residency/duplicates/render targets are not measured. Target: ≤64 MiB estimated desktop; ≤24 MiB estimated mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Total GPU residency estimate",
+      "status": "NOT STARTED",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "This is a rendered/runtime/device metric. No measurement was made in this Blender-only continuation. Target: ≤128 MiB desktop; ≤64 MiB mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Active animated transform nodes",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "Clip target nodes are inventoried; active runtime action scheduling and simultaneous-node counts remain untested. Target: ≤80 desktop; ≤30 mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Particles",
+      "status": "NOT STARTED",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "This is a rendered/runtime/device metric. No measurement was made in this Blender-only continuation. Target: 48 garden; 8 thinker; 0 contact desktop; 8 garden; 2 thinker; 0 contact mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Frame time after warm-up",
+      "status": "NOT STARTED",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "This is a rendered/runtime/device metric. No measurement was made in this Blender-only continuation. Target: p95 ≤20 ms at 1440×900 desktop; p95 ≤33 ms at 390×844 mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Layout shift",
+      "status": "NOT STARTED",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "This is a rendered/runtime/device metric. No measurement was made in this Blender-only continuation. Target: CLS ≤0.1 desktop; CLS ≤0.1 mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Interaction latency",
+      "status": "NOT STARTED",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "This is a rendered/runtime/device metric. No measurement was made in this Blender-only continuation. Target: INP target ≤200 ms desktop; INP target ≤200 ms mobile."
+    },
+    {
+      "specificationItem": "Appendix F — Main-thread stalls",
+      "status": "NOT STARTED",
+      "evidence": "asset-manifest.json; poster-review.json; no browser performance trace",
+      "notes": "This is a rendered/runtime/device metric. No measurement was made in this Blender-only continuation. Target: No animation-caused task >50 ms repeatedly desktop; Same mobile."
+    },
+    {
+      "specificationItem": "Appendix I — source scripts and masters folder",
+      "status": "COMPLETE",
+      "evidence": "scripts/blender/stay-awhile/",
+      "notes": "Ten masters, exporter, checks and handoff reports exist."
+    },
+    {
+      "specificationItem": "Appendix I — public model and poster folders",
+      "status": "COMPLETE",
+      "evidence": "public/models/stay/v1/; public/assets/stay/v1/",
+      "notes": "GLBs, manifests and posters exist. Shared PNG atlases are under models/stay/v1/shared, consistent with 1.8 dependency containment; Appendix I also generically mentions an atlas under assets. No broken path is concealed."
+    },
+    {
+      "specificationItem": "Appendix I — proposed world/content/data/adapters/tests/docs web families",
+      "status": "NOT STARTED",
+      "evidence": "src/sections/stay/world and src/data/stay absent",
+      "notes": "Existing ten native route entry files remain; the proposed new runtime families are absent. No website implementation was performed."
+    },
+    {
+      "specificationItem": "Appendix L 01 — Confirm scope, current source and protected-file hashes; keep the landing and Quick untouched.",
+      "status": "COMPLETE",
+      "evidence": "delivery-inventory.json; protected-baseline.json",
+      "notes": "216/216 protected hashes match. Four Quick files differ from Git but match the pre-production baseline."
+    },
+    {
+      "specificationItem": "Appendix L 02 — Freeze the route/content/evidence schema and record genuine unresolved facts.",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "delivery-inventory.json; protected-baseline.json",
+      "notes": "The authoritative document and asset contract fix routes/asset evidence boundaries. Future typed website content schema and source-gap resolution have not been implemented."
+    },
+    {
+      "specificationItem": "Appendix L 03 — Establish Blender collection/node/axis/material conventions and exporter validation.",
+      "status": "COMPLETE",
+      "evidence": "delivery-inventory.json; protected-baseline.json",
+      "notes": "Collections, axis, node grammar, materials and export validation verified."
+    },
+    {
+      "specificationItem": "Appendix L 04 — Produce shared garden kit with desktop/mobile silhouettes and tested material limits.",
+      "status": "COMPLETE",
+      "evidence": "delivery-inventory.json; protected-baseline.json",
+      "notes": "Shared desktop/mobile kit, atlas and per-asset material references/budgets verified. Browser performance limits remain Appendix F work."
+    },
+    {
+      "specificationItem": "Appendix L 05 — Produce the ten route masters and all 47 logical assets with declared clips.",
+      "status": "COMPLETE",
+      "evidence": "delivery-inventory.json; protected-baseline.json",
+      "notes": "10 masters, 47 IDs and 18 authored clips verified."
+    },
+    {
+      "specificationItem": "Appendix L 06 — Export paired GLBs, manifests and twenty route posters; pass asset gate.",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "delivery-inventory.json; protected-baseline.json",
+      "notes": "All paired exports, manifests and 20 posters complete; broader browser acceptance subgates are pending."
+    },
+    {
+      "specificationItem": "Appendix L 07 — Implement persistent Stay layout host and exact resource ownership/disposal.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 08 — Implement static HTML narrative, direct routes and complete poster fallbacks.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 09 — Implement measured scroll score, camera sampling and typography enhancement.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 10 — Implement map, explicit native-link route travel and history restoration.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 11 — Integrate Garden and prove the shared world, loading and fallback contracts.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 12 — Integrate Person, Builder, Thinker and Leader with route-specific choreography.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 13 — Integrate public Stories, Work’s five stations and deterministic demos.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 14 — Integrate Future, AURA climax and calm Contact with truthful channel availability.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 15 — Complete per-route mobile, short-screen, touch, reading-mode and reduced-motion behavior.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 16 — Verify content provenance, private-data exclusion and every external-link condition.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 17 — Execute all explicit route, map, navigation, demo, responsive, accessibility, performance, data and build tests.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 18 — Complete Luna defect correction and rerun affected cases with evidence.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 19 — Complete Astra measured optimization and prove behavior/visual preservation.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L 20 — Deliver final implementation report with source gaps, physical-device coverage and acceptance gate evidence.",
+      "status": "NOT STARTED",
+      "evidence": "No new Stay world integration or acceptance evidence",
+      "notes": "Not completed under this specification. Existing native website code is baseline, not evidence of the new implementation phase."
+    },
+    {
+      "specificationItem": "Appendix L.1 — specification inventory compared with production",
+      "status": "PARTIALLY COMPLETE",
+      "evidence": "Authoritative DOCX; delivery-inventory.json",
+      "notes": "10 routes / 47 IDs / 94 outputs / 10 masters / 18 clips verified. 24 systems, 64 beats, 107 tests and 20 phases are specification counts, not completion claims."
+    }
+  ],
+  "implementationFrontier": {
+    "COMPLETED": [
+      "Part I 1.1 delivery counts; 1.2 Stay sources, linked kit, READ_ME and portable export utilities; 1.3 collection/axis/node/guide/manifest contracts and sampled clearance; 1.4 authored material/atlas prerequisites; 1.5 export/clip/LOD/cap prerequisites; 1.6 all ten authored deliverable packages; 1.7 all 47 file/export identity contracts; 1.8 checksummed exports and twenty reviewed posters.",
+      "Appendix B complete delivery and authored clip registers; Appendix I Blender/export/poster directories; Appendix L 01, 03, 04 and 05."
+    ],
+    "PARTIALLY COMPLETED": [
+      "Part I asset/integration gate, near-plane/continuous and mobile-geometry clearance proof, full bounds-zone compliance with recorded exceptions, asset prose runtime requirements, browser color equivalence.",
+      "Appendix C systems with modeled/authored prerequisites; Appendix F file prerequisites without integrated performance proof; Appendix L 02, 06 and L.1."
+    ],
+    "NOT YET IMPLEMENTED": [
+      "Part I 1.8 isolated final-GLB browser load/seek/release and direct-mobile acceptance checks.",
+      "New specification runtime in Parts II–XXIII: persistent host/AssetStore, route adapters, scroll/camera controllers, map/travel/history, typography and narrative integration, demos, lighting/ambient channels, responsive fallbacks, accessibility, disposal and quality tiers.",
+      "Part XXIV web implementation phases, Part XXV acceptance execution, Parts XXVII–XXIX implementation/verification/optimization handoffs, Part XXX final website acceptance; Appendix L 07–20. Existing native routes are preserved and are not counted as the new implementation."
+    ],
+    "CURRENT STOPPING POINT": "The ten Blender masters, 47 paired asset exports, manifests, 18 authored clips and twenty reviewed posters are delivered and pass the stated offline checks; the full browser-facing asset gate and new website/runtime integration remain uncompleted.",
+    "NEXT REQUIRED STEP": "Perform the missing isolated final-GLB browser asset-gate checks, including mobile loading, pose/anchor/material verification and measured clearance, before starting the specification’s web implementation phases."
+  },
+  "evidenceFiles": [
+    {
+      "path": "scripts/blender/stay-awhile/validation-report.json",
+      "sha256": "c82ee43544e477a86985e95688ff9c0d959f2d384e831c5b16b10f2ec259eb4c"
+    },
+    {
+      "path": "scripts/blender/stay-awhile/khronos-validation.json",
+      "sha256": "5d452f1a5858dbaf3b37d6fc3cf8384efdb189087763c7ff96bf9c7a6a56fd21"
+    },
+    {
+      "path": "scripts/blender/stay-awhile/motion-validation.json",
+      "sha256": "154638f60f6676bd26185148d7187659387b136ac2b83ee15bb18773baf2cac3"
+    },
+    {
+      "path": "scripts/blender/stay-awhile/rail-validation.json",
+      "sha256": "b248898614aad4ba07926aabe2669909611e3f7c613c7f437da253434223f1d7"
+    },
+    {
+      "path": "scripts/blender/stay-awhile/poster-review.json",
+      "sha256": "19d49037e5a4419c6a4b83e00f5f24700d76d1356cdca5e24ef3ed78398b56dd"
+    },
+    {
+      "path": "scripts/blender/stay-awhile/master-handoff-validation.json",
+      "sha256": "fa188ad1adbd9a791d9d55c738bfc26ea81f4c4793f7eef7bb7071d9fda38051"
+    },
+    {
+      "path": "scripts/blender/stay-awhile/protected-baseline.json",
+      "sha256": "e7f25ce539fdd274dae5d3f6f58eeb0be915edf7d1258d28d968336eda897af2"
+    },
+    {
+      "path": "public/models/stay/v1/asset-manifest.json",
+      "sha256": "38f2de8798006cbf59bbd787b7f88d8c5ff88eb26bc487108fda1f68114776f1"
+    }
+  ],
+  "scripts": [
+    "audit_existing.py",
+    "audit_handoff.py",
+    "audit_masters.py",
+    "check_rails.py",
+    "clear_rails.py",
+    "diagnose_posters.py",
+    "finalize_contract.py",
+    "finalize_handoff.py",
+    "finish_sources.py",
+    "fix_poster_overlaps.py",
+    "geometry.py",
+    "glb_finish.py",
+    "ground_paths.py",
+    "ground_stones.py",
+    "layout.py",
+    "models.py",
+    "pack_atlas.py",
+    "prepare_contract.py",
+    "produce.py",
+    "refine_composition.py",
+    "refine_horizon.py",
+    "render_review.py",
+    "validate-glbs.cjs",
+    "validate.py",
+    "verify_motion.py"
+  ],
+  "logs": [
+    "a02-export.log",
+    "A04-final-export.log",
+    "audit.log",
+    "composition-refinement.log",
+    "F02-final-export.log",
+    "finalize-contract.log",
+    "finished-exports.log",
+    "finishing.log",
+    "g09-export.log",
+    "G09-final-export.log",
+    "horizon-refinement.log",
+    "L01-final-export.log",
+    "master-handoff-validation.log",
+    "motion-validation.log",
+    "path-grounding.log",
+    "poster-diagnostic.log",
+    "poster-handoff-render.log",
+    "poster-overlap-corrections.log",
+    "production.log",
+    "rail-corrections.log",
+    "rail-validation.log",
+    "render-review.log",
+    "S01-final-export.log",
+    "S01-handoff-export.log",
+    "stone-grounding.log",
+    "T01-final-export.log",
+    "T02-final-export.log",
+    "validation.log",
+    "W02-final-export.log"
+  ],
+  "storedPackageTotals": {
+    "garden": {
+      "desktop": 507276,
+      "mobile": 214632
+    },
+    "person": {
+      "desktop": 97620,
+      "mobile": 43612
+    },
+    "builder": {
+      "desktop": 330164,
+      "mobile": 165772
+    },
+    "thinker": {
+      "desktop": 116856,
+      "mobile": 49248
+    },
+    "leader": {
+      "desktop": 157816,
+      "mobile": 91044
+    },
+    "stories": {
+      "desktop": 206488,
+      "mobile": 98332
+    },
+    "work": {
+      "desktop": 416048,
+      "mobile": 177296
+    },
+    "future": {
+      "desktop": 375848,
+      "mobile": 155964
+    },
+    "aura": {
+      "desktop": 422020,
+      "mobile": 181816
+    },
+    "contact": {
+      "desktop": 57176,
+      "mobile": 17952
+    }
+  }
+}

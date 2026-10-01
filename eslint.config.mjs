@@ -12,6 +12,7 @@ export default defineConfig([
     "next-env.d.ts",
     ".aura-work/**",
     "public/**",
+    "claude-stay-import/**",
     "design/references/**",
     "design/figma-import/**",
   ]),
@@ -20,14 +21,13 @@ export default defineConfig([
   // rule sets. The a11y rules are the reason this dependency earns its place:
   // accessibility regressions get caught by `npm run lint`, not in review.
   // (Next 16 removed `next lint`, so linting is its own step.)
-  ...nextCoreWebVitals,
-
-  {
+  ...nextCoreWebVitals.map((config, index) => index === 0 ? {
+    ...config,
     rules: {
-      // Push interaction toward real semantic elements rather than div
-      // handlers, which is what keeps keyboard support working by default.
+      ...config.rules,
+      // Keep the extra accessibility rules beside their plugin definition.
       "jsx-a11y/no-noninteractive-element-interactions": "warn",
       "jsx-a11y/no-static-element-interactions": "warn",
     },
-  },
+  } : config),
 ]);

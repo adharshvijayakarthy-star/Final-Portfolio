@@ -1,0 +1,187 @@
+{
+  "routes": [
+    {
+      "route": "garden",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 65686,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 106
+        },
+        "mobile": {
+          "triangles": 19430,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 102
+        }
+      }
+    },
+    {
+      "route": "person",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 80526,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 117
+        },
+        "mobile": {
+          "triangles": 23776,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 110
+        }
+      }
+    },
+    {
+      "route": "builder",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 72264,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 144
+        },
+        "mobile": {
+          "triangles": 19497,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 144
+        }
+      }
+    },
+    {
+      "route": "thinker",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 65753,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 104
+        },
+        "mobile": {
+          "triangles": 19052,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 102
+        }
+      }
+    },
+    {
+      "route": "leader",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 64014,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 115
+        },
+        "mobile": {
+          "triangles": 19425,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 110
+        }
+      }
+    },
+    {
+      "route": "stories",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 71499,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 147
+        },
+        "mobile": {
+          "triangles": 21765,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 147
+        }
+      }
+    },
+    {
+      "route": "work",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 73586,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 148
+        },
+        "mobile": {
+          "triangles": 22296,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 140
+        }
+      }
+    },
+    {
+      "route": "future",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 38964,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 36
+        },
+        "mobile": {
+          "triangles": 11857,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 36
+        }
+      }
+    },
+    {
+      "route": "aura",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 73153,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 158
+        },
+        "mobile": {
+          "triangles": 22159,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 143
+        }
+      }
+    },
+    {
+      "route": "contact",
+      "actionsUnchanged": true,
+      "guidesUnchanged": true,
+      "pivotsUnchanged": true,
+      "composition": {
+        "desktop": {
+          "triangles": 23988,
+          "triangleCap": 160000,
+          "unbatchedPrimitiveInstances": 37
+        },
+        "mobile": {
+          "triangles": 7896,
+          "triangleCap": 55000,
+          "unbatchedPrimitiveInstances": 33
+        }
+      }
+    }
+  ],
+  "protectedFiles": 169,
+  "websiteChanges": [],
+  "errors": []
+}

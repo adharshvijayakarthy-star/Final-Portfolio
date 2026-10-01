@@ -1,0 +1,20 @@
+00:03.109  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\03-thinker.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+23:10:16 | INFO: Starting glTF 2.0 export
+23:10:16 | INFO: Extracting primitive: SA_T01_GEOMETRY_00
+23:10:16 | INFO: Primitives created: 1
+23:10:16 | INFO: Finished glTF 2.0 export in 0.17579293251037598 s
+
+EXPORTED public\models\stay\v1\thinker\tea-deck.desktop.glb 86960
+23:10:16 | INFO: Starting glTF 2.0 export
+23:10:16 | INFO: Extracting primitive: SA_T01_MOBILEGEOMETRY_00
+23:10:16 | INFO: Primitives created: 1
+23:10:16 | INFO: Finished glTF 2.0 export in 0.01933455467224121 s
+
+EXPORTED public\models\stay\v1\thinker\tea-deck.mobile.glb 26784
+PRODUCTION_PASS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

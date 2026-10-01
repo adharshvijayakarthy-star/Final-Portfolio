@@ -1,0 +1,36 @@
+00:02.969  blend            | Read blend: "C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\05-stories.blend"
+Info: Read library: 'C:\Users\Adharsh Vijayakarthy\Desktop\Code\Final_Portfolio\scripts\blender\stay-awhile\00-garden.blend', '//00-garden.blend', parent '<direct>'
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+07:39:41 | INFO: Starting glTF 2.0 export
+07:39:41 | INFO: Extracting primitive: SA_S01_GEOMETRY_00
+07:39:41 | INFO: Primitives created: 1
+07:39:41 | INFO: Extracting primitive: SA_S01_GEOMETRY_01
+07:39:41 | INFO: Primitives created: 1
+07:39:41 | INFO: Extracting primitive: SA_S01_GEOMETRY_02
+07:39:41 | INFO: Primitives created: 1
+07:39:41 | INFO: Extracting primitive: SA_S01_GEOMETRY_03
+07:39:41 | INFO: Primitives created: 1
+07:39:41 | INFO: Extracting primitive: SA_S01_GEOMETRY_04
+07:39:41 | INFO: Primitives created: 1
+07:39:41 | INFO: Finished glTF 2.0 export in 0.11789608001708984 s
+
+EXPORTED public\models\stay\v1\stories\lantern-path.desktop.glb 56328
+07:39:41 | INFO: Starting glTF 2.0 export
+07:39:41 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_00
+07:39:41 | INFO: Primitives created: 1
+07:39:41 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_01
+07:39:41 | INFO: Primitives created: 1
+07:39:41 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_02
+07:39:41 | INFO: Primitives created: 1
+07:39:41 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_03
+07:39:41 | INFO: Primitives created: 1
+07:39:41 | INFO: Extracting primitive: SA_S01_MOBILEGEOMETRY_04
+07:39:41 | INFO: Primitives created: 1
+07:39:41 | INFO: Finished glTF 2.0 export in 0.025829315185546875 s
+
+EXPORTED public\models\stay\v1\stories\lantern-path.mobile.glb 44080
+PRODUCTION_PASS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,11 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useSyncExternalStore, type ReactNode } from "react";
-import { GardenScene, type SceneGeometry } from "./GardenScene";
 import type { StayDestination } from "./destinations";
-import { StayNavigation } from "./StayNavigation";
 import { GardenNav } from "./GardenNav";
 import styles from "./stay.module.css";
+import { useStayExperience } from "../world/StayExperienceProvider";
 import "./reference.module.css";
 import "./stay-keyframes.css";
 
@@ -16,8 +15,9 @@ function subscribe(fn: () => void) {
   window.addEventListener("hashchange", fn); window.addEventListener("popstate", fn);
   return () => { window.removeEventListener("hashchange", fn); window.removeEventListener("popstate", fn); };
 }
-export function StayShell({ children, legacy, current = "garden", scene }: { children: ReactNode; legacy?: ReactNode; current?: StayDestination; scene?: SceneGeometry }) {
+export function StayShell({ children, legacy, current = "garden" }: { children: ReactNode; legacy?: ReactNode; current?: StayDestination }) {
   const legacyRoot = useRef<HTMLDivElement>(null);
+  const quiet = useStayExperience()?.quiet ?? false;
   const anchor = useSyncExternalStore(subscribe, hash, () => "");
   const showLegacy = current === "garden" && !!legacy && legacyAnchors.has(anchor);
   useEffect(() => {
@@ -29,7 +29,7 @@ export function StayShell({ children, legacy, current = "garden", scene }: { chi
     return () => cancelAnimationFrame(frame);
   }, [anchor, showLegacy]);
   if (showLegacy) return <div ref={legacyRoot} id="stay-legacy">{legacy}</div>;
-  return <StayNavigation key={current} current={current}><div className={styles.stay} data-stay-native data-destination={current}>
-    <GardenScene key={current} current={current} {...(scene ? { scene } : {})} /><GardenNav current={current} />{children}
-  </div></StayNavigation>;
+  return <div className={styles.stay} data-stay-native data-destination={current} data-stay-quiet={quiet ? "true" : undefined}>
+    <GardenNav current={current} />{children}
+  </div>;
 }

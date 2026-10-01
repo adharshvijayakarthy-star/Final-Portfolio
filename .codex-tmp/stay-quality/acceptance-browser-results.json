@@ -1,0 +1,402 @@
+[
+  {
+    "canvas": {
+      "engine": "three.js r186",
+      "stayAmbient": "active",
+      "stayAtlas": "0.000",
+      "stayAttachmentMs": "1367.90",
+      "stayCamera": "28.91,1.80,40.50",
+      "stayDrawCalls": "34",
+      "stayEmitters": "2",
+      "stayFirstFrameMs": "98.50",
+      "stayG10Visible": "true,true,true,true,true,true,true,true,true,true",
+      "stayLoads": "{\"/models/stay/v1/garden/grass-kit.mobile.glb\":{\"bytes\":5984,\"fetchMs\":215.5,\"parseMs\":5.200000002980232},\"/models/stay/v1/garden/foreground-fronds.mobile.glb\":{\"bytes\":16444,\"fetchMs\":228.09999999403954,\"parseMs\":1.2999999970197678},\"/models/stay/v1/garden/petal-kit.mobile.glb\":{\"bytes\":3404,\"fetchMs\":229.40000000596046,\"parseMs\":1.5999999940395355},\"/models/stay/v1/builder/beams.mobile.glb\":{\"bytes\":20744,\"fetchMs\":60.3999999910593,\"parseMs\":238.90000000596046},\"/models/stay/v1/builder/posts.mobile.glb\":{\"bytes\":31776,\"fetchMs\":88.80000001192093,\"parseMs\":213.29999999701977},\"/models/stay/v1/builder/roof-slats.mobile.glb\":{\"bytes\":24192,\"fetchMs\":121.40000000596046,\"parseMs\":186.5},\"/models/stay/v1/builder/workbench.mobile.glb\":{\"bytes\":21748,\"fetchMs\":124.09999999403954,\"parseMs\":196.40000000596046},\"/models/stay/v1/builder/foundation.mobile.glb\":{\"bytes\":30792,\"fetchMs\":76.5,\"parseMs\":253.79999999701977},\"/models/stay/v1/garden/bush-kit.mobile.glb\":{\"bytes\":9804,\"fetchMs\":173,\"parseMs\":172.90000000596046},\"/models/stay/v1/garden/sakura-canopy.mobile.glb\":{\"bytes\":98836,\"fetchMs\":169.90000000596046,\"parseMs\":178.8999999910593},\"/models/stay/v1/builder/artifact-tokens.mobile.glb\":{\"bytes\":22028,\"fetchMs\":137.5,\"parseMs\":213.6000000089407},\"/models/stay/v1/garden/terrain.mobile.glb\":{\"bytes\":122664,\"fetchMs\":164.59999999403954,\"parseMs\":189},\"/models/stay/v1/garden/stone-kit.mobile.glb\":{\"bytes\":10428,\"fetchMs\":222.29999999701977,\"parseMs\":134.09999999403954},\"/models/stay/v1/garden/horizon-ring.mobile.glb\":{\"bytes\":9324,\"fetchMs\":226.1000000089407,\"parseMs\":142.29999999701977},\"/models/stay/v1/garden/distant-tree-bank.mobile.glb\":{\"bytes\":17996,\"fetchMs\":231.09999999403954,\"parseMs\":140.40000000596046}}",
+      "stayProgress": "0.000",
+      "stayRenderer": "1",
+      "stayResources": "15,15,1,26,53",
+      "stayRoute": "builder",
+      "stayScheduler": "single",
+      "stayShaderPrepareMs": "205.20",
+      "stayTargetProgress": "0.000",
+      "stayTextureBytes": "57496917",
+      "stayTexturePrepareMs": "45.40",
+      "stayTiming": "{\"samples\":240,\"frameP50\":33.400001525878906,\"frameP95\":66.69999694824219,\"frameMax\":150,\"cpuP95\":3.299999952316284}",
+      "stayTriangles": "10520",
+      "stayVariant": "mobile"
+    },
+    "canvases": 1,
+    "focus": "Skip to contentAuraMapPause ambient motionRead without motion<style>button[aria-",
+    "headings": [
+      {
+        "height": 1590.171875,
+        "id": "builder-b01",
+        "phase": "prepare",
+        "title": "The Builder",
+        "top": 0
+      },
+      {
+        "height": 2089.015625,
+        "id": "builder-b02",
+        "phase": "prepare",
+        "title": "A calendar was only the surface.",
+        "top": 1590.171875
+      },
+      {
+        "height": 1973.328125,
+        "id": "builder-b03",
+        "phase": "prepare",
+        "title": "Priority is not permission to take over.",
+        "top": 3679.1875
+      },
+      {
+        "height": 2082.109375,
+        "id": "builder-b04",
+        "phase": "prepare",
+        "title": "Then the timetable had to be lived.",
+        "top": 5652.515625
+      },
+      {
+        "height": 2790.46875,
+        "id": "builder-b05",
+        "phase": "prepare",
+        "title": "A mark. A pattern. A boundary.",
+        "top": 7734.625
+      },
+      {
+        "height": 2211.078125,
+        "id": "builder-b06",
+        "phase": "prepare",
+        "title": "Rules are also built for people.",
+        "top": 10525.09375
+      },
+      {
+        "height": 2190.890625,
+        "id": "builder-b07",
+        "phase": "prepare",
+        "title": "Make it real. Inspect what is weak.",
+        "top": 12736.171875
+      },
+      {
+        "height": 2317.421875,
+        "id": "builder-b08",
+        "phase": "prepare",
+        "title": "I have built real things. I am not yet the engineer I intend to become.",
+        "top": 14927.0625
+      }
+    ],
+    "height": 740,
+    "host": {
+      "stayHostCommits": "4",
+      "stayResident": "builder"
+    },
+    "overflow": false,
+    "overflowing": [],
+    "url": "http://127.0.0.1:3133/stay/builder/?qa=text200",
+    "width": 320,
+    "world": {
+      "worldRoute": "builder",
+      "worldStatus": "ready"
+    },
+    "y": 0,
+    "name": "builder-text200-width320"
+  },
+  {
+    "canvas": {
+      "engine": "three.js r186",
+      "stayAmbient": "active",
+      "stayAtlas": "0.000",
+      "stayAttachmentMs": "1367.90",
+      "stayCamera": "28.00,1.65,30.50",
+      "stayDrawCalls": "46",
+      "stayEmitters": "2",
+      "stayFirstFrameMs": "98.50",
+      "stayG10Visible": "true,true,true,true,true,true,true,true,true,true",
+      "stayLoads": "{\"/models/stay/v1/garden/grass-kit.mobile.glb\":{\"bytes\":5984,\"fetchMs\":215.5,\"parseMs\":5.200000002980232},\"/models/stay/v1/garden/foreground-fronds.mobile.glb\":{\"bytes\":16444,\"fetchMs\":228.09999999403954,\"parseMs\":1.2999999970197678},\"/models/stay/v1/garden/petal-kit.mobile.glb\":{\"bytes\":3404,\"fetchMs\":229.40000000596046,\"parseMs\":1.5999999940395355},\"/models/stay/v1/builder/beams.mobile.glb\":{\"bytes\":20744,\"fetchMs\":60.3999999910593,\"parseMs\":238.90000000596046},\"/models/stay/v1/builder/posts.mobile.glb\":{\"bytes\":31776,\"fetchMs\":88.80000001192093,\"parseMs\":213.29999999701977},\"/models/stay/v1/builder/roof-slats.mobile.glb\":{\"bytes\":24192,\"fetchMs\":121.40000000596046,\"parseMs\":186.5},\"/models/stay/v1/builder/workbench.mobile.glb\":{\"bytes\":21748,\"fetchMs\":124.09999999403954,\"parseMs\":196.40000000596046},\"/models/stay/v1/builder/foundation.mobile.glb\":{\"bytes\":30792,\"fetchMs\":76.5,\"parseMs\":253.79999999701977},\"/models/stay/v1/garden/bush-kit.mobile.glb\":{\"bytes\":9804,\"fetchMs\":173,\"parseMs\":172.90000000596046},\"/models/stay/v1/garden/sakura-canopy.mobile.glb\":{\"bytes\":98836,\"fetchMs\":169.90000000596046,\"parseMs\":178.8999999910593},\"/models/stay/v1/builder/artifact-tokens.mobile.glb\":{\"bytes\":22028,\"fetchMs\":137.5,\"parseMs\":213.6000000089407},\"/models/stay/v1/garden/terrain.mobile.glb\":{\"bytes\":122664,\"fetchMs\":164.59999999403954,\"parseMs\":189},\"/models/stay/v1/garden/stone-kit.mobile.glb\":{\"bytes\":10428,\"fetchMs\":222.29999999701977,\"parseMs\":134.09999999403954},\"/models/stay/v1/garden/horizon-ring.mobile.glb\":{\"bytes\":9324,\"fetchMs\":226.1000000089407,\"parseMs\":142.29999999701977},\"/models/stay/v1/garden/distant-tree-bank.mobile.glb\":{\"bytes\":17996,\"fetchMs\":231.09999999403954,\"parseMs\":140.40000000596046}}",
+      "stayProgress": "1.000",
+      "stayRenderer": "1",
+      "stayResources": "15,15,1,66,53",
+      "stayRoute": "builder",
+      "stayScheduler": "single",
+      "stayShaderPrepareMs": "205.20",
+      "stayTargetProgress": "1.000",
+      "stayTextureBytes": "57496917",
+      "stayTexturePrepareMs": "45.40",
+      "stayTiming": "{\"samples\":240,\"frameP50\":33.29999923706055,\"frameP95\":116.69999694824219,\"frameMax\":1050,\"cpuP95\":3.9000000953674316}",
+      "stayTriangles": "8944",
+      "stayVariant": "mobile"
+    },
+    "canvases": 1,
+    "focus": "Skip to contentAuraMapPause ambient motionRead without motion<style>button[aria-",
+    "headings": [
+      {
+        "height": 1535.78125,
+        "id": "builder-b01",
+        "phase": "depart",
+        "title": "The Builder",
+        "top": -15844
+      },
+      {
+        "height": 2034.625,
+        "id": "builder-b02",
+        "phase": "depart",
+        "title": "A calendar was only the surface.",
+        "top": -14308.21875
+      },
+      {
+        "height": 1831.78125,
+        "id": "builder-b03",
+        "phase": "depart",
+        "title": "Priority is not permission to take over.",
+        "top": -12273.59375
+      },
+      {
+        "height": 2027.71875,
+        "id": "builder-b04",
+        "phase": "depart",
+        "title": "Then the timetable had to be lived.",
+        "top": -10441.8125
+      },
+      {
+        "height": 2681.6875,
+        "id": "builder-b05",
+        "phase": "depart",
+        "title": "A mark. A pattern. A boundary.",
+        "top": -8414.09375
+      },
+      {
+        "height": 2087.96875,
+        "id": "builder-b06",
+        "phase": "depart",
+        "title": "Rules are also built for people.",
+        "top": -5732.40625
+      },
+      {
+        "height": 2121.78125,
+        "id": "builder-b07",
+        "phase": "depart",
+        "title": "Make it real. Inspect what is weak.",
+        "top": -3644.4375
+      },
+      {
+        "height": 2263.03125,
+        "id": "builder-b08",
+        "phase": "depart",
+        "title": "I have built real things. I am not yet the engineer I intend to become.",
+        "top": -1522.65625
+      }
+    ],
+    "height": 740,
+    "host": {
+      "stayHostCommits": "4",
+      "stayResident": "builder"
+    },
+    "overflow": false,
+    "overflowing": [],
+    "url": "http://127.0.0.1:3133/stay/builder/?qa=text200",
+    "width": 320,
+    "world": {
+      "worldRoute": "builder",
+      "worldStatus": "ready"
+    },
+    "y": 15844,
+    "name": "builder-text200-ending-width320"
+  },
+  {
+    "canvas": {},
+    "canvases": 0,
+    "focus": "All garden paths",
+    "headings": [
+      {
+        "height": 997.9375,
+        "id": "work-b01",
+        "title": "The things I actually built.",
+        "top": 398
+      },
+      {
+        "height": 848.265625,
+        "id": "study-planner",
+        "title": "A week has to make room for competing work.",
+        "top": 1395.9375
+      },
+      {
+        "height": 1456.390625,
+        "id": "planner-rules",
+        "title": "Weights, limits and breaks have to agree.",
+        "top": 2244.203125
+      },
+      {
+        "height": 857.28125,
+        "id": "planner-iteration",
+        "title": "A plan becomes a sequence of states.",
+        "top": 3700.59375
+      },
+      {
+        "height": 786.53125,
+        "id": "past-paper-logger",
+        "title": "What did the history of practice reveal?",
+        "top": 4557.875
+      },
+      {
+        "height": 1098.296875,
+        "id": "logger-boundaries",
+        "title": "An estimate must stay an estimate.",
+        "top": 5344.40625
+      },
+      {
+        "height": 830.09375,
+        "id": "mun-club",
+        "title": "Build the conditions for a room to participate.",
+        "top": 6442.703125
+      },
+      {
+        "height": 1015.515625,
+        "id": "mun-practice",
+        "title": "A lesson. A debate. A simulation. Then another week.",
+        "top": 7272.796875
+      },
+      {
+        "height": 884.46875,
+        "id": "snrled",
+        "title": "Registration was a flow, not a single form.",
+        "top": 8288.3125
+      },
+      {
+        "height": 973.390625,
+        "id": "snrled-states",
+        "title": "One state change reaches several parts of the product.",
+        "top": 9172.78125
+      },
+      {
+        "height": 802.90625,
+        "id": "project-aura",
+        "title": "The portfolio kept asking a harder question.",
+        "top": 10146.171875
+      },
+      {
+        "height": 951.6875,
+        "id": "aura-preview",
+        "title": "The interface became a consequence.",
+        "top": 10949.078125
+      },
+      {
+        "height": 929.9375,
+        "id": "work-b07",
+        "title": "The pattern is visible. The limits are too.",
+        "top": 11900.765625
+      }
+    ],
+    "height": 740,
+    "host": {},
+    "overflow": false,
+    "overflowing": [],
+    "url": "http://127.0.0.1:3133/stay/work/?qa=nojs",
+    "width": 320,
+    "world": {
+      "worldRoute": "none",
+      "worldStatus": "poster"
+    },
+    "y": 0,
+    "name": "work-scriptless-atlas-width320"
+  },
+  {
+    "canvas": {
+      "engine": "three.js r186",
+      "stayAmbient": "active",
+      "stayAtlas": "0.000",
+      "stayAttachmentMs": "31571.90",
+      "stayCamera": "-42.00,1.60,45.00",
+      "stayDrawCalls": "101",
+      "stayEmitters": "6",
+      "stayFirstFrameMs": "82.20",
+      "stayG10Visible": "true,true,true,true,true,true,true,true,true,true",
+      "stayLoads": "{\"/models/stay/v1/garden/grass-kit.desktop.glb\":{\"bytes\":12048,\"fetchMs\":71.20000000298023,\"parseMs\":14.799999997019768},\"/models/stay/v1/garden/foreground-fronds.desktop.glb\":{\"bytes\":43272,\"fetchMs\":136,\"parseMs\":2.5},\"/models/stay/v1/garden/petal-kit.desktop.glb\":{\"bytes\":4908,\"fetchMs\":184,\"parseMs\":1.7000000029802322},\"/models/stay/v1/garden/bush-kit.desktop.glb\":{\"bytes\":22432,\"fetchMs\":86.69999998807907,\"parseMs\":115.5},\"/models/stay/v1/garden/terrain.desktop.glb\":{\"bytes\":348020,\"fetchMs\":93.40000000596046,\"parseMs\":178.79999999701977},\"/models/stay/v1/garden/stone-kit.desktop.glb\":{\"bytes\":27392,\"fetchMs\":118,\"parseMs\":187.5},\"/models/stay/v1/garden/path-kit.desktop.glb\":{\"bytes\":60376,\"fetchMs\":104.69999998807907,\"parseMs\":203},\"/models/stay/v1/garden/sakura-canopy.desktop.glb\":{\"bytes\":341688,\"fetchMs\":111.8999999910593,\"parseMs\":199},\"/models/stay/v1/garden/horizon-ring.desktop.glb\":{\"bytes\":19988,\"fetchMs\":129.90000000596046,\"parseMs\":184.20000000298023},\"/models/stay/v1/garden/distant-tree-bank.desktop.glb\":{\"bytes\":54384,\"fetchMs\":147.29999999701977,\"parseMs\":202.70000000298023},\"/models/stay/v1/person/clearing-ground.desktop.glb\":{\"bytes\":108252,\"fetchMs\":152.29999999701977,\"parseMs\":215.70000000298023},\"/models/stay/v1/person/root-arch.desktop.glb\":{\"bytes\":12416,\"fetchMs\":175.90000000596046,\"parseMs\":197.59999999403954},\"/models/stay/v1/person/paired-bench.desktop.glb\":{\"bytes\":48992,\"fetchMs\":167,\"parseMs\":213}}",
+      "stayProgress": "0.000",
+      "stayRenderer": "1",
+      "stayResources": "13,13,1,40,49",
+      "stayRoute": "person",
+      "stayScheduler": "single",
+      "stayShaderPrepareMs": "442.80",
+      "stayTargetProgress": "0.000",
+      "stayTextureBytes": "85983232",
+      "stayTexturePrepareMs": "119.40",
+      "stayTiming": "{\"samples\":240,\"frameP50\":33.400001525878906,\"frameP95\":83.0999984741211,\"frameMax\":1000.0999755859375,\"cpuP95\":4.300000190734863}",
+      "stayTriangles": "69182",
+      "stayVariant": "desktop"
+    },
+    "canvases": 1,
+    "focus": "Skip to contentAuraMapPause ambient motionRead without motion<style>button[aria-",
+    "headings": [
+      {
+        "height": 900,
+        "id": "person-b01",
+        "phase": "prepare",
+        "title": "The person underneath the roles.",
+        "top": 0
+      },
+      {
+        "height": 900,
+        "id": "person-b02",
+        "phase": "prepare",
+        "title": "What would make the ambition worth it?",
+        "top": 900
+      },
+      {
+        "height": 900,
+        "id": "person-b03",
+        "phase": "prepare",
+        "title": "A possibility is not yet a reason.",
+        "top": 1800
+      },
+      {
+        "height": 900,
+        "id": "person-b04",
+        "phase": "prepare",
+        "title": "Room to choose. Something to choose for.",
+        "top": 2700
+      },
+      {
+        "height": 900,
+        "id": "person-b05",
+        "phase": "prepare",
+        "title": "The label has to catch up with the work.",
+        "top": 3600
+      },
+      {
+        "height": 900,
+        "id": "person-b06",
+        "phase": "prepare",
+        "title": "A life cannot be only an optimisation.",
+        "top": 4500
+      },
+      {
+        "height": 900,
+        "id": "person-b07",
+        "phase": "prepare",
+        "title": "Other people change the picture.",
+        "top": 5400
+      },
+      {
+        "height": 900,
+        "id": "person-b08",
+        "phase": "prepare",
+        "title": "Still becoming. Still answerable to evidence.",
+        "top": 6300
+      }
+    ],
+    "height": 900,
+    "host": {
+      "stayHostCommits": "4",
+      "stayResident": "person"
+    },
+    "overflow": false,
+    "overflowing": [],
+    "url": "http://127.0.0.1:3132/stay/person/",
+    "width": 1440,
+    "world": {
+      "worldRoute": "person",
+      "worldStatus": "ready"
+    },
+    "y": 0,
+    "name": "hardfix-person-before"
+  }
+]

@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { getExperience } from "@/data/site";
 import { StayAwhile } from "@/sections/stay/StayAwhile";
 import { StayShell } from "@/sections/stay/native/StayShell";
-import { GardenContent } from "@/sections/stay/native/GardenContent";
+import { GardenRuntimeContent } from "@/sections/stay/world/GardenRuntimeContent";
+import { SceneBoundary } from "@/sections/stay/world/SceneBoundary";
 
 const experience = getExperience("stay-awhile");
 
@@ -20,5 +21,5 @@ export const metadata: Metadata = {
 export default function StayAwhilePage() {
   if (!experience) notFound();
 
-  return <StayShell legacy={<StayAwhile />}><GardenContent /></StayShell>;
+  return <StayShell legacy={<StayAwhile />}><SceneBoundary routeId="garden"><GardenRuntimeContent /></SceneBoundary></StayShell>;
 }

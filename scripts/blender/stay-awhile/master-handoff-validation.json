@@ -1,0 +1,4768 @@
+{
+  "masters": [
+    {
+      "route": "garden",
+      "path": "00-garden.blend",
+      "sha256": "17665acbd2454a935401ba20bc1b69bb016df80ffa1840936c8fcb8ee9c258b4",
+      "opened": true,
+      "collections": [
+        "00_REFERENCE",
+        "01_ENVIRONMENT",
+        "02_ARCHITECTURE",
+        "03_LANDMARKS",
+        "04_INTERACTION",
+        "05_ATMOSPHERE",
+        "06_CAMERA_GUIDES",
+        "07_LIGHT_GUIDES",
+        "08_COLLISION_GUIDES",
+        "09_EXPORT_DESKTOP",
+        "10_EXPORT_MOBILE"
+      ],
+      "assetIds": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G12",
+        "G13",
+        "G14"
+      ],
+      "assets": [
+        {
+          "assetId": "G01",
+          "variants": {
+            "desktop": {
+              "meshCount": 13,
+              "materials": [
+                "SA_M_LEAF",
+                "SA_M_MOSS",
+                "SA_M_SPRAY",
+                "SA_M_STONE",
+                "SA_M_TREEBARK"
+              ],
+              "uvMeshes": 13,
+              "vertexColorMeshes": 13
+            },
+            "mobile": {
+              "meshCount": 13,
+              "materials": [
+                "SA_M_LEAF",
+                "SA_M_MOSS",
+                "SA_M_SPRAY_MOBILE",
+                "SA_M_STONE",
+                "SA_M_TREEBARK_MOBILE"
+              ],
+              "uvMeshes": 13,
+              "vertexColorMeshes": 13
+            }
+          }
+        },
+        {
+          "assetId": "G02",
+          "variants": {
+            "desktop": {
+              "meshCount": 6,
+              "materials": [
+                "SA_M_LEAF",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 6,
+              "vertexColorMeshes": 6
+            },
+            "mobile": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            }
+          }
+        },
+        {
+          "assetId": "G03",
+          "variants": {
+            "desktop": {
+              "meshCount": 6,
+              "materials": [
+                "SA_M_SAKURA",
+                "SA_M_TREEBARK"
+              ],
+              "uvMeshes": 6,
+              "vertexColorMeshes": 6
+            },
+            "mobile": {
+              "meshCount": 6,
+              "materials": [
+                "SA_M_SAKURA",
+                "SA_M_TREEBARK_MOBILE"
+              ],
+              "uvMeshes": 6,
+              "vertexColorMeshes": 6
+            }
+          }
+        },
+        {
+          "assetId": "G04",
+          "variants": {
+            "desktop": {
+              "meshCount": 4,
+              "materials": [
+                "SA_M_LEAF",
+                "SA_M_SPRAY"
+              ],
+              "uvMeshes": 4,
+              "vertexColorMeshes": 4
+            },
+            "mobile": {
+              "meshCount": 4,
+              "materials": [
+                "SA_M_LEAF",
+                "SA_M_SPRAY_MOBILE"
+              ],
+              "uvMeshes": 4,
+              "vertexColorMeshes": 4
+            }
+          }
+        },
+        {
+          "assetId": "G05",
+          "variants": {
+            "desktop": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_LEAF"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            },
+            "mobile": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_LEAF"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            }
+          }
+        },
+        {
+          "assetId": "G06",
+          "variants": {
+            "desktop": {
+              "meshCount": 4,
+              "materials": [
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 4,
+              "vertexColorMeshes": 4
+            },
+            "mobile": {
+              "meshCount": 4,
+              "materials": [
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 4,
+              "vertexColorMeshes": 4
+            }
+          }
+        },
+        {
+          "assetId": "G07",
+          "variants": {
+            "desktop": {
+              "meshCount": 1,
+              "materials": [
+                "SA_M_WATER"
+              ],
+              "uvMeshes": 1,
+              "vertexColorMeshes": 1
+            },
+            "mobile": {
+              "meshCount": 1,
+              "materials": [
+                "SA_M_WATER"
+              ],
+              "uvMeshes": 1,
+              "vertexColorMeshes": 1
+            }
+          }
+        },
+        {
+          "assetId": "G08",
+          "variants": {
+            "desktop": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_LIGHT",
+                "SA_M_PAPER"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            },
+            "mobile": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_LIGHT",
+                "SA_M_PAPER_MOBILE"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            }
+          }
+        },
+        {
+          "assetId": "G09",
+          "variants": {
+            "desktop": {
+              "meshCount": 1,
+              "materials": [
+                "SA_M_MOSS"
+              ],
+              "uvMeshes": 1,
+              "vertexColorMeshes": 1
+            },
+            "mobile": {
+              "meshCount": 1,
+              "materials": [
+                "SA_M_MOSS"
+              ],
+              "uvMeshes": 1,
+              "vertexColorMeshes": 1
+            }
+          }
+        },
+        {
+          "assetId": "G10",
+          "variants": {
+            "desktop": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_LEAF"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            },
+            "mobile": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_LEAF"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            }
+          }
+        },
+        {
+          "assetId": "G11",
+          "variants": {
+            "desktop": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_FARSPRAY",
+                "SA_M_TREEBARK"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            },
+            "mobile": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_FARSPRAY_MOBILE",
+                "SA_M_TREEBARK"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            }
+          }
+        },
+        {
+          "assetId": "G12",
+          "variants": {
+            "desktop": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_SAKURA"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            },
+            "mobile": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_SAKURA"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            }
+          }
+        },
+        {
+          "assetId": "G13",
+          "variants": {
+            "desktop": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_MOSS"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            },
+            "mobile": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_MOSS"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            }
+          }
+        },
+        {
+          "assetId": "G14",
+          "variants": {
+            "desktop": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            },
+            "mobile": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            }
+          }
+        }
+      ],
+      "actions": [],
+      "guideCount": 20,
+      "libraries": [],
+      "images": [
+        {
+          "name": "SA_BEAUTY_TIMBER_DESKTOP",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\scripts\\blender\\stay-awhile\\beauty-timber.desktop.png",
+          "packed": true,
+          "size": [
+            1024,
+            1024
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "SA_BEAUTY_TIMBER_MOBILE",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\scripts\\blender\\stay-awhile\\beauty-timber.mobile.png",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-ground-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-spray.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.desktop.png",
+          "packed": true,
+          "size": [
+            256,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-spray.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.mobile.png",
+          "packed": true,
+          "size": [
+            128,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-stone-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "timber-paper.desktop.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.desktop.png",
+          "packed": false,
+          "size": [
+            1024,
+            1024
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "timber-paper.mobile.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.mobile.png",
+          "packed": false,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        }
+      ],
+      "readMe": {
+        "version": "1.0.0",
+        "purpose": "garden Stay Awhile asset master",
+        "assetIds": [
+          "G01",
+          "G02",
+          "G03",
+          "G04",
+          "G05",
+          "G06",
+          "G07",
+          "G08",
+          "G09",
+          "G10",
+          "G11",
+          "G12",
+          "G13",
+          "G14"
+        ],
+        "provenance": "Original deterministic geometry based on Part I / Appendix B of PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+        "coordinateConvention": "Metric, scale 1. Specification glTF (x,y,z) authored Blender (x,-z,y). Export Y-up exactly once.",
+        "exportProcess": "blender --background --python scripts/blender/stay-awhile/produce.py -- --root <repository> --export-only",
+        "dependencies": [
+          "../../../public/models/stay/v1/shared/timber-paper.desktop.png",
+          "../../../public/models/stay/v1/shared/timber-paper.mobile.png"
+        ],
+        "validationStatus": "G14 source detail saved. See PROJECT_AURA_STAY_AWHILE_ASTRA_V2_FINAL_COMPLETION_REPORT.md for the final export and package validation results.",
+        "artistNotes": [
+          "Unlettered geometry; no private evidence. No browser animation authored.",
+          "One Action per logical clip with separate object slots for parts and LODs. Library collections are instanced, never baked into prop GLBs.",
+          "Camera/reference empties exported in the first owned asset pair; scene.json identifies their asset container.",
+          "World-scale G01/G09 and distant G11/F03 intentionally extend outside local route extent.",
+          "Shared original timber/paper atlas: 1024 desktop, 512 mobile, 32px-equivalent island gutters, packed UV0. No third-party images.",
+          "Export collection mobile roles include MOBILE to satisfy Blender unique datablock names; exported node and material names are normalized to the desktop contract.",
+          "Measured rail corrections: Thinker partial lintel narrowed/offset within the unchanged deck footprint; Leader lesson rail +0.30 m X; Stories lamps 1/3 X=1.10/-1.60. Camera knots unchanged. These override nominal landmark placement to satisfy the 0.50 m corridor.",
+          "2026-09-23 beauty pass: original sculpted planting, branching, stonework and first-four route details; no third-party model assets.",
+          "2026-09-25 Astra v2: new branch-led Sakura blossoms, structural shrubs, varied distant tree silhouettes, crafted shared lantern and three petal variants. Original authored IDs and pivots retained. Visual references: https://japanesegarden.org/garden-spaces/tea-garden/ and https://polyhaven.com/a/tree_small_02. References only; no external models or textures used.",
+          "2026-09-26 G14 finalization: nine abstract face grooves now appear in the mobile stone as well as the previously saved desktop stone; export and package validation are recorded in the external completion report.",
+          "Senior pass: CC0 botanical source adaptation, shared image PBR, refined edge light and foreground foliage. Required roots, guides and authored Actions preserved."
+        ],
+        "seniorArtPass": {
+          "date": "2026-09-27",
+          "sourceBibleSha256": "ec0ce6ca9574df3851917e8162b2cf5a68b132ba76b4f663ce75994f69056a4f",
+          "provenance": [
+            {
+              "asset": "tree_small_02",
+              "creator": "Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/tree_small_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Trunk retopology by reduction; sampled crown points; varied proportions. Source diffuse/opacity atlas cropped into masked leaf sprays. Sakura crown remodeled as opaque geometry."
+            },
+            {
+              "asset": "bark_brown_02",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/bark_brown_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Downsampled for shared desktop/mobile PBR maps."
+            },
+            {
+              "asset": "mossy_rock",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/mossy_rock",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to restrained grey-green; downsampled PBR maps."
+            },
+            {
+              "asset": "forest_ground_04",
+              "creator": "Rob Tuytel; Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/forest_ground_04",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to moss and earth palette; downsampled."
+            },
+            {
+              "asset": "wood_planks_grey",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/wood_planks_grey",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to warm cedar; downsampled."
+            }
+          ],
+          "validationStatus": "See SENIOR_ART_PASS_REPORT.md, validation-report.json, senior-integrity.json, senior-roundtrip.json, motion-validation.json, rail-validation.json and khronos-validation.json. Offline evidence does not establish browser acceptance.",
+          "scope": "Blender source, textures, GLB assets and manifests only",
+          "sourceCorrection": "G09 hill relief softened and pushed outward; continuous skirt shares ground PBR. G01 redundant ground edges reduced within 2 cm vertex deviation. Root, pivot, Action and camera contracts retained.",
+          "foliage": "Green foliage uses double-sided alpha-mask sprays with cutoff 0.45 in GLB; mobile has independently reduced geometry and 128x256 foliage texture. Sakura uses opaque petal geometry."
+        }
+      },
+      "unrelatedObjects": [],
+      "errors": []
+    },
+    {
+      "route": "person",
+      "path": "01-person.blend",
+      "sha256": "e1c7e5cb9567bf19ae26a1d2f412fed37a3e515eadad8c407562157891fb8257",
+      "opened": true,
+      "collections": [
+        "00_REFERENCE",
+        "01_ENVIRONMENT",
+        "02_ARCHITECTURE",
+        "03_LANDMARKS",
+        "04_INTERACTION",
+        "05_ATMOSPHERE",
+        "06_CAMERA_GUIDES",
+        "07_LIGHT_GUIDES",
+        "08_COLLISION_GUIDES",
+        "09_EXPORT_DESKTOP",
+        "10_EXPORT_MOBILE"
+      ],
+      "assetIds": [
+        "P01",
+        "P02",
+        "P03"
+      ],
+      "assets": [
+        {
+          "assetId": "P01",
+          "variants": {
+            "desktop": {
+              "meshCount": 6,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_LEAF",
+                "SA_M_MOSS",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 6,
+              "vertexColorMeshes": 6
+            },
+            "mobile": {
+              "meshCount": 6,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_LEAF",
+                "SA_M_MOSS",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 6,
+              "vertexColorMeshes": 6
+            }
+          }
+        },
+        {
+          "assetId": "P02",
+          "variants": {
+            "desktop": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            },
+            "mobile": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            }
+          }
+        },
+        {
+          "assetId": "P03",
+          "variants": {
+            "desktop": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_MOSS",
+                "SA_M_TREEBARK"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            },
+            "mobile": {
+              "meshCount": 1,
+              "materials": [
+                "SA_M_TREEBARK_MOBILE"
+              ],
+              "uvMeshes": 1,
+              "vertexColorMeshes": 1
+            }
+          }
+        }
+      ],
+      "actions": [],
+      "guideCount": 26,
+      "libraries": [
+        {
+          "path": "//00-garden.blend",
+          "exists": true
+        }
+      ],
+      "images": [
+        {
+          "name": "senior-timber-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-ground-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-spray.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.desktop.png",
+          "packed": true,
+          "size": [
+            256,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-spray.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.mobile.png",
+          "packed": true,
+          "size": [
+            128,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-stone-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        }
+      ],
+      "readMe": {
+        "version": "1.0.0",
+        "purpose": "person Stay Awhile asset master",
+        "assetIds": [
+          "P01",
+          "P02",
+          "P03"
+        ],
+        "provenance": "Original deterministic geometry based on Part I / Appendix B of PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+        "coordinateConvention": "Metric, scale 1. Specification glTF (x,y,z) authored Blender (x,-z,y). Export Y-up exactly once.",
+        "exportProcess": "blender --background --python scripts/blender/stay-awhile/produce.py -- --root <repository> --export-only",
+        "dependencies": [
+          "//00-garden.blend (linked shared library collections)",
+          "../../../public/models/stay/v1/shared/timber-paper.desktop.png",
+          "../../../public/models/stay/v1/shared/timber-paper.mobile.png"
+        ],
+        "validationStatus": "Passed reopened-master, scale, naming, anchor, triangle/package cap, exact clip count/duration and reverse-seek checks. GLBs passed Khronos validation (0 errors, 0 warnings). See external reports for final checksums and poster review.",
+        "artistNotes": [
+          "Unlettered geometry; no private evidence. No browser animation authored.",
+          "One Action per logical clip with separate object slots for parts and LODs. Library collections are instanced, never baked into prop GLBs.",
+          "Camera/reference empties exported in the first owned asset pair; scene.json identifies their asset container.",
+          "World-scale G01/G09 and distant G11/F03 intentionally extend outside local route extent.",
+          "Shared original timber/paper atlas: 1024 desktop, 512 mobile, 32px-equivalent island gutters, packed UV0. No third-party images.",
+          "Export collection mobile roles include MOBILE to satisfy Blender unique datablock names; exported node and material names are normalized to the desktop contract.",
+          "2026-09-23 beauty pass: original sculpted planting, branching, stonework and first-four route details; no third-party model assets.",
+          "2026-09-26 Astra v2: P03 restored to the specified low 0.7 m root convergence; static camera parallax only.",
+          "Senior pass: CC0 botanical source adaptation, shared image PBR, refined edge light and foreground foliage. Required roots, guides and authored Actions preserved."
+        ],
+        "seniorArtPass": {
+          "date": "2026-09-27",
+          "sourceBibleSha256": "ec0ce6ca9574df3851917e8162b2cf5a68b132ba76b4f663ce75994f69056a4f",
+          "provenance": [
+            {
+              "asset": "tree_small_02",
+              "creator": "Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/tree_small_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Trunk retopology by reduction; sampled crown points; varied proportions. Source diffuse/opacity atlas cropped into masked leaf sprays. Sakura crown remodeled as opaque geometry."
+            },
+            {
+              "asset": "bark_brown_02",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/bark_brown_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Downsampled for shared desktop/mobile PBR maps."
+            },
+            {
+              "asset": "mossy_rock",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/mossy_rock",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to restrained grey-green; downsampled PBR maps."
+            },
+            {
+              "asset": "forest_ground_04",
+              "creator": "Rob Tuytel; Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/forest_ground_04",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to moss and earth palette; downsampled."
+            },
+            {
+              "asset": "wood_planks_grey",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/wood_planks_grey",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to warm cedar; downsampled."
+            }
+          ],
+          "validationStatus": "See SENIOR_ART_PASS_REPORT.md, validation-report.json, senior-integrity.json, senior-roundtrip.json, motion-validation.json, rail-validation.json and khronos-validation.json. Offline evidence does not establish browser acceptance.",
+          "scope": "Blender source, textures, GLB assets and manifests only",
+          "sourceCorrection": "G09 hill relief softened and pushed outward; continuous skirt shares ground PBR. G01 redundant ground edges reduced within 2 cm vertex deviation. Root, pivot, Action and camera contracts retained.",
+          "foliage": "Green foliage uses double-sided alpha-mask sprays with cutoff 0.45 in GLB; mobile has independently reduced geometry and 128x256 foliage texture. Sakura uses opaque petal geometry."
+        }
+      },
+      "unrelatedObjects": [],
+      "errors": []
+    },
+    {
+      "route": "builder",
+      "path": "02-builder.blend",
+      "sha256": "925400afbd0c79630d3f3ba0f278dbe69be897c9fe413eee0697587985a87a01",
+      "opened": true,
+      "collections": [
+        "00_REFERENCE",
+        "01_ENVIRONMENT",
+        "02_ARCHITECTURE",
+        "03_LANDMARKS",
+        "04_INTERACTION",
+        "05_ATMOSPHERE",
+        "06_CAMERA_GUIDES",
+        "07_LIGHT_GUIDES",
+        "08_COLLISION_GUIDES",
+        "09_EXPORT_DESKTOP",
+        "10_EXPORT_MOBILE"
+      ],
+      "assetIds": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06"
+      ],
+      "assets": [
+        {
+          "assetId": "B01",
+          "variants": {
+            "desktop": {
+              "meshCount": 14,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_METAL",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 14,
+              "vertexColorMeshes": 14
+            },
+            "mobile": {
+              "meshCount": 14,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_METAL",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 14,
+              "vertexColorMeshes": 14
+            }
+          }
+        },
+        {
+          "assetId": "B02",
+          "variants": {
+            "desktop": {
+              "meshCount": 12,
+              "materials": [
+                "SA_M_BARK"
+              ],
+              "uvMeshes": 12,
+              "vertexColorMeshes": 12
+            },
+            "mobile": {
+              "meshCount": 12,
+              "materials": [
+                "SA_M_BARK_MOBILE"
+              ],
+              "uvMeshes": 12,
+              "vertexColorMeshes": 12
+            }
+          }
+        },
+        {
+          "assetId": "B03",
+          "variants": {
+            "desktop": {
+              "meshCount": 7,
+              "materials": [
+                "SA_M_BARK"
+              ],
+              "uvMeshes": 7,
+              "vertexColorMeshes": 7
+            },
+            "mobile": {
+              "meshCount": 7,
+              "materials": [
+                "SA_M_BARK_MOBILE"
+              ],
+              "uvMeshes": 7,
+              "vertexColorMeshes": 7
+            }
+          }
+        },
+        {
+          "assetId": "B04",
+          "variants": {
+            "desktop": {
+              "meshCount": 12,
+              "materials": [
+                "SA_M_BARK"
+              ],
+              "uvMeshes": 12,
+              "vertexColorMeshes": 12
+            },
+            "mobile": {
+              "meshCount": 12,
+              "materials": [
+                "SA_M_BARK_MOBILE"
+              ],
+              "uvMeshes": 12,
+              "vertexColorMeshes": 12
+            }
+          }
+        },
+        {
+          "assetId": "B05",
+          "variants": {
+            "desktop": {
+              "meshCount": 4,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_METAL",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 4,
+              "vertexColorMeshes": 4
+            },
+            "mobile": {
+              "meshCount": 4,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_METAL",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 4,
+              "vertexColorMeshes": 4
+            }
+          }
+        },
+        {
+          "assetId": "B06",
+          "variants": {
+            "desktop": {
+              "meshCount": 7,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_LIGHT",
+                "SA_M_METAL",
+                "SA_M_PAPER",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 7,
+              "vertexColorMeshes": 7
+            },
+            "mobile": {
+              "meshCount": 7,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_LIGHT",
+                "SA_M_METAL",
+                "SA_M_PAPER_MOBILE",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 7,
+              "vertexColorMeshes": 7
+            }
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "BUILD_BEAMS",
+          "duration": 1.6,
+          "slots": 14,
+          "keyFrames": [
+            1.0,
+            49.0
+          ]
+        },
+        {
+          "name": "BUILD_BENCH",
+          "duration": 1.2,
+          "slots": 2,
+          "keyFrames": [
+            1.0,
+            37.0
+          ]
+        },
+        {
+          "name": "BUILD_FOUNDATION",
+          "duration": 1.2,
+          "slots": 12,
+          "keyFrames": [
+            1.0,
+            37.0
+          ]
+        },
+        {
+          "name": "BUILD_POSTS",
+          "duration": 1.44,
+          "slots": 12,
+          "keyFrames": [
+            1.0,
+            44.20000076293945
+          ]
+        },
+        {
+          "name": "BUILD_ROOF",
+          "duration": 1.5,
+          "slots": 24,
+          "keyFrames": [
+            1.0,
+            46.0
+          ]
+        },
+        {
+          "name": "BUILD_TOKENS",
+          "duration": 1.8,
+          "slots": 10,
+          "keyFrames": [
+            1.0,
+            55.0
+          ]
+        }
+      ],
+      "guideCount": 26,
+      "libraries": [
+        {
+          "path": "//00-garden.blend",
+          "exists": true
+        }
+      ],
+      "images": [
+        {
+          "name": "senior-timber-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "timber-paper.desktop.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.desktop.png",
+          "packed": false,
+          "size": [
+            1024,
+            1024
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "timber-paper.mobile.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.mobile.png",
+          "packed": false,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-ground-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-spray.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.desktop.png",
+          "packed": true,
+          "size": [
+            256,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-spray.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.mobile.png",
+          "packed": true,
+          "size": [
+            128,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-stone-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        }
+      ],
+      "readMe": {
+        "version": "1.0.0",
+        "purpose": "builder Stay Awhile asset master",
+        "assetIds": [
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06"
+        ],
+        "provenance": "Original deterministic geometry based on Part I / Appendix B of PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+        "coordinateConvention": "Metric, scale 1. Specification glTF (x,y,z) authored Blender (x,-z,y). Export Y-up exactly once.",
+        "exportProcess": "blender --background --python scripts/blender/stay-awhile/produce.py -- --root <repository> --export-only",
+        "dependencies": [
+          "//00-garden.blend (linked shared library collections)",
+          "../../../public/models/stay/v1/shared/timber-paper.desktop.png",
+          "../../../public/models/stay/v1/shared/timber-paper.mobile.png"
+        ],
+        "validationStatus": "Passed reopened-master, scale, naming, anchor, triangle/package cap, exact clip count/duration and reverse-seek checks. GLBs passed Khronos validation (0 errors, 0 warnings). See external reports for final checksums and poster review.",
+        "artistNotes": [
+          "Unlettered geometry; no private evidence. No browser animation authored.",
+          "One Action per logical clip with separate object slots for parts and LODs. Library collections are instanced, never baked into prop GLBs.",
+          "Camera/reference empties exported in the first owned asset pair; scene.json identifies their asset container.",
+          "World-scale G01/G09 and distant G11/F03 intentionally extend outside local route extent.",
+          "Shared original timber/paper atlas: 1024 desktop, 512 mobile, 32px-equivalent island gutters, packed UV0. No third-party images.",
+          "Export collection mobile roles include MOBILE to satisfy Blender unique datablock names; exported node and material names are normalized to the desktop contract.",
+          "2026-09-23 beauty pass: original sculpted planting, branching, stonework and first-four route details; no third-party model assets.",
+          "Senior pass: CC0 botanical source adaptation, shared image PBR, refined edge light and foreground foliage. Required roots, guides and authored Actions preserved."
+        ],
+        "seniorArtPass": {
+          "date": "2026-09-27",
+          "sourceBibleSha256": "ec0ce6ca9574df3851917e8162b2cf5a68b132ba76b4f663ce75994f69056a4f",
+          "provenance": [
+            {
+              "asset": "tree_small_02",
+              "creator": "Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/tree_small_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Trunk retopology by reduction; sampled crown points; varied proportions. Source diffuse/opacity atlas cropped into masked leaf sprays. Sakura crown remodeled as opaque geometry."
+            },
+            {
+              "asset": "bark_brown_02",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/bark_brown_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Downsampled for shared desktop/mobile PBR maps."
+            },
+            {
+              "asset": "mossy_rock",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/mossy_rock",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to restrained grey-green; downsampled PBR maps."
+            },
+            {
+              "asset": "forest_ground_04",
+              "creator": "Rob Tuytel; Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/forest_ground_04",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to moss and earth palette; downsampled."
+            },
+            {
+              "asset": "wood_planks_grey",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/wood_planks_grey",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to warm cedar; downsampled."
+            }
+          ],
+          "validationStatus": "See SENIOR_ART_PASS_REPORT.md, validation-report.json, senior-integrity.json, senior-roundtrip.json, motion-validation.json, rail-validation.json and khronos-validation.json. Offline evidence does not establish browser acceptance.",
+          "scope": "Blender source, textures, GLB assets and manifests only",
+          "sourceCorrection": "G09 hill relief softened and pushed outward; continuous skirt shares ground PBR. G01 redundant ground edges reduced within 2 cm vertex deviation. Root, pivot, Action and camera contracts retained.",
+          "foliage": "Green foliage uses double-sided alpha-mask sprays with cutoff 0.45 in GLB; mobile has independently reduced geometry and 128x256 foliage texture. Sakura uses opaque petal geometry."
+        }
+      },
+      "unrelatedObjects": [],
+      "errors": []
+    },
+    {
+      "route": "thinker",
+      "path": "03-thinker.blend",
+      "sha256": "4f2bbb42c6977d77430d8500878a77f3bdf7bb08c12ba429654d7078874e7cbd",
+      "opened": true,
+      "collections": [
+        "00_REFERENCE",
+        "01_ENVIRONMENT",
+        "02_ARCHITECTURE",
+        "03_LANDMARKS",
+        "04_INTERACTION",
+        "05_ATMOSPHERE",
+        "06_CAMERA_GUIDES",
+        "07_LIGHT_GUIDES",
+        "08_COLLISION_GUIDES",
+        "09_EXPORT_DESKTOP",
+        "10_EXPORT_MOBILE"
+      ],
+      "assetIds": [
+        "T01",
+        "T02",
+        "T03"
+      ],
+      "assets": [
+        {
+          "assetId": "T01",
+          "variants": {
+            "desktop": {
+              "meshCount": 5,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_LEAF",
+                "SA_M_MOSS",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 5,
+              "vertexColorMeshes": 5
+            },
+            "mobile": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_LEAF",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            }
+          }
+        },
+        {
+          "assetId": "T02",
+          "variants": {
+            "desktop": {
+              "meshCount": 7,
+              "materials": [
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 7,
+              "vertexColorMeshes": 7
+            },
+            "mobile": {
+              "meshCount": 7,
+              "materials": [
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 7,
+              "vertexColorMeshes": 7
+            }
+          }
+        },
+        {
+          "assetId": "T03",
+          "variants": {
+            "desktop": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_CLAY",
+                "SA_M_PAPER"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            },
+            "mobile": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_CLAY",
+                "SA_M_PAPER_MOBILE"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            }
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "THINKER_SCROLL",
+          "duration": 2.0,
+          "slots": 2,
+          "keyFrames": [
+            1.0,
+            61.0
+          ]
+        }
+      ],
+      "guideCount": 23,
+      "libraries": [
+        {
+          "path": "//00-garden.blend",
+          "exists": true
+        }
+      ],
+      "images": [
+        {
+          "name": "senior-timber-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "timber-paper.desktop.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.desktop.png",
+          "packed": false,
+          "size": [
+            1024,
+            1024
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "timber-paper.mobile.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.mobile.png",
+          "packed": false,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-ground-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-spray.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.desktop.png",
+          "packed": true,
+          "size": [
+            256,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-spray.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.mobile.png",
+          "packed": true,
+          "size": [
+            128,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-stone-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        }
+      ],
+      "readMe": {
+        "version": "1.0.0",
+        "purpose": "thinker Stay Awhile asset master",
+        "assetIds": [
+          "T01",
+          "T02",
+          "T03"
+        ],
+        "provenance": "Original deterministic geometry based on Part I / Appendix B of PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+        "coordinateConvention": "Metric, scale 1. Specification glTF (x,y,z) authored Blender (x,-z,y). Export Y-up exactly once.",
+        "exportProcess": "blender --background --python scripts/blender/stay-awhile/produce.py -- --root <repository> --export-only",
+        "dependencies": [
+          "//00-garden.blend (linked shared library collections)",
+          "../../../public/models/stay/v1/shared/timber-paper.desktop.png",
+          "../../../public/models/stay/v1/shared/timber-paper.mobile.png"
+        ],
+        "validationStatus": "Passed reopened-master, scale, naming, anchor, triangle/package cap, exact clip count/duration and reverse-seek checks. GLBs passed Khronos validation (0 errors, 0 warnings). See external reports for final checksums and poster review.",
+        "artistNotes": [
+          "Unlettered geometry; no private evidence. No browser animation authored.",
+          "One Action per logical clip with separate object slots for parts and LODs. Library collections are instanced, never baked into prop GLBs.",
+          "Camera/reference empties exported in the first owned asset pair; scene.json identifies their asset container.",
+          "World-scale G01/G09 and distant G11/F03 intentionally extend outside local route extent.",
+          "Shared original timber/paper atlas: 1024 desktop, 512 mobile, 32px-equivalent island gutters, packed UV0. No third-party images.",
+          "Export collection mobile roles include MOBILE to satisfy Blender unique datablock names; exported node and material names are normalized to the desktop contract.",
+          "Measured rail corrections: Thinker partial lintel narrowed/offset within the unchanged deck footprint; Leader lesson rail +0.30 m X; Stories lamps 1/3 X=1.10/-1.60. Camera knots unchanged. These override nominal landmark placement to satisfy the 0.50 m corridor.",
+          "2026-09-23 beauty pass: original sculpted planting, branching, stonework and first-four route details; no third-party model assets.",
+          "Senior pass: CC0 botanical source adaptation, shared image PBR, refined edge light and foreground foliage. Required roots, guides and authored Actions preserved."
+        ],
+        "seniorArtPass": {
+          "date": "2026-09-27",
+          "sourceBibleSha256": "ec0ce6ca9574df3851917e8162b2cf5a68b132ba76b4f663ce75994f69056a4f",
+          "provenance": [
+            {
+              "asset": "tree_small_02",
+              "creator": "Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/tree_small_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Trunk retopology by reduction; sampled crown points; varied proportions. Source diffuse/opacity atlas cropped into masked leaf sprays. Sakura crown remodeled as opaque geometry."
+            },
+            {
+              "asset": "bark_brown_02",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/bark_brown_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Downsampled for shared desktop/mobile PBR maps."
+            },
+            {
+              "asset": "mossy_rock",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/mossy_rock",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to restrained grey-green; downsampled PBR maps."
+            },
+            {
+              "asset": "forest_ground_04",
+              "creator": "Rob Tuytel; Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/forest_ground_04",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to moss and earth palette; downsampled."
+            },
+            {
+              "asset": "wood_planks_grey",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/wood_planks_grey",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to warm cedar; downsampled."
+            }
+          ],
+          "validationStatus": "See SENIOR_ART_PASS_REPORT.md, validation-report.json, senior-integrity.json, senior-roundtrip.json, motion-validation.json, rail-validation.json and khronos-validation.json. Offline evidence does not establish browser acceptance.",
+          "scope": "Blender source, textures, GLB assets and manifests only",
+          "sourceCorrection": "G09 hill relief softened and pushed outward; continuous skirt shares ground PBR. G01 redundant ground edges reduced within 2 cm vertex deviation. Root, pivot, Action and camera contracts retained.",
+          "foliage": "Green foliage uses double-sided alpha-mask sprays with cutoff 0.45 in GLB; mobile has independently reduced geometry and 128x256 foliage texture. Sakura uses opaque petal geometry."
+        }
+      },
+      "unrelatedObjects": [],
+      "errors": []
+    },
+    {
+      "route": "leader",
+      "path": "04-leader.blend",
+      "sha256": "29eafffc3fe356104179a98934379a7aebcbbef41ea6d1fc02f78b06a79d25f9",
+      "opened": true,
+      "collections": [
+        "00_REFERENCE",
+        "01_ENVIRONMENT",
+        "02_ARCHITECTURE",
+        "03_LANDMARKS",
+        "04_INTERACTION",
+        "05_ATMOSPHERE",
+        "06_CAMERA_GUIDES",
+        "07_LIGHT_GUIDES",
+        "08_COLLISION_GUIDES",
+        "09_EXPORT_DESKTOP",
+        "10_EXPORT_MOBILE"
+      ],
+      "assetIds": [
+        "L01",
+        "L02",
+        "L03"
+      ],
+      "assets": [
+        {
+          "assetId": "L01",
+          "variants": {
+            "desktop": {
+              "meshCount": 5,
+              "materials": [
+                "SA_M_COURT",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 5,
+              "vertexColorMeshes": 5
+            },
+            "mobile": {
+              "meshCount": 5,
+              "materials": [
+                "SA_M_COURT_MOBILE",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 5,
+              "vertexColorMeshes": 5
+            }
+          }
+        },
+        {
+          "assetId": "L02",
+          "variants": {
+            "desktop": {
+              "meshCount": 15,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_BARK",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 15,
+              "vertexColorMeshes": 15
+            },
+            "mobile": {
+              "meshCount": 10,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 10,
+              "vertexColorMeshes": 10
+            }
+          }
+        },
+        {
+          "assetId": "L03",
+          "variants": {
+            "desktop": {
+              "meshCount": 11,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_BARK",
+                "SA_M_PAPER",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 11,
+              "vertexColorMeshes": 11
+            },
+            "mobile": {
+              "meshCount": 11,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_BARK_MOBILE",
+                "SA_M_PAPER_MOBILE",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 11,
+              "vertexColorMeshes": 11
+            }
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "LEADER_CONVERGE",
+          "duration": 1.8,
+          "slots": 10,
+          "keyFrames": [
+            1.0,
+            55.0
+          ]
+        },
+        {
+          "name": "LEADER_RAIL",
+          "duration": 1.2,
+          "slots": 6,
+          "keyFrames": [
+            1.0,
+            37.0
+          ]
+        }
+      ],
+      "guideCount": 20,
+      "libraries": [
+        {
+          "path": "//00-garden.blend",
+          "exists": true
+        }
+      ],
+      "images": [
+        {
+          "name": "senior-stone-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-stone-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "timber-paper.desktop.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.desktop.png",
+          "packed": false,
+          "size": [
+            1024,
+            1024
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "timber-paper.mobile.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.mobile.png",
+          "packed": false,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-ground-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-spray.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.desktop.png",
+          "packed": true,
+          "size": [
+            256,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-spray.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.mobile.png",
+          "packed": true,
+          "size": [
+            128,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-stone-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        }
+      ],
+      "readMe": {
+        "version": "1.0.0",
+        "purpose": "leader Stay Awhile asset master",
+        "assetIds": [
+          "L01",
+          "L02",
+          "L03"
+        ],
+        "provenance": "Original deterministic geometry based on Part I / Appendix B of PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+        "coordinateConvention": "Metric, scale 1. Specification glTF (x,y,z) authored Blender (x,-z,y). Export Y-up exactly once.",
+        "exportProcess": "blender --background --python scripts/blender/stay-awhile/produce.py -- --root <repository> --export-only",
+        "dependencies": [
+          "//00-garden.blend (linked shared library collections)",
+          "../../../public/models/stay/v1/shared/timber-paper.desktop.png",
+          "../../../public/models/stay/v1/shared/timber-paper.mobile.png"
+        ],
+        "validationStatus": "Passed reopened-master, scale, naming, anchor, triangle/package cap, exact clip count/duration and reverse-seek checks. GLBs passed Khronos validation (0 errors, 0 warnings). See external reports for final checksums and poster review.",
+        "artistNotes": [
+          "Unlettered geometry; no private evidence. No browser animation authored.",
+          "One Action per logical clip with separate object slots for parts and LODs. Library collections are instanced, never baked into prop GLBs.",
+          "Camera/reference empties exported in the first owned asset pair; scene.json identifies their asset container.",
+          "World-scale G01/G09 and distant G11/F03 intentionally extend outside local route extent.",
+          "Shared original timber/paper atlas: 1024 desktop, 512 mobile, 32px-equivalent island gutters, packed UV0. No third-party images.",
+          "Export collection mobile roles include MOBILE to satisfy Blender unique datablock names; exported node and material names are normalized to the desktop contract.",
+          "Measured rail corrections: Thinker partial lintel narrowed/offset within the unchanged deck footprint; Leader lesson rail +0.30 m X; Stories lamps 1/3 X=1.10/-1.60. Camera knots unchanged. These override nominal landmark placement to satisfy the 0.50 m corridor.",
+          "2026-09-25 Astra v2: crafted physical landmarks, stone-ground paths, richer planting, and route-specific natural light. No third-party model assets; research: https://japanesegarden.org/garden-spaces/tea-garden/.",
+          "Senior pass: CC0 botanical source adaptation, shared image PBR, refined edge light and foreground foliage. Required roots, guides and authored Actions preserved."
+        ],
+        "seniorArtPass": {
+          "date": "2026-09-27",
+          "sourceBibleSha256": "ec0ce6ca9574df3851917e8162b2cf5a68b132ba76b4f663ce75994f69056a4f",
+          "provenance": [
+            {
+              "asset": "tree_small_02",
+              "creator": "Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/tree_small_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Trunk retopology by reduction; sampled crown points; varied proportions. Source diffuse/opacity atlas cropped into masked leaf sprays. Sakura crown remodeled as opaque geometry."
+            },
+            {
+              "asset": "bark_brown_02",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/bark_brown_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Downsampled for shared desktop/mobile PBR maps."
+            },
+            {
+              "asset": "mossy_rock",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/mossy_rock",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to restrained grey-green; downsampled PBR maps."
+            },
+            {
+              "asset": "forest_ground_04",
+              "creator": "Rob Tuytel; Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/forest_ground_04",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to moss and earth palette; downsampled."
+            },
+            {
+              "asset": "wood_planks_grey",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/wood_planks_grey",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to warm cedar; downsampled."
+            }
+          ],
+          "validationStatus": "See SENIOR_ART_PASS_REPORT.md, validation-report.json, senior-integrity.json, senior-roundtrip.json, motion-validation.json, rail-validation.json and khronos-validation.json. Offline evidence does not establish browser acceptance.",
+          "scope": "Blender source, textures, GLB assets and manifests only",
+          "sourceCorrection": "G09 hill relief softened and pushed outward; continuous skirt shares ground PBR. G01 redundant ground edges reduced within 2 cm vertex deviation. Root, pivot, Action and camera contracts retained.",
+          "foliage": "Green foliage uses double-sided alpha-mask sprays with cutoff 0.45 in GLB; mobile has independently reduced geometry and 128x256 foliage texture. Sakura uses opaque petal geometry."
+        }
+      },
+      "unrelatedObjects": [],
+      "errors": []
+    },
+    {
+      "route": "stories",
+      "path": "05-stories.blend",
+      "sha256": "478297ecbb9098c5a02b720b8ac7274258be09f3301eb77c6ec850f01c6dda03",
+      "opened": true,
+      "collections": [
+        "00_REFERENCE",
+        "01_ENVIRONMENT",
+        "02_ARCHITECTURE",
+        "03_LANDMARKS",
+        "04_INTERACTION",
+        "05_ATMOSPHERE",
+        "06_CAMERA_GUIDES",
+        "07_LIGHT_GUIDES",
+        "08_COLLISION_GUIDES",
+        "09_EXPORT_DESKTOP",
+        "10_EXPORT_MOBILE"
+      ],
+      "assetIds": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "assets": [
+        {
+          "assetId": "S01",
+          "variants": {
+            "desktop": {
+              "meshCount": 5,
+              "materials": [
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 5,
+              "vertexColorMeshes": 5
+            },
+            "mobile": {
+              "meshCount": 5,
+              "materials": [
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 5,
+              "vertexColorMeshes": 5
+            }
+          }
+        },
+        {
+          "assetId": "S02",
+          "variants": {
+            "desktop": {
+              "meshCount": 6,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_LIGHT",
+                "SA_M_PAPER",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 6,
+              "vertexColorMeshes": 6
+            },
+            "mobile": {
+              "meshCount": 6,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_LIGHT",
+                "SA_M_PAPER_MOBILE",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 6,
+              "vertexColorMeshes": 6
+            }
+          }
+        },
+        {
+          "assetId": "S03",
+          "variants": {
+            "desktop": {
+              "meshCount": 12,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_LEAF",
+                "SA_M_PAPER",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 12,
+              "vertexColorMeshes": 12
+            },
+            "mobile": {
+              "meshCount": 12,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_LEAF",
+                "SA_M_PAPER_MOBILE",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 12,
+              "vertexColorMeshes": 12
+            }
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "STORY_SHUTTER",
+          "duration": 0.6,
+          "slots": 2,
+          "keyFrames": [
+            1.0,
+            19.0
+          ]
+        }
+      ],
+      "guideCount": 20,
+      "libraries": [
+        {
+          "path": "//00-garden.blend",
+          "exists": true
+        }
+      ],
+      "images": [
+        {
+          "name": "senior-timber-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "timber-paper.desktop.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.desktop.png",
+          "packed": false,
+          "size": [
+            1024,
+            1024
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "timber-paper.mobile.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.mobile.png",
+          "packed": false,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-ground-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-spray.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.desktop.png",
+          "packed": true,
+          "size": [
+            256,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-spray.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.mobile.png",
+          "packed": true,
+          "size": [
+            128,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-stone-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        }
+      ],
+      "readMe": {
+        "version": "1.0.0",
+        "purpose": "stories Stay Awhile asset master",
+        "assetIds": [
+          "S01",
+          "S02",
+          "S03"
+        ],
+        "provenance": "Original deterministic geometry based on Part I / Appendix B of PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+        "coordinateConvention": "Metric, scale 1. Specification glTF (x,y,z) authored Blender (x,-z,y). Export Y-up exactly once.",
+        "exportProcess": "blender --background --python scripts/blender/stay-awhile/produce.py -- --root <repository> --export-only",
+        "dependencies": [
+          "//00-garden.blend (linked shared library collections)",
+          "../../../public/models/stay/v1/shared/timber-paper.desktop.png",
+          "../../../public/models/stay/v1/shared/timber-paper.mobile.png"
+        ],
+        "validationStatus": "Passed reopened-master, scale, naming, anchor, triangle/package cap, exact clip count/duration and reverse-seek checks. GLBs passed Khronos validation (0 errors, 0 warnings). See external reports for final checksums and poster review.",
+        "artistNotes": [
+          "Unlettered geometry; no private evidence. No browser animation authored.",
+          "One Action per logical clip with separate object slots for parts and LODs. Library collections are instanced, never baked into prop GLBs.",
+          "Camera/reference empties exported in the first owned asset pair; scene.json identifies their asset container.",
+          "World-scale G01/G09 and distant G11/F03 intentionally extend outside local route extent.",
+          "Shared original timber/paper atlas: 1024 desktop, 512 mobile, 32px-equivalent island gutters, packed UV0. No third-party images.",
+          "Export collection mobile roles include MOBILE to satisfy Blender unique datablock names; exported node and material names are normalized to the desktop contract.",
+          "Measured rail corrections: Thinker partial lintel narrowed/offset within the unchanged deck footprint; Leader lesson rail +0.30 m X; Stories lamps 1/3 X=1.10/-1.60. Camera knots unchanged. These override nominal landmark placement to satisfy the 0.50 m corridor.",
+          "Handoff review: raised S01 bay slabs 0.01 m above overlapping path tops; fixed black coplanar patches without adding geometry.",
+          "2026-09-25 Astra v2: crafted physical landmarks, stone-ground paths, richer planting, and route-specific natural light. No third-party model assets; research: https://japanesegarden.org/garden-spaces/tea-garden/.",
+          "Senior pass: CC0 botanical source adaptation, shared image PBR, refined edge light and foreground foliage. Required roots, guides and authored Actions preserved."
+        ],
+        "seniorArtPass": {
+          "date": "2026-09-27",
+          "sourceBibleSha256": "ec0ce6ca9574df3851917e8162b2cf5a68b132ba76b4f663ce75994f69056a4f",
+          "provenance": [
+            {
+              "asset": "tree_small_02",
+              "creator": "Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/tree_small_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Trunk retopology by reduction; sampled crown points; varied proportions. Source diffuse/opacity atlas cropped into masked leaf sprays. Sakura crown remodeled as opaque geometry."
+            },
+            {
+              "asset": "bark_brown_02",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/bark_brown_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Downsampled for shared desktop/mobile PBR maps."
+            },
+            {
+              "asset": "mossy_rock",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/mossy_rock",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to restrained grey-green; downsampled PBR maps."
+            },
+            {
+              "asset": "forest_ground_04",
+              "creator": "Rob Tuytel; Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/forest_ground_04",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to moss and earth palette; downsampled."
+            },
+            {
+              "asset": "wood_planks_grey",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/wood_planks_grey",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to warm cedar; downsampled."
+            }
+          ],
+          "validationStatus": "See SENIOR_ART_PASS_REPORT.md, validation-report.json, senior-integrity.json, senior-roundtrip.json, motion-validation.json, rail-validation.json and khronos-validation.json. Offline evidence does not establish browser acceptance.",
+          "scope": "Blender source, textures, GLB assets and manifests only",
+          "sourceCorrection": "G09 hill relief softened and pushed outward; continuous skirt shares ground PBR. G01 redundant ground edges reduced within 2 cm vertex deviation. Root, pivot, Action and camera contracts retained.",
+          "foliage": "Green foliage uses double-sided alpha-mask sprays with cutoff 0.45 in GLB; mobile has independently reduced geometry and 128x256 foliage texture. Sakura uses opaque petal geometry."
+        }
+      },
+      "unrelatedObjects": [],
+      "errors": []
+    },
+    {
+      "route": "work",
+      "path": "06-work.blend",
+      "sha256": "82fb1280642a6d03818c78fd3c6eaef95223f045f5c32b6aed09e156159336dd",
+      "opened": true,
+      "collections": [
+        "00_REFERENCE",
+        "01_ENVIRONMENT",
+        "02_ARCHITECTURE",
+        "03_LANDMARKS",
+        "04_INTERACTION",
+        "05_ATMOSPHERE",
+        "06_CAMERA_GUIDES",
+        "07_LIGHT_GUIDES",
+        "08_COLLISION_GUIDES",
+        "09_EXPORT_DESKTOP",
+        "10_EXPORT_MOBILE"
+      ],
+      "assetIds": [
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06"
+      ],
+      "assets": [
+        {
+          "assetId": "W01",
+          "variants": {
+            "desktop": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            },
+            "mobile": {
+              "meshCount": 3,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 3,
+              "vertexColorMeshes": 3
+            }
+          }
+        },
+        {
+          "assetId": "W02",
+          "variants": {
+            "desktop": {
+              "meshCount": 16,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_BARK",
+                "SA_M_PAPER"
+              ],
+              "uvMeshes": 16,
+              "vertexColorMeshes": 16
+            },
+            "mobile": {
+              "meshCount": 16,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_BARK_MOBILE",
+                "SA_M_PAPER_MOBILE"
+              ],
+              "uvMeshes": 16,
+              "vertexColorMeshes": 16
+            }
+          }
+        },
+        {
+          "assetId": "W03",
+          "variants": {
+            "desktop": {
+              "meshCount": 5,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_PAPER"
+              ],
+              "uvMeshes": 5,
+              "vertexColorMeshes": 5
+            },
+            "mobile": {
+              "meshCount": 5,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_PAPER_MOBILE"
+              ],
+              "uvMeshes": 5,
+              "vertexColorMeshes": 5
+            }
+          }
+        },
+        {
+          "assetId": "W04",
+          "variants": {
+            "desktop": {
+              "meshCount": 9,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_PAPER",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 9,
+              "vertexColorMeshes": 9
+            },
+            "mobile": {
+              "meshCount": 9,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_PAPER_MOBILE",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 9,
+              "vertexColorMeshes": 9
+            }
+          }
+        },
+        {
+          "assetId": "W05",
+          "variants": {
+            "desktop": {
+              "meshCount": 4,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_LIGHT",
+                "SA_M_METAL",
+                "SA_M_PAPER"
+              ],
+              "uvMeshes": 4,
+              "vertexColorMeshes": 4
+            },
+            "mobile": {
+              "meshCount": 4,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_LIGHT",
+                "SA_M_METAL",
+                "SA_M_PAPER_MOBILE"
+              ],
+              "uvMeshes": 4,
+              "vertexColorMeshes": 4
+            }
+          }
+        },
+        {
+          "assetId": "W06",
+          "variants": {
+            "desktop": {
+              "meshCount": 7,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_BARK",
+                "SA_M_PAPER"
+              ],
+              "uvMeshes": 7,
+              "vertexColorMeshes": 7
+            },
+            "mobile": {
+              "meshCount": 7,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_BARK_MOBILE",
+                "SA_M_PAPER_MOBILE"
+              ],
+              "uvMeshes": 7,
+              "vertexColorMeshes": 7
+            }
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "WORK_AURA",
+          "duration": 5.0,
+          "slots": 10,
+          "keyFrames": [
+            1.0,
+            151.0
+          ]
+        },
+        {
+          "name": "WORK_LOGGER",
+          "duration": 5.0,
+          "slots": 6,
+          "keyFrames": [
+            1.0,
+            151.0
+          ]
+        },
+        {
+          "name": "WORK_MUN",
+          "duration": 4.0,
+          "slots": 8,
+          "keyFrames": [
+            1.0,
+            121.0
+          ]
+        },
+        {
+          "name": "WORK_PLANNER",
+          "duration": 6.0,
+          "slots": 26,
+          "keyFrames": [
+            1.0,
+            181.0
+          ]
+        },
+        {
+          "name": "WORK_SNRLED",
+          "duration": 6.0,
+          "slots": 2,
+          "keyFrames": [
+            1.0,
+            181.0
+          ]
+        }
+      ],
+      "guideCount": 23,
+      "libraries": [
+        {
+          "path": "//00-garden.blend",
+          "exists": true
+        }
+      ],
+      "images": [
+        {
+          "name": "senior-timber-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "timber-paper.desktop.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.desktop.png",
+          "packed": false,
+          "size": [
+            1024,
+            1024
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "timber-paper.mobile.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.mobile.png",
+          "packed": false,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-ground-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-spray.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.desktop.png",
+          "packed": true,
+          "size": [
+            256,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-spray.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.mobile.png",
+          "packed": true,
+          "size": [
+            128,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-stone-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        }
+      ],
+      "readMe": {
+        "version": "1.0.0",
+        "purpose": "work Stay Awhile asset master",
+        "assetIds": [
+          "W01",
+          "W02",
+          "W03",
+          "W04",
+          "W05",
+          "W06"
+        ],
+        "provenance": "Original deterministic geometry based on Part I / Appendix B of PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+        "coordinateConvention": "Metric, scale 1. Specification glTF (x,y,z) authored Blender (x,-z,y). Export Y-up exactly once.",
+        "exportProcess": "blender --background --python scripts/blender/stay-awhile/produce.py -- --root <repository> --export-only",
+        "dependencies": [
+          "//00-garden.blend (linked shared library collections)",
+          "../../../public/models/stay/v1/shared/timber-paper.desktop.png",
+          "../../../public/models/stay/v1/shared/timber-paper.mobile.png"
+        ],
+        "validationStatus": "Passed reopened-master, scale, naming, anchor, triangle/package cap, exact clip count/duration and reverse-seek checks. GLBs passed Khronos validation (0 errors, 0 warnings). See external reports for final checksums and poster review.",
+        "artistNotes": [
+          "Unlettered geometry; no private evidence. No browser animation authored.",
+          "One Action per logical clip with separate object slots for parts and LODs. Library collections are instanced, never baked into prop GLBs.",
+          "Camera/reference empties exported in the first owned asset pair; scene.json identifies their asset container.",
+          "World-scale G01/G09 and distant G11/F03 intentionally extend outside local route extent.",
+          "Shared original timber/paper atlas: 1024 desktop, 512 mobile, 32px-equivalent island gutters, packed UV0. No third-party images.",
+          "Export collection mobile roles include MOBILE to satisfy Blender unique datablock names; exported node and material names are normalized to the desktop contract.",
+          "2026-09-25 Astra v2: in-place physical asset refinement, shaped silhouettes and camera-checked materials. No third-party models or private text.",
+          "Senior pass: CC0 botanical source adaptation, shared image PBR, refined edge light and foreground foliage. Required roots, guides and authored Actions preserved."
+        ],
+        "seniorArtPass": {
+          "date": "2026-09-27",
+          "sourceBibleSha256": "ec0ce6ca9574df3851917e8162b2cf5a68b132ba76b4f663ce75994f69056a4f",
+          "provenance": [
+            {
+              "asset": "tree_small_02",
+              "creator": "Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/tree_small_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Trunk retopology by reduction; sampled crown points; varied proportions. Source diffuse/opacity atlas cropped into masked leaf sprays. Sakura crown remodeled as opaque geometry."
+            },
+            {
+              "asset": "bark_brown_02",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/bark_brown_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Downsampled for shared desktop/mobile PBR maps."
+            },
+            {
+              "asset": "mossy_rock",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/mossy_rock",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to restrained grey-green; downsampled PBR maps."
+            },
+            {
+              "asset": "forest_ground_04",
+              "creator": "Rob Tuytel; Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/forest_ground_04",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to moss and earth palette; downsampled."
+            },
+            {
+              "asset": "wood_planks_grey",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/wood_planks_grey",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to warm cedar; downsampled."
+            }
+          ],
+          "validationStatus": "See SENIOR_ART_PASS_REPORT.md, validation-report.json, senior-integrity.json, senior-roundtrip.json, motion-validation.json, rail-validation.json and khronos-validation.json. Offline evidence does not establish browser acceptance.",
+          "scope": "Blender source, textures, GLB assets and manifests only",
+          "sourceCorrection": "G09 hill relief softened and pushed outward; continuous skirt shares ground PBR. G01 redundant ground edges reduced within 2 cm vertex deviation. Root, pivot, Action and camera contracts retained.",
+          "foliage": "Green foliage uses double-sided alpha-mask sprays with cutoff 0.45 in GLB; mobile has independently reduced geometry and 128x256 foliage texture. Sakura uses opaque petal geometry."
+        }
+      },
+      "unrelatedObjects": [],
+      "errors": []
+    },
+    {
+      "route": "future",
+      "path": "07-future.blend",
+      "sha256": "3e233b4d4e31127e41db986e23774c18818d6091b5d19df21170eb852129f4d2",
+      "opened": true,
+      "collections": [
+        "00_REFERENCE",
+        "01_ENVIRONMENT",
+        "02_ARCHITECTURE",
+        "03_LANDMARKS",
+        "04_INTERACTION",
+        "05_ATMOSPHERE",
+        "06_CAMERA_GUIDES",
+        "07_LIGHT_GUIDES",
+        "08_COLLISION_GUIDES",
+        "09_EXPORT_DESKTOP",
+        "10_EXPORT_MOBILE"
+      ],
+      "assetIds": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "assets": [
+        {
+          "assetId": "F01",
+          "variants": {
+            "desktop": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_SPRAY",
+                "SA_M_TREEBARK"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            },
+            "mobile": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_SPRAY_MOBILE",
+                "SA_M_TREEBARK"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            }
+          }
+        },
+        {
+          "assetId": "F02",
+          "variants": {
+            "desktop": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_MOSS",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            },
+            "mobile": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_MOSS",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            }
+          }
+        },
+        {
+          "assetId": "F03",
+          "variants": {
+            "desktop": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            },
+            "mobile": {
+              "meshCount": 2,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 2,
+              "vertexColorMeshes": 2
+            }
+          }
+        }
+      ],
+      "actions": [],
+      "guideCount": 17,
+      "libraries": [
+        {
+          "path": "//00-garden.blend",
+          "exists": true
+        }
+      ],
+      "images": [
+        {
+          "name": "senior-bark-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-ground-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-spray.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.desktop.png",
+          "packed": true,
+          "size": [
+            256,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-spray.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.mobile.png",
+          "packed": true,
+          "size": [
+            128,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-stone-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        }
+      ],
+      "readMe": {
+        "version": "1.0.0",
+        "purpose": "future Stay Awhile asset master",
+        "assetIds": [
+          "F01",
+          "F02",
+          "F03"
+        ],
+        "provenance": "Original deterministic geometry based on Part I / Appendix B of PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+        "coordinateConvention": "Metric, scale 1. Specification glTF (x,y,z) authored Blender (x,-z,y). Export Y-up exactly once.",
+        "exportProcess": "blender --background --python scripts/blender/stay-awhile/produce.py -- --root <repository> --export-only",
+        "dependencies": [
+          "//00-garden.blend (linked shared library collections)",
+          "../../../public/models/stay/v1/shared/timber-paper.desktop.png",
+          "../../../public/models/stay/v1/shared/timber-paper.mobile.png"
+        ],
+        "validationStatus": "Passed reopened-master, scale, naming, anchor, triangle/package cap, exact clip count/duration and reverse-seek checks. GLBs passed Khronos validation (0 errors, 0 warnings). See external reports for final checksums and poster review.",
+        "artistNotes": [
+          "Unlettered geometry; no private evidence. No browser animation authored.",
+          "One Action per logical clip with separate object slots for parts and LODs. Library collections are instanced, never baked into prop GLBs.",
+          "Camera/reference empties exported in the first owned asset pair; scene.json identifies their asset container.",
+          "World-scale G01/G09 and distant G11/F03 intentionally extend outside local route extent.",
+          "Shared original timber/paper atlas: 1024 desktop, 512 mobile, 32px-equivalent island gutters, packed UV0. No third-party images.",
+          "Export collection mobile roles include MOBILE to satisfy Blender unique datablock names; exported node and material names are normalized to the desktop contract.",
+          "Measured rail corrections: Thinker partial lintel narrowed/offset within the unchanged deck footprint; Leader lesson rail +0.30 m X; Stories lamps 1/3 X=1.10/-1.60. Camera knots unchanged. These override nominal landmark placement to satisfy the 0.50 m corridor.",
+          "Handoff review: Future G09 instance Y=-0.51 m, placing skirt 0.01 m beneath the overlapping terrain; fixes black horizontal strip. Shared G09 geometry unchanged.",
+          "2026-09-25 Astra v2: in-place physical asset refinement, shaped silhouettes and camera-checked materials. No third-party models or private text.",
+          "Senior pass: CC0 botanical source adaptation, shared image PBR, refined edge light and foreground foliage. Required roots, guides and authored Actions preserved."
+        ],
+        "seniorArtPass": {
+          "date": "2026-09-27",
+          "sourceBibleSha256": "ec0ce6ca9574df3851917e8162b2cf5a68b132ba76b4f663ce75994f69056a4f",
+          "provenance": [
+            {
+              "asset": "tree_small_02",
+              "creator": "Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/tree_small_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Trunk retopology by reduction; sampled crown points; varied proportions. Source diffuse/opacity atlas cropped into masked leaf sprays. Sakura crown remodeled as opaque geometry."
+            },
+            {
+              "asset": "bark_brown_02",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/bark_brown_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Downsampled for shared desktop/mobile PBR maps."
+            },
+            {
+              "asset": "mossy_rock",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/mossy_rock",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to restrained grey-green; downsampled PBR maps."
+            },
+            {
+              "asset": "forest_ground_04",
+              "creator": "Rob Tuytel; Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/forest_ground_04",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to moss and earth palette; downsampled."
+            },
+            {
+              "asset": "wood_planks_grey",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/wood_planks_grey",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to warm cedar; downsampled."
+            }
+          ],
+          "validationStatus": "See SENIOR_ART_PASS_REPORT.md, validation-report.json, senior-integrity.json, senior-roundtrip.json, motion-validation.json, rail-validation.json and khronos-validation.json. Offline evidence does not establish browser acceptance.",
+          "scope": "Blender source, textures, GLB assets and manifests only",
+          "sourceCorrection": "G09 hill relief softened and pushed outward; continuous skirt shares ground PBR. G01 redundant ground edges reduced within 2 cm vertex deviation. Root, pivot, Action and camera contracts retained.",
+          "foliage": "Green foliage uses double-sided alpha-mask sprays with cutoff 0.45 in GLB; mobile has independently reduced geometry and 128x256 foliage texture. Sakura uses opaque petal geometry."
+        }
+      },
+      "unrelatedObjects": [],
+      "errors": []
+    },
+    {
+      "route": "aura",
+      "path": "08-aura.blend",
+      "sha256": "ae4def92f3b595272a2b7806e9128eec095b2208437d2998be4ee8a56a711945",
+      "opened": true,
+      "collections": [
+        "00_REFERENCE",
+        "01_ENVIRONMENT",
+        "02_ARCHITECTURE",
+        "03_LANDMARKS",
+        "04_INTERACTION",
+        "05_ATMOSPHERE",
+        "06_CAMERA_GUIDES",
+        "07_LIGHT_GUIDES",
+        "08_COLLISION_GUIDES",
+        "09_EXPORT_DESKTOP",
+        "10_EXPORT_MOBILE"
+      ],
+      "assetIds": [
+        "A01",
+        "A02",
+        "A03",
+        "A04"
+      ],
+      "assets": [
+        {
+          "assetId": "A01",
+          "variants": {
+            "desktop": {
+              "meshCount": 18,
+              "materials": [
+                "SA_M_BARK",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 18,
+              "vertexColorMeshes": 18
+            },
+            "mobile": {
+              "meshCount": 18,
+              "materials": [
+                "SA_M_BARK_MOBILE",
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 18,
+              "vertexColorMeshes": 18
+            }
+          }
+        },
+        {
+          "assetId": "A02",
+          "variants": {
+            "desktop": {
+              "meshCount": 9,
+              "materials": [
+                "SA_M_PAPER"
+              ],
+              "uvMeshes": 9,
+              "vertexColorMeshes": 9
+            },
+            "mobile": {
+              "meshCount": 9,
+              "materials": [
+                "SA_M_PAPER_MOBILE"
+              ],
+              "uvMeshes": 9,
+              "vertexColorMeshes": 9
+            }
+          }
+        },
+        {
+          "assetId": "A03",
+          "variants": {
+            "desktop": {
+              "meshCount": 24,
+              "materials": [
+                "SA_M_ACCENT"
+              ],
+              "uvMeshes": 24,
+              "vertexColorMeshes": 24
+            },
+            "mobile": {
+              "meshCount": 13,
+              "materials": [
+                "SA_M_ACCENT"
+              ],
+              "uvMeshes": 13,
+              "vertexColorMeshes": 13
+            }
+          }
+        },
+        {
+          "assetId": "A04",
+          "variants": {
+            "desktop": {
+              "meshCount": 11,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_BARK"
+              ],
+              "uvMeshes": 11,
+              "vertexColorMeshes": 11
+            },
+            "mobile": {
+              "meshCount": 11,
+              "materials": [
+                "SA_M_ACCENT",
+                "SA_M_BARK_MOBILE"
+              ],
+              "uvMeshes": 11,
+              "vertexColorMeshes": 11
+            }
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "AURA_DOCUMENTS",
+          "duration": 4.0,
+          "slots": 18,
+          "keyFrames": [
+            1.0,
+            121.0
+          ]
+        },
+        {
+          "name": "AURA_MODEL",
+          "duration": 3.0,
+          "slots": 10,
+          "keyFrames": [
+            1.0,
+            91.0
+          ]
+        },
+        {
+          "name": "AURA_STRUCTURE",
+          "duration": 3.0,
+          "slots": 18,
+          "keyFrames": [
+            1.0,
+            91.0
+          ]
+        }
+      ],
+      "guideCount": 26,
+      "libraries": [
+        {
+          "path": "//00-garden.blend",
+          "exists": true
+        }
+      ],
+      "images": [
+        {
+          "name": "senior-timber-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "timber-paper.desktop.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.desktop.png",
+          "packed": false,
+          "size": [
+            1024,
+            1024
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "timber-paper.mobile.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.mobile.png",
+          "packed": false,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-ground-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-spray.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.desktop.png",
+          "packed": true,
+          "size": [
+            256,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-spray.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.mobile.png",
+          "packed": true,
+          "size": [
+            128,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-stone-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        }
+      ],
+      "readMe": {
+        "version": "1.0.0",
+        "purpose": "aura Stay Awhile asset master",
+        "assetIds": [
+          "A01",
+          "A02",
+          "A03",
+          "A04"
+        ],
+        "provenance": "Original deterministic geometry based on Part I / Appendix B of PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+        "coordinateConvention": "Metric, scale 1. Specification glTF (x,y,z) authored Blender (x,-z,y). Export Y-up exactly once.",
+        "exportProcess": "blender --background --python scripts/blender/stay-awhile/produce.py -- --root <repository> --export-only",
+        "dependencies": [
+          "//00-garden.blend (linked shared library collections)",
+          "../../../public/models/stay/v1/shared/timber-paper.desktop.png",
+          "../../../public/models/stay/v1/shared/timber-paper.mobile.png"
+        ],
+        "validationStatus": "Passed reopened-master, scale, naming, anchor, triangle/package cap, exact clip count/duration and reverse-seek checks. GLBs passed Khronos validation (0 errors, 0 warnings). See external reports for final checksums and poster review.",
+        "artistNotes": [
+          "Unlettered geometry; no private evidence. No browser animation authored.",
+          "One Action per logical clip with separate object slots for parts and LODs. Library collections are instanced, never baked into prop GLBs.",
+          "Camera/reference empties exported in the first owned asset pair; scene.json identifies their asset container.",
+          "World-scale G01/G09 and distant G11/F03 intentionally extend outside local route extent.",
+          "Shared original timber/paper atlas: 1024 desktop, 512 mobile, 32px-equivalent island gutters, packed UV0. No third-party images.",
+          "Export collection mobile roles include MOBILE to satisfy Blender unique datablock names; exported node and material names are normalized to the desktop contract.",
+          "A04 SOCKET_00..08 follow shelf transforms. Future scene adapter attaches the nine A02 document instances to these physical sockets at the model transition; do not duplicate document geometry.",
+          "2026-09-25 Astra v2: in-place physical asset refinement, shaped silhouettes and camera-checked materials. No third-party models or private text.",
+          "Senior pass: CC0 botanical source adaptation, shared image PBR, refined edge light and foreground foliage. Required roots, guides and authored Actions preserved."
+        ],
+        "seniorArtPass": {
+          "date": "2026-09-27",
+          "sourceBibleSha256": "ec0ce6ca9574df3851917e8162b2cf5a68b132ba76b4f663ce75994f69056a4f",
+          "provenance": [
+            {
+              "asset": "tree_small_02",
+              "creator": "Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/tree_small_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Trunk retopology by reduction; sampled crown points; varied proportions. Source diffuse/opacity atlas cropped into masked leaf sprays. Sakura crown remodeled as opaque geometry."
+            },
+            {
+              "asset": "bark_brown_02",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/bark_brown_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Downsampled for shared desktop/mobile PBR maps."
+            },
+            {
+              "asset": "mossy_rock",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/mossy_rock",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to restrained grey-green; downsampled PBR maps."
+            },
+            {
+              "asset": "forest_ground_04",
+              "creator": "Rob Tuytel; Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/forest_ground_04",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to moss and earth palette; downsampled."
+            },
+            {
+              "asset": "wood_planks_grey",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/wood_planks_grey",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to warm cedar; downsampled."
+            }
+          ],
+          "validationStatus": "See SENIOR_ART_PASS_REPORT.md, validation-report.json, senior-integrity.json, senior-roundtrip.json, motion-validation.json, rail-validation.json and khronos-validation.json. Offline evidence does not establish browser acceptance.",
+          "scope": "Blender source, textures, GLB assets and manifests only",
+          "sourceCorrection": "G09 hill relief softened and pushed outward; continuous skirt shares ground PBR. G01 redundant ground edges reduced within 2 cm vertex deviation. Root, pivot, Action and camera contracts retained.",
+          "foliage": "Green foliage uses double-sided alpha-mask sprays with cutoff 0.45 in GLB; mobile has independently reduced geometry and 128x256 foliage texture. Sakura uses opaque petal geometry."
+        }
+      },
+      "unrelatedObjects": [],
+      "errors": []
+    },
+    {
+      "route": "contact",
+      "path": "09-contact.blend",
+      "sha256": "d39a5b222ec73cfc35f6028fd5a597315b7a5b11115696133bd4fd95667585a9",
+      "opened": true,
+      "collections": [
+        "00_REFERENCE",
+        "01_ENVIRONMENT",
+        "02_ARCHITECTURE",
+        "03_LANDMARKS",
+        "04_INTERACTION",
+        "05_ATMOSPHERE",
+        "06_CAMERA_GUIDES",
+        "07_LIGHT_GUIDES",
+        "08_COLLISION_GUIDES",
+        "09_EXPORT_DESKTOP",
+        "10_EXPORT_MOBILE"
+      ],
+      "assetIds": [
+        "C01",
+        "C02"
+      ],
+      "assets": [
+        {
+          "assetId": "C01",
+          "variants": {
+            "desktop": {
+              "meshCount": 1,
+              "materials": [
+                "SA_M_MOSS"
+              ],
+              "uvMeshes": 1,
+              "vertexColorMeshes": 1
+            },
+            "mobile": {
+              "meshCount": 1,
+              "materials": [
+                "SA_M_MOSS"
+              ],
+              "uvMeshes": 1,
+              "vertexColorMeshes": 1
+            }
+          }
+        },
+        {
+          "assetId": "C02",
+          "variants": {
+            "desktop": {
+              "meshCount": 1,
+              "materials": [
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 1,
+              "vertexColorMeshes": 1
+            },
+            "mobile": {
+              "meshCount": 1,
+              "materials": [
+                "SA_M_STONE"
+              ],
+              "uvMeshes": 1,
+              "vertexColorMeshes": 1
+            }
+          }
+        }
+      ],
+      "actions": [],
+      "guideCount": 11,
+      "libraries": [
+        {
+          "path": "//00-garden.blend",
+          "exists": true
+        }
+      ],
+      "images": [
+        {
+          "name": "senior-bark-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-bark-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-bark-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-bark-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-ground-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-ground-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-ground-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-spray.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.desktop.png",
+          "packed": true,
+          "size": [
+            256,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-spray.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-spray.mobile.png",
+          "packed": true,
+          "size": [
+            128,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-stone-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-stone-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-stone-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-diff.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-diff.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-diff.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "senior-timber-nor_gl.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-nor_gl.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-nor_gl.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.desktop",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.desktop.jpg",
+          "packed": true,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "senior-timber-rough.mobile",
+          "path": "C:\\Users\\Adharsh Vijayakarthy\\Desktop\\Code\\Final_Portfolio\\public\\models\\stay\\v1\\shared\\senior-timber-rough.mobile.jpg",
+          "packed": true,
+          "size": [
+            256,
+            256
+          ],
+          "colorSpace": "Non-Color"
+        },
+        {
+          "name": "timber-paper.desktop.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.desktop.png",
+          "packed": false,
+          "size": [
+            1024,
+            1024
+          ],
+          "colorSpace": "sRGB"
+        },
+        {
+          "name": "timber-paper.mobile.png",
+          "path": "//..\\..\\..\\public\\models\\stay\\v1\\shared\\timber-paper.mobile.png",
+          "packed": false,
+          "size": [
+            512,
+            512
+          ],
+          "colorSpace": "sRGB"
+        }
+      ],
+      "readMe": {
+        "version": "1.0.0",
+        "purpose": "contact Stay Awhile asset master",
+        "assetIds": [
+          "C01",
+          "C02"
+        ],
+        "provenance": "Original deterministic geometry based on Part I / Appendix B of PROJECT_AURA_STAY_AWHILE_MASTER_IMPLEMENTATION_SPEC_v1.0.docx",
+        "coordinateConvention": "Metric, scale 1. Specification glTF (x,y,z) authored Blender (x,-z,y). Export Y-up exactly once.",
+        "exportProcess": "blender --background --python scripts/blender/stay-awhile/produce.py -- --root <repository> --export-only",
+        "dependencies": [
+          "//00-garden.blend (linked shared library collections)",
+          "../../../public/models/stay/v1/shared/timber-paper.desktop.png",
+          "../../../public/models/stay/v1/shared/timber-paper.mobile.png"
+        ],
+        "validationStatus": "Passed reopened-master, scale, naming, anchor, triangle/package cap, exact clip count/duration and reverse-seek checks. GLBs passed Khronos validation (0 errors, 0 warnings). See external reports for final checksums and poster review.",
+        "artistNotes": [
+          "Unlettered geometry; no private evidence. No browser animation authored.",
+          "One Action per logical clip with separate object slots for parts and LODs. Library collections are instanced, never baked into prop GLBs.",
+          "Camera/reference empties exported in the first owned asset pair; scene.json identifies their asset container.",
+          "World-scale G01/G09 and distant G11/F03 intentionally extend outside local route extent.",
+          "Shared original timber/paper atlas: 1024 desktop, 512 mobile, 32px-equivalent island gutters, packed UV0. No third-party images.",
+          "Export collection mobile roles include MOBILE to satisfy Blender unique datablock names; exported node and material names are normalized to the desktop contract.",
+          "2026-09-25 Astra v2: in-place physical asset refinement, shaped silhouettes and camera-checked materials. No third-party models or private text.",
+          "Senior pass: CC0 botanical source adaptation, shared image PBR, refined edge light and foreground foliage. Required roots, guides and authored Actions preserved."
+        ],
+        "seniorArtPass": {
+          "date": "2026-09-27",
+          "sourceBibleSha256": "ec0ce6ca9574df3851917e8162b2cf5a68b132ba76b4f663ce75994f69056a4f",
+          "provenance": [
+            {
+              "asset": "tree_small_02",
+              "creator": "Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/tree_small_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Trunk retopology by reduction; sampled crown points; varied proportions. Source diffuse/opacity atlas cropped into masked leaf sprays. Sakura crown remodeled as opaque geometry."
+            },
+            {
+              "asset": "bark_brown_02",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/bark_brown_02",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Downsampled for shared desktop/mobile PBR maps."
+            },
+            {
+              "asset": "mossy_rock",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/mossy_rock",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to restrained grey-green; downsampled PBR maps."
+            },
+            {
+              "asset": "forest_ground_04",
+              "creator": "Rob Tuytel; Rico Cilliers",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/forest_ground_04",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to moss and earth palette; downsampled."
+            },
+            {
+              "asset": "wood_planks_grey",
+              "creator": "Rob Tuytel",
+              "source": "Poly Haven",
+              "url": "https://polyhaven.com/a/wood_planks_grey",
+              "license": "CC0-1.0",
+              "licenseUrl": "https://polyhaven.com/license",
+              "accessed": "2026-09-26",
+              "modified": true,
+              "modification": "Recolored to warm cedar; downsampled."
+            }
+          ],
+          "validationStatus": "See SENIOR_ART_PASS_REPORT.md, validation-report.json, senior-integrity.json, senior-roundtrip.json, motion-validation.json, rail-validation.json and khronos-validation.json. Offline evidence does not establish browser acceptance.",
+          "scope": "Blender source, textures, GLB assets and manifests only",
+          "sourceCorrection": "G09 hill relief softened and pushed outward; continuous skirt shares ground PBR. G01 redundant ground edges reduced within 2 cm vertex deviation. Root, pivot, Action and camera contracts retained.",
+          "foliage": "Green foliage uses double-sided alpha-mask sprays with cutoff 0.45 in GLB; mobile has independently reduced geometry and 128x256 foliage texture. Sakura uses opaque petal geometry."
+        }
+      },
+      "unrelatedObjects": [],
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "savedMasters": false
+}

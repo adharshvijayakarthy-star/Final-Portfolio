@@ -1,0 +1,229 @@
+{
+  "canonicalClipFractions": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "tolerance": 0.005,
+  "results": [
+    {
+      "assetId": "B01",
+      "lod": "desktop",
+      "samples": 30,
+      "maxPositionMetresOrRotationRadiansError": 0.00015134973631447668
+    },
+    {
+      "assetId": "B01",
+      "lod": "mobile",
+      "samples": 30,
+      "maxPositionMetresOrRotationRadiansError": 0.00015134973631447668
+    },
+    {
+      "assetId": "B02",
+      "lod": "desktop",
+      "samples": 30,
+      "maxPositionMetresOrRotationRadiansError": 0.0031216530844543344
+    },
+    {
+      "assetId": "B02",
+      "lod": "mobile",
+      "samples": 30,
+      "maxPositionMetresOrRotationRadiansError": 0.0031216530844543344
+    },
+    {
+      "assetId": "B03",
+      "lod": "desktop",
+      "samples": 70,
+      "maxPositionMetresOrRotationRadiansError": 0.0002315162784656266
+    },
+    {
+      "assetId": "B03",
+      "lod": "mobile",
+      "samples": 70,
+      "maxPositionMetresOrRotationRadiansError": 0.0002315162784656266
+    },
+    {
+      "assetId": "B04",
+      "lod": "desktop",
+      "samples": 60,
+      "maxPositionMetresOrRotationRadiansError": 0.0007575750350952148
+    },
+    {
+      "assetId": "B04",
+      "lod": "mobile",
+      "samples": 60,
+      "maxPositionMetresOrRotationRadiansError": 0.0007575750350952148
+    },
+    {
+      "assetId": "B05",
+      "lod": "desktop",
+      "samples": 5,
+      "maxPositionMetresOrRotationRadiansError": 0.0003086744451309409
+    },
+    {
+      "assetId": "B05",
+      "lod": "mobile",
+      "samples": 5,
+      "maxPositionMetresOrRotationRadiansError": 0.0003086744451309409
+    },
+    {
+      "assetId": "B06",
+      "lod": "desktop",
+      "samples": 25,
+      "maxPositionMetresOrRotationRadiansError": 0.0009897483003061952
+    },
+    {
+      "assetId": "B06",
+      "lod": "mobile",
+      "samples": 25,
+      "maxPositionMetresOrRotationRadiansError": 0.0009897483003061952
+    },
+    {
+      "assetId": "T03",
+      "lod": "desktop",
+      "samples": 5,
+      "maxPositionMetresOrRotationRadiansError": 0
+    },
+    {
+      "assetId": "T03",
+      "lod": "mobile",
+      "samples": 5,
+      "maxPositionMetresOrRotationRadiansError": 0
+    },
+    {
+      "assetId": "L02",
+      "lod": "desktop",
+      "samples": 25,
+      "maxPositionMetresOrRotationRadiansError": 0
+    },
+    {
+      "assetId": "L02",
+      "lod": "mobile",
+      "samples": 25,
+      "maxPositionMetresOrRotationRadiansError": 0
+    },
+    {
+      "assetId": "L03",
+      "lod": "desktop",
+      "samples": 15,
+      "maxPositionMetresOrRotationRadiansError": 0.0007152797059890581
+    },
+    {
+      "assetId": "L03",
+      "lod": "mobile",
+      "samples": 15,
+      "maxPositionMetresOrRotationRadiansError": 0.0007152797059890581
+    },
+    {
+      "assetId": "S02",
+      "lod": "desktop",
+      "samples": 5,
+      "maxPositionMetresOrRotationRadiansError": 0
+    },
+    {
+      "assetId": "S02",
+      "lod": "mobile",
+      "samples": 5,
+      "maxPositionMetresOrRotationRadiansError": 0
+    },
+    {
+      "assetId": "W02",
+      "lod": "desktop",
+      "samples": 65,
+      "maxPositionMetresOrRotationRadiansError": 0.0009480714797973633
+    },
+    {
+      "assetId": "W02",
+      "lod": "mobile",
+      "samples": 65,
+      "maxPositionMetresOrRotationRadiansError": 0.0009480714797973633
+    },
+    {
+      "assetId": "W03",
+      "lod": "desktop",
+      "samples": 15,
+      "maxPositionMetresOrRotationRadiansError": 0.0007549410815084617
+    },
+    {
+      "assetId": "W03",
+      "lod": "mobile",
+      "samples": 15,
+      "maxPositionMetresOrRotationRadiansError": 0.0007549410815084617
+    },
+    {
+      "assetId": "W04",
+      "lod": "desktop",
+      "samples": 20,
+      "maxPositionMetresOrRotationRadiansError": 0.00042668950397728445
+    },
+    {
+      "assetId": "W04",
+      "lod": "mobile",
+      "samples": 20,
+      "maxPositionMetresOrRotationRadiansError": 0.00042668950397728445
+    },
+    {
+      "assetId": "W05",
+      "lod": "desktop",
+      "samples": 5,
+      "maxPositionMetresOrRotationRadiansError": 0.0006605930642263891
+    },
+    {
+      "assetId": "W05",
+      "lod": "mobile",
+      "samples": 5,
+      "maxPositionMetresOrRotationRadiansError": 0.0006605930642263891
+    },
+    {
+      "assetId": "W06",
+      "lod": "desktop",
+      "samples": 25,
+      "maxPositionMetresOrRotationRadiansError": 0.0009280340268016385
+    },
+    {
+      "assetId": "W06",
+      "lod": "mobile",
+      "samples": 25,
+      "maxPositionMetresOrRotationRadiansError": 0.0009280340268016385
+    },
+    {
+      "assetId": "A01",
+      "lod": "desktop",
+      "samples": 90,
+      "maxPositionMetresOrRotationRadiansError": 0.0006071329116821289
+    },
+    {
+      "assetId": "A01",
+      "lod": "mobile",
+      "samples": 90,
+      "maxPositionMetresOrRotationRadiansError": 0.0006071329116821289
+    },
+    {
+      "assetId": "A02",
+      "lod": "desktop",
+      "samples": 90,
+      "maxPositionMetresOrRotationRadiansError": 0.0007929801940917969
+    },
+    {
+      "assetId": "A02",
+      "lod": "mobile",
+      "samples": 90,
+      "maxPositionMetresOrRotationRadiansError": 0.0007929801940917969
+    },
+    {
+      "assetId": "A04",
+      "lod": "desktop",
+      "samples": 25,
+      "maxPositionMetresOrRotationRadiansError": 0.0007334799926658198
+    },
+    {
+      "assetId": "A04",
+      "lod": "mobile",
+      "samples": 25,
+      "maxPositionMetresOrRotationRadiansError": 0.0007334799926658198
+    }
+  ],
+  "errors": []
+}

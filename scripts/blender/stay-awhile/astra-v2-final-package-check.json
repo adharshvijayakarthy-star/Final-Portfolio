@@ -1,0 +1,987 @@
+{
+  "masterCount": 10,
+  "assetCount": 47,
+  "glbCount": 94,
+  "clipCount": 18,
+  "animatedVariantCount": 36,
+  "motionSamples": 1210,
+  "khronosErrors": 0,
+  "khronosWarnings": 330,
+  "cameraSamples": 5760,
+  "cameraViolations": 0,
+  "posterCount": 20,
+  "variantRows": [
+    {
+      "assetId": "G01",
+      "lod": "desktop",
+      "triangles": 14446,
+      "triangleCap": 18000,
+      "bytes": 348020,
+      "byteCap": 348160
+    },
+    {
+      "assetId": "G01",
+      "lod": "mobile",
+      "triangles": 4849,
+      "triangleCap": 5000,
+      "bytes": 122664,
+      "byteCap": 156672
+    },
+    {
+      "assetId": "G02",
+      "lod": "desktop",
+      "triangles": 1191,
+      "triangleCap": 1600,
+      "bytes": 60376,
+      "byteCap": 87040
+    },
+    {
+      "assetId": "G02",
+      "lod": "mobile",
+      "triangles": 594,
+      "triangleCap": 600,
+      "bytes": 32116,
+      "byteCap": 39936
+    },
+    {
+      "assetId": "G03",
+      "lod": "desktop",
+      "triangles": 11300,
+      "triangleCap": 12000,
+      "bytes": 341688,
+      "byteCap": 430080
+    },
+    {
+      "assetId": "G03",
+      "lod": "mobile",
+      "triangles": 3199,
+      "triangleCap": 3600,
+      "bytes": 98836,
+      "byteCap": 193536
+    },
+    {
+      "assetId": "G04",
+      "lod": "desktop",
+      "triangles": 656,
+      "triangleCap": 1100,
+      "bytes": 22432,
+      "byteCap": 56320
+    },
+    {
+      "assetId": "G04",
+      "lod": "mobile",
+      "triangles": 184,
+      "triangleCap": 300,
+      "bytes": 9804,
+      "byteCap": 25600
+    },
+    {
+      "assetId": "G05",
+      "lod": "desktop",
+      "triangles": 240,
+      "triangleCap": 240,
+      "bytes": 12048,
+      "byteCap": 18432
+    },
+    {
+      "assetId": "G05",
+      "lod": "mobile",
+      "triangles": 72,
+      "triangleCap": 72,
+      "bytes": 5984,
+      "byteCap": 9216
+    },
+    {
+      "assetId": "G06",
+      "lod": "desktop",
+      "triangles": 1018,
+      "triangleCap": 1200,
+      "bytes": 27392,
+      "byteCap": 61440
+    },
+    {
+      "assetId": "G06",
+      "lod": "mobile",
+      "triangles": 160,
+      "triangleCap": 320,
+      "bytes": 10428,
+      "byteCap": 27648
+    },
+    {
+      "assetId": "G07",
+      "lod": "desktop",
+      "triangles": 120,
+      "triangleCap": 256,
+      "bytes": 6004,
+      "byteCap": 24576
+    },
+    {
+      "assetId": "G07",
+      "lod": "mobile",
+      "triangles": 12,
+      "triangleCap": 32,
+      "bytes": 2272,
+      "byteCap": 11264
+    },
+    {
+      "assetId": "G08",
+      "lod": "desktop",
+      "triangles": 544,
+      "triangleCap": 1100,
+      "bytes": 34372,
+      "byteCap": 66560
+    },
+    {
+      "assetId": "G08",
+      "lod": "mobile",
+      "triangles": 192,
+      "triangleCap": 400,
+      "bytes": 14596,
+      "byteCap": 30720
+    },
+    {
+      "assetId": "G09",
+      "lod": "desktop",
+      "triangles": 992,
+      "triangleCap": 1200,
+      "bytes": 19988,
+      "byteCap": 56320
+    },
+    {
+      "assetId": "G09",
+      "lod": "mobile",
+      "triangles": 336,
+      "triangleCap": 480,
+      "bytes": 9324,
+      "byteCap": 25600
+    },
+    {
+      "assetId": "G10",
+      "lod": "desktop",
+      "triangles": 1050,
+      "triangleCap": 1500,
+      "bytes": 43272,
+      "byteCap": 71680
+    },
+    {
+      "assetId": "G10",
+      "lod": "mobile",
+      "triangles": 342,
+      "triangleCap": 400,
+      "bytes": 16444,
+      "byteCap": 32768
+    },
+    {
+      "assetId": "G11",
+      "lod": "desktop",
+      "triangles": 2185,
+      "triangleCap": 2400,
+      "bytes": 54384,
+      "byteCap": 112640
+    },
+    {
+      "assetId": "G11",
+      "lod": "mobile",
+      "triangles": 615,
+      "triangleCap": 650,
+      "bytes": 17996,
+      "byteCap": 51200
+    },
+    {
+      "assetId": "G12",
+      "lod": "desktop",
+      "triangles": 40,
+      "triangleCap": 48,
+      "bytes": 4908,
+      "byteCap": 8192
+    },
+    {
+      "assetId": "G12",
+      "lod": "mobile",
+      "triangles": 16,
+      "triangleCap": 24,
+      "bytes": 3404,
+      "byteCap": 4096
+    },
+    {
+      "assetId": "G13",
+      "lod": "desktop",
+      "triangles": 640,
+      "triangleCap": 2600,
+      "bytes": 27728,
+      "byteCap": 117760
+    },
+    {
+      "assetId": "G13",
+      "lod": "mobile",
+      "triangles": 112,
+      "triangleCap": 900,
+      "bytes": 7256,
+      "byteCap": 53248
+    },
+    {
+      "assetId": "G14",
+      "lod": "desktop",
+      "triangles": 514,
+      "triangleCap": 1800,
+      "bytes": 15212,
+      "byteCap": 81920
+    },
+    {
+      "assetId": "G14",
+      "lod": "mobile",
+      "triangles": 93,
+      "triangleCap": 600,
+      "bytes": 6732,
+      "byteCap": 36864
+    },
+    {
+      "assetId": "P01",
+      "lod": "desktop",
+      "triangles": 3584,
+      "triangleCap": 4000,
+      "bytes": 108252,
+      "byteCap": 174080
+    },
+    {
+      "assetId": "P01",
+      "lod": "mobile",
+      "triangles": 1036,
+      "triangleCap": 1100,
+      "bytes": 41868,
+      "byteCap": 78848
+    },
+    {
+      "assetId": "P02",
+      "lod": "desktop",
+      "triangles": 1492,
+      "triangleCap": 1800,
+      "bytes": 48992,
+      "byteCap": 92160
+    },
+    {
+      "assetId": "P02",
+      "lod": "mobile",
+      "triangles": 208,
+      "triangleCap": 650,
+      "bytes": 12644,
+      "byteCap": 41984
+    },
+    {
+      "assetId": "P03",
+      "lod": "desktop",
+      "triangles": 380,
+      "triangleCap": 2200,
+      "bytes": 12416,
+      "byteCap": 97280
+    },
+    {
+      "assetId": "P03",
+      "lod": "mobile",
+      "triangles": 172,
+      "triangleCap": 700,
+      "bytes": 5792,
+      "byteCap": 44032
+    },
+    {
+      "assetId": "B01",
+      "lod": "desktop",
+      "triangles": 1632,
+      "triangleCap": 1800,
+      "bytes": 50308,
+      "byteCap": 81920
+    },
+    {
+      "assetId": "B01",
+      "lod": "mobile",
+      "triangles": 300,
+      "triangleCap": 600,
+      "bytes": 30792,
+      "byteCap": 36864
+    },
+    {
+      "assetId": "B02",
+      "lod": "desktop",
+      "triangles": 2256,
+      "triangleCap": 2400,
+      "bytes": 100248,
+      "byteCap": 107520
+    },
+    {
+      "assetId": "B02",
+      "lod": "mobile",
+      "triangles": 432,
+      "triangleCap": 720,
+      "bytes": 31776,
+      "byteCap": 49152
+    },
+    {
+      "assetId": "B03",
+      "lod": "desktop",
+      "triangles": 1316,
+      "triangleCap": 3000,
+      "bytes": 62232,
+      "byteCap": 128000
+    },
+    {
+      "assetId": "B03",
+      "lod": "mobile",
+      "triangles": 84,
+      "triangleCap": 900,
+      "bytes": 20744,
+      "byteCap": 58368
+    },
+    {
+      "assetId": "B04",
+      "lod": "desktop",
+      "triangles": 2256,
+      "triangleCap": 3600,
+      "bytes": 94528,
+      "byteCap": 153600
+    },
+    {
+      "assetId": "B04",
+      "lod": "mobile",
+      "triangles": 144,
+      "triangleCap": 1000,
+      "bytes": 24192,
+      "byteCap": 69632
+    },
+    {
+      "assetId": "B05",
+      "lod": "desktop",
+      "triangles": 1760,
+      "triangleCap": 2600,
+      "bytes": 80644,
+      "byteCap": 122880
+    },
+    {
+      "assetId": "B05",
+      "lod": "mobile",
+      "triangles": 348,
+      "triangleCap": 800,
+      "bytes": 21748,
+      "byteCap": 55296
+    },
+    {
+      "assetId": "B06",
+      "lod": "desktop",
+      "triangles": 1656,
+      "triangleCap": 4200,
+      "bytes": 80164,
+      "byteCap": 194560
+    },
+    {
+      "assetId": "B06",
+      "lod": "mobile",
+      "triangles": 216,
+      "triangleCap": 1400,
+      "bytes": 22028,
+      "byteCap": 88064
+    },
+    {
+      "assetId": "T01",
+      "lod": "desktop",
+      "triangles": 2144,
+      "triangleCap": 2400,
+      "bytes": 103548,
+      "byteCap": 107520
+    },
+    {
+      "assetId": "T01",
+      "lod": "mobile",
+      "triangles": 594,
+      "triangleCap": 750,
+      "bytes": 33600,
+      "byteCap": 49152
+    },
+    {
+      "assetId": "T02",
+      "lod": "desktop",
+      "triangles": 1895,
+      "triangleCap": 2100,
+      "bytes": 51420,
+      "byteCap": 97280
+    },
+    {
+      "assetId": "T02",
+      "lod": "mobile",
+      "triangles": 363,
+      "triangleCap": 630,
+      "bytes": 20428,
+      "byteCap": 44032
+    },
+    {
+      "assetId": "T03",
+      "lod": "desktop",
+      "triangles": 206,
+      "triangleCap": 1600,
+      "bytes": 14452,
+      "byteCap": 76800
+    },
+    {
+      "assetId": "T03",
+      "lod": "mobile",
+      "triangles": 110,
+      "triangleCap": 450,
+      "bytes": 9908,
+      "byteCap": 34816
+    },
+    {
+      "assetId": "L01",
+      "lod": "desktop",
+      "triangles": 2419,
+      "triangleCap": 4200,
+      "bytes": 107684,
+      "byteCap": 189440
+    },
+    {
+      "assetId": "L01",
+      "lod": "mobile",
+      "triangles": 1229,
+      "triangleCap": 1400,
+      "bytes": 61524,
+      "byteCap": 86016
+    },
+    {
+      "assetId": "L02",
+      "lod": "desktop",
+      "triangles": 735,
+      "triangleCap": 1500,
+      "bytes": 50848,
+      "byteCap": 71680
+    },
+    {
+      "assetId": "L02",
+      "lod": "mobile",
+      "triangles": 225,
+      "triangleCap": 500,
+      "bytes": 25892,
+      "byteCap": 32768
+    },
+    {
+      "assetId": "L03",
+      "lod": "desktop",
+      "triangles": 796,
+      "triangleCap": 2200,
+      "bytes": 53860,
+      "byteCap": 102400
+    },
+    {
+      "assetId": "L03",
+      "lod": "mobile",
+      "triangles": 306,
+      "triangleCap": 700,
+      "bytes": 27548,
+      "byteCap": 46080
+    },
+    {
+      "assetId": "S01",
+      "lod": "desktop",
+      "triangles": 3809,
+      "triangleCap": 5200,
+      "bytes": 180356,
+      "byteCap": 225280
+    },
+    {
+      "assetId": "S01",
+      "lod": "mobile",
+      "triangles": 1650,
+      "triangleCap": 1700,
+      "bytes": 84420,
+      "byteCap": 101376
+    },
+    {
+      "assetId": "S02",
+      "lod": "desktop",
+      "triangles": 566,
+      "triangleCap": 1800,
+      "bytes": 40424,
+      "byteCap": 92160
+    },
+    {
+      "assetId": "S02",
+      "lod": "mobile",
+      "triangles": 225,
+      "triangleCap": 600,
+      "bytes": 21156,
+      "byteCap": 41984
+    },
+    {
+      "assetId": "S03",
+      "lod": "desktop",
+      "triangles": 1590,
+      "triangleCap": 3000,
+      "bytes": 85400,
+      "byteCap": 133120
+    },
+    {
+      "assetId": "S03",
+      "lod": "mobile",
+      "triangles": 546,
+      "triangleCap": 850,
+      "bytes": 37500,
+      "byteCap": 60416
+    },
+    {
+      "assetId": "W01",
+      "lod": "desktop",
+      "triangles": 6084,
+      "triangleCap": 14000,
+      "bytes": 280308,
+      "byteCap": 604160
+    },
+    {
+      "assetId": "W01",
+      "lod": "mobile",
+      "triangles": 1260,
+      "triangleCap": 4200,
+      "bytes": 62448,
+      "byteCap": 272384
+    },
+    {
+      "assetId": "W02",
+      "lod": "desktop",
+      "triangles": 544,
+      "triangleCap": 4200,
+      "bytes": 55420,
+      "byteCap": 194560
+    },
+    {
+      "assetId": "W02",
+      "lod": "mobile",
+      "triangles": 384,
+      "triangleCap": 1300,
+      "bytes": 45432,
+      "byteCap": 88064
+    },
+    {
+      "assetId": "W03",
+      "lod": "desktop",
+      "triangles": 468,
+      "triangleCap": 3000,
+      "bytes": 32692,
+      "byteCap": 138240
+    },
+    {
+      "assetId": "W03",
+      "lod": "mobile",
+      "triangles": 180,
+      "triangleCap": 900,
+      "bytes": 18404,
+      "byteCap": 62464
+    },
+    {
+      "assetId": "W04",
+      "lod": "desktop",
+      "triangles": 954,
+      "triangleCap": 3500,
+      "bytes": 63024,
+      "byteCap": 158720
+    },
+    {
+      "assetId": "W04",
+      "lod": "mobile",
+      "triangles": 423,
+      "triangleCap": 1000,
+      "bytes": 35452,
+      "byteCap": 71680
+    },
+    {
+      "assetId": "W05",
+      "lod": "desktop",
+      "triangles": 144,
+      "triangleCap": 2600,
+      "bytes": 14260,
+      "byteCap": 117760
+    },
+    {
+      "assetId": "W05",
+      "lod": "mobile",
+      "triangles": 144,
+      "triangleCap": 800,
+      "bytes": 12452,
+      "byteCap": 53248
+    },
+    {
+      "assetId": "W06",
+      "lod": "desktop",
+      "triangles": 828,
+      "triangleCap": 3800,
+      "bytes": 54860,
+      "byteCap": 174080
+    },
+    {
+      "assetId": "W06",
+      "lod": "mobile",
+      "triangles": 348,
+      "triangleCap": 1100,
+      "bytes": 28556,
+      "byteCap": 78848
+    },
+    {
+      "assetId": "F01",
+      "lod": "desktop",
+      "triangles": 8160,
+      "triangleCap": 8500,
+      "bytes": 189572,
+      "byteCap": 368640
+    },
+    {
+      "assetId": "F01",
+      "lod": "mobile",
+      "triangles": 2214,
+      "triangleCap": 2400,
+      "bytes": 57308,
+      "byteCap": 165888
+    },
+    {
+      "assetId": "F02",
+      "lod": "desktop",
+      "triangles": 722,
+      "triangleCap": 3000,
+      "bytes": 37536,
+      "byteCap": 133120
+    },
+    {
+      "assetId": "F02",
+      "lod": "mobile",
+      "triangles": 220,
+      "triangleCap": 850,
+      "bytes": 14704,
+      "byteCap": 60416
+    },
+    {
+      "assetId": "F03",
+      "lod": "desktop",
+      "triangles": 134,
+      "triangleCap": 500,
+      "bytes": 7152,
+      "byteCap": 25600
+    },
+    {
+      "assetId": "F03",
+      "lod": "mobile",
+      "triangles": 92,
+      "triangleCap": 160,
+      "bytes": 6256,
+      "byteCap": 12288
+    },
+    {
+      "assetId": "A01",
+      "lod": "desktop",
+      "triangles": 6930,
+      "triangleCap": 10000,
+      "bytes": 345072,
+      "byteCap": 430080
+    },
+    {
+      "assetId": "A01",
+      "lod": "mobile",
+      "triangles": 1890,
+      "triangleCap": 3000,
+      "bytes": 121248,
+      "byteCap": 193536
+    },
+    {
+      "assetId": "A02",
+      "lod": "desktop",
+      "triangles": 612,
+      "triangleCap": 2800,
+      "bytes": 56392,
+      "byteCap": 128000
+    },
+    {
+      "assetId": "A02",
+      "lod": "mobile",
+      "triangles": 612,
+      "triangleCap": 900,
+      "bytes": 54584,
+      "byteCap": 58368
+    },
+    {
+      "assetId": "A03",
+      "lod": "desktop",
+      "triangles": 1704,
+      "triangleCap": 2400,
+      "bytes": 77104,
+      "byteCap": 107520
+    },
+    {
+      "assetId": "A03",
+      "lod": "mobile",
+      "triangles": 540,
+      "triangleCap": 720,
+      "bytes": 28232,
+      "byteCap": 49152
+    },
+    {
+      "assetId": "A04",
+      "lod": "desktop",
+      "triangles": 931,
+      "triangleCap": 3200,
+      "bytes": 56340,
+      "byteCap": 143360
+    },
+    {
+      "assetId": "A04",
+      "lod": "mobile",
+      "triangles": 352,
+      "triangleCap": 900,
+      "bytes": 29276,
+      "byteCap": 64512
+    },
+    {
+      "assetId": "C01",
+      "lod": "desktop",
+      "triangles": 560,
+      "triangleCap": 2500,
+      "bytes": 23996,
+      "byteCap": 112640
+    },
+    {
+      "assetId": "C01",
+      "lod": "mobile",
+      "triangles": 112,
+      "triangleCap": 650,
+      "bytes": 7936,
+      "byteCap": 51200
+    },
+    {
+      "assetId": "C02",
+      "lod": "desktop",
+      "triangles": 468,
+      "triangleCap": 900,
+      "bytes": 12468,
+      "byteCap": 40960
+    },
+    {
+      "assetId": "C02",
+      "lod": "mobile",
+      "triangles": 61,
+      "triangleCap": 260,
+      "bytes": 4436,
+      "byteCap": 18432
+    }
+  ],
+  "posterRows": [
+    {
+      "route": "garden",
+      "lod": "desktop",
+      "bytes": 167992,
+      "dimensions": [
+        1600,
+        1000
+      ]
+    },
+    {
+      "route": "garden",
+      "lod": "mobile",
+      "bytes": 104810,
+      "dimensions": [
+        780,
+        1200
+      ]
+    },
+    {
+      "route": "person",
+      "lod": "desktop",
+      "bytes": 117298,
+      "dimensions": [
+        1600,
+        1000
+      ]
+    },
+    {
+      "route": "person",
+      "lod": "mobile",
+      "bytes": 75774,
+      "dimensions": [
+        780,
+        1200
+      ]
+    },
+    {
+      "route": "builder",
+      "lod": "desktop",
+      "bytes": 139824,
+      "dimensions": [
+        1600,
+        1000
+      ]
+    },
+    {
+      "route": "builder",
+      "lod": "mobile",
+      "bytes": 64628,
+      "dimensions": [
+        780,
+        1200
+      ]
+    },
+    {
+      "route": "thinker",
+      "lod": "desktop",
+      "bytes": 71524,
+      "dimensions": [
+        1600,
+        1000
+      ]
+    },
+    {
+      "route": "thinker",
+      "lod": "mobile",
+      "bytes": 39328,
+      "dimensions": [
+        780,
+        1200
+      ]
+    },
+    {
+      "route": "leader",
+      "lod": "desktop",
+      "bytes": 128448,
+      "dimensions": [
+        1600,
+        1000
+      ]
+    },
+    {
+      "route": "leader",
+      "lod": "mobile",
+      "bytes": 79510,
+      "dimensions": [
+        780,
+        1200
+      ]
+    },
+    {
+      "route": "stories",
+      "lod": "desktop",
+      "bytes": 72540,
+      "dimensions": [
+        1600,
+        1000
+      ]
+    },
+    {
+      "route": "stories",
+      "lod": "mobile",
+      "bytes": 43434,
+      "dimensions": [
+        780,
+        1200
+      ]
+    },
+    {
+      "route": "work",
+      "lod": "desktop",
+      "bytes": 89022,
+      "dimensions": [
+        1600,
+        1000
+      ]
+    },
+    {
+      "route": "work",
+      "lod": "mobile",
+      "bytes": 53904,
+      "dimensions": [
+        780,
+        1200
+      ]
+    },
+    {
+      "route": "future",
+      "lod": "desktop",
+      "bytes": 124904,
+      "dimensions": [
+        1600,
+        1000
+      ]
+    },
+    {
+      "route": "future",
+      "lod": "mobile",
+      "bytes": 66312,
+      "dimensions": [
+        780,
+        1200
+      ]
+    },
+    {
+      "route": "aura",
+      "lod": "desktop",
+      "bytes": 123488,
+      "dimensions": [
+        1600,
+        1000
+      ]
+    },
+    {
+      "route": "aura",
+      "lod": "mobile",
+      "bytes": 57342,
+      "dimensions": [
+        780,
+        1200
+      ]
+    },
+    {
+      "route": "contact",
+      "lod": "desktop",
+      "bytes": 79544,
+      "dimensions": [
+        1600,
+        1000
+      ]
+    },
+    {
+      "route": "contact",
+      "lod": "mobile",
+      "bytes": 56226,
+      "dimensions": [
+        780,
+        1200
+      ]
+    }
+  ],
+  "g14": [
+    {
+      "assetId": "G14",
+      "lod": "desktop",
+      "triangles": 514,
+      "triangleCap": 1800,
+      "bytes": 15212,
+      "byteCap": 81920
+    },
+    {
+      "assetId": "G14",
+      "lod": "mobile",
+      "triangles": 93,
+      "triangleCap": 600,
+      "bytes": 6732,
+      "byteCap": 36864
+    }
+  ],
+  "protectedBaselineDifferences": [
+    "src/app/(stay-awhile)/layout.tsx",
+    "src/app/(stay-awhile)/stay/page.tsx",
+    "src/app/(stay-awhile)/stay/aura/page.tsx",
+    "src/app/(stay-awhile)/stay/builder/page.tsx",
+    "src/app/(stay-awhile)/stay/contact/page.tsx",
+    "src/app/(stay-awhile)/stay/future/page.tsx",
+    "src/app/(stay-awhile)/stay/leader/page.tsx",
+    "src/app/(stay-awhile)/stay/person/page.tsx",
+    "src/app/(stay-awhile)/stay/stories/page.tsx",
+    "src/app/(stay-awhile)/stay/thinker/page.tsx",
+    "src/app/(stay-awhile)/stay/work/page.tsx",
+    "src/sections/stay/native/GardenMap.tsx",
+    "src/sections/stay/native/GardenNav.tsx",
+    "src/sections/stay/native/map-topology.ts",
+    "src/sections/stay/native/stay.module.css",
+    "src/sections/stay/native/StayNavigation.tsx",
+    "src/sections/stay/native/StayShell.tsx"
+  ],
+  "collectionLibraryInclusionErrors": []
+}

@@ -1,0 +1,724 @@
+{
+  "routes": [
+    {
+      "route": "garden",
+      "ownedVariants": [
+        {
+          "assetId": "G01",
+          "lod": "desktop",
+          "meshCount": 13,
+          "libraryMeshCount": 13,
+          "root": "SA_G01_ROOT_00"
+        },
+        {
+          "assetId": "G01",
+          "lod": "mobile",
+          "meshCount": 13,
+          "libraryMeshCount": 13,
+          "root": "SA_G01_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G02",
+          "lod": "desktop",
+          "meshCount": 6,
+          "libraryMeshCount": 6,
+          "root": "SA_G02_ROOT_00"
+        },
+        {
+          "assetId": "G02",
+          "lod": "mobile",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_G02_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G03",
+          "lod": "desktop",
+          "meshCount": 6,
+          "libraryMeshCount": 6,
+          "root": "SA_G03_ROOT_00"
+        },
+        {
+          "assetId": "G03",
+          "lod": "mobile",
+          "meshCount": 6,
+          "libraryMeshCount": 6,
+          "root": "SA_G03_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G04",
+          "lod": "desktop",
+          "meshCount": 4,
+          "libraryMeshCount": 4,
+          "root": "SA_G04_ROOT_00"
+        },
+        {
+          "assetId": "G04",
+          "lod": "mobile",
+          "meshCount": 4,
+          "libraryMeshCount": 4,
+          "root": "SA_G04_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G05",
+          "lod": "desktop",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_G05_ROOT_00"
+        },
+        {
+          "assetId": "G05",
+          "lod": "mobile",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_G05_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G06",
+          "lod": "desktop",
+          "meshCount": 4,
+          "libraryMeshCount": 4,
+          "root": "SA_G06_ROOT_00"
+        },
+        {
+          "assetId": "G06",
+          "lod": "mobile",
+          "meshCount": 4,
+          "libraryMeshCount": 4,
+          "root": "SA_G06_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G07",
+          "lod": "desktop",
+          "meshCount": 1,
+          "libraryMeshCount": 1,
+          "root": "SA_G07_ROOT_00"
+        },
+        {
+          "assetId": "G07",
+          "lod": "mobile",
+          "meshCount": 1,
+          "libraryMeshCount": 1,
+          "root": "SA_G07_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G08",
+          "lod": "desktop",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_G08_ROOT_00"
+        },
+        {
+          "assetId": "G08",
+          "lod": "mobile",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_G08_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G09",
+          "lod": "desktop",
+          "meshCount": 1,
+          "libraryMeshCount": 1,
+          "root": "SA_G09_ROOT_00"
+        },
+        {
+          "assetId": "G09",
+          "lod": "mobile",
+          "meshCount": 1,
+          "libraryMeshCount": 1,
+          "root": "SA_G09_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G10",
+          "lod": "desktop",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_G10_ROOT_00"
+        },
+        {
+          "assetId": "G10",
+          "lod": "mobile",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_G10_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G11",
+          "lod": "desktop",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_G11_ROOT_00"
+        },
+        {
+          "assetId": "G11",
+          "lod": "mobile",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_G11_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G12",
+          "lod": "desktop",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_G12_ROOT_00"
+        },
+        {
+          "assetId": "G12",
+          "lod": "mobile",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_G12_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G13",
+          "lod": "desktop",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_G13_ROOT_00"
+        },
+        {
+          "assetId": "G13",
+          "lod": "mobile",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_G13_MOBILEROOT_00"
+        },
+        {
+          "assetId": "G14",
+          "lod": "desktop",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_G14_ROOT_00"
+        },
+        {
+          "assetId": "G14",
+          "lod": "mobile",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_G14_MOBILEROOT_00"
+        }
+      ],
+      "compositionInstances": 120
+    },
+    {
+      "route": "person",
+      "ownedVariants": [
+        {
+          "assetId": "P01",
+          "lod": "desktop",
+          "meshCount": 6,
+          "libraryMeshCount": 6,
+          "root": "SA_P01_ROOT_00"
+        },
+        {
+          "assetId": "P01",
+          "lod": "mobile",
+          "meshCount": 6,
+          "libraryMeshCount": 6,
+          "root": "SA_P01_MOBILEROOT_00"
+        },
+        {
+          "assetId": "P02",
+          "lod": "desktop",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_P02_ROOT_00"
+        },
+        {
+          "assetId": "P02",
+          "lod": "mobile",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_P02_MOBILEROOT_00"
+        },
+        {
+          "assetId": "P03",
+          "lod": "desktop",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_P03_ROOT_00"
+        },
+        {
+          "assetId": "P03",
+          "lod": "mobile",
+          "meshCount": 1,
+          "libraryMeshCount": 1,
+          "root": "SA_P03_MOBILEROOT_00"
+        }
+      ],
+      "compositionInstances": 120
+    },
+    {
+      "route": "builder",
+      "ownedVariants": [
+        {
+          "assetId": "B01",
+          "lod": "desktop",
+          "meshCount": 14,
+          "libraryMeshCount": 14,
+          "root": "SA_B01_ROOT_00"
+        },
+        {
+          "assetId": "B01",
+          "lod": "mobile",
+          "meshCount": 14,
+          "libraryMeshCount": 14,
+          "root": "SA_B01_MOBILEROOT_00"
+        },
+        {
+          "assetId": "B02",
+          "lod": "desktop",
+          "meshCount": 12,
+          "libraryMeshCount": 12,
+          "root": "SA_B02_ROOT_00"
+        },
+        {
+          "assetId": "B02",
+          "lod": "mobile",
+          "meshCount": 12,
+          "libraryMeshCount": 12,
+          "root": "SA_B02_MOBILEROOT_00"
+        },
+        {
+          "assetId": "B03",
+          "lod": "desktop",
+          "meshCount": 7,
+          "libraryMeshCount": 7,
+          "root": "SA_B03_ROOT_00"
+        },
+        {
+          "assetId": "B03",
+          "lod": "mobile",
+          "meshCount": 7,
+          "libraryMeshCount": 7,
+          "root": "SA_B03_MOBILEROOT_00"
+        },
+        {
+          "assetId": "B04",
+          "lod": "desktop",
+          "meshCount": 12,
+          "libraryMeshCount": 12,
+          "root": "SA_B04_ROOT_00"
+        },
+        {
+          "assetId": "B04",
+          "lod": "mobile",
+          "meshCount": 12,
+          "libraryMeshCount": 12,
+          "root": "SA_B04_MOBILEROOT_00"
+        },
+        {
+          "assetId": "B05",
+          "lod": "desktop",
+          "meshCount": 4,
+          "libraryMeshCount": 4,
+          "root": "SA_B05_ROOT_00"
+        },
+        {
+          "assetId": "B05",
+          "lod": "mobile",
+          "meshCount": 4,
+          "libraryMeshCount": 4,
+          "root": "SA_B05_MOBILEROOT_00"
+        },
+        {
+          "assetId": "B06",
+          "lod": "desktop",
+          "meshCount": 7,
+          "libraryMeshCount": 7,
+          "root": "SA_B06_ROOT_00"
+        },
+        {
+          "assetId": "B06",
+          "lod": "mobile",
+          "meshCount": 7,
+          "libraryMeshCount": 7,
+          "root": "SA_B06_MOBILEROOT_00"
+        }
+      ],
+      "compositionInstances": 112
+    },
+    {
+      "route": "thinker",
+      "ownedVariants": [
+        {
+          "assetId": "T01",
+          "lod": "desktop",
+          "meshCount": 5,
+          "libraryMeshCount": 5,
+          "root": "SA_T01_ROOT_00"
+        },
+        {
+          "assetId": "T01",
+          "lod": "mobile",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_T01_MOBILEROOT_00"
+        },
+        {
+          "assetId": "T02",
+          "lod": "desktop",
+          "meshCount": 7,
+          "libraryMeshCount": 7,
+          "root": "SA_T02_ROOT_00"
+        },
+        {
+          "assetId": "T02",
+          "lod": "mobile",
+          "meshCount": 7,
+          "libraryMeshCount": 7,
+          "root": "SA_T02_MOBILEROOT_00"
+        },
+        {
+          "assetId": "T03",
+          "lod": "desktop",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_T03_ROOT_00"
+        },
+        {
+          "assetId": "T03",
+          "lod": "mobile",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_T03_MOBILEROOT_00"
+        }
+      ],
+      "compositionInstances": 108
+    },
+    {
+      "route": "leader",
+      "ownedVariants": [
+        {
+          "assetId": "L01",
+          "lod": "desktop",
+          "meshCount": 5,
+          "libraryMeshCount": 5,
+          "root": "SA_L01_ROOT_00"
+        },
+        {
+          "assetId": "L01",
+          "lod": "mobile",
+          "meshCount": 5,
+          "libraryMeshCount": 5,
+          "root": "SA_L01_MOBILEROOT_00"
+        },
+        {
+          "assetId": "L02",
+          "lod": "desktop",
+          "meshCount": 15,
+          "libraryMeshCount": 15,
+          "root": "SA_L02_ROOT_00"
+        },
+        {
+          "assetId": "L02",
+          "lod": "mobile",
+          "meshCount": 10,
+          "libraryMeshCount": 10,
+          "root": "SA_L02_MOBILEROOT_00"
+        },
+        {
+          "assetId": "L03",
+          "lod": "desktop",
+          "meshCount": 11,
+          "libraryMeshCount": 11,
+          "root": "SA_L03_ROOT_00"
+        },
+        {
+          "assetId": "L03",
+          "lod": "mobile",
+          "meshCount": 11,
+          "libraryMeshCount": 11,
+          "root": "SA_L03_MOBILEROOT_00"
+        }
+      ],
+      "compositionInstances": 98
+    },
+    {
+      "route": "stories",
+      "ownedVariants": [
+        {
+          "assetId": "S01",
+          "lod": "desktop",
+          "meshCount": 5,
+          "libraryMeshCount": 5,
+          "root": "SA_S01_ROOT_00"
+        },
+        {
+          "assetId": "S01",
+          "lod": "mobile",
+          "meshCount": 5,
+          "libraryMeshCount": 5,
+          "root": "SA_S01_MOBILEROOT_00"
+        },
+        {
+          "assetId": "S02",
+          "lod": "desktop",
+          "meshCount": 6,
+          "libraryMeshCount": 6,
+          "root": "SA_S02_ROOT_00"
+        },
+        {
+          "assetId": "S02",
+          "lod": "mobile",
+          "meshCount": 6,
+          "libraryMeshCount": 6,
+          "root": "SA_S02_MOBILEROOT_00"
+        },
+        {
+          "assetId": "S03",
+          "lod": "desktop",
+          "meshCount": 12,
+          "libraryMeshCount": 12,
+          "root": "SA_S03_ROOT_00"
+        },
+        {
+          "assetId": "S03",
+          "lod": "mobile",
+          "meshCount": 12,
+          "libraryMeshCount": 12,
+          "root": "SA_S03_MOBILEROOT_00"
+        }
+      ],
+      "compositionInstances": 136
+    },
+    {
+      "route": "work",
+      "ownedVariants": [
+        {
+          "assetId": "W01",
+          "lod": "desktop",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_W01_ROOT_00"
+        },
+        {
+          "assetId": "W01",
+          "lod": "mobile",
+          "meshCount": 3,
+          "libraryMeshCount": 3,
+          "root": "SA_W01_MOBILEROOT_00"
+        },
+        {
+          "assetId": "W02",
+          "lod": "desktop",
+          "meshCount": 16,
+          "libraryMeshCount": 16,
+          "root": "SA_W02_ROOT_00"
+        },
+        {
+          "assetId": "W02",
+          "lod": "mobile",
+          "meshCount": 16,
+          "libraryMeshCount": 16,
+          "root": "SA_W02_MOBILEROOT_00"
+        },
+        {
+          "assetId": "W03",
+          "lod": "desktop",
+          "meshCount": 5,
+          "libraryMeshCount": 5,
+          "root": "SA_W03_ROOT_00"
+        },
+        {
+          "assetId": "W03",
+          "lod": "mobile",
+          "meshCount": 5,
+          "libraryMeshCount": 5,
+          "root": "SA_W03_MOBILEROOT_00"
+        },
+        {
+          "assetId": "W04",
+          "lod": "desktop",
+          "meshCount": 9,
+          "libraryMeshCount": 9,
+          "root": "SA_W04_ROOT_00"
+        },
+        {
+          "assetId": "W04",
+          "lod": "mobile",
+          "meshCount": 9,
+          "libraryMeshCount": 9,
+          "root": "SA_W04_MOBILEROOT_00"
+        },
+        {
+          "assetId": "W05",
+          "lod": "desktop",
+          "meshCount": 4,
+          "libraryMeshCount": 4,
+          "root": "SA_W05_ROOT_00"
+        },
+        {
+          "assetId": "W05",
+          "lod": "mobile",
+          "meshCount": 4,
+          "libraryMeshCount": 4,
+          "root": "SA_W05_MOBILEROOT_00"
+        },
+        {
+          "assetId": "W06",
+          "lod": "desktop",
+          "meshCount": 7,
+          "libraryMeshCount": 7,
+          "root": "SA_W06_ROOT_00"
+        },
+        {
+          "assetId": "W06",
+          "lod": "mobile",
+          "meshCount": 7,
+          "libraryMeshCount": 7,
+          "root": "SA_W06_MOBILEROOT_00"
+        }
+      ],
+      "compositionInstances": 128
+    },
+    {
+      "route": "future",
+      "ownedVariants": [
+        {
+          "assetId": "F01",
+          "lod": "desktop",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_F01_ROOT_00"
+        },
+        {
+          "assetId": "F01",
+          "lod": "mobile",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_F01_MOBILEROOT_00"
+        },
+        {
+          "assetId": "F02",
+          "lod": "desktop",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_F02_ROOT_00"
+        },
+        {
+          "assetId": "F02",
+          "lod": "mobile",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_F02_MOBILEROOT_00"
+        },
+        {
+          "assetId": "F03",
+          "lod": "desktop",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_F03_ROOT_00"
+        },
+        {
+          "assetId": "F03",
+          "lod": "mobile",
+          "meshCount": 2,
+          "libraryMeshCount": 2,
+          "root": "SA_F03_MOBILEROOT_00"
+        }
+      ],
+      "compositionInstances": 30
+    },
+    {
+      "route": "aura",
+      "ownedVariants": [
+        {
+          "assetId": "A01",
+          "lod": "desktop",
+          "meshCount": 18,
+          "libraryMeshCount": 18,
+          "root": "SA_A01_ROOT_00"
+        },
+        {
+          "assetId": "A01",
+          "lod": "mobile",
+          "meshCount": 18,
+          "libraryMeshCount": 18,
+          "root": "SA_A01_MOBILEROOT_00"
+        },
+        {
+          "assetId": "A02",
+          "lod": "desktop",
+          "meshCount": 9,
+          "libraryMeshCount": 9,
+          "root": "SA_A02_ROOT_00"
+        },
+        {
+          "assetId": "A02",
+          "lod": "mobile",
+          "meshCount": 9,
+          "libraryMeshCount": 9,
+          "root": "SA_A02_MOBILEROOT_00"
+        },
+        {
+          "assetId": "A03",
+          "lod": "desktop",
+          "meshCount": 24,
+          "libraryMeshCount": 24,
+          "root": "SA_A03_ROOT_00"
+        },
+        {
+          "assetId": "A03",
+          "lod": "mobile",
+          "meshCount": 13,
+          "libraryMeshCount": 13,
+          "root": "SA_A03_MOBILEROOT_00"
+        },
+        {
+          "assetId": "A04",
+          "lod": "desktop",
+          "meshCount": 11,
+          "libraryMeshCount": 11,
+          "root": "SA_A04_ROOT_00"
+        },
+        {
+          "assetId": "A04",
+          "lod": "mobile",
+          "meshCount": 11,
+          "libraryMeshCount": 11,
+          "root": "SA_A04_MOBILEROOT_00"
+        }
+      ],
+      "compositionInstances": 116
+    },
+    {
+      "route": "contact",
+      "ownedVariants": [
+        {
+          "assetId": "C01",
+          "lod": "desktop",
+          "meshCount": 1,
+          "libraryMeshCount": 1,
+          "root": "SA_C01_ROOT_00"
+        },
+        {
+          "assetId": "C01",
+          "lod": "mobile",
+          "meshCount": 1,
+          "libraryMeshCount": 1,
+          "root": "SA_C01_MOBILEROOT_00"
+        },
+        {
+          "assetId": "C02",
+          "lod": "desktop",
+          "meshCount": 1,
+          "libraryMeshCount": 1,
+          "root": "SA_C02_ROOT_00"
+        },
+        {
+          "assetId": "C02",
+          "lod": "mobile",
+          "meshCount": 1,
+          "libraryMeshCount": 1,
+          "root": "SA_C02_MOBILEROOT_00"
+        }
+      ],
+      "compositionInstances": 34
+    }
+  ],
+  "ownedVariantCount": 94,
+  "errors": []
+}

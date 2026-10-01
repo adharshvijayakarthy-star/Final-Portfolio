@@ -4,7 +4,7 @@
 import type { StayDestination } from "./destinations";
 import { MotionScope } from "./motion-scope";
 export function startGarden(root: HTMLElement, canvas: HTMLCanvasElement, options: { current: StayDestination; water: number | null } = { current: "garden", water: null }) {
-  const { current, water } = options;
+  const { current } = options;
   const scope = new MotionScope();
   const ctx = canvas.getContext("2d");
   if (!ctx) return () => {};
@@ -51,48 +51,16 @@ export function startGarden(root: HTMLElement, canvas: HTMLCanvasElement, option
     pointerX = (event.clientX / Math.max(1, innerWidth) - 0.5) * 2;
     schedule();
   }
-  const tones = ["rgba(220,192,191,0.66)", "rgba(232,214,206,0.54)", "rgba(247,240,229,0.58)"];
-  const density = ["thinker", "work", "future", "aura"].includes(current) ? 3 : ["builder", "leader", "stories", "contact"].includes(current) ? 7 : 14;
-  const petals = Array.from({ length: density }, (_, i) => ({
-    x: Math.random() * innerWidth, y: Math.random() * innerHeight,
-    z: 0.35 + Math.random() * 0.9, r: 3 + Math.random() * 4,
-    vy: 0.16 + Math.random() * 0.4, ph: Math.random() * 6.283,
-    sp: 0.004 + Math.random() * 0.01, rot: Math.random() * 6.283,
-    vr: (Math.random() - 0.5) * 0.012, tone: tones[i % tones.length]!,
-  }));
-  const ripples: { x: number; y: number; r: number; a: number; z: number }[] = [];
-  let last = performance.now(), tick = 0;
-  function atmosphere(now: number) {
+  let tick = 0;
+  function atmosphere() {
     if (stopped || reduced || document.hidden) { frame = 0; return; }
-    const dt = Math.min(48, now - last); last = now;
     if ((tick++ % 5) === 0) apply();
     context.clearRect(0, 0, innerWidth, innerHeight);
-    for (const q of petals) {
-      q.ph += q.sp * dt; q.rot += q.vr * dt * 0.06;
-      q.y += q.vy * q.z * dt * 0.06; q.x += Math.sin(q.ph) * 0.5 * q.z;
-      if (water && q.y > water * innerHeight + (1 - q.z) * 40) {
-        if (ripples.length < 8) ripples.push({ x: q.x, y: q.y, r: 2, a: .5, z: q.z });
-        q.y = -20; q.x = Math.random() * innerWidth;
-      }
-      if (q.y > innerHeight + 20) { q.y = -20; q.x = Math.random() * innerWidth; }
-      if (q.x > innerWidth + 20) q.x = -20;
-      if (q.x < -20) q.x = innerWidth + 20;
-      context.save(); context.translate(q.x, q.y); context.rotate(q.rot);
-      context.globalAlpha = 0.35 + q.z * 0.45; context.fillStyle = q.tone;
-      context.beginPath(); context.ellipse(0, 0, q.r * q.z, q.r * q.z * 0.55, 0, 0, 6.283);
-      context.fill(); context.restore();
-    }
-    for (let i = ripples.length - 1; i >= 0; i--) {
-      const ripple = ripples[i]!; ripple.r += dt * .026 * ripple.z; ripple.a -= dt * .00042;
-      if (ripple.a <= 0) { ripples.splice(i, 1); continue; }
-      context.save(); context.strokeStyle = `rgba(251,247,236,${ripple.a.toFixed(3)})`; context.lineWidth = 1.1;
-      context.beginPath(); context.ellipse(ripple.x, ripple.y, ripple.r * 2.4, ripple.r * .66, 0, 0, 6.283); context.stroke(); context.restore();
-    }
     frame = requestAnimationFrame(atmosphere);
   }
   function resume() {
     cancelAnimationFrame(frame); frame = 0;
-    if (!reduced && !document.hidden) { last = performance.now(); frame = requestAnimationFrame(atmosphere); }
+    if (!reduced && !document.hidden) { frame = requestAnimationFrame(atmosphere); }
   }
   function changePreference() {
     reduced = preference.matches;

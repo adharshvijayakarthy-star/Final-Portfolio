@@ -17,6 +17,7 @@ export function startQuickDiscovery(root: HTMLElement) {
   const canvas=root.querySelector<HTMLCanvasElement>("[data-world-canvas]")!;
   const toggle=root.querySelector<HTMLButtonElement>("[data-motion-toggle]")!;
   const atmosphere=root.querySelector<HTMLElement>("[data-atmosphere]")!;
+  const emberNodes=all<HTMLElement>(root,"[data-ember]");
   const progress=root.querySelector<HTMLElement>("[data-progress]")!;
   const line=root.querySelector<SVGPathElement>("[data-build-line]")!;
   const count=root.querySelector<HTMLElement>("[data-count]")!;
@@ -39,6 +40,7 @@ export function startQuickDiscovery(root: HTMLElement) {
       s.chars.forEach(el=>el.removeAttribute("data-cursor"));
     });
     magnets.forEach(m=>{m.el.style.removeProperty("translate");m.x=m.y=m.tx=m.ty=0;});
+    emberNodes.forEach(el=>{el.removeAttribute("style");});
     line.style.strokeDashoffset="0";
   };
   const updateNavigation=()=>{
@@ -124,6 +126,24 @@ export function startQuickDiscovery(root: HTMLElement) {
     drawNative(current);updateNavigation();
     asset?.draw(current,x,y,elapsed);
     atmosphere.style.transform=`translate3d(${x*7+Math.sin(elapsed*.11)*5}px,${y*4+Math.cos(elapsed*.09)*4}px,0)`;
+    // A small DOM layer keeps the ember response visible even when the WebGL
+    // layer is distant or visually quiet. Each particle rises on a loop, then
+    // receives a local cursor repulsion instead of a uniform screen shift.
+    const cursorX=(x+1)/2,cursorY=(y+1)/2;
+    emberNodes.forEach((ember,i)=>{
+      const baseX=((i*37)%101)/100;
+      const baseY=((i*61+17)%101)/100;
+      const phase=(i*.173)%1,speed=.045+(i%5)*.009;
+      const rise=(elapsed*speed+phase)%1;
+      const px=baseX,py=baseY+1.12-rise*1.18;
+      const dx=px-cursorX,dy=py-cursorY,dist=Math.hypot(dx,dy),influence=Math.max(0,1-dist/.26);
+      const repel=dist?influence/dist:0;
+      const ox=dx*repel*26,oy=dy*repel*26;
+      const fade=Math.min(1,rise/.12,(1-rise)/.16);
+      ember.style.left=`${(px*100).toFixed(2)}%`;ember.style.top=`${(py*100).toFixed(2)}%`;
+      ember.style.opacity=String((.28+(i%4)*.12)*fade);
+      ember.style.transform=`translate3d(${ox.toFixed(2)}px,${oy.toFixed(2)}px,0) scale(${(1+influence*.8).toFixed(3)})`;
+    });
     progress.style.transform=`scaleX(${clamp(scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight))})`;
     magnets.forEach(m=>{m.x=damp(m.x,m.tx,dt,9);m.y=damp(m.y,m.ty,dt,9);m.el.style.translate=`${m.x.toFixed(2)}px ${m.y.toFixed(2)}px`;});
     frameCount++;frameTotal+=actualDt;sampleTime+=dt;
