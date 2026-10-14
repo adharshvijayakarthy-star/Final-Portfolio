@@ -2,6 +2,8 @@ import { bindChapterNavigation } from "./navigation";
 import { clamp, damp, headingPose, journeyAt, range, STAGE_ORDER } from "./continuity";
 import type { Track } from "./continuity";
 import { SpatialAsset } from "./spatial-asset";
+import { getEntryHandoff } from "@/lib/entry-handoff";
+import { takePreparedQuick } from "../entry/preparation";
 
 const all = <T extends Element = HTMLElement>(root: Element, selector: string) => Array.from(root.querySelectorAll<T>(selector));
 
@@ -14,7 +16,10 @@ export function startQuickDiscovery(root: HTMLElement) {
     const view=section.querySelector<HTMLElement>("[data-scene]")!;
     return {name,section,view,title:view.querySelector<HTMLElement>("[data-title]"),words:all<HTMLElement>(view,"[data-word]"),chars:all<HTMLElement>(view,"[data-char]"),support:all<HTMLElement>(view,"[data-support]"),label:view.querySelector<HTMLElement>("[data-label]"),evidence:view.querySelector<HTMLElement>("[data-evidence]"),beats:all<HTMLElement>(view,"[data-beat]"),roles:all<HTMLElement>(view,"[data-role]"),caps:all<HTMLElement>(view,"[data-cap]"),indices:all<HTMLElement>(view,"[data-index-item]"),archives:all<HTMLElement>(view,"[data-archive]"),planes:all<HTMLElement>(view,"[data-plane]"),lastActive:false};
   });
-  const canvas=root.querySelector<HTMLCanvasElement>("[data-world-canvas]")!;
+  const originalCanvas=root.querySelector<HTMLCanvasElement>("[data-world-canvas]")!;
+  const prepared=getEntryHandoff()?.destination==="quick"?takePreparedQuick(originalCanvas):null;
+  const canvas=prepared?.canvas??originalCanvas;
+  const contactChannels=all<HTMLElement>(root,'[data-stage="contact"] [data-contact-channel]');
   const toggle=root.querySelector<HTMLButtonElement>("[data-motion-toggle]")!;
   const atmosphere=root.querySelector<HTMLElement>("[data-atmosphere]")!;
   const emberNodes=all<HTMLElement>(root,"[data-ember]");
@@ -24,9 +29,10 @@ export function startQuickDiscovery(root: HTMLElement) {
   const tier=root.querySelector<HTMLElement>("[data-tier]")!;
   const media=matchMedia("(prefers-reduced-motion: reduce)");
   let reduced=media.matches, disposed=false, loading=false, failed=false;
-  let asset:SpatialAsset|null=null, raf=0, bounds:Track[]=[], current=0, target=0;
+  let asset:SpatialAsset|null=prepared?.asset??null, raf=0, bounds:Track[]=[], current=0, target=0;
   let x=0,y=0,tx=0,ty=0,last=performance.now(),elapsed=0,needsMeasure=true;
   let active=-1,frameCount=0,frameTotal=0,sampleTime=0;
+  let landingEntry=getEntryHandoff()?.destination==="quick";
   const magnets=all<HTMLElement>(root,"[data-rail] a,[data-deeper],[data-stay]").map(el=>({el,x:0,y:0,tx:0,ty:0}));
 
   const measure=()=>{
@@ -56,7 +62,7 @@ export function startQuickDiscovery(root: HTMLElement) {
   const drawNative=(j:number)=>{
     scenes.forEach((s,index)=>{
       let p=j-index;
-      if(index===0&&j<.23)p=Math.max(p,-.16+range(elapsed,.1,2.1)*.4);
+      if(index===0&&j<.23)p=landingEntry ? .24 : Math.max(p,-.16+range(elapsed,.1,2.1)*.4);
       const visible=p>-.24&&(s.name==="contact"||p<1.12);
       const alpha=range(p,-.24,-.08)*(s.name==="contact"?1:1-range(p,.92,1.12));
       s.view.style.opacity=alpha.toFixed(4);
@@ -80,11 +86,23 @@ export function startQuickDiscovery(root: HTMLElement) {
         });
       }
       s.support.forEach((text,i)=>{
-        const t=range(textP,.09+i*.027,.25+i*.027);
+        const t=s.name==="contact"?range(p,.17,.23):range(textP,.09+i*.027,.25+i*.027);
         text.style.opacity=String(t*(1-exit));
         text.style.clipPath=`inset(0 ${(1-t)*100}% 0 0)`;
         text.style.transform=`translateY(${(1-t)*12-exit*9}px)`;
       });
+      if(s.name==="contact"){
+        // On short screens, finish the shared entrance score before allowing
+        // this final composition to scroll inside the fixed navigation frame.
+        s.view.style.overflowY=p>=.42?"auto":"clip";
+        if(p<.42&&!s.view.contains(document.activeElement))s.view.scrollTop=0;
+        contactChannels.forEach((channel,i)=>{
+          const t=range(p,.23+i*.04,.30+i*.04);
+          channel.style.clipPath=t===1?"none":`inset(-8px ${(1-t)*105}% -8px -8px)`;
+          channel.style.opacity=String(.2+.8*t);
+          channel.style.transform=`translateX(${(1-t)*6}px)`;
+        });
+      }
       if(s.label){const t=range(p,-.09,.1);s.label.style.clipPath=`inset(0 ${(1-t)*100}% 0 0)`;s.label.style.opacity=String(1-exit);s.label.style.letterSpacing=`${.13+(1-t)*.09}em`;}
       if(s.evidence){s.evidence.style.opacity=String(range(p,.24,.4)*(1-exit));}
       s.beats.forEach((beat,i)=>{
@@ -118,6 +136,7 @@ export function startQuickDiscovery(root: HTMLElement) {
   const tick=(now:number)=>{
     raf=0;if(disposed||document.hidden||reduced||failed)return;
     const actualDt=(now-last)/1000;const dt=Math.min(.05,actualDt);last=now;elapsed+=dt;
+    if(landingEntry&&getEntryHandoff()?.destination!=="quick"){elapsed=Math.max(elapsed,2.1);landingEntry=false;}
     if(needsMeasure)measure();
     target=journeyAt(scrollY,bounds);
     current=damp(current,target,dt,15);
@@ -125,6 +144,7 @@ export function startQuickDiscovery(root: HTMLElement) {
     x=damp(x,tx,dt,5);y=damp(y,ty,dt,5);
     drawNative(current);updateNavigation();
     asset?.draw(current,x,y,elapsed);
+    if(canvas.dataset["asset"]==="ready")canvas.dataset["renderReady"]="true";
     atmosphere.style.transform=`translate3d(${x*7+Math.sin(elapsed*.11)*5}px,${y*4+Math.cos(elapsed*.09)*4}px,0)`;
     // A small DOM layer keeps the ember response visible even when the WebGL
     // layer is distant or visually quiet. Each particle rises on a loop, then

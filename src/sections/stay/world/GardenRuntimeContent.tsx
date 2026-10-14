@@ -12,10 +12,11 @@ export function GardenRuntimeContent() {
     </picture>
     <section data-stay-beat="garden-b01" data-from="0" data-to="0.12" className={`${styles.beat} ${styles.center}`} aria-labelledby="garden-title">
       <div className={styles.copy}>
-        <p className={styles.eyebrow}>Adharsh Vijayakarthy · Experience 02</p>
+        <p data-eyebrow className={styles.eyebrow}>Adharsh Vijayakarthy · Experience 02</p>
         <CinematicTitle as="h1" id="garden-title" text="Stay Awhile" reveal="film-mask" />
         <p className={styles.lead}>Take your time.</p>
       </div>
+      <span data-opening-cue>Scroll to begin ↓</span>
     </section>
     <section data-stay-beat="garden-b02" data-from="0.12" data-to="0.26" className={`${styles.beat} ${styles.center}`} aria-labelledby="garden-enter">
       <div className={styles.copy}>

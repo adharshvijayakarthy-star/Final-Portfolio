@@ -1,41 +1,34 @@
-# dependencies
+# Dependencies and generated output
 node_modules/
 .pnp
 .pnp.*
-
-# next.js
 .next/
 out/
 build/
-next-env.d.ts
-
-# production
 dist/
-
-# typescript
+next-env.d.ts
 *.tsbuildinfo
-
-# testing
 coverage/
 
-# env
-.env
-.env*.local
-
-# vercel
-.vercel
-
-# os / editor
-.DS_Store
-Thumbs.db
+# Local configuration
+.env*
+!.env.example
+.vercel/
 *.pem
 
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# Editor, OS and debug output
+.DS_Store
+Thumbs.db
+*.log
 
-# Private input documents, working exports and browser evidence
+# Local tooling and render scratch
 .aura-work/
 .claude/
+.claude-stay-import/
+claude-stay-import/
+.codex-tmp/
+__pycache__/
+*.blend1
+*.blend2
+AGENTS.md
+CLAUDE.md

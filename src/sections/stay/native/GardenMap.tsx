@@ -31,19 +31,28 @@ export function GardenMap({ current, close }: { current: StayDestination; close:
     path.style.strokeDasharray = `${length} ${length}`; path.style.strokeDashoffset = String(length); path.style.opacity = ".92";
     const place = (progress: number) => { const p = path.getPointAtLength(length * progress); dot.style.left = `${positionPercent(p.x)}%`; dot.style.top = `${positionPercent(p.y)}%`; };
     place(0);
-    const finish = () => { if (finished) return; finished = true; path.style.strokeDashoffset = "0"; place(1); arrive(); };
+    let dotAnimation: Animation;
+    const resetPath=()=>{dot.style.offsetPath="";dot.style.offsetDistance="";dot.style.offsetAnchor="";dot.style.offsetRotate="";};
+    const finish = () => { if (finished) return; finished = true; dotAnimation?.cancel();resetPath();path.style.strokeDashoffset = "0"; place(1); arrive(); };
     // Browser-owned animations share a single bounded travel timeline; no map RAF.
     const duration = 1150;
-    const frames = Array.from({length:61}, (_,i) => {
-      const p = path.getPointAtLength(length*i/60);
-      return {left:`${positionPercent(p.x)}%`,top:`${positionPercent(p.y)}%`};
-    });
-    const dotAnimation = dot.animate(frames,{duration,easing:"cubic-bezier(.4,0,.2,1)",fill:"forwards"});
+    const plan=dot.parentElement!;
+    const motionPath=CSS.supports("offset-path",'path("M 0 0 Q 1 1 2 2")');
+    const configurePath=()=>{
+      let axis=0;const d=path.getAttribute("d")!;
+      const pixels=d.replace(/-?\d+(?:\.\d+)?/g,value=>String(positionPercent(Number(value))/100*(axis++%2?plan.clientHeight:plan.clientWidth)));
+      dot.style.left="0";dot.style.top="0";dot.style.offsetAnchor="0% 0%";dot.style.offsetRotate="0deg";dot.style.offsetPath=`path("${pixels}")`;
+    };
+    if(motionPath){configurePath();scope.listen(window,"resize",configurePath);dotAnimation=dot.animate([{offsetDistance:"0%"},{offsetDistance:"100%"}],{duration,easing:"cubic-bezier(.4,0,.2,1)",fill:"forwards"});}
+    else {
+      const frames=Array.from({length:61},(_,i)=>{const p=path.getPointAtLength(length*i/60);return{left:`${positionPercent(p.x)}%`,top:`${positionPercent(p.y)}%`};});
+      dotAnimation=dot.animate(frames,{duration,easing:"cubic-bezier(.4,0,.2,1)",fill:"forwards"});
+    }
     const pathAnimation = path.animate([{strokeDashoffset:String(length)},{strokeDashoffset:"0"}],{duration,easing:"cubic-bezier(.4,0,.2,1)",fill:"forwards"});
     void dotAnimation.finished.then(()=>scope.after(200,finish),()=>{});
     const media = matchMedia("(prefers-reduced-motion: reduce)");
     scope.listen(media, "change", () => { if (media.matches) finish(); });
-    return () => { dotAnimation.cancel(); pathAnimation.cancel(); scope.dispose(); };
+    return () => { dotAnimation.cancel(); pathAnimation.cancel();resetPath();scope.dispose(); };
   }, [target, current, arrive]);
   useEffect(() => {
     const el = dialog.current;

@@ -2,17 +2,11 @@
 
 import Image from "next/image";
 import { useRef } from "react";
+import { certificatePlaceholderNotice, type Certificate } from "@/data/certificates";
 import styles from "./QuickDiscovery.module.css";
 
-export function CertificateArchive({
-  title,
-  src,
-  alt,
-}: {
-  title: string;
-  src: string;
-  alt: string;
-}) {
+export function CertificateArchive({ certificate }: { certificate: Certificate }) {
+  const { quickTitle: title, image: { src, alt, width, height } } = certificate;
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   return (
@@ -23,7 +17,7 @@ export function CertificateArchive({
         aria-haspopup="dialog"
         onClick={() => dialogRef.current?.showModal()}
       >
-        <Image className={styles.certificateImage} src={src} alt="" width={900} height={1200} loading="lazy" />
+        <Image className={styles.certificateImage} src={src} alt="" width={width} height={height} loading="lazy" />
         <span className={styles.certificateOverlay}>
           <strong>{title}</strong>
           <small>EXPAND ↗</small>
@@ -32,13 +26,16 @@ export function CertificateArchive({
       <dialog
         ref={dialogRef}
         className={styles.certificateDialog}
-        aria-label={title + " certificate placeholder"}
+        aria-label={title + (certificate.placeholder ? " certificate placeholder" : " certificate")}
       >
         <div className={styles.certificateDialogInner}>
-          <Image className={styles.certificateExpandedImage} src={src} alt={alt} width={900} height={1200} />
+          <Image className={styles.certificateExpandedImage} src={src} alt={alt} width={width} height={height} />
           <div className={styles.certificateDialogCopy}>
             <strong>{title}</strong>
-            <span>Temporary placeholder · original certificate image pending</span>
+            {certificate.placeholder && <span>{certificatePlaceholderNotice}</span>}
+            {certificate.issuer && <span>{certificate.issuer}</span>}
+            {certificate.date && <span>{certificate.date}</span>}
+            {certificate.link && <a href={certificate.link} target="_blank" rel="noopener noreferrer">View certificate ↗</a>}
           </div>
           <form method="dialog">
             <button type="submit" className={styles.certificateClose}>CLOSE</button>

@@ -45,14 +45,6 @@
   color: var(--sc-ink);
 }
 
-/* The custom cursor replaces the native one, but only once the runtime has
- * confirmed a fine pointer and mounted it. Without JS the native cursor
- * stays. */
-.scene[data-cursor-active="true"],
-.scene[data-cursor-active="true"] a {
-  cursor: none;
-}
-
 /* Vignette. */
 .vignette {
   position: absolute;
@@ -825,90 +817,6 @@
   height: 100%;
   z-index: 4;
   pointer-events: none;
-}
-
-.cursor {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 60;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  will-change: transform;
-}
-
-.cursorInner {
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-.cursorRing {
-  position: absolute;
-  left: -7px;
-  top: -7px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 1px solid rgba(232, 226, 216, 0.45);
-  transform: scale(1);
-  transition:
-    transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1),
-    opacity 0.3s ease,
-    border-color 0.3s ease;
-}
-
-.cursorDot {
-  position: absolute;
-  left: -1.5px;
-  top: -1.5px;
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: var(--sc-ink);
-  transition:
-    background 0.3s ease,
-    transform 0.3s ease;
-}
-
-.cursorGlyph {
-  position: absolute;
-  left: -6px;
-  top: -9px;
-  font-size: 13px;
-  line-height: 1;
-  color: var(--sc-crimson);
-  opacity: 0;
-  transform: translateX(-4px);
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.cursor[data-mode="quick"] .cursorRing {
-  opacity: 0;
-  transform: scale(0.4);
-}
-
-.cursor[data-mode="quick"] .cursorDot {
-  transform: scale(0);
-}
-
-.cursor[data-mode="quick"] .cursorGlyph {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.cursor[data-mode="stay"] .cursorRing {
-  opacity: 0.75;
-  transform: scale(1.55);
-  border-color: rgba(240, 224, 198, 0.5);
-}
-
-.cursor[data-mode="stay"] .cursorDot {
-  transform: scale(0.8);
-  background: #f0e2c8;
 }
 
 /* ====================================================================== */

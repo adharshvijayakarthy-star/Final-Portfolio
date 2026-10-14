@@ -1,0 +1,63 @@
+/* Contact owns its composition. All route, camera and typography score hooks
+   remain the same as the other narrative beats. */
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat])::before{width:100%;inset:0;transform:none;background:linear-gradient(90deg,rgba(16,35,25,.65),rgba(16,35,25,.3) 48%,transparent 90%)}
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b01"]) > div{width:min(42rem,57vw)!important}
+:global([data-stay-route="contact"]) .ending h1{font-size:clamp(4rem,7.5vw,8rem);line-height:1.02;margin-bottom:30px}
+:global([data-stay-route="contact"]) .ending h1 :global([data-title-phrase]):last-child{font-style:italic;padding-left:.32em}
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b01"]) p:not([data-eyebrow]){max-width:34ch;color:#f0ebdf}
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b02"]){justify-content:center}
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b02"]) > div{width:min(65rem,84vw)!important}
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b02"])::before{background:linear-gradient(90deg,rgba(16,35,25,.74),rgba(16,35,25,.42) 55%,rgba(16,35,25,.34));mask-image:linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent)}
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b02"]) h2{font-size:clamp(2.5rem,4.2vw,4.25rem);line-height:1.08;margin-bottom:22px}
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b02"]) p[data-eyebrow]{margin-bottom:24px}
+.inscriptions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:16px clamp(60px,12vw,180px);list-style:none;margin:42px 0 0;padding:0}
+.inscription{min-width:0;align-self:start}
+.inscription a{position:relative;display:grid;grid-template-columns:24px minmax(0,1fr) 18px;column-gap:14px;align-items:baseline;padding:8px 0 20px;min-height:90px;scroll-margin-block:130px 130px;color:#f7f2e7;text-decoration:none;text-shadow:0 1px 14px #10231988}
+.number{grid-column:1;grid-row:1/3;font:400 12px/1.5 var(--font-display-face),Georgia,serif;font-style:italic;color:#d9cbaa}
+.label{grid-column:2;grid-row:1;font:500 10px/1.6 var(--font-body-face),sans-serif;letter-spacing:.19em;text-transform:uppercase;color:#e5d7b9;margin-bottom:12px}
+.address{grid-column:2;grid-row:2;font:400 16px/1.65 var(--font-body-face),sans-serif;overflow-wrap:anywhere;opacity:1;transform:translateX(0);transition:transform 220ms cubic-bezier(0.22,1,0.36,1)}
+.arrow{grid-column:3;grid-row:2;font:400 18px/1 var(--font-body-face),sans-serif;color:#ded0b1;opacity:.7;transform:translateX(0);transition:transform 220ms cubic-bezier(0.22,1,0.36,1)}
+.inscription a::after{content:"";position:absolute;bottom:0;left:38px;width:40px;height:1px;background:#e3d5b966;opacity:.9;transition:opacity 220ms cubic-bezier(0.22,1,0.36,1)}
+.email .address{font-size:clamp(18px,1.7vw,24px);line-height:1.5}
+.linkedin{margin-top:45px}
+.github{margin-left:38px;margin-top:18px}
+.phone{margin-left:30px;margin-top:48px}
+.phone .address{font-size:15px}
+.inscription a:is(:hover,:focus-visible) .address{transform:translateX(6px)}
+.inscription a:is(:hover,:focus-visible) .arrow{transform:translateX(6px)}
+.inscription a:is(:hover,:focus-visible)::after{opacity:1}
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b03"]) > div{width:min(36rem,51vw)!important;margin-left:auto}
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b03"])::before{background:linear-gradient(270deg,rgba(16,35,25,.68),rgba(16,35,25,.2) 65%,transparent)}
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b03"]) h2{font-size:clamp(2.4rem,4vw,4.2rem);max-width:13ch;margin-bottom:26px}
+:global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b03"]) nav{max-width:26rem;margin-top:42px}
+/* The existing camera-linked title phase cues this Contact-only final resolve.
+   Reverse scroll re-arms it; focus and quiet modes expose every inscription. */
+:global([data-stay-route="contact"][data-type-directed]) .ending :global(section[data-type-phase="prepare"]) .inscription,
+:global([data-stay-route="contact"][data-type-directed]) .ending :global(section[data-type-phase="reveal"]) .inscription,
+:global([data-stay-route="contact"][data-type-directed]) .ending :global(section[data-type-phase="settle"]) .inscription{clip-path:inset(0 0 100% 0)}
+:global([data-stay-route="contact"][data-type-directed]) .ending :global(section:is([data-type-phase="hold"],[data-type-phase="depart"])) .inscription{animation:inscribe .9s cubic-bezier(.2,.7,.2,1) both}
+:global([data-stay-route="contact"][data-type-directed]) .ending :global(section:is([data-type-phase="hold"],[data-type-phase="depart"])) .linkedin{animation-delay:.16s}
+:global([data-stay-route="contact"][data-type-directed]) .ending :global(section:is([data-type-phase="hold"],[data-type-phase="depart"])) .github{animation-delay:.32s}
+:global([data-stay-route="contact"][data-type-directed]) .ending :global(section:is([data-type-phase="hold"],[data-type-phase="depart"])) .phone{animation-delay:.48s}
+@keyframes inscribe{from{clip-path:inset(-8px 105% -8px -8px);opacity:.3}to{clip-path:inset(-8px -8px -8px -8px);opacity:1}}
+:global([data-stay-route="contact"]) .ending :global(section:focus-within) .inscription,
+:global([data-stay-route="contact"][data-stay-quiet="true"]) .ending .inscription{animation:none!important;clip-path:none!important;opacity:1!important}
+@media(max-width:767px){
+ :global([data-stay-route="contact"]) .ending :global(section[data-stay-beat]){padding:140px 26px 110px;min-height:90svh}
+ :global([data-stay-route="contact"]) .ending :global(section[data-stay-beat]) > div{width:100%!important}
+ :global([data-stay-route="contact"]) .ending :global(section[data-stay-beat])::before{background:linear-gradient(90deg,rgba(16,35,25,.64),rgba(16,35,25,.3));mask-image:linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent)}
+ :global([data-stay-route="contact"]) .ending h1{font-size:clamp(3.15rem,12.5vw,5.5rem);margin-bottom:28px}
+ :global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b02"]) > div,
+ :global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b03"]) > div{width:100%!important}
+ :global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b02"]) h2{font-size:clamp(2.4rem,9.2vw,3.5rem)}
+ :global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b02"])::before{background:linear-gradient(90deg,rgba(16,35,25,.76),rgba(16,35,25,.43))}
+ .inscriptions{grid-template-columns:minmax(0,1fr);gap:28px;margin-top:36px}
+ .inscription{margin:0}
+ .inscription a{grid-template-columns:18px minmax(0,1fr) 16px;column-gap:12px;padding-bottom:18px;min-height:94px}
+ .inscription a::after{left:30px}
+ .arrow{grid-column:2;grid-row:3;margin-top:10px}
+ .email .address{font-size:19px}.address{font-size:16px}.label{font-size:10px}
+ .linkedin{margin-left:18px}.github{margin-left:4px}.phone{margin-left:32px}
+ :global([data-stay-route="contact"]) .ending :global(section[data-stay-beat="contact-b03"]) h2{font-size:clamp(2.5rem,9.5vw,3.5rem)}
+}
+@media(prefers-reduced-motion:reduce){.ending .inscription{animation:none!important;clip-path:none!important;opacity:1!important}.ending *,.inscription a::after{transition:none!important}}

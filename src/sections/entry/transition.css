@@ -1,0 +1,19 @@
+/* Installed by Landing, active only during its explicit route handoff. */
+html[data-entry-transition] { scroll-behavior: auto !important; }
+html[data-entry-transition] body { overflow: hidden; }
+html[data-entry-transition] main { pointer-events: none; }
+html[data-entry-transition="stay"] [data-stay-route="garden"] { opacity: 0; }
+html[data-entry-transition="stay"] [data-world-status] { opacity: var(--entry-exposure, 0); }
+html[data-entry-transition="stay"] [data-world-status] > div:has(canvas) { transition: none !important; }
+html[data-entry-transition="stay"] [data-world-status] [role="status"] { visibility: hidden; }
+html[data-entry-transition="stay"] main > div > header,
+html[data-entry-transition="stay"] [data-stay-native] > header,
+html[data-entry-transition="stay"] [data-stay-native] > nav,
+html[data-entry-transition="stay"] [data-world-status] ~ button { opacity: 0; }
+html[data-entry-transition="quick"] [data-qd-root] { opacity: var(--entry-exposure, 0); }
+html[data-entry-transition="quick"] [data-stage="entry"] [data-scene] > div {
+  transform: translateX(var(--entry-content-x, -16px));
+}
+html[data-entry-transition="quick"] [data-stage="entry"] [data-title] {
+  letter-spacing: var(--entry-tracking, .015em);
+}

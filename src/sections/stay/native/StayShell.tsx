@@ -5,10 +5,9 @@ import type { StayDestination } from "./destinations";
 import { GardenNav } from "./GardenNav";
 import styles from "./stay.module.css";
 import { useStayExperience } from "../world/StayExperienceProvider";
-import "./reference.module.css";
 import "./stay-keyframes.css";
 
-// Preserve the pre-existing Quick → Stay evidence URLs and their current content.
+// Preserve the pre-existing Quick â†’ Stay evidence URLs and their current content.
 const legacyAnchors = new Set(["study-planner", "past-paper-logger", "mun-club", "project-aura", "work", "notes", "beyond", "contact"]);
 function hash() { return window.location.hash.slice(1); }
 function subscribe(fn: () => void) {

@@ -1,38 +1,47 @@
 # Project AURA
 
-Adharsh Vijayakarthy’s portfolio, refined from the approved Claude implementation.
+Adharsh Vijayakarthy's portfolio: a cinematic entrance, Quick Discovery, and the Stay Awhile spatial garden.
 
-- `/` — crystal and garden entrance, with a crystal morph into Quick Discovery.
-- `/quick/` — the original eleven cinematic scroll stages and six chapter links.
-# Final-Portfolio
+Requires Node.js 20.9 or later and npm.
 
-## Editing the words
+## Install
 
-| File | Edit here |
-| --- | --- |
-| `src/data/content.ts` | Name, roles, biography, chapters, Build, AURA story, achievements, future, contacts and shared routes |
-| `src/data/projects.ts` | Projects, narration beats, details, metadata and deeper links |
-| `src/data/site.ts` | Site metadata and entrance labels |
+```sh
+npm install
+```
 
-Replace `YOUR_EMAIL`, `YOUR_LINKEDIN`, `YOUR_GITHUB` and `YOUR_PHONE` in `content.ts`. Email and phone become mailto and tel links; LinkedIn and GitHub require full HTTPS URLs. Unfilled values remain visible without broken links.
+Use `npm ci` to install the exact dependency versions from the lockfile.
 
-Project screenshots and certificate scans can be added through the typed asset fields. Until real images are supplied, the original frames contain factual text. The paper chart is illustrative and displays no actual scores.
+## Development
 
-The deeper links lead to `/stay/#study-planner`, `/stay/#past-paper-logger`, `/stay/#strat-mun` and `/stay/#project-aura`. External demos, repositories and certificate images have not been invented.
+```sh
+npm run dev
+```
 
-## Local development
+## Build
 
-Use Node 20.9 or later. Run `npm install`, then `npm run dev`.
+```sh
+npm run check
+npm run build
+```
 
-- `npm run check` — TypeScript and ESLint.
-- `npm run build` — production static export into `out/`.
+The build creates a static website in `out/`. Deploy that directory to a static host with directory index support. The existing deployment settings are in `.openai/hosting.json`.
 
-Serve `out/` with a static server that resolves directories to `index.html`. This is a Next static export; `next start` is not the preview command for that output.
+## Production
 
-## Motion and accessibility
+```sh
+npm start
+```
 
-`src/sections/quick-discovery/engine.ts` retains the approved seeds, scene clocks, cameras and major choreography. `navigation.ts` owns chapter scrolling separately. `src/sections/entry/morph.ts` carries the existing crystal into Quick’s matching monolith.
+This serves the static export at `http://127.0.0.1:3000`. Run the build first. Set `PORT` to choose another local port.
 
-Only the explicit reduced-motion preference or disabled JavaScript selects the readable document. Viewport size and enlarged text never disable animation. Desktop remains the primary cinematic composition. Wheel and touch scrolling stay native and interrupt navigation travel.
+## Content and assets
 
-See `REFINEMENT_REPORT.md` for verification and `ARCHITECTURE.md` for implementation boundaries. The pre-refinement source and browser evidence remain in the ignored `.aura-work/` directory, outside the published site.
+- `src/data/content.ts`: shared copy, branding and contact details.
+- `src/data/repositories.ts`: supplied project source URLs.
+- `src/data/certificates.ts`: certificate images and metadata. Replace the image and alt text, update verified metadata, and set `placeholder: false` when the original certificate is supplied.
+- `src/sections/`: entrance, Quick Discovery and Stay Awhile experiences.
+- `public/`: required models, textures, posters and certificate placeholders.
+- `public/THIRD_PARTY_LICENSES.txt`: asset and font notices.
+
+No environment variables are required by the website. `node_modules/`, `.next/` and `out/` are generated locally and excluded from source control.

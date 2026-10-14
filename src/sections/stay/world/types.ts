@@ -15,7 +15,7 @@ export type SceneManifest = {
   worldOrigin: Vec3;
   posterProgress: number;
   camera: { fov: number; near: number; far: number; roll: number };
-  cameraKnots: { band: [number, number]; start: Vec3; end: Vec3; look: Vec3 }[];
+  cameraKnots: { band: [number, number]; start: Vec3; end: Vec3; look: Vec3; clearance?: { alignment: "left" | "right" | "center"; x: number; y: number; widthCh: number } }[];
   clips: { name: string; duration: number; progressBand: [number, number] | null }[];
   instances: { assetId: string; instanceId: string; position: Vec3; rotation: Vec3; scale: Vec3; variantNode: string | null }[];
 };

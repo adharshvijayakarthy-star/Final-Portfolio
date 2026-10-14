@@ -1,5 +1,7 @@
 ﻿import * as THREE from "three";
 import type { Variant } from "./types";
+import type { ReadingZone } from "./reading-zone";
+const noReadingZones: readonly ReadingZone[] = [];
 
 const density: Record<string, number> = { garden: 8, person: 5, builder: 2, thinker: 2, leader: 4, stories: 6, work: 3, future: 3, aura: 4, contact: 0 };
 const seed = (n: number) => { const x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
@@ -10,6 +12,8 @@ export class PetalSystem {
   private mesh: THREE.InstancedMesh | null = null;
   private seeds = new Float32Array(0);
   private air = new Float32Array(0);
+  private ages = new Float32Array(0);
+  private projectedExtent = 1;
   private object = new THREE.Object3D();
   private point = new THREE.Vector3();
   private projected = new THREE.Vector3();
@@ -78,6 +82,8 @@ export class PetalSystem {
     const extent = Math.max(size.x, size.y, size.z);
     if (!Number.isFinite(extent) || extent <= 0) { geometry.dispose(); return; }
     geometry.scale(1 / extent, 1 / extent, 1 / extent);
+    geometry.computeBoundingSphere();
+    this.projectedExtent = (geometry.boundingSphere?.radius ?? .5) * 2;
     this.shape = [size.x/extent,size.y/extent,size.z/extent];
     const material = new THREE.MeshBasicMaterial({ color: "#ffd1df", side: THREE.DoubleSide, toneMapped: false, depthWrite: false });
     this.mesh = new THREE.InstancedMesh(geometry, material, anchors.length);
@@ -85,6 +91,7 @@ export class PetalSystem {
     this.mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
     this.seeds = new Float32Array(anchors.length * 8);
     this.air = new Float32Array(anchors.length * 6);
+    this.ages = new Float32Array(anchors.length);
     for (let i = 0; i < anchors.length; i++) {
       const anchor = anchors[i]!;
       const phase = ((i % perTree) + seed(i + 3) * .6) / perTree;
@@ -93,42 +100,52 @@ export class PetalSystem {
     }
     group.add(this.mesh);
   }
-  update(time: number, camera: THREE.Camera, pointer: THREE.Vector2, pointerActive: boolean) {
+  update(time: number, camera: THREE.Camera, pointer: THREE.Vector2, pointerActive: boolean, readingZones = noReadingZones) {
     if (!this.mesh) return;
     const dt = Math.min(.05, Math.max(0, time - this.previousTime)); this.previousTime = time;
-    const moving = pointerActive && pointer.distanceToSquared(this.lastPointer) > .000002;
-    this.pointerEnergy = moving ? 1 : Math.max(0, this.pointerEnergy - dt * 3);
+    const speedSquared=dt>0?pointer.distanceToSquared(this.lastPointer)/(dt*dt):0;
+    const energy=pointerActive?THREE.MathUtils.smoothstep(speedSquared,.0036,.0108):0;
+    this.pointerEnergy += (energy-this.pointerEnergy)*(1-Math.exp(-12*dt));
     this.lastPointer.copy(pointer);
     camera.updateMatrixWorld();
     const axes = camera.matrixWorld.elements, projection = camera.projectionMatrix.elements[5]!, height = window.innerHeight;
     this.visible = 0; this.nearCanopy = 0; this.maximumPixels = 0;
+    const velocityDecay=Math.exp(-dt*3),positionDecay=Math.exp(-dt*1.8),velocityIntegral=(positionDecay-velocityDecay)/1.2;
+    const accelerationIntegral=((1-positionDecay)/1.8-velocityIntegral)/3;
     for (let i = 0; i < this.mesh.count; i++) {
       const k = i * 8, a = i * 6, phase = this.seeds[k + 3]!, wind = this.seeds[k + 4]!, turn = this.seeds[k + 5]!, layer = this.seeds[k + 6]!;
       const life = (layer === 0 ? 18 : layer === 2 ? 11 : 14) + wind * 4;
       const age = (time + phase * life) % life, q = age / life;
-      if (q < .01) for (let axis = 0; axis < 6; axis++) this.air[a + axis] = 0;
+      if (age < this.ages[i]!) for (let axis = 0; axis < 6; axis++) this.air[a + axis] = 0;
+      this.ages[i] = age;
       this.point.set(this.seeds[k]! + Math.sin(age * .55 + wind * 6) * q * .5 + q * (wind - .5) * 1.4,
         this.seeds[k + 1]! - (.18 * q + .82 * q * q) * (this.seeds[k + 1]! + .12),
         this.seeds[k + 2]! + q * .9 + Math.sin(age * .42 + phase * 6) * q * .25);
       this.projected.copy(this.point).applyMatrix4(this.mesh.parent!.matrixWorld).project(camera);
       const dx = this.projected.x - pointer.x, dy = this.projected.y - pointer.y, d2 = dx * dx + dy * dy;
       const force = pointerActive && this.pointerEnergy > 0 && this.projected.z > -1 && this.projected.z < 1 && d2 < .025
-        ? (1 - d2 / .025) * this.pointerEnergy * .45 * dt / Math.max(.025, Math.sqrt(d2)) : 0;
+        ? (1 - d2 / .025) * this.pointerEnergy * .45 / Math.max(.025, Math.sqrt(d2)) : 0;
       for (let axis = 0; axis < 3; axis++) {
-        const velocity = Math.max(-.18, Math.min(.18, this.air[a + 3 + axis]! + (axes[axis]! * dx + axes[4 + axis]! * dy) * force));
-        this.air[a + 3 + axis] = velocity * Math.exp(-dt * 3);
-        this.air[a + axis] = (this.air[a + axis]! + velocity * dt) * Math.exp(-dt * 1.8);
+        const velocity=this.air[a+3+axis]!,acceleration=(axes[axis]!*dx+axes[4+axis]!*dy)*force;
+        this.air[a+3+axis]=Math.max(-.18,Math.min(.18,velocity*velocityDecay+acceleration*(1-velocityDecay)/3));
+        this.air[a+axis]=this.air[a+axis]!*positionDecay+velocity*velocityIntegral+acceleration*accelerationIntegral;
       }
       this.point.x += this.air[a]!; this.point.y += this.air[a + 1]!; this.point.z += this.air[a + 2]!;
       this.projected.copy(this.point).applyMatrix4(this.mesh.parent!.matrixWorld);
-      const distance = Math.max(.5, this.projected.distanceTo(camera.position));
+      const view = camera.matrixWorldInverse.elements;
+      const distance = Math.max(.5, -(view[2]!*this.projected.x + view[6]!*this.projected.y + view[10]!*this.projected.z + view[14]!));
       const naturalSize = layer === 0 ? .065 + turn * .018 : layer === 2 ? .125 : .085 + turn * .025;
-      const scale = Math.min(naturalSize, 9 * distance / (height * projection * .5)) * Math.min(1, age * 3, (life - age) * 3);
+      let scale = Math.min(naturalSize, 9 * distance / (height * projection * .5 * this.projectedExtent)) * Math.min(1, age * 3, (life - age) * 3);
       this.projected.project(camera);
+      for (const zone of readingZones) {
+        if (!zone.active) continue;
+        const outside = Math.max(zone.left-this.projected.x, this.projected.x-zone.right, zone.bottom-this.projected.y, this.projected.y-zone.top);
+        if (outside < .055) scale *= THREE.MathUtils.smoothstep(outside, 0, .055);
+      }
       if (i < 6) { this.projectedSamples[i*3]=this.projected.x; this.projectedSamples[i*3+1]=this.projected.y; this.projectedSamples[i*3+2]=this.projected.z; }
       if (Math.abs(this.projected.x) < 1 && Math.abs(this.projected.y) < 1 && Math.abs(this.projected.z) < 1 && scale > .01) {
         this.visible++; if (q < .25) this.nearCanopy++;
-        this.maximumPixels = Math.max(this.maximumPixels, scale * height * projection * .5 / distance);
+        this.maximumPixels = Math.max(this.maximumPixels, scale * height * projection * .5 * this.projectedExtent / distance);
       }
       this.object.position.copy(this.point);
       this.object.rotation.set(age * .7 + turn * 6, age * .31, Math.sin(age * .9 + phase * 6) * .65);

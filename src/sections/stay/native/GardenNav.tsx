@@ -8,6 +8,7 @@ import type { StayDestination } from "./destinations";
 import { useStayNavigation } from "./StayNavigation";
 import { StayMotionControls } from "../world/StayMotionControls";
 import { destinations } from "./destinations";
+import { quickCopy } from "@/data/content";
 
 export function GardenNav({ current = "garden" }: { current?: StayDestination }) {
   const place = nodes.find(node => node.id === current) ?? nodes[0]!;
@@ -16,7 +17,7 @@ export function GardenNav({ current = "garden" }: { current?: StayDestination })
   return <>
     <div className={styles.veil} aria-hidden="true" />
     <header className={styles.nav}>
-      <Link prefetch={false} className={styles.plate} href="/">Aura</Link>
+      <Link prefetch={false} className={`${styles.plate} ${styles.brand}`} href="/" aria-label={quickCopy.homeLabel}><i>{quickCopy.mark[0]}</i>{quickCopy.mark.slice(1)}</Link>
       <button type="button" className={styles.plate} aria-expanded={open} aria-keyshortcuts="M" aria-label="Open the garden map (M)" onClick={openMap}><span className={styles.mapIcon} />Map</button>
       <StayMotionControls />
     </header>

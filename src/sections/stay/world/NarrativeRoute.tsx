@@ -8,6 +8,8 @@ export type NarrativeBeat = {
   id: string; band: readonly [number, number]; heading: string; label: string;
   paragraphs: readonly string[]; reveal?: CinematicReveal;
   lines?: readonly string[]; detail?: ReactNode;
+  pace?: "brief" | "full";
+  source?: { href: string; label: string };
   exits?: readonly { href: string; label: string; place: string }[];
 };
 
@@ -19,13 +21,14 @@ export function NarrativeRoute({ id, beats }: { id: StayDestination; beats: read
       <img src={`/assets/stay/v1/${id}-desktop.webp`} alt="" />
     </picture>
     {beats.map((beat, index) => <section key={beat.id} id={beat.id} data-stay-beat={beat.id}
-      data-from={beat.band[0]} data-to={beat.band[1]} className={styles.beat} aria-labelledby={`${beat.id}-heading`}>
+      data-from={beat.band[0]} data-to={beat.band[1]} data-stay-pace={beat.pace} className={styles.beat} aria-labelledby={`${beat.id}-heading`}>
       <div className={styles.copy}>
         <p data-eyebrow className={styles.eyebrow}>{beat.label}</p>
         <CinematicTitle as={index === 0 ? "h1" : "h2"} id={`${beat.id}-heading`} text={beat.heading}
           reveal={beat.reveal} lines={beat.lines} />
         {beat.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
         {beat.detail}
+        {beat.source && <p><a href={beat.source.href} target="_blank" rel="noopener noreferrer" aria-label={`${beat.source.label} (opens in a new tab)`}>View source ↗</a></p>}
         {beat.exits && <nav aria-label="Paths onward" className={styles.exits}>
           {beat.exits.map(exit => <StayLink href={exit.href} key={exit.href}>{exit.label}<span>{exit.place}</span></StayLink>)}
         </nav>}

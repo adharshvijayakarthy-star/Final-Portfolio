@@ -5,6 +5,7 @@ import type { Route } from "next";
 import { destinations, type StayDestination } from "./destinations";
 import { MotionScope } from "./motion-scope";
 import { useStayExperience } from "../world/StayExperienceProvider";
+import { travelFamily } from "../world/travel-score";
 
 type Navigation = {
   current: StayDestination; open: boolean; leaving: boolean; target: StayDestination | null;
@@ -39,9 +40,11 @@ export function StayNavigation({ children }: { children: ReactNode }) {
   const experience = useStayExperience();
   const setAtlas = experience?.setAtlas;
   const quiet = experience?.quiet ?? false;
+  const beginTravel = experience?.beginTravel;
+  const cancelTravel = experience?.cancelTravel;
   useEffect(() => { setAtlas?.(open); }, [open, setAtlas]);
   const resetMotion = useCallback(() => { scope.current?.dispose(); scope.current = new MotionScope(); busy.current = false; departing.current = false; }, []);
-  const cancel = useCallback(() => { resetMotion(); setTarget(null); setLeaving(false); }, [resetMotion]);
+  const cancel = useCallback(() => { cancelTravel?.(); resetMotion(); setTarget(null); setLeaving(false); }, [resetMotion, cancelTravel]);
   const close = useCallback(() => {
     cancel(); setOpenFor(null);
     scope.current?.frame(() => { if (returnFocus.current?.isConnected) returnFocus.current.focus({ preventScroll: true }); });
@@ -52,6 +55,7 @@ export function StayNavigation({ children }: { children: ReactNode }) {
   }, [current, open]);
   useEffect(() => {
     const onShortcut = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && !open && busy.current) { event.preventDefault(); cancel(); return; }
       if (event.key.toLowerCase() !== "m" || event.repeat || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
       const target = event.target;
       if (target instanceof HTMLElement && (target.isContentEditable || target.closest("input, textarea, select, [contenteditable='true']"))) return;
@@ -60,7 +64,7 @@ export function StayNavigation({ children }: { children: ReactNode }) {
     };
     window.addEventListener("keydown", onShortcut);
     return () => window.removeEventListener("keydown", onShortcut);
-  }, [close, open, openMap]);
+  }, [close, open, openMap, cancel]);
   useEffect(() => {
     resetMotion();
     if (pendingArrival.current.split("#")[0] === destinations.find(d => d.id === current)?.route) {
@@ -110,9 +114,17 @@ export function StayNavigation({ children }: { children: ReactNode }) {
     setTrails(nextTrails);
     try { sessionStorage.setItem("aura.stay.v1.trails", JSON.stringify(nextTrails)); } catch { /* Optional history. */ }
     if (!open) returnFocus.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
-    setOpenFor(current);
-    if (open) setTarget(destination.id);
-    else scope.current?.after(700, () => setTarget(destination.id));
-  }, [current, open, trails, router, close, cancel, quiet]);
+    if (open) { setTarget(destination.id); return; }
+    // An onward path stays inside the world. Opening the atlas is a deliberate
+    // navigation choice rather than an obligatory interstitial for every link.
+    setTarget(destination.id);
+    const commit = () => {
+      if (departing.current) return;
+      departing.current = true; pendingArrival.current = href;
+      router.push(href as Route);
+      scope.current?.after(12000, close);
+    };
+    if (!beginTravel?.(travelFamily(current, destination.id), commit)) commit();
+  }, [current, open, trails, router, close, cancel, quiet, beginTravel]);
   return <Context.Provider value={{ current, open, leaving, target, visited, trails, openMap, close, go, arrive }}>{children}</Context.Provider>;
 }

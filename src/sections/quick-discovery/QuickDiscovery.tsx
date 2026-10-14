@@ -4,7 +4,10 @@ import { owner, build, achievements, future, contact, contactHref, quickCopy, ro
 import { CertificateArchive } from "./CertificateArchive";
 import { SceneRuntime } from "./SceneRuntime";
 import { quickProjects } from "./quick-content";
+import { repositories } from "@/data/repositories";
+import { ContactAddress } from "@/components/layout/ContactAddress";
 import styles from "./QuickDiscovery.module.css";
+import contactStyles from "./contact.module.css";
 
 const chapters = [
   ["who", "WHO"], ["build", "BUILD"], ["think", "THINK"], ["lead", "LEAD"],
@@ -31,7 +34,7 @@ export function QuickDiscovery() {
   return <div className={styles.root} data-qd-root>
     <div className={styles.world} data-world aria-hidden="true"><canvas data-world-canvas /><div className={styles.atmosphere} data-atmosphere /><div className={styles.embers} data-embers>{Array.from({length:36},(_,i)=><i className={styles.ember} data-ember key={i} />)}</div></div>
     <div className={styles.progress} data-progress aria-hidden="true" />
-    <Link className={styles.markLeft} data-home href={routes.home} aria-label={quickCopy.quickHomeLabel}><i>{quickCopy.quickMark[0]}</i><span>{quickCopy.quickMark.slice(1)}</span></Link>
+    <Link className={styles.markLeft} data-home href={routes.home} aria-label={quickCopy.homeLabel}><i>{quickCopy.mark[0]}</i><span>{quickCopy.mark.slice(1)}</span></Link>
     <span className={styles.markRight}>QUICK DISCOVERY</span>
     <button className={styles.motionToggle} type="button" data-motion-toggle aria-pressed="false">Reduce motion</button>
     <nav className={styles.rail} aria-label="Chapters" data-rail>
@@ -79,7 +82,7 @@ export function QuickDiscovery() {
           <p className={styles.label} data-label>05.{i+1} / {p.title.toUpperCase()}</p>
           <Title level={3} type={p.stage === "papers"}>{p.displayTitle}</Title>
           <div className={styles.prose}>{p.narration.map((line,n) => <p key={n} data-support>{line}</p>)}</div>
-          <div className={styles.evidence} data-evidence><p>{p.details.join(" · ")}</p><span>{p.signal}</span>{p.href && <Link data-deeper href={p.href}>{p.deeperLabel} <i aria-hidden="true">↗</i></Link>}</div>
+          <div className={styles.evidence} data-evidence><p>{p.details.join(" · ")}</p><span>{p.signal}</span>{p.href && <Link data-deeper href={p.href}>{p.deeperLabel} <i aria-hidden="true">↗</i></Link>}{repositories[p.id] && <> <a href={repositories[p.id]} target="_blank" rel="noopener noreferrer" aria-label={`View source for ${p.title} (opens in a new tab)`}>View source <i aria-hidden="true">↗</i></a></>}</div>
         </div>
         <div className={styles.demonstration} aria-hidden="true">
           {p.stage === "plan" && <div className={styles.days}>{["MON","TUE","WED","THU","FRI"].map(d=><span key={d}>{d}</span>)}</div>}
@@ -93,7 +96,7 @@ export function QuickDiscovery() {
         <div className={styles.archives}>{["strat-mun","isso","guitar","theory"].map(id=>{
           const a=achievements.find(item=>item.id===id)!;
           return <article key={id} data-archive>
-            {a.asset ? <CertificateArchive title={a.quickTitle} src={a.asset.src} alt={a.asset.alt} /> : <><span className={styles.label}>{a.category}</span><h3>{a.quickTitle}</h3><p>{a.quickDetail}</p></>}
+            {a.certificate ? <CertificateArchive certificate={a.certificate} /> : <><span className={styles.label}>{a.category}</span><h3>{a.quickTitle}</h3><p>{a.quickDetail}</p></>}
           </article>;
         })}</div>
       </Stage>
@@ -102,13 +105,30 @@ export function QuickDiscovery() {
         <div className={styles.futurePlanes}>{future.destinations.map((d,i)=><span data-plane={i} key={d}>{d}</span>)}</div>
       </Stage>
       <Stage name="contact" id="ch-contact" label="Contact">
-        <div className={styles.copy}><p className={styles.label} data-label>08 / CONTACT</p><Title>{quickCopy.contactTitle}</Title><p className={styles.contactPrompt} data-support>{quickCopy.contactPrompt}</p>
-          <div className={styles.contactList}>{(Object.entries(contact) as [keyof typeof contact,string][]).map(([kind,value])=>{
-            const href=contactHref(kind,value);const content=<><span>{kind.toUpperCase()}</span><strong>{value}</strong><i>{href?"↗":quickCopy.contactPending}</i></>;
-            return href?<a key={kind} href={href}>{content}</a>:<div key={kind}>{content}</div>;
-          })}</div>
+        <div className={contactStyles.ending}>
+          <header className={contactStyles.intro}>
+            <p className={styles.label} data-label>08 / CONTACT <span className={contactStyles.endnote}>THE FINAL PAGE</span></p>
+            <Title>LET’S TALK.</Title>
+            <p className={contactStyles.prompt} data-support>Think we should talk? Start here.</p>
+          </header>
+          <ol className={contactStyles.channels} aria-label="Contact channels">
+            {(["email", "linkedin", "github", "phone"] as const).map((kind, index) => {
+              const value = contact[kind];
+              const external = kind === "linkedin" || kind === "github";
+              return <li key={kind} className={contactStyles[kind]} data-contact-channel>
+                <a href={contactHref(kind, value)!} aria-label={`${kind === "phone" ? "Call" : kind === "email" ? "Email" : kind === "linkedin" ? "LinkedIn" : "GitHub"}: ${value}${external ? " (opens in a new tab)" : ""}`} {...(external ? {target: "_blank", rel: "noopener noreferrer"} : {})}>
+                  <span className={contactStyles.channelLabel}><span aria-hidden="true">0{index + 1}</span>{kind}</span>
+                  <span className={contactStyles.address}><ContactAddress value={value} /></span>
+                  <span className={contactStyles.arrow} aria-hidden="true">↗</span>
+                </a>
+              </li>;
+            })}
+          </ol>
+          <footer className={contactStyles.coda}>
+            <p>{quickCopy.complete}</p>
+            <Link href={routes.stay}>Stay awhile <span aria-hidden="true">↗</span></Link>
+          </footer>
         </div>
-        <div className={styles.closing}><p className={styles.label}>{quickCopy.closing}</p><Link href={routes.stay} data-stay>Stay awhile <span aria-hidden="true">→</span></Link><p className={styles.label}>{quickCopy.complete}</p></div>
       </Stage>
     </div>
     <SceneRuntime />

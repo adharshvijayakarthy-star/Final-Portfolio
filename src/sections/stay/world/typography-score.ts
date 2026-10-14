@@ -33,17 +33,3 @@ export const titlePhrases: Record<string, readonly string[]> = {
   "It started as a portfolio.": ["It started", "as a portfolio."],
   "If you made it this far, let’s talk.": ["If you made it this far,", "let’s talk."],
 };
-
-export type TypographyTempo = { reveal: number; gap: number; settle: number; hold: number; exit: number };
-export const typographyTempos: Record<string, TypographyTempo> = {
-  garden: { reveal: 1250, gap: 170, settle: 550, hold: 2800, exit: 780 },
-  person: { reveal: 1400, gap: 190, settle: 600, hold: 3400, exit: 850 },
-  builder: { reveal: 950, gap: 130, settle: 350, hold: 2700, exit: 650 },
-  thinker: { reveal: 1700, gap: 240, settle: 800, hold: 4300, exit: 1100 },
-  leader: { reveal: 1100, gap: 150, settle: 450, hold: 3000, exit: 750 },
-  stories: { reveal: 1450, gap: 210, settle: 650, hold: 3400, exit: 950 },
-  work: { reveal: 1000, gap: 140, settle: 350, hold: 3100, exit: 700 },
-  future: { reveal: 1600, gap: 230, settle: 700, hold: 3700, exit: 1000 },
-  aura: { reveal: 1750, gap: 220, settle: 700, hold: 4000, exit: 1100 },
-  contact: { reveal: 1800, gap: 100, settle: 500, hold: 4000, exit: 1200 },
-};

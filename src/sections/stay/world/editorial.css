@@ -1,5 +1,48 @@
 /* Scoped to Stay. Existing colors, scene washes, controls and native flow are
    retained. Only the typesetting and the text's own masks are directed here. */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url("/fonts/eb-garamond-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url("/fonts/eb-garamond-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url("/fonts/eb-garamond-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url("/fonts/eb-garamond-italic-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+.stayTypography {
+  --stay-body-face: "EB Garamond";
+}
 [data-stay-route] {
   --reading-ink: #f7f2e7;
   --reading-shade: 18, 39, 29;
@@ -280,11 +323,50 @@ html:has([data-world-status]) { scroll-behavior: auto; }
 [data-stay-route] section[data-stay-beat] figure { margin: 25px 0 0; }
 [data-stay-route] section[data-stay-beat] figcaption { margin-top: 12px; color: #e2cba8; font: 400 .7rem/1.6 var(--font-meta-face),monospace; }
 [data-stay-route] section[data-stay-beat] svg { max-width: 100%; height: auto; }
-@media (max-width: 767px), (max-height: 620px) {
+@media (max-width: 767px) {
   [data-stay-route] section[data-stay-beat] > div { width: 100% !important; }
   [data-stay-route] section[data-stay-beat] h1 { font-size: clamp(2.9rem, 9vw, 4.2rem); }
   [data-stay-route] section[data-stay-beat] h2, [data-stay-route] section[data-stay-beat] [data-title-kind="intertitle"] { font-size: clamp(2rem, 6.5vw, 3.3rem); }
   [data-stay-route] section[data-stay-beat] { padding: 200px 24px 110px; min-height: 100svh; }
+}
+/* Height changes type scale, not the desktop composition or its side of the
+   frame. Short screens must never inherit the mobile full-width reading rule. */
+@media (min-width: 768px) and (max-height: 700px) {
+  [data-stay-route] section[data-stay-beat] { padding-top: 116px; padding-bottom: 52px; }
+  [data-stay-route] section[data-stay-beat] h1 { font-size: clamp(3.5rem, 5.8vw, 5.4rem); }
+  [data-stay-route] section[data-stay-beat] h2,
+  [data-stay-route] section[data-stay-beat] [data-title-kind="intertitle"] { font-size: clamp(2.35rem, 3.6vw, 3.6rem); margin-bottom: 26px; }
+}
+[data-stay-route] section[data-stay-beat] > div { top: clamp(108px, 18vh, 160px); }
+[data-stay-route] section[data-stay-flow="held"] > div { position: sticky; }
+[data-stay-route] section[data-stay-flow="native"] > div { position: relative; top: auto; }
+[data-stay-route] section[data-stay-alignment="left"] { justify-content: flex-start; }
+[data-stay-route] section[data-stay-alignment="right"] { justify-content: flex-end; }
+[data-stay-route] section[data-stay-alignment="center"] { justify-content: center; }
+[data-stay-route] section[data-stay-alignment="left"]::before { left: 0; right: auto; transform: none; }
+[data-stay-route] section[data-stay-alignment="right"]::before { left: auto; right: 0; transform: scaleX(-1); }
+[data-stay-route] section[data-stay-alignment="center"]::before { left: 12%; right: 12%; width: auto; transform: none; background: radial-gradient(ellipse at center,rgba(var(--reading-shade),.55),transparent 75%); }
+[data-stay-route="garden"] section[data-stay-beat="garden-b01"] { justify-content: center; }
+[data-stay-route="garden"] section[data-stay-beat="garden-b01"] > div { text-align: center; width: min(54rem, 76vw) !important; }
+[data-stay-route="garden"] section[data-stay-beat="garden-b01"] p { margin-left: auto; margin-right: auto; }
+[data-stay-route="garden"] section[data-stay-beat="garden-b04"] > div { width: min(31rem, 40vw) !important; }
+[data-stay-route="person"] section[data-stay-beat="person-b04"],
+[data-stay-route="person"] section[data-stay-beat="person-b07"],
+[data-stay-route="thinker"] section[data-stay-beat="thinker-b05"],
+[data-stay-route="future"] section[data-stay-beat="future-b04"] { justify-content: flex-end; }
+[data-stay-route="aura"] section[data-stay-beat="aura-b08"] > div { width: min(44rem, 60vw) !important; }
+[data-stay-route="garden"] [data-opening-cue] { position: absolute; left: 50%; bottom: 100px; transform: translateX(-50%); font: 500 .6rem/1.5 var(--font-meta-face), monospace; letter-spacing: .18em; text-transform: uppercase; color: #eee4d0; }
+[data-stay-route="garden"] section[data-type-phase="hold"] [data-opening-cue],
+[data-stay-route="garden"] section[data-type-phase="depart"] [data-opening-cue] { visibility: hidden; }
+[data-stay-route] section[data-stay-pace="brief"] { min-height: 0; padding-top: 68px; padding-bottom: 52px; }
+[data-stay-route] section[data-stay-pace="brief"] h2 { font-size: clamp(2rem,3.2vw,3.1rem); margin-bottom: 22px; }
+[data-stay-route] section[data-stay-pace="brief"] p[data-eyebrow] { margin-bottom: 22px; }
+@media (max-width: 767px) {
+  [data-stay-route] section[data-stay-beat] { padding: 124px 24px 112px; }
+  [data-stay-route] section[data-stay-beat] > div { width: 100% !important; top: auto; position: relative; }
+  [data-stay-route="garden"] section[data-stay-beat="garden-b01"] > div,
+  [data-stay-route="garden"] section[data-stay-beat="garden-b04"] > div,
+  [data-stay-route="aura"] section[data-stay-beat="aura-b08"] > div { width: 100% !important; text-align: left; }
 }
 @media (max-width: 767px) {
   [data-stay-route] section[data-stay-beat] { min-height: 80svh; }

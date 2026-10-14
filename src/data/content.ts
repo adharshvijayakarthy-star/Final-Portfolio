@@ -1,8 +1,10 @@
 import type { ProjectMedia } from "./types";
+import { certificates, type Certificate } from "./certificates";
 
-// EDIT HERE: contact values, biography, scene copy, certificates and direction.
-// Bracketed contacts stay visible as requested, but never become broken links.
-export const contact = { email: "YOUR_EMAIL", linkedin: "YOUR_LINKEDIN", github: "YOUR_GITHUB", phone: "YOUR_PHONE" };
+// EDIT HERE: contact values, biography, scene copy and direction.
+// Certificate images and metadata are edited in ./certificates.ts.
+// Contact values supplied by the owner on 2026-10-02.
+export const contact = { email: "adharshvijayakarthy@gmail.com", linkedin: "https://www.linkedin.com/in/adharshvijayakarthy/", github: "https://github.com/adharshvijayakarthy-star", phone: "+91 7448864868" };
 
 export const owner = {
   firstName: "Adharsh", lastName: "Vijayakarthy",
@@ -12,14 +14,6 @@ export const owner = {
   context: "I’m an IB student, involved in MUN, debate and public speaking. I build with AI assistance while developing the independent technical depth to work on difficult systems.",
   researchContext: "Research, for me, starts with asking better questions. AURA is my ongoing personal inquiry.",
 };
-export const chapters = [
-  { id: "ch-who", chip: "who", number: "01", label: "WHO", title: "WHO", arrival: 0.14 },
-  { id: "ch-build", chip: "build", number: "02", label: "BUILD", title: "WHAT I BUILD", arrival: 0.18 },
-  { id: "ch-work", chip: "work", number: "03", label: "WORK", title: "SELECTED WORK", arrival: 0.4 },
-  { id: "ch-beyond", chip: "beyond", number: "04", label: "BEYOND", title: "BEYOND CODE", arrival: 0.18 },
-  { id: "ch-future", chip: "future", number: "05", label: "FUTURE", title: "WHERE I’M GOING", arrival: 0.08 },
-  { id: "ch-contact", chip: "contact", number: "06", label: "CONTACT", title: "CONTACT", arrival: 0 },
-] as const;
 export const build = {
   title: "I like turning ideas into systems.", steps: ["Idea", "Rules", "System", "Iteration"],
   note: "The interesting part is what happens when the rules meet a case I didn’t plan for.",
@@ -38,11 +32,9 @@ export const auraStory = [
   "And started trying to understand the person.",
 ];
 export const auraSteps = ["Discovery", "Evidence", "Understanding", "Model", "Expression"];
-export const achievements: readonly { id: string; title: string; detail: string; quickTitle: string; quickDetail: string; category: string; asset: ProjectMedia | null; source: string }[] = [
+export const achievements: readonly { id: string; title: string; detail: string; quickTitle: string; quickDetail: string; category: string; asset: ProjectMedia | null; source: string; certificate?: Certificate }[] = [
   { id: "strat-mun", title: "STRAT MUN", quickTitle: "STRAT MUN", quickDetail: "I helped run an actual MUN conference: committee design, topics, country allocation and delegate experience.", category: "Conference organisation · MUN", detail: "I helped organise and run STRAT MUN as an actual Model United Nations conference. My work included committee design, topics, country allocation and the delegate experience.", asset: null, source: "Master Codex §§48–49, corrected by user." },
-  { id: "isso", title: "ISSO Nationals — Shot Put Bronze Medalist", quickTitle: "ISSO · Shot Put", quickDetail: "Bronze Medalist · ISSO Nationals", category: "ISSO · athletics", detail: "Shot Put Bronze Medalist at ISSO Nationals.", asset: { src: "/assets/certificates/shot-put-isso-placeholder.svg", alt: "Temporary placeholder for the ISSO Nationals Shot Put certificate; original scan pending", width: 900, height: 1200 }, source: "User-provided achievement; no year, distance or age category supplied." },
-  { id: "guitar", title: "Grade 5 Guitar Practical", quickTitle: "Grade 5 Guitar Practical", quickDetail: "Temporary certificate image.", category: "Music · completed", detail: "Completed, with certificate. Original image to be added.", asset: { src: "/assets/certificates/guitar-practical-placeholder.svg", alt: "Temporary placeholder for the Grade 5 Guitar Practical certificate", width: 900, height: 1200 }, source: "Reconstruction brief, Beyond Code. Certificate scan not supplied." },
-  { id: "theory", title: "Grade 5 Music Theory", quickTitle: "Grade 5 Music Theory", quickDetail: "Temporary certificate image.", category: "Music · completed", detail: "Completed, with certificate. Original image to be added.", asset: { src: "/assets/certificates/music-theory-placeholder.svg", alt: "Temporary placeholder for the Grade 5 Music Theory certificate", width: 900, height: 1200 }, source: "Reconstruction brief, Beyond Code. Certificate scan not supplied." },
+  ...certificates.map(certificate => ({ ...certificate, asset: certificate.image, certificate })),
 ];
 export const future = {
   title: "I’m not interested in staying where I am.", current: "Learning. Building. Experimenting.",
@@ -53,8 +45,7 @@ export const future = {
 };
 
 export const quickCopy = {
-  mark: "AURA", homeLabel: "AURA — return to the landing page",
-  quickMark: "AV", quickHomeLabel: "AV — return to the landing page",
+  mark: "AV", homeLabel: "AV — return to the landing page",
   entryTitle: "QUICK DISCOVERY", entryHint: "NINETY SECONDS · SCROLL TO BEGIN", scrollHint: "SCROLL",
   workTitle: "Selected work", workSubtitle: "FOUR PROJECTS · FOUR DIFFERENT QUESTIONS",
   beyondTitle: "Software is only one part of what I do.",
@@ -71,19 +62,6 @@ export const quickCopy = {
 };
 
 export const routes = { home: "/", quick: "/quick", stay: "/stay" } as const;
-
-// Diagram labels are editable too. These are illustrative tasks, not a diary.
-export const plannerContent = {
-  days: ["MON", "TUE", "WED", "THU", "FRI"], breakLabel: "BREAK",
-  tasks: [
-    ["MATHS AA HL", "PRACTICE", 0, 0, 2], ["PHYSICS HL", "REVISION", 1, 0, 2],
-    ["CHEMISTRY HL", "PRACTICE", 2, 0, 1], ["ENGLISH A LL", "WRITING", 3, 0, 2],
-    ["BUSINESS SL", "REVISION", 4, 0, 1], ["MATHS AA HL", "REVIEW", 2, 2, 1],
-    ["FRENCH SL", "PRACTICE", 0, 2, 1], ["PHYSICS HL", "PROBLEMS", 3, 2, 1],
-    ["CHEMISTRY HL", "REVIEW", 1, 2, 1], ["BUSINESS SL", "PRACTICE", 4, 2, 2],
-    ["MATHS AA HL", "MIXED PAPER", 1, 4, 2], ["ENGLISH A LL", "READING", 0, 4, 1],
-  ] as const,
-};
 export const stay = {
   title: "A little more room.",
   introduction: "For the work, the questions behind it, and the parts that don’t fit into ninety seconds.",

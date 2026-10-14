@@ -19,3 +19,7 @@
 @media(max-width:767px){.pause,.quiet{right:max(18px,env(safe-area-inset-right));bottom:auto;min-height:48px;padding:10px 12px;font-size:10px}.pause{top:max(76px,env(safe-area-inset-top))}.quiet{top:max(134px,calc(env(safe-area-inset-top) + 58px))}}
 .canvas[data-stay-resident]{opacity:1}
 .world:has(.canvas[data-stay-resident]) .poster{opacity:0}
+/* Motion controls remain keyboard-visible utilities; the story owns the frame. */
+.quiet,.pause{background:rgba(20,38,31,.32);border-color:transparent;backdrop-filter:none;opacity:.72;min-height:44px;padding:10px 12px;font-size:10px}
+.quiet:hover,.pause:hover,.quiet:focus-visible,.pause:focus-visible{opacity:1;background:rgba(20,38,31,.88);border-color:rgba(235,228,209,.6)}
+@media(max-width:767px){.quiet{top:auto;bottom:max(14px,env(safe-area-inset-bottom))}.pause{top:auto;bottom:max(58px,calc(env(safe-area-inset-bottom) + 44px))}}

@@ -9,6 +9,7 @@ export class ScrollController {
   private layoutDirty = true;
   private disposed = false;
   private layoutReads = 0;
+  private readonly diagnostics = process.env.NODE_ENV !== "production" || (typeof location !== "undefined" && new URLSearchParams(location.search).has("qa"));
   constructor(private root: HTMLElement, private onProgress: (p: number) => void, private requestFrame: () => void) {
     this.observer = new ResizeObserver(this.invalidate);
     this.observer.observe(root);
@@ -35,9 +36,9 @@ export class ScrollController {
         const endY = i < boundaries.length ? boundaries[i]! : Math.max(startY + 1, bottom - height);
         return { from: Number(section.dataset.from), to: Number(section.dataset.to), startY, endY: Math.max(startY + 1, endY) };
       });
-      this.root.dataset.stayMeasuredBeats = String(this.beats.length);
+      if (this.diagnostics) this.root.dataset.stayMeasuredBeats = String(this.beats.length);
       this.layoutReads += sections.length;
-      this.root.dataset.stayScrollLayoutReads = String(this.layoutReads);
+      if (this.diagnostics) this.root.dataset.stayScrollLayoutReads = String(this.layoutReads);
       this.layoutDirty = false;
     }
     const y = window.scrollY;
@@ -48,7 +49,7 @@ export class ScrollController {
     }
     if (y <= 0) p = 0;
     else if (y + window.innerHeight >= document.documentElement.scrollHeight - 2) p = 1;
-    this.root.dataset.stayMeasuredProgress = clamp(p).toFixed(4);
+    if (this.diagnostics) this.root.dataset.stayMeasuredProgress = clamp(p).toFixed(4);
     this.dirty = false;
     this.onProgress(clamp(p));
   }

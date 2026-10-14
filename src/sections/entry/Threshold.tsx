@@ -43,7 +43,7 @@ import { ThresholdRuntime } from "./ThresholdRuntime";
  * sits between them, revealed by a soft mask travelling across each line.
  *
  * All of this markup is server-rendered. ThresholdRuntime is the only client
- * component, and it adds the canvas particle field, the custom cursor and the
+ * component, and it adds the canvas particle field and the
  * pointer-reactive material response on top — so the scene is complete,
  * readable and navigable before (and without) hydration.
  */
@@ -236,10 +236,10 @@ export function Threshold() {
     <div className={styles.scene} data-aura-scene>
       <div className={styles.vignette} />
 
-      <div className={styles.stageLayer}>
+      <div className={styles.stageLayer} data-landing-stage>
         {/* --- the question, rendered once and repositioned per breakpoint --- */}
         <div className={styles.centre} data-threshold-copy>
-          <h1 className={styles.title}>
+          <h1 className={styles.title} data-landing-title>
             <span className={styles.titleLine}>
               <span className={styles.titleWipe} style={enterStyle("0.88s", "0.3s")}>
                 Want to discover
@@ -287,7 +287,7 @@ export function Threshold() {
             <Layers items={STAY_LAYERS} />
 
             <svg
-              className={styles.foliageSvg}
+              className={styles.foliageSvg} data-landing-foliage
               viewBox="0 0 560 900"
               preserveAspectRatio="none"
               aria-hidden="true"
@@ -329,7 +329,7 @@ export function Threshold() {
             <Layers items={[STAY_UNDERGLOW]} />
 
             <div
-              className={cn(styles.leafField, styles.enter, styles.enterFade)}
+              className={cn(styles.leafField, styles.enter, styles.enterFade)} data-landing-foreground
               style={enterStyle("1.6s", "1.4s")}
             >
               <Leaves items={STAY_LEAVES} />
@@ -363,7 +363,7 @@ export function Threshold() {
             <Layers items={MOBILE_STAY_LAYERS} />
 
             <svg
-              className={styles.mobileFoliageSvg}
+              className={styles.mobileFoliageSvg} data-landing-foliage
               viewBox="0 0 390 360"
               preserveAspectRatio="xMidYMid slice"
               aria-hidden="true"
@@ -388,7 +388,7 @@ export function Threshold() {
             </div>
 
             <div
-              className={cn(styles.mobileLeafField, styles.enter, styles.enterFade)}
+              className={cn(styles.mobileLeafField, styles.enter, styles.enterFade)} data-landing-foreground
               style={enterStyle("1.6s", "1.4s")}
             >
               <Leaves items={MOBILE_LEAVES} />

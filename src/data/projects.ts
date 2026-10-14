@@ -1,4 +1,5 @@
-import type { Project, ProjectId } from "./types";
+import type { Project } from "./types";
+import { repositories } from "./repositories";
 
 // Shared project copy. No outcomes, dates, metrics or URLs are inferred.
 // Source notes are editorial provenance, never presented as credentials.
@@ -49,12 +50,9 @@ const records = [
 
 export const projects: readonly Project[] = records.map((record) => ({
   ...record, slug: record.id, summary: record.shortDescription, timeframe: null,
-  links: [], assets: [],
+  links: repositories[record.id] ? [{ label: "View source", href: repositories[record.id]!, kind: "repository" as const }] : [], assets: [],
   quick: { headline: record.headline, oneLiner: record.shortDescription, keywords: record.details, cover: null,
     narration: record.narration, displayTitle: record.displayTitle, deeperLabel: record.deeperLabel },
   stayAwhile: { route: `/stay/#${record.id}`, narrative: [record.longDescription], gallery: [], gardenAnchor: record.id },
 }));
 export const orderedProjects = projects;
-export function getProjectById(id: ProjectId) { return projects.find((project) => project.id === id); }
-export function getProjectBySlug(slug: string) { return projects.find((project) => project.slug === slug); }
-export function hasQuickContent(project: Project) { return project.quick.headline !== null; }

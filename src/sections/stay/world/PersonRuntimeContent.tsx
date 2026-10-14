@@ -7,7 +7,7 @@ export function PersonRuntimeContent() {
     {achievements.filter(item => item.id !== "strat-mun").map(item => <div key={item.id}>
       <h3>{item.title}</h3><p>{item.detail}</p>
     </div>)}
-    <p>These achievements were supplied for the portfolio. Original certificate scans are pending.</p>
+    <p>These achievements were supplied for the portfolio.{achievements.some(item => item.certificate?.placeholder) && " Original certificate scans are pending."}</p>
   </details> } : beat);
   return <NarrativeRoute id="person" beats={beats} />;
 }

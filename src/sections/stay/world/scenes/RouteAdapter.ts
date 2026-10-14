@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { exposeMeshes } from "../ObjectExposure";
 
 export type AdapterContext = {
   scene: THREE.Scene;
@@ -24,16 +25,10 @@ export const routeAdapters: Record<string, RouteAdapter> = {
 };
 
 const auraAtmosphere = routeAdapters.aura!;
-const connections = new WeakMap<THREE.Object3D, THREE.Mesh[]>();
 routeAdapters.aura = { evaluate(progress, context) {
   auraAtmosphere.evaluate(progress, context);
   const q = THREE.MathUtils.clamp((progress - .64) / .07, 0, 1);
   for (const root of context.objects.get("A03") ?? []) {
-    let meshes = connections.get(root);
-    if (!meshes) {
-      meshes = []; root.traverse(node => { if (node instanceof THREE.Mesh) meshes!.push(node); });
-      connections.set(root, meshes);
-    }
-    for (let i=0;i<meshes.length;i++) meshes[i]!.visible = q > 0 && q >= (i+1)/meshes.length;
+    exposeMeshes(root,q);
   }
 } };

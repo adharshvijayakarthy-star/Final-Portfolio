@@ -3,7 +3,9 @@
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { routes } from "@/data/content";
-import { bindQuickMorph } from "./morph";
+import { bindLandingTransitions } from "./transition";
+import { prepareEntryWorlds, releaseEntryPreparation } from "./preparation";
+import { getEntryHandoff } from "@/lib/entry-handoff";
 
 import styles from "./Threshold.module.css";
 
@@ -13,13 +15,13 @@ import styles from "./Threshold.module.css";
  * Everything here is additive: the scene is already complete, readable and
  * navigable from the server-rendered markup. This adds the canvas particle
  * field (embers rising through the crystal world, petals falling through the
- * garden), the custom cursor, and the pointer-reactive material response on
+ * garden), the pointer-reactive material response on
  * the two objects.
  *
  * It writes only data attributes and custom properties onto existing DOM —
  * never class or keyframe names, which CSS Modules hashes.
  *
- * Reduced motion: no drift, no parallax, no cursor smoothing, and the canvas
+ * Reduced motion: no drift, no parallax, and the canvas
  * paints one settled frame instead of running a loop.
  */
 
@@ -65,17 +67,17 @@ interface Rect {
 export function ThresholdRuntime() {
   const router = useRouter();
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const cursorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const cursorEl = cursorRef.current;
     if (!canvas) return;
 
     const scene = canvas.closest<HTMLElement>("[data-aura-scene]");
     if (!scene) return;
-    const unbindMorph = bindQuickMorph(scene, () => router.push(routes.quick));
+    const unbindMorph = bindLandingTransitions(scene, destination => router.push(destination));
     router.prefetch(routes.quick);
+    router.prefetch(routes.stay);
+    prepareEntryWorlds();
 
     const ctx = canvas.getContext("2d");
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -300,7 +302,6 @@ export function ThresholdRuntime() {
         scene.dataset[hotAttr] = "true";
         if (isQuick) quickHotTarget = 1;
         else stayHotTarget = 1;
-        if (cursorEl) cursorEl.dataset["mode"] = isQuick ? "quick" : "stay";
         // Replay the gleam sweep by removing and re-adding the flag.
         if (gleam && !reduced) {
           delete gleam.dataset["play"];
@@ -313,7 +314,6 @@ export function ThresholdRuntime() {
         delete scene.dataset[hotAttr];
         if (isQuick) quickHotTarget = 0;
         else stayHotTarget = 0;
-        if (cursorEl) cursorEl.dataset["mode"] = "default";
         node.style.removeProperty("--disc-x");
         node.style.removeProperty("--disc-y");
       };
@@ -359,50 +359,12 @@ export function ThresholdRuntime() {
       (node) => bindDisc(node),
     );
 
-    // The cursor eases toward the pointer rather than pinning to it — that
-    // slight lag is what makes it read as a considered object. Under reduced
-    // motion it snaps, so there is no trailing movement to track.
-    const cursorPos = { x: 0, y: 0, tx: 0, ty: 0, live: false };
-    let cursorRaf = 0;
-
-    const cursorTick = () => {
-      cursorRaf = 0;
-      if (reduced || document.hidden) return;
-      cursorPos.x += (cursorPos.tx - cursorPos.x) * 0.32;
-      cursorPos.y += (cursorPos.ty - cursorPos.y) * 0.32;
-      if (cursorEl) {
-        cursorEl.style.transform = `translate3d(${cursorPos.x.toFixed(1)}px,${cursorPos.y.toFixed(1)}px,0)`;
-      }
-      cursorRaf = requestAnimationFrame(cursorTick);
-    };
-
     const onPointerMove = (event: PointerEvent) => {
       const box = scene.getBoundingClientRect();
       pointer.x = event.clientX - box.left;
       pointer.y = event.clientY - box.top;
-      if (!cursorEl || coarse) return;
-
-      cursorPos.tx = event.clientX;
-      cursorPos.ty = event.clientY;
-      if (!cursorPos.live) {
-        cursorPos.live = true;
-        cursorPos.x = event.clientX;
-        cursorPos.y = event.clientY;
-        cursorEl.style.opacity = "1";
-        if (!reduced) cursorRaf = requestAnimationFrame(cursorTick);
-      }
-      if (reduced) {
-        cursorEl.style.transform = `translate3d(${event.clientX}px,${event.clientY}px,0)`;
-      }
     };
     window.addEventListener("pointermove", onPointerMove, { passive: true });
-
-    // The synthetic cursor replaces the native one only for a real mouse.
-    if (cursorEl && !coarse) {
-      scene.dataset["cursorActive"] = "true";
-    } else if (cursorEl) {
-      cursorEl.style.display = "none";
-    }
 
     const onResize = () => {
       applyScale();
@@ -414,8 +376,7 @@ export function ThresholdRuntime() {
 
     const resume = () => {
       cancelAnimationFrame(raf);
-      cancelAnimationFrame(cursorRaf);
-      raf = cursorRaf = 0;
+      raf = 0;
       reduced = motionQuery.matches;
       if (document.hidden) return;
       if (reduced) {
@@ -425,7 +386,6 @@ export function ThresholdRuntime() {
         });
       } else {
         raf = requestAnimationFrame(frame);
-        if (cursorPos.live && !coarse) cursorRaf = requestAnimationFrame(cursorTick);
       }
     };
     motionQuery.addEventListener('change', resume);
@@ -440,14 +400,13 @@ export function ThresholdRuntime() {
 
     return () => {
       unbindMorph();
+      if(!getEntryHandoff())releaseEntryPreparation();
       motionQuery.removeEventListener('change', resume);
       document.removeEventListener('visibilitychange', resume);
       cancelAnimationFrame(raf);
-      cancelAnimationFrame(cursorRaf);
       window.removeEventListener("resize", onResize);
       window.removeEventListener("pointermove", onPointerMove);
       for (const off of unbind) off();
-      delete scene.dataset["cursorActive"];
       delete scene.dataset["quickHot"];
       delete scene.dataset["stayHot"];
     };
@@ -456,13 +415,7 @@ export function ThresholdRuntime() {
   return (
     <>
       <canvas ref={canvasRef} className={styles.particles} aria-hidden="true" />
-      <div ref={cursorRef} className={styles.cursor} data-mode="default" aria-hidden="true">
-        <div className={styles.cursorInner}>
-          <div className={styles.cursorRing} />
-          <div className={styles.cursorDot} />
-          <div className={styles.cursorGlyph}>&#8594;</div>
-        </div>
-      </div>
+
     </>
   );
 }

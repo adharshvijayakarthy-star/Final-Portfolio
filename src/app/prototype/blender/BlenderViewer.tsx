@@ -29,7 +29,7 @@ function disposeModel(model: THREE.Object3D) {
 export default function BlenderViewer() {
   const hostRef = useRef<HTMLDivElement>(null);
   const resetRef = useRef<(() => void) | null>(null);
-  const [status, setStatus] = useState("Awaiting Blender export inspection…");
+  const [status, setStatus] = useState("Loading the 3D preview…");
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function BlenderViewer() {
         // Fetch first: a missing Blender export is never replaced with fake geometry.
         const response = await fetch(MODEL_URL, { signal: abort.signal, cache: "no-store" });
         if (response.status === 404) {
-          setStatus("Waiting for manual Blender export. Run scripts/blender/create-aura-poc.py in Blender, then refresh this page. No GLB has been rendered yet.");
+          setStatus("The 3D preview is unavailable. Please try refreshing the page.");
           return;
         }
         if (!response.ok) throw new Error("GLB request returned HTTP " + response.status);

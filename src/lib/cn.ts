@@ -1,5 +1,3 @@
-import type { CSSProperties } from "react";
-
 /**
  * Minimal class-name joiner.
  *
@@ -9,16 +7,4 @@ import type { CSSProperties } from "react";
  */
 export function cn(...parts: Array<string | false | null | undefined>): string {
   return parts.filter(Boolean).join(" ");
-}
-
-/**
- * Type-safe CSS custom properties for inline `style`.
- *
- * React's CSSProperties does not model `--*` keys, and the alternative is an
- * `as never` cast at every call site. Components that drive a CSS variable
- * (grid spans, motion travel) route through here instead.
- */
-export function cssVars(vars: Record<`--${string}`, string | number | undefined>): CSSProperties {
-  const entries = Object.entries(vars).filter(([, value]) => value !== undefined);
-  return Object.fromEntries(entries) as CSSProperties;
 }

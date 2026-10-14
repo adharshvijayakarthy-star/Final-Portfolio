@@ -5,14 +5,19 @@ import { ScrollController } from "./ScrollController";
 import { useStayExperience } from "./StayExperienceProvider";
 import { WorldRuntime } from "./WorldRuntime";
 import { CinematicTextController } from "./CinematicTextController";
+import { routeTiming } from "./narrative-score";
+import { getEntryHandoff } from "@/lib/entry-handoff";
+import { takePreparedStay } from "../../entry/preparation";
 import type { Variant } from "./types";
 import styles from "./stay-world.module.css";
+
+const diagnostics = process.env.NODE_ENV !== "production" || (typeof location !== "undefined" && new URLSearchParams(location.search).has("qa"));
 
 export function StayWorldHost() {
   const experience = useStayExperience();
   const host = useRef<HTMLDivElement>(null);
   const hostCommits = useRef(0);
-  useEffect(() => { if (host.current) host.current.dataset.stayHostCommits = String(++hostCommits.current); });
+  useEffect(() => { if (diagnostics && host.current) host.current.dataset.stayHostCommits = String(++hostCommits.current); });
   const runtime = useRef<WorldRuntime | null>(null);
   const ambientPausedRef = useRef(experience?.ambientPaused ?? false);
   const [reduced, setReduced] = useState(false);
@@ -20,6 +25,7 @@ export function StayWorldHost() {
   const [reason, setReason] = useState("");
   const [variant, setVariant] = useState<Variant>("desktop");
   const registration = experience?.registration;
+  const registerTravel = experience?.registerTravel;
   const quiet = experience?.quiet ?? false;
   const ambientPaused = experience?.ambientPaused ?? false;
   const atlas = experience?.atlas ?? false;
@@ -52,6 +58,8 @@ export function StayWorldHost() {
     if (saveData) return;
     let cancelled = false;
     let world = runtime.current;
+    const prepared=!world&&getEntryHandoff()?.destination==="stay"?takePreparedStay(target):null;
+    if(prepared){world=prepared.runtime;runtime.current=world;}
     if (!world) {
       try { world = new WorldRuntime(target); runtime.current = world; }
       catch (error) {
@@ -63,11 +71,17 @@ export function StayWorldHost() {
       }
     }
     const currentWorld = world;
+    const unregisterTravel = registerTravel?.({ begin: (family, commit) => currentWorld.isPresenting(registration.id) && currentWorld.beginTravel(family, commit), cancel: () => currentWorld.cancelTravel() });
+    const timing = routeTiming[registration.id]!;
+    currentWorld.setNarrativeBands([...registration.root.querySelectorAll<HTMLElement>("section[data-stay-beat]")].map(section => ({
+      from: Number(section.dataset.from), to: Number(section.dataset.to), readFrom: timing.settle, readTo: Math.min(.86, timing.read - .035),
+    })));
     const typography = new CinematicTextController(registration.root);
+    currentWorld.setReadingZones(typography.readingZones);
     let awaitingFrame = false;
     currentWorld.observePresentation((progress, targetProgress) => {
       if (!currentWorld.isPresenting(registration.id)) return;
-      typography.present(progress, targetProgress);
+      if (getEntryHandoff()?.destination !== "stay") typography.present(progress, targetProgress);
       if (awaitingFrame && !cancelled) { awaitingFrame = false; setStatus("ready"); }
     });
     currentWorld.setAmbientPaused(ambientPausedRef.current);
@@ -91,8 +105,14 @@ export function StayWorldHost() {
     };
     currentWorld.renderer.domElement.addEventListener("webglcontextlost", contextLost);
     visibility();
-    void currentWorld.attach(registration.id, variant).then(manifest => {
+    void (prepared?Promise.resolve(prepared.manifest):currentWorld.attach(registration.id, variant)).then(manifest => {
       if (cancelled || !manifest) return;
+      for (const section of registration.root.querySelectorAll<HTMLElement>("section[data-stay-beat]")) {
+        const middle = (Number(section.dataset.from) + Number(section.dataset.to)) / 2;
+        const composition = manifest.cameraKnots.find(knot => middle < knot.band[1]) ?? manifest.cameraKnots.at(-1);
+        if (composition?.clearance) section.dataset.stayAlignment = composition.clearance.alignment;
+      }
+      typography.invalidate();
       awaitingFrame = true;
       currentWorld.requestRender();
     }).catch(error => {
@@ -103,12 +123,15 @@ export function StayWorldHost() {
     });
     return () => {
       cancelled = true; scroll.dispose(); resize.disconnect();
+      unregisterTravel?.();
+      registration.root.querySelectorAll<HTMLElement>("[data-stay-alignment]").forEach(section => { delete section.dataset.stayAlignment; });
       currentWorld.observeInput(null);
+      currentWorld.setReadingZones([]);
       currentWorld.observePresentation(null); typography.dispose();
       document.removeEventListener("visibilitychange", visibility);
       currentWorld.renderer.domElement.removeEventListener("webglcontextlost", contextLost);
     };
-  }, [registration, reduced, quiet, variant, saveData]);
+  }, [registration, reduced, quiet, variant, saveData, registerTravel]);
   useEffect(() => () => { runtime.current?.dispose(); runtime.current = null; }, []);
   const id = registration?.id;
   return <div className={styles.world} data-world-status={presentationStatus} data-world-route={id ?? "none"}>
